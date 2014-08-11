@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog">
+    <zorder>2</zorder>
+    <controls>
+        <control type="group">
+            <include>NotificationOpenClose</include>
+            <posy>0</posy>
+            <control type="image">
+                <posx>-200</posx>
+                <posy>0</posy>
+                <width>2320</width>
+                <height>183</height>
+                <texture border="150,40,150,40">common/bg_dialog.png</texture>
+            </control>
+            <control type="progress" id="32">
+                <posx>-29</posx>
+                <posy>-20</posy>
+                <width>1978</width>
+                <height>54</height>
+                <texturebg border="14,20,14,20">buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                <midtexture border="30,24,30,24">buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                <righttexture>-</righttexture>
+                <lefttexture>-</lefttexture>
+            </control>
+            <control type="label" id="30">
+                <posx>TextMargin</posx>
+                <posy>55</posy>
+                <height>30</height>
+                <width>1800</width>
+                <scroll>true</scroll>
+                <align>center</align>
+                <font>NotificationFontDouble</font>
+                <textcolor>AlternateColor</textcolor>
+            </control>
+            <control type="label" id="31">
+                <posx>TextMargin</posx>
+                <posy>95</posy>
+                <height>41</height>
+                <width>1800</width>
+                <scroll>true</scroll>
+                <align>center</align>
+                <font>NotificationFontDouble</font>
+                <textcolor>MainColor</textcolor>
+            </control>
+        </control>
+    </controls>
+</window>

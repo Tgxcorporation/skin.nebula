@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+    <defaultcontrol always="true">20</defaultcontrol>
+    <controls>
+        <control type="group">
+            <include>NotificationOpenClose</include>
+            <control type="image">
+                <posx>-200</posx>
+                <posy>0</posy>
+                <width>2320</width>
+                <height>183</height>
+                <texture border="150,40,150,40">common/bg_dialog.png</texture>
+            </control>
+            <control type="progress" id="20">
+                <posx>-39</posx>
+                <posy>-20</posy>
+                <width>1998</width>
+                <height>54</height>
+                <texturebg border="14,20,14,20">buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                <midtexture border="30,24,30,24">buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                <righttexture>-</righttexture>
+                <lefttexture>-</lefttexture>
+                <info>Player.Volume</info>
+            </control>
+            <control type="label">
+                <posx>TextMargin</posx>
+                <posy>33</posy>
+                <height>117</height>
+                <width>1800</width>
+                <scroll>true</scroll>
+                <align>center</align>
+                <font>InfoTitleFont</font>
+                <textcolor>MainColor</textcolor>
+                <label>$LOCALIZE[13376]: $INFO[Control.GetLabel(20)]</label>
+            </control>
+        </control>
+    </controls>
+</window>

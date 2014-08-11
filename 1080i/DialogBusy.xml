@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog">
+    <controls>
+        <control type="group">
+            <include>NotificationOpenClose</include>
+            <control type="image">
+                <posx>-200</posx>
+                <posy>0</posy>
+                <width>2320</width>
+                <height>183</height>
+                <texture border="150,40,150,40">common/bg_dialog.png</texture>
+            </control>
+            <control type="progress" id="10">
+                <posx>-29</posx>
+                <posy>-20</posy>
+                <width>1978</width>
+                <height>54</height>
+                <texturebg border="14,20,14,20">buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                <midtexture border="30,24,30,24">buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                <righttexture>-</righttexture>
+                <lefttexture>-</lefttexture>
+            </control>
+            <control type="label" id="1">
+                <visible>IntegerGreaterThan(Control.GetLabel(10), 0)</visible>
+                <posx>TextMargin</posx>
+                <posy>33</posy>
+                <height>117</height>
+                <width>1800</width>
+                <scroll>true</scroll>
+                <align>center</align>
+                <font>NotificationFont</font>
+                <textcolor>MainColor</textcolor>
+                <label>$LOCALIZE[31979]$INFO[Control.GetLabel(10), ,%]</label>
+            </control>
+            <control type="label">
+                <visible>!IntegerGreaterThan(Control.GetLabel(10), 0)</visible>
+                <posx>TextMargin</posx>
+                <posy>33</posy>
+                <height>117</height>
+                <width>1800</width>
+                <scroll>true</scroll>
+                <align>center</align>
+                <font>NotificationFont</font>
+                <textcolor>MainColor</textcolor>
+                <label>$LOCALIZE[31979]</label>
+            </control>
+        </control>
+    </controls>
+</window>
