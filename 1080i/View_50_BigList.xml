@@ -417,7 +417,7 @@
                     <width>1920</width>
                     <height>810</height>
                     <pagecontrol>60</pagecontrol>
-                    <onleft>6060</onleft>
+                    <onleft>9000</onleft>
                     <onright>60</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
@@ -474,7 +474,7 @@
                     <width>1920</width>
                     <height>810</height>
                     <pagecontrol>60</pagecontrol>
-                    <onleft>6060</onleft>
+                    <onleft>9000</onleft>
                     <onright>60</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>

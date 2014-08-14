@@ -525,7 +525,7 @@
                 <onup>9000</onup>
                 <ondown>6067</ondown>
                 <viewtype label="31018">Cover Wrap</viewtype>
-                <pagecontrol>60</pagecontrol>
+                <pagecontrol>607</pagecontrol>
                 <orientation>horizontal</orientation>
                 <focusposition>0</focusposition>
                 <movement>0</movement>
