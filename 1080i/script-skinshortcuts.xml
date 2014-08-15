@@ -14,14 +14,14 @@
                 <posy>142</posy>
                 <width>1920</width>
                 <height>892</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
                 <posx>0</posx>
                 <posy>142</posy>
                 <width>1920</width>
                 <height>217</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="label">
                 <posx>TextMargin</posx>
@@ -30,7 +30,7 @@
                 <height>135</height>
                 <align>center</align>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$LOCALIZE[31947]</label>
             </control>
             <control type="label" id="101">
@@ -40,29 +40,56 @@
                 <height>135</height>
                 <align>center</align>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$LOCALIZE[31947]</label>
             </control>
             <control type="button" id="102">
+                <visible>!skin.hassetting(Theme.Color.Black)</visible>
                 <posx>1806</posx>
                 <posy>234</posy>
                 <width>27</width>
                 <height>33</height>
                 <onclick>noop</onclick>
-                <texturefocus>buttons/SpinDownFO.png</texturefocus>
-                <texturenofocus>buttons/SpinDownNF.png</texturenofocus>
+                <texturefocus>white/buttons/SpinDownFO.png</texturefocus>
+                <texturenofocus>white/buttons/SpinDownNF.png</texturenofocus>
                 <onleft>300</onleft>
                 <onright>103</onright>
                 <ondown>111</ondown>
             </control>
             <control type="button" id="103">
+                <visible>!skin.hassetting(Theme.Color.Black)</visible>
                 <posx>1833</posx>
                 <posy>234</posy>
                 <width>27</width>
                 <height>33</height>
                 <onclick>noop</onclick>
-                <texturefocus>buttons/SpinUpFO.png</texturefocus>
-                <texturenofocus>buttons/SpinUpNF.png</texturenofocus>
+                <texturefocus>white/buttons/SpinUpFO.png</texturefocus>
+                <texturenofocus>white/buttons/SpinUpNF.png</texturenofocus>
+                <onleft>102</onleft>
+                <ondown>111</ondown>
+            </control>
+            <control type="button" id="102">
+                <visible>skin.hassetting(Theme.Color.Black)</visible>
+                <posx>1806</posx>
+                <posy>234</posy>
+                <width>27</width>
+                <height>33</height>
+                <onclick>noop</onclick>
+                <texturefocus>black/buttons/SpinDownFO.png</texturefocus>
+                <texturenofocus>black/buttons/SpinDownNF.png</texturenofocus>
+                <onleft>300</onleft>
+                <onright>103</onright>
+                <ondown>111</ondown>
+            </control>
+            <control type="button" id="103">
+                <visible>skin.hassetting(Theme.Color.Black)</visible>
+                <posx>1833</posx>
+                <posy>234</posy>
+                <width>27</width>
+                <height>33</height>
+                <onclick>noop</onclick>
+                <texturefocus>black/buttons/SpinUpFO.png</texturefocus>
+                <texturenofocus>black/buttons/SpinUpNF.png</texturenofocus>
                 <onleft>102</onleft>
                 <ondown>111</ondown>
             </control>
@@ -85,7 +112,7 @@
                         <height>42</height>
                         <width>600</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -94,7 +121,7 @@
                         <height>28</height>
                         <width>600</width>
                         <font>FacadeListSubFont</font>
-                        <textcolor>SublistNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
@@ -105,13 +132,13 @@
                         <posy>0</posy>
                         <height>287</height>
                         <width>960</width>
-                        <include>FacadeFocus</include>
+                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="image">
                         <posx>0</posx>
                         <height>287</height>
                         <width>287</width>
-                        <texture fallback="defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="$VAR[Theme.Color]/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -121,7 +148,7 @@
                         <height>42</height>
                         <width>600</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>[B]$INFO[ListItem.Label][/B]</label>
                     </control>
                     <control type="label">
@@ -130,7 +157,7 @@
                         <height>42</height>
                         <width>600</width>
                         <font>FacadeListSubFont</font>
-                        <textcolor>SublistFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </focusedlayout>
@@ -162,7 +189,7 @@
                         <height>42</height>
                         <width>600</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -171,7 +198,7 @@
                         <height>28</height>
                         <width>600</width>
                         <font>FacadeListSubFont</font>
-                        <textcolor>SublistNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
@@ -182,13 +209,13 @@
                         <posy>0</posy>
                         <height>287</height>
                         <width>960</width>
-                        <include>FacadeFocus</include>
+                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="image">
                         <posx>0</posx>
                         <height>287</height>
                         <width>287</width>
-                        <texture fallback="defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="$VAR[Theme.Color]/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -198,7 +225,7 @@
                         <height>42</height>
                         <width>600</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>[B]$INFO[ListItem.Label][/B]</label>
                     </control>
                     <control type="label">
@@ -207,7 +234,7 @@
                         <height>42</height>
                         <width>600</width>
                         <font>FacadeListSubFont</font>
-                        <textcolor>SublistFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </focusedlayout>

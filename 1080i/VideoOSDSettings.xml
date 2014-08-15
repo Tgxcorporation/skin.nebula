@@ -14,8 +14,8 @@
                 <posy>47</posy>
                 <height>50</height>
                 <width>50</width>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
+                <texturenofocus>$VAR[Theme.Color]/topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>$VAR[Theme.Color]/topbar/topbar_exit_focus.png</texturefocus>
                 <onclick>back</onclick>
                 <label>-</label>
             </control>
@@ -24,7 +24,7 @@
                 <posy>51</posy>
                 <width>1154</width>
                 <height>623</height>
-                <texture border="94">common/bg_dialog.png</texture>
+                <texture border="94">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="group">
                 <posx>478</posx>
@@ -35,7 +35,7 @@
                     <width>974</width>
                     <height>100</height>
                     <font>InfoTitleFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <align>center</align>
                 </control>
                 <control type="image">
@@ -43,7 +43,7 @@
                     <posy>38</posy>
                     <width>1064</width>
                     <height>79</height>
-                    <texture>list/bg_facade_nofocus_top.png</texture>
+                    <texture>$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="grouplist" id="5">
                     <posx>0</posx>

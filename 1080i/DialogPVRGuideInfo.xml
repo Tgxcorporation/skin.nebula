@@ -12,21 +12,21 @@
                 <posy>240</posy>
                 <width>2320</width>
                 <height>660</height>
-                <texture border="150,40,150,40">common/bg_dialog.png</texture>
+                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <posx>100</posx>
                 <posy>232</posy>
                 <width>1720</width>
                 <height>217</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
                 <posx>100</posx>
                 <posy>736</posy>
                 <width>1720</width>
                 <height>172</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
                 <posx>25</posx>
@@ -34,7 +34,7 @@
                 <width>373</width>
                 <height>300</height>
                 <aspectratio>keep</aspectratio>
-                <texture fallback="defaultChannelTvBig_Wide.png">$INFO[ListItem.Icon]</texture>
+                <texture fallback="$VAR[Theme.Color]/defaultChannelTvBig_Wide.png">$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorder</include>
             </control>
             <control type="label">
@@ -44,7 +44,7 @@
                 <height>135</height>
                 <align>center</align>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[ListItem.Title]</label>
             </control>
             <control type="label">
@@ -53,7 +53,7 @@
                 <width>688</width>
                 <height>78</height>
                 <font>InfoDetailsFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]</label>
             </control>
             <control type="label">
@@ -62,7 +62,7 @@
                 <width>688</width>
                 <height>78</height>
                 <font>InfoDetailsFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[ListItem.StartTime,, / ]$INFO[ListItem.EndTime]</label>
             </control>
             <control type="label">
@@ -71,7 +71,7 @@
                 <width>688</width>
                 <height>78</height>
                 <font>InfoDetailsFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[ListItem.Genre]</label>
             </control>
             <control type="label">
@@ -80,7 +80,7 @@
                 <width>688</width>
                 <height>78</height>
                 <font>InfoDetailsFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[ListItem.Duration]</label>
             </control>
             <control type="textbox">
@@ -88,7 +88,7 @@
                 <posy>471</posy>
                 <width>688</width>
                 <height>249</height>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[ListItem.Plot]</label>
                 <pagecontrol>6060</pagecontrol>
             </control>

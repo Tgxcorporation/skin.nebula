@@ -12,7 +12,7 @@
                 <width>1920</width>
                 <height>1080</height>
                 <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableFanart)">BgOverlayFanart</include>
-                <include>OverlayBG</include>
+                <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
             </control>
             <control type="progress" id="23">
                 <visible>true</visible>
@@ -56,14 +56,14 @@
                         <posy>483</posy>
                         <width>1454</width>
                         <height>480</height>
-                        <texture border="90">common/bg_dialog.png</texture>
+                        <texture border="90">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                     </control>
                     <control type="image">
                         <posx>404</posx>
                         <posy>539</posy>
                         <height>373</height>
                         <width>250</width>
-                        <texture>list/bg_strip_horizontal_left.png</texture>
+                        <texture>$VAR[Theme.Color]/list/bg_strip_horizontal_left.png</texture>
                         <colordiffuse>90ffffff</colordiffuse>
                     </control>
                     <control type="image">
@@ -71,7 +71,7 @@
                         <posy>539</posy>
                         <width>2</width>
                         <height>373</height>
-                        <texture>list/bg_facade_vertical.png</texture>
+                        <texture>$VAR[Theme.Color]/list/bg_facade_vertical.png</texture>
                     </control>
                     <control type="group">
                         <!-- CDART -->
@@ -81,7 +81,7 @@
                             <posy>565</posy>
                             <width>321</width>
                             <height>321</height>
-                            <texture diffuse="common/cdart_diffuse.png">$INFO[Player.FolderPath]cdart.png</texture>
+                            <texture diffuse="$VAR[Theme.Color]/common/cdart_diffuse.png">$INFO[Player.FolderPath]cdart.png</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
@@ -91,7 +91,7 @@
                         <posy>538</posy>
                         <width>375</width>
                         <height>375</height>
-                        <texture fallback="defaultAudioBig.png">$INFO[MusicPlayer.Cover]</texture>
+                        <texture fallback="$VAR[Theme.Color]/defaultAudioBig.png">$INFO[MusicPlayer.Cover]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio aligny="top" align="center">keep</aspectratio>
                     </control>
@@ -103,7 +103,7 @@
                             <height>36</height>
                             <width>910</width>
                             <font>InfoTitleFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[MusicPlayer.Title]</label>
                         </control>
                         <control type="image">
@@ -111,7 +111,7 @@
                             <posy>531</posy>
                             <width>986</width>
                             <height>90</height>
-                            <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                            <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <control type="label">
                             <posx>37</posx>
@@ -119,7 +119,7 @@
                             <height>66</height>
                             <width>910</width>
                             <font>InfoDetailsFont</font>
-                            <textcolor>AlternateColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$INFO[MusicPlayer.Artist]</label>
                         </control>
                         <control type="image">
@@ -127,7 +127,7 @@
                             <posy>599</posy>
                             <width>986</width>
                             <height>90</height>
-                            <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                            <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <control type="label">
                             <posx>37</posx>
@@ -135,7 +135,7 @@
                             <height>66</height>
                             <width>910</width>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[MusicPlayer.Album]</label>
                         </control>
                         <control type="image">
@@ -143,7 +143,7 @@
                             <posy>667</posy>
                             <width>986</width>
                             <height>90</height>
-                            <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                            <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <control type="label">
                             <posx>37</posx>
@@ -151,7 +151,7 @@
                             <height>66</height>
                             <width>910</width>
                             <font>InfoDetailsFont</font>
-                            <textcolor>AlternateColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$INFO[MusicPlayer.TimeSpeed] / $INFO[MusicPlayer.Duration]</label>
                         </control>
                         <control type="label">
@@ -162,7 +162,7 @@
                             <width>910</width>
                             <align>right</align>
                             <font>InfoDetailsFont</font>
-                            <textcolor>AlternateColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$INFO[MusicPlayer.PlaylistPosition] / $INFO[MusicPlayer.PlaylistLength]</label>
                         </control>
                         <control type="image">
@@ -170,7 +170,7 @@
                             <posy>735</posy>
                             <width>986</width>
                             <height>90</height>
-                            <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                            <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <!-- <control type="label">
                             <visible>!Skin.HasSetting(plexbmc)</visible>
@@ -179,7 +179,7 @@
                             <height>66</height>
                             <width>420</width>
                             <font>NotificationFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[MusicPlayer.offset(-1).Title,[COLOR=AlternateColor]$LOCALIZE[210]: [/COLOR]]</label>
                         </control> -->
                         <control type="label">
@@ -190,7 +190,7 @@
                             <width>420</width>
                             <align>right</align>
                             <font>NotificationFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[MusicPlayer.offset(1).Title,[COLOR=AlternateColor]$LOCALIZE[209]: [/COLOR]]</label>
                         </control>
                         <control type="grouplist">
@@ -215,7 +215,7 @@
                     <posy>390</posy>
                     <width>300</width>
                     <height>300</height>
-                    <texture>OSD/pause.png</texture>
+                    <texture>$VAR[Theme.Color]/OSD/pause.png</texture>
                 </control>
                 <control type="image">
                     <visible>player.rewinding + !Skin.HasSetting(DisablePauseIconOSD)</visible>
@@ -223,7 +223,7 @@
                     <posy>390</posy>
                     <width>300</width>
                     <height>300</height>
-                    <texture>OSD/rewind.png</texture>
+                    <texture>$VAR[Theme.Color]/OSD/rewind.png</texture>
                 </control>
                 <control type="image">
                     <visible>player.forwarding + !Skin.HasSetting(DisablePauseIconOSD)</visible>
@@ -231,7 +231,7 @@
                     <posy>390</posy>
                     <width>300</width>
                     <height>300</height>
-                    <texture>OSD/fastforward.png</texture>
+                    <texture>$VAR[Theme.Color]/OSD/fastforward.png</texture>
                 </control>
             </control>
         </control>

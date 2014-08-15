@@ -7,30 +7,19 @@
         <control type="group">
             <include>OpenClose</include>
             <posy>-173</posy>
-            <control type="button">
-
-                <posx>1637</posx>
-                <posy>240</posy>
-                <height>50</height>
-                <width>50</width>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
-                <onclick>back</onclick>
-                <label>-</label>
-            </control>
             <control type="image">
                 <posx>233</posx>
                 <posy>244</posy>
                 <width>1454</width>
                 <height>939</height>
-                <texture border="90">common/bg_dialog.png</texture>
+                <texture border="90">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <posx>278</posx>
                 <posy>319</posy>
                 <width>1364</width>
                 <height>79</height>
-                <texture>list/bg_facade_nofocus_top.png</texture>
+                <texture>$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
             </control>
             <!-- ** Required ** Do not change <id>or<type>-->
             <control type="group">
@@ -41,7 +30,7 @@
                     <width>1274</width>
                     <align>center</align>
                     <font>InfoTitleFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                 </control>
                 <control type="label">
                     <posx>323</posx>
@@ -49,7 +38,7 @@
                     <width>1274</width>
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
-                    <textcolor>AlternateColor</textcolor>
+                    <include>TextColor_AlternateColor</include>
                     <label>$INFO[Player.Filename]</label>
                 </control>
             </control>
@@ -72,14 +61,14 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>931</width>
-                        <texture border="3">list/bg_facade_nofocus.png</texture>
+                        <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                     </control>
                     <control type="label">
                         <posx>25</posx>
                         <height>42</height>
                         <width>560</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -88,7 +77,7 @@
                         <height>28</height>
                         <width>876</width>
                         <font>FacadeListSubFont</font>
-                        <textcolor>SublistNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                     <control type="image">
@@ -97,7 +86,7 @@
                         <width>36</width>
                         <height>36</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>badges/subtitle_sync.png</texture>
+                        <texture>$VAR[Theme.Color]/badges/subtitle_sync.png</texture>
                         <visible>ListItem.property(sync)</visible>
                     </control>
                     <control type="image">
@@ -106,7 +95,7 @@
                         <width>36</width>
                         <height>36</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>badges/subtitle_cc.png</texture>
+                        <texture>$VAR[Theme.Color]/badges/subtitle_cc.png</texture>
                         <visible>ListItem.property(hearing_imp)</visible>
                     </control>
                     <control type="image">
@@ -114,7 +103,7 @@
                         <posy>3</posy>
                         <width>180</width>
                         <height>36</height>
-                        <texture>badges/rating$INFO[ListItem.ActualIcon].png</texture>
+                        <texture>$VAR[Theme.Color]/badges/rating$INFO[ListItem.ActualIcon].png</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="73" width="931">
@@ -123,14 +112,14 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>931</width>
-                        <include>FacadeFocus</include>
+                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="label">
                         <posx>25</posx>
                         <height>42</height>
                         <width>560</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -139,7 +128,7 @@
                         <height>28</height>
                         <width>876</width>
                         <font>FacadeListSubFont</font>
-                        <textcolor>SublistFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                     <control type="image">
@@ -148,7 +137,7 @@
                         <width>36</width>
                         <height>36</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>badges/subtitle_sync.png</texture>
+                        <texture>$VAR[Theme.Color]/badges/subtitle_sync.png</texture>
                         <visible>ListItem.property(sync)</visible>
                     </control>
                     <control type="image">
@@ -157,7 +146,7 @@
                         <width>36</width>
                         <height>36</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>badges/subtitle_cc.png</texture>
+                        <texture>$VAR[Theme.Color]/badges/subtitle_cc.png</texture>
                         <visible>ListItem.property(hearing_imp)</visible>
                     </control>
                     <control type="image">
@@ -165,7 +154,7 @@
                         <posy>3</posy>
                         <width>180</width>
                         <height>36</height>
-                        <texture>badges/rating$INFO[ListItem.ActualIcon].png</texture>
+                        <texture>$VAR[Theme.Color]/badges/rating$INFO[ListItem.ActualIcon].png</texture>
                     </control>
                 </focusedlayout>
             </control>
@@ -185,14 +174,14 @@
                     <posy>382</posy>
                     <width>2</width>
                     <height>735</height>
-                    <texture>list/bg_facade_vertical.png</texture>
+                    <texture>$VAR[Theme.Color]/list/bg_facade_vertical.png</texture>
                 </control>
                 <control type="image">
                     <posx>1209</posx>
                     <posy>382</posy>
                     <height>735</height>
                     <width>375</width>
-                    <texture flipx="true">list/bg_strip_horizontal_left.png</texture>
+                    <texture flipx="true">$VAR[Theme.Color]/list/bg_strip_horizontal_left.png</texture>
                     <colordiffuse>90ffffff</colordiffuse>
                 </control>
                 <control type="image">
@@ -200,7 +189,7 @@
                     <posy>376</posy>
                     <width>433</width>
                     <height>79</height>
-                    <texture>list/bg_facade_nofocus_top.png</texture>
+                    <texture>$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="label">
                     <posx>1234</posx>
@@ -210,7 +199,7 @@
                     <label>$LOCALIZE[24018]</label>
                     <font>LeftMenuTitleFont</font>
                     <align>left</align>
-                    <textcolor>AlternateColor</textcolor>
+                    <include>TextColor_AlternateColor</include>
                 </control>
                 <control type="list" id="150">
                     <posx>1209</posx>
@@ -229,14 +218,14 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>433</width>
-                            <texture border="3">list/bg_facade_nofocus.png</texture>
+                            <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                         </control>
                         <control type="label">
                             <posx>25</posx>
                             <height>71</height>
                             <width>383</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </itemlayout>
@@ -246,14 +235,14 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>433</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
                             <posx>25</posx>
                             <height>71</height>
                             <width>383</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListFocusColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </focusedlayout>
@@ -271,7 +260,7 @@
                     <posy>745</posy>
                     <width>433</width>
                     <height>8</height>
-                    <texture>list/bg_facade_separator.png</texture>
+                    <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                 </control>
                 <control type="button" id="160">
                     <description>Manual search button</description>
@@ -315,7 +304,7 @@
                     <control type="label" id="130">
                         <width>370</width>
                         <height>60</height>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>31357</label>
                         <font>NotificationFont</font>
                         <align>center</align>

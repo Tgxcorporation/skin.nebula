@@ -12,7 +12,7 @@
                 <posy>0</posy>
                 <width>1950</width>
                 <height>54</height>
-                <texture flipy="true" border="3">OSD/osd_progress_background.png</texture>
+                <texture flipy="true" border="3">$VAR[Theme.Color]/OSD/osd_progress_background.png</texture>
             </control>
             <control type="label">
                 <posx>20</posx>
@@ -41,7 +41,7 @@
                 <posy>9</posy>
                 <width>36</width>
                 <height>36</height>
-                <texture border="3">common/time.png</texture>
+                <texture border="3">$VAR[Theme.Color]/common/time.png</texture>
             </control>
         </control>
         <control type="group">
@@ -52,7 +52,7 @@
                 <posy>1026</posy>
                 <width>1950</width>
                 <height>54</height>
-                <texture border="3">OSD/osd_progress_background.png</texture>
+                <texture border="3">$VAR[Theme.Color]/OSD/osd_progress_background.png</texture>
             </control>
             <control type="progress">
                 <posx>0</posx>
@@ -60,7 +60,7 @@
                 <width>1920</width>
                 <height>54</height>
                 <texturebg>-</texturebg>
-                <midtexture border="3">OSD/osd_progress_mid54_green.png</midtexture>
+                <midtexture border="3">$VAR[Theme.Color]/OSD/osd_progress_mid54_green.png</midtexture>
                 <info>Player.CacheLevel</info>
                 <visible>Player.Caching</visible>
             </control>
@@ -70,7 +70,7 @@
                 <width>1920</width>
                 <height>54</height>
                 <texturebg>-</texturebg>
-                <midtexture border="3">OSD/osd_progress_mid54.png</midtexture>
+                <midtexture border="3">$VAR[Theme.Color]/OSD/osd_progress_mid54.png</midtexture>
                 <info>Player.Progress</info>
                 <visible>true</visible>
             </control>
@@ -144,7 +144,7 @@
                 <posy>2</posy>
                 <width>50</width>
                 <height>50</height>
-                <texture>topbar/topbar_rewind_focus.png</texture>
+                <texture>$VAR[Theme.Color]/topbar/topbar_rewind_focus.png</texture>
             </control>
             <control type="image">
                 <visible>player.forwarding</visible>
@@ -152,7 +152,7 @@
                 <posy>2</posy>
                 <width>50</width>
                 <height>50</height>
-                <texture>topbar/topbar_fastforward_focus.png</texture>
+                <texture>$VAR[Theme.Color]/topbar/topbar_fastforward_focus.png</texture>
             </control>
         </control>
         <control type="group">
@@ -164,7 +164,7 @@
                 <posy>390</posy>
                 <width>300</width>
                 <height>300</height>
-                <texture>OSD/pause.png</texture>
+                <texture>$VAR[Theme.Color]/OSD/pause.png</texture>
             </control>
             <control type="image">
                 <visible>player.rewinding + !Skin.HasSetting(DisablePauseIconOSD)</visible>
@@ -172,7 +172,7 @@
                 <posy>390</posy>
                 <width>300</width>
                 <height>300</height>
-                <texture>OSD/rewind.png</texture>
+                <texture>$VAR[Theme.Color]/OSD/rewind.png</texture>
             </control>
             <control type="image">
                 <visible>player.forwarding + !Skin.HasSetting(DisablePauseIconOSD)</visible>
@@ -180,7 +180,7 @@
                 <posy>390</posy>
                 <width>300</width>
                 <height>300</height>
-                <texture>OSD/fastforward.png</texture>
+                <texture>$VAR[Theme.Color]/OSD/fastforward.png</texture>
             </control>
         </control>
     </controls>

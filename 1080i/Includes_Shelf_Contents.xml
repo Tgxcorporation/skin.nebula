@@ -31,7 +31,7 @@
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(111).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(111).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -54,7 +54,7 @@
                         <width>1800</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(111).ListItem.Label]</label>
                     </control>
@@ -93,7 +93,7 @@
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(211).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(211).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -116,7 +116,7 @@
                         <width>1800</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(211).ListItem.Label]</label>
                     </control>
@@ -155,7 +155,7 @@
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(311).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(311).ListItem.thumb]</texture>
                     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -183,13 +183,13 @@
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(311).ListItem.Property(VideoResolution),badges/video/,.png]</texture>
+                        <texture>$INFO[Container(311).ListItem.Property(VideoResolution),$VAR[Theme.Color]/badges/video/,.png]</texture>
                     </control>
                     <control type="image">
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(311).ListItem.Property(VideoCodec),badges/video/,.png]</texture>
+                        <texture>$INFO[Container(311).ListItem.Property(VideoCodec),$VAR[Theme.Color]/badges/video/,.png]</texture>
                     </control>
                 </control>
                 <control type="grouplist">
@@ -205,13 +205,13 @@
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(311).ListItem.Property(AudioChannels),badges/audio/,.png]</texture>
+                        <texture>$INFO[Container(311).ListItem.Property(AudioChannels),$VAR[Theme.Color]/badges/audio/,.png]</texture>
                     </control>
                     <control type="image">
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(311).ListItem.Property(AudioCodec),badges/audio/,.png]</texture>
+                        <texture>$INFO[Container(311).ListItem.Property(AudioCodec),$VAR[Theme.Color]/badges/audio/,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -223,7 +223,7 @@
                         <width>1260</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(311).ListItem.Label]</label>
                     </control>
@@ -233,7 +233,7 @@
                         <posy>70</posy>
                         <width>1380</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="image">
@@ -242,7 +242,7 @@
                             <height>37</height>
                             <width>185</width>
                             <aspectratio align="left">keep</aspectratio>
-                            <texture>badges/rating.png</texture>
+                            <texture>$VAR[Theme.Color]/badges/rating.png</texture>
                         </control>
                         <control type="label">
                             <posx>112</posx>
@@ -250,7 +250,7 @@
                             <width>460</width>
                             <height>71</height>
                             <font>InfoRatingFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(311).ListItem.Property(Rating)]</label>
                         </control>
@@ -260,7 +260,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(311).ListItem.Property(Year),,     ]$INFO[Container(311).ListItem.Property(Runtime),, $LOCALIZE[31297]]$INFO[Container(311).ListItem.Property(Mpaa),     ]</label>
                         </control>
@@ -270,7 +270,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(311).ListItem.Property(Genre)]</label>
                         </control>
@@ -281,7 +281,7 @@
                         <width>600</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(311).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -320,7 +320,7 @@
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(312).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(312).ListItem.thumb]</texture>
                     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -348,13 +348,13 @@
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(312).ListItem.Property(VideoResolution),badges/video/,.png]</texture>
+                        <texture>$INFO[Container(312).ListItem.Property(VideoResolution),$VAR[Theme.Color]/badges/video/,.png]</texture>
                     </control>
                     <control type="image">
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(312).ListItem.Property(VideoCodec),badges/video/,.png]</texture>
+                        <texture>$INFO[Container(312).ListItem.Property(VideoCodec),$VAR[Theme.Color]/badges/video/,.png]</texture>
                     </control>
                 </control>
                 <control type="grouplist">
@@ -370,13 +370,13 @@
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(312).ListItem.Property(AudioChannels),badges/audio/,.png]</texture>
+                        <texture>$INFO[Container(312).ListItem.Property(AudioChannels),$VAR[Theme.Color]/badges/audio/,.png]</texture>
                     </control>
                     <control type="image">
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(312).ListItem.Property(AudioCodec),badges/audio/,.png]</texture>
+                        <texture>$INFO[Container(312).ListItem.Property(AudioCodec),$VAR[Theme.Color]/badges/audio/,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -388,7 +388,7 @@
                         <width>1260</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(312).ListItem.Label]</label>
                     </control>
@@ -398,7 +398,7 @@
                         <posy>70</posy>
                         <width>1380</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="image">
@@ -407,7 +407,7 @@
                             <height>37</height>
                             <width>185</width>
                             <aspectratio align="left">keep</aspectratio>
-                            <texture>badges/rating.png</texture>
+                            <texture>$VAR[Theme.Color]/badges/rating.png</texture>
                         </control>
                         <control type="label">
                             <posx>112</posx>
@@ -415,7 +415,7 @@
                             <width>460</width>
                             <height>71</height>
                             <font>InfoRatingFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(312).ListItem.Property(Rating)]</label>
                         </control>
@@ -425,7 +425,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(312).ListItem.Property(Year),,     ]$INFO[Container(312).ListItem.Property(Runtime),, $LOCALIZE[31297]]$INFO[Container(312).ListItem.Property(Mpaa),     ]</label>
                         </control>
@@ -435,7 +435,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(312).ListItem.Property(Genre)]</label>
                         </control>
@@ -446,7 +446,7 @@
                         <width>600</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(312).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -485,7 +485,7 @@
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(313).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(313).ListItem.thumb]</texture>
                     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -513,13 +513,13 @@
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(313).ListItem.Property(VideoResolution),badges/video/,.png]</texture>
+                        <texture>$INFO[Container(313).ListItem.Property(VideoResolution),$VAR[Theme.Color]/badges/video/,.png]</texture>
                     </control>
                     <control type="image">
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(313).ListItem.Property(VideoCodec),badges/video/,.png]</texture>
+                        <texture>$INFO[Container(313).ListItem.Property(VideoCodec),$VAR[Theme.Color]/badges/video/,.png]</texture>
                     </control>
                 </control>
                 <control type="grouplist">
@@ -535,13 +535,13 @@
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(313).ListItem.Property(AudioChannels),badges/audio/,.png]</texture>
+                        <texture>$INFO[Container(313).ListItem.Property(AudioChannels),$VAR[Theme.Color]/badges/audio/,.png]</texture>
                     </control>
                     <control type="image">
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(313).ListItem.Property(AudioCodec),badges/audio/,.png]</texture>
+                        <texture>$INFO[Container(313).ListItem.Property(AudioCodec),$VAR[Theme.Color]/badges/audio/,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -553,7 +553,7 @@
                         <width>1260</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(313).ListItem.Label]</label>
                     </control>
@@ -563,7 +563,7 @@
                         <posy>70</posy>
                         <width>1380</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="image">
@@ -572,7 +572,7 @@
                             <height>37</height>
                             <width>185</width>
                             <aspectratio align="left">keep</aspectratio>
-                            <texture>badges/rating.png</texture>
+                            <texture>$VAR[Theme.Color]/badges/rating.png</texture>
                         </control>
                         <control type="label">
                             <posx>112</posx>
@@ -580,7 +580,7 @@
                             <width>460</width>
                             <height>71</height>
                             <font>InfoRatingFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(313).ListItem.Property(Rating)]</label>
                         </control>
@@ -590,7 +590,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(313).ListItem.Property(Year),,     ]$INFO[Container(313).ListItem.Property(Runtime),, $LOCALIZE[31397]]$INFO[Container(313).ListItem.Property(Mpaa),     ]</label>
                         </control>
@@ -600,7 +600,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(313).ListItem.Property(Genre)]</label>
                         </control>
@@ -611,7 +611,7 @@
                         <width>600</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(313).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -650,7 +650,7 @@
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(314).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(314).ListItem.thumb]</texture>
                     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -674,7 +674,7 @@
                         <width>1260</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(314).ListItem.Label]</label>
                     </control>
@@ -684,7 +684,7 @@
                         <posy>70</posy>
                         <width>1380</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="label">
@@ -693,7 +693,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(314).ListItem.Label2]</label>
                         </control>
@@ -703,7 +703,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(314).ListItem.Property(Year)]</label>
                         </control>
@@ -713,7 +713,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(314).ListItem.Property(Genre)]</label>
                         </control>
@@ -724,7 +724,7 @@
                         <width>600</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(314).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -763,7 +763,7 @@
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(315).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(315).ListItem.thumb]</texture>
                     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -787,7 +787,7 @@
                         <width>1260</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(315).ListItem.Label]</label>
                     </control>
@@ -797,7 +797,7 @@
                         <posy>70</posy>
                         <width>1380</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="label">
@@ -806,7 +806,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(315).ListItem.Label2]</label>
                         </control>
@@ -816,7 +816,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(315).ListItem.Property(Year)]</label>
                         </control>
@@ -826,7 +826,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(315).ListItem.Property(Genre)]</label>
                         </control>
@@ -837,7 +837,7 @@
                         <width>600</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(315).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -876,7 +876,7 @@
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(316).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(316).ListItem.thumb]</texture>
                     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -900,7 +900,7 @@
                         <width>1260</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(316).ListItem.Label]</label>
                     </control>
@@ -910,7 +910,7 @@
                         <posy>70</posy>
                         <width>1380</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="label">
@@ -919,7 +919,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(316).ListItem.Label2]</label>
                         </control>
@@ -929,7 +929,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(316).ListItem.Property(Year)]</label>
                         </control>
@@ -939,7 +939,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(316).ListItem.Property(Genre)]</label>
                         </control>
@@ -950,7 +950,7 @@
                         <width>600</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(316).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -989,7 +989,7 @@
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(411).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(411).ListItem.thumb]</texture>
                     <aspectratio>scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -1017,13 +1017,13 @@
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(411).ListItem.Property(VideoResolution),badges/video/,.png]</texture>
+                        <texture>$INFO[Container(411).ListItem.Property(VideoResolution),$VAR[Theme.Color]/badges/video/,.png]</texture>
                     </control>
                     <control type="image">
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(411).ListItem.Property(VideoCodec),badges/video/,.png]</texture>
+                        <texture>$INFO[Container(411).ListItem.Property(VideoCodec),$VAR[Theme.Color]/badges/video/,.png]</texture>
                     </control>
                 </control>
                 <control type="grouplist">
@@ -1039,13 +1039,13 @@
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(411).ListItem.Property(AudioChannels),badges/audio/,.png]</texture>
+                        <texture>$INFO[Container(411).ListItem.Property(AudioChannels),$VAR[Theme.Color]/badges/audio/,.png]</texture>
                     </control>
                     <control type="image">
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(411).ListItem.Property(AudioCodec),badges/audio/,.png]</texture>
+                        <texture>$INFO[Container(411).ListItem.Property(AudioCodec),$VAR[Theme.Color]/badges/audio/,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -1057,7 +1057,7 @@
                         <width>1260</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(411).ListItem.Label]</label>
                     </control>
@@ -1067,7 +1067,7 @@
                         <posy>70</posy>
                         <width>1380</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="image">
@@ -1076,7 +1076,7 @@
                             <height>37</height>
                             <width>185</width>
                             <aspectratio align="left">keep</aspectratio>
-                            <texture>badges/rating.png</texture>
+                            <texture>$VAR[Theme.Color]/badges/rating.png</texture>
                         </control>
                         <control type="label">
                             <posx>112</posx>
@@ -1084,7 +1084,7 @@
                             <width>460</width>
                             <height>71</height>
                             <font>InfoRatingFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(411).ListItem.Property(Rating)]</label>
                         </control>
@@ -1094,7 +1094,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(411).ListItem.Property(Runtime),, $LOCALIZE[31297]]</label>
                         </control>
@@ -1104,7 +1104,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(411).ListItem.Property(TVshowTitle)]     $INFO[Container(411).ListItem.Property(SeasonEpisode)]</label>
                         </control>
@@ -1115,7 +1115,7 @@
                         <width>600</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(411).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -1154,7 +1154,7 @@
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(412).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(412).ListItem.thumb]</texture>
                     <aspectratio>scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -1182,13 +1182,13 @@
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(412).ListItem.Property(VideoResolution),badges/video/,.png]</texture>
+                        <texture>$INFO[Container(412).ListItem.Property(VideoResolution),$VAR[Theme.Color]/badges/video/,.png]</texture>
                     </control>
                     <control type="image">
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(412).ListItem.Property(VideoCodec),badges/video/,.png]</texture>
+                        <texture>$INFO[Container(412).ListItem.Property(VideoCodec),$VAR[Theme.Color]/badges/video/,.png]</texture>
                     </control>
                 </control>
                 <control type="grouplist">
@@ -1204,13 +1204,13 @@
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(412).ListItem.Property(AudioChannels),badges/audio/,.png]</texture>
+                        <texture>$INFO[Container(412).ListItem.Property(AudioChannels),$VAR[Theme.Color]/badges/audio/,.png]</texture>
                     </control>
                     <control type="image">
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(412).ListItem.Property(AudioCodec),badges/audio/,.png]</texture>
+                        <texture>$INFO[Container(412).ListItem.Property(AudioCodec),$VAR[Theme.Color]/badges/audio/,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -1222,7 +1222,7 @@
                         <width>1260</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(412).ListItem.Label]</label>
                     </control>
@@ -1232,7 +1232,7 @@
                         <posy>70</posy>
                         <width>1380</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="image">
@@ -1241,7 +1241,7 @@
                             <height>37</height>
                             <width>185</width>
                             <aspectratio align="left">keep</aspectratio>
-                            <texture>badges/rating.png</texture>
+                            <texture>$VAR[Theme.Color]/badges/rating.png</texture>
                         </control>
                         <control type="label">
                             <posx>112</posx>
@@ -1249,7 +1249,7 @@
                             <width>460</width>
                             <height>71</height>
                             <font>InfoRatingFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(412).ListItem.Property(Rating)]</label>
                         </control>
@@ -1259,7 +1259,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(412).ListItem.Property(Runtime),, $LOCALIZE[31297]]</label>
                         </control>
@@ -1269,7 +1269,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(412).ListItem.Property(TVshowTitle)]     $INFO[Container(412).ListItem.Property(SeasonEpisode)]</label>
                         </control>
@@ -1280,7 +1280,7 @@
                         <width>600</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(412).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -1319,7 +1319,7 @@
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(413).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(413).ListItem.thumb]</texture>
                     <aspectratio>scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -1347,13 +1347,13 @@
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(413).ListItem.Property(VideoResolution),badges/video/,.png]</texture>
+                        <texture>$INFO[Container(413).ListItem.Property(VideoResolution),$VAR[Theme.Color]/badges/video/,.png]</texture>
                     </control>
                     <control type="image">
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(413).ListItem.Property(VideoCodec),badges/video/,.png]</texture>
+                        <texture>$INFO[Container(413).ListItem.Property(VideoCodec),$VAR[Theme.Color]/badges/video/,.png]</texture>
                     </control>
                 </control>
                 <control type="grouplist">
@@ -1369,13 +1369,13 @@
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(413).ListItem.Property(AudioChannels),badges/audio/,.png]</texture>
+                        <texture>$INFO[Container(413).ListItem.Property(AudioChannels),$VAR[Theme.Color]/badges/audio/,.png]</texture>
                     </control>
                     <control type="image">
                         <width>120</width>
                         <height>80</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Container(413).ListItem.Property(AudioCodec),badges/audio/,.png]</texture>
+                        <texture>$INFO[Container(413).ListItem.Property(AudioCodec),$VAR[Theme.Color]/badges/audio/,.png]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -1387,7 +1387,7 @@
                         <width>1260</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(413).ListItem.Label]</label>
                     </control>
@@ -1397,7 +1397,7 @@
                         <posy>70</posy>
                         <width>1380</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="image">
@@ -1406,7 +1406,7 @@
                             <height>37</height>
                             <width>185</width>
                             <aspectratio align="left">keep</aspectratio>
-                            <texture>badges/rating.png</texture>
+                            <texture>$VAR[Theme.Color]/badges/rating.png</texture>
                         </control>
                         <control type="label">
                             <posx>112</posx>
@@ -1414,7 +1414,7 @@
                             <width>460</width>
                             <height>71</height>
                             <font>InfoRatingFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(413).ListItem.Property(Rating)]</label>
                         </control>
@@ -1424,7 +1424,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(413).ListItem.Property(Runtime),, $LOCALIZE[31297]]</label>
                         </control>
@@ -1434,7 +1434,7 @@
                             <width>600</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(413).ListItem.Property(TVshowTitle)]     $INFO[Container(413).ListItem.Property(SeasonEpisode)]</label>
                         </control>
@@ -1445,7 +1445,7 @@
                         <width>600</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(413).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -1485,7 +1485,7 @@
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(511).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(511).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -1508,7 +1508,7 @@
                         <width>1800</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(511).ListItem.Label]</label>
                     </control>
@@ -1518,7 +1518,7 @@
                         <posy>70</posy>
                         <width>1920</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="label">
@@ -1527,7 +1527,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(511).ListItem.Label2]</label>
                         </control>
@@ -1537,7 +1537,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(511).ListItem.Property(Year)]</label>
                         </control>
@@ -1547,7 +1547,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(511).ListItem.Property(Genre)]</label>
                         </control>
@@ -1558,7 +1558,7 @@
                         <width>870</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(511).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -1598,7 +1598,7 @@
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(512).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(512).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -1621,7 +1621,7 @@
                         <width>1800</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(512).ListItem.Label]</label>
                     </control>
@@ -1631,7 +1631,7 @@
                         <posy>70</posy>
                         <width>1920</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="label">
@@ -1640,7 +1640,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(512).ListItem.Label2]</label>
                         </control>
@@ -1650,7 +1650,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(512).ListItem.Property(Year)]</label>
                         </control>
@@ -1660,7 +1660,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(512).ListItem.Property(Genre)]</label>
                         </control>
@@ -1671,7 +1671,7 @@
                         <width>870</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(512).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -1711,7 +1711,7 @@
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(513).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(513).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -1734,7 +1734,7 @@
                         <width>1800</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(513).ListItem.Label]</label>
                     </control>
@@ -1744,7 +1744,7 @@
                         <posy>70</posy>
                         <width>1920</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="label">
@@ -1753,7 +1753,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(513).ListItem.Label2]</label>
                         </control>
@@ -1763,7 +1763,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(513).ListItem.Property(Year)]</label>
                         </control>
@@ -1773,7 +1773,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(513).ListItem.Property(Genre)]</label>
                         </control>
@@ -1784,7 +1784,7 @@
                         <width>870</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(513).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -1824,7 +1824,7 @@
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(514).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(514).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -1847,7 +1847,7 @@
                         <width>1800</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(514).ListItem.Label]</label>
                     </control>
@@ -1857,7 +1857,7 @@
                         <posy>70</posy>
                         <width>1920</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="label">
@@ -1866,7 +1866,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(514).ListItem.Label2]</label>
                         </control>
@@ -1876,7 +1876,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(514).ListItem.Property(Year)]</label>
                         </control>
@@ -1886,7 +1886,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(514).ListItem.Property(Genre)]</label>
                         </control>
@@ -1897,7 +1897,7 @@
                         <width>870</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(514).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -1937,7 +1937,7 @@
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(515).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(515).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -1960,7 +1960,7 @@
                         <width>1800</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(515).ListItem.Label]</label>
                     </control>
@@ -1970,7 +1970,7 @@
                         <posy>70</posy>
                         <width>1920</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="label">
@@ -1979,7 +1979,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(515).ListItem.Label2]</label>
                         </control>
@@ -1989,7 +1989,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(515).ListItem.Property(Year)]</label>
                         </control>
@@ -1999,7 +1999,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(515).ListItem.Property(Genre)]</label>
                         </control>
@@ -2010,7 +2010,7 @@
                         <width>870</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(515).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -2050,7 +2050,7 @@
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="common/BlackDotT.png">$INFO[Container(516).ListItem.thumb]</texture>
+                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(516).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -2073,7 +2073,7 @@
                         <width>1800</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[Container(516).ListItem.Label]</label>
                     </control>
@@ -2083,7 +2083,7 @@
                         <posy>70</posy>
                         <width>1920</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <control type="label">
@@ -2092,7 +2092,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[Container(516).ListItem.Label2]</label>
                         </control>
@@ -2102,7 +2102,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(516).ListItem.Property(Year)]</label>
                         </control>
@@ -2112,7 +2112,7 @@
                             <width>870</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$INFO[Container(516).ListItem.Property(Genre)]</label>
                         </control>
@@ -2123,7 +2123,7 @@
                         <width>870</width>
                         <height>210</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(516).ListItem.Property(Plot)]</label>
                         <include>myautoscroll</include>
                     </control>

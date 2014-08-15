@@ -14,14 +14,14 @@
                 <posy>150</posy>
                 <width>2930</width>
                 <height>876</height>
-                <texture border="150,40,150,40">common/bg_dialog.png</texture>
+                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <posx>100</posx>
                 <posy>142</posy>
                 <width>1720</width>
                 <height>217</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="label">
                 <posx>TextMargin</posx>
@@ -30,7 +30,7 @@
                 <height>105</height>
                 <align>center</align>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$LOCALIZE[10517]</label>
             </control>
             <control type="label" id="12">&gt;
@@ -40,7 +40,7 @@
                 <height>35</height>
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[Container(50).NumItems,, $LOCALIZE[31025]]</label>
             </control>
             <control type="group">
@@ -51,7 +51,7 @@
                     <posy>626</posy>
                     <width>424</width>
                     <height>424</height>
-                    <texture diffuse="common/cdart_diffuse.png">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</texture>
+                    <texture diffuse="$VAR[Theme.Color]/common/cdart_diffuse.png">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</texture>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <include>Animation_ViewsCDart</include>
                 </control>
@@ -79,7 +79,7 @@
                         <height>75</height>
                         <width>1280</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label2,,  -  ]$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
@@ -89,14 +89,14 @@
                         <posy>0</posy>
                         <height>75</height>
                         <width>1340</width>
-                        <include>FacadeFocus</include>
+                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="label">
                         <posx>0</posx>
                         <height>75</height>
                         <width>1280</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.Label2,,  -  ]$INFO[ListItem.Label]</label>
                     </control>
                 </focusedlayout>

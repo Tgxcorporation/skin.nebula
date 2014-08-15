@@ -2,7 +2,6 @@
 <window type="dialog" id="3000">
     <!-- <zorder>3</zorder> -->
     <defaultcontrol always="true">9000</defaultcontrol>
-    <include>DialogOpenClose</include>
     <controls>
         <control type="list" id="50">
             <description>container actor properties</description>
@@ -30,14 +29,14 @@
                 <posy>150</posy>
                 <width>2930</width>
                 <height>876</height>
-                <texture border="150,40,150,40">common/bg_dialog.png</texture>
+                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <posx>100</posx>
                 <posy>142</posy>
                 <width>1720</width>
                 <height>217</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="label">
                 <posx>TextMargin</posx>
@@ -46,7 +45,7 @@
                 <height>135</height>
                 <align>center</align>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <!-- default group -->
@@ -72,7 +71,7 @@
                         <posy>363</posy>
                         <width>300</width>
                         <height>300</height>
-                        <texture>defaultPictureBig.png</texture>
+                        <texture>$VAR[Theme.Color]/defaultPictureBig.png</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
@@ -94,7 +93,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
+                    <texture fallback="$VAR[Theme.Color]/defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -170,7 +169,7 @@
                     <posy>645</posy>
                     <width>1420</width>
                     <height>1</height>
-                    <texture>list/bg_facade_separator.png</texture>
+                    <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                 </control>
                 <control type="textbox" id="400">
                     <posx>560</posx>
@@ -202,7 +201,7 @@
                     <width>494</width>
                     <height>685</height>
                     <aspectratio aligny="top">keep</aspectratio>
-                    <texture fallback="DefaultVideoBig.png">$INFO[Container(150).Listitem.Icon]</texture>
+                    <texture fallback="$VAR[Theme.Color]/defaultVideoBig.png">$INFO[Container(150).Listitem.Icon]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="list" id="150">
@@ -223,7 +222,7 @@
                             <aligny>top</aligny>
                             <width>1300</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -232,7 +231,7 @@
                             <aligny>top</aligny>
                             <width>1300</width>
                             <font>FacadeListSubFont</font>
-                            <textcolor>SublistNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Year]$INFO[ListItem.Property(releasedate),     ]$INFO[ListItem.Property(role),     $LOCALIZE[20347] ]$INFO[ListItem.Property(job),     ]</label>
                         </control>
                         <control type="image">
@@ -260,7 +259,7 @@
                             <posy>0</posy>
                             <height>135</height>
                             <width>1420</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -268,7 +267,7 @@
                             <aligny>top</aligny>
                             <width>1300</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListFocusColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -277,7 +276,7 @@
                             <aligny>top</aligny>
                             <width>1300</width>
                             <font>FacadeListSubFont</font>
-                            <textcolor>SublistFocusColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Year]$INFO[ListItem.Property(releasedate),     ]$INFO[ListItem.Property(role),     $LOCALIZE[20347] ]$INFO[ListItem.Property(job),     ]</label>
                         </control>
                         <control type="image">
@@ -334,7 +333,7 @@
                             <posy>120</posy>
                             <width>295</width>
                             <height>396</height>
-                            <texture fallback="defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
+                            <texture fallback="$VAR[Theme.Color]/defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
                             <include>ThumbBorder</include>
                         </control>
                     </itemlayout>
@@ -356,7 +355,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="defaultArtistBig.png">$INFO[Container(250).ListItem.Icon]</texture>
+                    <texture fallback="$VAR[Theme.Color]/defaultArtistBig.png">$INFO[Container(250).ListItem.Icon]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio>keep</aspectratio>
                 </control>

@@ -30,7 +30,7 @@
             <width>1920</width>
             <height>1080</height>
             <colordiffuse>ccffffff</colordiffuse>
-            <include>OverlayBG</include>
+            <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
         </control>
         <control type="group">
             <posy>90</posy>
@@ -40,7 +40,7 @@
                 <posy>294</posy>
                 <width>461</width>
                 <height>411</height>
-                <texture>startup.png</texture>
+                <texture>$VAR[Theme.Color]/startup.png</texture>
             </control>
             <control type="label">
                 <posx>55r</posx>
@@ -49,7 +49,7 @@
                 <width>1173</width>
                 <align>right</align>
                 <font>WindowTitleSubFont</font>
-                <textcolor>AlternateColor</textcolor>
+                <include>TextColor_AlternateColor</include>
                 <label>by Tgx</label>
             </control>
         </control>

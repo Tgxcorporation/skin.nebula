@@ -7,10 +7,10 @@
         <align>left</align>
         <aligny>center</aligny>
         <font>InfoDetailsFont</font>
-        <textcolor>MainColor</textcolor>
-        <focusedcolor>MainColor</focusedcolor>
-        <selectedcolor>SelectedColor</selectedcolor>
-        <disabledcolor>DisabledColor</disabledcolor>
+        <include>TextColor_MainColor</include>
+        <include>FocusedColor_MainColor</include>
+        <include>SelectedColor_SelectedColor</include>
+        <include>DisabledColor_DisabledColor</include>
         <scroll>false</scroll>
         <scrollspeed>50</scrollspeed>
         <scrollsuffix>     </scrollsuffix>
@@ -23,10 +23,10 @@
         <aligny>center</aligny>
         <font>InfoDetailsFont</font>
         <textoffsetx>0</textoffsetx>
-        <textcolor>MainColor</textcolor>
-        <focusedcolor>MainColor</focusedcolor>
-        <selectedcolor>SelectedColor</selectedcolor>
-        <disabledcolor>DisabledColor</disabledcolor>
+        <include>TextColor_MainColor</include>
+        <include>FocusedColor_MainColor</include>
+        <include>SelectedColor_SelectedColor</include>
+        <include>DisabledColor_DisabledColor</include>
         <scrollout>false</scrollout>
         <pauseatend>3000</pauseatend>
         <scrollsuffix>     </scrollsuffix>
@@ -34,10 +34,10 @@
     <default type="textbox">
         <align>left</align>
         <font>InfoPlotFont</font>
-        <textcolor>MainColor</textcolor>
-        <focusedcolor>MainColor</focusedcolor>
-        <selectedcolor>SelectedColor</selectedcolor>
-        <disabledcolor>DisabledColor</disabledcolor>
+        <include>TextColor_MainColor</include>
+        <include>FocusedColor_MainColor</include>
+        <include>SelectedColor_SelectedColor</include>
+        <include>DisabledColor_DisabledColor</include>
         <pagecontrol>61</pagecontrol>
         <pulseonselect>false</pulseonselect>
         <autoscroll delay="5000" time="2500" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -56,12 +56,12 @@
         <aligny>center</aligny>
         <font>ButtonFont</font>
         <textoffsetx>0</textoffsetx>
-        <textcolor>AlternateColor</textcolor>
-        <focusedcolor>MainColor</focusedcolor>
-        <selectedcolor>SelectedColor</selectedcolor>
-        <disabledcolor>DisabledColor</disabledcolor>
-        <include>ButtonTextureFocus</include>
-        <!-- <texturenofocus>buttons/bg_button_nofocus.png</texturenofocus> -->
+        <include>TextColor_AlternateColor</include>
+        <include>FocusedColor_MainColor</include>
+        <include>SelectedColor_SelectedColor</include>
+        <include>DisabledColor_DisabledColor</include>
+        <include>TextureFocus</include>
+        <texturenofocus>-</texturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="edit">
@@ -73,12 +73,12 @@
         <aligny>center</aligny>
         <font>size22</font>
         <textoffsetx>20</textoffsetx>
-        <textcolor>AlternateColor</textcolor>
-        <focusedcolor>MainColor</focusedcolor>
-        <selectedcolor>SelectedColor</selectedcolor>
-        <disabledcolor>DisabledColor</disabledcolor>
+        <include>TextColor_AlternateColor</include>
+        <include>FocusedColor_MainColor</include>
+        <include>SelectedColor_SelectedColor</include>
+        <include>DisabledColor_DisabledColor</include>
         <include>TextureFocus</include>
-        <!-- <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus> -->
+        <texturenofocus>-</texturenofocus>
     </default>
     <default type="togglebutton">
         <posx>0</posx>
@@ -89,15 +89,15 @@
         <aligny>center</aligny>
         <font>ButtonFont</font>
         <textoffsetx>20</textoffsetx>
-        <textcolor>AlternateColor</textcolor>
-        <focusedcolor>MainColor</focusedcolor>
-        <selectedcolor>MainColor</selectedcolor>
-        <altselectedcolor>SelectedColor</altselectedcolor>
-        <disabledcolor>DisabledColor</disabledcolor>
+        <include>TextColor_AlternateColor</include>
+        <include>FocusedColor_MainColor</include>
+        <include>SelectedColor_MainColor</include>
+        <include>AltSelectedColor_MainColor</include>
+        <include>DisabledColor_DisabledColor</include>
         <include>TextureFocus</include>
-        <!-- <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus> -->
+        <texturenofocus>-</texturenofocus>
         <include>AltTextureFocus</include>
-        <!-- <alttexturenofocus border="4">list/bg_facade_nofocus.png</alttexturenofocus> -->
+        <alttexturenofocus>-</alttexturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="radiobutton">
@@ -107,17 +107,17 @@
         <align>left</align>
         <aligny>center</aligny>
         <font>ButtonFont</font>
-        <textcolor>AlternateColor</textcolor>
-        <focusedcolor>MainColor</focusedcolor>
-        <selectedcolor>MainColor</selectedcolor>
-        <disabledcolor>DisabledColor</disabledcolor>
+        <include>TextColor_AlternateColor</include>
+        <include>FocusedColor_MainColor</include>
+        <include>SelectedColor_MainColor</include>
+        <include>DisabledColor_DisabledColor</include>
         <radioposx>546</radioposx>
         <radiowidth>54</radiowidth>
         <radioheight>33</radioheight>
         <include>TextureFocus</include>
-        <!-- <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus> -->
-        <textureradiofocus>buttons/RadioOn.png</textureradiofocus>
-        <textureradionofocus>buttons/RadioOff.png</textureradionofocus>
+        <texturenofocus>-</texturenofocus>
+        <include>TextureRadioFocus</include>
+        <include>TextureRadioNoFocus</include>
         <textoffsetx>20</textoffsetx>
         <pulseonselect>false</pulseonselect>
     </default>
@@ -125,19 +125,19 @@
         <posx>0</posx>
         <posy>0</posy>
         <height>60</height>
-        <textureup>buttons/SpinUpNF.png</textureup>
-        <textureupfocus>buttons/SpinUpFO.png</textureupfocus>
-        <texturedown>buttons/SpinDownNF.png</texturedown>
-        <texturedownfocus>buttons/SpinDownFO.png</texturedownfocus>
+        <include>TextureUpFocus</include>
+        <include>TextureUpNoFocus</include>
+        <include>TextureDownFocus</include>
+        <include>TextureDownNoFocus</include>
         <include>TextureFocus</include>
-        <!-- <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus> -->
+        <texturenofocus>-</texturenofocus>
         <spinwidth>27</spinwidth>
         <spinheight>33</spinheight>
         <font>ButtonFont</font>
-        <textcolor>AlternateColor</textcolor>
-        <focusedcolor>MainColor</focusedcolor>
-        <selectedcolor>SelectedColor</selectedcolor>
-        <disabledcolor>DisabledColor</disabledcolor>
+        <include>TextColor_AlternateColor</include>
+        <include>FocusedColor_MainColor</include>
+        <include>SelectedColor_SelectedColor</include>
+        <include>DisabledColor_DisabledColor</include>
         <textoffsetx>20</textoffsetx>
         <align>left</align>
         <aligny>center</aligny>
@@ -150,18 +150,18 @@
         <posy>0</posy>
         <height>60</height>
         <font>ButtonFont</font>
-        <textureup>buttons/SpinUpNF.png</textureup>
-        <textureupfocus>buttons/SpinUpFO.png</textureupfocus>
-        <texturedown>buttons/SpinDownNF.png</texturedown>
-        <texturedownfocus>buttons/SpinDownFO.png</texturedownfocus>
+        <include>TextureUpFocus</include>
+        <include>TextureUpNoFocus</include>
+        <include>TextureDownFocus</include>
+        <include>TextureDownNoFocus</include>
         <include>TextureFocus</include>
-        <!-- <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus> -->
+        <texturenofocus>-</texturenofocus>
         <spinwidth>27</spinwidth>
         <spinheight>33</spinheight>
-        <textcolor>AlternateColor</textcolor>
-        <focusedcolor>MainColor</focusedcolor>
-        <selectedcolor>SelectedColor</selectedcolor>
-        <disabledcolor>DisabledColor</disabledcolor>
+        <include>TextColor_AlternateColor</include>
+        <include>FocusedColor_MainColor</include>
+        <include>SelectedColor_SelectedColor</include>
+        <include>DisabledColor_DisabledColor</include>
         <textoffsetx>20</textoffsetx>
         <align>left</align>
         <aligny>center</aligny>
@@ -175,10 +175,11 @@
         <height>33</height>
         <sliderwidth>200</sliderwidth>
         <sliderheight>33</sliderheight>
-        <texturesliderbar border="14">buttons/SliderBG.png</texturesliderbar>
-        <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
-        <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
+        <include>TextureSliderBar</include>
+        <include>TextureSliderNibNoFocus</include>
+        <include>TextureSliderNibFocus</include>
         <textoffsetx>20</textoffsetx>
+        <pulseonselect>false</pulseonselect>
     </default>
     <default type="sliderex">
         <align>left</align>
@@ -186,16 +187,17 @@
         <height>78</height>
         <sliderwidth>200</sliderwidth>
         <sliderheight>33</sliderheight>
-        <texturesliderbar>buttons/SliderBG.png</texturesliderbar>
-        <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
-        <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
+        <include>TextureSliderBar</include>
+        <include>TextureSliderNibNoFocus</include>
+        <include>TextureSliderNibFocus</include>
         <include>TextureFocus</include>
-        <!-- <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus> -->
+        <texturenofocus>-</texturenofocus>
         <font>ButtonFont</font>
-        <textcolor>AlternateColor</textcolor>
-        <focusedcolor>MainColor</focusedcolor>
-        <selectedcolor>SelectedColor</selectedcolor>
-        <disabledcolor>DisabledColor</disabledcolor>
+        <include>TextColor_AlternateColor</include>
+        <include>FocusedColor_MainColor</include>
+        <include>SelectedColor_SelectedColor</include>
+        <include>DisabledColor_DisabledColor</include>
+        <pulseonselect>false</pulseonselect>
         <textoffsetx>20</textoffsetx>
     </default>
     <default type="scrollbar">
@@ -203,28 +205,28 @@
         <posy>0</posy>
         <width>42</width>
         <orientation>vertical</orientation>
-        <texturesliderbackground>-</texturesliderbackground>
-        <texturesliderbar>-</texturesliderbar>
-        <texturesliderbarfocus>-</texturesliderbarfocus>
-        <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-        <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
+        <include>VerticalTextureSliderBackground</include>
+        <include>VerticalTextureSliderBarFocus</include>
+        <include>VerticalTextureSliderBarNoFocus</include>
+        <!-- <textureslidernib border="18">$VAR[Theme.Color]/buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
+        <textureslidernibfocus border="18">$VAR[Theme.Color]/buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus> -->
         <pulseonselect>false</pulseonselect>
         <showonepage>false</showonepage>
     </default>
     <default type="list">
-        <scrolltime>0</scrolltime>
-        <!-- <scrolltime tween="cubic" easing="out">500</scrolltime> -->
+        <!-- <scrolltime>0</scrolltime> -->
+        <scrolltime tween="cubic" easing="out">500</scrolltime>
     </default>
     <default type="fixedlist">
-        <scrolltime>0</scrolltime>
-        <!-- <scrolltime tween="cubic" easing="out">500</scrolltime> -->
+        <!-- <scrolltime>0</scrolltime> -->
+        <scrolltime tween="cubic" easing="out">500</scrolltime>
     </default>
     <default type="panel">
         <!-- <scrolltime>0</scrolltime> -->
-        <!-- <scrolltime tween="cubic" easing="out">500</scrolltime> -->
+        <scrolltime tween="cubic" easing="out">500</scrolltime>
     </default>
     <default type="wraplist">
         <!-- <scrolltime>0</scrolltime> -->
-        <!-- <scrolltime tween="cubic" easing="out">500</scrolltime> -->
+        <scrolltime tween="cubic" easing="out">500</scrolltime>
     </default>
 </includes>

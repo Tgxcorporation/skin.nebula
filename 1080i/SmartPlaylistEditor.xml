@@ -15,28 +15,28 @@
                 <posy>142</posy>
                 <width>1920</width>
                 <height>892</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
                 <posx>100</posx>
                 <posy>142</posy>
                 <width>1720</width>
                 <height>172</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
                 <posx>100</posx>
                 <posy>300</posy>
                 <width>1720</width>
                 <height>308</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
                 <posx>100</posx>
                 <posy>862</posy>
                 <width>1720</width>
                 <height>172</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="edit" id="12">
                 <posx>TextMargin</posx>
@@ -77,7 +77,7 @@
                         <width>1800</width>
                         <align>center</align>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
@@ -87,7 +87,7 @@
                         <posy>0</posy>
                         <height>75</height>
                         <width>1920</width>
-                        <include>FacadeFocus</include>
+                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="label">
                         <posx>960</posx>
@@ -95,7 +95,7 @@
                         <width>1920</width>
                         <align>center</align>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </focusedlayout>

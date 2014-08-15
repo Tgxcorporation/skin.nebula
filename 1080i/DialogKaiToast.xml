@@ -10,7 +10,7 @@
                 <posy>0</posy>
                 <width>2320</width>
                 <height>183</height>
-                <texture border="150,40,150,40">common/bg_dialog.png</texture>
+                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="label">
                 <posx>TextMargin</posx>
@@ -20,7 +20,7 @@
                 <scroll>true</scroll>
                 <align>center</align>
                 <font>NotificationFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[Control.GetLabel(401)]$INFO[Control.GetLabel(402),     ]</label>
             </control>
             <control type="image" id="400">
@@ -29,7 +29,7 @@
                 <posy>312</posy>
                 <width>112</width>
                 <height>112</height>
-                <texture>DefaultIconWarning.png</texture>
+                <texture>-</texture>
             </control>
             <control type="image" id="403">
                 <visible>false</visible>
@@ -37,7 +37,7 @@
                 <posy>-312</posy>
                 <width>112</width>
                 <height>112</height>
-                <texture>DefaultIconWarning.png</texture>
+                <texture>-</texture>
             </control>
             <control type="image" id="404">
                 <visible>false</visible>
@@ -45,7 +45,7 @@
                 <posy>-312</posy>
                 <width>112</width>
                 <height>112</height>
-                <texture>DefaultIconWarning.png</texture>
+                <texture>-</texture>
             </control>
             <control type="image" id="405">
                 <visible>false</visible>
@@ -53,7 +53,7 @@
                 <posy>-312</posy>
                 <width>112</width>
                 <height>112</height>
-                <texture>DefaultIconWarning.png</texture>
+                <texture>-</texture>
             </control>
             <control type="label" id="401">
                 <posx>3153</posx>

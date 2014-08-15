@@ -9,7 +9,7 @@
                 <posy>-35</posy>
                 <width>1990</width>
                 <height>1150</height>
-                <texture border="35">common/JewelCase2.png</texture>
+                <texture border="35">$VAR[Theme.Color]/common/JewelCase2.png</texture>
             </control>
             <control type="panel" id="53">
                 <viewtype label="536">Grid</viewtype>

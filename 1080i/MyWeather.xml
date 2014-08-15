@@ -134,7 +134,7 @@
                 <width>870</width>
                 <height>520</height>
                 <aspectratio>scale</aspectratio>
-                <texture fallback="common/BlackDotT.png">$INFO[Container(50).ListItem.thumb]</texture>
+                <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(50).ListItem.thumb]</texture>
                 <include>ThumbBorder</include>
             </control>
             <control type="button">
@@ -153,7 +153,7 @@
                 <posy>210</posy>
                 <width>1200</width>
                 <align>left</align>
-                <textcolor>AlternateColor</textcolor>
+                <include>TextColor_AlternateColor</include>
                 <font>FacadeListSubFont</font>
             </control>
             <control type="group">
@@ -165,7 +165,7 @@
                     <width>1800</width>
                     <aligny>top</aligny>
                     <font>InfoTitleFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
                     <label>$INFO[Container(50).ListItem.Label]</label>
                 </control>
@@ -175,7 +175,7 @@
                     <posy>70</posy>
                     <width>1920</width>
                     <height>1</height>
-                    <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                    <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                 </control>
                 <control type="label">
                     <posx>TextMargin</posx>
@@ -183,7 +183,7 @@
                     <width>560</width>
                     <height>71</height>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
                     <label>$INFO[Container(50).ListItem.Property(Outlook)]</label>
                 </control>
@@ -193,7 +193,7 @@
                     <width>560</width>
                     <height>71</height>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
                     <label>$LOCALIZE[393]: $INFO[Container(50).ListItem.Property(HighTemp)]</label>
                 </control>
@@ -203,7 +203,7 @@
                     <width>560</width>
                     <height>71</height>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
                     <label>$LOCALIZE[391]: $INFO[Container(50).ListItem.Property(LowTemp)]</label>
                 </control>
@@ -217,7 +217,7 @@
                         <width>560</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$LOCALIZE[143] $INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
                     </control>
@@ -227,7 +227,7 @@
                         <width>560</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$LOCALIZE[405]: $INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
                     </control>
@@ -237,7 +237,7 @@
                         <width>560</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$LOCALIZE[403]: $INFO[Window.Property(Current.UVIndex)]</label>
                     </control>
@@ -252,7 +252,7 @@
                         <width>560</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$LOCALIZE[402]: $INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
                     </control>
@@ -262,7 +262,7 @@
                         <width>560</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$LOCALIZE[406]: $INFO[Window.Property(Current.Humidity)]</label>
                     </control>
@@ -272,7 +272,7 @@
                         <width>560</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$LOCALIZE[404]: $INFO[Window.Property(Current.Wind)]</label>
                     </control>
@@ -299,7 +299,7 @@
                 <height>45</height>
                 <align>center</align>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[Weather.Location]</label>
             </control>
             <control type="label">
@@ -309,7 +309,7 @@
                 <width>1120</width>
                 <align>center</align>
                 <font>InfoDetailsFont</font>
-                <textcolor>AlternateColor</textcolor>
+                <include>TextColor_AlternateColor</include>
                 <scroll>false</scroll>
                 <label>$INFO[Container(50).ListItem.Property(Outlook)]</label>
             </control>

@@ -30,7 +30,7 @@
                     <posy>142</posy>
                     <width>735</width>
                     <height>892</height>
-                    <texture border="100">common/bg_list.png</texture>
+                    <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                 </control>
                 <control type="list" id="56">
                     <visible>Container.Content(TVShows)|Container.Content(movies)</visible>

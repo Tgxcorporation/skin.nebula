@@ -11,14 +11,14 @@
                 <posy>150</posy>
                 <width>2930</width>
                 <height>876</height>
-                <texture border="150,40,150,40">common/bg_dialog.png</texture>
+                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <posx>100</posx>
                 <posy>142</posy>
                 <width>1720</width>
                 <height>217</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="label" id="1">
                 <posx>TextMargin</posx>
@@ -27,7 +27,7 @@
                 <height>105</height>
                 <align>center</align>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$LOCALIZE[35000]</label>
             </control>
             <control type="label">
@@ -37,7 +37,7 @@
                 <height>35</height>
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[Container(20).NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="list" id="20">
@@ -58,7 +58,7 @@
                         <height>135</height>
                         <width>1800</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
@@ -68,7 +68,7 @@
                         <posy>0</posy>
                         <height>270</height>
                         <width>1920</width>
-                        <include>FacadeFocus</include>
+                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -76,7 +76,7 @@
                         <width>1800</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
@@ -86,7 +86,7 @@
                         <posy>96</posy>
                         <width>1920</width>
                         <height>1</height>
-                        <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
                         <posx>0</posx>
@@ -97,7 +97,7 @@
                             <width>1800</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$LOCALIZE[35504]: $INFO[ListItem.Property(Product)]     $LOCALIZE[35503]: $INFO[ListItem.Property(Vendor)]</label>
                         </control>
@@ -107,7 +107,7 @@
                             <width>1800</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label>$LOCALIZE[35501]: $INFO[ListItem.Property(Class)]</label>
                         </control>

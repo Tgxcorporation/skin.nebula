@@ -6,13 +6,26 @@
         <control type="group">
             <include>DialogOpenClose</include>
             <control type="button">
+                <visible>!skin.hassetting(Theme.Color.Black)</visible>
                 <posx>1887</posx>
                 <posy>-33</posy>
                 <height>33</height>
                 <width>33</width>
                 <colordiffuse>90ffffff</colordiffuse>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_exit_focus.png</texturefocus>
+                <onclick>back</onclick>
+                <label>-</label>
+            </control>
+            <control type="button">
+                <visible>skin.hassetting(Theme.Color.Black)</visible>
+                <posx>1887</posx>
+                <posy>-33</posy>
+                <height>33</height>
+                <width>33</width>
+                <colordiffuse>90ffffff</colordiffuse>
+                <texturenofocus>black/topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>black/topbar/topbar_exit_focus.png</texturefocus>
                 <onclick>back</onclick>
                 <label>-</label>
             </control>
@@ -21,7 +34,7 @@
                 <posy>-33</posy>
                 <width>2320</width>
                 <height>1002</height>
-                <texture border="150,40,150,40">common/bg_dialog.png</texture>
+                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="grouplist" id="996">
                 <posx>TextMargin</posx>

@@ -38,7 +38,7 @@
         <width>1260</width>
         <aligny>top</aligny>
         <font>InfoTitleFont</font>
-        <textcolor>MainColor</textcolor>
+        <include>TextColor_MainColor</include>
         <scroll>false</scroll>
     </include>
     <include name="Horizontal_HomeSubMenu">
@@ -64,7 +64,7 @@
                     <align>center</align>
                     <scroll>false</scroll>
                     <label>$INFO[ListItem.Label]</label>
-                    <textcolor>ListNoFocusColor</textcolor>
+                    <include>TextColor_AlternateColor</include>
                 </control>
             </itemlayout>
             <focusedlayout width="640" height="78">
@@ -73,7 +73,7 @@
                     <posy>0</posy>
                     <height>78</height>
                     <width>600</width>
-                    <include>FacadeFocus</include>
+                    <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                 </control>
                 <control type="label">
                     <visible>!Control.HasFocus(9001)</visible>
@@ -84,7 +84,7 @@
                     <align>center</align>
                     <font>FacadeListFont</font>
                     <label>$INFO[ListItem.Label]</label>
-                    <textcolor>ListNoFocusColor</textcolor>
+                    <include>TextColor_AlternateColor</include>
                 </control>
                 <control type="label">
                     <visible>Control.HasFocus(9001)</visible>
@@ -95,7 +95,7 @@
                     <width>520</width>
                     <font>FacadeListFont</font>
                     <label>$INFO[ListItem.Label]</label>
-                    <textcolor>ListFocusColor</textcolor>
+                    <include>TextColor_MainColor</include>
                 </control>
             </focusedlayout>
             <content>
@@ -197,7 +197,7 @@
                             <posy>142</posy>
                             <width>1320</width>
                             <height>160</height>
-                            <texture border="100">common/bg_list.png</texture>
+                            <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                         </control>
                         <control type="grouplist" id="701">
                             <posx>300</posx>
@@ -288,7 +288,7 @@
                         <aligny>top</aligny>
                         <align>center</align>
                         <font>HomeItemFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[Container(300).ListItem.Label]</label>
                     </control>
                 </control>
@@ -306,7 +306,7 @@
                         <posy>739</posy>
                         <width>1920</width>
                         <height>316</height>
-                        <texture border="100">common/bg_list.png</texture>
+                        <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                     </control>
                     <include>Horizontal_HomeSubMenu</include>
                 </control>
@@ -320,9 +320,9 @@
                         <font>rss</font>
                         <urlset>1</urlset>
                         <font>WindowTitleSubFont</font>
-                        <titlecolor>MainColor</titlecolor>
-                        <headlinecolor>AlternateColor</headlinecolor>
-                        <textcolor>AlternateColor</textcolor>
+                        <include>TitleColor_MainColor</include>
+                        <include>HeadLineColor_AlternateColor</include>
+                        <include>TextColor_AlternateColor</include>
                     </control>
                 </control>
             </control>

@@ -7,7 +7,7 @@
                 <posy>142</posy>
                 <width>1920</width>
                 <height>892</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
                 <visible>StringCompare(ListItem.Label,..)</visible>
@@ -37,7 +37,7 @@
                         <posy>456</posy>
                         <width>424</width>
                         <height>424</height>
-                        <texture diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
+                        <texture diffuse="$VAR[Theme.Color]/common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <include>Animation_ViewsCDart</include>
                     </control>
@@ -57,7 +57,7 @@
                     <width>1270</width>
                     <aligny>top</aligny>
                     <font>InfoTitleFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
@@ -67,7 +67,7 @@
                     <posy>304</posy>
                     <width>1440</width>
                     <height>1</height>
-                    <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                    <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                 </control>
                 <control type="group">
                     <posx>530</posx>
@@ -85,7 +85,7 @@
                             <width>460</width>
                             <height>71</height>
                             <font>InfoRatingFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
                         </control>
@@ -96,7 +96,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow1]</label>
                     </control>
@@ -106,7 +106,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow2]</label>
                     </control>
@@ -116,7 +116,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow3]</label>
                     </control>
@@ -126,7 +126,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow4]</label>
                     </control>
@@ -136,7 +136,7 @@
                         <width>1270</width>
                         <height>333</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$VAR[Plots]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -149,7 +149,7 @@
                 <posy>142</posy>
                 <width>1920</width>
                 <height>892</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
                 <visible>StringCompare(ListItem.Label,..)</visible>
@@ -179,7 +179,7 @@
                         <posy>456</posy>
                         <width>424</width>
                         <height>424</height>
-                        <texture diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
+                        <texture diffuse="$VAR[Theme.Color]/common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <include>Animation_ViewsCDart</include>
                     </control>
@@ -199,7 +199,7 @@
                     <width>1270</width>
                     <aligny>top</aligny>
                     <font>InfoTitleFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
@@ -209,7 +209,7 @@
                     <posy>304</posy>
                     <width>1440</width>
                     <height>1</height>
-                    <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                    <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                 </control>
                 <control type="group">
                     <posx>530</posx>
@@ -227,7 +227,7 @@
                             <width>460</width>
                             <height>71</height>
                             <font>InfoRatingFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
                         </control>
@@ -238,7 +238,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow1]</label>
                     </control>
@@ -248,7 +248,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow2]</label>
                     </control>
@@ -258,7 +258,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow3]</label>
                     </control>
@@ -268,7 +268,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow4]</label>
                     </control>
@@ -278,7 +278,7 @@
                         <width>1270</width>
                         <height>333</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$VAR[Plots]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -291,7 +291,7 @@
                 <posy>142</posy>
                 <width>1920</width>
                 <height>892</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
                 <visible>StringCompare(ListItem.Label,..)</visible>
@@ -321,7 +321,7 @@
                         <posy>639</posy>
                         <width>424</width>
                         <height>424</height>
-                        <texture diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                        <texture diffuse="$VAR[Theme.Color]/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <include>Animation_ViewsCDart</include>
                     </control>
@@ -361,7 +361,7 @@
                     <width>1270</width>
                     <aligny>top</aligny>
                     <font>InfoTitleFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
@@ -371,7 +371,7 @@
                     <posy>304</posy>
                     <width>1440</width>
                     <height>1</height>
-                    <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                    <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                 </control>
                 <control type="group">
                     <posx>530</posx>
@@ -389,7 +389,7 @@
                             <width>460</width>
                             <height>71</height>
                             <font>InfoRatingFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
                         </control>
@@ -400,7 +400,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow1]</label>
                     </control>
@@ -410,7 +410,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow2]</label>
                     </control>
@@ -420,7 +420,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow3]</label>
                     </control>
@@ -430,7 +430,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow4]</label>
                     </control>
@@ -440,7 +440,7 @@
                         <width>1270</width>
                         <height>250</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$VAR[Plots]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -459,7 +459,7 @@
                 <posy>142</posy>
                 <width>1920</width>
                 <height>892</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
                 <visible>StringCompare(ListItem.Label,..)</visible>
@@ -489,7 +489,7 @@
                         <posy>639</posy>
                         <width>424</width>
                         <height>424</height>
-                        <texture diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                        <texture diffuse="$VAR[Theme.Color]/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <include>Animation_ViewsCDart</include>
                     </control>
@@ -529,7 +529,7 @@
                     <width>1270</width>
                     <aligny>top</aligny>
                     <font>InfoTitleFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
@@ -539,7 +539,7 @@
                     <posy>304</posy>
                     <width>1440</width>
                     <height>1</height>
-                    <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                    <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                 </control>
                 <control type="group">
                     <posx>530</posx>
@@ -557,7 +557,7 @@
                             <width>460</width>
                             <height>71</height>
                             <font>InfoRatingFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
                         </control>
@@ -568,7 +568,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow1]</label>
                     </control>
@@ -578,7 +578,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow2]</label>
                     </control>
@@ -588,7 +588,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow3]</label>
                     </control>
@@ -598,7 +598,7 @@
                         <width>1270</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow4]</label>
                     </control>
@@ -608,7 +608,7 @@
                         <width>1270</width>
                         <height>250</height>
                         <font>InfoPlotFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$VAR[Plots]</label>
                         <include>myautoscroll</include>
                     </control>

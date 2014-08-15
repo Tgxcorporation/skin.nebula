@@ -15,8 +15,8 @@
                 <posy>-4</posy>
                 <height>50</height>
                 <width>50</width>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
+                <texturenofocus>$VAR[Theme.Color]/topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>$VAR[Theme.Color]/topbar/topbar_exit_focus.png</texturefocus>
                 <onclick>back</onclick>
                 <label>-</label>
             </control>
@@ -25,7 +25,7 @@
                 <posy>0</posy>
                 <width>920</width>
                 <height>675</height>
-                <texture border="90">common/bg_dialog.png</texture>
+                <texture border="90">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="label">
                 <posx>90</posx>
@@ -34,7 +34,7 @@
                 <height>100</height>
                 <align>center</align>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$LOCALIZE[31048]</label>
             </control>
             <control type="image">
@@ -42,7 +42,7 @@
                 <posy>75</posy>
                 <width>830</width>
                 <height>79</height>
-                <texture>list/bg_facade_nofocus_top.png</texture>
+                <texture>$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="fixedlist" id="2">
                 <description>Preset List</description>
@@ -65,14 +65,14 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>830</width>
-                        <texture border="3">list/bg_facade_nofocus.png</texture>
+                        <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <height>71</height>
                         <width>740</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <info>ListItem.Label</info>
                     </control>
                 </itemlayout>
@@ -82,14 +82,14 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>830</width>
-                        <include>FacadeFocus</include>
+                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <height>71</height>
                         <width>740</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <info>ListItem.Label</info>
                     </control>
                 </focusedlayout>

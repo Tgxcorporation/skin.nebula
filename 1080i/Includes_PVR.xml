@@ -9,8 +9,8 @@
                 <posy>487</posy>
                 <height>50</height>
                 <width>50</width>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
+                <texturenofocus>$VAR[Theme.Color]/topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>$VAR[Theme.Color]/topbar/topbar_exit_focus.png</texturefocus>
                 <onclick>back</onclick>
                 <label>-</label>
             </control>
@@ -19,14 +19,14 @@
                 <posy>483</posy>
                 <width>1454</width>
                 <height>515</height>
-                <texture border="90">common/bg_dialog.png</texture>
+                <texture border="90">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <posx>278</posx>
                 <posy>531</posy>
                 <width>1364</width>
                 <height>90</height>
-                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="label">
                 <posx>381</posx>
@@ -34,7 +34,7 @@
                 <height>36</height>
                 <width>1000</width>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[VideoPlayer.ChannelGroup]</label>
             </control>
             <control type="label">
@@ -44,7 +44,7 @@
                 <width>530</width>
                 <font>OSDFont</font>
                 <align>right</align>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="image">
@@ -52,7 +52,7 @@
                 <posy>562</posy>
                 <width>36</width>
                 <height>36</height>
-                <texture>common/time.png</texture>
+                <texture>$VAR[Theme.Color]/common/time.png</texture>
             </control>
             <control type="list" id="11">
                 <posx>278</posx>
@@ -72,7 +72,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>1364</width>
-                        <texture border="3">list/bg_facade_nofocus.png</texture>
+                        <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                     </control>
                     <control type="progress">
                         <posx>0</posx>
@@ -82,7 +82,7 @@
                         <texturebg>-</texturebg>
                         <reveal>true</reveal>
                         <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid.png</midtexture>
+                        <midtexture>$VAR[Theme.Color]/OSD/osd_progress_mid.png</midtexture>
                         <righttexture>-</righttexture>
                         <overlaytexture>-</overlaytexture>
                         <info>ListItem.Progress</info>
@@ -97,7 +97,7 @@
                         <texturebg>-</texturebg>
                         <reveal>true</reveal>
                         <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid_red.png</midtexture>
+                        <midtexture>$VAR[Theme.Color]/OSD/osd_progress_mid_red.png</midtexture>
                         <righttexture>-</righttexture>
                         <overlaytexture>-</overlaytexture>
                         <info>ListItem.Progress</info>
@@ -128,7 +128,7 @@
                         <posx>15</posx>
                         <height>71</height>
                         <width>73</width>
-                        <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="$VAR[Theme.Color]/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                         <colordiffuse>NoFocusedColor</colordiffuse>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -138,7 +138,7 @@
                         <height>42</height>
                         <width>1220</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.StartTime]  •  $INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
@@ -147,7 +147,7 @@
                         <height>42</height>
                         <width>1220</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.StartTime]</label>
                     </control>
                     <control type="label">
@@ -156,7 +156,7 @@
                         <height>28</height>
                         <width>1220</width>
                         <font>FacadeListSubFont</font>
-                        <textcolor>SublistNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
@@ -166,7 +166,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>1364</width>
-                        <include>FacadeFocus</include>
+                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="progress">
                         <posx>0</posx>
@@ -176,7 +176,7 @@
                         <texturebg>-</texturebg>
                         <reveal>true</reveal>
                         <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid.png</midtexture>
+                        <midtexture>$VAR[Theme.Color]/OSD/osd_progress_mid.png</midtexture>
                         <righttexture>-</righttexture>
                         <overlaytexture>-</overlaytexture>
                         <info>ListItem.Progress</info>
@@ -191,7 +191,7 @@
                         <texturebg>-</texturebg>
                         <reveal>true</reveal>
                         <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid_red.png</midtexture>
+                        <midtexture>$VAR[Theme.Color]/OSD/osd_progress_mid_red.png</midtexture>
                         <righttexture>-</righttexture>
                         <overlaytexture>-</overlaytexture>
                         <info>ListItem.Progress</info>
@@ -220,7 +220,7 @@
                         <posx>15</posx>
                         <height>71</height>
                         <width>73</width>
-                        <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="$VAR[Theme.Color]/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
@@ -229,7 +229,7 @@
                         <height>42</height>
                         <width>1220</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.StartTime]  •  $INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
@@ -238,7 +238,7 @@
                         <height>42</height>
                         <width>1220</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.StartTime]</label>
                     </control>
                     <control type="label">
@@ -247,7 +247,7 @@
                         <height>28</height>
                         <width>1220</width>
                         <font>FacadeListSubFont</font>
-                        <textcolor>SublistFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.Label]</label>
                     </control>
                 </focusedlayout>
@@ -274,8 +274,8 @@
                 <posy>487</posy>
                 <height>50</height>
                 <width>50</width>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
+                <texturenofocus>$VAR[Theme.Color]/topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>$VAR[Theme.Color]/topbar/topbar_exit_focus.png</texturefocus>
                 <onclick>back</onclick>
                 <label>-</label>
             </control>
@@ -284,14 +284,14 @@
                 <posy>483</posy>
                 <width>1454</width>
                 <height>953</height>
-                <texture border="90">common/bg_dialog.png</texture>
+                <texture border="90">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <posx>278</posx>
                 <posy>531</posy>
                 <width>1364</width>
                 <height>90</height>
-                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="label">
                 <posx>381</posx>
@@ -299,7 +299,7 @@
                 <height>36</height>
                 <width>1000</width>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[VideoPlayer.ChannelGroup]</label>
             </control>
             <control type="label">
@@ -309,7 +309,7 @@
                 <width>530</width>
                 <font>OSDFont</font>
                 <align>right</align>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="image">
@@ -317,7 +317,7 @@
                 <posy>562</posy>
                 <width>36</width>
                 <height>36</height>
-                <texture>common/time.png</texture>
+                <texture>$VAR[Theme.Color]/common/time.png</texture>
             </control>
             <control type="list" id="11">
                 <posx>278</posx>
@@ -337,7 +337,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>1364</width>
-                        <texture border="3">list/bg_facade_nofocus.png</texture>
+                        <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                     </control>
                     <control type="progress">
                         <posx>0</posx>
@@ -347,7 +347,7 @@
                         <texturebg>-</texturebg>
                         <reveal>true</reveal>
                         <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid.png</midtexture>
+                        <midtexture>$VAR[Theme.Color]/OSD/osd_progress_mid.png</midtexture>
                         <righttexture>-</righttexture>
                         <overlaytexture>-</overlaytexture>
                         <info>ListItem.Progress</info>
@@ -362,7 +362,7 @@
                         <texturebg>-</texturebg>
                         <reveal>true</reveal>
                         <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid_red.png</midtexture>
+                        <midtexture>$VAR[Theme.Color]/OSD/osd_progress_mid_red.png</midtexture>
                         <righttexture>-</righttexture>
                         <overlaytexture>-</overlaytexture>
                         <info>ListItem.Progress</info>
@@ -393,7 +393,7 @@
                         <posx>15</posx>
                         <height>71</height>
                         <width>73</width>
-                        <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="$VAR[Theme.Color]/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                         <colordiffuse>NoFocusedColor</colordiffuse>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -403,7 +403,7 @@
                         <height>42</height>
                         <width>1220</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.StartTime]  •  $INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
@@ -412,7 +412,7 @@
                         <height>42</height>
                         <width>1220</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.StartTime]</label>
                     </control>
                     <control type="label">
@@ -421,7 +421,7 @@
                         <height>28</height>
                         <width>1220</width>
                         <font>FacadeListSubFont</font>
-                        <textcolor>SublistNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
@@ -431,7 +431,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>1364</width>
-                        <include>FacadeFocus</include>
+                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="progress">
                         <posx>0</posx>
@@ -441,7 +441,7 @@
                         <texturebg>-</texturebg>
                         <reveal>true</reveal>
                         <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid.png</midtexture>
+                        <midtexture>$VAR[Theme.Color]/OSD/osd_progress_mid.png</midtexture>
                         <righttexture>-</righttexture>
                         <overlaytexture>-</overlaytexture>
                         <info>ListItem.Progress</info>
@@ -456,7 +456,7 @@
                         <texturebg>-</texturebg>
                         <reveal>true</reveal>
                         <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid_red.png</midtexture>
+                        <midtexture>$VAR[Theme.Color]/OSD/osd_progress_mid_red.png</midtexture>
                         <righttexture>-</righttexture>
                         <overlaytexture>-</overlaytexture>
                         <info>ListItem.Progress</info>
@@ -485,7 +485,7 @@
                         <posx>15</posx>
                         <height>71</height>
                         <width>73</width>
-                        <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="$VAR[Theme.Color]/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
@@ -494,7 +494,7 @@
                         <height>42</height>
                         <width>1220</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.StartTime]  •  $INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
@@ -503,7 +503,7 @@
                         <height>42</height>
                         <width>1220</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.StartTime]</label>
                     </control>
                     <control type="label">
@@ -512,7 +512,7 @@
                         <height>28</height>
                         <width>1220</width>
                         <font>FacadeListSubFont</font>
-                        <textcolor>SublistFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.Label]</label>
                     </control>
                 </focusedlayout>
@@ -538,8 +538,8 @@
                 <posy>487</posy>
                 <height>50</height>
                 <width>50</width>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
+                <texturenofocus>$VAR[Theme.Color]/topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>$VAR[Theme.Color]/topbar/topbar_exit_focus.png</texturefocus>
                 <onclick>back</onclick>
                 <label>-</label>
             </control>
@@ -548,14 +548,14 @@
                 <posy>483</posy>
                 <width>1454</width>
                 <height>515</height>
-                <texture border="90">common/bg_dialog.png</texture>
+                <texture border="90">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <posx>278</posx>
                 <posy>531</posy>
                 <width>1364</width>
                 <height>90</height>
-                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="label">
                 <visible>!IsEmpty(Container(11).ListItem.StartDate)</visible>
@@ -564,7 +564,7 @@
                 <height>36</height>
                 <width>1000</width>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>[B]$INFO[VideoPlayer.ChannelName][/B]  •  $INFO[Container(11).ListItem.StartDate]</label>
             </control>
             <control type="label">
@@ -574,7 +574,7 @@
                 <height>36</height>
                 <width>1000</width>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>[B]$INFO[VideoPlayer.ChannelName][/B]</label>
             </control>
             <control type="label">
@@ -584,7 +584,7 @@
                 <width>530</width>
                 <font>OSDFont</font>
                 <align>right</align>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="image">
@@ -592,7 +592,7 @@
                 <posy>562</posy>
                 <width>36</width>
                 <height>36</height>
-                <texture>common/time.png</texture>
+                <texture>$VAR[Theme.Color]/common/time.png</texture>
             </control>
             <control type="list" id="11">
                 <posx>278</posx>
@@ -611,7 +611,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>1364</width>
-                        <texture border="3">list/bg_facade_nofocus.png</texture>
+                        <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                     </control>
                     <control type="image">
                         <posx>1339</posx>
@@ -637,7 +637,7 @@
                         <posx>15</posx>
                         <height>71</height>
                         <width>73</width>
-                        <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="$VAR[Theme.Color]/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                         <colordiffuse>NoFocusedColor</colordiffuse>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -646,7 +646,7 @@
                         <height>71</height>
                         <width>890</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -656,7 +656,7 @@
                         <width>300</width>
                         <align>right</align>
                         <font>FacadeListMainFont</font>
-                        <textcolor>SublistNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.StartTime]</label>
                     </control>
                 </itemlayout>
@@ -666,7 +666,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>1364</width>
-                        <include>FacadeFocus</include>
+                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="image">
                         <posx>1339</posx>
@@ -690,7 +690,7 @@
                         <posx>15</posx>
                         <height>71</height>
                         <width>73</width>
-                        <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="$VAR[Theme.Color]/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
@@ -698,7 +698,7 @@
                         <height>71</height>
                         <width>890</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -708,7 +708,7 @@
                         <width>300</width>
                         <align>right</align>
                         <font>FacadeListMainFont</font>
-                        <textcolor>SublistFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.StartTime]</label>
                     </control>
                 </focusedlayout>
@@ -735,8 +735,8 @@
                 <posy>487</posy>
                 <height>50</height>
                 <width>50</width>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
+                <texturenofocus>$VAR[Theme.Color]/topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>$VAR[Theme.Color]/topbar/topbar_exit_focus.png</texturefocus>
                 <onclick>back</onclick>
                 <label>-</label>
             </control>
@@ -745,14 +745,14 @@
                 <posy>483</posy>
                 <width>1454</width>
                 <height>953</height>
-                <texture border="90">common/bg_dialog.png</texture>
+                <texture border="90">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <posx>278</posx>
                 <posy>531</posy>
                 <width>1364</width>
                 <height>90</height>
-                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="label">
                 <visible>!IsEmpty(Container(11).ListItem.StartDate)</visible>
@@ -761,7 +761,7 @@
                 <height>36</height>
                 <width>1000</width>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>[B]$INFO[VideoPlayer.ChannelName][/B]  •  $INFO[Container(11).ListItem.StartDate]</label>
             </control>
             <control type="label">
@@ -771,7 +771,7 @@
                 <height>36</height>
                 <width>1000</width>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>[B]$INFO[VideoPlayer.ChannelName][/B]</label>
             </control>
             <control type="label">
@@ -781,7 +781,7 @@
                 <width>530</width>
                 <font>OSDFont</font>
                 <align>right</align>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="image">
@@ -789,7 +789,7 @@
                 <posy>562</posy>
                 <width>36</width>
                 <height>36</height>
-                <texture>common/time.png</texture>
+                <texture>$VAR[Theme.Color]/common/time.png</texture>
             </control>
             <control type="list" id="11">
                 <posx>278</posx>
@@ -807,7 +807,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>1364</width>
-                        <texture border="3">list/bg_facade_nofocus.png</texture>
+                        <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                     </control>
                     <control type="image">
                         <posx>1339</posx>
@@ -833,7 +833,7 @@
                         <posx>15</posx>
                         <height>71</height>
                         <width>73</width>
-                        <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="$VAR[Theme.Color]/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                         <colordiffuse>NoFocusedColor</colordiffuse>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -842,7 +842,7 @@
                         <height>71</height>
                         <width>890</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -852,7 +852,7 @@
                         <width>300</width>
                         <align>right</align>
                         <font>FacadeListMainFont</font>
-                        <textcolor>SublistNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.StartTime]</label>
                     </control>
                 </itemlayout>
@@ -862,7 +862,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>1364</width>
-                        <include>FacadeFocus</include>
+                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="image">
                         <posx>1339</posx>
@@ -886,7 +886,7 @@
                         <posx>15</posx>
                         <height>71</height>
                         <width>73</width>
-                        <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="$VAR[Theme.Color]/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
@@ -894,7 +894,7 @@
                         <height>71</height>
                         <width>890</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -904,7 +904,7 @@
                         <width>300</width>
                         <align>right</align>
                         <font>FacadeListMainFont</font>
-                        <textcolor>SublistFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.StartTime]</label>
                     </control>
                 </focusedlayout>

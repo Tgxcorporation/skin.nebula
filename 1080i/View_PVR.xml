@@ -52,7 +52,7 @@
                     <posy>142</posy>
                     <width>1920</width>
                     <height>892</height>
-                    <texture border="100">common/bg_list.png</texture>
+                    <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                 </control>
                 <control type="list" id="11">
                     <viewtype label="31091">List</viewtype>
@@ -74,7 +74,7 @@
                             <height>135</height>
                             <width>1250</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label fallback="416">$INFO[ListItem.Title]</label>
                         </control>
                         <control type="label">
@@ -84,7 +84,7 @@
                             <aligny>top</aligny>
                             <width>1250</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label fallback="416">$INFO[ListItem.Title]</label>
                         </control>
                         <control type="label">
@@ -94,7 +94,7 @@
                             <aligny>top</aligny>
                             <width>1250</width>
                             <font>FacadeListSubFont</font>
-                            <textcolor>SublistNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$VAR[Details]</label>
                         </control>
                     </itemlayout>
@@ -104,7 +104,7 @@
                             <posy>0</posy>
                             <height>405</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="image">
                             <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
@@ -130,10 +130,10 @@
                             <posy>346</posy>
                             <height>54</height>
                             <width>335</width>
-                            <texturebg border="14,20,14,20">buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                            <texturebg border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_bg.png</texturebg>
                             <reveal>true</reveal>
                             <lefttexture>-</lefttexture>
-                            <midtexture border="14,20,14,20">buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                            <midtexture border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
                             <righttexture>-</righttexture>
                             <overlaytexture>-</overlaytexture>
                             <info>ListItem.Progress</info>
@@ -144,7 +144,7 @@
                             <width>1250</width>
                             <aligny>top</aligny>
                             <font>InfoTitleFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[ListItem.Title]</label>
                         </control>
@@ -155,7 +155,7 @@
                             <posy>96</posy>
                             <width>1550</width>
                             <height>1</height>
-                            <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                            <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                         </control>
                         <control type="group">
                             <posx>415</posx>
@@ -166,7 +166,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.Label]</label>
                             </control>
@@ -176,7 +176,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.StartTime,, / ]$INFO[ListItem.EndTime]</label>
                             </control>
@@ -186,7 +186,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.Genre]</label>
                             </control>
@@ -196,7 +196,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.NextTitle,$LOCALIZE[19031]: ]</label>
                             </control>
@@ -206,7 +206,7 @@
                                 <width>660</width>
                                 <height>250</height>
                                 <font>InfoPlotFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <label>$VAR[Plots]</label>
                                 <include>myautoscroll</include>
                             </control>
@@ -234,7 +234,7 @@
                     <posy>142</posy>
                     <width>1920</width>
                     <height>892</height>
-                    <texture border="100">common/bg_list.png</texture>
+                    <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                 </control>
                 <control type="list" id="12">
                     <viewtype label="31091">List</viewtype>
@@ -256,7 +256,7 @@
                             <height>135</height>
                             <width>1250</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label fallback="416">$INFO[ListItem.Title]</label>
                         </control>
                         <control type="label">
@@ -266,7 +266,7 @@
                             <aligny>top</aligny>
                             <width>1250</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label fallback="416">$INFO[ListItem.Title]</label>
                         </control>
                         <control type="label">
@@ -276,7 +276,7 @@
                             <aligny>top</aligny>
                             <width>1250</width>
                             <font>FacadeListSubFont</font>
-                            <textcolor>SublistNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$VAR[Details]</label>
                         </control>
                     </itemlayout>
@@ -286,7 +286,7 @@
                             <posy>0</posy>
                             <height>405</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="image">
                             <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
@@ -312,10 +312,10 @@
                             <posy>346</posy>
                             <height>54</height>
                             <width>335</width>
-                            <texturebg border="14,20,14,20">buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                            <texturebg border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_bg.png</texturebg>
                             <reveal>true</reveal>
                             <lefttexture>-</lefttexture>
-                            <midtexture border="14,20,14,20">buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                            <midtexture border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
                             <righttexture>-</righttexture>
                             <overlaytexture>-</overlaytexture>
                             <info>ListItem.Progress</info>
@@ -326,7 +326,7 @@
                             <width>1250</width>
                             <aligny>top</aligny>
                             <font>InfoTitleFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[ListItem.Title]</label>
                         </control>
@@ -337,7 +337,7 @@
                             <posy>96</posy>
                             <width>1550</width>
                             <height>1</height>
-                            <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                            <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                         </control>
                         <control type="group">
                             <posx>415</posx>
@@ -348,7 +348,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.Label]</label>
                             </control>
@@ -358,7 +358,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.StartTime,, / ]$INFO[ListItem.EndTime]</label>
                             </control>
@@ -368,7 +368,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.Genre]</label>
                             </control>
@@ -378,7 +378,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.NextTitle,$LOCALIZE[19031]: ]</label>
                             </control>
@@ -388,7 +388,7 @@
                                 <width>660</width>
                                 <height>250</height>
                                 <font>InfoPlotFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <label>$VAR[Plots]</label>
                                 <include>myautoscroll</include>
                             </control>
@@ -417,7 +417,7 @@
                     <posy>142</posy>
                     <width>1920</width>
                     <height>892</height>
-                    <texture border="100">common/bg_list.png</texture>
+                    <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                 </control>
                 <control type="list" id="13">
                     <viewtype label="31091">List</viewtype>
@@ -439,7 +439,7 @@
                             <height>135</height>
                             <width>1250</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label fallback="416">$INFO[ListItem.Title]</label>
                         </control>
                         <control type="label">
@@ -449,7 +449,7 @@
                             <aligny>top</aligny>
                             <width>1250</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label fallback="416">$INFO[ListItem.Title]</label>
                         </control>
                         <control type="label">
@@ -459,7 +459,7 @@
                             <aligny>top</aligny>
                             <width>1250</width>
                             <font>FacadeListSubFont</font>
-                            <textcolor>SublistNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$VAR[Details]</label>
                         </control>
                         <control type="image">
@@ -477,7 +477,7 @@
                             <posy>0</posy>
                             <height>405</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="image">
                             <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
@@ -504,7 +504,7 @@
                             <width>1250</width>
                             <aligny>top</aligny>
                             <font>InfoTitleFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[ListItem.Title]</label>
                         </control>
@@ -515,7 +515,7 @@
                             <posy>96</posy>
                             <width>1550</width>
                             <height>1</height>
-                            <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                            <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                         </control>
                         <control type="group">
                             <posx>415</posx>
@@ -526,7 +526,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]</label>
                             </control>
@@ -536,7 +536,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.Date]</label>
                             </control>
@@ -546,7 +546,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.Duration]</label>
                             </control>
@@ -556,7 +556,7 @@
                                 <width>660</width>
                                 <height>250</height>
                                 <font>InfoPlotFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <label>$VAR[Plots]</label>
                                 <include>myautoscroll</include>
                             </control>
@@ -592,14 +592,14 @@
                 <posy>142</posy>
                 <width>1920</width>
                 <height>550</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
                 <posx>0</posx>
                 <posy>142</posy>
                 <width>1920</width>
                 <height>160</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="epggrid" id="10">
                 <posx>TextMargin</posx>
@@ -614,7 +614,7 @@
                 <onup>10</onup>
                 <ondown>10</ondown>
                 <scrolltime>300</scrolltime>
-                <progresstexture border="0,95,20,20">common/EPGMarker.png</progresstexture>
+                <progresstexture border="0,95,20,20">$VAR[Theme.Color]/common/EPGMarker.png</progresstexture>
                 <rulerlayout height="78" width="60">
                     <control type="image" id="1">
                         <width>50</width>
@@ -640,7 +640,7 @@
                         <posy>0</posy>
                         <width>78</width>
                         <height>78</height>
-                        <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="$VAR[Theme.Color]/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                         <colordiffuse>NoFocusedColor</colordiffuse>
                         <aspectratio align="left">keep</aspectratio>
                     </control>
@@ -649,7 +649,7 @@
                         <width>290</width>
                         <height>78</height>
                         <font>TvGuideChannelFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.ChannelName]</label>
                     </control>
                 </channellayout>
@@ -660,14 +660,14 @@
                         <width>420</width>
                         <height>78</height>
                         <bordersize>0</bordersize>
-                        <include>FacadeFocus</include>
+                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>78</width>
                         <height>78</height>
-                        <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="$VAR[Theme.Color]/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                         <aspectratio align="left">keep</aspectratio>
                     </control>
                     <control type="label" id="1">
@@ -675,7 +675,7 @@
                         <width>290</width>
                         <height>78</height>
                         <font>TvGuideChannelFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <aligny>center</aligny>
                         <align>left</align>
                         <label>$INFO[ListItem.ChannelName]</label>
@@ -697,7 +697,7 @@
                         <height>78</height>
                         <font>TvGuideItemFont</font>
                         <scroll>false</scroll>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <info>ListItem.Label</info>
                     </control>
                 </itemlayout>
@@ -716,7 +716,7 @@
                         <width>25</width>
                         <height>78</height>
                         <font>TvGuideItemFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <info>ListItem.Label</info>
                     </control>
                 </focusedlayout>
@@ -727,7 +727,7 @@
                 <posy>647</posy>
                 <width>1920</width>
                 <height>628</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
                 <posx>63</posx>
@@ -735,7 +735,7 @@
                 <width>373</width>
                 <height>300</height>
                 <aspectratio>keep</aspectratio>
-                <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                <texture fallback="$VAR[Theme.Color]/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorder</include>
             </control>
             <control type="group">
@@ -747,7 +747,7 @@
                     <width>1250</width>
                     <aligny>top</aligny>
                     <font>InfoTitleFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
@@ -757,7 +757,7 @@
                     <posy>96</posy>
                     <width>1470</width>
                     <height>1</height>
-                    <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                    <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                 </control>
                 <control type="label">
                     <posx>500</posx>
@@ -765,7 +765,7 @@
                     <width>550</width>
                     <height>71</height>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
                     <label>$INFO[ListItem.StartTime] / $INFO[ListItem.EndTime]</label>
                 </control>
@@ -775,7 +775,7 @@
                     <width>550</width>
                     <height>71</height>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
                     <label>$INFO[ListItem.Genre]</label>
                 </control>
@@ -785,7 +785,7 @@
                     <width>550</width>
                     <height>71</height>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
                     <label>$INFO[ListItem.Duration]</label>
                 </control>
@@ -795,7 +795,7 @@
                     <width>760</width>
                     <height>208</height>
                     <font>InfoPlotFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <label>$VAR[Plots]</label>
                     <include>myautoscroll</include>
                 </control>
@@ -813,7 +813,7 @@
                     <posy>142</posy>
                     <width>1920</width>
                     <height>892</height>
-                    <texture border="100">common/bg_list.png</texture>
+                    <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                 </control>
                 <control type="list" id="14">
                     <viewtype label="31091">List</viewtype>
@@ -835,7 +835,7 @@
                             <height>135</height>
                             <width>1250</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label fallback="416">$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -845,7 +845,7 @@
                             <aligny>top</aligny>
                             <width>1250</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label fallback="416">$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -855,7 +855,7 @@
                             <aligny>top</aligny>
                             <width>1250</width>
                             <font>FacadeListSubFont</font>
-                            <textcolor>SublistNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$VAR[Details]</label>
                         </control>
                     </itemlayout>
@@ -865,7 +865,7 @@
                             <posy>0</posy>
                             <height>405</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="image">
                             <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
@@ -892,7 +892,7 @@
                             <width>1250</width>
                             <aligny>top</aligny>
                             <font>InfoTitleFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[ListItem.Label]</label>
                         </control>
@@ -903,7 +903,7 @@
                             <posy>96</posy>
                             <width>1550</width>
                             <height>1</height>
-                            <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                            <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                         </control>
                         <control type="group">
                             <posx>415</posx>
@@ -914,7 +914,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]</label>
                             </control>
@@ -924,7 +924,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.Date]</label>
                             </control>
@@ -934,7 +934,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.Comment]</label>
                             </control>
@@ -944,7 +944,7 @@
                                 <width>660</width>
                                 <height>250</height>
                                 <font>InfoPlotFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <label>$VAR[Plots]</label>
                                 <include>myautoscroll</include>
                             </control>
@@ -973,7 +973,7 @@
                     <posy>142</posy>
                     <width>1920</width>
                     <height>892</height>
-                    <texture border="100">common/bg_list.png</texture>
+                    <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                 </control>
                 <control type="list" id="17">
                     <viewtype label="31091">List</viewtype>
@@ -995,7 +995,7 @@
                             <height>135</height>
                             <width>1250</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label fallback="416">$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -1005,7 +1005,7 @@
                             <aligny>top</aligny>
                             <width>1250</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label fallback="416">$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -1015,7 +1015,7 @@
                             <aligny>top</aligny>
                             <width>1250</width>
                             <font>FacadeListSubFont</font>
-                            <textcolor>SublistNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$VAR[Details]</label>
                         </control>
                     </itemlayout>
@@ -1025,7 +1025,7 @@
                             <posy>0</posy>
                             <height>405</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="image">
                             <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
@@ -1052,7 +1052,7 @@
                             <width>1250</width>
                             <aligny>top</aligny>
                             <font>InfoTitleFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[ListItem.Label]</label>
                         </control>
@@ -1063,7 +1063,7 @@
                             <posy>96</posy>
                             <width>1550</width>
                             <height>1</height>
-                            <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                            <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                         </control>
                         <control type="group">
                             <posx>415</posx>
@@ -1074,7 +1074,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]</label>
                             </control>
@@ -1084,7 +1084,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.Date]</label>
                             </control>
@@ -1095,7 +1095,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$LOCALIZE[19043]</label>
                             </control>
@@ -1106,7 +1106,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$LOCALIZE[31510]</label>
                             </control>
@@ -1116,7 +1116,7 @@
                                 <width>660</width>
                                 <height>250</height>
                                 <font>InfoPlotFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <label>$VAR[Plots]</label>
                                 <include>myautoscroll</include>
                             </control>
@@ -1145,7 +1145,7 @@
                     <posy>142</posy>
                     <width>1920</width>
                     <height>892</height>
-                    <texture border="100">common/bg_list.png</texture>
+                    <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                 </control>
                 <control type="list" id="15">
                     <viewtype label="31091">List</viewtype>
@@ -1167,7 +1167,7 @@
                             <height>135</height>
                             <width>1250</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label fallback="416">$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -1177,7 +1177,7 @@
                             <aligny>top</aligny>
                             <width>1250</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label fallback="416">$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -1187,7 +1187,7 @@
                             <aligny>top</aligny>
                             <width>1250</width>
                             <font>FacadeListSubFont</font>
-                            <textcolor>SublistNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$VAR[Details]</label>
                         </control>
                     </itemlayout>
@@ -1197,7 +1197,7 @@
                             <posy>0</posy>
                             <height>405</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="image">
                             <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
@@ -1223,10 +1223,10 @@
                             <posy>346</posy>
                             <height>54</height>
                             <width>335</width>
-                            <texturebg border="14,20,14,20">buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                            <texturebg border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_bg.png</texturebg>
                             <reveal>true</reveal>
                             <lefttexture>-</lefttexture>
-                            <midtexture border="14,20,14,20">buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                            <midtexture border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
                             <righttexture>-</righttexture>
                             <overlaytexture>-</overlaytexture>
                             <info>ListItem.Progress</info>
@@ -1237,7 +1237,7 @@
                             <width>1250</width>
                             <aligny>top</aligny>
                             <font>InfoTitleFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[ListItem.Title]</label>
                         </control>
@@ -1248,7 +1248,7 @@
                             <posy>96</posy>
                             <width>1550</width>
                             <height>1</height>
-                            <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                            <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                         </control>
                         <control type="group">
                             <posx>415</posx>
@@ -1259,7 +1259,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.Label]</label>
                             </control>
@@ -1269,7 +1269,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.StartTime,, / ]$INFO[ListItem.EndTime]</label>
                             </control>
@@ -1279,7 +1279,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.Genre]</label>
                             </control>
@@ -1289,7 +1289,7 @@
                                 <width>660</width>
                                 <height>250</height>
                                 <font>InfoPlotFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <label>$VAR[Plots]</label>
                                 <include>myautoscroll</include>
                             </control>
@@ -1318,7 +1318,7 @@
                     <posy>142</posy>
                     <width>1920</width>
                     <height>892</height>
-                    <texture border="100">common/bg_list.png</texture>
+                    <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                 </control>
                 <control type="list" id="16">
                     <viewtype label="31091">List</viewtype>
@@ -1340,7 +1340,7 @@
                             <height>135</height>
                             <width>1250</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label fallback="416">$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -1350,7 +1350,7 @@
                             <aligny>top</aligny>
                             <width>1250</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label fallback="416">$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -1360,7 +1360,7 @@
                             <aligny>top</aligny>
                             <width>1250</width>
                             <font>FacadeListSubFont</font>
-                            <textcolor>SublistNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$VAR[Details]</label>
                         </control>
                     </itemlayout>
@@ -1370,7 +1370,7 @@
                             <posy>0</posy>
                             <height>405</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="image">
                             <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
@@ -1396,10 +1396,10 @@
                             <posy>346</posy>
                             <height>54</height>
                             <width>335</width>
-                            <texturebg border="14,20,14,20">buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                            <texturebg border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_bg.png</texturebg>
                             <reveal>true</reveal>
                             <lefttexture>-</lefttexture>
-                            <midtexture border="14,20,14,20">buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                            <midtexture border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
                             <righttexture>-</righttexture>
                             <overlaytexture>-</overlaytexture>
                             <info>ListItem.Progress</info>
@@ -1410,7 +1410,7 @@
                             <width>1250</width>
                             <aligny>top</aligny>
                             <font>InfoTitleFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[ListItem.Label]</label>
                         </control>
@@ -1421,7 +1421,7 @@
                             <posy>96</posy>
                             <width>1550</width>
                             <height>1</height>
-                            <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                            <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                         </control>
                         <control type="group">
                             <posx>415</posx>
@@ -1432,7 +1432,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.Label]</label>
                             </control>
@@ -1442,7 +1442,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.StartTime,, / ]$INFO[ListItem.EndTime]</label>
                             </control>
@@ -1452,7 +1452,7 @@
                                 <width>660</width>
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label>$INFO[ListItem.Genre]</label>
                             </control>
@@ -1462,7 +1462,7 @@
                                 <width>660</width>
                                 <height>250</height>
                                 <font>InfoPlotFont</font>
-                                <textcolor>MainColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <label>$VAR[Plots]</label>
                                 <include>myautoscroll</include>
                             </control>

@@ -14,14 +14,14 @@
             <control type="image">
                 <posx>-150</posx>
                 <posy>-3</posy>
-                <texture>common/basichome_upper_gradient.png</texture>
+                <texture>$VAR[Theme.Color]/common/basichome_upper_gradient.png</texture>
                 <width>2220</width>
                 <height>740</height>
             </control>
             <control type="image">
                 <posx>-150</posx>
                 <posy>-3</posy>
-                <texture>common/basichome_upper_gradient.png</texture>
+                <texture>$VAR[Theme.Color]/common/basichome_upper_gradient.png</texture>
                 <width>2220</width>
                 <height>740</height>
                 <colordiffuse>90ffffff</colordiffuse>
@@ -36,7 +36,7 @@
                 <label>$ADDON[script.cu.lrclyrics 32199]</label>
                 <align>center</align>
                 <aligny>center</aligny>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
             </control>
             <!-- ** Required ** Do not change <id> or <type> (Smooth scrolling list for lyrics) -->
             <control type="list" id="110">
@@ -58,7 +58,7 @@
                         <aligny>center</aligny>
                         <align>center</align>
                         <font>InfoDetailsFont</font>
-                        <textcolor>AlternateColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>[B]$INFO[ListItem.Label][/B]</label>
                     </control>
                 </itemlayout>
@@ -71,7 +71,7 @@
                         <aligny>center</aligny>
                         <align>center</align>
                         <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label fallback="- -">[B]$INFO[ListItem.Label][/B]</label>
                     </control>
                 </focusedlayout>
@@ -87,7 +87,7 @@
                 <onright>110</onright>
                 <ondown>110</ondown>
                 <onup>110</onup>
-                <textcolor>AlternateColor</textcolor>
+                <include>TextColor_AlternateColor</include>
                 <showonepage>true</showonepage>
                 <visible>Control.IsVisible(110)</visible>
             </control>
@@ -100,7 +100,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <label>31203</label>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <visible>Control.IsVisible(120) + ![Control.IsVisible(100) | Control.IsVisible(110)]</visible>
             </control>
             <!-- ** Required ** Do not change <id> or <type> (Song Chooser if it gets it wrong) -->
@@ -177,7 +177,7 @@
                 <onright>120</onright>
                 <ondown>120</ondown>
                 <onup>120</onup>
-                <textcolor>AlternateColor</textcolor>
+                <include>TextColor_AlternateColor</include>
                 <showonepage>true</showonepage>
                 <visible>Control.IsVisible(120)</visible>
             </control>
@@ -191,7 +191,7 @@
                 <label>$LOCALIZE[31205] - $INFO[Control.GetLabel(200)]</label>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor>AlternateColor</textcolor>
+                <include>TextColor_AlternateColor</include>
             </control>
             <control type="label" id="200">
                 <description>Scraper label</description>

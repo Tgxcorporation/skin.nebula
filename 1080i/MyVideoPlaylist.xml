@@ -25,8 +25,8 @@
                 <posy>240</posy>
                 <height>50</height>
                 <width>50</width>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
+                <texturenofocus>$VAR[Theme.Color]/topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>$VAR[Theme.Color]/topbar/topbar_exit_focus.png</texturefocus>
                 <onclick>back</onclick>
                 <label>-</label>
             </control>
@@ -35,14 +35,14 @@
                 <posy>244</posy>
                 <width>1454</width>
                 <height>959</height>
-                <texture border="90">common/bg_dialog.png</texture>
+                <texture border="90">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <posx>278</posx>
                 <posy>292</posy>
                 <width>1364</width>
                 <height>90</height>
-                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="label">
                 <posx>323</posx>
@@ -51,7 +51,7 @@
                 <width>1274</width>
                 <align>center</align>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$LOCALIZE[10522]</label>
             </control>
             <control type="panel" id="50">
@@ -71,7 +71,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>931</width>
-                        <texture border="3">list/bg_facade_nofocus.png</texture>
+                        <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                     </control>
                     <control type="label">
                         <visible>StringCompare(ListItem.Label2,)</visible>
@@ -79,7 +79,7 @@
                         <height>71</height>
                         <width>876</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -88,7 +88,7 @@
                         <height>42</height>
                         <width>876</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -98,7 +98,7 @@
                         <height>28</height>
                         <width>876</width>
                         <font>FacadeListSubFont</font>
-                        <textcolor>SublistNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
@@ -108,7 +108,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>931</width>
-                        <include>FacadeFocus</include>
+                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="label">
                         <visible>StringCompare(ListItem.Label2,)</visible>
@@ -116,7 +116,7 @@
                         <height>71</height>
                         <width>876</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -125,7 +125,7 @@
                         <height>42</height>
                         <width>876</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -135,7 +135,7 @@
                         <height>28</height>
                         <width>876</width>
                         <font>FacadeListSubFont</font>
-                        <textcolor>SublistFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </focusedlayout>
@@ -153,14 +153,14 @@
                 <posy>382</posy>
                 <width>2</width>
                 <height>771</height>
-                <texture>list/bg_facade_vertical.png</texture>
+                <texture>$VAR[Theme.Color]/list/bg_facade_vertical.png</texture>
             </control>
             <control type="image">
                 <posx>1209</posx>
                 <posy>382</posy>
                 <height>771</height>
                 <width>375</width>
-                <texture flipx="true">list/bg_strip_horizontal_left.png</texture>
+                <texture flipx="true">$VAR[Theme.Color]/list/bg_strip_horizontal_left.png</texture>
                 <colordiffuse>90ffffff</colordiffuse>
             </control>
             <control type="grouplist" id="9001">
@@ -234,7 +234,7 @@
                     <posy>792</posy>
                     <width>316</width>
                     <height>316</height>
-                    <texture diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                    <texture diffuse="$VAR[Theme.Color]/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <include>Animation_ViewsCDart</include>
                 </control>

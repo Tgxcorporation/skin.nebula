@@ -6,7 +6,7 @@
         <posy>340</posy>
         <height>45</height>
         <width>1920</width>
-        <textcolor>AlternateColor</textcolor>
+        <include>TextColor_AlternateColor</include>
         <font>FacadeListSubFont</font>
     </include>
     <include name="Square_Header">
@@ -15,7 +15,7 @@
         <posy>360</posy>
         <height>45</height>
         <width>1920</width>
-        <textcolor>AlternateColor</textcolor>
+        <include>TextColor_AlternateColor</include>
         <font>FacadeListSubFont</font>
     </include>
     <include name="Poster_Header_BG">
@@ -24,7 +24,7 @@
         <posy>285</posy>
         <height>45</height>
         <width>1920</width>
-        <textcolor>AlternateColor</textcolor>
+        <include>TextColor_AlternateColor</include>
         <font>FacadeListSubFont</font>
     </include>
     <include name="Square_Header_BG">
@@ -33,7 +33,7 @@
         <posy>315</posy>
         <height>45</height>
         <width>1920</width>
-        <textcolor>AlternateColor</textcolor>
+        <include>TextColor_AlternateColor</include>
         <font>FacadeListSubFont</font>
     </include>
     <include name="Vertical_HomeSubMenu">
@@ -55,7 +55,7 @@
                 <posy>0</posy>
                 <width>427</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
             </control>
             <control type="label">
                 <posx>TextMarginR</posx>
@@ -63,7 +63,7 @@
                 <width>350</width>
                 <align>right</align>
                 <font>OSDFont</font>
-                <textcolor>ListNoFocusColor</textcolor>
+                <include>TextColor_AlternateColor</include>
                 <label>$INFO[ListItem.Label]</label>
             </control>
         </itemlayout>
@@ -73,7 +73,7 @@
                 <posy>0</posy>
                 <width>427</width>
                 <height>71</height>
-                <include>FlippedFacadeFocus</include>
+                <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
             </control>
             <control type="label">
                 <posx>TextMarginR</posx>
@@ -81,7 +81,7 @@
                 <width>350</width>
                 <align>right</align>
                 <font>OSDFont</font>
-                <textcolor>ListFocusColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[ListItem.Label]</label>
             </control>
         </focusedlayout>
@@ -122,7 +122,7 @@
                 <posy>0</posy>
                 <width>577</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
             </control>
             <control type="label">
                 <posx>TextMarginR</posx>
@@ -130,7 +130,7 @@
                 <width>487</width>
                 <align>right</align>
                 <font>FacadeListMainFont</font>
-                <textcolor>ListNoFocusColor</textcolor>
+                <include>TextColor_AlternateColor</include>
                 <label>$INFO[ListItem.Label]</label>
             </control>
         </itemlayout>
@@ -140,7 +140,7 @@
                 <posy>0</posy>
                 <width>577</width>
                 <height>71</height>
-                <include>FlippedFacadeFocus</include>
+                <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
             </control>
             <control type="label">
                 <posx>TextMarginR</posx>
@@ -148,7 +148,7 @@
                 <width>487</width>
                 <align>right</align>
                 <font>FacadeListMainFont</font>
-                <textcolor>ListFocusColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[ListItem.Label]</label>
             </control>
         </focusedlayout>
@@ -174,7 +174,7 @@
             <posy>515</posy>
             <width>50</width>
             <height>50</height>
-            <texture>topbar/topbar_play_focus.png</texture>
+            <texture>$VAR[Theme.Color]/topbar/topbar_play_focus.png</texture>
         </control>
         <control type="image">
             <visible>Skin.HasSetting(plexbmc)+[[[IntegerGreaterThan(Container(111).NumItems,0)]+Container(300).HasFocus(7)]|[[IntegerGreaterThan(Container(900).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),photo)]|[[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),movie)]|[[IntegerGreaterThan(Container(511).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),artist)]|[[IntegerGreaterThan(Container(212).NumItems,0)]+Container(300).HasFocus(50)]|[[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),show)]]</visible>
@@ -182,7 +182,7 @@
             <posy>515</posy>
             <width>50</width>
             <height>50</height>
-            <texture>topbar/topbar_play_focus.png</texture>
+            <texture>$VAR[Theme.Color]/topbar/topbar_play_focus.png</texture>
         </control>
         <control type="group" id="700">
             <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -195,7 +195,7 @@
                 <posy>280</posy>
                 <width>2320</width>
                 <height>520</height>
-                <texture border="83">common/bg_dialog.png</texture>
+                <texture border="83">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <visible>!Skin.HasSetting(BlackGlassMode) + Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | [IntegerGreaterThan(Container(311).NumItems,0) + Control.Hasfocus(311)] | [IntegerGreaterThan(Container(312).NumItems,0) + Control.Hasfocus(312)] | [IntegerGreaterThan(Container(411).NumItems,0) + Control.Hasfocus(411)] | [IntegerGreaterThan(Container(413).NumItems,0) + Control.Hasfocus(413)] | Control.Hasfocus(511) | Control.Hasfocus(900)]</visible>
@@ -205,7 +205,7 @@
                 <posy>280</posy>
                 <width>2320</width>
                 <height>520</height>
-                <texture border="83">common/bg_dialog.png</texture>
+                <texture border="83">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <visible>Skin.HasSetting(BlackGlassMode) + !Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | Control.Hasfocus(311)  | Control.Hasfocus(312) | Control.Hasfocus(411) | Control.Hasfocus(413) | Control.Hasfocus(511) | Control.Hasfocus(513) | Control.Hasfocus(514) | Control.Hasfocus(515) | Control.Hasfocus(412) | Control.Hasfocus(512)]</visible>
@@ -215,7 +215,7 @@
                 <posy>220</posy>
                 <width>2320</width>
                 <height>640</height>
-                <texture border="83">common/bg_dialog.png</texture>
+                <texture border="83">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <visible>Skin.HasSetting(BlackGlassMode) + Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | [IntegerGreaterThan(Container(311).NumItems,0) + Control.Hasfocus(311)] | [IntegerGreaterThan(Container(312).NumItems,0) + Control.Hasfocus(312)] | [IntegerGreaterThan(Container(411).NumItems,0) + Control.Hasfocus(411)] | [IntegerGreaterThan(Container(413).NumItems,0) + Control.Hasfocus(413)] | Control.Hasfocus(511) | Control.Hasfocus(900)]</visible>
@@ -225,14 +225,14 @@
                 <posy>220</posy>
                 <width>2320</width>
                 <height>640</height>
-                <texture border="83">common/bg_dialog.png</texture>
+                <texture border="83">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <posx>290</posx>
                 <posy>78</posy>
                 <width>182</width>
                 <height>924</height>
-                <texture>common/basichome_vertical_gradient.png</texture>
+                <texture>$VAR[Theme.Color]/common/basichome_vertical_gradient.png</texture>
             </control>
             <include condition="!Skin.HasSetting(Hide.Favourites)">Favourite.List</include>
             <include condition="Skin.HasSetting(Shelf.Addons)">Addons.List</include>
@@ -255,7 +255,7 @@
                     <posy>0</posy>
                     <width>627</width>
                     <height>1080</height>
-                    <texture>common/bg_left.png</texture>
+                    <texture>$VAR[Theme.Color]/common/bg_left.png</texture>
                 </control>
                 <control type="label">
                     <visible>Skin.HasSetting(plexbmc)</visible>
@@ -288,21 +288,21 @@
                     <posy>-1</posy>
                     <width>577</width>
                     <height>79</height>
-                    <texture flipx="true">list/bg_facade_nofocus_top.png</texture>
+                    <texture flipx="true">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
                     <posx>0</posx>
                     <posy>-1</posy>
                     <width>577</width>
                     <height>79</height>
-                    <texture flipx="true">list/bg_facade_nofocus_top.png</texture>
+                    <texture flipx="true">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
                     <posx>0</posx>
                     <posy>922</posy>
                     <width>577</width>
                     <height>79</height>
-                    <texture flipx="true">list/bg_facade_nofocus_top.png</texture>
+                    <texture flipx="true">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
                     <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,12)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -310,7 +310,7 @@
                     <posy>78</posy>
                     <width>577</width>
                     <height>71</height>
-                    <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                    <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
                     <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,10)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -318,7 +318,7 @@
                     <posy>149</posy>
                     <width>577</width>
                     <height>71</height>
-                    <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                    <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
                     <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,8)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -326,7 +326,7 @@
                     <posy>220</posy>
                     <width>577</width>
                     <height>71</height>
-                    <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                    <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
                     <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,6)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -334,7 +334,7 @@
                     <posy>291</posy>
                     <width>577</width>
                     <height>71</height>
-                    <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                    <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
                     <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,4)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -342,7 +342,7 @@
                     <posy>362</posy>
                     <width>577</width>
                     <height>71</height>
-                    <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                    <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
                     <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,2)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -350,7 +350,7 @@
                     <posy>433</posy>
                     <width>577</width>
                     <height>71</height>
-                    <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                    <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
                     <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,1)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -358,7 +358,7 @@
                     <posy>575</posy>
                     <width>577</width>
                     <height>71</height>
-                    <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                    <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
                     <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,3)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -366,7 +366,7 @@
                     <posy>646</posy>
                     <width>577</width>
                     <height>71</height>
-                    <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                    <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
                     <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,5)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -374,7 +374,7 @@
                     <posy>717</posy>
                     <width>577</width>
                     <height>71</height>
-                    <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                    <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
                     <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,7)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -382,7 +382,7 @@
                     <posy>788</posy>
                     <width>577</width>
                     <height>71</height>
-                    <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                    <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
                     <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,9)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -390,7 +390,7 @@
                     <posy>859</posy>
                     <width>577</width>
                     <height>71</height>
-                    <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                    <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="rss">
                     <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
@@ -403,7 +403,7 @@
                     <width>577</width>
                     <font>LeftMenuTitleFont</font>
                     <textcolor>60ffffff</textcolor>
-                    <titlecolor>MainColor</titlecolor>
+                    <include>TitleColor_MainColor</include>
                     <headlinecolor>60ffffff</headlinecolor>
                 </control>
                 <include condition="Skin.HasSetting(Fixed_HomeMenu)">Vertical_Fixed_HomeMenu</include>
@@ -458,7 +458,7 @@
                 <posy>0</posy>
                 <width>477</width>
                 <height>1080</height>
-                <texture border="90">common/bg_left.png</texture>
+                <texture border="90">$VAR[Theme.Color]/common/bg_left.png</texture>
             </control>
             <control type="label">
                 <posx>0</posx>
@@ -477,21 +477,21 @@
                 <posy>-1</posy>
                 <width>427</width>
                 <height>79</height>
-                <texture flipx="true">list/bg_facade_nofocus_top.png</texture>
+                <texture flipx="true">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="image">
                 <posx>-430</posx>
                 <posy>-1</posy>
                 <width>427</width>
                 <height>79</height>
-                <texture flipx="true">list/bg_facade_nofocus_top.png</texture>
+                <texture flipx="true">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="image">
                 <posx>-430</posx>
                 <posy>922</posy>
                 <width>427</width>
                 <height>79</height>
-                <texture flipx="true">list/bg_facade_nofocus_top.png</texture>
+                <texture flipx="true">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(9001).NumItems,0)+!IntegerGreaterThan(Container(9001).NumItems,12)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -499,7 +499,7 @@
                 <posy>78</posy>
                 <width>427</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(9001).NumItems,0)+!IntegerGreaterThan(Container(9001).NumItems,10)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -507,7 +507,7 @@
                 <posy>149</posy>
                 <width>427</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(9001).NumItems,0)+!IntegerGreaterThan(Container(9001).NumItems,8)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -515,7 +515,7 @@
                 <posy>220</posy>
                 <width>427</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(9001).NumItems,0)+!IntegerGreaterThan(Container(9001).NumItems,6)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -523,7 +523,7 @@
                 <posy>291</posy>
                 <width>427</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(9001).NumItems,0)+!IntegerGreaterThan(Container(9001).NumItems,4)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -531,7 +531,7 @@
                 <posy>362</posy>
                 <width>427</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(9001).NumItems,0)+!IntegerGreaterThan(Container(9001).NumItems,2)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -539,7 +539,7 @@
                 <posy>433</posy>
                 <width>427</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(9001).NumItems,0)+!IntegerGreaterThan(Container(9001).NumItems,1)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -547,7 +547,7 @@
                 <posy>575</posy>
                 <width>427</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(9001).NumItems,0)+!IntegerGreaterThan(Container(9001).NumItems,3)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -555,7 +555,7 @@
                 <posy>646</posy>
                 <width>427</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(9001).NumItems,0)+!IntegerGreaterThan(Container(9001).NumItems,5)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -563,7 +563,7 @@
                 <posy>717</posy>
                 <width>427</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(9001).NumItems,0)+!IntegerGreaterThan(Container(9001).NumItems,7)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -571,7 +571,7 @@
                 <posy>788</posy>
                 <width>427</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(9001).NumItems,0)+!IntegerGreaterThan(Container(9001).NumItems,9)+Skin.HasSetting(Fixed_HomeMenu)</visible>
@@ -579,7 +579,7 @@
                 <posy>859</posy>
                 <width>427</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
+                <texture flipx="true" border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
             </control>
             <include condition="Skin.HasSetting(Fixed_HomeMenu)">Vertical_Fixed_HomeSubMenu</include>
             <include condition="!Skin.HasSetting(Fixed_HomeMenu)">Vertical_Wrapped_HomeSubMenu</include>

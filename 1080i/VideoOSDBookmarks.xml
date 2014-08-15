@@ -18,8 +18,8 @@
                 <posy>240</posy>
                 <height>50</height>
                 <width>50</width>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
+                <texturenofocus>$VAR[Theme.Color]/topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>$VAR[Theme.Color]/topbar/topbar_exit_focus.png</texturefocus>
                 <onclick>back</onclick>
                 <label>-</label>
             </control>
@@ -28,14 +28,14 @@
                 <posy>244</posy>
                 <width>1454</width>
                 <height>939</height>
-                <texture border="90">common/bg_dialog.png</texture>
+                <texture border="90">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <posx>278</posx>
                 <posy>292</posy>
                 <width>1364</width>
                 <height>90</height>
-                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="label">
                 <posx>323</posx>
@@ -44,7 +44,7 @@
                 <width>1274</width>
                 <align>center</align>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE] - $INFO[Container(11).NumItems,, $LOCALIZE[31025]]</label>
             </control>
             <control type="panel" id="11">
@@ -112,7 +112,7 @@
                 <posy>950</posy>
                 <width>1364</width>
                 <height>79</height>
-                <texture>list/bg_facade_nofocus_top.png</texture>
+                <texture>$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="grouplist" id="9001">
                 <posx>278</posx>

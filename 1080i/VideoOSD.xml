@@ -18,14 +18,14 @@
                 <onup>100</onup>
                 <ondown>100</ondown>
                 <action>seek</action>
-                <texturesliderbar>OSD/osd_progress_empty.png</texturesliderbar>
-                <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
-                <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
+                <texturesliderbar>$VAR[Theme.Color]/OSD/osd_progress_empty.png</texturesliderbar>
+                <textureslidernib>$VAR[Theme.Color]/buttons/SliderNibNF.png</textureslidernib>
+                <textureslidernibfocus>$VAR[Theme.Color]/buttons/SliderNibFO.png</textureslidernibfocus>
             </control>
             <control type="image">
                 <posx>-150</posx>
                 <posy>-3</posy>
-                <texture>common/basichome_upper_gradient.png</texture>
+                <texture>$VAR[Theme.Color]/common/basichome_upper_gradient.png</texture>
                 <width>2220</width>
                 <height>440</height>
             </control>
@@ -43,8 +43,8 @@
                     <height>50</height>
                     <label>-</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_back_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_back_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_back_nofocus.png</texturenofocus>
                     <onleft>707</onleft>
                     <onright>600</onright>
                     <onup>87</onup>
@@ -58,8 +58,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[210]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_skipback_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_skipback_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_skipback_nofocus.png</texturenofocus>
                     <onleft>599</onleft>
                     <onright>601</onright>
                     <onup>87</onup>
@@ -73,8 +73,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[31354]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_rewind_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_rewind_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_rewind_nofocus.png</texturenofocus>
                     <onleft>600</onleft>
                     <onright>602</onright>
                     <onup>87</onup>
@@ -89,11 +89,11 @@
                     <label>$LOCALIZE[31351]</label>
                     <altlabel>$LOCALIZE[208]</altlabel>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_pause_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_pause_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_pause_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_pause_nofocus.png</texturenofocus>
                     <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                    <alttexturefocus>topbar/topbar_play_focus.png</alttexturefocus>
-                    <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
+                    <alttexturefocus>$VAR[Theme.Color]/topbar/topbar_play_focus.png</alttexturefocus>
+                    <alttexturenofocus>$VAR[Theme.Color]/topbar/topbar_play_nofocus.png</alttexturenofocus>
                     <onleft>601</onleft>
                     <onright>603</onright>
                     <onup>87</onup>
@@ -107,8 +107,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[31352]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_stop_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_stop_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_stop_nofocus.png</texturenofocus>
                     <onleft>602</onleft>
                     <onright>604</onright>
                     <onup>87</onup>
@@ -122,8 +122,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[31353]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_fastforward_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_fastforward_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_fastforward_nofocus.png</texturenofocus>
                     <onleft>603</onleft>
                     <onright>605</onright>
                     <onup>87</onup>
@@ -137,8 +137,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[209]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_skipforward_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_skipforward_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_skipforward_nofocus.png</texturenofocus>
                     <onleft>604</onleft>
                     <onright>700</onright>
                     <onup>87</onup>
@@ -160,8 +160,8 @@
                     <height>50</height>
                     <label>-</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_back_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_back_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_back_nofocus.png</texturenofocus>
                     <onleft>705</onleft>
                     <onright>600</onright>
                     <onup>87</onup>
@@ -175,8 +175,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[210]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_channel_down_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_channel_down_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_channel_down_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_channel_down_nofocus.png</texturenofocus>
                     <onleft>599</onleft>
                     <onright>601</onright>
                     <onup>87</onup>
@@ -190,8 +190,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[31354]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_channel_up_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_channel_up_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_channel_up_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_channel_up_nofocus.png</texturenofocus>
                     <onleft>600</onleft>
                     <onright>602</onright>
                     <onup>87</onup>
@@ -207,8 +207,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[31354]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_rewind_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_rewind_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_rewind_nofocus.png</texturenofocus>
                     <onleft>601</onleft>
                     <onright>603</onright>
                     <onup>87</onup>
@@ -225,11 +225,11 @@
                     <label>$LOCALIZE[31351]</label>
                     <altlabel>$LOCALIZE[208]</altlabel>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_pause_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_pause_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_pause_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_pause_nofocus.png</texturenofocus>
                     <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                    <alttexturefocus>topbar/topbar_play_focus.png</alttexturefocus>
-                    <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
+                    <alttexturefocus>$VAR[Theme.Color]/topbar/topbar_play_focus.png</alttexturefocus>
+                    <alttexturenofocus>$VAR[Theme.Color]/topbar/topbar_play_nofocus.png</alttexturenofocus>
                     <onleft>602</onleft>
                     <onright>604</onright>
                     <onup>87</onup>
@@ -243,8 +243,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[31352]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_stop_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_stop_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_stop_nofocus.png</texturenofocus>
                     <onleft>603</onleft>
                     <onright>605</onright>
                     <onup>87</onup>
@@ -260,8 +260,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[31353]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_fastforward_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_fastforward_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_fastforward_nofocus.png</texturenofocus>
                     <onleft>604</onleft>
                     <onright>606</onright>
                     <onup>87</onup>
@@ -275,8 +275,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[19069]: $LOCALIZE[19030]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_channel_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_channel_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_channel_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_channel_nofocus.png</texturenofocus>
                     <onleft>605</onleft>
                     <onright>607</onright>
                     <onup>87</onup>
@@ -291,8 +291,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[19069]: $LOCALIZE[19029]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_epg_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_epg_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_epg_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_epg_nofocus.png</texturenofocus>
                     <onleft>606</onleft>
                     <onright>700</onright>
                     <onup>87</onup>
@@ -316,9 +316,9 @@
                     <height>50</height>
                     <label>$LOCALIZE[31355]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_dvd_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_dvd_nofocus.png</texturenofocus>
-                    <alttexturenofocus>topbar/topbar_dvd_nofocus.png</alttexturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_dvd_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_dvd_nofocus.png</texturenofocus>
+                    <alttexturenofocus>$VAR[Theme.Color]/topbar/topbar_dvd_nofocus.png</alttexturenofocus>
                     <usealttexture>!VideoPlayer.HasMenu</usealttexture>
                     <onleft>605</onleft>
                     <onright>701</onright>
@@ -333,8 +333,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[13395]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_video_settings_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_video_settings_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_video_settings_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_video_settings_nofocus.png</texturenofocus>
                     <onleft>700</onleft>
                     <onright>702</onright>
                     <onup>87</onup>
@@ -348,8 +348,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[292] &amp; $LOCALIZE[287]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_volume_up_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_volume_up_nofocus.png</texturenofocus>
                     <onleft>701</onleft>
                     <onright>250</onright>
                     <onup>87</onup>
@@ -363,8 +363,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[31356]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_subtitles_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_subtitles_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_subtitles_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_subtitles_nofocus.png</texturenofocus>
                     <onleft>702</onleft>
                     <onright>704</onright>
                     <onup>400</onup>
@@ -377,8 +377,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[298]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_bookmark2_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_bookmark2_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_bookmark2_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_bookmark2_nofocus.png</texturenofocus>
                     <onleft>250</onleft>
                     <onright>706</onright>
                     <onup>87</onup>
@@ -396,8 +396,8 @@
                     <onright>705</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
-                    <texturefocus>topbar/topbar_bookmark_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_bookmark_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_bookmark_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_bookmark_nofocus.png</texturenofocus>
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(VideoPlaylist)</onclick>
                 </control>
@@ -410,8 +410,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[36501]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_3d_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_3d_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_3d_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_3d_nofocus.png</texturenofocus>
                     <onleft>706</onleft>
                     <onright>707</onright>
                     <onup>87</onup>
@@ -425,8 +425,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[544]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_info_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_info_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_info_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_info_nofocus.png</texturenofocus>
                     <onleft>705</onleft>
                     <onright>599</onright>
                     <onup>87</onup>
@@ -449,8 +449,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[19255]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_rec_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_rec_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_rec_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_rec_nofocus.png</texturenofocus>
                     <onleft>607</onleft>
                     <onright>701</onright>
                     <onup>87</onup>
@@ -464,8 +464,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[23050]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_teletext_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_teletext_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_teletext_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_teletext_nofocus.png</texturenofocus>
                     <onleft>700</onleft>
                     <onright>702</onright>
                     <onup>87</onup>
@@ -481,8 +481,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[13395]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_video_settings_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_video_settings_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_video_settings_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_video_settings_nofocus.png</texturenofocus>
                     <onleft>701</onleft>
                     <onright>703</onright>
                     <onup>87</onup>
@@ -496,8 +496,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[292] &amp; $LOCALIZE[287]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_volume_up_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_volume_up_nofocus.png</texturenofocus>
                     <onleft>702</onleft>
                     <onright>704</onright>
                     <onup>87</onup>
@@ -513,8 +513,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[36501]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_3d_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_3d_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_3d_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_3d_nofocus.png</texturenofocus>
                     <onleft>703</onleft>
                     <onright>705</onright>
                     <onup>87</onup>
@@ -528,8 +528,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[544]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_info_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_info_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_info_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_info_nofocus.png</texturenofocus>
                     <onleft>704</onleft>
                     <onright>599</onright>
                     <onup>87</onup>
@@ -547,14 +547,14 @@
                     <posy>-20</posy>
                     <width>567</width>
                     <height>473</height>
-                    <texture border="90">common/bg_dialog.png</texture>
+                    <texture border="90">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                 </control>
                 <control type="image">
                     <posx>45</posx>
                     <posy>-2</posy>
                     <width>477</width>
                     <height>79</height>
-                    <texture>list/bg_facade_nofocus_top.png</texture>
+                    <texture>$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="button" id="410">
                     <description>Fake button for mouse control</description>
@@ -577,7 +577,7 @@
                     <width>590</width>
                     <label>287</label>
                     <font>LeftMenuTitleFont</font>
-                    <textcolor>AlternateColor</textcolor>
+                    <include>TextColor_AlternateColor</include>
                 </control>
                 <control type="grouplist" id="400">
                     <posx>45</posx>
@@ -633,7 +633,7 @@
                     <posy>390</posy>
                     <width>300</width>
                     <height>300</height>
-                    <texture>OSD/pause.png</texture>
+                    <texture>$VAR[Theme.Color]/OSD/pause.png</texture>
                 </control>
                 <control type="image">
                     <visible>player.rewinding + !Skin.HasSetting(DisablePauseIconOSD)</visible>
@@ -641,7 +641,7 @@
                     <posy>390</posy>
                     <width>300</width>
                     <height>300</height>
-                    <texture>OSD/rewind.png</texture>
+                    <texture>$VAR[Theme.Color]/OSD/rewind.png</texture>
                 </control>
                 <control type="image">
                     <visible>player.forwarding + !Skin.HasSetting(DisablePauseIconOSD)</visible>
@@ -649,7 +649,7 @@
                     <posy>390</posy>
                     <width>300</width>
                     <height>300</height>
-                    <texture>OSD/fastforward.png</texture>
+                    <texture>$VAR[Theme.Color]/OSD/fastforward.png</texture>
                 </control>
             </control>
         </control>

@@ -11,21 +11,21 @@
                 <posy>240</posy>
                 <width>2320</width>
                 <height>600</height>
-                <texture border="150,40,150,40">common/bg_dialog.png</texture>
+                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <posx>100</posx>
                 <posy>232</posy>
                 <width>1720</width>
                 <height>217</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
                 <posx>100</posx>
                 <posy>676</posy>
                 <width>1720</width>
                 <height>172</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="label" id="1">
                 <posx>TextMargin</posx>
@@ -34,7 +34,7 @@
                 <height>135</height>
                 <align>center</align>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
             </control>
             <control type="textbox" id="9">
                 <description>text</description>
@@ -45,7 +45,7 @@
                 <align>center</align>
                 <label>-</label>
                 <font>InfoDetailsFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <pagecontrol>6060</pagecontrol>
             </control>
             <control type="scrollbar" id="6060">

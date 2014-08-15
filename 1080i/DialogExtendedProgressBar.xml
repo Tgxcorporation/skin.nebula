@@ -10,15 +10,27 @@
                 <posy>0</posy>
                 <width>2320</width>
                 <height>183</height>
-                <texture border="150,40,150,40">common/bg_dialog.png</texture>
+                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="progress" id="32">
+                <visible>!skin.hassetting(Theme.Color.Black)</visible>
                 <posx>-29</posx>
                 <posy>-20</posy>
                 <width>1978</width>
                 <height>54</height>
-                <texturebg border="14,20,14,20">buttons/Scrollbar_Horizontal_bg.png</texturebg>
-                <midtexture border="30,24,30,24">buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                <texturebg border="14,20,14,20">white/buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                <midtexture border="30,24,30,24">white/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                <righttexture>-</righttexture>
+                <lefttexture>-</lefttexture>
+            </control>
+            <control type="progress" id="32">
+                <visible>skin.hassetting(Theme.Color.Black)</visible>
+                <posx>-29</posx>
+                <posy>-20</posy>
+                <width>1978</width>
+                <height>54</height>
+                <texturebg border="14,20,14,20">black/buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                <midtexture border="30,24,30,24">black/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
                 <righttexture>-</righttexture>
                 <lefttexture>-</lefttexture>
             </control>
@@ -30,7 +42,7 @@
                 <scroll>true</scroll>
                 <align>center</align>
                 <font>NotificationFontDouble</font>
-                <textcolor>AlternateColor</textcolor>
+                <include>TextColor_AlternateColor</include>
             </control>
             <control type="label" id="31">
                 <posx>TextMargin</posx>
@@ -40,7 +52,7 @@
                 <scroll>true</scroll>
                 <align>center</align>
                 <font>NotificationFontDouble</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
             </control>
         </control>
     </controls>

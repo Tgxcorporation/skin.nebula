@@ -38,7 +38,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>1080</height>
-            <texture>common/BlackDot.png</texture>
+            <texture>$VAR[Theme.Color]/common/BlackDot.png</texture>
         </control>
         <control type="multiimage">
             <visible>Player.HasAudio + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
@@ -93,7 +93,7 @@
             <width>5760</width>
             <height>3240</height>
             <colordiffuse>b0ffffff</colordiffuse>
-            <include>OverlayBG</include>
+            <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
         </control>
     </include>
     <include name="Dimensions_Fullscreen">
@@ -117,7 +117,7 @@
             <posy>0</posy>
             <width>2320</width>
             <height>183</height>
-            <texture border="150,40,150,40">common/bg_dialog.png</texture>
+            <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
         </control>
         <control type="button" id="8998">
             <description>Fake button for mouse control</description>
@@ -147,6 +147,7 @@
         </control>
         <control type="grouplist" id="9900">
             <include>TopBarVisibleFadeEffect</include>
+            <visible>!skin.hassetting(Theme.Color.Black)</visible>
             <visible>!control.IsVisible(53)</visible>
             <posx>395</posx>
             <posy>66</posy>
@@ -171,12 +172,11 @@
                 <height>50</height>
                 <label>-</label>
                 <font>-</font>
-                <texturefocus>topbar/topbar_back_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_back_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_back_nofocus.png</texturenofocus>
                 <onclick>back</onclick>
             </control>
             <control type="button" id="1601">
-                <!-- <visible>Player.HasMedia</visible> -->
                 <include>FakeTopbarButton</include>
             </control>
             <control type="button" id="1602">
@@ -184,97 +184,85 @@
                 <height>50</height>
                 <label>-</label>
                 <font>-</font>
-                <texturefocus>topbar/topbar_home_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_home_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_home_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_home_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(home)</onclick>
             </control>
             <control type="button" id="1603">
-                <!-- <visible>Player.HasMedia</visible> -->
                 <width>60</width>
                 <include>FakeTopbarButton</include>
             </control>
             <control type="button" id="1604">
-                <!-- <visible>Player.HasMedia</visible> -->
                 <width>50</width>
                 <height>50</height>
                 <label>$LOCALIZE[210]</label>
                 <font>-</font>
-                <texturefocus>topbar/topbar_skipback_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_skipback_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_skipback_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Previous)</onclick>
             </control>
             <control type="button" id="1605">
-                <!-- <visible>Player.HasMedia</visible> -->
                 <include>FakeTopbarButton</include>
             </control>
             <control type="button" id="1606">
-                <!-- <visible>Player.HasMedia</visible> -->
                 <width>50</width>
                 <height>50</height>
                 <label>$LOCALIZE[31354]</label>
                 <font>-</font>
-                <texturefocus>topbar/topbar_rewind_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_rewind_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_rewind_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Rewind)</onclick>
             </control>
             <control type="button" id="1607">
-                <!-- <visible>Player.HasMedia</visible> -->
                 <include>FakeTopbarButton</include>
             </control>
             <control type="togglebutton" id="1608">
-                <!-- <visible>Player.HasMedia</visible> -->
                 <width>50</width>
                 <height>50</height>
                 <label>$LOCALIZE[31351]</label>
                 <altlabel>$LOCALIZE[208]</altlabel>
                 <font>-</font>
-                <texturefocus>topbar/topbar_pause_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_pause_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_pause_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_pause_nofocus.png</texturenofocus>
                 <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                <alttexturefocus>topbar/topbar_play_focus.png</alttexturefocus>
-                <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
+                <alttexturefocus>white/topbar/topbar_play_focus.png</alttexturefocus>
+                <alttexturenofocus>white/topbar/topbar_play_nofocus.png</alttexturenofocus>
                 <onclick>PlayerControl(Play)</onclick>
             </control>
             <control type="button" id="1609">
-                <!-- <visible>Player.HasMedia</visible> -->
                 <include>FakeTopbarButton</include>
             </control>
             <control type="button" id="1610">
-                <!-- <visible>Player.HasMedia</visible> -->
                 <width>50</width>
                 <height>50</height>
                 <label>$LOCALIZE[31352]</label>
                 <font>-</font>
-                <texturefocus>topbar/topbar_stop_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_stop_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_stop_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Stop)</onclick>
             </control>
             <control type="button" id="1611">
-                <!-- <visible>Player.HasMedia</visible> -->
                 <include>FakeTopbarButton</include>
             </control>
             <control type="button" id="1612">
-                <!-- <visible>Player.HasMedia</visible> -->
                 <width>50</width>
                 <height>50</height>
                 <label>$LOCALIZE[31353]</label>
                 <font>-</font>
-                <texturefocus>topbar/topbar_fastforward_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_fastforward_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_fastforward_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Forward)</onclick>
             </control>
             <control type="button" id="1613">
-                <!-- <visible>Player.HasMedia</visible> -->
                 <include>FakeTopbarButton</include>
             </control>
             <control type="button" id="1614">
-                <!-- <visible>Player.HasMedia</visible> -->
                 <width>50</width>
                 <height>50</height>
                 <label>$LOCALIZE[209]</label>
                 <font>-</font>
-                <texturefocus>topbar/topbar_skipforward_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_skipforward_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_skipforward_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Next)</onclick>
             </control>
             <control type="button" id="1615">
@@ -286,8 +274,8 @@
                 <height>50</height>
                 <label>$LOCALIZE[13376]</label>
                 <font>-</font>
-                <texturefocus>topbar/topbar_volume_mute_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_volume_mute_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_volume_mute_nofocus.png</texturenofocus>
                 <onclick>Mute</onclick>
             </control>
             <control type="button" id="1617">
@@ -298,8 +286,8 @@
                 <height>50</height>
                 <label>$LOCALIZE[13376]</label>
                 <font>-</font>
-                <texturefocus>topbar/topbar_volume_down_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_volume_down_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_volume_down_nofocus.png</texturenofocus>
                 <onclick>VolumeDown</onclick>
             </control>
             <control type="button" id="1619">
@@ -310,8 +298,8 @@
                 <height>50</height>
                 <label>$LOCALIZE[13376]</label>
                 <font>-</font>
-                <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_volume_up_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_volume_up_nofocus.png</texturenofocus>
                 <onclick>VolumeUp</onclick>
             </control>
             <control type="button" id="1621">
@@ -319,12 +307,11 @@
                 <include>FakeTopbarButton</include>
             </control>
             <control type="button" id="1622">
-                <!-- <visible>Player.HasMedia</visible> -->
                 <width>50</width>
                 <height>50</height>
                 <font>-</font>
-                <texturefocus>topbar/topbar_fullscreen_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_fullscreen_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_fullscreen_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_fullscreen_nofocus.png</texturenofocus>
                 <label>$LOCALIZE[16003]</label>
                 <onclick>fullscreen</onclick>
             </control>
@@ -336,8 +323,191 @@
                 <height>50</height>
                 <label>$LOCALIZE[13005]</label>
                 <font>-</font>
-                <texturefocus>topbar/topbar_shutdown_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_shutdown_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_shutdown_nofocus.png</texturenofocus>
+                <onclick>$VAR[QuitAction]</onclick>
+            </control>
+        </control>
+        <control type="grouplist" id="9900">
+            <include>TopBarVisibleFadeEffect</include>
+            <visible>skin.hassetting(Theme.Color.Black)</visible>
+            <visible>!control.IsVisible(53)</visible>
+            <posx>395</posx>
+            <posy>66</posy>
+            <width>1130</width>
+            <height>50</height>
+            <itemgap>0</itemgap>
+            <scrolltime>200</scrolltime>
+            <orientation>horizontal</orientation>
+            <onleft>9000</onleft>
+            <onright>9000</onright>
+            <onup>9000</onup>
+            <ondown condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</ondown>
+            <ondown condition="Window.IsActive(Home.xml)">701</ondown>
+            <ondown condition="Window.IsActive(DialogContentSettings.xml)">4</ondown>
+            <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
+            <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
+            <ondown condition="Window.IsActive(SkinSettings.xml)">90000</ondown>
+            <ondown>9000</ondown>
+            <align>center</align>
+            <control type="button" id="1600">
+                <width>50</width>
+                <height>50</height>
+                <label>-</label>
+                <font>-</font>
+                <texturefocus>black/topbar/topbar_back_focus.png</texturefocus>
+                <texturenofocus>black/topbar/topbar_back_nofocus.png</texturenofocus>
+                <onclick>back</onclick>
+            </control>
+            <control type="button" id="1601">
+                <include>FakeTopbarButton</include>
+            </control>
+            <control type="button" id="1602">
+                <width>50</width>
+                <height>50</height>
+                <label>-</label>
+                <font>-</font>
+                <texturefocus>black/topbar/topbar_home_focus.png</texturefocus>
+                <texturenofocus>black/topbar/topbar_home_nofocus.png</texturenofocus>
+                <onclick>ActivateWindow(home)</onclick>
+            </control>
+            <control type="button" id="1603">
+                <width>60</width>
+                <include>FakeTopbarButton</include>
+            </control>
+            <control type="button" id="1604">
+                <width>50</width>
+                <height>50</height>
+                <label>$LOCALIZE[210]</label>
+                <font>-</font>
+                <texturefocus>black/topbar/topbar_skipback_focus.png</texturefocus>
+                <texturenofocus>black/topbar/topbar_skipback_nofocus.png</texturenofocus>
+                <onclick>PlayerControl(Previous)</onclick>
+            </control>
+            <control type="button" id="1605">
+                <include>FakeTopbarButton</include>
+            </control>
+            <control type="button" id="1606">
+                <width>50</width>
+                <height>50</height>
+                <label>$LOCALIZE[31354]</label>
+                <font>-</font>
+                <texturefocus>black/topbar/topbar_rewind_focus.png</texturefocus>
+                <texturenofocus>black/topbar/topbar_rewind_nofocus.png</texturenofocus>
+                <onclick>PlayerControl(Rewind)</onclick>
+            </control>
+            <control type="button" id="1607">
+                <include>FakeTopbarButton</include>
+            </control>
+            <control type="togglebutton" id="1608">
+                <width>50</width>
+                <height>50</height>
+                <label>$LOCALIZE[31351]</label>
+                <altlabel>$LOCALIZE[208]</altlabel>
+                <font>-</font>
+                <texturefocus>black/topbar/topbar_pause_focus.png</texturefocus>
+                <texturenofocus>black/topbar/topbar_pause_nofocus.png</texturenofocus>
+                <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+                <alttexturefocus>black/topbar/topbar_play_focus.png</alttexturefocus>
+                <alttexturenofocus>black/topbar/topbar_play_nofocus.png</alttexturenofocus>
+                <onclick>PlayerControl(Play)</onclick>
+            </control>
+            <control type="button" id="1609">
+                <include>FakeTopbarButton</include>
+            </control>
+            <control type="button" id="1610">
+                <width>50</width>
+                <height>50</height>
+                <label>$LOCALIZE[31352]</label>
+                <font>-</font>
+                <texturefocus>black/topbar/topbar_stop_focus.png</texturefocus>
+                <texturenofocus>black/topbar/topbar_stop_nofocus.png</texturenofocus>
+                <onclick>PlayerControl(Stop)</onclick>
+            </control>
+            <control type="button" id="1611">
+                <include>FakeTopbarButton</include>
+            </control>
+            <control type="button" id="1612">
+                <width>50</width>
+                <height>50</height>
+                <label>$LOCALIZE[31353]</label>
+                <font>-</font>
+                <texturefocus>black/topbar/topbar_fastforward_focus.png</texturefocus>
+                <texturenofocus>black/topbar/topbar_fastforward_nofocus.png</texturenofocus>
+                <onclick>PlayerControl(Forward)</onclick>
+            </control>
+            <control type="button" id="1613">
+                <include>FakeTopbarButton</include>
+            </control>
+            <control type="button" id="1614">
+                <width>50</width>
+                <height>50</height>
+                <label>$LOCALIZE[209]</label>
+                <font>-</font>
+                <texturefocus>black/topbar/topbar_skipforward_focus.png</texturefocus>
+                <texturenofocus>black/topbar/topbar_skipforward_nofocus.png</texturenofocus>
+                <onclick>PlayerControl(Next)</onclick>
+            </control>
+            <control type="button" id="1615">
+                <width>60</width>
+                <include>FakeTopbarButton</include>
+            </control>
+            <control type="button" id="1616">
+                <width>50</width>
+                <height>50</height>
+                <label>$LOCALIZE[13376]</label>
+                <font>-</font>
+                <texturefocus>black/topbar/topbar_volume_mute_focus.png</texturefocus>
+                <texturenofocus>black/topbar/topbar_volume_mute_nofocus.png</texturenofocus>
+                <onclick>Mute</onclick>
+            </control>
+            <control type="button" id="1617">
+                <include>FakeTopbarButton</include>
+            </control>
+            <control type="button" id="1618">
+                <width>50</width>
+                <height>50</height>
+                <label>$LOCALIZE[13376]</label>
+                <font>-</font>
+                <texturefocus>black/topbar/topbar_volume_down_focus.png</texturefocus>
+                <texturenofocus>black/topbar/topbar_volume_down_nofocus.png</texturenofocus>
+                <onclick>VolumeDown</onclick>
+            </control>
+            <control type="button" id="1619">
+                <include>FakeTopbarButton</include>
+            </control>
+            <control type="button" id="1620">
+                <width>50</width>
+                <height>50</height>
+                <label>$LOCALIZE[13376]</label>
+                <font>-</font>
+                <texturefocus>black/topbar/topbar_volume_up_focus.png</texturefocus>
+                <texturenofocus>black/topbar/topbar_volume_up_nofocus.png</texturenofocus>
+                <onclick>VolumeUp</onclick>
+            </control>
+            <control type="button" id="1621">
+                <width>60</width>
+                <include>FakeTopbarButton</include>
+            </control>
+            <control type="button" id="1622">
+                <width>50</width>
+                <height>50</height>
+                <font>-</font>
+                <texturefocus>black/topbar/topbar_fullscreen_focus.png</texturefocus>
+                <texturenofocus>black/topbar/topbar_fullscreen_nofocus.png</texturenofocus>
+                <label>$LOCALIZE[16003]</label>
+                <onclick>fullscreen</onclick>
+            </control>
+            <control type="button" id="1623">
+                <include>FakeTopbarButton</include>
+            </control>
+            <control type="button" id="1624">
+                <width>50</width>
+                <height>50</height>
+                <label>$LOCALIZE[13005]</label>
+                <font>-</font>
+                <texturefocus>black/topbar/topbar_shutdown_focus.png</texturefocus>
+                <texturenofocus>black/topbar/topbar_shutdown_nofocus.png</texturenofocus>
                 <onclick>$VAR[QuitAction]</onclick>
             </control>
         </control>
@@ -363,7 +533,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>1080</height>
-            <include>OverlayBG</include>
+            <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
         </control>
     </include>
     <include name="Time">
@@ -378,7 +548,7 @@
                 <align>right</align>
                 <aligny>top</aligny>
                 <font>WindowTitleFont</font>
-                <textcolor>WindowTitleColor</textcolor>
+                <include>TextColor_AlternateColor</include>
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="label">
@@ -392,7 +562,7 @@
                 <align>right</align>
                 <aligny>top</aligny>
                 <font>WindowTitleSubFont</font>
-                <textcolor>WindowTitleSubColor</textcolor>
+                <include>TextColor_AlternateColor</include>
                 <label>$INFO[System.Date]</label>
             </control>
             <control type="image">
@@ -432,31 +602,61 @@
                         <posy>0</posy>
                         <width>2320</width>
                         <height>183</height>
-                        <texture border="150,40,150,40">common/bg_dialog.png</texture>
+                        <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                     </control>
-                    <control type="label">
-                        <visible>[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]+![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
-                        <include>NowPlayingVisibleFadeEffect</include>
-                        <posx>450</posx>
-                        <posy>33</posy>
-                        <height>117</height>
-                        <width>1020</width>
-                        <align>center</align>
-                        <font>NotificationFont</font>
-                        <textcolor>MainColor</textcolor>
-                        <label>$INFO[MusicPlayer.Artist,,     ]$INFO[MusicPlayer.Title,[COLOR=AlternateColor],[/COLOR]]     $INFO[MusicPlayer.TimeSpeed] - $INFO[MusicPlayer.Duration]</label>
+                    <control type="group">
+                        <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                        <control type="label">
+                            <visible>[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]+![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
+                            <include>NowPlayingVisibleFadeEffect</include>
+                            <posx>450</posx>
+                            <posy>33</posy>
+                            <height>117</height>
+                            <width>1020</width>
+                            <align>center</align>
+                            <font>NotificationFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$INFO[MusicPlayer.Artist,,     ]$INFO[MusicPlayer.Title,[COLOR=AlternateColor_white],[/COLOR]]     $INFO[MusicPlayer.TimeSpeed] - $INFO[MusicPlayer.Duration]</label>
+                        </control>
+                        <control type="label">
+                            <visible>Player.hasvideo+![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
+                            <include>NowPlayingVisibleFadeEffect</include>
+                            <posx>450</posx>
+                            <posy>33</posy>
+                            <height>117</height>
+                            <width>1020</width>
+                            <align>center</align>
+                            <font>NotificationFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$INFO[VideoPlayer.Title]     [COLOR=AlternateColor_white]$INFO[VideoPlayer.TimeSpeed] - $INFO[VideoPlayer.Duration][/COLOR]</label>
+                        </control>
                     </control>
-                    <control type="label">
-                        <visible>Player.hasvideo+![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
-                        <include>NowPlayingVisibleFadeEffect</include>
-                        <posx>450</posx>
-                        <posy>33</posy>
-                        <height>117</height>
-                        <width>1020</width>
-                        <align>center</align>
-                        <font>NotificationFont</font>
-                        <textcolor>MainColor</textcolor>
-                        <label>$INFO[VideoPlayer.Title]     [COLOR=AlternateColor]$INFO[VideoPlayer.TimeSpeed] - $INFO[VideoPlayer.Duration][/COLOR]</label>
+                    <control type="group">
+                        <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                        <control type="label">
+                            <visible>[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]+![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
+                            <include>NowPlayingVisibleFadeEffect</include>
+                            <posx>450</posx>
+                            <posy>33</posy>
+                            <height>117</height>
+                            <width>1020</width>
+                            <align>center</align>
+                            <font>NotificationFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$INFO[MusicPlayer.Artist,,     ]$INFO[MusicPlayer.Title,[COLOR=AlternateColor_black],[/COLOR]]     $INFO[MusicPlayer.TimeSpeed] - $INFO[MusicPlayer.Duration]</label>
+                        </control>
+                        <control type="label">
+                            <visible>Player.hasvideo+![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
+                            <include>NowPlayingVisibleFadeEffect</include>
+                            <posx>450</posx>
+                            <posy>33</posy>
+                            <height>117</height>
+                            <width>1020</width>
+                            <align>center</align>
+                            <font>NotificationFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$INFO[VideoPlayer.Title]     [COLOR=AlternateColor_black]$INFO[VideoPlayer.TimeSpeed] - $INFO[VideoPlayer.Duration][/COLOR]</label>
+                        </control>
                     </control>
                 </control>
                 <include>TopBar</include>
@@ -473,27 +673,16 @@
         <font>OSDFont</font>
         <animation effect="fade" time="50">VisibleChange</animation>
     </include>
-    <include name="Stars">
-        <!-- <visible>!IsEmpty(ListItem.StarRating)</visible> -->
-        <height>37</height>
-        <width>185</width>
-        <aspectratio align="left">keep</aspectratio>
-        <texture fallback="badges/rating0.png">$INFO[ListItem.StarRating,badges/]</texture>
-    </include>
-    <include name="ThumbBorder">
-        <bordertexture border="35">common/JewelCase2.png</bordertexture>
-        <bordersize>35</bordersize>
-    </include>
     <include name="EpisodeThumb">
-        <texture fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+        <texture fallback="$VAR[Theme.Color]/defaultIconBig.png">$VAR[Thumbs]</texture>
         <aspectratio scalediffuse="false">keep</aspectratio>
     </include>
     <include name="SquareThumb">
-        <texture fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+        <texture fallback="$VAR[Theme.Color]/defaultIconBig.png">$VAR[Thumbs]</texture>
         <aspectratio scalediffuse="false">keep</aspectratio>
     </include>
     <include name="PosterThumb">
-        <texture fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+        <texture fallback="$VAR[Theme.Color]/defaultIconBig.png">$VAR[Thumbs]</texture>
         <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
     </include>
     <include name="PosterThumbBig">
@@ -552,10 +741,10 @@
         <width>82</width>
         <height>78</height>
         <font>ButtonFont</font>
-        <focusedcolor>MainColor</focusedcolor>
-        <include>KeybaordTextureFocus</include>
+        <include>FocusedColor_MainColor</include>
+        <include>TextureFocus</include>
         <texturenofocus>-</texturenofocus>
-        <include>KeybaordAltTextureFocus</include>
+        <include>AltTextureFocus</include>
         <alttexturenofocus>-</alttexturenofocus>
     </include>
     <include name="List_9009_Commons">
@@ -570,13 +759,24 @@
         <pagecontrol>60</pagecontrol>
         <itemlayout height="78" width="1420">
             <control type="label">
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <posx>TextMargin</posx>
                 <posy>0</posy>
                 <height>78</height>
                 <width>1300</width>
                 <font>FacadeListMainFont</font>
-                <textcolor>ListFocusColor</textcolor>
-                <label>[COLOR=AlternateColor]$INFO[ListItem.Label,, ][/COLOR]$INFO[ListItem.Label2]</label>
+                <include>TextColor_MainColor</include>
+                <label>[COLOR=AlternateColor_white]$INFO[ListItem.Label,, ][/COLOR]$INFO[ListItem.Label2]</label>
+            </control>
+            <control type="label">
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <posx>TextMargin</posx>
+                <posy>0</posy>
+                <height>78</height>
+                <width>1300</width>
+                <font>FacadeListMainFont</font>
+                <include>TextColor_MainColor</include>
+                <label>[COLOR=AlternateColor_black]$INFO[ListItem.Label,, ][/COLOR]$INFO[ListItem.Label2]</label>
             </control>
         </itemlayout>
         <focusedlayout height="78" width="1420">
@@ -585,16 +785,27 @@
                 <posy>0</posy>
                 <height>78</height>
                 <width>1420</width>
-                <include>FacadeFocus</include>
+                <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
             </control>
             <control type="label">
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <posx>TextMargin</posx>
                 <posy>0</posy>
                 <height>78</height>
                 <width>1300</width>
                 <font>FacadeListMainFont</font>
-                <textcolor>ListFocusColor</textcolor>
-                <label>[COLOR=AlternateColor]$INFO[ListItem.Label,, ][/COLOR]$INFO[ListItem.Label2]</label>
+                <include>TextColor_MainColor</include>
+                <label>[COLOR=AlternateColor_white]$INFO[ListItem.Label,, ][/COLOR]$INFO[ListItem.Label2]</label>
+            </control>
+            <control type="label">
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <posx>TextMargin</posx>
+                <posy>0</posy>
+                <height>78</height>
+                <width>1300</width>
+                <font>FacadeListMainFont</font>
+                <include>TextColor_MainColor</include>
+                <label>[COLOR=AlternateColor_black]$INFO[ListItem.Label,, ][/COLOR]$INFO[ListItem.Label2]</label>
             </control>
         </focusedlayout>
     </include>
@@ -611,7 +822,7 @@
                 <height>78</height>
                 <width>1300</width>
                 <font>FacadeListMainFont</font>
-                <textcolor>ListFocusColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[ListItem.Label]</label>
             </control>
         </itemlayout>
@@ -621,7 +832,7 @@
                 <posy>0</posy>
                 <height>78</height>
                 <width>1420</width>
-                <include>FacadeFocus</include>
+                <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
             </control>
             <control type="label">
                 <posx>TextMargin</posx>
@@ -629,7 +840,7 @@
                 <height>78</height>
                 <width>1300</width>
                 <font>FacadeListMainFont</font>
-                <textcolor>ListFocusColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[ListItem.Label]</label>
             </control>
         </focusedlayout>
@@ -640,7 +851,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>1080</height>
-            <texture>common/WhiteDot.png</texture>
+            <texture>$VAR[Theme.Color]/common/WhiteDot.png</texture>
         </control> -->
         <control type="multiimage">
             <!-- <include>OpenClose</include> -->
@@ -672,10 +883,6 @@
     </include>
     <constant name="TextMargin">60</constant>
     <constant name="TextMarginR">60r</constant>
-    <include name="FacadeOverlay">
-        <texture>-</texture>
-        <colordiffuse>FacadeOverlayColor</colordiffuse>
-    </include>
     <include name="WindowTitle">
         <visible>![control.hasfocus(505050)|control.hasfocus(53)|[control.isvisible(53)+[control.hasfocus(60)|ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]]]</visible>
         <posx>TextMargin</posx>
@@ -683,7 +890,7 @@
         <width>1200</width>
         <aligny>top</aligny>
         <font>WindowTitleFont</font>
-        <textcolor>WindowTitleColor</textcolor>
+        <include>TextColor_AlternateColor</include>
     </include>
     <include name="WindowTitleSub">
         <visible>![control.hasfocus(505050)|control.hasfocus(53)|[control.isvisible(53)+[control.hasfocus(60)|ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]]]</visible>
@@ -692,7 +899,7 @@
         <width>1200</width>
         <aligny>top</aligny>
         <font>WindowTitleSubFont</font>
-        <textcolor>WindowTitleSubColor</textcolor>
+        <include>TextColor_AlternateColor</include>
     </include>
     <include name="LeftMenu">
         <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
@@ -703,7 +910,7 @@
             <posy>142</posy>
             <width>660</width>
             <height>892</height>
-            <texture border="100">common/bg_list.png</texture>
+            <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
         </control>
         <control type="button" id="8999">
             <description>Fake button for mouse control</description>
@@ -740,7 +947,7 @@
         <width>590</width>
         <height>78</height>
         <font>LeftMenuTitleFont</font>
-        <textcolor>60494949</textcolor>
+        <include>TextColor_MidColor</include>
     </include>
     <include name="LeftMenuButtonGroup">
         <posx>-660</posx>
@@ -774,22 +981,10 @@
         <include>TextureFocusTrick</include>
         <include>AltTextureFocusTrick</include>
     </include>
-    <include name="RightDialogButton">
-        <width>433</width>
-        <height>73</height>
-        <font>LeftMenuButtonFont</font>
-        <align>left</align>
-        <radioposx>505</radioposx>
-        <textoffsetx>TextMargin</textoffsetx>
-        <include>TextureFocus</include>
-        <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus>
-        <include>AltTextureFocus</include>
-        <!-- <alttexturenofocus border="4">list/bg_facade_nofocus.png</alttexturenofocus> -->
-    </include>
     <include name="VerticalScroller">
-        <texturesliderbackground border="20,14,20,14">buttons/Scrollbar_Vertical_bg.png</texturesliderbackground>
-        <texturesliderbar border="24,30,24,30">buttons/Scrollbar_Vertical_NoFocus.png</texturesliderbar>
-        <texturesliderbarfocus border="24,30,24,30">buttons/Scrollbar_Vertical_Focus.png</texturesliderbarfocus>
+        <include>VerticalTextureSliderBackground</include>
+        <include>VerticalTextureSliderBarFocus</include>
+        <include>VerticalTextureSliderBarNoFocus</include>
         <textureslidernib>-</textureslidernib>
         <textureslidernibfocus>-</textureslidernibfocus>
         <!-- <showonepage>true</showonepage> -->
@@ -797,9 +992,9 @@
         <width>54</width>
     </include>
     <include name="HorizontalScroller">
-        <texturesliderbackground border="14,20,14,20">buttons/Scrollbar_Horizontal_bg.png</texturesliderbackground>
-        <texturesliderbar border="30,24,30,24">buttons/Scrollbar_Horizontal_NoFocus.png</texturesliderbar>
-        <texturesliderbarfocus border="30,24,30,24">buttons/Scrollbar_Horizontal_Focus.png</texturesliderbarfocus>
+        <include>HorizontalTextureSliderBackground</include>
+        <include>HorizontalTextureSliderBarFocus</include>
+        <include>HorizontalTextureSliderBarNoFocus</include>
         <textureslidernib>-</textureslidernib>
         <textureslidernibfocus>-</textureslidernibfocus>
         <!-- <showonepage>true</showonepage> -->
@@ -811,12 +1006,6 @@
     </include>
     <include name="SlideViewLabelWidth">
         <width>1385</width>
-    </include>
-    <include name="bg_tvguide">
-        <texture border="90">common/bg_tvguide.png</texture>
-    </include>
-    <include name="bg_tvguide_BG">
-        <texture border="90">common/bg_tvguide2.png</texture>
     </include>
     <include name="myautoscroll">
         <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>

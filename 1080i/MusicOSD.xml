@@ -8,7 +8,7 @@
             <control type="image">
                 <posx>-150</posx>
                 <posy>-3</posy>
-                <texture>common/basichome_upper_gradient.png</texture>
+                <texture>$VAR[Theme.Color]/common/basichome_upper_gradient.png</texture>
                 <width>2220</width>
                 <height>440</height>
             </control>
@@ -21,16 +21,16 @@
                 <onup>101</onup>
                 <ondown>101</ondown>
                 <action>seek</action>
-                <texturesliderbar>OSD/osd_progress_empty.png</texturesliderbar>
-                <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
-                <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
+                <texturesliderbar>$VAR[Theme.Color]/OSD/osd_progress_empty.png</texturesliderbar>
+                <textureslidernib>$VAR[Theme.Color]/buttons/SliderNibNF.png</textureslidernib>
+                <textureslidernibfocus>$VAR[Theme.Color]/buttons/SliderNibFO.png</textureslidernibfocus>
             </control>
             <control type="image">
                 <posx>-15</posx>
                 <posy>0</posy>
                 <width>1950</width>
                 <height>54</height>
-                <texture flipy="true" border="3">OSD/osd_progress_background.png</texture>
+                <texture flipy="true" border="3">$VAR[Theme.Color]/OSD/osd_progress_background.png</texture>
             </control>
             <control type="label">
                 <posx>20</posx>
@@ -59,7 +59,7 @@
                 <posy>9</posy>
                 <width>36</width>
                 <height>36</height>
-                <texture border="3">common/time.png</texture>
+                <texture border="3">$VAR[Theme.Color]/common/time.png</texture>
             </control>
         </control>
         <control type="group">
@@ -69,7 +69,7 @@
                 <posy>1026</posy>
                 <width>1950</width>
                 <height>54</height>
-                <texture border="3">OSD/osd_progress_background.png</texture>
+                <texture border="3">$VAR[Theme.Color]/OSD/osd_progress_background.png</texture>
             </control>
             <control type="progress" id="23">
                 <posx>0</posx>
@@ -77,7 +77,7 @@
                 <width>1920</width>
                 <height>54</height>
                 <texturebg>-</texturebg>
-                <midtexture border="3">OSD/osd_progress_mid54.png</midtexture>
+                <midtexture border="3">$VAR[Theme.Color]/OSD/osd_progress_mid54.png</midtexture>
                 <info>Player.Progress</info>
                 <visible>true</visible>
             </control>
@@ -151,7 +151,7 @@
                 <posy>2</posy>
                 <width>50</width>
                 <height>50</height>
-                <texture>topbar/topbar_rewind_focus.png</texture>
+                <texture>$VAR[Theme.Color]/topbar/topbar_rewind_focus.png</texture>
             </control>
             <control type="image">
                 <visible>player.forwarding</visible>
@@ -159,7 +159,7 @@
                 <posy>2</posy>
                 <width>50</width>
                 <height>50</height>
-                <texture>topbar/topbar_fastforward_focus.png</texture>
+                <texture>$VAR[Theme.Color]/topbar/topbar_fastforward_focus.png</texture>
             </control>
         </control>
         <control type="group">
@@ -174,8 +174,8 @@
                     <height>50</height>
                     <label>-</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_back_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_back_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_back_nofocus.png</texturenofocus>
                     <onleft>20</onleft>
                     <onright>600</onright>
                     <onup>87</onup>
@@ -189,8 +189,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[210]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_skipback_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_skipback_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_skipback_nofocus.png</texturenofocus>
                     <onleft>599</onleft>
                     <onright>601</onright>
                     <onup>87</onup>
@@ -204,8 +204,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[31354]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_rewind_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_rewind_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_rewind_nofocus.png</texturenofocus>
                     <onleft>600</onleft>
                     <onright>602</onright>
                     <onup>87</onup>
@@ -220,11 +220,11 @@
                     <label>$LOCALIZE[31351]</label>
                     <altlabel>$LOCALIZE[208]</altlabel>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_pause_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_pause_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_pause_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_pause_nofocus.png</texturenofocus>
                     <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                    <alttexturefocus>topbar/topbar_play_focus.png</alttexturefocus>
-                    <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
+                    <alttexturefocus>$VAR[Theme.Color]/topbar/topbar_play_focus.png</alttexturefocus>
+                    <alttexturenofocus>$VAR[Theme.Color]/topbar/topbar_play_nofocus.png</alttexturenofocus>
                     <onleft>601</onleft>
                     <onright>603</onright>
                     <onup>87</onup>
@@ -238,8 +238,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[31352]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_stop_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_stop_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_stop_nofocus.png</texturenofocus>
                     <onleft>602</onleft>
                     <onright>604</onright>
                     <onup>87</onup>
@@ -253,8 +253,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[31353]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_fastforward_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_fastforward_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_fastforward_nofocus.png</texturenofocus>
                     <onleft>603</onleft>
                     <onright>605</onright>
                     <onup>87</onup>
@@ -268,8 +268,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[209]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_skipforward_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_skipforward_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_skipforward_nofocus.png</texturenofocus>
                     <onleft>604</onleft>
                     <onright>1</onright>
                     <onup>87</onup>
@@ -291,8 +291,8 @@
                         <onright>21</onright>
                         <onup>87</onup>
                         <ondown>87</ondown>
-                        <texturefocus>topbar/topbar_repeat_focus.png</texturefocus>
-                        <texturenofocus>topbar/topbar_repeat_nofocus.png</texturenofocus>
+                        <texturefocus>$VAR[Theme.Color]/topbar/topbar_repeat_focus.png</texturefocus>
+                        <texturenofocus>$VAR[Theme.Color]/topbar/topbar_repeat_nofocus.png</texturenofocus>
                         <onclick>XBMC.PlayerControl(Repeat)</onclick>
                     </control>
                     <control type="image" id="4">
@@ -300,7 +300,7 @@
                         <posy>0</posy>
                         <width>50</width>
                         <height>50</height>
-                        <texture>topbar/topbar_repeat_one_nofocus.png</texture>
+                        <texture>$VAR[Theme.Color]/topbar/topbar_repeat_one_nofocus.png</texture>
                         <visible>Playlist.IsRepeatOne</visible>
                         <visible>!Control.HasFocus(1)</visible>
                     </control>
@@ -309,7 +309,7 @@
                         <posy>0</posy>
                         <width>50</width>
                         <height>50</height>
-                        <texture>topbar/topbar_repeat_one_focus.png</texture>
+                        <texture>$VAR[Theme.Color]/topbar/topbar_repeat_one_focus.png</texture>
                         <visible>Playlist.IsRepeatOne</visible>
                         <visible>Control.HasFocus(1)</visible>
                     </control>
@@ -318,7 +318,7 @@
                         <posy>0</posy>
                         <width>50</width>
                         <height>50</height>
-                        <texture>topbar/topbar_repeat_all_nofocus.png</texture>
+                        <texture>$VAR[Theme.Color]/topbar/topbar_repeat_all_nofocus.png</texture>
                         <visible>Playlist.IsRepeat</visible>
                         <visible>!Control.HasFocus(1)</visible>
                     </control>
@@ -327,7 +327,7 @@
                         <posy>0</posy>
                         <width>50</width>
                         <height>50</height>
-                        <texture>topbar/topbar_repeat_all_focus.png</texture>
+                        <texture>$VAR[Theme.Color]/topbar/topbar_repeat_all_focus.png</texture>
                         <visible>Playlist.IsRepeat</visible>
                         <visible>Control.HasFocus(1)</visible>
                     </control>
@@ -344,11 +344,11 @@
                     <onright>9</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
-                    <texturefocus>topbar/topbar_random_off_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_random_off_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_random_off_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_random_off_nofocus.png</texturenofocus>
                     <usealttexture>Playlist.IsRandom</usealttexture>
-                    <alttexturefocus>topbar/topbar_random_on_focus.png</alttexturefocus>
-                    <alttexturenofocus>topbar/topbar_random_on_nofocus.png</alttexturenofocus>
+                    <alttexturefocus>$VAR[Theme.Color]/topbar/topbar_random_on_focus.png</alttexturefocus>
+                    <alttexturenofocus>$VAR[Theme.Color]/topbar/topbar_random_on_nofocus.png</alttexturenofocus>
                     <onclick>XBMC.PlayerControl(Random)</onclick>
                 </control>
                 <control type="button" id="9">
@@ -362,8 +362,8 @@
                     <onright>555</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
-                    <texturefocus>topbar/topbar_teletext_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_teletext_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_teletext_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_teletext_nofocus.png</texturenofocus>
                     <onclick>Close</onclick>
                     <onclick condition="IsEmpty(Skin.String(LyricPath))">Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(LyricPath))">XBMC.RunScript($INFO[Skin.String(LyricPath)])</onclick>
@@ -379,8 +379,8 @@
                     <onright>556</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
-                    <texturefocus>topbar/topbar_bookmark_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_bookmark_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_bookmark_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_bookmark_nofocus.png</texturenofocus>
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(MusicPlaylist)</onclick>
                 </control>
@@ -395,8 +395,8 @@
                     <onright>500</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
-                    <texturefocus>topbar/topbar_fanart_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_fanart_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_fanart_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_fanart_nofocus.png</texturenofocus>
                     <label2>$VAR[MusicPlayingFanartLabel2]</label2>
                     <onclick>Skin.ToggleSetting(MusicPlayingFanart)</onclick>
                 </control>
@@ -411,8 +411,8 @@
                     <onright>19</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
-                    <texturefocus>topbar/topbar_video_settings_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_video_settings_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_video_settings_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_video_settings_nofocus.png</texturenofocus>
                 </control>
                 <control type="button" id="19">
                     <enable>Visualisation.Enabled</enable>
@@ -427,8 +427,8 @@
                     <onright>20</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
-                    <texturefocus>topbar/topbar_settings_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_settings_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_settings_nofocus.png</texturenofocus>
                     <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
                 </control>
                 <control type="button" id="20">
@@ -444,8 +444,8 @@
                     <onright>599</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
-                    <texturefocus>topbar/topbar_presets_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_presets_nofocus.png</texturenofocus>
+                    <texturefocus>$VAR[Theme.Color]/topbar/topbar_presets_focus.png</texturefocus>
+                    <texturenofocus>$VAR[Theme.Color]/topbar/topbar_presets_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(122)</onclick>
                 </control>
             </control>

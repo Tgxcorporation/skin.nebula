@@ -14,7 +14,7 @@
                 <posy>142</posy>
                 <width>1920</width>
                 <height>892</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="group" id="9110">
                 <!-- SKIN SETTINGS-->
@@ -36,7 +36,7 @@
                             <height>78</height>
                             <width>900</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -45,7 +45,7 @@
                             <width>900</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </itemlayout>
@@ -55,14 +55,14 @@
                             <posy>0</posy>
                             <height>78</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
                             <height>78</height>
                             <width>900</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListFocusColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -71,7 +71,7 @@
                             <width>900</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </focusedlayout>
@@ -280,7 +280,7 @@
                             <label>$LOCALIZE[31038]</label>
                             <onclick>Skin.ResetSettings</onclick>
                             <onclick>XBMC.ReloadSkin()</onclick>
-                            <icon>DefaultIconWarning.png</icon>
+                            <icon>$VAR[Theme.Color]/defaultIconWarning.png</icon>
                         </item>
                     </content>
                 </control>
@@ -312,7 +312,7 @@
                             <height>78</height>
                             <width>1920</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -321,7 +321,7 @@
                             <width>900</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </itemlayout>
@@ -331,14 +331,14 @@
                             <posy>0</posy>
                             <height>78</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
                             <height>78</height>
                             <width>900</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListFocusColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -347,15 +347,22 @@
                             <width>900</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </focusedlayout>
                     <content>
                         <item id="21">
-                            <visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>
-                            <label>[COLOR=SelectedColor]$INFO[Skin.String(CustomHome.1.Label)][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!IsEmpty(Skin.String(CustomHome.1.Path))+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$INFO[Skin.String(CustomHome.1.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.1.Background)]</thumb>
+                            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.1)</onclick>
+                        </item>
+                        <item id="21">
+                            <visible>!IsEmpty(Skin.String(CustomHome.1.Path))+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$INFO[Skin.String(CustomHome.1.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.1.Background)]</thumb>
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.1)</onclick>
                         </item>
@@ -366,23 +373,44 @@
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.1)</onclick>
                         </item>
                         <item id="1">
-                            <visible>!Skin.HasSetting(Pictures.Hide)+!Skin.HasSetting(plexbmc)</visible>
-                            <label>[COLOR=SelectedColor]$LOCALIZE[1][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!Skin.HasSetting(Pictures.Hide)+!Skin.HasSetting(plexbmc)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$LOCALIZE[1][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/Pictures.jpg">$INFO[Skin.String(Pictures.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Pictures.Hide)</onclick>
                         </item>
                         <item id="1">
-                            <visible>Skin.HasSetting(Pictures.Hide)+!Skin.HasSetting(plexbmc)</visible>
-                            <label>[COLOR=DisabledColor]$LOCALIZE[1][/COLOR]</label>
+                            <visible>!Skin.HasSetting(Pictures.Hide)+!Skin.HasSetting(plexbmc)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$LOCALIZE[1][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/Pictures.jpg">$INFO[Skin.String(Pictures.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Pictures.Hide)</onclick>
+                        </item>
+                        <item id="1">
+                            <visible>Skin.HasSetting(Pictures.Hide)+!Skin.HasSetting(plexbmc)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[1][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/Pictures.jpg">$INFO[Skin.String(Pictures.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Pictures.Hide)</onclick>
+                        </item>
+                        <item id="1">
+                            <visible>Skin.HasSetting(Pictures.Hide)+!Skin.HasSetting(plexbmc)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[1][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <thumb fallback="special://skin/backgrounds/Pictures.jpg">$INFO[Skin.String(Pictures.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Pictures.Hide)</onclick>
                         </item>
                         <item id="22">
-                            <visible>!IsEmpty(Skin.String(CustomHome.2.Path))</visible>
-                            <label>[COLOR=SelectedColor]$INFO[Skin.String(CustomHome.2.Label)][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!IsEmpty(Skin.String(CustomHome.2.Path))+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$INFO[Skin.String(CustomHome.2.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.2.Background)]</thumb>
+                            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.2)</onclick>
+                        </item>
+                        <item id="22">
+                            <visible>!IsEmpty(Skin.String(CustomHome.2.Path))+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$INFO[Skin.String(CustomHome.2.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.2.Background)]</thumb>
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.2)</onclick>
                         </item>
@@ -393,23 +421,44 @@
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.2)</onclick>
                         </item>
                         <item id="2">
-                            <visible>!Skin.HasSetting(Addons.Hide)</visible>
-                            <label>[COLOR=SelectedColor]$LOCALIZE[24001][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!Skin.HasSetting(Addons.Hide)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$LOCALIZE[24001][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Addons.Hide)</onclick>
                         </item>
                         <item id="2">
-                            <visible>Skin.HasSetting(Addons.Hide)</visible>
-                            <label>[COLOR=DisabledColor]$LOCALIZE[24001][/COLOR]</label>
+                            <visible>!Skin.HasSetting(Addons.Hide)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$LOCALIZE[24001][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Addons.Hide)</onclick>
+                        </item>
+                        <item id="2">
+                            <visible>Skin.HasSetting(Addons.Hide)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[24001][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Addons.Hide)</onclick>
+                        </item>
+                        <item id="2">
+                            <visible>Skin.HasSetting(Addons.Hide)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[24001][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <thumb fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Addons.Hide)</onclick>
                         </item>
                         <item id="23">
-                            <visible>!IsEmpty(Skin.String(CustomHome.3.Path))</visible>
-                            <label>[COLOR=SelectedColor]$INFO[Skin.String(CustomHome.3.Label)][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!IsEmpty(Skin.String(CustomHome.3.Path))+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$INFO[Skin.String(CustomHome.3.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Background)]</thumb>
+                            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.3)</onclick>
+                        </item>
+                        <item id="23">
+                            <visible>!IsEmpty(Skin.String(CustomHome.3.Path))+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$INFO[Skin.String(CustomHome.3.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Background)]</thumb>
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.3)</onclick>
                         </item>
@@ -420,23 +469,44 @@
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.3)</onclick>
                         </item>
                         <item id="3">
-                            <visible>!Skin.HasSetting(Videos.Hide)+!Skin.HasSetting(plexbmc)</visible>
-                            <label>[COLOR=SelectedColor]$LOCALIZE[3][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!Skin.HasSetting(Videos.Hide)+!Skin.HasSetting(plexbmc)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$LOCALIZE[3][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/Videos.jpg">$INFO[Skin.String(Videos.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Videos.Hide)</onclick>
                         </item>
                         <item id="3">
-                            <visible>Skin.HasSetting(Videos.Hide)+!Skin.HasSetting(plexbmc)</visible>
-                            <label>[COLOR=DisabledColor]$LOCALIZE[3][/COLOR]</label>
+                            <visible>!Skin.HasSetting(Videos.Hide)+!Skin.HasSetting(plexbmc)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$LOCALIZE[3][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/Videos.jpg">$INFO[Skin.String(Videos.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Videos.Hide)</onclick>
+                        </item>
+                        <item id="3">
+                            <visible>Skin.HasSetting(Videos.Hide)+!Skin.HasSetting(plexbmc)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[3][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/Videos.jpg">$INFO[Skin.String(Videos.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Videos.Hide)</onclick>
+                        </item>
+                        <item id="3">
+                            <visible>Skin.HasSetting(Videos.Hide)+!Skin.HasSetting(plexbmc)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[3][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <thumb fallback="special://skin/backgrounds/Videos.jpg">$INFO[Skin.String(Videos.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Videos.Hide)</onclick>
                         </item>
                         <item id="24">
-                            <visible>!IsEmpty(Skin.String(CustomHome.4.Path))</visible>
-                            <label>[COLOR=SelectedColor]$INFO[Skin.String(CustomHome.4.Label)][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!IsEmpty(Skin.String(CustomHome.4.Path))+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$INFO[Skin.String(CustomHome.4.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>
+                            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.4)</onclick>
+                        </item>
+                        <item id="24">
+                            <visible>!IsEmpty(Skin.String(CustomHome.4.Path))+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$INFO[Skin.String(CustomHome.4.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.4)</onclick>
                         </item>
@@ -447,23 +517,44 @@
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.4)</onclick>
                         </item>
                         <item id="4">
-                            <visible>!Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)+!Skin.HasSetting(plexbmc)</visible>
-                            <label>[COLOR=SelectedColor]$LOCALIZE[20342][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)+!Skin.HasSetting(plexbmc)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$LOCALIZE[20342][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/Movies.jpg">$INFO[Skin.String(Movies.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Movies.Hide)</onclick>
                         </item>
                         <item id="4">
-                            <visible>Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)+!Skin.HasSetting(plexbmc)</visible>
-                            <label>[COLOR=DisabledColor]$LOCALIZE[20342][/COLOR]</label>
+                            <visible>!Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)+!Skin.HasSetting(plexbmc)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$LOCALIZE[20342][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/Movies.jpg">$INFO[Skin.String(Movies.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Movies.Hide)</onclick>
+                        </item>
+                        <item id="4">
+                            <visible>Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)+!Skin.HasSetting(plexbmc)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[20342][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/Movies.jpg">$INFO[Skin.String(Movies.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Movies.Hide)</onclick>
+                        </item>
+                        <item id="4">
+                            <visible>Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)+!Skin.HasSetting(plexbmc)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[20342][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <thumb fallback="special://skin/backgrounds/Movies.jpg">$INFO[Skin.String(Movies.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Movies.Hide)</onclick>
                         </item>
                         <item id="25">
-                            <visible>!IsEmpty(Skin.String(CustomHome.5.Path))</visible>
-                            <label>[COLOR=SelectedColor]$INFO[Skin.String(CustomHome.5.Label)][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!IsEmpty(Skin.String(CustomHome.5.Path))+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$INFO[Skin.String(CustomHome.5.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.5.Background)]</thumb>
+                            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.5)</onclick>
+                        </item>
+                        <item id="25">
+                            <visible>!IsEmpty(Skin.String(CustomHome.5.Path))+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$INFO[Skin.String(CustomHome.5.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.5.Background)]</thumb>
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.5)</onclick>
                         </item>
@@ -474,50 +565,92 @@
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.5)</onclick>
                         </item>
                         <item id="5">
-                            <visible>!Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)+!Skin.HasSetting(plexbmc)</visible>
-                            <label>[COLOR=SelectedColor]$LOCALIZE[20343][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)+!Skin.HasSetting(plexbmc)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$LOCALIZE[20343][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(TVShows.Hide)</onclick>
                         </item>
                         <item id="5">
-                            <visible>Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)+!Skin.HasSetting(plexbmc)</visible>
-                            <label>[COLOR=DisabledColor]$LOCALIZE[20343][/COLOR]</label>
+                            <visible>!Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)+!Skin.HasSetting(plexbmc)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$LOCALIZE[20343][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(TVShows.Hide)</onclick>
+                        </item>
+                        <item id="5">
+                            <visible>Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)+!Skin.HasSetting(plexbmc)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[20343][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(TVShows.Hide)</onclick>
+                        </item>
+                        <item id="5">
+                            <visible>Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)+!Skin.HasSetting(plexbmc)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[20343][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <thumb fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(TVShows.Hide)</onclick>
                         </item>
                         <item id="26">
-                            <visible>!IsEmpty(Skin.String(CustomHome.6.Path))</visible>
-                            <label>[COLOR=SelectedColor]$INFO[Skin.String(CustomHome.6.Label)][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!IsEmpty(Skin.String(CustomHome.6.Path))+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$INFO[Skin.String(CustomHome.6.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.6.Background)]</thumb>
+                            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.6)</onclick>
+                        </item>
+                        <item id="26">
+                            <visible>!IsEmpty(Skin.String(CustomHome.6.Path))+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$INFO[Skin.String(CustomHome.6.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.6.Background)]</thumb>
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.6)</onclick>
                         </item>
                         <item id="26">
                             <visible>IsEmpty(Skin.String(CustomHome.6.Path))</visible>
                             <label>$LOCALIZE[504]</label>
-                            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.6.Background)]</thumb>
+                            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.1.Background)]</thumb>
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.6)</onclick>
                         </item>
                         <item id="6">
-                            <visible>!Skin.HasSetting(Music.Hide)+!Skin.HasSetting(plexbmc)</visible>
-                            <label>[COLOR=SelectedColor]$LOCALIZE[2][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!Skin.HasSetting(Music.Hide)+!Skin.HasSetting(plexbmc)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$LOCALIZE[2][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/Music.jpg">$INFO[Skin.String(Music.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Music.Hide)</onclick>
                         </item>
                         <item id="6">
-                            <visible>Skin.HasSetting(Music.Hide)+!Skin.HasSetting(plexbmc)</visible>
-                            <label>[COLOR=DisabledColor]$LOCALIZE[2][/COLOR]</label>
+                            <visible>!Skin.HasSetting(Music.Hide)+!Skin.HasSetting(plexbmc)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$LOCALIZE[2][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/Music.jpg">$INFO[Skin.String(Music.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Music.Hide)</onclick>
+                        </item>
+                        <item id="6">
+                            <visible>Skin.HasSetting(Music.Hide)+!Skin.HasSetting(plexbmc)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[2][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/Music.jpg">$INFO[Skin.String(Music.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Music.Hide)</onclick>
+                        </item>
+                        <item id="6">
+                            <visible>Skin.HasSetting(Music.Hide)+!Skin.HasSetting(plexbmc)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[2][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <thumb fallback="special://skin/backgrounds/Music.jpg">$INFO[Skin.String(Music.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Music.Hide)</onclick>
                         </item>
                         <item id="27">
-                            <visible>!IsEmpty(Skin.String(CustomHome.7.Path))</visible>
-                            <label>[COLOR=SelectedColor]$INFO[Skin.String(CustomHome.7.Label)][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!IsEmpty(Skin.String(CustomHome.7.Path))+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$INFO[Skin.String(CustomHome.7.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Background)]</thumb>
+                            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.7)</onclick>
+                        </item>
+                        <item id="27">
+                            <visible>!IsEmpty(Skin.String(CustomHome.7.Path))+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$INFO[Skin.String(CustomHome.7.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Background)]</thumb>
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.7)</onclick>
                         </item>
@@ -528,37 +661,72 @@
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.7)</onclick>
                         </item>
                         <item id="30">
-                            <visible>Skin.HasSetting(Clips.Show)+!Skin.HasSetting(plexbmc)</visible>
-                            <label>[COLOR=SelectedColor]$LOCALIZE[31972][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>Skin.HasSetting(Clips.Show)+!Skin.HasSetting(plexbmc)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$LOCALIZE[31972][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Clips.Show)</onclick>
                         </item>
                         <item id="30">
-                            <visible>!Skin.HasSetting(Clips.Show)+!Skin.HasSetting(plexbmc)</visible>
-                            <label>[COLOR=DisabledColor]$LOCALIZE[31972][/COLOR]</label>
+                            <visible>Skin.HasSetting(Clips.Show)+!Skin.HasSetting(plexbmc)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$LOCALIZE[31972][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Clips.Show)</onclick>
+                        </item>
+                        <item id="30">
+                            <visible>!Skin.HasSetting(Clips.Show)+!Skin.HasSetting(plexbmc)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[31972][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Clips.Show)</onclick>
+                        </item>
+                        <item id="30">
+                            <visible>!Skin.HasSetting(Clips.Show)+!Skin.HasSetting(plexbmc)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[31972][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <thumb fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Clips.Show)</onclick>
                         </item>
                         <item id="31">
-                            <visible>Skin.HasSetting(Concerts.Show)+!Skin.HasSetting(plexbmc)</visible>
-                            <label>[COLOR=SelectedColor]$LOCALIZE[31971][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>Skin.HasSetting(Concerts.Show)+!Skin.HasSetting(plexbmc)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$LOCALIZE[31971][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/Concerts.jpg">$INFO[Skin.String(Concerts.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Concerts.Show)</onclick>
                         </item>
                         <item id="31">
-                            <visible>!Skin.HasSetting(Concerts.Show)+!Skin.HasSetting(plexbmc)</visible>
-                            <label>[COLOR=DisabledColor]$LOCALIZE[31971][/COLOR]</label>
+                            <visible>Skin.HasSetting(Concerts.Show)+!Skin.HasSetting(plexbmc)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$LOCALIZE[31971][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/Concerts.jpg">$INFO[Skin.String(Concerts.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Concerts.Show)</onclick>
+                        </item>
+                        <item id="31">
+                            <visible>!Skin.HasSetting(Concerts.Show)+!Skin.HasSetting(plexbmc)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[31971][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/Concerts.jpg">$INFO[Skin.String(Concerts.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Concerts.Show)</onclick>
+                        </item>
+                        <item id="31">
+                            <visible>!Skin.HasSetting(Concerts.Show)+!Skin.HasSetting(plexbmc)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[31971][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <thumb fallback="special://skin/backgrounds/Concerts.jpg">$INFO[Skin.String(Concerts.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Concerts.Show)</onclick>
                         </item>
                         <item id="28">
-                            <visible>!IsEmpty(Skin.String(CustomHome.8.Path))</visible>
-                            <label>[COLOR=SelectedColor]$INFO[Skin.String(CustomHome.8.Label)][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!IsEmpty(Skin.String(CustomHome.8.Path))+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$INFO[Skin.String(CustomHome.8.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
+                            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.8)</onclick>
+                        </item>
+                        <item id="28">
+                            <visible>!IsEmpty(Skin.String(CustomHome.8.Path))+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$INFO[Skin.String(CustomHome.8.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.8)</onclick>
                         </item>
@@ -569,23 +737,44 @@
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.8)</onclick>
                         </item>
                         <item id="7">
-                            <visible>!Skin.HasSetting(Favourites.Hide)</visible>
-                            <label>[COLOR=SelectedColor]$LOCALIZE[1036][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!Skin.HasSetting(Favourites.Hide)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$LOCALIZE[1036][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/Favourites.jpg">$INFO[Skin.String(Favorites.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Favourites.Hide)</onclick>
                         </item>
                         <item id="7">
-                            <visible>Skin.HasSetting(Favourites.Hide)</visible>
-                            <label>[COLOR=DisabledColor]$LOCALIZE[1036][/COLOR]</label>
+                            <visible>!Skin.HasSetting(Favourites.Hide)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$LOCALIZE[1036][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/Favourites.jpg">$INFO[Skin.String(Favorites.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Favourites.Hide)</onclick>
+                        </item>
+                        <item id="7">
+                            <visible>Skin.HasSetting(Favourites.Hide)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[1036][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/Favourites.jpg">$INFO[Skin.String(Favorites.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Favourites.Hide)</onclick>
+                        </item>
+                        <item id="7">
+                            <visible>Skin.HasSetting(Favourites.Hide)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[1036][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <thumb fallback="special://skin/backgrounds/Favourites.jpg">$INFO[Skin.String(Favorites.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Favourites.Hide)</onclick>
                         </item>
                         <item id="29">
-                            <visible>!IsEmpty(Skin.String(CustomHome.9.Path))</visible>
-                            <label>[COLOR=SelectedColor]$INFO[Skin.String(CustomHome.9.Label)][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!IsEmpty(Skin.String(CustomHome.9.Path))+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$INFO[Skin.String(CustomHome.9.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.9.Background)]</thumb>
+                            <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.9)</onclick>
+                        </item>
+                        <item id="29">
+                            <visible>!IsEmpty(Skin.String(CustomHome.9.Path))+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$INFO[Skin.String(CustomHome.9.Label)][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.9.Background)]</thumb>
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.9)</onclick>
                         </item>
@@ -596,28 +785,54 @@
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.9)</onclick>
                         </item>
                         <item id="8">
-                            <visible>!Skin.HasSetting(DVD.Hide)</visible>
-                            <label>[COLOR=SelectedColor]$LOCALIZE[427][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!Skin.HasSetting(DVD.Hide)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$LOCALIZE[427][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/DVD.jpg">$INFO[Skin.String(DVD.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(DVD.Hide)</onclick>
                         </item>
                         <item id="8">
-                            <visible>Skin.HasSetting(DVD.Hide)</visible>
-                            <label>[COLOR=DisabledColor]$LOCALIZE[427][/COLOR]</label>
+                            <visible>!Skin.HasSetting(DVD.Hide)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$LOCALIZE[427][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/DVD.jpg">$INFO[Skin.String(DVD.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(DVD.Hide)</onclick>
+                        </item>
+                        <item id="8">
+                            <visible>Skin.HasSetting(DVD.Hide)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[427][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/DVD.jpg">$INFO[Skin.String(DVD.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(DVD.Hide)</onclick>
+                        </item>
+                        <item id="8">
+                            <visible>Skin.HasSetting(DVD.Hide)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[427][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <thumb fallback="special://skin/backgrounds/DVD.jpg">$INFO[Skin.String(DVD.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(DVD.Hide)</onclick>
                         </item>
                         <item id="15">
-                            <visible>!Skin.HasSetting(Weather.Hide)</visible>
-                            <label>[COLOR=SelectedColor]$LOCALIZE[8][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!Skin.HasSetting(Weather.Hide)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$LOCALIZE[8][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
                             <onclick>Skin.ToggleSetting(Weather.Hide)</onclick>
                         </item>
                         <item id="15">
-                            <visible>Skin.HasSetting(Weather.Hide)</visible>
-                            <label>[COLOR=DisabledColor]$LOCALIZE[8][/COLOR]</label>
+                            <visible>!Skin.HasSetting(Weather.Hide)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$LOCALIZE[8][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
+                            <onclick>Skin.ToggleSetting(Weather.Hide)</onclick>
+                        </item>
+                        <item id="15">
+                            <visible>Skin.HasSetting(Weather.Hide)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[8][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(Weather.Hide)</onclick>
+                        </item>
+                        <item id="15">
+                            <visible>Skin.HasSetting(Weather.Hide)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[8][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(Weather.Hide)</onclick>
                         </item>
@@ -626,18 +841,32 @@
                             <label>$LOCALIZE[5]</label>
                             <label2>$LOCALIZE[31293]</label2>
                             <thumb fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Background)]</thumb>
-                            <onclick>Notification($LOCALIZE[416],,6,DefaultIconWarning.png)</onclick>
+                            <onclick>Notification($LOCALIZE[416],,6,$VAR[Theme.Color]/DefaultIconWarning.png)</onclick>
                         </item>
                         <item id="11">
-                            <visible>!Skin.HasSetting(Quit.Hide)</visible>
-                            <label>[COLOR=SelectedColor]$LOCALIZE[13009][/COLOR]</label>
-                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <visible>!Skin.HasSetting(Quit.Hide)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_white]$LOCALIZE[13009][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/Quit.jpg">$INFO[Skin.String(Quit.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Quit.Hide)</onclick>
                         </item>
                         <item id="11">
-                            <visible>Skin.HasSetting(Quit.Hide)</visible>
-                            <label>[COLOR=DisabledColor]$LOCALIZE[13009][/COLOR]</label>
+                            <visible>!Skin.HasSetting(Quit.Hide)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=SelectedColor_black]$LOCALIZE[13009][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/Quit.jpg">$INFO[Skin.String(Quit.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Quit.Hide)</onclick>
+                        </item>
+                        <item id="11">
+                            <visible>Skin.HasSetting(Quit.Hide)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[13009][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/Quit.jpg">$INFO[Skin.String(Quit.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Quit.Hide)</onclick>
+                        </item>
+                        <item id="11">
+                            <visible>Skin.HasSetting(Quit.Hide)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[13009][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <thumb fallback="special://skin/backgrounds/Quit.jpg">$INFO[Skin.String(Quit.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Quit.Hide)</onclick>
@@ -672,7 +901,7 @@
                             <height>78</height>
                             <width>1800</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </itemlayout>
@@ -682,14 +911,14 @@
                             <posy>0</posy>
                             <height>78</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
                             <height>78</height>
                             <width>1800</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListFocusColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </focusedlayout>
@@ -840,7 +1069,7 @@
                                 <height>78</height>
                                 <width>520</width>
                                 <font>FacadeListMainFont</font>
-                                <textcolor>ListNoFocusColor</textcolor>
+                                <include>TextColor_AlternateColor</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
@@ -850,14 +1079,14 @@
                                 <posy>0</posy>
                                 <height>78</height>
                                 <width>660</width>
-                                <include>FacadeFocus</include>
+                                <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="label">
                                 <posx>TextMargin</posx>
                                 <height>78</height>
                                 <width>520</width>
                                 <font>FacadeListMainFont</font>
-                                <textcolor>ListFocusColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
@@ -1123,7 +1352,7 @@
                         <posy>183</posy>
                         <height>739</height>
                         <width>1260</width>
-                        <texture border="35">common/JewelCase2.png</texture>
+                        <texture border="35">$VAR[Theme.Color]/common/JewelCase2.png</texture>
                     </control>
                     <control type="multiimage">
                         <posx>35</posx>
@@ -1140,7 +1369,7 @@
                         <posy>738</posy>
                         <width>1190</width>
                         <height>150</height>
-                        <texture border="10">common/HomeGradient.png</texture>
+                        <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
                     </control>
                     <control type="label">
                         <posx>65</posx>
@@ -1308,7 +1537,7 @@
                                 <height>78</height>
                                 <width>520</width>
                                 <font>FacadeListMainFont</font>
-                                <textcolor>ListNoFocusColor</textcolor>
+                                <include>TextColor_AlternateColor</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
@@ -1318,14 +1547,14 @@
                                 <posy>0</posy>
                                 <height>78</height>
                                 <width>660</width>
-                                <include>FacadeFocus</include>
+                                <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="label">
                                 <posx>TextMargin</posx>
                                 <height>78</height>
                                 <width>520</width>
                                 <font>FacadeListMainFont</font>
-                                <textcolor>ListFocusColor</textcolor>
+                                <include>TextColor_MainColor</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
@@ -1591,7 +1820,7 @@
                         <posy>183</posy>
                         <height>739</height>
                         <width>1260</width>
-                        <texture border="35">common/JewelCase2.png</texture>
+                        <texture border="35">$VAR[Theme.Color]/common/JewelCase2.png</texture>
                     </control>
                     <control type="multiimage">
                         <posx>35</posx>
@@ -1608,7 +1837,7 @@
                         <posy>738</posy>
                         <width>1190</width>
                         <height>150</height>
-                        <texture border="10">common/HomeGradient.png</texture>
+                        <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
                     </control>
                     <control type="label">
                         <posx>65</posx>
@@ -1735,7 +1964,7 @@
                             <height>78</height>
                             <width>900</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -1744,7 +1973,7 @@
                             <width>900</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </itemlayout>
@@ -1754,14 +1983,14 @@
                             <posy>0</posy>
                             <height>78</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
                             <height>78</height>
                             <width>900</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListFocusColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -1770,7 +1999,7 @@
                             <width>900</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </focusedlayout>
@@ -1897,7 +2126,7 @@
                             <height>78</height>
                             <width>900</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -1906,7 +2135,7 @@
                             <width>900</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </itemlayout>
@@ -1916,14 +2145,14 @@
                             <posy>0</posy>
                             <height>78</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
                             <height>78</height>
                             <width>900</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListFocusColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -1932,7 +2161,7 @@
                             <width>900</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </focusedlayout>
@@ -1994,7 +2223,7 @@
                             <height>78</height>
                             <width>900</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -2003,7 +2232,7 @@
                             <width>900</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </itemlayout>
@@ -2013,14 +2242,14 @@
                             <posy>0</posy>
                             <height>78</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
                             <height>78</height>
                             <width>900</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListFocusColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -2029,7 +2258,7 @@
                             <width>900</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </focusedlayout>
@@ -2144,7 +2373,7 @@
                             <height>78</height>
                             <width>900</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -2153,7 +2382,7 @@
                             <width>900</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </itemlayout>
@@ -2163,14 +2392,14 @@
                             <posy>0</posy>
                             <height>78</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
                             <height>78</height>
                             <width>900</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListFocusColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -2179,7 +2408,7 @@
                             <width>900</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </focusedlayout>
@@ -2267,7 +2496,7 @@
                             <height>78</height>
                             <width>900</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -2276,7 +2505,7 @@
                             <width>900</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </itemlayout>
@@ -2286,14 +2515,14 @@
                             <posy>0</posy>
                             <height>78</height>
                             <width>1920</width>
-                            <include>FacadeFocus</include>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
                             <height>78</height>
                             <width>900</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListFocusColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -2302,7 +2531,7 @@
                             <width>900</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </focusedlayout>
@@ -2315,9 +2544,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.0.title)</onclick>
                         </item>
                         <item id="30">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.0.title)) + Skin.HasSetting(hide.plexbmc.0.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.0.title)) + Skin.HasSetting(hide.plexbmc.0.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.0.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.0.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.0.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.0.title)</onclick>
+                        </item>
+                        <item id="30">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.0.title)) + Skin.HasSetting(hide.plexbmc.0.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.0.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.0.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.0.title)</onclick>
                         </item>
@@ -2329,9 +2565,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.1.title)</onclick>
                         </item>
                         <item id="31">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.1.title)) + Skin.HasSetting(hide.plexbmc.1.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.1.title)) + Skin.HasSetting(hide.plexbmc.1.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.1.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.1.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.1.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.1.title)</onclick>
+                        </item>
+                        <item id="31">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.1.title)) + Skin.HasSetting(hide.plexbmc.1.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.1.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.1.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.1.title)</onclick>
                         </item>
@@ -2343,9 +2586,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.2.title)</onclick>
                         </item>
                         <item id="32">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.2.title)) + Skin.HasSetting(hide.plexbmc.2.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.2.title)) + Skin.HasSetting(hide.plexbmc.2.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.2.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.2.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.2.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.2.title)</onclick>
+                        </item>
+                        <item id="32">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.2.title)) + Skin.HasSetting(hide.plexbmc.2.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.2.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.2.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.2.title)</onclick>
                         </item>
@@ -2357,9 +2607,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.3.title)</onclick>
                         </item>
                         <item id="33">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.3.title)) + Skin.HasSetting(hide.plexbmc.3.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.3.title)) + Skin.HasSetting(hide.plexbmc.3.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.3.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.3.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.3.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.3.title)</onclick>
+                        </item>
+                        <item id="33">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.3.title)) + Skin.HasSetting(hide.plexbmc.3.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.3.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.3.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.3.title)</onclick>
                         </item>
@@ -2371,9 +2628,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.4.title)</onclick>
                         </item>
                         <item id="34">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.4.title)) + Skin.HasSetting(hide.plexbmc.4.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.4.title)) + Skin.HasSetting(hide.plexbmc.4.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.4.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.4.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.4.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.4.title)</onclick>
+                        </item>
+                        <item id="34">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.4.title)) + Skin.HasSetting(hide.plexbmc.4.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.4.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.4.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.4.title)</onclick>
                         </item>
@@ -2385,9 +2649,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.5.title)</onclick>
                         </item>
                         <item id="35">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.5.title)) + Skin.HasSetting(hide.plexbmc.5.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.5.title)) + Skin.HasSetting(hide.plexbmc.5.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.5.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.5.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.5.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.5.title)</onclick>
+                        </item>
+                        <item id="35">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.5.title)) + Skin.HasSetting(hide.plexbmc.5.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.5.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.5.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.5.title)</onclick>
                         </item>
@@ -2399,9 +2670,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.6.title)</onclick>
                         </item>
                         <item id="36">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.6.title)) + Skin.HasSetting(hide.plexbmc.6.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.6.title)) + Skin.HasSetting(hide.plexbmc.6.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.6.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.6.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.6.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.6.title)</onclick>
+                        </item>
+                        <item id="36">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.6.title)) + Skin.HasSetting(hide.plexbmc.6.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.6.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.6.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.6.title)</onclick>
                         </item>
@@ -2413,9 +2691,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.7.title)</onclick>
                         </item>
                         <item id="37">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.7.title)) + Skin.HasSetting(hide.plexbmc.7.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.7.title)) + Skin.HasSetting(hide.plexbmc.7.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.7.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.7.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.7.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.7.title)</onclick>
+                        </item>
+                        <item id="37">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.7.title)) + Skin.HasSetting(hide.plexbmc.7.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.7.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.7.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.7.title)</onclick>
                         </item>
@@ -2427,9 +2712,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.8.title)</onclick>
                         </item>
                         <item id="38">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.8.title)) + Skin.HasSetting(hide.plexbmc.8.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.8.title)) + Skin.HasSetting(hide.plexbmc.8.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.8.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.8.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.8.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.8.title)</onclick>
+                        </item>
+                        <item id="38">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.8.title)) + Skin.HasSetting(hide.plexbmc.8.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.8.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.8.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.8.title)</onclick>
                         </item>
@@ -2441,9 +2733,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.9.title)</onclick>
                         </item>
                         <item id="39">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.9.title)) + Skin.HasSetting(hide.plexbmc.9.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.9.title)) + Skin.HasSetting(hide.plexbmc.9.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.9.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.9.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.9.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.9.title)</onclick>
+                        </item>
+                        <item id="39">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.9.title)) + Skin.HasSetting(hide.plexbmc.9.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.9.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.9.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.9.title)</onclick>
                         </item>
@@ -2455,9 +2754,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.10.title)</onclick>
                         </item>
                         <item id="40">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.10.title)) + Skin.HasSetting(hide.plexbmc.10.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.10.title)) + Skin.HasSetting(hide.plexbmc.10.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.10.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.10.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.10.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.10.title)</onclick>
+                        </item>
+                        <item id="40">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.10.title)) + Skin.HasSetting(hide.plexbmc.10.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.10.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.10.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.10.title)</onclick>
                         </item>
@@ -2469,9 +2775,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.11.title)</onclick>
                         </item>
                         <item id="41">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.11.title)) + Skin.HasSetting(hide.plexbmc.11.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.11.title)) + Skin.HasSetting(hide.plexbmc.11.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.11.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.11.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.11.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.11.title)</onclick>
+                        </item>
+                        <item id="41">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.11.title)) + Skin.HasSetting(hide.plexbmc.11.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.11.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.11.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.11.title)</onclick>
                         </item>
@@ -2483,9 +2796,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.12.title)</onclick>
                         </item>
                         <item id="42">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.12.title)) + Skin.HasSetting(hide.plexbmc.12.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.12.title)) + Skin.HasSetting(hide.plexbmc.12.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.12.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.12.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.12.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.12.title)</onclick>
+                        </item>
+                        <item id="42">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.12.title)) + Skin.HasSetting(hide.plexbmc.12.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.12.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.12.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.12.title)</onclick>
                         </item>
@@ -2497,9 +2817,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.13.title)</onclick>
                         </item>
                         <item id="43">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.13.title)) + Skin.HasSetting(hide.plexbmc.13.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.13.title)) + Skin.HasSetting(hide.plexbmc.13.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.13.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.13.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.13.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.13.title)</onclick>
+                        </item>
+                        <item id="43">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.13.title)) + Skin.HasSetting(hide.plexbmc.13.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.13.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.13.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.13.title)</onclick>
                         </item>
@@ -2511,9 +2838,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.14.title)</onclick>
                         </item>
                         <item id="44">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.14.title)) + Skin.HasSetting(hide.plexbmc.14.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.14.title)) + Skin.HasSetting(hide.plexbmc.14.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.14.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.14.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.14.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.14.title)</onclick>
+                        </item>
+                        <item id="44">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.14.title)) + Skin.HasSetting(hide.plexbmc.14.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.14.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.14.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.14.title)</onclick>
                         </item>
@@ -2525,9 +2859,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.15.title)</onclick>
                         </item>
                         <item id="45">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.15.title)) + Skin.HasSetting(hide.plexbmc.15.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.15.title)) + Skin.HasSetting(hide.plexbmc.15.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.15.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.15.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.15.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.15.title)</onclick>
+                        </item>
+                        <item id="45">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.15.title)) + Skin.HasSetting(hide.plexbmc.15.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.15.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.15.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.15.title)</onclick>
                         </item>
@@ -2539,9 +2880,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.16.title)</onclick>
                         </item>
                         <item id="46">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.16.title)) + Skin.HasSetting(hide.plexbmc.16.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.16.title)) + Skin.HasSetting(hide.plexbmc.16.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.16.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.16.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.16.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.16.title)</onclick>
+                        </item>
+                        <item id="46">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.16.title)) + Skin.HasSetting(hide.plexbmc.16.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.16.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.16.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.16.title)</onclick>
                         </item>
@@ -2553,9 +2901,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.17.title)</onclick>
                         </item>
                         <item id="47">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.17.title)) + Skin.HasSetting(hide.plexbmc.17.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.17.title)) + Skin.HasSetting(hide.plexbmc.17.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.17.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.17.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.17.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.17.title)</onclick>
+                        </item>
+                        <item id="47">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.17.title)) + Skin.HasSetting(hide.plexbmc.17.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.17.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.17.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.17.title)</onclick>
                         </item>
@@ -2567,9 +2922,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.18.title)</onclick>
                         </item>
                         <item id="48">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.18.title)) + Skin.HasSetting(hide.plexbmc.18.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.18.title)) + Skin.HasSetting(hide.plexbmc.18.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.18.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.18.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.18.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.18.title)</onclick>
+                        </item>
+                        <item id="48">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.18.title)) + Skin.HasSetting(hide.plexbmc.18.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.18.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.18.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.18.title)</onclick>
                         </item>
@@ -2581,9 +2943,16 @@
                             <onclick>Skin.ToggleSetting(hide.plexbmc.19.title)</onclick>
                         </item>
                         <item id="49">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.19.title)) + Skin.HasSetting(hide.plexbmc.19.title)</visible>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.19.title)) + Skin.HasSetting(hide.plexbmc.19.title)+!Skin.HasSetting(Theme.Color.Black)</visible>
                             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.19.shared),t)]</visible>
-                            <label>[COLOR=DisabledColor]$INFO[Window(Home).Property(plexbmc.19.title)][/COLOR]</label>
+                            <label>[COLOR=DisabledColor_white]$INFO[Window(Home).Property(plexbmc.19.title)][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(hide.plexbmc.19.title)</onclick>
+                        </item>
+                        <item id="49">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.19.title)) + Skin.HasSetting(hide.plexbmc.19.title)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.19.shared),t)]</visible>
+                            <label>[COLOR=DisabledColor_black]$INFO[Window(Home).Property(plexbmc.19.title)][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(hide.plexbmc.19.title)</onclick>
                         </item>
@@ -2594,8 +2963,14 @@
                             <onclick>Skin.ToggleSetting(Channels.Hide)</onclick>
                         </item>
                         <item id="50">
-                            <visible>Skin.HasSetting(plexbmc) + Skin.HasSetting(Channels.Hide)</visible>
-                            <label>[COLOR=DisabledColor]$LOCALIZE[31975][/COLOR]</label>
+                            <visible>Skin.HasSetting(plexbmc) + Skin.HasSetting(Channels.Hide)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[31975][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(Channels.Hide)</onclick>
+                        </item>
+                        <item id="50">
+                            <visible>Skin.HasSetting(plexbmc) + Skin.HasSetting(Channels.Hide)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[31975][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(Channels.Hide)</onclick>
                         </item>
@@ -2606,8 +2981,14 @@
                             <onclick>Skin.ToggleSetting(Queue.Hide)</onclick>
                         </item>
                         <item id="51">
-                            <visible>!IsEmpty(Window(Home).Property(plexbmc.myplex)) + Skin.HasSetting(Queue.Hide)</visible>
-                            <label>[COLOR=DisabledColor]$LOCALIZE[31010][/COLOR]</label>
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.myplex)) + Skin.HasSetting(Queue.Hide)+!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[31010][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <onclick>Skin.ToggleSetting(Queue.Hide)</onclick>
+                        </item>
+                        <item id="51">
+                            <visible>!IsEmpty(Window(Home).Property(plexbmc.myplex)) + Skin.HasSetting(Queue.Hide)+Skin.HasSetting(Theme.Color.Black)</visible>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[31010][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(Queue.Hide)</onclick>
                         </item>
@@ -2622,708 +3003,64 @@
                     <onright>90000</onright>
                     <include>VerticalScroller</include>
                 </control>
-                <!-- HIGHLIGHTED COLORS -->
-                <control type="group">
-                    <posx>0</posx>
-                    <posy>183</posy>
-                    <visible>Container(90000).Hasfocus(11)</visible>
-                    <!-- WHITE DEFAULT -->
-                    <control type="group">
-                        <posx>0</posx>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="35">common/JewelCaseOverlay_white.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
-                            <height>63</height>
-                            <texture border="35">list/bg_facade_focus_white.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
-                            <height>90</height>
-                            <texture border="35">buttons/bg_button_focus_white.png</texture>
-                        </control>
-                        <control type="radiobutton" id="852801">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[742]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852802</onright>
-                            <onleft>90000</onleft>
-                            <ondown>852805</ondown>
-                            <onup>852805</onup>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.White)|![Skin.HasSetting(Highlighted.Color.Fuchsia)|Skin.HasSetting(Highlighted.Color.Azure)|Skin.HasSetting(Highlighted.Color.Yellow)|Skin.HasSetting(Highlighted.Color.Blue)|Skin.HasSetting(Highlighted.Color.Green)|Skin.HasSetting(Highlighted.Color.Red)|Skin.HasSetting(Highlighted.Color.Violet)]</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- FUCHSIA -->
-                    <control type="group">
-                        <posx>308</posx>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="35">common/JewelCaseOverlay_fuchsia.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
-                            <height>63</height>
-                            <texture border="35">list/bg_facade_focus_fuchsia.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
-                            <height>90</height>
-                            <texture border="35">buttons/bg_button_focus_fuchsia.png</texture>
-                        </control>
-                        <control type="radiobutton" id="852802">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[31035]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852803</onright>
-                            <onleft>852801</onleft>
-                            <ondown>852806</ondown>
-                            <onup>852806</onup>
-                            <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.Fuchsia)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- AZURE -->
-                    <control type="group">
-                        <posx>616</posx>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="35">common/JewelCaseOverlay_azure.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
-                            <height>63</height>
-                            <texture border="35">list/bg_facade_focus_azure.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
-                            <height>90</height>
-                            <texture border="35">buttons/bg_button_focus_azure.png</texture>
-                        </control>
-                        <control type="radiobutton" id="852803">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[765]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852804</onright>
-                            <onleft>852802</onleft>
-                            <ondown>852807</ondown>
-                            <onup>852807</onup>
-                            <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.Azure)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- BLUE -->
-                    <control type="group">
-                        <posx>924</posx>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="35">common/JewelCaseOverlay_blue.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
-                            <height>63</height>
-                            <texture border="35">list/bg_facade_focus_blue.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
-                            <height>90</height>
-                            <texture border="35">buttons/bg_button_focus_blue.png</texture>
-                        </control>
-                        <control type="radiobutton" id="852804">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[762]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>90000</onright>
-                            <onleft>852803</onleft>
-                            <ondown>852808</ondown>
-                            <onup>852808</onup>
-                            <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.Blue)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- GREEN -->
-                    <control type="group">
-                        <posx>0</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="35">common/JewelCaseOverlay_green.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
-                            <height>63</height>
-                            <texture border="35">list/bg_facade_focus_green.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
-                            <height>90</height>
-                            <texture border="35">buttons/bg_button_focus_green.png</texture>
-                        </control>
-                        <control type="radiobutton" id="852805">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[763]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852806</onright>
-                            <onleft>90000</onleft>
-                            <ondown>852801</ondown>
-                            <onup>852801</onup>
-                            <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.Green)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- RED -->
-                    <control type="group">
-                        <posx>308</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="35">common/JewelCaseOverlay_red.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
-                            <height>63</height>
-                            <texture border="35">list/bg_facade_focus_red.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
-                            <height>90</height>
-                            <texture border="35">buttons/bg_button_focus_red.png</texture>
-                        </control>
-                        <control type="radiobutton" id="852806">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[13343]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852807</onright>
-                            <onleft>852805</onleft>
-                            <ondown>852802</ondown>
-                            <onup>852802</onup>
-                            <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.Red)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- Violet -->
-                    <control type="group">
-                        <posx>616</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="35">common/JewelCaseOverlay_violet.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
-                            <height>63</height>
-                            <texture border="35">list/bg_facade_focus_violet.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
-                            <height>90</height>
-                            <texture border="35">buttons/bg_button_focus_violet.png</texture>
-                        </control>
-                        <control type="radiobutton" id="852807">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[31036]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852808</onright>
-                            <onleft>852806</onleft>
-                            <ondown>852803</ondown>
-                            <onup>852803</onup>
-                            <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.Violet)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- Yellow -->
-                    <control type="group">
-                        <posx>924</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="35">common/JewelCaseOverlay_yellow.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
-                            <height>63</height>
-                            <texture border="35">list/bg_facade_focus_yellow.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
-                            <height>90</height>
-                            <texture border="35">buttons/bg_button_focus_yellow.png</texture>
-                        </control>
-                        <control type="radiobutton" id="852808">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[743]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>90000</onright>
-                            <onleft>852807</onleft>
-                            <ondown>852804</ondown>
-                            <onup>852804</onup>
-                            <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.Yellow)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                </control>
                 <!-- THEMES -->
                 <control type="group">
-                    <posx>0</posx>
-                    <posy>183</posy>
                     <visible>Container(90000).Hasfocus(13)</visible>
+                    <control type="image">
+                        <posx>100</posx>
+                        <posy>862</posy>
+                        <width>1720</width>
+                        <height>172</height>
+                        <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>347</posx>
+                        <posy>185</posy>
+                        <width>1225</width>
+                        <height>720</height>
+                        <aspectratio>scale</aspectratio>
+                        <include>ThumbBorder</include>
+                        <texture>special://skin/fanart.jpg</texture>
+                    </control>
                     <!-- WHITE -->
-                    <control type="group">
-                        <posx>0</posx>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
-                            <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/white.jpg</texture>
-                        </control>
-                        <control type="radiobutton" id="852801">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[353]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852802</onright>
-                            <onleft>90000</onleft>
-                            <ondown>852805</ondown>
-                            <onup>852805</onup>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.White)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.White)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
+                    <control type="radiobutton" id="852801">
+                        <posx>383</posx>
+                        <posy>903</posy>
+                        <width>577</width>
+                        <height>90</height>
+                        <label>$LOCALIZE[742]</label>
+                        <align>center</align>
+                        <radioposx>450</radioposx>
+                        <onright>852808</onright>
+                        <onleft>90000</onleft>
+                        <ondown>852801</ondown>
+                        <onup>852801</onup>
+                        <onclick>Skin.ToggleSetting(Theme.Color.White)</onclick>
+                        <onclick>Skin.Reset(Theme.Color.Black)</onclick>
+                        <selected>Skin.HasSetting(Theme.Color.White)|!Skin.HasSetting(Theme.Color.Black)</selected>
+                        <onclick>XBMC.ReloadSkin()</onclick>
                     </control>
-                    <!-- FUCHSIA -->
-                    <control type="group">
-                        <posx>308</posx>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
-                            <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/fuchsia.jpg</texture>
-                        </control>
-                        <control type="radiobutton" id="852802">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[31035]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852803</onright>
-                            <onleft>852801</onleft>
-                            <ondown>852806</ondown>
-                            <onup>852806</onup>
-                            <onclick>Skin.Reset(Overlay.Color.White)</onclick>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.Fuchsia)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- AZURE -->
-                    <control type="group">
-                        <posx>616</posx>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
-                            <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/azure.jpg</texture>
-                        </control>
-                        <control type="radiobutton" id="852803">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[765]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852804</onright>
-                            <onleft>852802</onleft>
-                            <ondown>852807</ondown>
-                            <onup>852807</onup>
-                            <onclick>Skin.Reset(Overlay.Color.White)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.Azure)|![Skin.HasSetting(Overlay.Color.Fuchsia)|Skin.HasSetting(Overlay.Color.White)|Skin.HasSetting(Overlay.Color.Yellow)|Skin.HasSetting(Overlay.Color.Blue)|Skin.HasSetting(Overlay.Color.Green)|Skin.HasSetting(Overlay.Color.Red)|Skin.HasSetting(Overlay.Color.Violet)]</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- BLUE -->
-                    <control type="group">
-                        <posx>924</posx>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
-                            <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/blue.jpg</texture>
-                        </control>
-                        <control type="radiobutton" id="852804">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[762]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>90000</onright>
-                            <onleft>852803</onleft>
-                            <ondown>852808</ondown>
-                            <onup>852808</onup>
-                            <onclick>Skin.Reset(Overlay.Color.White)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.Blue)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- GREEN -->
-                    <control type="group">
-                        <posx>0</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
-                            <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/green.jpg</texture>
-                        </control>
-                        <control type="radiobutton" id="852805">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[763]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852806</onright>
-                            <onleft>90000</onleft>
-                            <ondown>852801</ondown>
-                            <onup>852801</onup>
-                            <onclick>Skin.Reset(Overlay.Color.White)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.Green)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- RED -->
-                    <control type="group">
-                        <posx>308</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
-                            <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/red.jpg</texture>
-                        </control>
-                        <control type="radiobutton" id="852806">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[13343]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852807</onright>
-                            <onleft>852805</onleft>
-                            <ondown>852802</ondown>
-                            <onup>852802</onup>
-                            <onclick>Skin.Reset(Overlay.Color.White)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.Red)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- Violet -->
-                    <control type="group">
-                        <posx>616</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
-                            <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/violet.jpg</texture>
-                        </control>
-                        <control type="radiobutton" id="852807">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[31036]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852808</onright>
-                            <onleft>852806</onleft>
-                            <ondown>852803</ondown>
-                            <onup>852803</onup>
-                            <onclick>Skin.Reset(Overlay.Color.White)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.Violet)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- Yellow -->
-                    <control type="group">
-                        <posx>924</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
-                            <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/yellow.jpg</texture>
-                        </control>
-                        <control type="radiobutton" id="852808">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[743]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>90000</onright>
-                            <onleft>852807</onleft>
-                            <ondown>852804</ondown>
-                            <onup>852804</onup>
-                            <onclick>Skin.Reset(Overlay.Color.White)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.Yellow)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
-                        </control>
+                    <!-- BLACK -->
+                    <control type="radiobutton" id="852808">
+                        <posx>960</posx>
+                        <posy>903</posy>
+                        <width>577</width>
+                        <height>90</height>
+                        <label>$LOCALIZE[353]</label>
+                        <align>center</align>
+                        <radioposx>450</radioposx>
+                        <onright>852808</onright>
+                        <onleft>852801</onleft>
+                        <ondown>852808</ondown>
+                        <onup>852808</onup>
+                        <onclick>Skin.Reset(Theme.Color.White)</onclick>
+                        <onclick>Skin.ToggleSetting(Theme.Color.Black)</onclick>
+                        <selected>Skin.HasSetting(Theme.Color.Black)</selected>
+                        <onclick>XBMC.ReloadSkin()</onclick>
                     </control>
                 </control>
             </control>
         </control>
-        <!-- <control type="scrollbar" id="63">
-            <visible>Control.IsVisible(9003)</visible>
-            <posx>1518</posx>
-            <posy>210</posy>
-            <width>36</width>
-            <height>780</height>
-            <texturesliderbackground>-</texturesliderbackground>
-            <texturesliderbar>-</texturesliderbar>
-            <texturesliderbarfocus>-</texturesliderbarfocus>
-            <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-            <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
-            <showonepage>false</showonepage>
-            <orientation>vertical</orientation>
-            <onleft>9003</onleft>
-            <onright>90000</onright>
-        </control> -->
         <control type="label">
             <include>OpenClose</include>
             <include>WindowTitle</include>
@@ -3350,7 +3087,7 @@
                         <height>78</height>
                         <width>520</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
+                        <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
@@ -3360,14 +3097,14 @@
                         <posy>0</posy>
                         <height>78</height>
                         <width>660</width>
-                        <include>FacadeFocus</include>
+                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <height>78</height>
                         <width>520</width>
                         <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
+                        <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </focusedlayout>
@@ -3406,10 +3143,6 @@
                     </item>
                     <item id="8">
                         <label>$LOCALIZE[31985]</label>
-                        <onclick>noop</onclick>
-                    </item>
-                    <item id="11">
-                        <label>$LOCALIZE[31037]</label>
                         <onclick>noop</onclick>
                     </item>
                     <item id="13">

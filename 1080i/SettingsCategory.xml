@@ -14,7 +14,7 @@
                     <posy>142</posy>
                     <width>1920</width>
                     <height>892</height>
-                    <texture border="100">common/bg_list.png</texture>
+                    <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                 </control>
                 <control type="label" id="2">
                     <posx>3173</posx>
@@ -23,7 +23,7 @@
                     <width>1574</width>
                     <align>center</align>
                     <font>InfoTitleFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                 </control>
                 <control type="grouplist" id="5">
                     <posx>0</posx>
@@ -33,7 +33,7 @@
                     <itemgap>0</itemgap>
                     <onleft>3</onleft>
                     <onright>60</onright>
-                    <onup>3</onup>
+                    <onup>5</onup>
                     <ondown>5</ondown>
                     <pagecontrol>60</pagecontrol>
                     <orientation>vertical</orientation>
@@ -66,7 +66,7 @@
                     <width>1800</width>
                     <description>Default Seperator</description>
                     <height>1</height>
-                    <texture border="150,0,150,0">list/bg_facade_separator.png</texture>
+                    <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                 </control>
                 <control type="textbox" id="6">
                     <posx>TextMargin</posx>

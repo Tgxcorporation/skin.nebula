@@ -27,7 +27,7 @@
                 <posy>-30</posy>
                 <width>720</width>
                 <height>117</height>
-                <texture border="22">common/bg_dialog.png</texture>
+                <texture border="22">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="label" id="402">
                 <description>Next Song Name</description>

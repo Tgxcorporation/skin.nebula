@@ -12,21 +12,21 @@
                 <posy>150</posy>
                 <width>2930</width>
                 <height>876</height>
-                <texture border="150,40,150,40">common/bg_dialog.png</texture>
+                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
                 <posx>100</posx>
                 <posy>142</posy>
                 <width>1720</width>
                 <height>217</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
                 <posx>100</posx>
                 <posy>862</posy>
                 <width>1720</width>
                 <height>172</height>
-                <texture border="100">common/bg_list.png</texture>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="label">
                 <posx>TextMargin</posx>
@@ -35,7 +35,7 @@
                 <height>105</height>
                 <align>center</align>
                 <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
+                <include>TextColor_MainColor</include>
                 <label>$INFO[ListItem.Property(Addon.Name)]</label>
             </control>
             <control type="image">
@@ -45,7 +45,7 @@
                 <height>37</height>
                 <width>185</width>
                 <aspectratio align="left">keep</aspectratio>
-                <texture fallback="badges/rating0.png">$INFO[ListItem.Property(Addon.StarRating),badges/]</texture>
+                <texture fallback="$VAR[Theme.Color]/badges/rating0.png">$INFO[ListItem.Property(Addon.StarRating),$VAR[Theme.Color]/badges/]</texture>
             </control>
             <control type="image">
                 <posx>25</posx>
@@ -66,7 +66,7 @@
                     <label>$INFO[ListItem.Property(Addon.Type),$LOCALIZE[146] ]</label>
                     <scroll>true</scroll>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                 </control>
                 <control type="label">
                     <posx>0</posx>
@@ -76,7 +76,7 @@
                     <label>$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]</label>
                     <scroll>true</scroll>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                 </control>
                 <control type="label">
                     <posx>0</posx>
@@ -86,7 +86,7 @@
                     <label>$INFO[ListItem.Property(Addon.Version),$LOCALIZE[24051] ]</label>
                     <scroll>true</scroll>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                 </control>
                 <control type="fadelabel">
                     <posx>0</posx>
@@ -96,7 +96,7 @@
                     <label>$INFO[ListItem.Property(Addon.Summary),$LOCALIZE[20037]: ]</label>
                     <scroll>true</scroll>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <include>TextColor_MainColor</include>
                     <scrollout>false</scrollout>
                     <pauseatend>2000</pauseatend>
                 </control>
