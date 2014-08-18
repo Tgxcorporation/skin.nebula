@@ -52,7 +52,7 @@
                 <height>37</height>
                 <width>185</width>
                 <aspectratio align="left">keep</aspectratio>
-                <texture fallback="$VAR[Theme.Color]/badges/rating0.png">$INFO[ListItem.StarRating,$VAR[Theme.Color]/badges/]</texture>
+                <texture fallback="$VAR[Theme.Color]/badges/rating0.png">$VAR[Theme.Color]/badges/$INFO[ListItem.StarRating]</texture>
             </control>
             <control type="group">
                 <!-- CDART -->

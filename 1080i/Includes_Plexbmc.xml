@@ -964,13 +964,13 @@
                             <width>120</width>
                             <height>80</height>
                             <aspectratio>keep</aspectratio>
-                            <texture>$INFO[Container(311).ListItem.Property(VideoResolution),$VAR[Theme.Color]/badges/video/,.png]</texture>
+                            <texture>$VAR[Theme.Color]/badges/video/$INFO[Container(311).ListItem.Property(VideoResolution),,.png]</texture>
                         </control>
                         <control type="image">
                             <width>120</width>
                             <height>80</height>
                             <aspectratio>keep</aspectratio>
-                            <texture>$INFO[Container(311).ListItem.Property(VideoCodec),$VAR[Theme.Color]/badges/video/,.png]</texture>
+                            <texture>$VAR[Theme.Color]/badges/video/$INFO[Container(311).ListItem.Property(VideoCodec),,.png]</texture>
                         </control>
                     </control>
                     <control type="grouplist">
@@ -986,13 +986,13 @@
                             <width>120</width>
                             <height>80</height>
                             <aspectratio>keep</aspectratio>
-                            <texture>$INFO[Container(311).ListItem.Property(AudioChannels),$VAR[Theme.Color]/badges/audio/,.png]</texture>
+                            <texture>$VAR[Theme.Color]/badges/audio/$INFO[Container(311).ListItem.Property(AudioChannels),,.png]</texture>
                         </control>
                         <control type="image">
                             <width>120</width>
                             <height>80</height>
                             <aspectratio>keep</aspectratio>
-                            <texture>$INFO[Container(311).ListItem.Property(AudioCodec),$VAR[Theme.Color]/badges/audio/,.png]</texture>
+                            <texture>$VAR[Theme.Color]/badges/audio/$INFO[Container(311).ListItem.Property(AudioCodec),,.png]</texture>
                         </control>
                     </control>
                     <control type="group">

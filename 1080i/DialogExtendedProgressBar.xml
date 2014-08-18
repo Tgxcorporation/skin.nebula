@@ -14,23 +14,23 @@
             </control>
             <control type="progress" id="32">
                 <visible>!skin.hassetting(Theme.Color.Black)</visible>
-                <posx>-29</posx>
-                <posy>-20</posy>
-                <width>1978</width>
-                <height>54</height>
-                <texturebg border="14,20,14,20">white/buttons/Scrollbar_Horizontal_bg.png</texturebg>
-                <midtexture border="30,24,30,24">white/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>14</height>
+                <texturebg>white/OSD/osd_progress_background.png</texturebg>
+                <midtexture border="1,1,5,1">white/OSD/osd_progress_mid.png</midtexture>
                 <righttexture>-</righttexture>
                 <lefttexture>-</lefttexture>
             </control>
             <control type="progress" id="32">
                 <visible>skin.hassetting(Theme.Color.Black)</visible>
-                <posx>-29</posx>
-                <posy>-20</posy>
-                <width>1978</width>
-                <height>54</height>
-                <texturebg border="14,20,14,20">black/buttons/Scrollbar_Horizontal_bg.png</texturebg>
-                <midtexture border="30,24,30,24">black/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>14</height>
+                <texturebg>black/OSD/osd_progress_background.png</texturebg>
+                <midtexture border="1,1,5,1">black/OSD/osd_progress_mid.png</midtexture>
                 <righttexture>-</righttexture>
                 <lefttexture>-</lefttexture>
             </control>
@@ -51,7 +51,7 @@
                 <width>1800</width>
                 <scroll>true</scroll>
                 <align>center</align>
-                <font>NotificationFontDouble</font>
+                <font>NotificationFont</font>
                 <include>TextColor_MainColor</include>
             </control>
         </control>

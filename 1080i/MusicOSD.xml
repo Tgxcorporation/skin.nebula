@@ -5,13 +5,6 @@
     <controls>
         <control type="group">
             <visible>![window.IsActive(DialogVolumeBar.xml)|window.IsActive(DialogMuteBug.xml)]</visible>
-            <control type="image">
-                <posx>-150</posx>
-                <posy>-3</posy>
-                <texture>$VAR[Theme.Color]/common/basichome_upper_gradient.png</texture>
-                <width>2220</width>
-                <height>440</height>
-            </control>
             <control type="slider" id="87">
                 <description>Seek Slider</description>
                 <posx>0</posx>

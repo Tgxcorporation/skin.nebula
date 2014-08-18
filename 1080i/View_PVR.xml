@@ -126,14 +126,29 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="progress">
+                            <visible>!skin.hassetting(Theme.Color.Black)</visible>
                             <posx>TextMargin</posx>
                             <posy>346</posy>
                             <height>54</height>
                             <width>335</width>
-                            <texturebg border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_bg.png</texturebg>
-                            <reveal>true</reveal>
+                            <texturebg border="14,20,14,20">white/buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                            <!-- <reveal>true</reveal> -->
                             <lefttexture>-</lefttexture>
-                            <midtexture border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                            <midtexture border="14,20,14,20">white/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                            <righttexture>-</righttexture>
+                            <overlaytexture>-</overlaytexture>
+                            <info>ListItem.Progress</info>
+                        </control>
+                        <control type="progress">
+                            <visible>skin.hassetting(Theme.Color.Black)</visible>
+                            <posx>TextMargin</posx>
+                            <posy>346</posy>
+                            <height>54</height>
+                            <width>335</width>
+                            <texturebg border="14,20,14,20">black/buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                            <!-- <reveal>true</reveal> -->
+                            <lefttexture>-</lefttexture>
+                            <midtexture border="14,20,14,20">black/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
                             <righttexture>-</righttexture>
                             <overlaytexture>-</overlaytexture>
                             <info>ListItem.Progress</info>
@@ -308,14 +323,29 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="progress">
+                            <visible>!skin.hassetting(Theme.Color.Black)</visible>
                             <posx>TextMargin</posx>
                             <posy>346</posy>
                             <height>54</height>
                             <width>335</width>
-                            <texturebg border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_bg.png</texturebg>
-                            <reveal>true</reveal>
+                            <texturebg border="14,20,14,20">white/buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                            <!-- <reveal>true</reveal> -->
                             <lefttexture>-</lefttexture>
-                            <midtexture border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                            <midtexture border="14,20,14,20">white/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                            <righttexture>-</righttexture>
+                            <overlaytexture>-</overlaytexture>
+                            <info>ListItem.Progress</info>
+                        </control>
+                        <control type="progress">
+                            <visible>skin.hassetting(Theme.Color.Black)</visible>
+                            <posx>TextMargin</posx>
+                            <posy>346</posy>
+                            <height>54</height>
+                            <width>335</width>
+                            <texturebg border="14,20,14,20">black/buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                            <!-- <reveal>true</reveal> -->
+                            <lefttexture>-</lefttexture>
+                            <midtexture border="14,20,14,20">black/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
                             <righttexture>-</righttexture>
                             <overlaytexture>-</overlaytexture>
                             <info>ListItem.Progress</info>
@@ -614,7 +644,7 @@
                 <onup>10</onup>
                 <ondown>10</ondown>
                 <scrolltime>300</scrolltime>
-                <progresstexture border="0,95,20,20">$VAR[Theme.Color]/common/EPGMarker.png</progresstexture>
+                <include>ProgressTexture</include>
                 <rulerlayout height="78" width="60">
                     <control type="image" id="1">
                         <width>50</width>
@@ -1219,14 +1249,29 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="progress">
+                            <visible>!skin.hassetting(Theme.Color.Black)</visible>
                             <posx>TextMargin</posx>
                             <posy>346</posy>
                             <height>54</height>
                             <width>335</width>
-                            <texturebg border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_bg.png</texturebg>
-                            <reveal>true</reveal>
+                            <texturebg border="14,20,14,20">white/buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                            <!-- <reveal>true</reveal> -->
                             <lefttexture>-</lefttexture>
-                            <midtexture border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                            <midtexture border="14,20,14,20">white/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                            <righttexture>-</righttexture>
+                            <overlaytexture>-</overlaytexture>
+                            <info>ListItem.Progress</info>
+                        </control>
+                        <control type="progress">
+                            <visible>skin.hassetting(Theme.Color.Black)</visible>
+                            <posx>TextMargin</posx>
+                            <posy>346</posy>
+                            <height>54</height>
+                            <width>335</width>
+                            <texturebg border="14,20,14,20">black/buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                            <!-- <reveal>true</reveal> -->
+                            <lefttexture>-</lefttexture>
+                            <midtexture border="14,20,14,20">black/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
                             <righttexture>-</righttexture>
                             <overlaytexture>-</overlaytexture>
                             <info>ListItem.Progress</info>
@@ -1392,14 +1437,29 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="progress">
+                            <visible>!skin.hassetting(Theme.Color.Black)</visible>
                             <posx>TextMargin</posx>
                             <posy>346</posy>
                             <height>54</height>
                             <width>335</width>
-                            <texturebg border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_bg.png</texturebg>
-                            <reveal>true</reveal>
+                            <texturebg border="14,20,14,20">white/buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                            <!-- <reveal>true</reveal> -->
                             <lefttexture>-</lefttexture>
-                            <midtexture border="14,20,14,20">$VAR[Theme.Color]/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                            <midtexture border="14,20,14,20">white/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                            <righttexture>-</righttexture>
+                            <overlaytexture>-</overlaytexture>
+                            <info>ListItem.Progress</info>
+                        </control>
+                        <control type="progress">
+                            <visible>!skin.hassetting(Theme.Color.Black)</visible>
+                            <posx>TextMargin</posx>
+                            <posy>346</posy>
+                            <height>54</height>
+                            <width>335</width>
+                            <texturebg border="14,20,14,20">black/buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                            <!-- <reveal>true</reveal> -->
+                            <lefttexture>-</lefttexture>
+                            <midtexture border="14,20,14,20">black/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
                             <righttexture>-</righttexture>
                             <overlaytexture>-</overlaytexture>
                             <info>ListItem.Progress</info>

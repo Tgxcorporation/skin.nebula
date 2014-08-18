@@ -32,7 +32,8 @@
         <font>
             <name>NotificationFontDouble</name>
             <filename>Ubuntu-R.ttf</filename>
-            <size>33</size>
+            <size>36</size>
+            <style>bold</style>
         </font>
         <font>
             <name>OSDTitleFont</name>
@@ -216,7 +217,8 @@
         <font>
             <name>NotificationFontDouble</name>
             <filename>Ubuntu-M.ttf</filename>
-            <size>33</size>
+            <size>36</size>
+            <style>bold</style>
         </font>
         <font>
             <name>OSDTitleFont</name>
@@ -400,7 +402,8 @@
         <font>
             <name>NotificationFontDouble</name>
             <filename>Asap-Regular.ttf</filename>
-            <size>33</size>
+            <size>36</size>
+            <style>bold</style>
         </font>
         <font>
             <name>OSDTitleFont</name>

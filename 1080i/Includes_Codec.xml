@@ -14,8 +14,8 @@
         <value condition="[!IsEmpty(ListItem.mpaa) + StringCompare(ListItem.mpaa,NC-17)] | [IsEmpty(ListItem.mpaa) + StringCompare(VideoPlayer.mpaa,NC-17)]">$VAR[Theme.Color]/badges/content_rating/us/nc17.png</value>
         <value condition="[!IsEmpty(ListItem.mpaa) + StringCompare(ListItem.mpaa,G)] | [IsEmpty(ListItem.mpaa) + StringCompare(VideoPlayer.mpaa,G)]">$VAR[Theme.Color]/badges/content_rating/us/mpaa_general.png</value>
         <!-- US (TV) -->
-        <value condition="!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,TV-)">$INFO[ListItem.mpaa,$VAR[Theme.Color]/badges/content_rating/tv/,.png]</value>
-        <value condition="IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,TV-)">$INFO[VideoPlayer.mpaa,$VAR[Theme.Color]/badges/content_rating/tv/,.png]</value>
+        <value condition="!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,TV-)">$VAR[Theme.Color]/badges/content_rating/tv/$INFO[ListItem.mpaa,,.png]</value>
+        <value condition="IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,TV-)">$VAR[Theme.Color]/badges/content_rating/tv/$INFO[VideoPlayer.mpaa,,.png]</value>
         <!-- Germany -->
         <value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Germany:0)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Germany:0)]">$VAR[Theme.Color]/badges/content_rating/de/0.png</value>
         <value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Germany:6)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Germany:6)]">$VAR[Theme.Color]/badges/content_rating/de/6.png</value>
@@ -60,8 +60,8 @@
         <value condition="[!IsEmpty(VideoPlayer.mpaa) + StringCompare(VideoPlayer.mpaa,NC-17)] | [IsEmpty(VideoPlayer.mpaa) + StringCompare(VideoPlayer.mpaa,NC-17)]">$VAR[Theme.Color]/badges/content_rating/us/nc17.png</value>
         <value condition="[!IsEmpty(VideoPlayer.mpaa) + StringCompare(VideoPlayer.mpaa,G)] | [IsEmpty(VideoPlayer.mpaa) + StringCompare(VideoPlayer.mpaa,G)]">$VAR[Theme.Color]/badges/content_rating/us/mpaa_general.png</value>
         <!-- US (TV) -->
-        <value condition="!IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,TV-)">$INFO[VideoPlayer.mpaa,$VAR[Theme.Color]/badges/content_rating/tv/,.png]</value>
-        <value condition="IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,TV-)">$INFO[VideoPlayer.mpaa,$VAR[Theme.Color]/badges/content_rating/tv/,.png]</value>
+        <value condition="!IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,TV-)">$VAR[Theme.Color]/badges/content_rating/tv/$INFO[VideoPlayer.mpaa,,.png]</value>
+        <value condition="IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,TV-)">$VAR[Theme.Color]/badges/content_rating/tv/$INFO[VideoPlayer.mpaa,,.png]</value>
         <!-- Germany -->
         <value condition="[!IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,Germany:0)] | [IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,Germany:0)]">$VAR[Theme.Color]/badges/content_rating/de/0.png</value>
         <value condition="[!IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,Germany:6)] | [IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,Germany:6)]">$VAR[Theme.Color]/badges/content_rating/de/6.png</value>

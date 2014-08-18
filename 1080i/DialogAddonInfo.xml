@@ -45,7 +45,7 @@
                 <height>37</height>
                 <width>185</width>
                 <aspectratio align="left">keep</aspectratio>
-                <texture fallback="$VAR[Theme.Color]/badges/rating0.png">$INFO[ListItem.Property(Addon.StarRating),$VAR[Theme.Color]/badges/]</texture>
+                <texture fallback="$VAR[Theme.Color]/badges/rating0.png">$VAR[Theme.Color]/badges/$INFO[ListItem.Property(Addon.StarRating)]</texture>
             </control>
             <control type="image">
                 <posx>25</posx>

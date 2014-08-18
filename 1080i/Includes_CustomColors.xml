@@ -1,38 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-    <!-- LIST BACKGROUND -->
-    <!-- <include name="List_Background_white">
-        <texture border="100">$VAR[Theme.Color]/common/bg_list_white.png</texture>
-    </include>
-    <include name="List_Background_black">
-        <texture border="100">$VAR[Theme.Color]/common/bg_list_black.png</texture>
-    </include>
-    <include name="List_Background">
-        <include condition="Skin.HasSetting(Theme.Color.Black)">List_Background_black</include>
-        <include>List_Background_white</include>
-    </include> -->
-    <!-- SEPARATOR -->
-    <!-- <include name="Separator_white">
-        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator_white.png</texture>
-    </include>
-    <include name="Separator_black">
-        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator_black.png</texture>
-    </include>
-    <include name="Separator">
-        <include condition="Skin.HasSetting(Theme.Color.Black)">Separator_black</include>
-        <include>Separator_white</include>
-    </include> -->
-    <!-- DIALOG BACKGROUND -->
-    <!-- <include name="Dialog_Background_white">
-        <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog_white.png</texture>
-    </include>
-    <include name="Dialog_Background_black">
-        <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog_black.png</texture>
-    </include>
-    <include name="Dialog_Background">
-        <include condition="Skin.HasSetting(Theme.Color.Black)">Dialog_Background_black</include>
-        <include>Dialog_Background_white</include>
-    </include> -->
     <!-- STARS -->
     <include name="Star_white">
         <texture fallback="white/badges/rating0.png">$INFO[ListItem.StarRating,white/badges/]</texture>
@@ -207,7 +174,7 @@
     <include name="VerticalTextureSliderBarFocus_white">
         <texturesliderbarfocus border="24,30,24,30">white/buttons/Scrollbar_Vertical_Focus.png</texturesliderbarfocus>
     </include>
-    <include name="VerticalTextureSliderBarNoFocus_black">
+    <include name="VerticalTextureSliderBarFocus_black">
         <texturesliderbarfocus border="24,30,24,30">black/buttons/Scrollbar_Vertical_Focus.png</texturesliderbarfocus>
     </include>
     <include name="VerticalTextureSliderBarFocus">
@@ -240,7 +207,7 @@
     <include name="HorizontalTextureSliderBarFocus_white">
         <texturesliderbarfocus border="30,24,30,24">white/buttons/Scrollbar_Horizontal_Focus.png</texturesliderbarfocus>
     </include>
-    <include name="HorizontalTextureSliderBarNoFocus_black">
+    <include name="HorizontalTextureSliderBarFocus_black">
         <texturesliderbarfocus border="30,24,30,24">black/buttons/Scrollbar_Horizontal_Focus.png</texturesliderbarfocus>
     </include>
     <include name="HorizontalTextureSliderBarFocus">
@@ -291,21 +258,17 @@
         <include condition="Skin.HasSetting(Theme.Color.Black)">TextureSliderNibFocus_black</include>
         <include>TextureSliderNibFocus_white</include>
     </include>
-    <!-- FACADE LIST -->
-    <!-- <include name="FacadeFocus">
-        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus_$VAR[Theme.Color].png</texture>
-    </include> -->
-    <!-- OVERLAY BACKGROUND -->
-    <!--  <include name="Overlay_white">
-        <texture>special://skin/backgrounds/default/white.png</texture>
+    <!-- EPG MARKER -->
+    <include name="ProgressTexture_white">
+        <progresstexture border="0,95,20,20">white/common/EPGMarker.png</progresstexture>
     </include>
-    <include name="Overlay_black">
-        <texture>special://skin/backgrounds/default/black.png</texture>
+    <include name="ProgressTexture_black">
+        <progresstexture border="0,95,20,20">black/common/EPGMarker.png</progresstexture>
     </include>
-    <include name="OverlayBG">
-        <include condition="Skin.HasSetting(Theme.Color.Black)">Overlay_black</include>
-        <include>Overlay_white</include>
-    </include> -->
+    <include name="ProgressTexture">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">ProgressTexture_black</include>
+        <include>ProgressTexture_white</include>
+    </include>
     <!-- ************* -->
     <!-- COLORS -->
     <!-- ************* -->

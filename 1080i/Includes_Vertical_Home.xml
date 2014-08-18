@@ -227,13 +227,6 @@
                 <height>640</height>
                 <texture border="83">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
-            <control type="image">
-                <posx>290</posx>
-                <posy>78</posy>
-                <width>182</width>
-                <height>924</height>
-                <texture>$VAR[Theme.Color]/common/basichome_vertical_gradient.png</texture>
-            </control>
             <include condition="!Skin.HasSetting(Hide.Favourites)">Favourite.List</include>
             <include condition="Skin.HasSetting(Shelf.Addons)">Addons.List</include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Movies.List</include>

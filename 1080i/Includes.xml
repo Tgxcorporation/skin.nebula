@@ -539,8 +539,8 @@
     <include name="Time">
         <control type="group">
             <control type="label">
-                <include>OpenClose</include>
                 <visible>![control.hasfocus(505050)|control.hasfocus(53)|[control.isvisible(53)+[control.hasfocus(60)|ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]]]</visible>
+                <include>OpenClose</include>
                 <include>VisibleFadeEffect</include>
                 <posx>TextMarginR</posx>
                 <posy>48</posy>
@@ -555,7 +555,6 @@
                 <visible>![control.hasfocus(505050)|control.hasfocus(53)|[control.isvisible(53)+[control.hasfocus(60)|ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]]]</visible>
                 <include>OpenClose</include>
                 <include>VisibleFadeEffect</include>
-                <description>Date label</description>
                 <posx>TextMarginR</posx>
                 <posy>105</posy>
                 <width>500</width>
@@ -595,6 +594,32 @@
             <control type="group">
                 <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
                 <control type="group">
+                    <control type="progress">
+                        <visible>[[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo]</visible>
+                        <visible>!skin.hassetting(Theme.Color.Black)</visible>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1920</width>
+                        <height>14</height>
+                        <texturebg>white/OSD/osd_progress_background.png</texturebg>
+                        <midtexture border="1,1,5,1">white/OSD/osd_progress_mid.png</midtexture>
+                        <righttexture>-</righttexture>
+                        <lefttexture>-</lefttexture>
+                        <info>Player.Progress</info>
+                    </control>
+                    <control type="progress">
+                        <visible>[[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo]</visible>
+                        <visible>skin.hassetting(Theme.Color.Black)</visible>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1920</width>
+                        <height>14</height>
+                        <texturebg>black/OSD/osd_progress_background.png</texturebg>
+                        <midtexture border="1,1,5,1">black/OSD/osd_progress_mid.png</midtexture>
+                        <righttexture>-</righttexture>
+                        <lefttexture>-</lefttexture>
+                        <info>Player.Progress</info>
+                    </control>
                     <control type="image" id="495678">
                         <visible>[[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo]</visible>
                         <include>NowPlayingVisibleFadeEffect</include>
@@ -605,57 +630,29 @@
                         <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                     </control>
                     <control type="group">
-                        <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                         <control type="label">
                             <visible>[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]+![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
                             <include>NowPlayingVisibleFadeEffect</include>
-                            <posx>450</posx>
+                            <posx>0</posx>
                             <posy>33</posy>
                             <height>117</height>
-                            <width>1020</width>
+                            <width>1920</width>
                             <align>center</align>
                             <font>NotificationFont</font>
                             <include>TextColor_MainColor</include>
-                            <label>$INFO[MusicPlayer.Artist,,     ]$INFO[MusicPlayer.Title,[COLOR=AlternateColor_white],[/COLOR]]     $INFO[MusicPlayer.TimeSpeed] - $INFO[MusicPlayer.Duration]</label>
+                            <label>$INFO[MusicPlayer.Artist,,     ][COLOR=AlternateColor_$VAR[Theme.Color]]$INFO[MusicPlayer.Title][/COLOR]$INFO[MusicPlayer.TimeSpeed,     , - ]$INFO[MusicPlayer.Duration]</label>
                         </control>
                         <control type="label">
                             <visible>Player.hasvideo+![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
                             <include>NowPlayingVisibleFadeEffect</include>
-                            <posx>450</posx>
+                            <posx>0</posx>
                             <posy>33</posy>
                             <height>117</height>
-                            <width>1020</width>
+                            <width>1920</width>
                             <align>center</align>
                             <font>NotificationFont</font>
                             <include>TextColor_MainColor</include>
-                            <label>$INFO[VideoPlayer.Title]     [COLOR=AlternateColor_white]$INFO[VideoPlayer.TimeSpeed] - $INFO[VideoPlayer.Duration][/COLOR]</label>
-                        </control>
-                    </control>
-                    <control type="group">
-                        <visible>Skin.HasSetting(Theme.Color.Black)</visible>
-                        <control type="label">
-                            <visible>[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]+![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
-                            <include>NowPlayingVisibleFadeEffect</include>
-                            <posx>450</posx>
-                            <posy>33</posy>
-                            <height>117</height>
-                            <width>1020</width>
-                            <align>center</align>
-                            <font>NotificationFont</font>
-                            <include>TextColor_MainColor</include>
-                            <label>$INFO[MusicPlayer.Artist,,     ]$INFO[MusicPlayer.Title,[COLOR=AlternateColor_black],[/COLOR]]     $INFO[MusicPlayer.TimeSpeed] - $INFO[MusicPlayer.Duration]</label>
-                        </control>
-                        <control type="label">
-                            <visible>Player.hasvideo+![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
-                            <include>NowPlayingVisibleFadeEffect</include>
-                            <posx>450</posx>
-                            <posy>33</posy>
-                            <height>117</height>
-                            <width>1020</width>
-                            <align>center</align>
-                            <font>NotificationFont</font>
-                            <include>TextColor_MainColor</include>
-                            <label>$INFO[VideoPlayer.Title]     [COLOR=AlternateColor_black]$INFO[VideoPlayer.TimeSpeed] - $INFO[VideoPlayer.Duration][/COLOR]</label>
+                            <label>$INFO[VideoPlayer.Title,,     ][COLOR=AlternateColor_$VAR[Theme.Color]]$INFO[VideoPlayer.TimeSpeed,, - ]$INFO[VideoPlayer.Duration][/COLOR]</label>
                         </control>
                     </control>
                 </control>
@@ -664,13 +661,13 @@
         </control>
     </include>
     <include name="SeekbarLabels">
-        <posx>40</posx>
-        <posy>0</posy>
-        <height>52</height>
-        <width>1840</width>
+        <posx>250</posx>
+        <posy>95</posy>
+        <height>41</height>
+        <width>1420</width>
         <align>center</align>
-        <textcolor>aaffffff</textcolor>
-        <font>OSDFont</font>
+        <include>TextColor_AlternateColor</include>
+        <font>NotificationFont</font>
         <animation effect="fade" time="50">VisibleChange</animation>
     </include>
     <include name="EpisodeThumb">

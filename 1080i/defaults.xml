@@ -13,7 +13,7 @@
         <include>DisabledColor_DisabledColor</include>
         <scroll>false</scroll>
         <scrollspeed>50</scrollspeed>
-        <scrollsuffix>     </scrollsuffix>
+        <scrollsuffix>  |  </scrollsuffix>
     </default>
     <default type="fadelabel">
         <posx>0</posx>
@@ -29,7 +29,7 @@
         <include>DisabledColor_DisabledColor</include>
         <scrollout>false</scrollout>
         <pauseatend>3000</pauseatend>
-        <scrollsuffix>     </scrollsuffix>
+        <scrollsuffix>  |  </scrollsuffix>
     </default>
     <default type="textbox">
         <align>left</align>
@@ -68,7 +68,7 @@
         <posx>0</posx>
         <posy>0</posy>
         <width>390</width>
-        <height>60</height>
+        <height>90</height>
         <align>left</align>
         <aligny>center</aligny>
         <font>size22</font>
@@ -84,7 +84,7 @@
         <posx>0</posx>
         <posy>0</posy>
         <width>450</width>
-        <height>60</height>
+        <height>90</height>
         <align>left</align>
         <aligny>center</aligny>
         <font>ButtonFont</font>
@@ -103,7 +103,7 @@
     <default type="radiobutton">
         <posx>0</posx>
         <posy>0</posy>
-        <height>60</height>
+        <height>90</height>
         <align>left</align>
         <aligny>center</aligny>
         <font>ButtonFont</font>
@@ -124,7 +124,7 @@
     <default type="spincontrol">
         <posx>0</posx>
         <posy>0</posy>
-        <height>60</height>
+        <height>90</height>
         <include>TextureUpFocus</include>
         <include>TextureUpNoFocus</include>
         <include>TextureDownFocus</include>
@@ -148,7 +148,7 @@
         <posx>0</posx>
         <spinposx>0</spinposx>
         <posy>0</posy>
-        <height>60</height>
+        <height>90</height>
         <font>ButtonFont</font>
         <include>TextureUpFocus</include>
         <include>TextureUpNoFocus</include>
@@ -203,7 +203,7 @@
     <default type="scrollbar">
         <posx>0</posx>
         <posy>0</posy>
-        <width>42</width>
+        <width>54</width>
         <orientation>vertical</orientation>
         <include>VerticalTextureSliderBackground</include>
         <include>VerticalTextureSliderBarFocus</include>

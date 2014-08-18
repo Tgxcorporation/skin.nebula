@@ -51,28 +51,6 @@
                             <aspectratio align="right" aligny="bottom">keep</aspectratio>
                         </control>
                     </control>
-                    <control type="image">
-                        <posx>233</posx>
-                        <posy>483</posy>
-                        <width>1454</width>
-                        <height>480</height>
-                        <texture border="90">$VAR[Theme.Color]/common/bg_dialog.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>404</posx>
-                        <posy>539</posy>
-                        <height>373</height>
-                        <width>250</width>
-                        <texture>$VAR[Theme.Color]/list/bg_strip_horizontal_left.png</texture>
-                        <colordiffuse>90ffffff</colordiffuse>
-                    </control>
-                    <control type="image">
-                        <posx>655</posx>
-                        <posy>539</posy>
-                        <width>2</width>
-                        <height>373</height>
-                        <texture>$VAR[Theme.Color]/list/bg_facade_vertical.png</texture>
-                    </control>
                     <control type="group">
                         <!-- CDART -->
                         <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(MusicPlayer.Cover)</visible>
@@ -106,13 +84,6 @@
                             <include>TextColor_MainColor</include>
                             <label>$INFO[MusicPlayer.Title]</label>
                         </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>531</posy>
-                            <width>986</width>
-                            <height>90</height>
-                            <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
-                        </control>
                         <control type="label">
                             <posx>37</posx>
                             <posy>621</posy>
@@ -122,13 +93,6 @@
                             <include>TextColor_AlternateColor</include>
                             <label>$INFO[MusicPlayer.Artist]</label>
                         </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>599</posy>
-                            <width>986</width>
-                            <height>90</height>
-                            <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
-                        </control>
                         <control type="label">
                             <posx>37</posx>
                             <posy>689</posy>
@@ -137,13 +101,6 @@
                             <font>InfoDetailsFont</font>
                             <include>TextColor_MainColor</include>
                             <label>$INFO[MusicPlayer.Album]</label>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>667</posy>
-                            <width>986</width>
-                            <height>90</height>
-                            <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <control type="label">
                             <posx>37</posx>
@@ -164,13 +121,6 @@
                             <font>InfoDetailsFont</font>
                             <include>TextColor_AlternateColor</include>
                             <label>$INFO[MusicPlayer.PlaylistPosition] / $INFO[MusicPlayer.PlaylistLength]</label>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>735</posy>
-                            <width>986</width>
-                            <height>90</height>
-                            <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <!-- <control type="label">
                             <visible>!Skin.HasSetting(plexbmc)</visible>

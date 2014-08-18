@@ -9,7 +9,7 @@
                 <posy>-25</posy>
                 <width>64</width>
                 <height>64</height>
-                <texture>OverlayTopMute.png</texture>
+                <texture>$VAR[Theme.Color]/OverlayTopMute.png</texture>
             </control>
         </control>
     </controls>

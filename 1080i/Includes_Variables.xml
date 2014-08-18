@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <variable name="ChapterLabel">
-        <value condition="Player.ChapterCount + !IsEmpty(Player.ChapterName)">     $INFO[Player.ChapterName]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
-        <value condition="Player.ChapterCount">     $LOCALIZE[21396]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
+        <value condition="Player.ChapterCount + !IsEmpty(Player.ChapterName)"> - $INFO[Player.ChapterName]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
+        <value condition="Player.ChapterCount"> - $LOCALIZE[21396]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
     </variable>
     <variable name="Overlay">
-        <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">$INFO[ListItem.Overlay,$VAR[Theme.Color]/overlay_inprogress/]</value>
+        <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">$VAR[Theme.Color]/overlay_inprogress/$INFO[ListItem.Overlay]</value>
         <value condition="Skin.HasSetting(plexbmc) + ListItem.property(overlay)">$VAR[Theme.Color]/$INFO[ListItem.property(overlay)]</value>
         <value condition="Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)">-</value>
-        <value condition="Skin.HasSetting(Hide_Unwatched_Marks)">$INFO[ListItem.Overlay,$VAR[Theme.Color]/overlay_watched/]</value>
-        <value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,$VAR[Theme.Color]/overlay_inprogress/]</value>
-        <value condition="Skin.HasSetting(Hide_Watched_Marks)">$INFO[ListItem.Overlay,$VAR[Theme.Color]/overlay_unwatched/]</value>
+        <value condition="Skin.HasSetting(Hide_Unwatched_Marks)">$VAR[Theme.Color]/overlay_watched/$INFO[ListItem.Overlay]</value>
+        <value condition="ListItem.IsResumable">$VAR[Theme.Color]/overlay_inprogress/$INFO[ListItem.Overlay]</value>
+        <value condition="Skin.HasSetting(Hide_Watched_Marks)">$VAR[Theme.Color]/overlay_unwatched/$INFO[ListItem.Overlay]</value>
         <value condition="!IsEmpty(ListItem.Overlay)">$VAR[Theme.Color]/$INFO[ListItem.Overlay]</value>
     </variable>
     <variable name="Banner">
@@ -145,7 +145,7 @@
         <value condition="Container.Content(Movies)">$INFO[ListItem.Genre]</value>
         <value condition="Container.Content(TVShows)">$INFO[ListItem.Genre]</value>
         <value condition="Container.Content(Seasons)">$INFO[ListItem.Genre]</value>
-        <value condition="Container.Content(Episodes)">$INFO[ListItem.Season,S, ]$INFO[ListItem.Episode,E,     ]$INFO[ListItem.TVShowTitle]</value>
+        <value condition="Container.Content(Episodes)">$INFO[ListItem.Season,$LOCALIZE[31973],.]$INFO[ListItem.Episode,,     ]$INFO[ListItem.TVShowTitle]</value>
         <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Genre]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.PictureResolution]</value>
     </variable>
@@ -159,7 +159,7 @@
         <value condition="Window.IsActive(MyPVR.xml)+[control.isvisible(11)|control.isvisible(12)|control.isvisible(14)|control.isvisible(17)|control.isvisible(15)|control.isvisible(16)]">$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]     $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,,     ]$INFO[ListItem.Size]</value>
         <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album)">$INFO[ListItem.Artist]$INFO[ListItem.Year,     ]$INFO[ListItem.Genre,     ]</value>
-        <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,     ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]     $INFO[ListItem.Season,S, ]$INFO[ListItem.Episode,E]</value>
+        <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,     ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]     $INFO[ListItem.Season,$LOCALIZE[31973],.]$INFO[ListItem.Episode]</value>
         <value condition="Container.Content(Addons) + !IsEmpty(ListItem.Property(Addon.Creator))">$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]</value>
         <value condition="Container.Content(songs)">$INFO[ListItem.Duration]</value>
         <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_genre))">$INFO[ListItem.Property(artist_genre)]</value>

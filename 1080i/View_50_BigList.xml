@@ -270,6 +270,15 @@
                 <include>EpisodeThumbBig</include>
                 <include>ThumbBorder</include>
             </control>
+            <control type="image">
+                <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+                <posx>324</posx>
+                <posy>25</posy>
+                <width>30</width>
+                <height>60</height>
+                <texture>$VAR[Overlay]</texture>
+                <aspectratio aligny="center">keep</aspectratio>
+            </control>
             <control type="label">
                 <posx>371</posx>
                 <posy>25</posy>
@@ -277,7 +286,7 @@
                 <aligny>top</aligny>
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
-                <scroll>false</scroll>
+                <!-- <scroll>false</scroll> -->
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="image">
@@ -366,15 +375,6 @@
                     <label>$VAR[Plots]</label>
                     <include>myautoscroll</include>
                 </control>
-            </control>
-            <control type="image">
-                <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-                <posx>324</posx>
-                <posy>25</posy>
-                <width>30</width>
-                <height>60</height>
-                <texture>$VAR[Overlay]</texture>
-                <aspectratio aligny="center">keep</aspectratio>
             </control>
         </focusedlayout>
     </include>
