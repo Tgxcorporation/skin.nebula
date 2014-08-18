@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
     <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
-    <visible>Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(videoosd.xml) | [Window.IsVisible(FullScreenVideo) + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]</visible>
+    <visible> Window.IsActive(videoosd.xml) | [Window.IsVisible(FullScreenVideo) + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]</visible>
     <visible>![window.IsActive(DialogVolumeBar.xml)|window.IsActive(DialogMuteBug.xml) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
     <include>TopBarOSDVisibleFadeEffect</include>
     <zorder>2</zorder>

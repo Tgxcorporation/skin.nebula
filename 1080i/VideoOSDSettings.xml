@@ -1,85 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol>5</defaultcontrol>
-    <include>OSDFade</include>
     <controls>
+        <include>TopBar</include>
         <control type="group">
-            <include>OpenClose</include>
-            <posx>-50</posx>
-            <posy>355</posy>
-            <animation effect="fade" start="100" end="0" time="50" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
-            <control type="button">
-
-                <posx>1537</posx>
-                <posy>47</posy>
-                <height>50</height>
-                <width>50</width>
-                <texturenofocus>$VAR[Theme.Color]/topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>$VAR[Theme.Color]/topbar/topbar_exit_focus.png</texturefocus>
-                <onclick>back</onclick>
+            <include>DialogOpenClose</include>
+            <posy>363</posy>
+<!--             <control type="button" id="9001">
+                <visible>!skin.hassetting(Theme.Color.Black)</visible>
+                <posx>1887</posx>
+                <posy>150</posy>
+                <height>33</height>
+                <width>33</width>
+                <colordiffuse>90ffffff</colordiffuse>
+                <texturenofocus>white/topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_exit_focus.png</texturefocus>
+                <onleft>Dialog.Close(123)</onleft>
+                <onright>Dialog.Close(123)</onright>
+                <onup>Dialog.Close(123)</onup>
+                <ondown>Dialog.Close(123)</ondown>
+                <onback>Dialog.Close(123)</onback>
+                <onclick>Dialog.Close(123)</onclick>
                 <label>-</label>
+                <onfocus>noop</onfocus>
+            </control>
+            <control type="button" id="9001">
+                <visible>skin.hassetting(Theme.Color.Black)</visible>
+                <posx>1887</posx>
+                <posy>150</posy>
+                <height>33</height>
+                <width>33</width>
+                <colordiffuse>90ffffff</colordiffuse>
+                <texturenofocus>black/topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>black/topbar/topbar_exit_focus.png</texturefocus>
+                <onleft>Dialog.Close(123)</onleft>
+                <onright>Dialog.Close(123)</onright>
+                <onup>Dialog.Close(123)</onup>
+                <ondown>Dialog.Close(123)</ondown>
+                <onback>Dialog.Close(123)</onback>
+                <onclick>Dialog.Close(123)</onclick>
+                <label>-</label>
+                <onfocus>noop</onfocus>
+            </control> -->
+            <control type="image">
+                <posx>-200</posx>
+                <posy>150</posy>
+                <width>2320</width>
+                <height>513</height>
+                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
-                <posx>433</posx>
-                <posy>51</posy>
-                <width>1154</width>
-                <height>623</height>
-                <texture border="94">$VAR[Theme.Color]/common/bg_dialog.png</texture>
+                <posx>100</posx>
+                <posy>142</posy>
+                <width>1720</width>
+                <height>217</height>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
-            <control type="group">
-                <posx>478</posx>
-                <posy>88</posy>
-                <control type="label" id="2">
-                    <posx>45</posx>
-                    <posy>18</posy>
-                    <width>974</width>
-                    <height>100</height>
-                    <font>InfoTitleFont</font>
-                    <include>TextColor_MainColor</include>
-                    <align>center</align>
-                </control>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>38</posy>
-                    <width>1064</width>
-                    <height>79</height>
-                    <texture>$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
-                </control>
-                <control type="grouplist" id="5">
-                    <posx>0</posx>
-                    <posy>117</posy>
-                    <width>1064</width>
-                    <height>355</height>
-                    <itemgap>0</itemgap>
-                    <orientation>vertical</orientation>
-                    <pagecontrol>60</pagecontrol>
-                    <onup>5</onup>
-                    <ondown>5</ondown>
-                    <onright>60</onright>
-                    <onleft>60</onleft>
-                </control>
-                <control type="button" id="7">
-                    <include>LeftMenuButton</include>
-                </control>
-                <control type="radiobutton" id="8">
-                    <radioposx>962</radioposx>
-                    <textwidth>904</textwidth>
-                    <include>LeftMenuButton</include>
-                </control>
-                <control type="spincontrolex" id="9">
-                    <include>LeftMenuButton</include>
-                </control>
-                <control type="sliderex" id="10">
-                    <include>LeftMenuButton</include>
-                </control>
-                <control type="scrollbar" id="60">
-                    <posx>1033</posx>
-                    <posy>117</posy>
-                    <height>355</height>
-                    <include>VerticalScroller</include>
-                    <onleft>5</onleft>
-                    <onright>5</onright>
-                </control>
+            <control type="label" id="2">
+                <posx>TextMargin</posx>
+                <posy>183</posy>
+                <width>1800</width>
+                <height>135</height>
+                <align>center</align>
+                <font>InfoTitleFont</font>
+                <include>TextColor_MainColor</include>
+            </control>
+            <control type="grouplist" id="5">
+                <posx>0</posx>
+                <posy>318</posy>
+                <width>1920</width>
+                <height>312</height>
+                <itemgap>0</itemgap>
+                <orientation>vertical</orientation>
+                <pagecontrol>60</pagecontrol>
+                <onup>5</onup>
+                <ondown>5</ondown>
+                <onright>60</onright>
+                <onleft>60</onleft>
+            </control>
+            <control type="button" id="7">
+                <width>1920</width>
+                <include>LeftMenuButton</include>
+            </control>
+            <control type="radiobutton" id="8">
+                <width>1920</width>
+                <radioposx>1806</radioposx>
+                <textwidth>1700</textwidth>
+                <include>LeftMenuButton</include>
+            </control>
+            <control type="spincontrolex" id="9">
+                <width>1920</width>
+                <include>LeftMenuButton</include>
+            </control>
+            <control type="sliderex" id="10">
+                <width>1920</width>
+                <include>LeftMenuButton</include>
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>1886</posx>
+                <posy>318</posy>
+                <height>312</height>
+                <include>VerticalScroller</include>
+                <onleft>5</onleft>
+                <onright>5</onright>
             </control>
         </control>
     </controls>

@@ -6,7 +6,7 @@
             <posy>23</posy>
             <width>50</width>
             <height>50</height>
-            <texture>OverlayRecording.png</texture>
+            <texture>$VAR[Theme.Color]/OverlayRecording.png</texture>
             <aspectratio>keep</aspectratio>
             <visible>ListItem.IsRecording</visible>
         </control>
@@ -15,7 +15,7 @@
             <posy>23</posy>
             <width>50</width>
             <height>50</height>
-            <texture>OverlayTimer.png</texture>
+            <texture>$VAR[Theme.Color]/OverlayTimer.png</texture>
             <aspectratio>keep</aspectratio>
             <visible>ListItem.HasTimer</visible>
         </control>
@@ -26,7 +26,7 @@
             <posy>42</posy>
             <width>50</width>
             <height>50</height>
-            <texture>OverlayRecording.png</texture>
+            <texture>$VAR[Theme.Color]/OverlayRecording.png</texture>
             <aspectratio>keep</aspectratio>
             <colordiffuse>NoFocusedColor</colordiffuse>
             <visible>ListItem.IsRecording</visible>
@@ -36,7 +36,7 @@
             <posy>42</posy>
             <width>50</width>
             <height>50</height>
-            <texture>OverlayTimer.png</texture>
+            <texture>$VAR[Theme.Color]/OverlayTimer.png</texture>
             <aspectratio>keep</aspectratio>
             <colordiffuse>NoFocusedColor</colordiffuse>
             <visible>ListItem.HasTimer</visible>

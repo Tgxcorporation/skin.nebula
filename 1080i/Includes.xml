@@ -570,7 +570,7 @@
                 <posy>-25</posy>
                 <width>64</width>
                 <height>64</height>
-                <texture>OverlayTopRecording.png</texture>
+                <texture>$VAR[Theme.Color]/OverlayTopRecording.png</texture>
                 <visible>PVR.IsRecording</visible>
                 <animation effect="fade" start="65" time="3000" condition="true" pulse="true">Conditional</animation>
             </control>
@@ -668,7 +668,7 @@
         <align>center</align>
         <include>TextColor_AlternateColor</include>
         <font>NotificationFont</font>
-        <animation effect="fade" time="50">VisibleChange</animation>
+        <animation effect="fade" time="250">Visible</animation>
     </include>
     <include name="EpisodeThumb">
         <texture fallback="$VAR[Theme.Color]/defaultIconBig.png">$VAR[Thumbs]</texture>

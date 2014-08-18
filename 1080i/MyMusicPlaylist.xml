@@ -33,7 +33,7 @@
                 <include>TextColor_MainColor</include>
                 <label>$LOCALIZE[10517]</label>
             </control>
-            <control type="label" id="12">&gt;
+            <control type="label" id="12">
                 <posx>TextMargin</posx>
                 <posy>270</posy>
                 <width>1800</width>

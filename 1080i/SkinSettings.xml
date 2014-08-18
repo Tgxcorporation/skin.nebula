@@ -170,7 +170,7 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(FullscreenMusic)</onclick>
                         </item>
-                        <item id="15">
+                        <!-- <item id="15">
                             <visible>Skin.HasSetting(PVRChannelListBig)</visible>
                             <label>$LOCALIZE[31996]</label>
                             <label2>$LOCALIZE[107]</label2>
@@ -181,7 +181,7 @@
                             <label>$LOCALIZE[31996]</label>
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(PVRChannelListBig)</onclick>
-                        </item>
+                        </item> -->
                         <item id="16">
                             <visible>Skin.HasSetting(KenBurnsEffect)</visible>
                             <label>$LOCALIZE[31997]</label>
@@ -218,7 +218,7 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(SlideListToLeft)</onclick>
                         </item> -->
-                        <item id="20">
+                        <!-- <item id="20">
                             <visible>Skin.HasSetting(DisablePauseIconOSD)</visible>
                             <label>$LOCALIZE[31952]</label>
                             <label2>$LOCALIZE[107]</label2>
@@ -229,7 +229,7 @@
                             <label>$LOCALIZE[31952]</label>
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(DisablePauseIconOSD)</onclick>
-                        </item>
+                        </item> -->
                         <item id="21">
                             <visible>Skin.HasSetting(EnableCdArt)</visible>
                             <label>$LOCALIZE[31040]</label>

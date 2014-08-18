@@ -4,7 +4,6 @@
         <control type="group">
             <include>OpenClose</include>
             <control type="button" id="9001">
-
                 <posx>1635</posx>
                 <posy>487</posy>
                 <height>50</height>
@@ -269,7 +268,6 @@
             <include>OpenClose</include>
             <posy>-450</posy>
             <control type="button" id="9001">
-
                 <posx>1635</posx>
                 <posy>487</posy>
                 <height>50</height>
@@ -533,7 +531,6 @@
         <control type="group">
             <include>OpenClose</include>
             <control type="button" id="9001">
-
                 <posx>1635</posx>
                 <posy>487</posy>
                 <height>50</height>
@@ -730,7 +727,6 @@
             <include>OpenClose</include>
             <posy>-450</posy>
             <control type="button" id="9001">
-
                 <posx>1635</posx>
                 <posy>487</posy>
                 <height>50</height>
