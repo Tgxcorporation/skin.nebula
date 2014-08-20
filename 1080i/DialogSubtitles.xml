@@ -1,318 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <allowoverlay>no</allowoverlay>
-    <include>DialogOpenClose</include>
+    <defaultcontrol>9000</defaultcontrol>
     <controls>
-        <include>DimBG</include>
+        <!-- <include>DimBG</include> -->
+        <include>TopBar</include>
         <control type="group">
-            <include>OpenClose</include>
-            <posy>-173</posy>
+            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">conditional</animation>
+            <include>DialogOpenClose</include>
             <control type="image">
-                <posx>233</posx>
-                <posy>244</posy>
-                <width>1454</width>
-                <height>939</height>
-                <texture border="90">$VAR[Theme.Color]/common/bg_dialog.png</texture>
+                <posx>-760</posx>
+                <posy>150</posy>
+                <width>2930</width>
+                <height>876</height>
+                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
-                <posx>278</posx>
-                <posy>319</posy>
-                <width>1364</width>
-                <height>79</height>
-                <texture>$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
+                <posx>100</posx>
+                <posy>142</posy>
+                <width>1720</width>
+                <height>277</height>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
-            <!-- ** Required ** Do not change <id>or<type>-->
-            <control type="group">
-                <control type="label" id="100">
-                    <posx>323</posx>
-                    <posy>286</posy>
-                    <height>100</height>
-                    <width>1274</width>
-                    <align>center</align>
-                    <font>InfoTitleFont</font>
-                    <include>TextColor_MainColor</include>
-                </control>
-                <control type="label">
-                    <posx>323</posx>
-                    <posy>346</posy>
-                    <width>1274</width>
-                    <align>center</align>
-                    <font>InfoTitleSubFont</font>
-                    <include>TextColor_AlternateColor</include>
-                    <label>$INFO[Player.Filename]</label>
-                </control>
+            <control type="label" id="100">
+                <posx>TextMargin</posx>
+                <posy>183</posy>
+                <width>1800</width>
+                <height>105</height>
+                <align>center</align>
+                <font>InfoTitleFont</font>
+                <include>TextColor_MainColor</include>
             </control>
-            <!-- ** Required ** Do not change <id>or<type>-->
+            <control type="label">
+                <posx>TextMargin</posx>
+                <posy>270</posy>
+                <width>1800</width>
+                <height>35</height>
+                <align>center</align>
+                <font>InfoTitleSubFont</font>
+                <include>TextColor_AlternateColor</include>
+                <label>$INFO[Player.Filename]</label>
+            </control>
+            <control type="label" id="140">
+                <posx>TextMargin</posx>
+                <posy>320</posy>
+                <width>1800</width>
+                <height>35</height>
+                <align>center</align>
+                <font>InfoTitleSubFont</font>
+                <include>TextColor_MainColor</include>
+            </control>
+            <control type="label" id="130">
+                <posx>TextMargin</posx>
+                <posy>320</posy>
+                <width>1800</width>
+                <height>35</height>
+                <align>Left</align>
+                <font>InfoTitleSubFont</font>
+                <include>TextColor_AlternateColor</include>
+                <label>31357</label>
+            </control>
             <control type="list" id="120">
-                <posx>278</posx>
-                <posy>398</posy>
-                <width>931</width>
-                <height>657</height>
-                <onleft>60</onleft>
-                <onright>150</onright>
+                <posx>0</posx>
+                <posy>378</posy>
+                <width>1920</width>
+                <height>615</height>
+                <onleft>9000</onleft>
+                <onright>60</onright>
                 <onup>120</onup>
                 <ondown>120</ondown>
                 <viewtype label="535">list</viewtype>
                 <pagecontrol>60</pagecontrol>
-                <scrolltime>200</scrolltime>
-                <itemlayout height="73" width="931">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <height>73</height>
-                        <width>931</width>
-                        <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
-                    </control>
+                <itemlayout height="123" width="1920">
                     <control type="label">
-                        <posx>25</posx>
+                        <posx>TextMargin</posx>
+                        <posy>15</posy>
                         <height>42</height>
-                        <width>560</width>
+                        <width>1483</width>
                         <font>FacadeListMainFont</font>
                         <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <posx>25</posx>
-                        <posy>39</posy>
+                        <posx>TextMargin</posx>
+                        <posy>70</posy>
                         <height>28</height>
-                        <width>876</width>
+                        <width>1483</width>
                         <font>FacadeListSubFont</font>
                         <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                     <control type="image">
-                        <posx>594</posx>
-                        <posy>3</posy>
-                        <width>36</width>
-                        <height>36</height>
+                        <posx>1572</posx>
+                        <posy>43</posy>
+                        <width>37</width>
+                        <height>37</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$VAR[Theme.Color]/badges/subtitle_sync.png</texture>
                         <visible>ListItem.property(sync)</visible>
                     </control>
                     <control type="image">
-                        <posx>660</posx>
-                        <posy>3</posy>
-                        <width>36</width>
-                        <height>36</height>
+                        <posx>1609</posx>
+                        <posy>43</posy>
+                        <width>37</width>
+                        <height>37</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$VAR[Theme.Color]/badges/subtitle_cc.png</texture>
                         <visible>ListItem.property(hearing_imp)</visible>
                     </control>
                     <control type="image">
-                        <posx>726</posx>
-                        <posy>3</posy>
-                        <width>180</width>
-                        <height>36</height>
+                        <posx>1675</posx>
+                        <posy>43</posy>
+                        <width>185</width>
+                        <height>37</height>
                         <texture>$VAR[Theme.Color]/badges/rating$INFO[ListItem.ActualIcon].png</texture>
                     </control>
                 </itemlayout>
-                <focusedlayout height="73" width="931">
+                <focusedlayout height="123" width="1920">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <height>73</height>
-                        <width>931</width>
+                        <height>123</height>
+                        <width>1920</width>
                         <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="label">
-                        <posx>25</posx>
+                        <posx>TextMargin</posx>
+                        <posy>15</posy>
                         <height>42</height>
-                        <width>560</width>
+                        <width>1483</width>
                         <font>FacadeListMainFont</font>
                         <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <posx>25</posx>
-                        <posy>39</posy>
+                        <posx>TextMargin</posx>
+                        <posy>70</posy>
                         <height>28</height>
-                        <width>876</width>
+                        <width>1483</width>
                         <font>FacadeListSubFont</font>
                         <include>TextColor_MainColor</include>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                     <control type="image">
-                        <posx>594</posx>
-                        <posy>3</posy>
-                        <width>36</width>
-                        <height>36</height>
+                        <posx>1572</posx>
+                        <posy>43</posy>
+                        <width>37</width>
+                        <height>37</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$VAR[Theme.Color]/badges/subtitle_sync.png</texture>
                         <visible>ListItem.property(sync)</visible>
                     </control>
                     <control type="image">
-                        <posx>660</posx>
-                        <posy>3</posy>
-                        <width>36</width>
-                        <height>36</height>
+                        <posx>1609</posx>
+                        <posy>43</posy>
+                        <width>37</width>
+                        <height>37</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$VAR[Theme.Color]/badges/subtitle_cc.png</texture>
                         <visible>ListItem.property(hearing_imp)</visible>
                     </control>
                     <control type="image">
-                        <posx>726</posx>
-                        <posy>3</posy>
-                        <width>180</width>
-                        <height>36</height>
+                        <posx>1675</posx>
+                        <posy>43</posy>
+                        <width>185</width>
+                        <height>37</height>
                         <texture>$VAR[Theme.Color]/badges/rating$INFO[ListItem.ActualIcon].png</texture>
                     </control>
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="60">
-                <posx>1178</posx>
-                <posy>398</posy>
-                <height>657</height>
+                <posx>1886</posx>
+                <posy>378</posy>
+                <height>615</height>
                 <include>VerticalScroller</include>
                 <onleft>120</onleft>
-                <onright>120</onright>
+                <onright>60</onright>
             </control>
-            <control type="group" id="250">
-                <posx>0</posx>
-                <posy>16</posy>
-                <control type="image">
-                    <posx>1209</posx>
-                    <posy>382</posy>
-                    <width>2</width>
-                    <height>735</height>
-                    <texture>$VAR[Theme.Color]/list/bg_facade_vertical.png</texture>
-                </control>
-                <control type="image">
-                    <posx>1209</posx>
-                    <posy>382</posy>
-                    <height>735</height>
-                    <width>375</width>
-                    <texture flipx="true">$VAR[Theme.Color]/list/bg_strip_horizontal_left.png</texture>
-                    <colordiffuse>90ffffff</colordiffuse>
-                </control>
-                <control type="image">
-                    <posx>1209</posx>
-                    <posy>376</posy>
-                    <width>433</width>
-                    <height>79</height>
-                    <texture>$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
-                </control>
-                <control type="label">
-                    <posx>1234</posx>
-                    <posy>402</posy>
-                    <width>383</width>
-                    <height>71</height>
+        </control>
+        <!-- SIDE MENU -->
+        <control type="group">
+            <include>LeftMenu</include>
+            <control type="grouplist" id="9000">
+                <include>LeftMenuButtonGroup</include>
+                <onright>120</onright>
+                <ondown>9000</ondown>
+                <onback>120</onback>
+                <control type="label" id="24018">
+                    <include>LeftMenuTitleLabel</include>
                     <label>$LOCALIZE[24018]</label>
-                    <font>LeftMenuTitleFont</font>
-                    <align>left</align>
-                    <include>TextColor_AlternateColor</include>
                 </control>
                 <control type="list" id="150">
-                    <posx>1209</posx>
-                    <posy>455</posy>
-                    <width>433</width>
-                    <height>292</height>
-                    <onleft>120</onleft>
-                    <onright>61</onright>
-                    <onup>150</onup>
-                    <ondown>160</ondown>
-                    <scrolltime>200</scrolltime>
-                    <pagecontrol>61</pagecontrol>
-                    <itemlayout width="433" height="73">
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <height>73</height>
-                            <width>433</width>
-                            <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus.png</texture>
-                        </control>
+                    <width>660</width>
+                    <height>624</height>
+                    <itemlayout width="660" height="78">
                         <control type="label">
-                            <posx>25</posx>
-                            <height>71</height>
-                            <width>383</width>
+                            <posx>TextMargin</posx>
+                            <height>78</height>
+                            <width>540</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="433" height="73">
+                    <focusedlayout width="660" height="78">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <height>73</height>
-                            <width>433</width>
+                            <height>78</height>
+                            <width>660</width>
                             <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
-                            <posx>25</posx>
-                            <height>71</height>
-                            <width>383</width>
+                            <posx>TextMargin</posx>
+                            <height>78</height>
+                            <width>540</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </focusedlayout>
                 </control>
-                <control type="scrollbar" id="61">
-                    <posx>1611</posx>
-                    <posy>455</posy>
-                    <height>292</height>
-                    <include>VerticalScroller</include>
-                    <onleft>150</onleft>
-                    <onright>150</onright>
-                </control>
-                <control type="image">
-                    <posx>1209</posx>
-                    <posy>745</posy>
-                    <width>433</width>
-                    <height>8</height>
-                    <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
-                </control>
                 <control type="button" id="160">
                     <description>Manual search button</description>
-                    <posx>1209</posx>
-                    <posy>753</posy>
-                    <width>433</width>
-                    <onleft>120</onleft>
-                    <onright>120</onright>
-                    <onup>150</onup>
-                    <ondown>150</ondown>
                     <label>$LOCALIZE[24120]</label>
-                    <textoffsetx>25</textoffsetx>
                     <include>LeftMenuButton</include>
                 </control>
             </control>
-            <control type="image" id="110">
-                <posx>1242</posx>
-                <posy>858</posy>
-                <width>370</width>
-                <height>231</height>
-                <aspectratio>keep</aspectratio>
-                <include>ThumbBorder</include>
-            </control>
-            <control type="label" id="140">
-                <posx>1179</posx>
-                <posy>1065</posy>
-                <width>876</width>
-                <align>right</align>
-                <font>FacadeNumItemsFont</font>
-                <textcolor>FacadeNumItemsColor</textcolor>
-            </control>
-            <control type="group" id="111">
-                <control type="grouplist">
-                    <posx>1242</posx>
-                    <posy>1075</posy>
-                    <width>370</width>
-                    <height>60</height>
-                    <align>center</align>
-                    <orientation>horizontal</orientation>
-                    <itemgap>8</itemgap>
-                    <control type="label" id="130">
-                        <width>370</width>
-                        <height>60</height>
-                        <include>TextColor_MainColor</include>
-                        <label>31357</label>
-                        <font>NotificationFont</font>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <!-- <wrapmultiline>true</wrapmultiline> -->
-                    </control>
-                </control>
-            </control>
+            <include>LeftMenuScroller</include>
+        </control>
+        <control type="image" id="110">
+            <posx>3242</posx>
+            <posy>858</posy>
+            <width>370</width>
+            <height>231</height>
+            <aspectratio>keep</aspectratio>
+            <include>ThumbBorder</include>
         </control>
     </controls>
 </window>

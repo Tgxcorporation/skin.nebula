@@ -16,7 +16,6 @@
     <include file="Includes_Animations.xml"/>
     <include file="Includes_Codec.xml"/>
     <include file="Includes_CustomColors.xml"/>
-    <include file="Includes_PVR.xml"/>
     <include file="defaults.xml"/>
     <include file="Includes_Plexbmc.xml"/>
     <include file="Includes_Home_Common.xml"/>
@@ -165,6 +164,7 @@
             <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
             <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
             <ondown condition="Window.IsActive(SkinSettings.xml)">90000</ondown>
+            <ondown condition="Window.IsActive(script-XBMC_Lyrics-main.xml)">110</ondown>
             <ondown>9000</ondown>
             <align>center</align>
             <control type="button" id="1600">
@@ -348,6 +348,7 @@
             <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
             <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
             <ondown condition="Window.IsActive(SkinSettings.xml)">90000</ondown>
+            <ondown condition="Window.IsActive(script-XBMC_Lyrics-main.xml)">110</ondown>
             <ondown>9000</ondown>
             <align>center</align>
             <control type="button" id="1600">
@@ -669,18 +670,6 @@
         <include>TextColor_AlternateColor</include>
         <font>NotificationFont</font>
         <animation effect="fade" time="250">Visible</animation>
-    </include>
-    <include name="EpisodeThumb">
-        <texture fallback="$VAR[Theme.Color]/defaultIconBig.png">$VAR[Thumbs]</texture>
-        <aspectratio scalediffuse="false">keep</aspectratio>
-    </include>
-    <include name="SquareThumb">
-        <texture fallback="$VAR[Theme.Color]/defaultIconBig.png">$VAR[Thumbs]</texture>
-        <aspectratio scalediffuse="false">keep</aspectratio>
-    </include>
-    <include name="PosterThumb">
-        <texture fallback="$VAR[Theme.Color]/defaultIconBig.png">$VAR[Thumbs]</texture>
-        <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
     </include>
     <include name="PosterThumbBig">
         <texture>$VAR[ThumbsBig]</texture>

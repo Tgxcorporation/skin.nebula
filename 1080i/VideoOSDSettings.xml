@@ -6,7 +6,7 @@
         <control type="group">
             <include>DialogOpenClose</include>
             <posy>363</posy>
-<!--             <control type="button" id="9001">
+            <!--             <control type="button" id="9001">
                 <visible>!skin.hassetting(Theme.Color.Black)</visible>
                 <posx>1887</posx>
                 <posy>150</posy>
@@ -53,21 +53,28 @@
                 <posx>100</posx>
                 <posy>142</posy>
                 <width>1720</width>
-                <height>217</height>
+                <height>182</height>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+            </control>
+            <control type="image">
+                <posx>100</posx>
+                <posy>554</posy>
+                <width>1720</width>
+                <height>117</height>
                 <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="label" id="2">
                 <posx>TextMargin</posx>
                 <posy>183</posy>
                 <width>1800</width>
-                <height>135</height>
+                <height>100</height>
                 <align>center</align>
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
             </control>
             <control type="grouplist" id="5">
                 <posx>0</posx>
-                <posy>318</posy>
+                <posy>283</posy>
                 <width>1920</width>
                 <height>312</height>
                 <itemgap>0</itemgap>
@@ -98,7 +105,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <posx>1886</posx>
-                <posy>318</posy>
+                <posy>283</posy>
                 <height>312</height>
                 <include>VerticalScroller</include>
                 <onleft>5</onleft>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
-    <zorder>3</zorder>
+    <zorder>5</zorder>
     <controls>
         <control type="group">
             <include>NotificationOpenClose</include>

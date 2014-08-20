@@ -31,7 +31,7 @@
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(111).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(111).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -88,12 +88,23 @@
             <control type="group">
                 <visible>Control.IsVisible(211)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(211).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(211).ListItem.thumb]</texture>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>520</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(211).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -151,11 +162,22 @@
             <control type="group">
                 <visible>Control.IsVisible(311)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(311).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(311).ListItem.thumb]</texture>
+                    <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>723</height>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(311).ListItem.thumb]</texture>
                     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -316,11 +338,22 @@
             <control type="group">
                 <visible>Control.IsVisible(312)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(312).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(312).ListItem.thumb]</texture>
+                    <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>723</height>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(312).ListItem.thumb]</texture>
                     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -481,11 +514,22 @@
             <control type="group">
                 <visible>Control.IsVisible(313)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(313).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(313).ListItem.thumb]</texture>
+                    <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>723</height>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(313).ListItem.thumb]</texture>
                     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -646,11 +690,22 @@
             <control type="group">
                 <visible>Control.IsVisible(314)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(314).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(314).ListItem.thumb]</texture>
+                    <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>723</height>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(314).ListItem.thumb]</texture>
                     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -759,11 +814,22 @@
             <control type="group">
                 <visible>Control.IsVisible(315)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(315).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(315).ListItem.thumb]</texture>
+                    <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>723</height>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(315).ListItem.thumb]</texture>
                     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -872,11 +938,22 @@
             <control type="group">
                 <visible>Control.IsVisible(316)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(316).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(316).ListItem.thumb]</texture>
+                    <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>723</height>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(316).ListItem.thumb]</texture>
                     <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -985,11 +1062,22 @@
             <control type="group">
                 <visible>Control.IsVisible(411)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(411).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(411).ListItem.thumb]</texture>
+                    <aspectratio>scale</aspectratio>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>723</height>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(411).ListItem.thumb]</texture>
                     <aspectratio>scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -1150,11 +1238,22 @@
             <control type="group">
                 <visible>Control.IsVisible(412)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(412).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(412).ListItem.thumb]</texture>
+                    <aspectratio>scale</aspectratio>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>723</height>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(412).ListItem.thumb]</texture>
                     <aspectratio>scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -1315,11 +1414,22 @@
             <control type="group">
                 <visible>Control.IsVisible(413)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>723</height>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(413).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(413).ListItem.thumb]</texture>
+                    <aspectratio>scale</aspectratio>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>723</height>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(413).ListItem.thumb]</texture>
                     <aspectratio>scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
@@ -1480,12 +1590,23 @@
             <control type="group">
                 <visible>Control.IsVisible(511)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(511).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(511).ListItem.thumb]</texture>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>520</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(511).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -1593,12 +1714,23 @@
             <control type="group">
                 <visible>Control.IsVisible(512)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(512).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(512).ListItem.thumb]</texture>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>520</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(512).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -1706,12 +1838,23 @@
             <control type="group">
                 <visible>Control.IsVisible(513)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(513).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(513).ListItem.thumb]</texture>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>520</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(513).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -1819,12 +1962,23 @@
             <control type="group">
                 <visible>Control.IsVisible(514)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(514).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(514).ListItem.thumb]</texture>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>520</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(514).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -1932,12 +2086,23 @@
             <control type="group">
                 <visible>Control.IsVisible(515)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(515).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(515).ListItem.thumb]</texture>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>520</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(515).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -2045,12 +2210,23 @@
             <control type="group">
                 <visible>Control.IsVisible(516)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
-                    <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(516).ListItem.thumb]</texture>
+                    <texture fallback="white/common/BlackDotT.png">$INFO[Container(516).ListItem.thumb]</texture>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>520</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(516).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">

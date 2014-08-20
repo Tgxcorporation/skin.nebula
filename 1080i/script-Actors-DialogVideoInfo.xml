@@ -115,11 +115,22 @@
                 <visible>![control.hasfocus(20)|control.hasfocus(10)|control.hasfocus(5)|control.hasfocus(15)|ControlGroup(2502).HasFocus|ControlGroup(2500).HasFocus]</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="$VAR[Theme.Color]/defaultVideoBig.png">$INFO[ListItem.Icon]</texture>
+                    <texture fallback="white/defaultVideoBig.png">$INFO[ListItem.Icon]</texture>
+                    <include>ThumbBorder</include>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>313</posy>
+                    <width>494</width>
+                    <height>685</height>
+                    <texture fallback="black/defaultVideoBig.png">$INFO[ListItem.Icon]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -293,12 +304,24 @@
                 <visible>control.hasfocus(5)|ControlGroup(2502).HasFocus</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <description>movie image</description>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="$VAR[Theme.Color]/defaultArtistBig.png">$INFO[Container(150).Listitem.Icon]</texture>
+                    <texture fallback="white/defaultArtistBig.png">$INFO[Container(150).Listitem.Icon]</texture>
+                    <include>ThumbBorder</include>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <description>movie image</description>
+                    <posx>25</posx>
+                    <posy>313</posy>
+                    <width>494</width>
+                    <height>685</height>
+                    <texture fallback="black/defaultArtistBig.png">$INFO[Container(150).Listitem.Icon]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>

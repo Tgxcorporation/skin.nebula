@@ -92,7 +92,7 @@
         <include>TextColor_AlternateColor</include>
         <include>FocusedColor_MainColor</include>
         <include>SelectedColor_MainColor</include>
-        <include>AltSelectedColor_MainColor</include>
+        <include>AltSelectedColor_SelectedColor</include>
         <include>DisabledColor_DisabledColor</include>
         <include>TextureFocus</include>
         <texturenofocus>-</texturenofocus>

@@ -42,7 +42,7 @@
                                 <posy>431</posy>
                                 <width>424</width>
                                 <height>424</height>
-                                <texture diffuse="$VAR[Theme.Color]/common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
+                                <texture diffuse="white/common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
                                 <include>Animation_ViewsCDart</include>
                             </control>

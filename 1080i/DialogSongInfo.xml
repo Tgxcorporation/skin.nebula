@@ -46,13 +46,24 @@
                 <label>$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</label>
             </control>
             <control type="image">
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <description>Rating value</description>
                 <posx>867</posx>
                 <posy>270</posy>
                 <height>37</height>
                 <width>185</width>
                 <aspectratio align="left">keep</aspectratio>
-                <texture fallback="$VAR[Theme.Color]/badges/rating0.png">$VAR[Theme.Color]/badges/$INFO[ListItem.StarRating]</texture>
+                <texture fallback="white/badges/rating0.png">white/badges/$INFO[ListItem.StarRating]</texture>
+            </control>
+            <control type="image">
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <description>Rating value</description>
+                <posx>867</posx>
+                <posy>270</posy>
+                <height>37</height>
+                <width>185</width>
+                <aspectratio align="left">keep</aspectratio>
+                <texture fallback="black/badges/rating0.png">black/badges/$INFO[ListItem.StarRating]</texture>
             </control>
             <control type="group">
                 <!-- CDART -->
@@ -62,7 +73,7 @@
                     <posy>631</posy>
                     <width>430</width>
                     <height>430</height>
-                    <texture diffuse="$VAR[Theme.Color]/common/cdart_diffuse.png">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</texture>
+                    <texture diffuse="white/common/cdart_diffuse.png">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</texture>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <include>Animation_ViewsCDart</include>
                 </control>

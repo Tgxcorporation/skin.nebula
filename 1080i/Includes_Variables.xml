@@ -42,7 +42,7 @@
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Artists)|Container.content(Actors)|Container.content(directors)]">$VAR[Theme.Color]/defaultArtistBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Albums)|Container.content(songs)]">$VAR[Theme.Color]/defaultAudioBig.png</value>
         <value condition="ListItem.IsFolder">$VAR[Theme.Color]/defaultFolderBig.png</value>
-        <value condition="!IsEmpty(ListItem.Art(thumb))+">$INFO[ListItem.Art(thumb)]</value>
+        <value condition="!IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
     </variable>
     <variable name="ThumbsBig">
         <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>

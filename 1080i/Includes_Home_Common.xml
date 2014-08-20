@@ -14,11 +14,23 @@
         <itemlayout height="425" width="275">
             <control type="image">
                 <visible>!StringCompare(ListItem.Label,..)</visible>
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <posx>-25</posx>
                 <posy>120</posy>
                 <width>295</width>
                 <height>396</height>
-                <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <texture fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <visible>!StringCompare(ListItem.Label,..)</visible>
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <posx>-25</posx>
+                <posy>120</posy>
+                <width>295</width>
+                <height>396</height>
+                <texture fallback="black/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                 <include>ThumbBorder</include>
             </control>
@@ -49,11 +61,23 @@
         <itemlayout height="425" width="275">
             <control type="image">
                 <visible>!StringCompare(ListItem.Label,..)</visible>
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <posx>-25</posx>
                 <posy>120</posy>
                 <width>295</width>
                 <height>396</height>
-                <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <texture fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <visible>!StringCompare(ListItem.Label,..)</visible>
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <posx>-25</posx>
+                <posy>120</posy>
+                <width>295</width>
+                <height>396</height>
+                <texture fallback="black/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                 <include>ThumbBorder</include>
             </control>
@@ -84,11 +108,23 @@
         <itemlayout height="425" width="275">
             <control type="image">
                 <visible>!StringCompare(ListItem.Label,..)</visible>
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <posx>-25</posx>
                 <posy>120</posy>
                 <width>295</width>
                 <height>396</height>
-                <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <texture fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <visible>!StringCompare(ListItem.Label,..)</visible>
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <posx>-25</posx>
+                <posy>120</posy>
+                <width>295</width>
+                <height>396</height>
+                <texture fallback="black/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                 <include>ThumbBorder</include>
             </control>
@@ -119,11 +155,23 @@
         <itemlayout height="425" width="275">
             <control type="image">
                 <visible>!StringCompare(ListItem.Label,..)</visible>
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <posx>-25</posx>
                 <posy>120</posy>
                 <width>295</width>
                 <height>396</height>
-                <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <texture fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <visible>!StringCompare(ListItem.Label,..)</visible>
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <posx>-25</posx>
+                <posy>120</posy>
+                <width>295</width>
+                <height>396</height>
+                <texture fallback="black/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                 <include>ThumbBorder</include>
             </control>
@@ -153,12 +201,23 @@
         <scrolltime tween="cubic" easing="out">300</scrolltime>
         <itemlayout height="425" width="275">
             <control type="image">
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <posx>-25</posx>
                 <posy>120</posy>
                 <width>295</width>
                 <height>295</height>
                 <aspectratio>scale</aspectratio>
-                <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <texture fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <posx>-25</posx>
+                <posy>120</posy>
+                <width>295</width>
+                <height>295</height>
+                <aspectratio>scale</aspectratio>
+                <texture fallback="black/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <include>ThumbBorder</include>
             </control>
         </itemlayout>
@@ -188,12 +247,23 @@
         <scrolltime tween="cubic" easing="out">300</scrolltime>
         <itemlayout height="425" width="275">
             <control type="image">
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <posx>-25</posx>
                 <posy>120</posy>
                 <width>295</width>
                 <height>295</height>
                 <aspectratio>scale</aspectratio>
-                <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <texture fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <posx>-25</posx>
+                <posy>120</posy>
+                <width>295</width>
+                <height>295</height>
+                <aspectratio>scale</aspectratio>
+                <texture fallback="black/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <include>ThumbBorder</include>
             </control>
         </itemlayout>
@@ -223,12 +293,23 @@
         <scrolltime tween="cubic" easing="out">300</scrolltime>
         <itemlayout height="425" width="275">
             <control type="image">
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <posx>-25</posx>
                 <posy>120</posy>
                 <width>295</width>
                 <height>295</height>
                 <aspectratio>scale</aspectratio>
-                <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <texture fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <posx>-25</posx>
+                <posy>120</posy>
+                <width>295</width>
+                <height>295</height>
+                <aspectratio>scale</aspectratio>
+                <texture fallback="black/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <include>ThumbBorder</include>
             </control>
         </itemlayout>

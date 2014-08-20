@@ -14,7 +14,43 @@
         <width>185</width>
         <aspectratio align="left">keep</aspectratio>
     </include>
-    <!-- IMAGE BORDER -->
+    <!-- EpisodeThumb -->
+    <include name="EpisodeThumb_white">
+        <texture fallback="white/defaultIconBig.png">$VAR[Thumbs]</texture>
+    </include>
+    <include name="EpisodeThumb_black">
+        <texture fallback="black/defaultIconBig.png">$VAR[Thumbs]</texture>
+    </include>
+    <include name="EpisodeThumb">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">EpisodeThumb_black</include>
+        <include>EpisodeThumb_white</include>
+        <aspectratio scalediffuse="false">keep</aspectratio>
+    </include>
+    <!-- SquareThumb -->
+    <include name="SquareThumb_white">
+        <texture fallback="white/defaultIconBig.png">$VAR[Thumbs]</texture>
+    </include>
+    <include name="SquareThumb_black">
+        <texture fallback="black/defaultIconBig.png">$VAR[Thumbs]</texture>
+    </include>
+    <include name="SquareThumb">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">SquareThumb_black</include>
+        <include>SquareThumb_white</include>
+        <aspectratio scalediffuse="false">keep</aspectratio>
+    </include>
+    <!-- PosterThumb -->
+    <include name="PosterThumb_white">
+        <texture fallback="white/defaultIconBig.png">$VAR[Thumbs]</texture>
+    </include>
+    <include name="PosterThumb_black">
+        <texture fallback="black/defaultIconBig.png">$VAR[Thumbs]</texture>
+    </include>
+    <include name="PosterThumb">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">PosterThumb_black</include>
+        <include>PosterThumb_white</include>
+        <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+    </include>
+    <!-- THUMB BORDER -->
     <include name="ThumbBorderShadow_white">
         <bordertexture border="35">white/common/JewelCase2.png</bordertexture>
     </include>

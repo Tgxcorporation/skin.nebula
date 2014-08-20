@@ -129,12 +129,24 @@
             </control>
             <control type="image">
                 <include>UpperFade</include>
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <posx>25</posx>
                 <posy>148</posy>
                 <width>870</width>
                 <height>520</height>
                 <aspectratio>scale</aspectratio>
-                <texture fallback="$VAR[Theme.Color]/common/BlackDotT.png">$INFO[Container(50).ListItem.thumb]</texture>
+                <texture fallback="white/common/BlackDotT.png">$INFO[Container(50).ListItem.thumb]</texture>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <include>UpperFade</include>
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <posx>25</posx>
+                <posy>148</posy>
+                <width>870</width>
+                <height>520</height>
+                <aspectratio>scale</aspectratio>
+                <texture fallback="black/common/BlackDotT.png">$INFO[Container(50).ListItem.thumb]</texture>
                 <include>ThumbBorder</include>
             </control>
             <control type="button">

@@ -42,31 +42,57 @@
                     <posy>143</posy>
                     <width>404</width>
                     <height>404</height>
-                    <texture diffuse="$VAR[Theme.Color]/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                    <texture diffuse="white/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <include>Animation_ViewsCDart</include>
                 </control>
             </control>
             <control type="image">
                 <visible>![Control.hasfocus(50)|Control.hasfocus(9012)|Control.HasFocus(9014)|Control.HasFocus(10)]</visible>
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <posx>25</posx>
                 <posy>313</posy>
                 <width>494</width>
                 <height>685</height>
                 <aspectratio aligny="top">keep</aspectratio>
-                <include fallback="$VAR[Theme.Color]/defaultVideoBig.png">PosterThumb</include>
+                <include fallback="white/defaultVideoBig.png">PosterThumb</include>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <visible>![Control.hasfocus(50)|Control.hasfocus(9012)|Control.HasFocus(9014)|Control.HasFocus(10)]</visible>
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <include>VisibleFadeEffectDelay</include>
+                <posx>25</posx>
+                <posy>313</posy>
+                <width>494</width>
+                <height>685</height>
+                <aspectratio aligny="top">keep</aspectratio>
+                <include fallback="black/defaultVideoBig.png">PosterThumb</include>
                 <include>ThumbBorder</include>
             </control>
             <control type="image">
                 <visible>[Control.HasFocus(50)| Control.HasFocus(61)| Control.HasFocus(9012)| Control.HasFocus(9014)]</visible>
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <posx>25</posx>
                 <posy>313</posy>
                 <width>494</width>
                 <height>685</height>
                 <aspectratio aligny="top">keep</aspectratio>
-                <texture fallback="$VAR[Theme.Color]/defaultArtistBig.png">$INFO[Container(50).ListItem.Thumb]</texture>
+                <texture fallback="white/defaultArtistBig.png">$INFO[Container(50).ListItem.Thumb]</texture>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <visible>[Control.HasFocus(50)| Control.HasFocus(61)| Control.HasFocus(9012)| Control.HasFocus(9014)]</visible>
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <include>VisibleFadeEffectDelay</include>
+                <posx>25</posx>
+                <posy>313</posy>
+                <width>494</width>
+                <height>685</height>
+                <aspectratio aligny="top">keep</aspectratio>
+                <texture fallback="black/defaultArtistBig.png">$INFO[Container(50).ListItem.Thumb]</texture>
                 <include>ThumbBorder</include>
             </control>
             <control type="image">

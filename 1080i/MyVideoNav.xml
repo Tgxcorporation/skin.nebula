@@ -45,7 +45,7 @@
                                 <posy>-19</posy>
                                 <width>424</width>
                                 <height>424</height>
-                                <texture diffuse="$VAR[Theme.Color]/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                                <texture diffuse="white/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
                                 <include>Animation_ViewsCDart</include>
                             </control>
@@ -153,7 +153,7 @@
                             <posy>183</posy>
                             <width>280</width>
                             <height>280</height>
-                            <texture fallback="$VAR[Theme.Color]/common/cdart_default.png" diffuse="$VAR[Theme.Color]/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                            <texture fallback="white/common/cdart_default.png" diffuse="white/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>

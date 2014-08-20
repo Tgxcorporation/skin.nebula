@@ -70,7 +70,7 @@
                     <posy>45</posy>
                     <width>315</width>
                     <height>315</height>
-                    <texture fallback="$VAR[Theme.Color]/common/cdart_default.png" diffuse="$VAR[Theme.Color]/common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
+                    <texture fallback="white/common/cdart_default.png" diffuse="white/common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <include>Animation_ViewsCDart</include>
                 </control>
@@ -255,7 +255,7 @@
                     <posy>97</posy>
                     <width>211</width>
                     <height>211</height>
-                    <texture diffuse="$VAR[Theme.Color]/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                    <texture diffuse="white/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                     <include>Animation_ViewsCDart</include>
                 </control>

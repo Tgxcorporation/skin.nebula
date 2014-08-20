@@ -135,10 +135,20 @@
                         <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="image">
+                        <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                         <posx>0</posx>
                         <height>287</height>
                         <width>287</width>
-                        <texture fallback="$VAR[Theme.Color]/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="white/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
+                        <include>ThumbBorder</include>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                    <control type="image">
+                        <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                        <posx>0</posx>
+                        <height>287</height>
+                        <width>287</width>
+                        <texture fallback="black/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -212,10 +222,20 @@
                         <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                     </control>
                     <control type="image">
+                        <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                         <posx>0</posx>
                         <height>287</height>
                         <width>287</width>
-                        <texture fallback="$VAR[Theme.Color]/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="white/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
+                        <include>ThumbBorder</include>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                    <control type="image">
+                        <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                        <posx>0</posx>
+                        <height>287</height>
+                        <width>287</width>
+                        <texture fallback="black/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio>keep</aspectratio>
                     </control>

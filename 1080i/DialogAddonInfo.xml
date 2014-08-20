@@ -39,13 +39,24 @@
                 <label>$INFO[ListItem.Property(Addon.Name)]</label>
             </control>
             <control type="image">
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <description>Rating value</description>
                 <posx>867</posx>
                 <posy>270</posy>
                 <height>37</height>
                 <width>185</width>
                 <aspectratio align="left">keep</aspectratio>
-                <texture fallback="$VAR[Theme.Color]/badges/rating0.png">$VAR[Theme.Color]/badges/$INFO[ListItem.Property(Addon.StarRating)]</texture>
+                <texture fallback="white/badges/rating0.png">white/badges/$INFO[ListItem.Property(Addon.StarRating)]</texture>
+            </control>
+            <control type="image">
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <description>Rating value</description>
+                <posx>867</posx>
+                <posy>270</posy>
+                <height>37</height>
+                <width>185</width>
+                <aspectratio align="left">keep</aspectratio>
+                <texture fallback="black/badges/rating0.png">black/badges/$INFO[ListItem.Property(Addon.StarRating)]</texture>
             </control>
             <control type="image">
                 <posx>25</posx>

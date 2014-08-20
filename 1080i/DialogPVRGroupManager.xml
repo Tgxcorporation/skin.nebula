@@ -38,7 +38,7 @@
                 <include>TextColor_MainColor</include>
                 <label>$LOCALIZE[19143]</label>
             </control>
-            <control type="label" id="21">
+            <control type="label">
                 <posx>0</posx>
                 <posy>270</posy>
                 <width>640</width>
@@ -48,7 +48,7 @@
                 <include>TextColor_MainColor</include>
                 <label>$LOCALIZE[19146]</label>
             </control>
-            <control type="label" id="22">
+            <control type="label" id="21">
                 <posx>640</posx>
                 <posy>270</posy>
                 <width>640</width>
@@ -56,9 +56,8 @@
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
                 <include>TextColor_MainColor</include>
-                <label>$LOCALIZE[19146]</label>
             </control>
-            <control type="label">
+            <control type="label" id="22">
                 <posx>1280</posx>
                 <posy>270</posy>
                 <width>640</width>
@@ -66,7 +65,6 @@
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
                 <include>TextColor_MainColor</include>
-                <label>$LOCALIZE[19146]</label>
             </control>
             <control type="list" id="13">
                 <posx>0</posx>

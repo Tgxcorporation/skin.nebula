@@ -89,11 +89,22 @@
                 <visible>![control.hasfocus(20)|control.hasfocus(10)|control.hasfocus(105)|ControlGroup(2502).HasFocus|ControlGroup(2500).HasFocus]</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="$VAR[Theme.Color]/defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
+                    <texture fallback="white/defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
+                    <include>ThumbBorder</include>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>313</posy>
+                    <width>494</width>
+                    <height>685</height>
+                    <texture fallback="black/defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -194,14 +205,26 @@
             <control type="group" id="2502">
                 <visible>control.hasfocus(105)|ControlGroup(2502).HasFocus</visible>
                 <include>VisibleFadeEffectDelay</include>
-                  <control type="image">
+                <control type="image">
                     <description>movie image</description>
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
                     <aspectratio aligny="top">keep</aspectratio>
-                    <texture fallback="$VAR[Theme.Color]/defaultVideoBig.png">$INFO[Container(150).Listitem.Icon]</texture>
+                    <texture fallback="white/defaultVideoBig.png">$INFO[Container(150).Listitem.Icon]</texture>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <description>movie image</description>
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>313</posy>
+                    <width>494</width>
+                    <height>685</height>
+                    <aspectratio aligny="top">keep</aspectratio>
+                    <texture fallback="black/defaultVideoBig.png">$INFO[Container(150).Listitem.Icon]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="list" id="150">
@@ -239,7 +262,7 @@
                             <posy>0</posy>
                             <width>30</width>
                             <height>132</height>
-                            <texture>OverlayUnwatched.png</texture>
+                            <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
                             <aspectratio aligny="center">keep</aspectratio>
                             <visible>!IsEmpty(ListItem.Property(LibraryHasMovie))+ !IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
                         </control>
@@ -248,7 +271,7 @@
                             <posy>0</posy>
                             <width>30</width>
                             <height>132</height>
-                            <texture>OverlayUnwatched.png</texture>
+                            <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
                             <aspectratio aligny="center">keep</aspectratio>
                             <visible>!IsEmpty(ListItem.Property(LibraryHasMovie))+ IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
                         </control>
@@ -285,7 +308,7 @@
                             <width>30</width>
                             <height>132</height>
                             <aspectratio aligny="center">keep</aspectratio>
-                            <texture>OverlayUnwatched.png</texture>
+                            <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
                             <visible>!IsEmpty(ListItem.Property(LibraryHasMovie))+ !IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
                         </control>
                         <control type="image">
@@ -294,7 +317,7 @@
                             <width>30</width>
                             <height>132</height>
                             <aspectratio aligny="center">keep</aspectratio>
-                            <texture>OverlayUnwatched.png</texture>
+                            <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
                             <visible>!IsEmpty(ListItem.Property(LibraryHasMovie))+ IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
                         </control>
                     </focusedlayout>
@@ -329,11 +352,21 @@
                     <preloaditems>4</preloaditems>
                     <itemlayout height="425" width="275">
                         <control type="image">
+                            <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                             <posx>-25</posx>
                             <posy>120</posy>
                             <width>295</width>
                             <height>396</height>
-                            <texture fallback="$VAR[Theme.Color]/defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
+                            <texture fallback="white/defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
+                            <include>ThumbBorder</include>
+                        </control>
+                        <control type="image">
+                            <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                            <posx>-25</posx>
+                            <posy>120</posy>
+                            <width>295</width>
+                            <height>396</height>
+                            <texture fallback="black/defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
                             <include>ThumbBorder</include>
                         </control>
                     </itemlayout>
@@ -351,11 +384,23 @@
                 </control>
                 <control type="image">
                     <include>UpperFade</include>
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="$VAR[Theme.Color]/defaultArtistBig.png">$INFO[Container(250).ListItem.Icon]</texture>
+                    <texture fallback="white/defaultArtistBig.png">$INFO[Container(250).ListItem.Icon]</texture>
+                    <include>ThumbBorder</include>
+                    <aspectratio>keep</aspectratio>
+                </control>
+                <control type="image">
+                    <include>UpperFade</include>
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <posx>25</posx>
+                    <posy>313</posy>
+                    <width>494</width>
+                    <height>685</height>
+                    <texture fallback="black/defaultArtistBig.png">$INFO[Container(250).ListItem.Icon]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio>keep</aspectratio>
                 </control>

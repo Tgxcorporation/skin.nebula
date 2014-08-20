@@ -29,12 +29,23 @@
                 <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
+                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
                 <posx>25</posx>
                 <posy>443</posy>
                 <width>373</width>
                 <height>300</height>
                 <aspectratio>keep</aspectratio>
-                <texture fallback="$VAR[Theme.Color]/defaultChannelTvBig_Wide.png">$INFO[ListItem.Icon]</texture>
+                <texture fallback="white/defaultChannelTvBig_Wide.png">$INFO[ListItem.Icon]</texture>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <posx>25</posx>
+                <posy>443</posy>
+                <width>373</width>
+                <height>300</height>
+                <aspectratio>keep</aspectratio>
+                <texture fallback="black/defaultChannelTvBig_Wide.png">$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorder</include>
             </control>
             <control type="label">

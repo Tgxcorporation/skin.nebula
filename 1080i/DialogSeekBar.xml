@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
-    <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
-    <visible> Window.IsActive(videoosd.xml) | [Window.IsVisible(FullScreenVideo) + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]</visible>
-    <visible>![window.IsActive(DialogVolumeBar.xml)|window.IsActive(DialogMuteBug.xml) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
+    <visible>![Window.IsVisible(DialogSelect.xml) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(DialogSubtitles.xml) | Window.IsVisible(DialogAddonSettings.xml)| Window.IsVisible(VisualisationPresetList.xml)]</visible>
+    <visible>Window.IsVisible(musicosd.xml) | Window.IsVisible(videoosd.xml) | [[Window.IsVisible(FullScreenVideo)|Window.IsVisible(visualisation)] + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]</visible>
+    <visible>![window.IsVisible(DialogVolumeBar.xml)|window.IsVisible(DialogMuteBug.xml) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
     <include>TopBarOSDVisibleFadeEffect</include>
     <zorder>2</zorder>
     <controls>
@@ -65,9 +65,9 @@
             <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
         </control>
         <control type="label">
-            <visible>!window.IsActive(videoosd)</visible>
-            <animation effect="slide" time="100" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]">Conditional</animation>
             <include>TopBarOSDVisibleFadeEffect</include>
+            <visible>![window.IsVisible(videoosd)|window.IsVisible(musicosd)]</visible>
+            <animation effect="fade" time="250">Visible</animation>
             <posx>250</posx>
             <posy>55</posy>
             <height>30</height>
@@ -75,7 +75,7 @@
             <align>center</align>
             <font>NotificationFontDouble</font>
             <include>TextColor_MainColor</include>
-            <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.ChannelNumber,, - ]$INFO[VideoPlayer.ChannelName,, - ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Season, - $LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,, - ]$INFO[VideoPlayer.Title]$VAR[ChapterLabel]</label>
+            <label>$INFO[MusicPlayer.Title]$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.ChannelNumber,, - ]$INFO[VideoPlayer.ChannelName,, - ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Season, - $LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,, - ]$INFO[VideoPlayer.Title]$VAR[ChapterLabel]</label>
         </control>
         <control type="label">
             <posx>TextMargin</posx>
@@ -116,7 +116,7 @@
             <label>$INFO[Player.FinishTime]</label>
         </control>
         <control type="group" id="22929">
-            <visible>!window.IsActive(videoosd)</visible>
+            <visible>![Window.IsVisible(videoosd)|Window.IsVisible(musicosd)]</visible>
             <include>TopBarOSDVisibleFadeEffect</include>
             <control type="label">
                 <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek] + [Player.Paused]</visible>
