@@ -59,7 +59,7 @@
                 <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
             </control>
             <control type="group">
-               <visible>[Container.Content(songs)+!Skin.HasSetting(plexbmc)+!IsEmpty(ListItem.Rating)]</visible>
+                <visible>[Container.Content(songs)+!Skin.HasSetting(plexbmc)+!IsEmpty(ListItem.Rating)]</visible>
                 <control type="image">
                     <posx>TextMargin</posx>
                     <posy>130</posy>
@@ -308,59 +308,6 @@
                 <onleft>52</onleft>
                 <onright>505050</onright>
             </control>
-        </control>
-    </include>
-    <include name="View_52_VideoExtras">
-        <control type="group">
-            <posx>-780</posx>
-            <control type="image">
-                <posx>1224</posx>
-                <posy>350</posy>
-                <width>1522</width>
-                <height>900</height>
-                <include>bg_tvguide</include>
-                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
-            </control>
-            <control type="image">
-                <posx>1260</posx>
-                <posy>353</posy>
-                <width>1440</width>
-                <height>73</height>
-                <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
-            </control>
-            <control type="image">
-                <visible>!IntegerGreaterThan(Container(51).NumItems,7)</visible>
-                <posx>1260</posx>
-                <posy>939</posy>
-                <width>1440</width>
-                <height>73</height>
-                <texture border="3">$VAR[Theme.Color]/list/bg_facade_nofocus_top.png</texture>
-            </control>
-            <control type="list" id="51">
-                <posx>1260</posx>
-                <posy>426</posy>
-                <width>1440</width>
-                <height>584</height>
-                <pagecontrol>60</pagecontrol>
-                <onleft>9000</onleft>
-                <onright>60</onright>
-                <onup>52</onup>
-                <ondown>52</ondown>
-                <preloaditems>4</preloaditems>
-                <include>List_Layout</include>
-            </control>
-        </control>
-        <control type="label">
-            <include>FacadeNumItems</include>
-            <label>$INFO[Container(51).NumItems] $LOCALIZE[31025]</label>
-        </control>
-        <control type="scrollbar" id="60">
-            <posx>1886</posx>
-            <posy>421</posy>
-            <height>586</height>
-            <include>VerticalScroller</include>
-            <onleft>51</onleft>
-            <onright>505050</onright>
         </control>
     </include>
 </includes>

@@ -237,10 +237,10 @@
         <value condition="!IsEmpty(Skin.String(Settings.Background))">$INFO[Skin.String(Settings.Background)]</value>
         <value>special://skin/backgrounds/Settings.jpg</value>
     </variable>
-    <variable name="Weather.Art">
+    <!--  <variable name="Weather.Art">
         <value condition="!IsEmpty(Skin.String(Weather.Background))">$INFO[Skin.String(Weather.Background)]</value>
         <value>special://skin/backgrounds/Weather.jpg</value>
-    </variable>
+    </variable> -->
     <variable name="Pvr.Art">
         <value condition="!IsEmpty(Skin.String(Pvr.Background))">$INFO[Skin.String(Pvr.Background)]</value>
         <value>special://skin/backgrounds/Pvr.jpg</value>

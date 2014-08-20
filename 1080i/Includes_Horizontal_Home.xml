@@ -60,7 +60,7 @@
                     <posy>0</posy>
                     <height>78</height>
                     <width>520</width>
-                    <font>FacadeListFont</font>
+                    <font>FacadeListMainFont</font>
                     <align>center</align>
                     <scroll>false</scroll>
                     <label>$INFO[ListItem.Label]</label>
@@ -82,7 +82,7 @@
                     <height>78</height>
                     <width>520</width>
                     <align>center</align>
-                    <font>FacadeListFont</font>
+                    <font>FacadeListMainFont</font>
                     <label>$INFO[ListItem.Label]</label>
                     <include>TextColor_AlternateColor</include>
                 </control>
@@ -93,7 +93,7 @@
                     <height>78</height>
                     <align>center</align>
                     <width>520</width>
-                    <font>FacadeListFont</font>
+                    <font>FacadeListMainFont</font>
                     <label>$INFO[ListItem.Label]</label>
                     <include>TextColor_MainColor</include>
                 </control>

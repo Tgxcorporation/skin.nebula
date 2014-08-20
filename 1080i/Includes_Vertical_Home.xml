@@ -167,7 +167,6 @@
         </control>
     </include>
     <include name="Vertical_Home_Layout">
-        <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideLeft</include>
         <control type="image">
             <visible>!Skin.HasSetting(plexbmc)+[[[IntegerGreaterThan(Container(111).NumItems,0)]+Container(300).HasFocus(7)]|[[IntegerGreaterThan(Container(211).NumItems,0)]+Container(300).HasFocus(2)]|[[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+Container(300).HasFocus(4)]|[[IntegerGreaterThan(Container(514).NumItems,0)]+Container(300).HasFocus(14)]|[[IntegerGreaterThan(Container(514).NumItems,0)|IntegerGreaterThan(Container(515).NumItems,0)]+Container(300).HasFocus(14)]|[[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+Container(300).HasFocus(5)]|[[IntegerGreaterThan(Container(511).NumItems,0)|IntegerGreaterThan(Container(513).NumItems,0)]+Container(300).HasFocus(6)]|[[IntegerGreaterThan(Container(512).NumItems,0)]+Container(300).HasFocus(13)]]</visible>
             <posx>490</posx>
@@ -234,10 +233,16 @@
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Episodes.List</include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Albums.List</include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Clips.List</include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + [SubString(Window(Home).Property(SkinWidgets_Recommended),t,left) | SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)]">Recommended.And.Random.Movies.List</include>
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">Recommended.Movies.List</include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">Recommended.Concerts.List</include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">Recommended.Episodes.List</include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">Recommended.Albums.List</include>
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">Recommended.Clips.List</include>
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)">Random.Movies.List</include>
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)">Random.Concerts.List</include>
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)">Random.Episodes.List</include>
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)">Random.Albums.List</include>
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)">Random.Clips.List</include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)">Plexbmc_Shelf</include>
         </control>
         <control type="group">

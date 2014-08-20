@@ -50,7 +50,7 @@
                 <posy>408</posy>
                 <width>309</width>
                 <height>309</height>
-                <texture>defaultArtistBig.png</texture>
+                <texture>$VAR[Theme.Color]/defaultArtistBig.png</texture>
             </control>
             <control type="image" id="2">
                 <posx>25</posx>

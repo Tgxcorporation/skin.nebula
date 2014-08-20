@@ -10,7 +10,6 @@
                 <posy>0</posy>
                 <width>1920</width>
                 <height>1080</height>
-                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableFanart)">BgOverlayFanart</include>
                 <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
             </control>
             <control type="progress" id="23">

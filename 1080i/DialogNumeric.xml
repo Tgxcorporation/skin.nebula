@@ -191,7 +191,6 @@
                     <onright>20</onright>
                     <onup>14</onup>
                     <ondown>11</ondown>
-                    <width>120</width>
                     <font>SmallButtonFont</font>
                     <include>KeyboardButtons</include>
                     <label>20181</label>

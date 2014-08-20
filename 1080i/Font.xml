@@ -72,32 +72,10 @@
             <size>28</size>
         </font>
         <font>
-            <name>FacadePanelFont</name>
-            <filename>Ubuntu-R.ttf</filename>
-            <size>28</size>
-        </font>
-        <font>
-            <name>ShelfFont</name>
-            <filename>Ubuntu-R.ttf</filename>
-            <size>24</size>
-        </font>
-        <font>
-            <name>FacadeNumItemsFont</name>
-            <filename>Ubuntu-R.ttf</filename>
-            <size>33</size>
-        </font>
-        <font>
             <name>InfoTitleFont</name>
             <filename>Ubuntu-R.ttf</filename>
             <size>45</size>
             <style>bold</style>
-        </font>
-        <font>
-            <name>InfoTitleShortFont</name>
-            <filename>Ubuntu-R.ttf</filename>
-            <size>37</size>
-            <style>bold</style>
-            <aspect>1.0</aspect>
         </font>
         <font>
             <name>InfoTitleSubFont</name>
@@ -122,11 +100,6 @@
             <size>39</size>
         </font>
         <font>
-            <name>InfoDetailsContainerFont</name>
-            <filename>Ubuntu-R.ttf</filename>
-            <size>30</size>
-        </font>
-        <font>
             <name>InfoRatingFont</name>
             <filename>Ubuntu-R.ttf</filename>
             <size>33</size>
@@ -147,12 +120,6 @@
             <size>34</size>
         </font>
         <font>
-            <name>TvGuideFooterFont</name>
-            <filename>Ubuntu-R.ttf</filename>
-            <size>36</size>
-            <style>bold</style>
-        </font>
-        <font>
             <name>ButtonFont</name>
             <filename>Ubuntu-R.ttf</filename>
             <size>36</size>
@@ -166,12 +133,6 @@
             <name>BadgeFont</name>
             <filename>Ubuntu-R.ttf</filename>
             <size>26</size>
-            <aspect>0.95</aspect>
-        </font>
-        <font>
-            <name>BadgeFontSmall</name>
-            <filename>Ubuntu-R.ttf</filename>
-            <size>22</size>
             <aspect>0.95</aspect>
         </font>
         <font>
@@ -257,32 +218,10 @@
             <size>28</size>
         </font>
         <font>
-            <name>FacadePanelFont</name>
-            <filename>Ubuntu-M.ttf</filename>
-            <size>28</size>
-        </font>
-        <font>
-            <name>ShelfFont</name>
-            <filename>Ubuntu-M.ttf</filename>
-            <size>24</size>
-        </font>
-        <font>
-            <name>FacadeNumItemsFont</name>
-            <filename>Ubuntu-M.ttf</filename>
-            <size>33</size>
-        </font>
-        <font>
             <name>InfoTitleFont</name>
             <filename>Ubuntu-M.ttf</filename>
             <size>45</size>
             <style>bold</style>
-        </font>
-        <font>
-            <name>InfoTitleShortFont</name>
-            <filename>Ubuntu-M.ttf</filename>
-            <size>37</size>
-            <style>bold</style>
-            <aspect>1.0</aspect>
         </font>
         <font>
             <name>InfoTitleSubFont</name>
@@ -307,11 +246,6 @@
             <size>39</size>
         </font>
         <font>
-            <name>InfoDetailsContainerFont</name>
-            <filename>Ubuntu-M.ttf</filename>
-            <size>30</size>
-        </font>
-        <font>
             <name>InfoRatingFont</name>
             <filename>Ubuntu-M.ttf</filename>
             <size>33</size>
@@ -332,12 +266,6 @@
             <size>34</size>
         </font>
         <font>
-            <name>TvGuideFooterFont</name>
-            <filename>Ubuntu-M.ttf</filename>
-            <size>36</size>
-            <style>bold</style>
-        </font>
-        <font>
             <name>ButtonFont</name>
             <filename>Ubuntu-M.ttf</filename>
             <size>36</size>
@@ -351,12 +279,6 @@
             <name>BadgeFont</name>
             <filename>Ubuntu-M.ttf</filename>
             <size>26</size>
-            <aspect>0.95</aspect>
-        </font>
-        <font>
-            <name>BadgeFontSmall</name>
-            <filename>Ubuntu-M.ttf</filename>
-            <size>22</size>
             <aspect>0.95</aspect>
         </font>
         <font>
@@ -442,32 +364,10 @@
             <size>28</size>
         </font>
         <font>
-            <name>FacadePanelFont</name>
-            <filename>Asap-Regular.ttf</filename>
-            <size>28</size>
-        </font>
-        <font>
-            <name>ShelfFont</name>
-            <filename>Asap-Regular.ttf</filename>
-            <size>24</size>
-        </font>
-        <font>
-            <name>FacadeNumItemsFont</name>
-            <filename>Asap-Regular.ttf</filename>
-            <size>33</size>
-        </font>
-        <font>
             <name>InfoTitleFont</name>
             <filename>Asap-Regular.ttf</filename>
             <size>45</size>
             <style>bold</style>
-        </font>
-        <font>
-            <name>InfoTitleShortFont</name>
-            <filename>Asap-Regular.ttf</filename>
-            <size>37</size>
-            <style>bold</style>
-            <aspect>1.0</aspect>
         </font>
         <font>
             <name>InfoTitleSubFont</name>
@@ -492,11 +392,6 @@
             <size>39</size>
         </font>
         <font>
-            <name>InfoDetailsContainerFont</name>
-            <filename>Asap-Regular.ttf</filename>
-            <size>30</size>
-        </font>
-        <font>
             <name>InfoRatingFont</name>
             <filename>Asap-Regular.ttf</filename>
             <size>33</size>
@@ -517,12 +412,6 @@
             <size>34</size>
         </font>
         <font>
-            <name>TvGuideFooterFont</name>
-            <filename>Asap-Regular.ttf</filename>
-            <size>36</size>
-            <style>bold</style>
-        </font>
-        <font>
             <name>ButtonFont</name>
             <filename>Asap-Regular.ttf</filename>
             <size>36</size>
@@ -536,12 +425,6 @@
             <name>BadgeFont</name>
             <filename>Asap-Regular.ttf</filename>
             <size>26</size>
-            <aspect>0.95</aspect>
-        </font>
-        <font>
-            <name>BadgeFontSmall</name>
-            <filename>Asap-Regular.ttf</filename>
-            <size>22</size>
             <aspect>0.95</aspect>
         </font>
         <font>

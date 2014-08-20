@@ -29,7 +29,6 @@
                     <align>center</align>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
-                    <align>center</align>
                     <label>$LOCALIZE[13008]</label>
                 </control>
                 <control type="grouplist" id="9001">

@@ -71,7 +71,7 @@
         <height>90</height>
         <align>left</align>
         <aligny>center</aligny>
-        <font>size22</font>
+        <font>InfoDetailsFont</font>
         <textoffsetx>20</textoffsetx>
         <include>TextColor_AlternateColor</include>
         <include>FocusedColor_MainColor</include>

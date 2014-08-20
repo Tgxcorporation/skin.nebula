@@ -173,7 +173,7 @@
                         <width>80</width>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <font>FacadeListFont</font>
+                        <font>FacadeListMainFont</font>
                         <include>TextColor_AlternateColor</include>
                         <info>ListItem.ChannelNumber</info>
                     </control>
@@ -208,7 +208,7 @@
                         <width>80</width>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <font>FacadeListFont</font>
+                        <font>FacadeListMainFont</font>
                         <include>TextColor_MainColor</include>
                         <info>ListItem.ChannelNumber</info>
                     </control>

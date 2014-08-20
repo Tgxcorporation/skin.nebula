@@ -123,7 +123,7 @@
             <width>120</width>
             <height>80</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/$VAR[videores,,.png]</texture>
+            <texture>$VAR[Theme.Color]/badges/video/$VAR[videores].png</texture>
         </control>
         <control type="image">
             <description>Codec Image</description>
@@ -189,7 +189,7 @@
             <width>120</width>
             <height>70</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/$VAR[videores,,.png]</texture>
+            <texture>$VAR[Theme.Color]/badges/video/$VAR[videores].png</texture>
         </control>
         <control type="image">
             <description>Codec Image</description>
@@ -204,7 +204,7 @@
             <width>120</width>
             <height>70</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource,,.png]</texture>
+            <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource].png</texture>
         </control>
         <control type="image">
             <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
@@ -265,7 +265,7 @@
             <width>120</width>
             <height>80</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/$VAR[videores,,.png]</texture>
+            <texture>$VAR[Theme.Color]/badges/video/$VAR[videores].png</texture>
         </control>
         <control type="image">
             <description>Codec Image</description>
@@ -280,7 +280,7 @@
             <width>120</width>
             <height>80</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource,,.png]</texture>
+            <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource].png</texture>
         </control>
         <control type="image">
             <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
@@ -341,7 +341,7 @@
             <width>100</width>
             <height>70</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/$VAR[videores,,.png]</texture>
+            <texture>$VAR[Theme.Color]/badges/video/$VAR[videores].png</texture>
         </control>
         <control type="image">
             <description>Codec Image</description>
@@ -350,7 +350,7 @@
             <width>100</width>
             <height>70</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/$VAR[videocodec,,.png]</texture>
+            <texture>$VAR[Theme.Color]/badges/video/$VAR[videocodec].png</texture>
         </control>
         <control type="image">
             <description>Audio Codec Image</description>
@@ -417,7 +417,7 @@
             <width>100</width>
             <height>60</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/$VAR[videores,,.png]</texture>
+            <texture>$VAR[Theme.Color]/badges/video/$VAR[videores].png</texture>
         </control>
         <control type="image">
             <description>Codec Image</description>
@@ -432,7 +432,7 @@
             <width>100</width>
             <height>60</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource,,.png]</texture>
+            <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource].png</texture>
         </control>
         <control type="image">
             <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
@@ -491,7 +491,7 @@
             <width>100</width>
             <height>60</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/$VAR[videores,,.png]</texture>
+            <texture>$VAR[Theme.Color]/badges/video/$VAR[videores].png</texture>
         </control>
         <control type="image">
             <posx>90</posx>
@@ -531,7 +531,7 @@
             <width>100</width>
             <height>60</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource,,.png]</texture>
+            <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource].png</texture>
         </control>
         <control type="image">
             <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
@@ -578,7 +578,7 @@
             <width>100</width>
             <height>70</height>
             <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/$VAR[videocodecOSD,,.png]</texture>
+            <texture>$VAR[Theme.Color]/badges/video/$VAR[videocodecOSD].png</texture>
         </control>
         <control type="image">
             <description>Audio Codec Image</description>
