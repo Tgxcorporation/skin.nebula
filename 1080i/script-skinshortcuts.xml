@@ -126,49 +126,52 @@
                     </control>
                 </itemlayout>
                 <focusedlayout width="615" height="287">
-                    <control type="image">
-                        <visible>control.hasfocus(211)</visible>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <height>287</height>
-                        <width>960</width>
-                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
-                    </control>
-                    <control type="image">
-                        <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
-                        <posx>0</posx>
-                        <height>287</height>
-                        <width>287</width>
-                        <texture fallback="white/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
-                        <include>ThumbBorder</include>
-                        <aspectratio>keep</aspectratio>
-                    </control>
-                    <control type="image">
-                        <visible>Skin.HasSetting(Theme.Color.Black)</visible>
-                        <posx>0</posx>
-                        <height>287</height>
-                        <width>287</width>
-                        <texture fallback="black/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
-                        <include>ThumbBorder</include>
-                        <aspectratio>keep</aspectratio>
-                    </control>
-                    <control type="label">
-                        <posx>300</posx>
-                        <posy>105</posy>
-                        <height>42</height>
-                        <width>600</width>
-                        <font>FacadeListMainFont</font>
-                        <include>TextColor_MainColor</include>
-                        <label>[B]$INFO[ListItem.Label][/B]</label>
-                    </control>
-                    <control type="label">
-                        <posx>300</posx>
-                        <posy>140</posy>
-                        <height>42</height>
-                        <width>600</width>
-                        <font>FacadeListSubFont</font>
-                        <include>TextColor_MainColor</include>
-                        <label>$INFO[ListItem.Label2]</label>
+                    <control type="group">
+                        <include>ListFocusAnimation</include>
+                        <control type="image">
+                            <visible>control.hasfocus(211)</visible>
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <height>287</height>
+                            <width>960</width>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                        </control>
+                        <control type="image">
+                            <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <posx>0</posx>
+                            <height>287</height>
+                            <width>287</width>
+                            <texture fallback="white/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
+                            <include>ThumbBorder</include>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="image">
+                            <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                            <posx>0</posx>
+                            <height>287</height>
+                            <width>287</width>
+                            <texture fallback="black/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
+                            <include>ThumbBorder</include>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>300</posx>
+                            <posy>105</posy>
+                            <height>42</height>
+                            <width>600</width>
+                            <font>FacadeListMainFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                        </control>
+                        <control type="label">
+                            <posx>300</posx>
+                            <posy>140</posy>
+                            <height>42</height>
+                            <width>600</width>
+                            <font>FacadeListSubFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
                     </control>
                 </focusedlayout>
             </control>
@@ -213,49 +216,52 @@
                     </control>
                 </itemlayout>
                 <focusedlayout width="615" height="287">
-                    <control type="image">
-                        <visible>control.hasfocus(111)</visible>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <height>287</height>
-                        <width>960</width>
-                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
-                    </control>
-                    <control type="image">
-                        <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
-                        <posx>0</posx>
-                        <height>287</height>
-                        <width>287</width>
-                        <texture fallback="white/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
-                        <include>ThumbBorder</include>
-                        <aspectratio>keep</aspectratio>
-                    </control>
-                    <control type="image">
-                        <visible>Skin.HasSetting(Theme.Color.Black)</visible>
-                        <posx>0</posx>
-                        <height>287</height>
-                        <width>287</width>
-                        <texture fallback="black/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
-                        <include>ThumbBorder</include>
-                        <aspectratio>keep</aspectratio>
-                    </control>
-                    <control type="label">
-                        <posx>300</posx>
-                        <posy>105</posy>
-                        <height>42</height>
-                        <width>600</width>
-                        <font>FacadeListMainFont</font>
-                        <include>TextColor_MainColor</include>
-                        <label>[B]$INFO[ListItem.Label][/B]</label>
-                    </control>
-                    <control type="label">
-                        <posx>300</posx>
-                        <posy>140</posy>
-                        <height>42</height>
-                        <width>600</width>
-                        <font>FacadeListSubFont</font>
-                        <include>TextColor_MainColor</include>
-                        <label>$INFO[ListItem.Label2]</label>
+                    <control type="group">
+                        <include>ListFocusAnimation</include>
+                        <control type="image">
+                            <visible>control.hasfocus(111)</visible>
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <height>287</height>
+                            <width>960</width>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                        </control>
+                        <control type="image">
+                            <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <posx>0</posx>
+                            <height>287</height>
+                            <width>287</width>
+                            <texture fallback="white/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
+                            <include>ThumbBorder</include>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="image">
+                            <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                            <posx>0</posx>
+                            <height>287</height>
+                            <width>287</width>
+                            <texture fallback="black/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
+                            <include>ThumbBorder</include>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>300</posx>
+                            <posy>105</posy>
+                            <height>42</height>
+                            <width>600</width>
+                            <font>FacadeListMainFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                        </control>
+                        <control type="label">
+                            <posx>300</posx>
+                            <posy>140</posy>
+                            <height>42</height>
+                            <width>600</width>
+                            <font>FacadeListSubFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
                     </control>
                 </focusedlayout>
             </control>

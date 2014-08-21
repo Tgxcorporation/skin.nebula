@@ -63,53 +63,56 @@
                     </control>
                 </itemlayout>
                 <focusedlayout width="1920" height="270">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <height>270</height>
-                        <width>1920</width>
-                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
-                    </control>
-                    <control type="label">
-                        <posx>TextMargin</posx>
-                        <posy>25</posy>
-                        <width>1800</width>
-                        <aligny>top</aligny>
-                        <font>InfoTitleFont</font>
-                        <include>TextColor_MainColor</include>
-                        <scroll>false</scroll>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="image">
-                        <description>Default Seperator</description>
-                        <posx>0</posx>
-                        <posy>96</posy>
-                        <width>1920</width>
-                        <height>1</height>
-                        <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
-                    </control>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>35</posy>
-                        <control type="label">
-                            <posx>TextMargin</posx>
-                            <posy>65</posy>
-                            <width>1800</width>
-                            <height>71</height>
-                            <font>InfoDetailsFont</font>
-                            <include>TextColor_MainColor</include>
-                            <scroll>false</scroll>
-                            <label>$LOCALIZE[35504]: $INFO[ListItem.Property(Product)]     $LOCALIZE[35503]: $INFO[ListItem.Property(Vendor)]</label>
+                        <include>ListFocusAnimation</include>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <height>270</height>
+                            <width>1920</width>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
-                            <posy>138</posy>
+                            <posy>25</posy>
                             <width>1800</width>
-                            <height>71</height>
-                            <font>InfoDetailsFont</font>
+                            <aligny>top</aligny>
+                            <font>InfoTitleFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
-                            <label>$LOCALIZE[35501]: $INFO[ListItem.Property(Class)]</label>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="image">
+                            <description>Default Seperator</description>
+                            <posx>0</posx>
+                            <posy>96</posy>
+                            <width>1920</width>
+                            <height>1</height>
+                            <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
+                        </control>
+                        <control type="group">
+                            <posx>0</posx>
+                            <posy>35</posy>
+                            <control type="label">
+                                <posx>TextMargin</posx>
+                                <posy>65</posy>
+                                <width>1800</width>
+                                <height>71</height>
+                                <font>InfoDetailsFont</font>
+                                <include>TextColor_MainColor</include>
+                                <scroll>false</scroll>
+                                <label>$LOCALIZE[35504]: $INFO[ListItem.Property(Product)]     $LOCALIZE[35503]: $INFO[ListItem.Property(Vendor)]</label>
+                            </control>
+                            <control type="label">
+                                <posx>TextMargin</posx>
+                                <posy>138</posy>
+                                <width>1800</width>
+                                <height>71</height>
+                                <font>InfoDetailsFont</font>
+                                <include>TextColor_MainColor</include>
+                                <scroll>false</scroll>
+                                <label>$LOCALIZE[35501]: $INFO[ListItem.Property(Class)]</label>
+                            </control>
                         </control>
                     </control>
                 </focusedlayout>

@@ -119,7 +119,7 @@
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
-                            <posy>138</posy>
+                            <posy>135</posy>
                             <width>672</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
@@ -129,7 +129,7 @@
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
-                            <posy>211</posy>
+                            <posy>205</posy>
                             <width>672</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
@@ -140,7 +140,7 @@
                         <control type="label">
                             <visible>!Skin.HasSetting(plexbmc)</visible>
                             <posx>772</posx>
-                            <posy>138</posy>
+                            <posy>135</posy>
                             <width>672</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
@@ -151,7 +151,7 @@
                         <control type="label">
                             <visible>!Skin.HasSetting(plexbmc)</visible>
                             <posx>772</posx>
-                            <posy>211</posy>
+                            <posy>205</posy>
                             <width>672</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
@@ -161,7 +161,7 @@
                         </control>
                         <control type="grouplist">
                             <posx>40</posx>
-                            <posy>290</posy>
+                            <posy>285</posy>
                             <width>1006</width>
                             <height>408</height>
                             <itemgap>20</itemgap>

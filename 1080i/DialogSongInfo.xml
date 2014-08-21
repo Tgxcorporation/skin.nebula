@@ -96,7 +96,6 @@
                 <onup>49</onup>
                 <ondown>6060</ondown>
                 <pagecontrol>60</pagecontrol>
-                <scrolltime>200</scrolltime>
                 <itemlayout height="78" width="1375">
                     <control type="label">
                         <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
@@ -120,32 +119,35 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="78" width="1375">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <height>78</height>
-                        <width>1375</width>
-                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
-                    </control>
-                    <control type="label">
-                        <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
-                        <posx>TextMargin</posx>
-                        <posy>0</posy>
-                        <height>78</height>
-                        <width>1255</width>
-                        <font>FacadeListMainFont</font>
-                        <include>TextColor_MainColor</include>
-                        <label>[COLOR=AlternateColor_white]$INFO[ListItem.Label,, ][/COLOR]$INFO[ListItem.Label2]</label>
-                    </control>
-                    <control type="label">
-                        <visible>Skin.HasSetting(Theme.Color.Black)</visible>
-                        <posx>TextMargin</posx>
-                        <posy>0</posy>
-                        <height>78</height>
-                        <width>1255</width>
-                        <font>FacadeListMainFont</font>
-                        <include>TextColor_MainColor</include>
-                        <label>[COLOR=AlternateColor_black]$INFO[ListItem.Label,, ][/COLOR]$INFO[ListItem.Label2]</label>
+                    <control type="group">
+                        <include>ListFocusAnimation</include>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <height>78</height>
+                            <width>1375</width>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                        </control>
+                        <control type="label">
+                            <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <posx>TextMargin</posx>
+                            <posy>0</posy>
+                            <height>78</height>
+                            <width>1255</width>
+                            <font>FacadeListMainFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>[COLOR=AlternateColor_white]$INFO[ListItem.Label,, ][/COLOR]$INFO[ListItem.Label2]</label>
+                        </control>
+                        <control type="label">
+                            <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                            <posx>TextMargin</posx>
+                            <posy>0</posy>
+                            <height>78</height>
+                            <width>1255</width>
+                            <font>FacadeListMainFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>[COLOR=AlternateColor_black]$INFO[ListItem.Label,, ][/COLOR]$INFO[ListItem.Label2]</label>
+                        </control>
                     </control>
                 </focusedlayout>
                 <content>

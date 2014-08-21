@@ -277,48 +277,51 @@
                         </control>
                     </itemlayout>
                     <focusedlayout height="135" width="1420">
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <height>135</height>
-                            <width>1420</width>
-                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
-                        </control>
-                        <control type="label">
-                            <posx>TextMargin</posx>
-                            <posy>27</posy>
-                            <aligny>top</aligny>
-                            <width>1300</width>
-                            <font>FacadeListMainFont</font>
-                            <include>TextColor_MainColor</include>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                        <control type="label">
-                            <posx>TextMargin</posx>
-                            <posy>73</posy>
-                            <aligny>top</aligny>
-                            <width>1300</width>
-                            <font>FacadeListSubFont</font>
-                            <include>TextColor_MainColor</include>
-                            <label>$INFO[ListItem.Year]$INFO[ListItem.Property(releasedate),     ]$INFO[ListItem.Property(role),     $LOCALIZE[20347] ]$INFO[ListItem.Property(job),     ]</label>
-                        </control>
-                        <control type="image">
-                            <posx>58r</posx>
-                            <posy>0</posy>
-                            <width>30</width>
-                            <height>132</height>
-                            <aspectratio aligny="center">keep</aspectratio>
-                            <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
-                            <visible>!IsEmpty(ListItem.Property(LibraryHasMovie))+ !IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
-                        </control>
-                        <control type="image">
-                            <posx>58r</posx>
-                            <posy>0</posy>
-                            <width>30</width>
-                            <height>132</height>
-                            <aspectratio aligny="center">keep</aspectratio>
-                            <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
-                            <visible>!IsEmpty(ListItem.Property(LibraryHasMovie))+ IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                        <control type="group">
+                            <include>ListFocusAnimation</include>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <height>135</height>
+                                <width>1420</width>
+                                <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                            </control>
+                            <control type="label">
+                                <posx>TextMargin</posx>
+                                <posy>27</posy>
+                                <aligny>top</aligny>
+                                <width>1300</width>
+                                <font>FacadeListMainFont</font>
+                                <include>TextColor_MainColor</include>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <posx>TextMargin</posx>
+                                <posy>73</posy>
+                                <aligny>top</aligny>
+                                <width>1300</width>
+                                <font>FacadeListSubFont</font>
+                                <include>TextColor_MainColor</include>
+                                <label>$INFO[ListItem.Year]$INFO[ListItem.Property(releasedate),     ]$INFO[ListItem.Property(role),     $LOCALIZE[20347] ]$INFO[ListItem.Property(job),     ]</label>
+                            </control>
+                            <control type="image">
+                                <posx>58r</posx>
+                                <posy>0</posy>
+                                <width>30</width>
+                                <height>132</height>
+                                <aspectratio aligny="center">keep</aspectratio>
+                                <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
+                                <visible>!IsEmpty(ListItem.Property(LibraryHasMovie))+ !IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                            </control>
+                            <control type="image">
+                                <posx>58r</posx>
+                                <posy>0</posy>
+                                <width>30</width>
+                                <height>132</height>
+                                <aspectratio aligny="center">keep</aspectratio>
+                                <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
+                                <visible>!IsEmpty(ListItem.Property(LibraryHasMovie))+ IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                            </control>
                         </control>
                     </focusedlayout>
                 </control>
@@ -345,7 +348,6 @@
                     <onup>9000</onup>
                     <ondown>250</ondown>
                     <orientation>horizontal</orientation>
-                    <scrolltime tween="cubic" easing="out">300</scrolltime>
                     <preloaditems>5</preloaditems>
                     <focusposition>0</focusposition>
                     <movement>0</movement>

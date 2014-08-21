@@ -10,7 +10,6 @@
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <scrolltime tween="cubic" easing="out">300</scrolltime>
         <itemlayout height="425" width="275">
             <control type="image">
                 <visible>!StringCompare(ListItem.Label,..)</visible>
@@ -57,7 +56,6 @@
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <scrolltime tween="cubic" easing="out">300</scrolltime>
         <itemlayout height="425" width="275">
             <control type="image">
                 <visible>!StringCompare(ListItem.Label,..)</visible>
@@ -104,7 +102,6 @@
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <scrolltime tween="cubic" easing="out">300</scrolltime>
         <itemlayout height="425" width="275">
             <control type="image">
                 <visible>!StringCompare(ListItem.Label,..)</visible>
@@ -151,7 +148,6 @@
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <scrolltime tween="cubic" easing="out">300</scrolltime>
         <itemlayout height="425" width="275">
             <control type="image">
                 <visible>!StringCompare(ListItem.Label,..)</visible>
@@ -198,7 +194,6 @@
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <scrolltime tween="cubic" easing="out">300</scrolltime>
         <itemlayout height="425" width="275">
             <control type="image">
                 <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
@@ -244,7 +239,6 @@
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <scrolltime tween="cubic" easing="out">300</scrolltime>
         <itemlayout height="425" width="275">
             <control type="image">
                 <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
@@ -290,7 +284,6 @@
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <scrolltime tween="cubic" easing="out">300</scrolltime>
         <itemlayout height="425" width="275">
             <control type="image">
                 <visible>!Skin.HasSetting(Theme.Color.Black)</visible>

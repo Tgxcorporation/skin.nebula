@@ -604,52 +604,6 @@
         <control type="group" id="1">
             <width>100</width>
             <height>70</height>
-            <visible>!IsEmpty(VideoPlayer.AudioLanguage)</visible>
-            <control type="image" id="1">
-                <posx>7</posx>
-                <top>2</top>
-                <width>38</width>
-                <height>70</height>
-                <aspectratio>keep</aspectratio>
-                <texture>$VAR[Theme.Color]/topbar/topbar_volume_down_focus.png</texture>
-            </control>
-            <control type="label" id="1">
-                <posx>47</posx>
-                <top>-2</top>
-                <width>45</width>
-                <height>70</height>
-                <font>BadgeFont</font>
-                <align>center</align>
-                <label>$INFO[VideoPlayer.AudioLanguage]</label>
-                <include>TextColor_MainColor</include>
-            </control>
-        </control>
-        <control type="group" id="1">
-            <width>100</width>
-            <height>70</height>
-            <visible>!IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
-            <control type="image" id="1">
-                <posx>7</posx>
-                <top>2</top>
-                <width>38</width>
-                <height>70</height>
-                <aspectratio>keep</aspectratio>
-                <texture>$VAR[Theme.Color]/topbar/topbar_subtitles_focus.png</texture>
-            </control>
-            <control type="label" id="1">
-                <posx>47</posx>
-                <top>-2</top>
-                <width>45</width>
-                <height>70</height>
-                <font>BadgeFont</font>
-                <align>center</align>
-                <label>$INFO[VideoPlayer.SubtitlesLanguage]</label>
-                <include>TextColor_MainColor</include>
-            </control>
-        </control>
-        <control type="group" id="1">
-            <width>100</width>
-            <height>70</height>
             <visible>!IsEmpty(VideoPlayer.Top250) + !SubString(VideoPlayer.Top250,0,Left)</visible>
             <control type="image" id="1">
                 <width>100</width>
@@ -675,6 +629,54 @@
             <height>70</height>
             <aspectratio>keep</aspectratio>
             <texture>$VAR[Theme.Color]/badges/video/3dbd.png</texture>
+        </control>
+    </include>
+    <include name="CodecsVideoOSD2">
+        <control type="group" id="1">
+            <width>90</width>
+            <height>70</height>
+            <visible>!IsEmpty(VideoPlayer.AudioLanguage)</visible>
+            <control type="image" id="1">
+                <posx>4</posx>
+                <top>2</top>
+                <width>38</width>
+                <height>70</height>
+                <aspectratio>keep</aspectratio>
+                <texture>$VAR[Theme.Color]/topbar/topbar_volume_down_focus.png</texture>
+            </control>
+            <control type="label" id="1">
+                <posx>40</posx>
+                <top>-1</top>
+                <width>45</width>
+                <height>70</height>
+                <font>BadgeFont</font>
+                <align>left</align>
+                <label>$INFO[VideoPlayer.AudioLanguage]</label>
+                <include>TextColor_MainColor</include>
+            </control>
+        </control>
+        <control type="group" id="1">
+            <width>90</width>
+            <height>70</height>
+            <visible>!IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+            <control type="image" id="1">
+                <posx>4</posx>
+                <top>2</top>
+                <width>38</width>
+                <height>70</height>
+                <aspectratio>keep</aspectratio>
+                <texture>$VAR[Theme.Color]/topbar/topbar_subtitles_focus.png</texture>
+            </control>
+            <control type="label" id="1">
+                <posx>44</posx>
+                <top>-1</top>
+                <width>45</width>
+                <height>70</height>
+                <font>BadgeFont</font>
+                <align>left</align>
+                <label>$INFO[VideoPlayer.SubtitlesLanguage]</label>
+                <include>TextColor_MainColor</include>
+            </control>
         </control>
     </include>
     <include name="CodecsMusicOSD">

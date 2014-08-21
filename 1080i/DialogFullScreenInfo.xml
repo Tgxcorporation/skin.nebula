@@ -171,6 +171,17 @@
                             <label fallback="416">$INFO[VideoPlayer.RatingAndVotes]</label>
                         </control>
                     </control>
+                    <control type="grouplist">
+                        <posx>530</posx>
+                        <posy>70</posy>
+                        <width>1006</width>
+                        <height>408</height>
+                        <itemgap>0</itemgap>
+                        <orientation>horizontal</orientation>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <include>CodecsVideoOSD2</include>
+                    </control>
                     <control type="label">
                         <visible>VideoPlayer.Content(LiveTV)</visible>
                         <posx>TextMargin</posx>
@@ -184,7 +195,7 @@
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>
-                        <posy>138</posy>
+                        <posy>135</posy>
                         <width>672</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
@@ -194,7 +205,7 @@
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>
-                        <posy>211</posy>
+                        <posy>205</posy>
                         <width>672</width>
                         <height>71</height>
                         <font>InfoDetailsFont</font>
@@ -205,10 +216,10 @@
                     <control type="grouplist">
                         <visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
                         <posx>40</posx>
-                        <posy>290</posy>
+                        <posy>285</posy>
                         <width>1006</width>
                         <height>408</height>
-                        <itemgap>-5</itemgap>
+                        <itemgap>-3</itemgap>
                         <orientation>horizontal</orientation>
                         <align>left</align>
                         <aligny>center</aligny>

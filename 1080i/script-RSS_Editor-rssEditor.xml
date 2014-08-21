@@ -66,21 +66,24 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="117" width="1920">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <height>117</height>
-                        <width>1920</width>
-                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
-                    </control>
-                    <control type="label">
-                        <posx>960</posx>
-                        <height>117</height>
-                        <width>1800</width>
-                        <align>center</align>
-                        <font>FacadeListMainFont</font>
-                        <include>TextColor_MainColor</include>
-                        <label>$INFO[ListItem.Label]</label>
+                    <control type="group">
+                        <include>ListFocusAnimation</include>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <height>117</height>
+                            <width>1920</width>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>960</posx>
+                            <height>117</height>
+                            <width>1800</width>
+                            <align>center</align>
+                            <font>FacadeListMainFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
                     </control>
                 </focusedlayout>
             </control>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
-    <visible>![Window.IsVisible(DialogSelect.xml) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(DialogSubtitles.xml) | Window.IsVisible(DialogAddonSettings.xml)| Window.IsVisible(VisualisationPresetList.xml)]</visible>
+    <visible>![Window.IsVisible(DialogSelect.xml) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(DialogSubtitles.xml) | Window.IsVisible(DialogAddonSettings.xml)| Window.IsVisible(VisualisationPresetList.xml)| Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
     <visible>Window.IsVisible(musicosd.xml) | Window.IsVisible(videoosd.xml) | [[Window.IsVisible(FullScreenVideo)|Window.IsVisible(visualisation)] + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]</visible>
-    <visible>![window.IsVisible(DialogVolumeBar.xml)|window.IsVisible(DialogMuteBug.xml) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
+    <visible>!window.IsVisible(DialogVolumeBar.xml)</visible>
     <include>TopBarOSDVisibleFadeEffect</include>
     <zorder>2</zorder>
     <controls>

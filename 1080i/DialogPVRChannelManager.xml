@@ -187,48 +187,51 @@
                     </control>
                 </itemlayout>
                 <focusedlayout width="960" height="195">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <height>195</height>
-                        <width>960</width>
-                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>236</width>
-                        <height>195</height>
-                        <include>SquareThumb</include>
-                        <include>ThumbBorder</include>
-                    </control>
-                    <control type="label">
-                        <posx>250</posx>
-                        <height>195</height>
-                        <width>80</width>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>FacadeListMainFont</font>
-                        <include>TextColor_MainColor</include>
-                        <info>ListItem.ChannelNumber</info>
-                    </control>
-                    <control type="label">
-                        <posx>300</posx>
-                        <posy>56</posy>
-                        <height>40</height>
-                        <width>600</width>
-                        <font>FacadeListMainFont</font>
-                        <include>TextColor_MainColor</include>
-                        <label>[B]$INFO[ListItem.Label][/B]</label>
-                    </control>
-                    <control type="label">
-                        <posx>300</posx>
-                        <posy>110</posy>
-                        <height>28</height>
-                        <width>600</width>
-                        <font>FacadeListSubFont</font>
-                        <include>TextColor_MainColor</include>
-                        <label>$INFO[ListItem.Property(ClientName)]</label>
+                    <control type="group">
+                        <include>ListFocusAnimation</include>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <height>195</height>
+                            <width>960</width>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>236</width>
+                            <height>195</height>
+                            <include>SquareThumb</include>
+                            <include>ThumbBorder</include>
+                        </control>
+                        <control type="label">
+                            <posx>250</posx>
+                            <height>195</height>
+                            <width>80</width>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>FacadeListMainFont</font>
+                            <include>TextColor_MainColor</include>
+                            <info>ListItem.ChannelNumber</info>
+                        </control>
+                        <control type="label">
+                            <posx>300</posx>
+                            <posy>56</posy>
+                            <height>40</height>
+                            <width>600</width>
+                            <font>FacadeListMainFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                        </control>
+                        <control type="label">
+                            <posx>300</posx>
+                            <posy>110</posy>
+                            <height>28</height>
+                            <width>600</width>
+                            <font>FacadeListSubFont</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$INFO[ListItem.Property(ClientName)]</label>
+                        </control>
                     </control>
                 </focusedlayout>
             </control>

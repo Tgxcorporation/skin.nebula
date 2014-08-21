@@ -643,7 +643,6 @@
                     <movement>1</movement>
                     <preloaditems>4</preloaditems>
                     <include>CardList_Layout</include>
-                    <scrolltime tween="sine" easing="out">300</scrolltime>
                 </control>
             </control>
             <control type="scrollbar" id="60">

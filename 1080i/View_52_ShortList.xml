@@ -33,88 +33,91 @@
             </control>
         </itemlayout>
         <focusedlayout condition="![Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(episodes) | Container.Content(seasons)]" height="270" width="1390">
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <height>270</height>
-                <width>1390</width>
-                <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
-            </control>
-            <control type="label">
-                <posx>TextMargin</posx>
-                <posy>25</posy>
-                <width>1290</width>
-                <aligny>top</aligny>
-                <font>InfoTitleFont</font>
-                <include>TextColor_MainColor</include>
-                <scroll>false</scroll>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="image">
-                <description>Default Seperator</description>
-                <posx>0</posx>
-                <posy>100</posy>
-                <width>1410</width>
-                <height>1</height>
-                <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
-            </control>
             <control type="group">
-                <visible>[Container.Content(songs)+!Skin.HasSetting(plexbmc)+!IsEmpty(ListItem.Rating)]</visible>
+                <include>ListFocusAnimation</include>
                 <control type="image">
-                    <posx>TextMargin</posx>
-                    <posy>130</posy>
-                    <include>Stars</include>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <height>270</height>
+                    <width>1390</width>
+                    <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                 </control>
                 <control type="label">
-                    <posx>260</posx>
-                    <posy>113</posy>
-                    <width>460</width>
-                    <height>71</height>
-                    <font>InfoRatingFont</font>
+                    <posx>TextMargin</posx>
+                    <posy>25</posy>
+                    <width>1290</width>
+                    <aligny>top</aligny>
+                    <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
-                    <label fallback="416">$INFO[ListItem.Rating]</label>
+                    <label>$INFO[ListItem.Label]</label>
                 </control>
-            </control>
-            <control type="label">
-                <posx>TextMargin</posx>
-                <posy>107</posy>
-                <width>605</width>
-                <height>71</height>
-                <font>InfoDetailsFont</font>
-                <include>TextColor_MainColor</include>
-                <scroll>false</scroll>
-                <label>$VAR[DetailsRow1]</label>
-            </control>
-            <control type="label">
-                <posx>TextMargin</posx>
-                <posy>180</posy>
-                <width>605</width>
-                <height>71</height>
-                <font>InfoDetailsFont</font>
-                <include>TextColor_MainColor</include>
-                <scroll>false</scroll>
-                <label>$VAR[DetailsRow2]</label>
-            </control>
-            <control type="label">
-                <posx>725</posx>
-                <posy>107</posy>
-                <width>605</width>
-                <height>71</height>
-                <font>InfoDetailsFont</font>
-                <include>TextColor_MainColor</include>
-                <scroll>false</scroll>
-                <label>$VAR[DetailsRow3]</label>
-            </control>
-            <control type="label">
-                <posx>725</posx>
-                <posy>180</posy>
-                <width>605</width>
-                <height>71</height>
-                <font>InfoDetailsFont</font>
-                <include>TextColor_MainColor</include>
-                <scroll>false</scroll>
-                <label>$VAR[DetailsRow4]</label>
+                <control type="image">
+                    <description>Default Seperator</description>
+                    <posx>0</posx>
+                    <posy>100</posy>
+                    <width>1410</width>
+                    <height>1</height>
+                    <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
+                </control>
+                <control type="group">
+                    <visible>[Container.Content(songs)+!Skin.HasSetting(plexbmc)+!IsEmpty(ListItem.Rating)]</visible>
+                    <control type="image">
+                        <posx>TextMargin</posx>
+                        <posy>130</posy>
+                        <include>Stars</include>
+                    </control>
+                    <control type="label">
+                        <posx>260</posx>
+                        <posy>113</posy>
+                        <width>460</width>
+                        <height>71</height>
+                        <font>InfoRatingFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>false</scroll>
+                        <label fallback="416">$INFO[ListItem.Rating]</label>
+                    </control>
+                </control>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>107</posy>
+                    <width>605</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$VAR[DetailsRow1]</label>
+                </control>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>180</posy>
+                    <width>605</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$VAR[DetailsRow2]</label>
+                </control>
+                <control type="label">
+                    <posx>725</posx>
+                    <posy>107</posy>
+                    <width>605</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$VAR[DetailsRow3]</label>
+                </control>
+                <control type="label">
+                    <posx>725</posx>
+                    <posy>180</posy>
+                    <width>605</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$VAR[DetailsRow4]</label>
+                </control>
             </control>
         </focusedlayout>
         <itemlayout condition="[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(episodes) | Container.Content(seasons)]" height="135" width="1390">
@@ -158,98 +161,101 @@
             </control>
         </itemlayout>
         <focusedlayout condition="[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(episodes) | Container.Content(seasons)]" height="270" width="1390">
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <height>270</height>
-                <width>1390</width>
-                <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
-            </control>
-            <control type="image">
-                <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-                <posx>15</posx>
-                <posy>25</posy>
-                <width>30</width>
-                <height>60</height>
-                <texture>$VAR[Overlay]</texture>
-                <aspectratio aligny="center">keep</aspectratio>
-            </control>
-            <control type="label">
-                <posx>TextMargin</posx>
-                <posy>25</posy>
-                <width>1290</width>
-                <aligny>top</aligny>
-                <font>InfoTitleFont</font>
-                <include>TextColor_MainColor</include>
-                <scroll>false</scroll>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="image">
-                <description>Default Seperator</description>
-                <posx>0</posx>
-                <posy>100</posy>
-                <width>1410</width>
-                <height>1</height>
-                <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
-            </control>
             <control type="group">
-                <visible>!IsEmpty(ListItem.Rating)</visible>
-                <visible>!Container.Content(Addons)</visible>
+                <include>ListFocusAnimation</include>
                 <control type="image">
-                    <posx>TextMargin</posx>
-                    <posy>130</posy>
-                    <include>Stars</include>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <height>270</height>
+                    <width>1390</width>
+                    <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                </control>
+                <control type="image">
+                    <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+                    <posx>15</posx>
+                    <posy>25</posy>
+                    <width>30</width>
+                    <height>60</height>
+                    <texture>$VAR[Overlay]</texture>
+                    <aspectratio aligny="center">keep</aspectratio>
                 </control>
                 <control type="label">
-                    <posx>260</posx>
-                    <posy>113</posy>
-                    <width>460</width>
-                    <height>71</height>
-                    <font>InfoRatingFont</font>
+                    <posx>TextMargin</posx>
+                    <posy>25</posy>
+                    <width>1290</width>
+                    <aligny>top</aligny>
+                    <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
-                    <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
+                    <label>$INFO[ListItem.Label]</label>
                 </control>
-            </control>
-            <control type="label">
-                <posx>TextMargin</posx>
-                <posy>107</posy>
-                <width>605</width>
-                <height>71</height>
-                <font>InfoDetailsFont</font>
-                <include>TextColor_MainColor</include>
-                <scroll>false</scroll>
-                <label>$VAR[DetailsRow1]</label>
-            </control>
-            <control type="label">
-                <posx>TextMargin</posx>
-                <posy>180</posy>
-                <width>605</width>
-                <height>71</height>
-                <font>InfoDetailsFont</font>
-                <include>TextColor_MainColor</include>
-                <scroll>false</scroll>
-                <label>$VAR[DetailsRow2]</label>
-            </control>
-            <control type="label">
-                <posx>725</posx>
-                <posy>107</posy>
-                <width>605</width>
-                <height>71</height>
-                <font>InfoDetailsFont</font>
-                <include>TextColor_MainColor</include>
-                <scroll>false</scroll>
-                <label>$VAR[DetailsRow3]</label>
-            </control>
-            <control type="label">
-                <posx>725</posx>
-                <posy>180</posy>
-                <width>605</width>
-                <height>71</height>
-                <font>InfoDetailsFont</font>
-                <include>TextColor_MainColor</include>
-                <scroll>false</scroll>
-                <label>$VAR[DetailsRow4]</label>
+                <control type="image">
+                    <description>Default Seperator</description>
+                    <posx>0</posx>
+                    <posy>100</posy>
+                    <width>1410</width>
+                    <height>1</height>
+                    <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
+                </control>
+                <control type="group">
+                    <visible>!IsEmpty(ListItem.Rating)</visible>
+                    <visible>!Container.Content(Addons)</visible>
+                    <control type="image">
+                        <posx>TextMargin</posx>
+                        <posy>130</posy>
+                        <include>Stars</include>
+                    </control>
+                    <control type="label">
+                        <posx>260</posx>
+                        <posy>113</posy>
+                        <width>460</width>
+                        <height>71</height>
+                        <font>InfoRatingFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>false</scroll>
+                        <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
+                    </control>
+                </control>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>107</posy>
+                    <width>605</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$VAR[DetailsRow1]</label>
+                </control>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>180</posy>
+                    <width>605</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$VAR[DetailsRow2]</label>
+                </control>
+                <control type="label">
+                    <posx>725</posx>
+                    <posy>107</posy>
+                    <width>605</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$VAR[DetailsRow3]</label>
+                </control>
+                <control type="label">
+                    <posx>725</posx>
+                    <posy>180</posy>
+                    <width>605</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$VAR[DetailsRow4]</label>
+                </control>
             </control>
         </focusedlayout>
     </include>

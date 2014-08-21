@@ -55,7 +55,6 @@
                 <onright>60</onright>
                 <ondown>2</ondown>
                 <onup>11</onup>
-                <scrolltime>200</scrolltime>
                 <pagecontrol>60</pagecontrol>
                 <orientation>vertical</orientation>
                 <itemlayout height="135" width="1920">
@@ -69,30 +68,33 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="315" width="1920">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <height>315</height>
-                        <width>1920</width>
-                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>460</posx>
-                        <posy>0</posy>
-                        <width>505</width>
-                        <height>315</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[Listitem.Icon]</texture>
-                        <include>ThumbBorder</include>
-                    </control>
-                    <control type="label">
-                        <posx>990</posx>
-                        <height>315</height>
-                        <width>870</width>
-                        <font>InfoTitleFont</font>
-                        <include>TextColor_MainColor</include>
-                        <scroll>false</scroll>
-                        <label>$INFO[ListItem.Label]</label>
+                    <control type="group">
+                        <include>ListFocusAnimation</include>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <height>315</height>
+                            <width>1920</width>
+                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>460</posx>
+                            <posy>0</posy>
+                            <width>505</width>
+                            <height>315</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture>$INFO[Listitem.Icon]</texture>
+                            <include>ThumbBorder</include>
+                        </control>
+                        <control type="label">
+                            <posx>990</posx>
+                            <height>315</height>
+                            <width>870</width>
+                            <font>InfoTitleFont</font>
+                            <include>TextColor_MainColor</include>
+                            <scroll>false</scroll>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
                     </control>
                 </focusedlayout>
             </control>

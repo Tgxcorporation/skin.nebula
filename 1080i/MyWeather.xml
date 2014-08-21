@@ -33,7 +33,6 @@
                 <focusposition>0</focusposition>
                 <movement>0</movement>
                 <preloaditems>4</preloaditems>
-                <scrolltime tween="cubic" easing="out">300</scrolltime>
                 <itemlayout height="425" width="450">
                     <control type="image">
                         <visible>!StringCompare(ListItem.Label,..)</visible>
