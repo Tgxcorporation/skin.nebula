@@ -75,10 +75,10 @@
                     <!-- CDART -->
                     <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(VideoPlayer.Cover)</visible>
                     <control type="image">
-                        <posx>70</posx>
-                        <posy>-122</posy>
-                        <width>315</width>
-                        <height>315</height>
+                        <posx>122</posx>
+                        <posy>-70</posy>
+                        <width>211</width>
+                        <height>211</height>
                         <texture diffuse="white/common/cdart_diffuse.png">$INFO[Player.Art(discart)]</texture>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <include>Animation_ViewsCDart</include>

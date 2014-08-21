@@ -1,4 +1,4 @@
 skin.nebula
 ==========
 
-Nebula skin for XBMC
+Nebula skin for XBMC/KODI
