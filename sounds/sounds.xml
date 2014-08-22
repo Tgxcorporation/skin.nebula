@@ -37,7 +37,7 @@
   <windows>
     <window>
       <name>InfoDialog</name>
-      <activate>click4.wav</activate>
+      <activate>click.wav</activate>
     </window>
   </windows>
 </sounds>
