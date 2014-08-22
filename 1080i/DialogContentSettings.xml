@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <defaultcontrol always="true">3</defaultcontrol>
+    <defaultcontrol always="true">20</defaultcontrol>
     <controls>
         <!-- <include>DimBG</include> -->
         <include>TopBar</include>
         <control type="group">
-            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="[Control.HasFocus(4)|Control.HasFocus(8999)|Control.HasFocus(9060)]">conditional</animation>
+            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="[Control.HasFocus(21)|Control.HasFocus(8999)|Control.HasFocus(9060)]">conditional</animation>
             <include>DialogOpenClose</include>
             <control type="image">
                 <posx>-760</posx>
@@ -47,7 +47,7 @@
                 <texture>$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorder</include>
             </control>
-            <control type="spincontrolex" id="3">
+            <control type="spincontrolex" id="20">
                 <description>Content Picker</description>
                 <posx>545</posx>
                 <posy>318</posy>
@@ -56,8 +56,8 @@
                 <!-- <align>left</align> -->
                 <onup>28</onup>
                 <ondown>5</ondown>
-                <onleft>4</onleft>
-                <onright>4</onright>
+                <onleft>21</onleft>
+                <onright>21</onright>
                 <subtype>text</subtype>
                 <include>LeftMenuButton</include>
             </control>
@@ -68,10 +68,10 @@
                 <width>1375</width>
                 <height>657</height>
                 <itemgap>0</itemgap>
-                <onup>3</onup>
+                <onup>20</onup>
                 <ondown>28</ondown>
-                <onleft>4</onleft>
-                <onright>4</onright>
+                <onleft>21</onleft>
+                <onright>21</onright>
             </control>
             <control type="button" id="7">
                 <description>Default Button</description>
@@ -99,26 +99,26 @@
                 <aligny>bottom</aligny>
                 <align>center</align>
                 <orientation>horizontal</orientation>
-                <control type="button" id="6">
+                <control type="button" id="22">
                     <label>$LOCALIZE[5]</label>
                     <onleft>29</onleft>
                     <onright>28</onright>
-                    <onup>3</onup>
-                    <ondown>3</ondown>
+                    <onup>20</onup>
+                    <ondown>20</ondown>
                 </control>
                 <control type="button" id="28">
                     <label>$LOCALIZE[186]</label>
-                    <onleft>6</onleft>
+                    <onleft>22</onleft>
                     <onright>29</onright>
-                    <onup>3</onup>
-                    <ondown>3</ondown>
+                    <onup>20</onup>
+                    <ondown>20</ondown>
                 </control>
                 <control type="button" id="29">
                     <label>$LOCALIZE[222]</label>
                     <onleft>28</onleft>
-                    <onright>6</onright>
-                    <onup>3</onup>
-                    <ondown>3</ondown>
+                    <onright>22</onright>
+                    <onup>20</onup>
+                    <ondown>20</ondown>
                 </control>
             </control>
             <!-- SIDE MENU -->
@@ -131,12 +131,12 @@
                     <include>LeftMenuTitleLabel</include>
                     <label>$LOCALIZE[24018]</label>
                 </control>
-                <control type="list" id="4">
+                <control type="list" id="21">
                     <posy>261</posy>
                     <include>LeftMenuButtonGroup</include>
-                    <onright>3</onright>
+                    <onright>20</onright>
                     <ondown>9</ondown>
-                    <onback>3</onback>
+                    <onback>20</onback>
                     <itemlayout width="660" height="78">
                         <control type="label">
                             <posx>TextMargin</posx>

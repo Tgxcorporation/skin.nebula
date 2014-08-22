@@ -188,6 +188,10 @@
                     <label>$LOCALIZE[24022]</label>
                     <include>LeftMenuButton</include>
                 </control>
+                <control type="button" id="12">
+                    <label>$LOCALIZE[518]</label>
+                    <include>LeftMenuButton</include>
+                </control>
             </control>
             <include>LeftMenuScroller</include>
         </control>

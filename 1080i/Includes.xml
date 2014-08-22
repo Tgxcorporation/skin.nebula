@@ -159,7 +159,7 @@
             <onup>9000</onup>
             <ondown condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</ondown>
             <ondown condition="Window.IsActive(Home.xml)">701</ondown>
-            <ondown condition="Window.IsActive(DialogContentSettings.xml)">4</ondown>
+            <ondown condition="Window.IsActive(DialogContentSettings.xml)">21</ondown>
             <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
             <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
             <ondown condition="Window.IsActive(SkinSettings.xml)">90000</ondown>
@@ -342,7 +342,7 @@
             <onup>9000</onup>
             <ondown condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</ondown>
             <ondown condition="Window.IsActive(Home.xml)">701</ondown>
-            <ondown condition="Window.IsActive(DialogContentSettings.xml)">4</ondown>
+            <ondown condition="Window.IsActive(DialogContentSettings.xml)">21</ondown>
             <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
             <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
             <ondown condition="Window.IsActive(SkinSettings.xml)">90000</ondown>

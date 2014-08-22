@@ -54,8 +54,7 @@
                     <altlabel>$LOCALIZE[31050]</altlabel>
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
-                <control type="radiobutton" id="5">
-                    <textwidth>450</textwidth>
+                <control type="button" id="5">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[24063]</label>
                 </control>
