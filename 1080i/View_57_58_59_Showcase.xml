@@ -309,15 +309,22 @@
                 </control>
             </control>
             <control type="button">
-                <posx>50</posx>
+                <posx>510</posx>
                 <posy>140</posy>
-                <width>200</width>
+                <width>450</width>
                 <height>720</height>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(59,-1)</onclick>
-                <onfocus>Control.Move(59,-1)</onfocus>
-                <onunfocus>Control.Move(59,-1)</onunfocus>
+            </control>
+            <control type="button">
+                <posx>960</posx>
+                <posy>140</posy>
+                <width>960</width>
+                <height>720</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onclick>Control.Move(59,1)</onclick>
             </control>
         </control>
         <control type="group">
@@ -503,15 +510,22 @@
                 </control>
             </control>
             <control type="button">
-                <posx>50</posx>
+                <posx>510</posx>
                 <posy>140</posy>
-                <width>200</width>
+                <width>450</width>
                 <height>520</height>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(58,-1)</onclick>
-                <onfocus>Control.Move(58,-1)</onfocus>
-                <onunfocus>Control.Move(58,-1)</onunfocus>
+            </control>
+            <control type="button">
+                <posx>960</posx>
+                <posy>140</posy>
+                <width>960</width>
+                <height>520</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onclick>Control.Move(58,1)</onclick>
             </control>
         </control>
         <control type="group">
@@ -690,15 +704,22 @@
                 </control>
             </control>
             <control type="button">
-                <posx>50</posx>
+                <posx>860</posx>
                 <posy>140</posy>
-                <width>200</width>
+                <width>530</width>
                 <height>520</height>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(57,-1)</onclick>
-                <onfocus>Control.Move(57,-1)</onfocus>
-                <onunfocus>Control.Move(57,-1)</onunfocus>
+            </control>
+            <control type="button">
+                <posx>1390</posx>
+                <posy>140</posy>
+                <width>530</width>
+                <height>520</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onclick>Control.Move(57,1)</onclick>
             </control>
         </control>
     </include>
