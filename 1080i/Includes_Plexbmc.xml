@@ -153,15 +153,22 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="button">
-                        <posx>50</posx>
+                        <posx>510</posx>
                         <posy>140</posy>
-                        <width>200</width>
-                        <height>720</height>
+                        <width>450</width>
+                        <height>520</height>
                         <texturefocus>-</texturefocus>
                         <texturenofocus>-</texturenofocus>
                         <onclick>Control.Move(900,-1)</onclick>
-                        <onfocus>Control.Move(900,-1)</onfocus>
-                        <onunfocus>Control.Move(900,-1)</onunfocus>
+                    </control>
+                    <control type="button">
+                        <posx>960</posx>
+                        <posy>140</posy>
+                        <width>960</width>
+                        <height>520</height>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                        <onclick>Control.Move(900,1)</onclick>
                     </control>
                     <control type="group">
                         <posx>0</posx>
@@ -360,15 +367,22 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="button">
-                        <posx>50</posx>
+                        <posx>510</posx>
                         <posy>140</posy>
-                        <width>200</width>
-                        <height>720</height>
+                        <width>450</width>
+                        <height>520</height>
                         <texturefocus>-</texturefocus>
                         <texturenofocus>-</texturenofocus>
                         <onclick>Control.Move(901,-1)</onclick>
-                        <onfocus>Control.Move(901,-1)</onfocus>
-                        <onunfocus>Control.Move(901,-1)</onunfocus>
+                    </control>
+                    <control type="button">
+                        <posx>960</posx>
+                        <posy>140</posy>
+                        <width>960</width>
+                        <height>520</height>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                        <onclick>Control.Move(901,1)</onclick>
                     </control>
                     <control type="group">
                         <posx>0</posx>
@@ -980,15 +994,22 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="button">
-                        <posx>50</posx>
+                        <posx>510</posx>
                         <posy>140</posy>
-                        <width>200</width>
+                        <width>450</width>
                         <height>720</height>
                         <texturefocus>-</texturefocus>
                         <texturenofocus>-</texturenofocus>
                         <onclick>Control.Move(311,-1)</onclick>
-                        <onfocus>Control.Move(311,-1)</onfocus>
-                        <onunfocus>Control.Move(311,-1)</onunfocus>
+                    </control>
+                    <control type="button">
+                        <posx>960</posx>
+                        <posy>140</posy>
+                        <width>960</width>
+                        <height>720</height>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                        <onclick>Control.Move(311,1)</onclick>
                     </control>
                     <control type="grouplist">
                         <posx>25</posx>
@@ -1350,15 +1371,22 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="button">
-                        <posx>50</posx>
+                        <posx>510</posx>
                         <posy>140</posy>
-                        <width>200</width>
+                        <width>450</width>
                         <height>720</height>
                         <texturefocus>-</texturefocus>
                         <texturenofocus>-</texturenofocus>
                         <onclick>Control.Move(312,-1)</onclick>
-                        <onfocus>Control.Move(312,-1)</onfocus>
-                        <onunfocus>Control.Move(312,-1)</onunfocus>
+                    </control>
+                    <control type="button">
+                        <posx>960</posx>
+                        <posy>140</posy>
+                        <width>960</width>
+                        <height>720</height>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                        <onclick>Control.Move(312,1)</onclick>
                     </control>
                     <control type="group">
                         <posx>540</posx>
@@ -1623,15 +1651,22 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="button">
-                        <posx>50</posx>
+                        <posx>510</posx>
                         <posy>140</posy>
-                        <width>200</width>
-                        <height>720</height>
+                        <width>450</width>
+                        <height>520</height>
                         <texturefocus>-</texturefocus>
                         <texturenofocus>-</texturenofocus>
                         <onclick>Control.Move(511,-1)</onclick>
-                        <onfocus>Control.Move(511,-1)</onfocus>
-                        <onunfocus>Control.Move(511,-1)</onunfocus>
+                    </control>
+                    <control type="button">
+                        <posx>960</posx>
+                        <posy>140</posy>
+                        <width>960</width>
+                        <height>520</height>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                        <onclick>Control.Move(511,1)</onclick>
                     </control>
                     <control type="group">
                         <posx>0</posx>
@@ -1783,15 +1818,22 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="button">
-                        <posx>50</posx>
+                        <posx>510</posx>
                         <posy>140</posy>
-                        <width>200</width>
-                        <height>720</height>
+                        <width>450</width>
+                        <height>520</height>
                         <texturefocus>-</texturefocus>
                         <texturenofocus>-</texturenofocus>
-                        <onclick>Control.Move(212,-1)</onclick>
-                        <onfocus>Control.Move(212,-1)</onfocus>
-                        <onunfocus>Control.Move(212,-1)</onunfocus>
+                        <onclick>Control.Move(211,-1)</onclick>
+                    </control>
+                    <control type="button">
+                        <posx>960</posx>
+                        <posy>140</posy>
+                        <width>960</width>
+                        <height>520</height>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                        <onclick>Control.Move(211,1)</onclick>
                     </control>
                     <control type="group">
                         <posx>0</posx>
@@ -2005,15 +2047,22 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="button">
-                        <posx>50</posx>
+                        <posx>510</posx>
                         <posy>140</posy>
-                        <width>200</width>
+                        <width>450</width>
                         <height>720</height>
                         <texturefocus>-</texturefocus>
                         <texturenofocus>-</texturenofocus>
                         <onclick>Control.Move(411,-1)</onclick>
-                        <onfocus>Control.Move(411,-1)</onfocus>
-                        <onunfocus>Control.Move(411,-1)</onunfocus>
+                    </control>
+                    <control type="button">
+                        <posx>960</posx>
+                        <posy>140</posy>
+                        <width>960</width>
+                        <height>720</height>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                        <onclick>Control.Move(411,1)</onclick>
                     </control>
                     <control type="group">
                         <posx>540</posx>
@@ -2255,15 +2304,22 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="button">
-                        <posx>50</posx>
+                        <posx>510</posx>
                         <posy>140</posy>
-                        <width>200</width>
+                        <width>450</width>
                         <height>720</height>
                         <texturefocus>-</texturefocus>
                         <texturenofocus>-</texturenofocus>
                         <onclick>Control.Move(412,-1)</onclick>
-                        <onfocus>Control.Move(412,-1)</onfocus>
-                        <onunfocus>Control.Move(412,-1)</onunfocus>
+                    </control>
+                    <control type="button">
+                        <posx>960</posx>
+                        <posy>140</posy>
+                        <width>960</width>
+                        <height>720</height>
+                        <texturefocus>-</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                        <onclick>Control.Move(412,1)</onclick>
                     </control>
                     <control type="group">
                         <posx>540</posx>
