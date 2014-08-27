@@ -132,6 +132,7 @@
                     <visible>Control.IsVisible(900)+!Skin.HasSetting(VerticalHome)</visible>
                     <control type="image">
                         <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -142,6 +143,7 @@
                     </control>
                     <control type="image">
                         <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -337,6 +339,7 @@
                     <visible>Control.IsVisible(901)+!Skin.HasSetting(VerticalHome)</visible>
                     <control type="image">
                         <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -347,6 +350,7 @@
                     </control>
                     <control type="image">
                         <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -955,6 +959,7 @@
                     <visible>Control.IsVisible(311)+!Skin.HasSetting(VerticalHome)</visible>
                     <control type="image">
                         <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -965,6 +970,7 @@
                     </control>
                     <control type="image">
                         <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -1323,6 +1329,7 @@
                     <visible>Control.IsVisible(312)+!Skin.HasSetting(VerticalHome)</visible>
                     <control type="image">
                         <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -1333,6 +1340,7 @@
                     </control>
                     <control type="image">
                         <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -1594,6 +1602,7 @@
                     <visible>Control.IsVisible(511)+!Skin.HasSetting(VerticalHome)</visible>
                     <control type="image">
                         <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -1604,6 +1613,7 @@
                     </control>
                     <control type="image">
                         <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -1752,6 +1762,7 @@
                     <visible>Control.IsVisible(212)+!Skin.HasSetting(VerticalHome)</visible>
                     <control type="image">
                         <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -1762,6 +1773,7 @@
                     </control>
                     <control type="image">
                         <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -1972,6 +1984,7 @@
                     <visible>Control.IsVisible(411)+!Skin.HasSetting(VerticalHome)</visible>
                     <control type="image">
                         <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -1982,6 +1995,7 @@
                     </control>
                     <control type="image">
                         <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -2220,6 +2234,7 @@
                     <visible>Control.IsVisible(412)+!Skin.HasSetting(VerticalHome)</visible>
                     <control type="image">
                         <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -2230,6 +2245,7 @@
                     </control>
                     <control type="image">
                         <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                        <fadetime>300</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
