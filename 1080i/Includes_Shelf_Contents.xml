@@ -26,12 +26,25 @@
             <control type="group">
                 <visible>Control.IsVisible(111)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
+                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>scale</aspectratio>
                     <texture fallback="white/common/BlackDotT.png">$INFO[Container(111).ListItem.thumb]</texture>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
+                    <posx>25</posx>
+                    <posy>148</posy>
+                    <width>520</width>
+                    <height>520</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture fallback="black/common/BlackDotT.png">$INFO[Container(111).ListItem.thumb]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -89,6 +102,7 @@
                 <visible>Control.IsVisible(211)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -99,6 +113,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -163,6 +178,7 @@
                 <visible>Control.IsVisible(311)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -173,6 +189,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -339,6 +356,7 @@
                 <visible>Control.IsVisible(312)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -349,6 +367,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -515,6 +534,7 @@
                 <visible>Control.IsVisible(313)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -525,6 +545,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -691,6 +712,7 @@
                 <visible>Control.IsVisible(314)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -701,6 +723,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -815,6 +838,7 @@
                 <visible>Control.IsVisible(315)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -825,6 +849,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -939,6 +964,7 @@
                 <visible>Control.IsVisible(316)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -949,6 +975,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1063,6 +1090,7 @@
                 <visible>Control.IsVisible(411)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1073,6 +1101,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1239,6 +1268,7 @@
                 <visible>Control.IsVisible(412)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1249,6 +1279,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1415,6 +1446,7 @@
                 <visible>Control.IsVisible(413)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1425,6 +1457,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1591,6 +1624,7 @@
                 <visible>Control.IsVisible(511)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1601,6 +1635,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1715,6 +1750,7 @@
                 <visible>Control.IsVisible(512)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1725,6 +1761,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1839,6 +1876,7 @@
                 <visible>Control.IsVisible(513)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1849,6 +1887,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1963,6 +2002,7 @@
                 <visible>Control.IsVisible(514)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1973,6 +2013,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -2087,6 +2128,7 @@
                 <visible>Control.IsVisible(515)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -2097,6 +2139,7 @@
                 </control>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -2211,6 +2254,7 @@
                 <visible>Control.IsVisible(516)+!Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
                     <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -2221,6 +2265,7 @@
                 </control>
                 <control type="image">
                     <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <fadetime>300</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>

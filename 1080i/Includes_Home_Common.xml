@@ -36,6 +36,7 @@
         </itemlayout>
         <focusedlayout height="425" width="550">
             <control type="image">
+                <animation effect="fade" start="100" end="0" time="100">Focus</animation>
                 <posx>40</posx>
                 <posy>120</posy>
                 <width>490</width>
@@ -82,6 +83,7 @@
         </itemlayout>
         <focusedlayout height="425" width="550">
             <control type="image">
+                <animation effect="fade" start="100" end="0" time="100">Focus</animation>
                 <posx>40</posx>
                 <posy>120</posy>
                 <width>490</width>
@@ -128,6 +130,7 @@
         </itemlayout>
         <focusedlayout height="425" width="550">
             <control type="image">
+                <animation effect="fade" start="100" end="0" time="100">Focus</animation>
                 <posx>40</posx>
                 <posy>120</posy>
                 <width>490</width>
@@ -174,6 +177,7 @@
         </itemlayout>
         <focusedlayout height="425" width="550">
             <control type="image">
+                <animation effect="fade" start="100" end="0" time="100">Focus</animation>
                 <posx>40</posx>
                 <posy>120</posy>
                 <width>490</width>
@@ -218,7 +222,7 @@
         </itemlayout>
         <focusedlayout height="425" width="550">
             <control type="image">
-                <visible>!StringCompare(ListItem.Label,..)</visible>
+                <animation effect="fade" start="100" end="0" time="100">Focus</animation>
                 <posx>40</posx>
                 <posy>120</posy>
                 <width>490</width>
@@ -263,7 +267,7 @@
         </itemlayout>
         <focusedlayout height="425" width="550">
             <control type="image">
-                <visible>!StringCompare(ListItem.Label,..)</visible>
+                <animation effect="fade" start="100" end="0" time="100">Focus</animation>
                 <posx>40</posx>
                 <posy>120</posy>
                 <width>490</width>
@@ -308,7 +312,7 @@
         </itemlayout>
         <focusedlayout height="425" width="550">
             <control type="image">
-                <visible>!StringCompare(ListItem.Label,..)</visible>
+                <animation effect="fade" start="100" end="0" time="100">Focus</animation>
                 <posx>40</posx>
                 <posy>120</posy>
                 <width>490</width>
