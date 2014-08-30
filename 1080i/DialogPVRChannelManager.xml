@@ -169,7 +169,7 @@
                 <pagecontrol>60</pagecontrol>
                 <itemlayout width="960" height="78">
                     <control type="label">
-                        <posx>250</posx>
+                        <posx>210</posx>
                         <height>78</height>
                         <width>80</width>
                         <align>center</align>
@@ -207,7 +207,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="label">
-                            <posx>250</posx>
+                            <posx>210</posx>
                             <height>195</height>
                             <width>80</width>
                             <align>center</align>

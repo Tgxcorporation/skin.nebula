@@ -83,7 +83,7 @@
                     <ondown>9009</ondown>
                     <itemlayout height="78" width="1920">
                         <control type="label">
-                            <posx>960</posx>
+                            <posx>TextMargin</posx>
                             <height>78</height>
                             <width>1800</width>
                             <align>center</align>
@@ -111,7 +111,7 @@
                                 <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="label">
-                                <posx>960</posx>
+                                <posx>TextMargin</posx>
                                 <height>78</height>
                                 <width>1800</width>
                                 <align>center</align>

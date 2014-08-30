@@ -44,7 +44,7 @@
                 <pagecontrol>60</pagecontrol>
                 <itemlayout width="1920" height="135">
                     <control type="label">
-                        <posx>960</posx>
+                        <posx>TextMargin</posx>
                         <width>1800</width>
                         <posy>27</posy>
                         <aligny>top</aligny>
@@ -54,7 +54,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <posx>960</posx>
+                        <posx>TextMargin</posx>
                         <width>1800</width>
                         <posy>73</posy>
                         <aligny>top</aligny>
@@ -75,7 +75,7 @@
                             <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
-                            <posx>960</posx>
+                            <posx>TextMargin</posx>
                             <width>1800</width>
                             <posy>27</posy>
                             <aligny>top</aligny>
@@ -85,7 +85,7 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>960</posx>
+                            <posx>TextMargin</posx>
                             <width>1800</width>
                             <posy>73</posy>
                             <aligny>top</aligny>
