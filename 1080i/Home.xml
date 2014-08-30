@@ -2,7 +2,7 @@
 <window id="0">
     <defaultcontrol always="true">300</defaultcontrol>
     <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,amberskin,nocat)</onload>
-    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=300&amp;group=CustomGroupName1|pictures|CustomGroupName2|addons|CustomGroupName3|videos|CustomGroupName4|movies|CustomGroupName5|tvshows|CustomGroupName6|music|CustomGroupName7|clips|concerts|CustomGroupName8|livetv|favourites|CustomGroupName9|dvd|weather|settings|quit)</onload>
+    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=300&amp;group=CustomGroupName1|pictures|CustomGroupName2|addons|CustomGroupName3|videos|CustomGroupName4|movies|CustomGroupName5|tvshows|CustomGroupName6|music|CustomGroupName7|clips|concerts|CustomGroupName8|livetv|radio|favourites|CustomGroupName9|dvd|weather|settings|quit)</onload>
     <onload condition="!Skin.HasSetting(Hide.Favourites)">RunScript(script.favourites)</onload>
     <onload condition="!Skin.HasSetting(plexbmc)">SetProperty(SkinWidgets_RandomItems_Update,true)</onload>
     <controls>

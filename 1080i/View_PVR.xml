@@ -42,6 +42,92 @@
             <visible>ListItem.HasTimer</visible>
         </control>
     </include>
+    <include name="PVRLeftMenu">
+        <control type="group">
+            <include>LeftMenu</include>
+            <control type="grouplist" id="9000">
+                <include>LeftMenuButtonGroup</include>
+                <onright>50</onright>
+                <ondown>9000</ondown>
+                <onback>50</onback>
+                <control type="label" id="7965">
+                    <include>LeftMenuTitleLabel</include>
+                    <label>$LOCALIZE[33063]</label>
+                </control>
+                <control type="button" id="100">
+                    <description>Channels</description>
+                    <label>19019</label>
+                    <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">NextChannelGroup</onclick>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+                    <include>LeftMenuButton</include>
+                </control>
+                <control type="button" id="101">
+                    <description>TV Guide</description>
+                    <label>22020</label>
+                    <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+                    <include>LeftMenuButton</include>
+                </control>
+                <control type="button" id="102">
+                    <description>Recordings</description>
+                    <label>19163</label>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+                    <include>LeftMenuButton</include>
+                </control>
+                <control type="button" id="103">
+                    <description>Timers</description>
+                    <label>19040</label>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+                    <include>LeftMenuButton</include>
+                </control>
+                <control type="button" id="104">
+                    <description>Search</description>
+                    <label>137</label>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+                    <include>LeftMenuButton</include>
+                </control>
+                <control type="label" id="9183">
+                    <include>LeftMenuTitleLabel</include>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[582]</label>
+                </control>
+                <control type="button" id="28">
+                    <description>Channel Groups</description>
+                    <include>LeftMenuButton</include>
+                    <label>-</label>
+                </control>
+                <control type="radiobutton" id="5">
+                    <description>Group recording items by folder structure</description>
+                    <label>19270</label>
+                    <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+                    <include>LeftMenuButton</include>
+                </control>
+                <control type="button" id="2">
+                    <visible>Window.IsActive(MyPVRGuide.xml)</visible>
+                    <description>View As button</description>
+                    <label>-</label>
+                    <include>LeftMenuButton</include>
+                </control>
+                <control type="button" id="3">
+                    <description>Sort by button</description>
+                    <label>103</label>
+                    <include>LeftMenuButton</include>
+                </control>
+                <control type="togglebutton" id="4">
+                    <description>Sort asc</description>
+                    <label>31051</label>
+                    <altlabel>31050</altlabel>
+                    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                    <include>LeftMenuButton</include>
+                </control>
+            </control>
+        </control>
+    </include>
     <include name="View_50_BigList_PVR_LiveTVChannelView">
         <control type="group">
             <visible>Control.IsVisible(11)</visible>

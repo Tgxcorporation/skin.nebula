@@ -53,25 +53,25 @@
                     <width>1920</width>
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="button" id="11">
+                <control type="edit" id="11">
                     <width>1920</width>
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="button" id="16">
+                <control type="edit" id="16">
                     <width>1920</width>
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="button" id="13">
+                <control type="edit" id="13">
                     <label>$LOCALIZE[1013]</label>
                     <width>1920</width>
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="button" id="14">
+                <control type="edit" id="14">
                     <label>$LOCALIZE[1014]</label>
                     <width>1920</width>
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="button" id="15">
+                <control type="edit" id="15">
                     <label>$LOCALIZE[15052]</label>
                     <width>1920</width>
                     <include>LeftMenuButton</include>

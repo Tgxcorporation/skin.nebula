@@ -25,8 +25,8 @@
         <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.Property(Icon))">$INFO[ListItem.Property(Icon)]</value>
         <value condition="!IsEmpty(ListItem.thumb)">$INFO[ListItem.thumb]</value>
-        <value condition="StringCompare(ListItem.thumb,)+[Window.IsActive(MyPVR.xml)+Control.isvisible(12)]">$VAR[Theme.Color]/defaultRadioBig.png</value>
-        <value condition="StringCompare(ListItem.thumb,)+[Window.IsActive(MyPVR.xml)+!Control.isvisible(12)]">$VAR[Theme.Color]/defaultChannelTvBig_Wide.png</value>
+        <value condition="StringCompare(ListItem.thumb,)+!IsEmpty(Window.Property(IsRadio))">$VAR[Theme.Color]/defaultRadioBig.png</value>
+        <value condition="StringCompare(ListItem.thumb,)+[Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">$VAR[Theme.Color]/defaultChannelTvBig_Wide.png</value>
         <value condition="StringCompare(ListItem.Label,..)+[Container.content(episodes)|Window.IsActive(MyPics.xml)|Window.IsActive(MyVideoPlaylist.xml)]">$VAR[Theme.Color]/defaultFolderBackEpisode.png</value>
         <value condition="StringCompare(ListItem.Label,..)+[Container.content(actors)|Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.Content(Seasons)]">$VAR[Theme.Color]/defaultFolderBackPoster.png</value>
         <value condition="StringCompare(ListItem.Label,..)">$VAR[Theme.Color]/defaultFolderBack.png</value>
@@ -155,8 +155,9 @@
         <value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]]</value>
     </variable>
     <variable name="Details">
-        <value condition="Window.IsActive(MyPVR.xml)+[control.isvisible(13)|control.isvisible(14)|control.isvisible(17)]">$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]$INFO[ListItem.Date,     ]</value>
-        <value condition="Window.IsActive(MyPVR.xml)+[control.isvisible(11)|control.isvisible(12)|control.isvisible(14)|control.isvisible(17)|control.isvisible(15)|control.isvisible(16)]">$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]     $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
+        <value condition="Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRTimers.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRGuide.xml)">$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]     $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
+        <!-- <value condition="Window.IsActive(MyPVR.xml)+[control.isvisible(13)|control.isvisible(14)|control.isvisible(17)]">$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]$INFO[ListItem.Date,     ]</value>
+        <value condition="Window.IsActive(MyPVR.xml)+[control.isvisible(11)|control.isvisible(12)|control.isvisible(14)|control.isvisible(17)|control.isvisible(15)|control.isvisible(16)]">$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]     $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value> -->
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,,     ]$INFO[ListItem.Size]</value>
         <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album)">$INFO[ListItem.Artist]$INFO[ListItem.Year,     ]$INFO[ListItem.Genre,     ]</value>
         <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,     ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]     $INFO[ListItem.Season,$LOCALIZE[31973],.]$INFO[ListItem.Episode]</value>
@@ -241,9 +242,13 @@
         <value condition="!IsEmpty(Skin.String(Weather.Background))">$INFO[Skin.String(Weather.Background)]</value>
         <value>special://skin/backgrounds/Weather.jpg</value>
     </variable> -->
-    <variable name="Pvr.Art">
-        <value condition="!IsEmpty(Skin.String(Pvr.Background))">$INFO[Skin.String(Pvr.Background)]</value>
-        <value>special://skin/backgrounds/Pvr.jpg</value>
+    <variable name="Tv.Art">
+        <value condition="!IsEmpty(Skin.String(Tv.Background))">$INFO[Skin.String(Tv.Background)]</value>
+        <value>special://skin/backgrounds/Tv.jpg</value>
+    </variable>
+    <variable name="Radio.Art">
+        <value condition="!IsEmpty(Skin.String(Radio.Background))">$INFO[Skin.String(Radio.Background)]</value>
+        <value>special://skin/backgrounds/Radio.jpg</value>
     </variable>
     <variable name="Pictures.Art">
         <value condition="![SubString(listitem.filenameandpath,plugin://)|SubString(listitem.filenameandpath,addons://)|StringCompare(listitem.filenameandpath,add)]">$INFO[listitem.filenameandpath]</value>
@@ -259,7 +264,8 @@
         <value condition="Window.IsActive(myPrograms.xml)|Window.IsActive(CustomAddons.xml)|Window.IsActive(AddonBrowser.xml)">$VAR[Addons.Art]</value>
         <value condition="Window.IsActive(FileManager.xml)|Window.IsActive(Settings.xml)|Window.IsActive(SettingsCategory.xml)|Window.IsActive(SettingsProfile.xml)|Window.IsActive(SettingsSystemInfo.xml)|Window.IsActive(SkinSettings.xml)">$VAR[Settings.Art]</value>
         <value condition="Window.IsActive(MyMusicPlaylistEditor.xml)|Window.IsActive(SmartPlaylistEditor.xml)|Window.IsActive(MusicVisualization.xml)|Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)|Window.IsActive(MyMusicPlaylist.xml)|Window.IsActive(MyMusicPlaylistEditor.xml)">$VAR[Music.Art]</value>
-        <value condition="Window.IsActive(DialogContentSettings.xml)|Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(MyPVR.xml)">$VAR[Pvr.Art]</value>
+        <value condition="!IsEmpty(Window.Property(IsRadio))">$VAR[Radio.Art]</value>
+        <value condition="Window.IsActive(DialogContentSettings.xml)|Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)">$VAR[Tv.Art]</value>
         <value condition="Window.IsActive(CustomMoviesHomeButton.xml)">$VAR[Settings.Art]</value>
         <value condition="Window.IsActive(Startup.xml)">$VAR[Favourites.Art]</value>
         <!-- <value condition="Window.IsActive(MyWeather.xml)">$VAR[Weather.Art]</value> -->

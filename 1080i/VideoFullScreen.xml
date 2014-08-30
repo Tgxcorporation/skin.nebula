@@ -13,7 +13,7 @@
                     <posx>-200</posx>
                     <posy>-85</posy>
                     <width>2320</width>
-                    <height>385</height>
+                    <height>445</height>
                     <texture border="83">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                 </control>
                 <control type="label" id="10">
@@ -22,7 +22,7 @@
                     <width>1840</width>
                     <height>56</height>
                     <align>left</align>
-                    <aligny>center</aligny>
+                    <aligny>top</aligny>
                     <font>NotificationFont</font>
                     <label>-</label>
                     <wrapmultiline>true</wrapmultiline>
@@ -33,7 +33,7 @@
                     <width>1840</width>
                     <height>56</height>
                     <align>left</align>
-                    <aligny>center</aligny>
+                    <aligny>top</aligny>
                     <font>NotificationFont</font>
                     <label>-</label>
                     <wrapmultiline>true</wrapmultiline>
@@ -42,9 +42,9 @@
                     <posx>40</posx>
                     <posy>160</posy>
                     <width>1840</width>
-                    <height>56</height>
+                    <height>100</height>
                     <align>left</align>
-                    <aligny>center</aligny>
+                    <aligny>top</aligny>
                     <font>NotificationFont</font>
                     <label>-</label>
                     <wrapmultiline>true</wrapmultiline>

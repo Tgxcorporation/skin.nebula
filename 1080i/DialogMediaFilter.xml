@@ -61,7 +61,7 @@
                 <description>Default SpinControlex</description>
                 <include>LeftMenuButton</include>
             </control>
-            <control type="sliderex" id="10">
+            <control type="sliderex" id="13">
                 <description>Default Slider</description>
                 <include>LeftMenuButton</include>
             </control>

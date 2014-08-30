@@ -467,12 +467,20 @@
             <property name="submenuVisibility">CustomGroupName8</property>
         </item>
         <item id="300">
-            <visible>System.GetBool(pvrmanager.enabled)</visible>
+            <visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(Tv.Hide)</visible>
             <label>$LOCALIZE[31500]</label>
-            <thumb fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Icon)]</icon>
-            <onclick>ActivateWindowAndFocus(PVR)</onclick>
+            <thumb fallback="special://skin/backgrounds/Tv.jpg">$INFO[Skin.String(Tv.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Tv.jpg">$INFO[Skin.String(Tv.Icon)]</icon>
+            <onclick>ActivateWindow(TVChannels)</onclick>
             <property name="submenuVisibility">livetv</property>
+        </item>
+        <item id="301">
+            <visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(Radio.Hide)</visible>
+            <label>$LOCALIZE[19021]</label>
+            <thumb fallback="special://skin/backgrounds/Radio.jpg">$INFO[Skin.String(Radio.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Radio.jpg">$INFO[Skin.String(Radio.Icon)]</icon>
+            <onclick>ActivateWindow(RadioChannels)</onclick>
+            <property name="submenuVisibility">radio</property>
         </item>
         <item id="7">
             <visible>!Skin.HasSetting(Favourites.Hide)+!Skin.HasSetting(BlackGlassMode)</visible>

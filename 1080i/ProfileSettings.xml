@@ -27,7 +27,7 @@
                 <height>172</height>
                 <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
-            <control type="label" id="1000">
+            <control type="label" id="102">
                 <posx>TextMargin</posx>
                 <posy>273</posy>
                 <width>1800</width>
@@ -36,7 +36,7 @@
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
             </control>
-            <control type="label" id="1001">
+            <control type="label" id="103">
                 <posx>TextMargin</posx>
                 <posy>360</posy>
                 <width>1800</width>
@@ -52,7 +52,7 @@
                 <height>309</height>
                 <texture>$VAR[Theme.Color]/defaultArtistBig.png</texture>
             </control>
-            <control type="image" id="2">
+            <control type="image" id="101">
                 <fadetime>300</fadetime>
                 <posx>25</posx>
                 <posy>408</posy>
@@ -122,6 +122,14 @@
                     <label>$LOCALIZE[222]</label>
                 </control>
             </control>
+        </control>
+        <control type="label" id="2">
+            <description>header label</description>
+            <left>4000</left>
+            <top>20</top>
+            <width>620</width>
+            <height>30</height>
+            <label>-</label>
         </control>
     </controls>
 </window>

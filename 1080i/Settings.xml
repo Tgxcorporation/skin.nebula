@@ -148,7 +148,7 @@
                     </item>
                     <item id="11">
                         <label>$LOCALIZE[31500]</label>
-                        <label2>special://skin/backgrounds/Pvr.jpg</label2>
+                        <label2>special://skin/backgrounds/Tv.jpg</label2>
                         <onclick>activateWindow(PVRSettings)</onclick>
                     </item>
                     <item id="1">
