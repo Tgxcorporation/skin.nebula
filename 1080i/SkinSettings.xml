@@ -1076,11 +1076,6 @@
                             <label>$INFO[Skin.String(CustomHome.9.Label)]</label>
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=CustomGroupName9)</onclick>
                         </item>
-                        <item id="16">
-                            <visible>System.GetBool(pvrmanager.enabled)</visible>
-                            <label>$LOCALIZE[31500]</label>
-                            <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=livetv)</onclick>
-                        </item>
                         <item id="8">
                             <visible>!Skin.HasSetting(DVD.Hide)</visible>
                             <label>$LOCALIZE[427]</label>
