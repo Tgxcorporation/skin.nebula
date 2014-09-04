@@ -629,7 +629,7 @@
                         <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                     </control>
                     <control type="group">
-                        <visible>![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
+                        <visible>[[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo] + ![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
                         <include>NowPlayingVisibleFadeEffect</include>
                         <control type="label">
                             <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]">Conditional</animation>
