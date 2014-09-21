@@ -128,7 +128,7 @@
             <control type="image">
                 <include>UpperFade</include>
                 <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
-                <fadetime>300</fadetime>
+                <fadetime>250</fadetime>
                 <posx>25</posx>
                 <posy>148</posy>
                 <width>870</width>
@@ -140,7 +140,7 @@
             <control type="image">
                 <include>UpperFade</include>
                 <visible>Skin.HasSetting(Theme.Color.Black)</visible>
-                <fadetime>300</fadetime>
+                <fadetime>250</fadetime>
                 <posx>25</posx>
                 <posy>148</posy>
                 <width>870</width>
