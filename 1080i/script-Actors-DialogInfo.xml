@@ -282,7 +282,7 @@
                     </itemlayout>
                     <focusedlayout height="135" width="1420">
                         <control type="group">
-                            <include>ListFocusAnimation</include>
+                            <include>ButtonWideFocusAnimation</include>
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
