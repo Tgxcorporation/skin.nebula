@@ -537,7 +537,7 @@
                     <height>892</height>
                     <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                 </control>
-                <control type="fixedlist" id="50">
+                <control type="list" id="50">
                     <viewtype label="31091">Large List</viewtype>
                     <posx>0</posx>
                     <posy>183</posy>
@@ -549,8 +549,6 @@
                     <onup>50</onup>
                     <ondown>50</ondown>
                     <preloaditems>4</preloaditems>
-                    <focusposition>1</focusposition>
-                    <!-- <movement>0</movement> -->
                     <include>BigList_Layout</include>
                     <content>
                         <item id="2">

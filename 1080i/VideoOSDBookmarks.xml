@@ -122,14 +122,17 @@
                 <onup>11</onup>
                 <ondown>9001</ondown>
                 <control type="button" id="2">
+                    <include>ButtonFocusAnimation</include>
                     <description>Create Bookmark button</description>
                     <label>$LOCALIZE[294]</label>
                 </control>
                 <control type="button" id="3">
+                    <include>ButtonFocusAnimation</include>
                     <description>Clear Bookmark button</description>
                     <label>$LOCALIZE[296]</label>
                 </control>
                 <control type="button" id="4">
+                    <include>ButtonFocusAnimation</include>
                     <description>Clear Bookmark button</description>
                     <label>$LOCALIZE[20406]</label>
                     <visible>videoplayer.content(episodes)</visible>

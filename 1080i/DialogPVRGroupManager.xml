@@ -88,7 +88,7 @@
                 </itemlayout>
                 <focusedlayout width="640" height="78">
                     <control type="group">
-                        <include>ListFocusAnimation</include>
+                        <include>ButtonFocusAnimation</include>
                         <control type="image">
                             <visible>control.hasfocus(13)</visible>
                             <posx>0</posx>
@@ -140,7 +140,7 @@
                 </itemlayout>
                 <focusedlayout width="640" height="195">
                     <control type="group">
-                        <include>ListFocusAnimation</include>
+                        <include>ButtonFocusAnimation</include>
                         <control type="image">
                             <visible>control.hasfocus(11)</visible>
                             <posx>0</posx>
@@ -202,7 +202,7 @@
                 </itemlayout>
                 <focusedlayout width="640" height="195">
                     <control type="group">
-                        <include>ListFocusAnimation</include>
+                        <include>ButtonFocusAnimation</include>
                         <control type="image">
                             <visible>control.hasfocus(12)</visible>
                             <posx>0</posx>
@@ -257,6 +257,7 @@
                 <onright>9001</onright>
                 <control type="button" id="29">
                     <description>OK</description>
+                    <include>ButtonFocusAnimation</include>
                     <label>$LOCALIZE[186]</label>
                 </control>
             </control>
