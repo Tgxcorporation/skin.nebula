@@ -38,13 +38,15 @@
             <include>OpenClose</include>
             <visible>Control.IsVisible(11)</visible>
             <include>WindowTitle</include>
-            <label>$LOCALIZE[19023]</label>
+            <!-- <label>$LOCALIZE[19023]$INFO[Container.FolderName, - ]</label> -->
+            <label>$INFO[Container.FolderName]</label>
         </control>
         <control type="label">
             <include>OpenClose</include>
             <visible>Control.IsVisible(12)</visible>
             <include>WindowTitle</include>
-            <label>$LOCALIZE[19024]</label>
+            <!-- <label>$LOCALIZE[19024]$INFO[Container.FolderName, - ]</label> -->
+            <label>$INFO[Container.FolderName]</label>
         </control>
         <control type="label">
             <include>OpenClose</include>
