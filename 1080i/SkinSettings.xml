@@ -173,6 +173,18 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(ManualScroll)</onclick>
                         </item>
+                        <item id="27">
+                            <visible>Skin.HasSetting(RssTicker)</visible>
+                            <label>$LOCALIZE[31019]</label>
+                            <label2>$LOCALIZE[107]</label2>
+                            <onclick>Skin.ToggleSetting(RssTicker)</onclick>
+                        </item>
+                        <item id="27">
+                            <visible>!Skin.HasSetting(RssTicker)</visible>
+                            <label>$LOCALIZE[31019]</label>
+                            <label2>$LOCALIZE[106]</label2>
+                            <onclick>Skin.ToggleSetting(RssTicker)</onclick>
+                        </item>
                         <item id="1001">
                             <label/>
                             <label2>$LOCALIZE[14086]</label2>
@@ -468,7 +480,6 @@
                             <label>$LOCALIZE[31038]</label>
                             <onclick>Skin.ResetSettings</onclick>
                             <onclick>XBMC.ReloadSkin()</onclick>
-                            <icon>$VAR[Theme.Color]/defaultIconWarning.png</icon>
                         </item>
                     </content>
                 </control>

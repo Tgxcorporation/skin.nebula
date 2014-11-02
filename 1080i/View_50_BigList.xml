@@ -120,6 +120,7 @@
                         </control>
                     </control>
                     <control type="label">
+                        <!-- <visible>!IntegerGreaterThan(ListItem.Rating,0)</visible> -->
                         <posx>TextMargin</posx>
                         <posy>65</posy>
                         <width>670</width>

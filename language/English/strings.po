@@ -92,7 +92,11 @@ msgctxt "#31018"
 msgid "Cover Wrap"
 msgstr ""
 
-#empty strings from id 31019 to 31019
+msgctxt "#31019"
+msgid "Enable Rss ticker on main screens (only in list views)"
+msgstr ""
+
+#empty strings from id 31020 to 31019
 
 msgctxt "#31020"
 msgid "Recently Added"
