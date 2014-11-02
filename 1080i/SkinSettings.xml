@@ -150,13 +150,13 @@
                             <onclick>Skin.ToggleSetting(Hide_Unwatched_Marks)</onclick>
                         </item>
                         <item id="2">
-                            <visible>Skin.HasSetting(AutoScroll)</visible>
+                            <visible>!Skin.HasSetting(AutoScroll)</visible>
                             <label>$LOCALIZE[20189]</label>
                             <label2>$LOCALIZE[107]</label2>
                             <onclick>Skin.ToggleSetting(AutoScroll)</onclick>
                         </item>
                         <item id="2">
-                            <visible>!Skin.HasSetting(AutoScroll)</visible>
+                            <visible>Skin.HasSetting(AutoScroll)</visible>
                             <label>$LOCALIZE[20189]</label>
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(AutoScroll)</onclick>
@@ -173,7 +173,7 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(ManualScroll)</onclick>
                         </item>
-                        <item id="1002">
+                        <item id="1001">
                             <label/>
                             <label2>$LOCALIZE[14086]</label2>
                             <onclick>noop</onclick>
@@ -231,7 +231,7 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(PVRChannelListBig)</onclick>
                         </item> -->
-                        <item id="60">
+                        <item id="1002">
                             <label/>
                             <label2>$LOCALIZE[513]</label2>
                             <onclick>noop</onclick>
@@ -289,7 +289,7 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(ArtistView)</onclick>
                         </item>
-                        <item id="1001">
+                        <item id="1003">
                             <label/>
                             <label2>$LOCALIZE[31029]</label2>
                             <onclick>noop</onclick>
