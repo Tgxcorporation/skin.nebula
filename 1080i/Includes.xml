@@ -30,6 +30,12 @@
     <include file="View_5050_CardList.xml"/>
     <include file="View_PVR.xml"/>
     <include file="script-skinshortcuts-includes.xml"/>
+    <include name="Dummy_Time">
+        <control type="label" id="889988">
+            <posx>3000</posx>
+            <label>$INFO[System.Time(hh)]</label>
+        </control>
+    </include>
     <include name="Player_Show">
         <control type="image">
             <visible>Player.HasVideo + !Skin.HasSetting(Show_Player) + !Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
@@ -1051,6 +1057,6 @@
         <width>1385</width>
     </include>
     <include name="myautoscroll">
-        <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+        <autoscroll delay="5000" time="2500" repeat="10000">true</autoscroll>
     </include>
 </includes>
