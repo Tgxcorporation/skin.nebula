@@ -72,6 +72,10 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Add-on de Subtítulos"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "Elementos"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "Memoria usada:"

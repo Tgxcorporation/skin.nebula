@@ -44,6 +44,10 @@ msgctxt "#31114"
 msgid "Multi Image"
 msgstr "Више слика"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "Stavki"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "Iskorišćenost memorije:"

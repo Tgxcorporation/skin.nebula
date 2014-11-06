@@ -108,6 +108,10 @@ msgctxt "#31027"
 msgid "Show Plot"
 msgstr "Mostrar argumento"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Activa Modo Kiosko"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "Fucsia"

@@ -32,6 +32,10 @@ msgctxt "#31025"
 msgid "Items"
 msgstr "รายการ"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "เปิดใช้งานโหมด Kiosk"
+
 msgctxt "#31048"
 msgid "Visualization Presets"
 msgstr "ชุดรูปแบบ การแสดงแสงสี"
@@ -71,6 +75,14 @@ msgstr "ส่วนเสริม เนื้อเพลง"
 msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "ส่วนเสริม คำบรรยาย"
+
+msgctxt "#31292"
+msgid "items"
+msgstr "รายการ"
+
+msgctxt "#31297"
+msgid "min"
+msgstr "นาที"
 
 msgctxt "#31309"
 msgid "Memory Used:"
@@ -191,6 +203,10 @@ msgstr "E"
 msgctxt "#31975"
 msgid "Channels"
 msgstr "ช่องสัญญาณ"
+
+msgctxt "#31985"
+msgid "Advanced"
+msgstr "ขั้นสูง"
 
 msgctxt "#31987"
 msgid "Random"

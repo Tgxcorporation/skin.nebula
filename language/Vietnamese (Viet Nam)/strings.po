@@ -44,6 +44,10 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Tiện ích Phụ Đề"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "Đối tượng"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "Bộ nhớ sử dụng:"

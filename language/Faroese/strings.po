@@ -40,6 +40,10 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Víðkan til undirtekstir"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "Lutir"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "Brúkt minni:"

@@ -100,6 +100,10 @@ msgctxt "#31026"
 msgid "Enable manual scrolling for plot & review"
 msgstr "Enable manual scrolling for plot & review"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Enable Kiosk Mode"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "Fuchsia"

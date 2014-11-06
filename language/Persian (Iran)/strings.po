@@ -32,6 +32,10 @@ msgctxt "#31114"
 msgid "Multi Image"
 msgstr "چند تصویره"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "موضوعات"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "میزان استفاده حافظه:"

@@ -72,6 +72,10 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Subtiitrite lisamoodulid"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "Nimetused"
+
 msgctxt "#31297"
 msgid "min"
 msgstr "min"

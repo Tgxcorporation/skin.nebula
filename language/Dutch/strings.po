@@ -108,6 +108,14 @@ msgctxt "#31027"
 msgid "Show Plot"
 msgstr "Toon Plot"
 
+msgctxt "#31028"
+msgid "Auto hide music playing infos"
+msgstr "Automatisch muziek afspeelinformatie verbergen"
+
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Kioskmodus activeren (geen zij menu's)"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "fuchsia"

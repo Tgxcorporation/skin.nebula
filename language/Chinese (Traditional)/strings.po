@@ -32,6 +32,10 @@ msgctxt "#31025"
 msgid "Items"
 msgstr "項"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "啟用Kiosk模式"
+
 msgctxt "#31048"
 msgid "Visualization Presets"
 msgstr "視覺效果設定"
@@ -71,6 +75,10 @@ msgstr "歌詞附加元件"
 msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "字幕附加元件"
+
+msgctxt "#31292"
+msgid "items"
+msgstr "項"
 
 msgctxt "#31309"
 msgid "Memory Used:"

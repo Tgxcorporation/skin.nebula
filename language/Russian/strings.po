@@ -84,6 +84,10 @@ msgctxt "#31025"
 msgid "Items"
 msgstr "Объекты"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Включить режим \"Киоск\""
+
 msgctxt "#31036"
 msgid "Violet"
 msgstr "Фиолетовый"

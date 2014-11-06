@@ -32,6 +32,10 @@ msgctxt "#31025"
 msgid "Items"
 msgstr "Stavke"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Omogući Kiosk način"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "Fuchsia"
@@ -75,6 +79,10 @@ msgstr "Dodatci teksta skladbe"
 msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Dodatak za podnapise"
+
+msgctxt "#31292"
+msgid "items"
+msgstr "Stavki"
 
 msgctxt "#31309"
 msgid "Memory Used:"

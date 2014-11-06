@@ -108,6 +108,10 @@ msgctxt "#31027"
 msgid "Show Plot"
 msgstr "Εμφάνιση Πλοκής"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Ενεργοποίηση Λειτουργίας Kiosk"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "Φούξια"

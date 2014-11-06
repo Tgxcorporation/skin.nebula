@@ -36,6 +36,10 @@ msgctxt "#31025"
 msgid "Items"
 msgstr "Elementer"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Aktiver kioskmodus"
+
 msgctxt "#31048"
 msgid "Visualization Presets"
 msgstr "Visualiseringsforvalg"
@@ -75,6 +79,10 @@ msgstr "Sangtekst tillegg"
 msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Undertekst tillegg"
+
+msgctxt "#31292"
+msgid "items"
+msgstr "Elementer"
 
 msgctxt "#31309"
 msgid "Memory Used:"

@@ -100,6 +100,10 @@ msgctxt "#31027"
 msgid "Show Plot"
 msgstr "Amosar Sinopse"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Activar o modo Quiosco"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "Fucsia"
@@ -207,6 +211,18 @@ msgstr "Descargar subtítulos"
 msgctxt "#31357"
 msgid "Local subtitle available"
 msgstr "subtítulos locais dispoñíbeis"
+
+msgctxt "#31390"
+msgid "(1/3) Ubuntu (Regular)"
+msgstr "(1/3) Ubuntu (Regular)"
+
+msgctxt "#31391"
+msgid "(2/3) Ubuntu (Medium)"
+msgstr "(2/3) Ubuntu (Medio)"
+
+msgctxt "#31392"
+msgid "(3/3) Asap (Fixed Width)"
+msgstr "(3/3) Asap (Largo Fixo)"
 
 msgctxt "#31500"
 msgid "Live TV"
@@ -371,6 +387,10 @@ msgstr "Pancarta en miniatura (amplss) "
 msgctxt "#31993"
 msgid "Not used - click to customize"
 msgstr "Sen usar - faga clic para personalizar"
+
+msgctxt "#31994"
+msgid "Use vertical main menu on Home screen"
+msgstr "Usar o menú vertical na pantalla principal"
 
 msgctxt "#31996"
 msgid "Big Channel List in OSD"

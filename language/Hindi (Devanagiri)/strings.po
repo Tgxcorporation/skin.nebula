@@ -16,6 +16,14 @@ msgstr ""
 "Language: hi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31025"
+msgid "Items"
+msgstr "वस्तुए"
+
+msgctxt "#31292"
+msgid "items"
+msgstr "वस्तुए"
+
 msgctxt "#31985"
 msgid "Advanced"
 msgstr "उन्नत"

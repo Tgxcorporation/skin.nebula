@@ -44,6 +44,10 @@ msgctxt "#31025"
 msgid "Items"
 msgstr "Elements"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Activa el mode quiosc"
+
 msgctxt "#31048"
 msgid "Visualization Presets"
 msgstr "Visualitzacions predefinides"

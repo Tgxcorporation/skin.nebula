@@ -48,6 +48,10 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Shtesë Subtitëri"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "Artikuj"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "Memorje Përdorur"

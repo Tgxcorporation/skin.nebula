@@ -64,6 +64,10 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Subtitel Byvoegsel"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "Items"
+
 msgctxt "#31297"
 msgid "min"
 msgstr "min"

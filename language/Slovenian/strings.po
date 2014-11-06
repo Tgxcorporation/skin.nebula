@@ -60,6 +60,10 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Dodatek podnapisov"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "Predmeti"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "Poraba pomnilnika:"

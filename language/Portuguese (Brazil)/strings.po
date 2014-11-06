@@ -108,6 +108,14 @@ msgctxt "#31027"
 msgid "Show Plot"
 msgstr "Exibir Sinopse"
 
+msgctxt "#31028"
+msgid "Auto hide music playing infos"
+msgstr "Auto-ocultar infos de música em reprodução"
+
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Ativar Modo Quiosque"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "Fuchsia"

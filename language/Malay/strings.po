@@ -108,6 +108,10 @@ msgctxt "#31027"
 msgid "Show Plot"
 msgstr "Tunjuk Plot"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Benarkan Mod Kiosk"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "Fuksia"

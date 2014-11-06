@@ -96,6 +96,10 @@ msgctxt "#31025"
 msgid "Items"
 msgstr "Elem"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Kiosk mód engedélyezése"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "Fukszia"

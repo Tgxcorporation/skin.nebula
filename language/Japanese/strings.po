@@ -60,6 +60,10 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "字幕アドオン"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "アイテム"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "メモリ使用量:"
