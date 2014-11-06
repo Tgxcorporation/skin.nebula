@@ -84,6 +84,10 @@ msgctxt "#31025"
 msgid "Items"
 msgstr "项"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "启用自助终端模式"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "紫红色"

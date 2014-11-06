@@ -20,6 +20,10 @@ msgctxt "#31004"
 msgid "Last.fm"
 msgstr "Last.fm"
 
+msgctxt "#31500"
+msgid "Live TV"
+msgstr "TV"
+
 msgctxt "#31954"
 msgid "S"
 msgstr "J"
@@ -31,6 +35,10 @@ msgstr "Klipovi"
 msgctxt "#31973"
 msgid "E"
 msgstr "I"
+
+msgctxt "#31975"
+msgid "Channels"
+msgstr "Kanali"
 
 msgctxt "#31987"
 msgid "Random"

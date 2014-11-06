@@ -32,6 +32,10 @@ msgctxt "#31025"
 msgid "Items"
 msgstr "Emner"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Aktiver Kiosk-tilstand"
+
 msgctxt "#31048"
 msgid "Visualization Presets"
 msgstr "Standard til visualisering"
@@ -71,6 +75,14 @@ msgstr "Add-on til Sangtekster"
 msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Add-on til Undertekster"
+
+msgctxt "#31292"
+msgid "items"
+msgstr "Emner"
+
+msgctxt "#31297"
+msgid "min"
+msgstr "min"
 
 msgctxt "#31309"
 msgid "Memory Used:"

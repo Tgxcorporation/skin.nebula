@@ -60,6 +60,10 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Надбудова субтитрів"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "у списку"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "Використано пам'яті"

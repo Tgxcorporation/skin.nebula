@@ -48,6 +48,10 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Add-on за преводи"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "Ставки"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "Искористеност на меморија:"
@@ -155,3 +159,7 @@ msgstr "Напредно"
 msgctxt "#31987"
 msgid "Random"
 msgstr "Случајно"
+
+msgctxt "#31988"
+msgid "Menu"
+msgstr "Мени"

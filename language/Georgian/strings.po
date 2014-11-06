@@ -32,6 +32,10 @@ msgctxt "#31051"
 msgid "Sort: Descending"
 msgstr "სორტირება: კლებადობით"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "ელემენტები"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "გამოყენებული მეხსიერება:"

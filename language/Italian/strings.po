@@ -84,6 +84,10 @@ msgctxt "#31025"
 msgid "Items"
 msgstr "Elementi"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Abilita modalità Kiosk"
+
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
 msgstr "Reimposta la skin sui valori di default"

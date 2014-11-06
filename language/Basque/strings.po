@@ -40,6 +40,10 @@ msgctxt "#31051"
 msgid "Sort: Descending"
 msgstr "Ordenatu:Beheraka"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "Elementuak"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "Erabilitako memoria:"

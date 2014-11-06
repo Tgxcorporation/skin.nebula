@@ -56,6 +56,10 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Phụ Dề (Addon?)"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "Các mục"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "Bộ nhớ chiếm:"

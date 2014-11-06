@@ -48,9 +48,17 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "የንዑስ አርእስት ተጨማ-ሪዎች "
 
+msgctxt "#31292"
+msgid "items"
+msgstr "እቃዎች"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "የተጠቀሙት Memory:"
+
+msgctxt "#31322"
+msgid "Aired"
+msgstr "የተላለፈ"
 
 msgctxt "#31351"
 msgid "Pause"
@@ -103,6 +111,10 @@ msgstr "ዝግጁ[CR]ቡድኖች"
 msgctxt "#31508"
 msgid "Last Updated"
 msgstr "መጨረሻ የተሻሻለው"
+
+msgctxt "#31510"
+msgid "Timer Set"
+msgstr "ሰአት ማሰናጃ"
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"

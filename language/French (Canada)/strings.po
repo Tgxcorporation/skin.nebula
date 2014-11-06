@@ -108,6 +108,14 @@ msgctxt "#31027"
 msgid "Show Plot"
 msgstr "Afficher l'intrigue"
 
+msgctxt "#31028"
+msgid "Auto hide music playing infos"
+msgstr "Cacher automatiquement les infos sur la musique en cours de lecture"
+
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "Activer le mode kiosque"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "Fuchsia"
@@ -138,11 +146,11 @@ msgstr "Activer l'extra fanart"
 
 msgctxt "#31042"
 msgid "Enable Clear Art"
-msgstr "Utiliser le ClearArt"
+msgstr "Utiliser l'illustration claire"
 
 msgctxt "#31043"
 msgid "Root Folder of cdART Manager library"
-msgstr "Dossier racine de la bibliothèque du gestionnaire de cdART"
+msgstr "Dossier racine de la bibliothèque du gestionnaire d'illustrations de CD"
 
 msgctxt "#31048"
 msgid "Visualization Presets"
@@ -426,7 +434,7 @@ msgstr "Afficher les infos"
 
 msgctxt "#31969"
 msgid "Artist slideshow (requires Artist slideshow add-on)"
-msgstr "Le diaporama des artistes (exige l'addiciel Artist Slideshow)"
+msgstr "Le diaporama de l'artiste (exige l'addiciel Artist Slideshow)"
 
 msgctxt "#31970"
 msgid "Push down for Gallery"

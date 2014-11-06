@@ -32,6 +32,10 @@ msgctxt "#31025"
 msgid "Items"
 msgstr "פריטים"
 
+msgctxt "#31030"
+msgid "Enable Kiosk Mode"
+msgstr "הפעלת מצב מחשב ציבורי"
+
 msgctxt "#31048"
 msgid "Visualization Presets"
 msgstr "קביעוני חיזוי"
@@ -71,6 +75,10 @@ msgstr "תוספי מילים לשירים"
 msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "תסוף כתובית"
+
+msgctxt "#31292"
+msgid "items"
+msgstr "פריטים"
 
 msgctxt "#31309"
 msgid "Memory Used:"

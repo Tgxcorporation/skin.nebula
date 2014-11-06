@@ -48,6 +48,10 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "துணைத்தலைப்பு துணை-பயன்"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "உருப்படிகள்"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "பயன்படுத்தப்பட்டுள்ள நினைவகம்"
