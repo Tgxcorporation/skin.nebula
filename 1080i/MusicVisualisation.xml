@@ -44,7 +44,7 @@
                         <posy>407</posy>
                         <width>300</width>
                         <height>235</height>
-                        <texture>$INFO[MusicPlayer.Art(clearlogo)]</texture>
+                        <texture>$INFO[MusicPlayer.Art(clearart)]</texture>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
                     </control>
                 </control>
