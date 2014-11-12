@@ -366,6 +366,12 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(EnableCdArt)</onclick>
                         </item>
+                        <item id="25">
+                            <visible>Skin.HasSetting(EnableCdArt)</visible>
+                            <label>$LOCALIZE[31043]</label>
+                            <label2>$INFO[Skin.String(cdartPath)]</label2>
+                            <onclick>Skin.SetPath(cdartPath)</onclick>
+                        </item>
                         <item id="22">
                             <visible>Skin.HasSetting(EnableCdArt)</visible>
                             <label>$LOCALIZE[31039]</label>
@@ -395,12 +401,6 @@
                             <label>$LOCALIZE[31042]</label>
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(EnableClearArt)</onclick>
-                        </item>
-                        <item id="25">
-                            <visible>Skin.HasSetting(EnableClearArt)</visible>
-                            <label>$LOCALIZE[31043]</label>
-                            <label2>$INFO[Skin.String(cdartPath)]</label2>
-                            <onclick>Skin.SetPath(cdartPath)</onclick>
                         </item>
                         <item id="91">
                             <visible>!Skin.HasSetting(TVTunes.Enabled)</visible>
