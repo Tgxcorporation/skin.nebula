@@ -397,7 +397,7 @@
                             <onclick>Skin.ToggleSetting(EnableClearArt)</onclick>
                         </item>
                         <item id="25">
-                            <visible>Skin.HasSetting(EnableClearArt)</visible>
+                            <visible>Skin.HasSetting(EnableClearArt)|Skin.HasSetting(EnableCdArt)</visible>
                             <label>$LOCALIZE[31043]</label>
                             <label2>$INFO[Skin.String(cdartPath)]</label2>
                             <onclick>Skin.SetPath(cdartPath)</onclick>
