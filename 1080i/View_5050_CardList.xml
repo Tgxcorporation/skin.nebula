@@ -73,7 +73,7 @@
                     <posx>530</posx>
                     <posy>248</posy>
                     <control type="group">
-                        <visible>[Container.Content(songs)+!Skin.HasSetting(plexbmc)+!!IntegerGreaterThan(ListItem.Rating,0)]</visible>
+                        <visible>[Container.Content(songs)+!Skin.HasSetting(plexbmc)+IntegerGreaterThan(ListItem.Rating,0)]</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
                             <posy>85</posy>
@@ -217,7 +217,7 @@
                         <posx>530</posx>
                         <posy>248</posy>
                         <control type="group">
-                            <visible>[Container.Content(songs)+!Skin.HasSetting(plexbmc)+!!IntegerGreaterThan(ListItem.Rating,0)]</visible>
+                            <visible>[Container.Content(songs)+!Skin.HasSetting(plexbmc)+IntegerGreaterThan(ListItem.Rating,0)]</visible>
                             <control type="image">
                                 <posx>TextMargin</posx>
                                 <posy>85</posy>
@@ -400,7 +400,7 @@
                     <posx>530</posx>
                     <posy>248</posy>
                     <control type="group">
-                        <visible>!!IntegerGreaterThan(ListItem.Rating,0)</visible>
+                        <visible>IntegerGreaterThan(ListItem.Rating,0)</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
                             <posy>85</posy>
@@ -590,7 +590,7 @@
                         <posx>530</posx>
                         <posy>248</posy>
                         <control type="group">
-                            <visible>!!IntegerGreaterThan(ListItem.Rating,0)</visible>
+                            <visible>IntegerGreaterThan(ListItem.Rating,0)</visible>
                             <control type="image">
                                 <posx>TextMargin</posx>
                                 <posy>85</posy>

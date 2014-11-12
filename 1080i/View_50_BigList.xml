@@ -314,7 +314,7 @@
                     <posx>311</posx>
                     <posy>35</posy>
                     <control type="group">
-                        <visible>!!IntegerGreaterThan(ListItem.Rating,0)</visible>
+                        <visible>IntegerGreaterThan(ListItem.Rating,0)</visible>
                         <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
