@@ -2461,7 +2461,7 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot)</onclick>
                         </item>
-                        <item id="6">
+                        <!-- <item id="6">
                             <visible>IsEmpty(Skin.String(shutdown))</visible>
                             <visible>Skin.HasSetting(QuitMenu_Show_Settings)</visible>
                             <label> - $LOCALIZE[5]</label>
@@ -2474,7 +2474,7 @@
                             <label> - $LOCALIZE[5]</label>
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(QuitMenu_Show_Settings)</onclick>
-                        </item>
+                        </item> -->
                         <item id="7">
                             <visible>IsEmpty(Skin.String(timer))</visible>
                             <visible>Skin.HasSetting(QuitMenu_Hide_Timer)</visible>
