@@ -401,7 +401,7 @@
                 <texture>$VAR[Theme.Color]/badges/imdb.png</texture>
             </control>
             <control type="label" id="1">
-                <posx>50</posx>
+                <posx>0</posx>
                 <top>11</top>
                 <width>100</width>
                 <height>70</height>
@@ -555,7 +555,7 @@
                 <texture>$VAR[Theme.Color]/badges/imdb.png</texture>
             </control>
             <control type="label" id="1">
-                <posx>50</posx>
+                <posx>0</posx>
                 <top>11</top>
                 <width>100</width>
                 <height>60</height>
