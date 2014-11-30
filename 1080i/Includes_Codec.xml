@@ -153,6 +153,14 @@
             <aspectratio>keep</aspectratio>
             <texture>$VAR[MediaFlag_MPAA]</texture>
         </control>
+        <control type="image">
+            <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
+            <description>3D Image</description>
+            <width>120</width>
+            <height>80</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$VAR[Theme.Color]/badges/video/3dbd.png</texture>
+        </control>
         <control type="group" id="1">
             <width>120</width>
             <height>80</height>
@@ -174,14 +182,7 @@
                 <include>TextColor_MainColor</include>
             </control>
         </control>
-        <control type="image">
-            <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
-            <description>3D Image</description>
-            <width>120</width>
-            <height>80</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/3dbd.png</texture>
-        </control>
+
     </include>
     <include name="CodecsView1">
         <control type="image">
@@ -275,22 +276,6 @@
             <texture>$VAR[Theme.Color]/badges/video/$INFO[ListItem.VideoCodec,,.png]</texture>
         </control>
         <control type="image">
-            <visible>[SubString(ListItem(0).Filenameandpath,bluray) | SubString(ListItem(0).Filenameandpath,blu-ray) | SubString(ListItem(0).Filenameandpath,bdrip)]|SubString(ListItem.Filenameandpath,web)|SubString(ListItem.Filenameandpath,hdtv)|SubString(ListItem.Filenameandpath,dvd) | SubString(ListItem.Filenameandpath,.ifo,Right) | SubString(ListItem.Filenameandpath,.iso,Right)|SubString(ListItem.Path,videodb://movies/sets,left)|SubString(Player.Filenameandpath,4k)</visible>
-            <description>Codec Image</description>
-            <width>120</width>
-            <height>80</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource].png</texture>
-        </control>
-        <control type="image">
-            <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
-            <description>3D Image</description>
-            <width>120</width>
-            <height>80</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/3dbd.png</texture>
-        </control>
-        <control type="image">
             <description>Audio Codec Image</description>
             <width>120</width>
             <height>80</height>
@@ -310,6 +295,22 @@
             <height>80</height>
             <aspectratio>keep</aspectratio>
             <texture>$VAR[MediaFlag_MPAA]</texture>
+        </control>
+        <control type="image">
+            <visible>[SubString(ListItem(0).Filenameandpath,bluray) | SubString(ListItem(0).Filenameandpath,blu-ray) | SubString(ListItem(0).Filenameandpath,bdrip)]|SubString(ListItem.Filenameandpath,web)|SubString(ListItem.Filenameandpath,hdtv)|SubString(ListItem.Filenameandpath,dvd) | SubString(ListItem.Filenameandpath,.ifo,Right) | SubString(ListItem.Filenameandpath,.iso,Right)|SubString(ListItem.Path,videodb://movies/sets,left)|SubString(Player.Filenameandpath,4k)</visible>
+            <description>Codec Image</description>
+            <width>120</width>
+            <height>80</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource].png</texture>
+        </control>
+        <control type="image">
+            <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
+            <description>3D Image</description>
+            <width>120</width>
+            <height>80</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$VAR[Theme.Color]/badges/video/3dbd.png</texture>
         </control>
         <control type="group" id="1">
             <width>120</width>
@@ -379,8 +380,18 @@
             <aspectratio>keep</aspectratio>
             <texture>$VAR[MediaFlag_MPAA]</texture>
         </control>
-        <control type="group" id="1">
+        <control type="image">
+            <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
+            <description>3D Image</description>
             <posx>510</posx>
+            <posy>0</posy>
+            <width>100</width>
+            <height>70</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$VAR[Theme.Color]/badges/video/3dbd.png</texture>
+        </control>
+        <control type="group" id="1">
+            <posx>612</posx>
             <posy>0</posy>
             <visible>!IsEmpty(ListItem.Top250) + !SubString(ListItem.Top250,0,Left)</visible>
             <control type="image" id="1">
@@ -390,7 +401,7 @@
                 <texture>$VAR[Theme.Color]/badges/imdb.png</texture>
             </control>
             <control type="label" id="1">
-                <posx>0</posx>
+                <posx>50</posx>
                 <top>11</top>
                 <width>100</width>
                 <height>70</height>
@@ -399,16 +410,6 @@
                 <label>$INFO[ListItem.Top250]</label>
                 <include>TextColor_MainColor</include>
             </control>
-        </control>
-        <control type="image">
-            <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
-            <description>3D Image</description>
-            <posx>612</posx>
-            <posy>0</posy>
-            <width>100</width>
-            <height>70</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/3dbd.png</texture>
         </control>
     </include>
     <include name="CodecsGrid">
@@ -425,22 +426,6 @@
             <height>60</height>
             <aspectratio>keep</aspectratio>
             <texture>$VAR[Theme.Color]/badges/video/$INFO[ListItem.VideoCodec,,.png]</texture>
-        </control>
-        <control type="image">
-            <visible>[SubString(ListItem(0).Filenameandpath,bluray) | SubString(ListItem(0).Filenameandpath,blu-ray) | SubString(ListItem(0).Filenameandpath,bdrip)]|SubString(ListItem.Filenameandpath,web)|SubString(ListItem.Filenameandpath,hdtv)|SubString(ListItem.Filenameandpath,dvd) | SubString(ListItem.Filenameandpath,.ifo,Right) | SubString(ListItem.Filenameandpath,.iso,Right)|SubString(ListItem.Path,videodb://movies/sets,left)|SubString(Player.Filenameandpath,4k)</visible>
-            <description>Codec Image</description>
-            <width>100</width>
-            <height>60</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource].png</texture>
-        </control>
-        <control type="image">
-            <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
-            <description>3D Image</description>
-            <width>100</width>
-            <height>60</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/3dbd.png</texture>
         </control>
         <control type="image">
             <description>Audio Codec Image</description>
@@ -462,6 +447,22 @@
             <height>60</height>
             <aspectratio>keep</aspectratio>
             <texture>$VAR[MediaFlag_MPAA]</texture>
+        </control>
+        <control type="image">
+            <visible>[SubString(ListItem(0).Filenameandpath,bluray) | SubString(ListItem(0).Filenameandpath,blu-ray) | SubString(ListItem(0).Filenameandpath,bdrip)]|SubString(ListItem.Filenameandpath,web)|SubString(ListItem.Filenameandpath,hdtv)|SubString(ListItem.Filenameandpath,dvd) | SubString(ListItem.Filenameandpath,.ifo,Right) | SubString(ListItem.Filenameandpath,.iso,Right)|SubString(ListItem.Path,videodb://movies/sets,left)|SubString(Player.Filenameandpath,4k)</visible>
+            <description>Codec Image</description>
+            <width>100</width>
+            <height>60</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource].png</texture>
+        </control>
+        <control type="image">
+            <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
+            <description>3D Image</description>
+            <width>100</width>
+            <height>60</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$VAR[Theme.Color]/badges/video/3dbd.png</texture>
         </control>
         <control type="group" id="1">
             <visible>!IsEmpty(ListItem.Top250) + !SubString(ListItem.Top250,0,Left)</visible>
@@ -554,7 +555,7 @@
                 <texture>$VAR[Theme.Color]/badges/imdb.png</texture>
             </control>
             <control type="label" id="1">
-                <posx>0</posx>
+                <posx>50</posx>
                 <top>11</top>
                 <width>100</width>
                 <height>60</height>
@@ -601,6 +602,14 @@
             <aspectratio>keep</aspectratio>
             <texture>$VAR[MediaFlag_MPAAOSD]</texture>
         </control>
+        <control type="image">
+            <visible>VideoPlayer.IsStereoscopic|SubString(VideoPlayer.Filenameandpath,.3dbd.) | SubString(VideoPlayer.Filenameandpath,.3d.)</visible>
+            <description>3D Image</description>
+            <width>100</width>
+            <height>70</height>
+            <aspectratio>keep</aspectratio>
+            <texture>$VAR[Theme.Color]/badges/video/3dbd.png</texture>
+        </control>
         <control type="group" id="1">
             <width>100</width>
             <height>70</height>
@@ -621,14 +630,6 @@
                 <label>$INFO[VideoPlayer.Top250]</label>
                 <include>TextColor_MainColor</include>
             </control>
-        </control>
-        <control type="image">
-            <visible>VideoPlayer.IsStereoscopic|SubString(VideoPlayer.Filenameandpath,.3dbd.) | SubString(VideoPlayer.Filenameandpath,.3d.)</visible>
-            <description>3D Image</description>
-            <width>100</width>
-            <height>70</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$VAR[Theme.Color]/badges/video/3dbd.png</texture>
         </control>
     </include>
     <include name="CodecsVideoOSD2">
