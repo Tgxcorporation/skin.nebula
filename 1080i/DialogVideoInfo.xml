@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
     <zorder>0</zorder>
+    <!-- <onload condition="Container.Content(movies)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID])</onload>
+    <onload condition="Container.Content(movies)">Dialog.Close(movieinformation)</onload> -->
+    <onload condition="!Stringcompare(Container.FolderPath,videodb://tvshows/titles/) + Substring(Container.FolderPath,videodb://tvshows/titles/,left) + !Container.Content(episodes)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TvShowTitle],season=$INFO[Window(home).Property(SeasonNumber)],silent=True)</onload>
     <onload condition="System.HasAddon(script.videoextras)">XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
     <defaultcontrol always="true">8</defaultcontrol>
     <controls>
@@ -613,7 +616,7 @@
                 <control type="togglebutton" id="8">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[208]</label>
-                    <altlabel>$LOCALIZE[1024]</altlabel>
+                    <altlabel>$LOCALIZE[31021]</altlabel>
                     <usealttexture>Container.Content(TVShows)</usealttexture>
                     <onright>9009</onright>
                 </control>
@@ -639,6 +642,12 @@
                     <onclick>Control.SetFocus(6060)</onclick>
                     <onright>Control.SetFocus(6060)</onright>
                 </control>
+                <control type="togglebutton" id="9010">
+                    <visible>System.HasAddon(script.extendedinfo)+Container.Content(movies)</visible>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[31022]</label>
+                    <onclick>RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID])</onclick>
+                </control>
                 <control type="togglebutton" id="9012">
                     <visible>IntegerGreaterThan(Container(50).NumItems,0)</visible>
                     <include>LeftMenuButtonFocusTrick</include>
@@ -650,23 +659,23 @@
                     <visible>IntegerGreaterThan(Container(50).NumItems,0)</visible>
                     <include>LeftMenuButtonFocusTrick</include>
                     <label>$LOCALIZE[31015]</label>
-                    <visible>System.HasAddon(script.metadata.actors)</visible>
-                    <onclick>RunScript(script.metadata.actors,$INFO[Container(50).Listitem.Label])</onclick>
+                    <visible>System.HasAddon(script.extendedinfo)</visible>
+                    <onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label])</onclick>
                     <onclick>Control.SetFocus(50)</onclick>
                     <onright>Control.SetFocus(50)</onright>
                 </control>
                 <control type="button" id="9015">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[31016]</label>
-                    <visible>System.HasAddon(script.metadata.actors)+!IsEmpty(ListItem.Director)</visible>
-                    <onclick>RunScript(script.metadata.actors,$INFO[ListItem.Director])</onclick>
+                    <visible>System.HasAddon(script.extendedinfo)+!IsEmpty(ListItem.Director)</visible>
+                    <onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Director])</onclick>
                     <onright>9009</onright>
                 </control>
                 <control type="button" id="9016">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[31017]</label>
-                    <visible>System.HasAddon(script.metadata.actors)+!IsEmpty(ListItem.Writer)</visible>
-                    <onclick>RunScript(script.metadata.actors,$INFO[ListItem.Writer])</onclick>
+                    <visible>System.HasAddon(script.extendedinfo)+!IsEmpty(ListItem.Writer)</visible>
+                    <onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Writer])</onclick>
                     <onright>9009</onright>
                 </control>
                 <control type="button" id="6">
