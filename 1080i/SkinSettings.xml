@@ -185,6 +185,18 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(RssTicker)</onclick>
                         </item>
+                        <item id="28">
+                            <visible>Skin.HasSetting(DisableIconViewInfos)</visible>
+                            <label>$LOCALIZE[31031]</label>
+                            <label2>$LOCALIZE[107]</label2>
+                            <onclick>Skin.ToggleSetting(DisableIconViewInfos)</onclick>
+                        </item>
+                        <item id="28">
+                            <visible>!Skin.HasSetting(DisableIconViewInfos)</visible>
+                            <label>$LOCALIZE[31031]</label>
+                            <label2>$LOCALIZE[106]</label2>
+                            <onclick>Skin.ToggleSetting(DisableIconViewInfos)</onclick>
+                        </item>
                         <item id="1001">
                             <label/>
                             <label2>$LOCALIZE[14086]</label2>
