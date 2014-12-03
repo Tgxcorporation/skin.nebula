@@ -273,7 +273,7 @@
                                     <font>InfoDetailsFont</font>
                                     <include>TextColor_MainColor</include>
                                     <scroll>false</scroll>
-                                    <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.Label]</label>
+                                    <label>$INFO[ListItem.ChannelNumberLabelLabel,, - ]$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
                                     <posx>TextMargin</posx>
@@ -456,7 +456,7 @@
                                     <font>InfoDetailsFont</font>
                                     <include>TextColor_MainColor</include>
                                     <scroll>false</scroll>
-                                    <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]</label>
+                                    <label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</label>
                                 </control>
                                 <control type="label">
                                     <posx>TextMargin</posx>
@@ -886,7 +886,7 @@
                                     <font>InfoDetailsFont</font>
                                     <include>TextColor_MainColor</include>
                                     <scroll>false</scroll>
-                                    <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]</label>
+                                    <label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</label>
                                 </control>
                                 <control type="label">
                                     <posx>TextMargin</posx>
@@ -1051,7 +1051,7 @@
                                     <font>InfoDetailsFont</font>
                                     <include>TextColor_MainColor</include>
                                     <scroll>false</scroll>
-                                    <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]</label>
+                                    <label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</label>
                                 </control>
                                 <control type="label">
                                     <posx>TextMargin</posx>
@@ -1228,7 +1228,7 @@
                                     <font>InfoDetailsFont</font>
                                     <include>TextColor_MainColor</include>
                                     <scroll>false</scroll>
-                                    <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.Label]</label>
+                                    <label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
                                     <posx>TextMargin</posx>
@@ -1421,7 +1421,7 @@
                                     <font>InfoDetailsFont</font>
                                     <include>TextColor_MainColor</include>
                                     <scroll>false</scroll>
-                                    <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.Label]</label>
+                                    <label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
                                     <posx>TextMargin</posx>
@@ -1586,7 +1586,7 @@
                                     <font>InfoDetailsFont</font>
                                     <include>TextColor_MainColor</include>
                                     <scroll>false</scroll>
-                                    <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.Label]</label>
+                                    <label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
                                     <posx>TextMargin</posx>

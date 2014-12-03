@@ -158,10 +158,10 @@
         <value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]]</value>
     </variable>
     <variable name="Details">
-        <value condition="Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRTimers.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRGuide.xml)">$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]     $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
-        <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]$INFO[ListItem.Date,     ]</value>
-        <!-- <value condition="Window.IsActive(MyPVR.xml)+[control.isvisible(13)|control.isvisible(14)|control.isvisible(17)]">$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]$INFO[ListItem.Date,     ]</value>
-        <value condition="Window.IsActive(MyPVR.xml)+[control.isvisible(11)|control.isvisible(12)|control.isvisible(14)|control.isvisible(17)|control.isvisible(15)|control.isvisible(16)]">$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]     $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value> -->
+        <value condition="Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRTimers.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRGuide.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]     $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
+        <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]$INFO[ListItem.Date,     ]</value>
+        <!-- <value condition="Window.IsActive(MyPVR.xml)+[control.isvisible(13)|control.isvisible(14)|control.isvisible(17)]">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]$INFO[ListItem.Date,     ]</value>
+        <value condition="Window.IsActive(MyPVR.xml)+[control.isvisible(11)|control.isvisible(12)|control.isvisible(14)|control.isvisible(17)|control.isvisible(15)|control.isvisible(16)]">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]     $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value> -->
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,,     ]$INFO[ListItem.Size]</value>
         <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album)">$INFO[ListItem.Artist]$INFO[ListItem.Year,     ]$INFO[ListItem.Genre,     ]</value>
         <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,     ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]     $INFO[ListItem.Season,$LOCALIZE[31973],.]$INFO[ListItem.Episode]</value>

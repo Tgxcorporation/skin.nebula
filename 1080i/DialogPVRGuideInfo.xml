@@ -67,7 +67,7 @@
                 <height>78</height>
                 <font>InfoDetailsFont</font>
                 <include>TextColor_MainColor</include>
-                <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]</label>
+                <label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</label>
             </control>
             <control type="label">
                 <posx>423</posx>
