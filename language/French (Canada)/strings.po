@@ -92,6 +92,10 @@ msgctxt "#31018"
 msgid "Cover Wrap"
 msgstr "Défilement des couvertures"
 
+msgctxt "#31019"
+msgid "Enable Rss ticker on main screens (only in list views)"
+msgstr "Activer le téléscripteur RSS sur les écrans principaux (seulement en vues de listes)"
+
 msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Ajoutés récemment"
@@ -111,6 +115,10 @@ msgstr "Afficher l'intrigue"
 msgctxt "#31028"
 msgid "Auto hide music playing infos"
 msgstr "Cacher automatiquement les infos sur la musique en cours de lecture"
+
+msgctxt "#31029"
+msgid "Art Management"
+msgstr "Gestion des illustrations"
 
 msgctxt "#31030"
 msgid "Enable Kiosk Mode"

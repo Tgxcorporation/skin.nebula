@@ -92,6 +92,10 @@ msgctxt "#31018"
 msgid "Cover Wrap"
 msgstr "Cover Wrap"
 
+msgctxt "#31019"
+msgid "Enable Rss ticker on main screens (only in list views)"
+msgstr "Enable RSS ticker on main screens (only in list views)"
+
 msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Recently Added"
@@ -111,6 +115,10 @@ msgstr "Show Plot"
 msgctxt "#31028"
 msgid "Auto hide music playing infos"
 msgstr "Auto hide music playing infos"
+
+msgctxt "#31029"
+msgid "Art Management"
+msgstr "Art Management"
 
 msgctxt "#31030"
 msgid "Enable Kiosk Mode"
