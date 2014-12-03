@@ -92,6 +92,10 @@ msgctxt "#31018"
 msgid "Cover Wrap"
 msgstr "Rodear portada"
 
+msgctxt "#31019"
+msgid "Enable Rss ticker on main screens (only in list views)"
+msgstr "Habilitar tiras RSS en las pantallas principales (sólo en Vistas de Lista)"
+
 msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Añadido recientemente"
@@ -107,6 +111,14 @@ msgstr "Activar desplazamiento manual para revisión y resumen"
 msgctxt "#31027"
 msgid "Show Plot"
 msgstr "Mostrar argumento"
+
+msgctxt "#31028"
+msgid "Auto hide music playing infos"
+msgstr "Ocultar automáticamente la información de la música en reproducción"
+
+msgctxt "#31029"
+msgid "Art Management"
+msgstr "Gestión del Arte"
 
 msgctxt "#31030"
 msgid "Enable Kiosk Mode"

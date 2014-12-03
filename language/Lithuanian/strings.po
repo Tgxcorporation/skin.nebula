@@ -92,6 +92,10 @@ msgctxt "#31018"
 msgid "Cover Wrap"
 msgstr "Viršelių karusėlė"
 
+msgctxt "#31019"
+msgid "Enable Rss ticker on main screens (only in list views)"
+msgstr "Įjungti RSS naujienas pagrindiniuose ekranuose (tik sąrašo rodiniuose)"
+
 msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Vėliausiai pridėti"
@@ -111,6 +115,10 @@ msgstr "Rodyti siužetą"
 msgctxt "#31028"
 msgid "Auto hide music playing infos"
 msgstr "Automatiškai slėpti atkuriamos muzikos informaciją"
+
+msgctxt "#31029"
+msgid "Art Management"
+msgstr "Iliustracijų tvarkymas"
 
 msgctxt "#31030"
 msgid "Enable Kiosk Mode"

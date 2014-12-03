@@ -16,6 +16,22 @@ msgstr ""
 "Language: he\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31000"
+msgid "Picture Channels"
+msgstr "ערוצי תמונות"
+
+msgctxt "#31001"
+msgid "Video Channels"
+msgstr "ערוצי וידאו"
+
+msgctxt "#31002"
+msgid "Music Channels"
+msgstr "ערוצי מוזיקה"
+
+msgctxt "#31003"
+msgid "Channels Directory"
+msgstr "ספריית ערוצים"
+
 msgctxt "#31004"
 msgid "Last.fm"
 msgstr "Last.fm"
@@ -23,6 +39,42 @@ msgstr "Last.fm"
 msgctxt "#31005"
 msgid "Cinema"
 msgstr "קולנוע"
+
+msgctxt "#31006"
+msgid "Shared"
+msgstr "משותף"
+
+msgctxt "#31007"
+msgid "PleKodi settings"
+msgstr "הגדרות PleKodi"
+
+msgctxt "#31008"
+msgid "Go Plex"
+msgstr "מעבר ל־Plex"
+
+msgctxt "#31009"
+msgid "Go Kodi"
+msgstr "מעבר ל־Kodi"
+
+msgctxt "#31010"
+msgid "Queue"
+msgstr "הוספה לתור"
+
+msgctxt "#31011"
+msgid "Recently Viewed"
+msgstr "נצפה לאחרונה"
+
+msgctxt "#31012"
+msgid "Recently Released"
+msgstr "שוחרר לאחרונה"
+
+msgctxt "#31013"
+msgid "Recently Aired"
+msgstr "שודר לאחרונה"
+
+msgctxt "#31014"
+msgid "On Deck"
+msgstr "בתהליך צפיה"
 
 msgctxt "#31020"
 msgid "Recently Added"
@@ -36,17 +88,25 @@ msgctxt "#31030"
 msgid "Enable Kiosk Mode"
 msgstr "הפעלת מצב מחשב ציבורי"
 
+msgctxt "#31038"
+msgid "Reset ALL skin settings to default values"
+msgstr "איפוס כל הגדרות המעטפת לברירת מחדל"
+
 msgctxt "#31048"
 msgid "Visualization Presets"
 msgstr "קביעוני חיזוי"
 
+msgctxt "#31049"
+msgid "Settings Level"
+msgstr "רמת הגדרות"
+
 msgctxt "#31050"
 msgid "Sort: Ascending"
-msgstr "מיון: סדר עולה"
+msgstr "סדר מיון: עולה"
 
 msgctxt "#31051"
 msgid "Sort: Descending"
-msgstr "מיון: סדר יורד"
+msgstr "סדר מיון: יורד"
 
 msgctxt "#31090"
 msgid "Panel"
@@ -55,6 +115,14 @@ msgstr "פנל"
 msgctxt "#31092"
 msgid "Low List"
 msgstr "תפריט ראשי נמוך"
+
+msgctxt "#31093"
+msgid "Big Panel"
+msgstr "לוח גדול"
+
+msgctxt "#31094"
+msgid "Banner List"
+msgstr "רשימת באנרים"
 
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
@@ -76,9 +144,21 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "תסוף כתובית"
 
+msgctxt "#31291"
+msgid "Add-on manager"
+msgstr "מנהל הרחבות"
+
 msgctxt "#31292"
 msgid "items"
 msgstr "פריטים"
+
+msgctxt "#31293"
+msgid "Can not be customized"
+msgstr "לא ניתן להתאמה אישית"
+
+msgctxt "#31297"
+msgid "min"
+msgstr "דק'"
 
 msgctxt "#31309"
 msgid "Memory Used:"
@@ -144,6 +224,10 @@ msgctxt "#31506"
 msgid "Available[CR]Groups"
 msgstr "קבוצות[CR]זמינות"
 
+msgctxt "#31507"
+msgid "Movies homescreen button opens:"
+msgstr "לחצן סרטים במסך הבית פותח:"
+
 msgctxt "#31508"
 msgid "Last Updated"
 msgstr "עודכן לאחרונה"
@@ -158,11 +242,11 @@ msgstr "מתזמן נקבע"
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
-msgstr "תחזית ל36 שעות"
+msgstr "תחזית ל־36 שעות"
 
 msgctxt "#31902"
 msgid "Hourly Forecast"
-msgstr "תחזית לפי שעה "
+msgstr "תחזית לפי שעה"
 
 msgctxt "#31903"
 msgid "Weekend Forecast"
@@ -170,19 +254,39 @@ msgstr "תחזית לסופ\"ש"
 
 msgctxt "#31904"
 msgid "10 Day Forecast"
-msgstr "תחזית ל-10 ימים"
+msgstr "תחזית ל־10 יום"
 
 msgctxt "#31954"
 msgid "S"
 msgstr "ד"
 
+msgctxt "#31955"
+msgid "Display shelf items after a short delay"
+msgstr "הצג פריטי מדף לאחר השהיה קצרה"
+
 msgctxt "#31956"
 msgid "Get theme"
 msgstr "קבל ערכת נושא"
 
+msgctxt "#31957"
+msgid "Hide Update library button from home submenu"
+msgstr "הסתר כפתור עדכון ספריה במסך הבית"
+
+msgctxt "#31958"
+msgid "Big Panel"
+msgstr "לוח גדול"
+
+msgctxt "#31959"
+msgid "Go fullscreen on music playback"
+msgstr "מעבר למסך מלא בעת ניגון מוזיקה"
+
+msgctxt "#31960"
+msgid "Music opens artists"
+msgstr "לחצן מוזיקה פותח אמנים"
+
 msgctxt "#31961"
 msgid "Recently added"
-msgstr "התווסף לאחרונה"
+msgstr "נוסף לאחרונה"
 
 msgctxt "#31962"
 msgid "Low List"
@@ -192,13 +296,37 @@ msgctxt "#31963"
 msgid "Panel"
 msgstr "פנל"
 
+msgctxt "#31964"
+msgid "Configure shelf items"
+msgstr "הגדרת פריטי מדף"
+
+msgctxt "#31965"
+msgid "Banner List"
+msgstr "רשימת באנרים"
+
 msgctxt "#31966"
 msgid "Recommended"
 msgstr "מומלץ"
 
+msgctxt "#31967"
+msgid "Enable Home shelf"
+msgstr "אפשר מדף בית"
+
 msgctxt "#31968"
 msgid "Show info"
 msgstr "הצג פרטים"
+
+msgctxt "#31969"
+msgid "Artist slideshow (requires Artist slideshow add-on)"
+msgstr "מצגת אמן (דורש הרחבת Artist slideshow)"
+
+msgctxt "#31970"
+msgid "Push down for Gallery"
+msgstr "לחיצה מטה למעבר לגלריה"
+
+msgctxt "#31971"
+msgid "Concerts"
+msgstr "הופעות"
 
 msgctxt "#31972"
 msgid "Clips"
@@ -208,17 +336,57 @@ msgctxt "#31973"
 msgid "E"
 msgstr "מז"
 
+msgctxt "#31974"
+msgid "Home menu"
+msgstr "תפריט הבית"
+
 msgctxt "#31975"
 msgid "Channels"
 msgstr "ערוצים"
+
+msgctxt "#31976"
+msgid "Home shelf"
+msgstr "מדף הבית"
+
+msgctxt "#31977"
+msgid "Fast start"
+msgstr "התחלה מהירה"
+
+msgctxt "#31978"
+msgid "Show library info on Home (totals, unwatched...)"
+msgstr "הצג פרטי ספריה במסך הבית (סה\"כ, לא נצפה...)"
 
 msgctxt "#31979"
 msgid "Loading..."
 msgstr "טוען..."
 
+msgctxt "#31980"
+msgid "Hide unwatched and partialy watched marks"
+msgstr "הסתר סימוני לא נצפה, ונצפה חלקית"
+
+msgctxt "#31981"
+msgid "Hide watched marks"
+msgstr "הסתר סימוני נצפה"
+
+msgctxt "#31982"
+msgid "Shelf items populate more slowly on some systems. By default, skin waits for them to be ready and presents Home screen afterwards.[CR][CR]This option skips this step and presents Home page immediately. Shelf items will appear with a delay, depending on a speed of your system."
+msgstr "פריטי מדף מאוכלסים באופן איטי יותר במערכות מסוימות. כברירת מחדל, המעטפת ממתינה שיהיו מוכן ומציגה את מסך הבית לאחר מכן.[CR][CR]אפשרות זו מדלגת על שלב זה ומציגה את מסך הבית באופן מידי. פריטי המדף יופיעו לאחר השהיה, כתלות במהירותה של המערכת."
+
+msgctxt "#31983"
+msgid "Choose from menu"
+msgstr "בחירה מהתפריט"
+
+msgctxt "#31984"
+msgid "TV Tunes (requires TV Tunes add-on)"
+msgstr "TV Tunes (דורש הרחבת TV Tunes)"
+
 msgctxt "#31985"
 msgid "Advanced"
 msgstr "מתקדם"
+
+msgctxt "#31986"
+msgid "Use default background on Home page"
+msgstr "השתמש ברקע ברירת המחדל במסך הבית"
 
 msgctxt "#31987"
 msgid "Random"
@@ -227,3 +395,27 @@ msgstr "אקראי"
 msgctxt "#31988"
 msgid "Menu"
 msgstr "תפריט"
+
+msgctxt "#31989"
+msgid "Home menu quit button function"
+msgstr "פעולת כפתור יציאה בתפריט מסך הבית"
+
+msgctxt "#31990"
+msgid "Quit Menu"
+msgstr "תפריט יציאה"
+
+msgctxt "#31992"
+msgid "Banner (wide) thumbs"
+msgstr "תמונות באנר (רחב)"
+
+msgctxt "#31993"
+msgid "Not used - click to customize"
+msgstr "לא בשימוש - יש ללחוץ להתאמה"
+
+msgctxt "#31994"
+msgid "Use vertical main menu on Home screen"
+msgstr "השתמש בתפריט ראשי אנכי במסך הבית"
+
+msgctxt "#31995"
+msgid "Home layout"
+msgstr "פריסת מסך בית"
