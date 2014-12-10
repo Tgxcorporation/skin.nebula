@@ -43,7 +43,6 @@
                             <posx>960r</posx>
                             <visible>!StringCompare(ListItem.Label,)</visible>
                             <posx>TextMarginR</posx>
-
                             <height>78</height>
                             <width>900</width>
                             <align>right</align>
@@ -1356,7 +1355,7 @@
                         <onleft>90000</onleft>
                         <onright>504</onright>
                         <onup>9004</onup>
-                        <ondown>300</ondown>
+                        <ondown>3000</ondown>
                         <pagecontrol>504</pagecontrol>
                         <itemlayout height="78" width="660">
                             <control type="label">
@@ -1391,13 +1390,13 @@
                         <content>
                             <item id="0">
                                 <label>$LOCALIZE[571]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/default/default.jpg</icon>
                                 <thumb>$INFO[Skin.String(Default.Background)]</thumb>
                             </item>
                             <item id="1">
                                 <label>$LOCALIZE[3]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Videos.jpg</icon>
                                 <thumb>$INFO[Skin.String(Videos.Background)]</thumb>
                             </item>
@@ -1405,7 +1404,7 @@
                                 <visible>!Skin.HasSetting(plexbmc)</visible>
                                 <visible>!Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)</visible>
                                 <label>$LOCALIZE[20342]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Movies.jpg</icon>
                                 <thumb>$INFO[Skin.String(Movies.Background)]</thumb>
                             </item>
@@ -1413,7 +1412,7 @@
                                 <visible>!Skin.HasSetting(plexbmc)</visible>
                                 <visible>!Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)</visible>
                                 <label>$LOCALIZE[20343]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/TVShows.jpg</icon>
                                 <thumb>$INFO[Skin.String(TVShows.Background)]</thumb>
                             </item>
@@ -1421,21 +1420,21 @@
                                 <visible>!Skin.HasSetting(plexbmc)</visible>
                                 <visible>!Skin.HasSetting(Music.Hide)</visible>
                                 <label>$LOCALIZE[2]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Music.jpg</icon>
                                 <thumb>$INFO[Skin.String(Music.Background)]</thumb>
                             </item>
                             <item id="13">
                                 <visible>Skin.HasSetting(Clips.Show)</visible>
                                 <label>$LOCALIZE[31972]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Clips.jpg</icon>
                                 <thumb>$INFO[Skin.String(Clips.Background)]</thumb>
                             </item>
                             <item id="14">
                                 <visible>Skin.HasSetting(Concerts.Show)</visible>
                                 <label>$LOCALIZE[31971]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Concerts.jpg</icon>
                                 <thumb>$INFO[Skin.String(Concerts.Background)]</thumb>
                             </item>
@@ -1443,201 +1442,201 @@
                                 <visible>!Skin.HasSetting(plexbmc)</visible>
                                 <visible>!Skin.HasSetting(Pictures.Hide)</visible>
                                 <label>$LOCALIZE[1]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Pictures.jpg</icon>
                                 <thumb>$INFO[Skin.String(Pictures.Background)]</thumb>
                             </item>
                             <item id="6">
                                 <visible>!Skin.HasSetting(Favourites.Hide)</visible>
                                 <label>$LOCALIZE[1036]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Favourites.jpg</icon>
                                 <thumb>$INFO[Skin.String(Favourites.Background)]</thumb>
                             </item>
                             <!-- <item id="7">
                                 <label>$LOCALIZE[8]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Weather.jpg</icon>
                                 <thumb>$INFO[Skin.String(Weather.Background)]</thumb>
                             </item> -->
                             <item id="8">
                                 <visible>!Skin.HasSetting(Addons.Hide)</visible>
                                 <label>$LOCALIZE[24001]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Addons.jpg</icon>
                                 <thumb>$INFO[Skin.String(Addons.Background)]</thumb>
                             </item>
                             <item id="9">
                                 <label>$LOCALIZE[5]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Settings.jpg</icon>
                                 <thumb>$INFO[Skin.String(Settings.Background)]</thumb>
                             </item>
                             <item id="10">
                                 <visible>!Skin.HasSetting(DVD.Hide)</visible>
                                 <label>$LOCALIZE[427]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Dvds.jpg</icon>
                                 <thumb>$INFO[Skin.String(DVD.Background)]</thumb>
                             </item>
                             <item id="11">
                                 <visible>!Skin.HasSetting(Quit.Hide)</visible>
                                 <label>$LOCALIZE[13009]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Quit.jpg</icon>
                                 <thumb>$INFO[Skin.String(Quit.Background)]</thumb>
                             </item>
                             <item id="12">
                                 <visible>!Skin.HasSetting(Tv.Hide)+System.GetBool(pvrmanager.enabled)</visible>
                                 <label>19020</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Tv.jpg</icon>
                                 <thumb>$INFO[Skin.String(Tv.Background)]</thumb>
                             </item>
                             <item id="15">
                                 <visible>!Skin.HasSetting(Radio.Hide)+System.GetBool(pvrmanager.enabled)</visible>
                                 <label>19021</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Radio.jpg</icon>
                                 <thumb>$INFO[Skin.String(Radio.Background)]</thumb>
                             </item>
                             <item id="21">
                                 <visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>
                                 <label>$INFO[Skin.String(CustomHome.1.Label)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/default/default.jpg</icon>
                                 <thumb>$INFO[Skin.String(CustomHome.1.Background)]</thumb>
                             </item>
                             <item id="22">
                                 <visible>!IsEmpty(Skin.String(CustomHome.2.Path))</visible>
                                 <label>$INFO[Skin.String(CustomHome.2.Label)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/default/default.jpg</icon>
                                 <thumb>$INFO[Skin.String(CustomHome.2.Background)]</thumb>
                             </item>
                             <item id="23">
                                 <visible>!IsEmpty(Skin.String(CustomHome.3.Path))</visible>
                                 <label>$INFO[Skin.String(CustomHome.3.Label)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/default/default.jpg</icon>
                                 <thumb>$INFO[Skin.String(CustomHome.3.Background)]</thumb>
                             </item>
                             <item id="24">
                                 <visible>!IsEmpty(Skin.String(CustomHome.4.Path))</visible>
                                 <label>$INFO[Skin.String(CustomHome.4.Label)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/default/default.jpg</icon>
                                 <thumb>$INFO[Skin.String(CustomHome.4.Background)]</thumb>
                             </item>
                             <item id="25">
                                 <visible>!IsEmpty(Skin.String(CustomHome.5.Path))</visible>
                                 <label>$INFO[Skin.String(CustomHome.5.Label)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/default/default.jpg</icon>
                                 <thumb>$INFO[Skin.String(CustomHome.5.Background)]</thumb>
                             </item>
                             <item id="26">
                                 <visible>!IsEmpty(Skin.String(CustomHome.6.Path))</visible>
                                 <label>$INFO[Skin.String(CustomHome.6.Label)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/default/default.jpg</icon>
                                 <thumb>$INFO[Skin.String(CustomHome.6.Background)]</thumb>
                             </item>
                             <item id="27">
                                 <visible>!IsEmpty(Skin.String(CustomHome.7.Path))</visible>
                                 <label>$INFO[Skin.String(CustomHome.7.Label)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/default/default.jpg</icon>
                                 <thumb>$INFO[Skin.String(CustomHome.7.Background)]</thumb>
                             </item>
                             <item id="28">
                                 <visible>!IsEmpty(Skin.String(CustomHome.8.Path))</visible>
                                 <label>$INFO[Skin.String(CustomHome.8.Label)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/default/default.jpg</icon>
                                 <thumb>$INFO[Skin.String(CustomHome.8.Background)]</thumb>
                             </item>
                             <item id="29">
                                 <visible>!IsEmpty(Skin.String(CustomHome.9.Path))</visible>
                                 <label>$INFO[Skin.String(CustomHome.9.Label)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/default/default.jpg</icon>
                                 <thumb>$INFO[Skin.String(CustomHome.9.Background)]</thumb>
                             </item>
                             <item id="60">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.0.title))</visible>
                                 <label>$INFO[Window(Home).Property(plexbmc.0.title)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.0.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.0.Background)]</thumb>
                             </item>
                             <item id="61">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.1.title))</visible>
                                 <label>$INFO[Window(Home).Property(plexbmc.1.title)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.1.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.1.Background)]</thumb>
                             </item>
                             <item id="62">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.2.title))</visible>
                                 <label>$INFO[Window(Home).Property(plexbmc.2.title)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.2.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.2.Background)]</thumb>
                             </item>
                             <item id="63">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.3.title))</visible>
                                 <label>$INFO[Window(Home).Property(plexbmc.3.title)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.3.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.3.Background)]</thumb>
                             </item>
                             <item id="64">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.4.title))</visible>
                                 <label>$INFO[Window(Home).Property(plexbmc.4.title)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.4.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.4.Background)]</thumb>
                             </item>
                             <item id="65">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.5.title))</visible>
                                 <label>$INFO[Window(Home).Property(plexbmc.5.title)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.5.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.5.Background)]</thumb>
                             </item>
                             <item id="66">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.6.title))</visible>
                                 <label>$INFO[Window(Home).Property(plexbmc.6.title)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.6.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.6.Background)]</thumb>
                             </item>
                             <item id="67">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.7.title))</visible>
                                 <label>$INFO[Window(Home).Property(plexbmc.7.title)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.7.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.7.Background)]</thumb>
                             </item>
                             <item id="68">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.8.title))</visible>
                                 <label>$INFO[Window(Home).Property(plexbmc.8.title)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.8.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.8.Background)]</thumb>
                             </item>
                             <item id="69">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.9.title))</visible>
                                 <label>$INFO[Window(Home).Property(plexbmc.9.title)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.9.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.9.Background)]</thumb>
                             </item>
                             <item id="70">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.10.title))</visible>
                                 <label>$INFO[Window(Home).Property(plexbmc.10.title)]</label>
-                                <onclick>Setfocus(300)</onclick>
+                                <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.10.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.10.Background)]</thumb>
                             </item>
@@ -1664,7 +1663,7 @@
                         <posy>218</posy>
                         <width>1190</width>
                         <height>669</height>
-                        <imagepath background="true">$INFO[Container(9004).ListItem.Icon]</imagepath>
+                        <imagepath background="true">$VAR[SkinSettings.RandomBackground.Art]</imagepath>
                         <timeperimage>6000</timeperimage>
                         <randomize>true</randomize>
                         <fadetime>500</fadetime>
@@ -1684,10 +1683,10 @@
                         <align>center</align>
                         <haspath>yes</haspath>
                         <font>OSDFont</font>
-                        <label fallback="571">$INFO[Container(9004).ListItem.Thumb]</label>
+                        <label fallback="571">$VAR[SkinSettings.RandomBackground.Label]</label>
                     </control>
                 </control>
-                <control type="grouplist">
+                <control type="grouplist" id="3000">
                     <visible>Container(90000).HasFocus(4)</visible>
                     <posx>0</posx>
                     <posy>903</posy>
@@ -1702,9 +1701,13 @@
                     <onup>9004</onup>
                     <ondown>9004</ondown>
                     <control type="button" id="300">
+                        <visible>![[Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)]|
+                            [Container(9004).HasFocus(2)+Skin.HasSetting(Movies.Background.EnableRandomFanart)]|
+                            [Container(9004).HasFocus(3)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)]|
+                            [Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)]]</visible>
                         <include>ButtonFocusAnimation</include>
                         <description>Single Image button</description>
-                        <width>400</width>
+                        <include>SkinSettingsButton</include>
                         <label>$LOCALIZE[1030]</label>
                         <onclick condition="Container(9004).HasFocus(0)">Skin.SetImage(Default.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(1)">Skin.SetImage(Videos.Background)</onclick>
@@ -1744,9 +1747,13 @@
                         <onclick condition="Container(9004).HasFocus(70)">Skin.SetImage(Plexbmc.10.Background)</onclick>
                     </control>
                     <control type="button" id="301">
+                        <visible>![[Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)]|
+                            [Container(9004).HasFocus(2)+Skin.HasSetting(Movies.Background.EnableRandomFanart)]|
+                            [Container(9004).HasFocus(3)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)]|
+                            [Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)]]</visible>
                         <include>ButtonFocusAnimation</include>
                         <description>Multi Image button</description>
-                        <width>400</width>
+                        <include>SkinSettingsButton</include>
                         <label>$LOCALIZE[31114]</label>
                         <onclick condition="Container(9004).HasFocus(0)">Skin.SetPath(Default.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(1)">Skin.SetPath(Videos.Background)</onclick>
@@ -1785,16 +1792,52 @@
                         <onclick condition="Container(9004).HasFocus(69)">Skin.SetPath(Plexbmc.9.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(70)">Skin.SetPath(Plexbmc.10.Background)</onclick>
                     </control>
+                    <control type="radiobutton" id="303">
+                        <visible>System.HasAddon(script.grab.fanart)+Container(9004).HasFocus(1)</visible>
+                        <include>ButtonFocusAnimation</include>
+                        <selected>Skin.HasSetting(Videos.Background.EnableRandomFanart)</selected>
+                        <include>SkinSettingsButton</include>
+                        <label>$LOCALIZE[590]         </label>
+                        <onclick>Skin.ToggleSetting(Videos.Background.EnableRandomFanart)</onclick>
+                    </control>
+                    <control type="radiobutton" id="304">
+                        <visible>System.HasAddon(script.grab.fanart)+Container(9004).HasFocus(2)</visible>
+                        <include>ButtonFocusAnimation</include>
+                        <selected>Skin.HasSetting(Movies.Background.EnableRandomFanart)</selected>
+                        <include>SkinSettingsButton</include>
+                        <label>$LOCALIZE[590]         </label>
+                        <onclick>Skin.ToggleSetting(Movies.Background.EnableRandomFanart)</onclick>
+                    </control>
+                    <control type="radiobutton" id="305">
+                        <visible>System.HasAddon(script.grab.fanart)+Container(9004).HasFocus(3)</visible>
+                        <include>ButtonFocusAnimation</include>
+                        <selected>Skin.HasSetting(TVShows.Background.EnableRandomFanart)</selected>
+                        <include>SkinSettingsButton</include>
+                        <label>$LOCALIZE[590]         </label>
+                        <onclick>Skin.ToggleSetting(TVShows.Background.EnableRandomFanart)</onclick>
+                    </control>
+                    <control type="radiobutton" id="306">
+                        <visible>System.HasAddon(script.grab.fanart)+Container(9004).HasFocus(4)</visible>
+                        <include>ButtonFocusAnimation</include>
+                        <selected>Skin.HasSetting(Music.Background.EnableRandomFanart)</selected>
+                        <include>SkinSettingsButton</include>
+                        <label>$LOCALIZE[590]         </label>
+                        <onclick>Skin.ToggleSetting(Music.Background.EnableRandomFanart)</onclick>
+                    </control>
                     <control type="button" id="302">
                         <include>ButtonFocusAnimation</include>
                         <description>Default Image button</description>
-                        <width>400</width>
+                        <include>SkinSettingsButton</include>
                         <label>$LOCALIZE[571]</label>
                         <onclick condition="Container(9004).HasFocus(0)">Skin.Reset(Default.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(1)">Skin.Reset(Videos.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(2)">Skin.Reset(Movies.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(3)">Skin.Reset(TVShows.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(4)">Skin.Reset(Music.Background)</onclick>
+                        <onclick condition="Container(9004).HasFocus(1)+System.HasAddon(script.grab.fanart)+Skin.HasSetting(Videos.Background.EnableRandomFanart)">Skin.ToggleSetting(Videos.Background.EnableRandomFanart)</onclick>
+                        <onclick condition="Container(9004).HasFocus(2)+System.HasAddon(script.grab.fanart)+Skin.HasSetting(Movies.Background.EnableRandomFanart)">Skin.ToggleSetting(Movies.Background.EnableRandomFanart)</onclick>
+                        <onclick condition="Container(9004).HasFocus(3)+System.HasAddon(script.grab.fanart)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)">Skin.ToggleSetting(TVShows.Background.EnableRandomFanart)</onclick>
+                        <onclick condition="Container(9004).HasFocus(4)+System.HasAddon(script.grab.fanart)+Skin.HasSetting(Music.Background.EnableRandomFanart)">Skin.ToggleSetting(Music.Background.EnableRandomFanart)</onclick>
                         <onclick condition="Container(9004).HasFocus(5)">Skin.Reset(Pictures.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(6)">Skin.Reset(Favourites.Background)</onclick>
                         <!-- <onclick condition="Container(9004).HasFocus(7)">Skin.Reset(Weather.Background)</onclick> -->

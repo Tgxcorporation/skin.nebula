@@ -1080,4 +1080,20 @@
             </control>
         </control>
     </include>
+    <include name="SkinSettingsButton">
+        <width>297</width>
+        <height>90</height>
+        <radioposx>215</radioposx>
+        <align>center</align>
+        <aligny>center</aligny>
+        <font>SmallButtonFont</font>
+        <textoffsetx>0</textoffsetx>
+        <include>TextColor_AlternateColor</include>
+        <include>FocusedColor_MainColor</include>
+        <include>SelectedColor_SelectedColor</include>
+        <include>DisabledColor_DisabledColor</include>
+        <include>TextureFocus</include>
+        <texturenofocus>-</texturenofocus>
+        <pulseonselect>false</pulseonselect>
+    </include>
 </includes>
