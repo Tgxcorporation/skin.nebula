@@ -707,15 +707,15 @@
         <animation effect="fade" time="250">Visible</animation>
     </include>
     <include name="PosterThumbBig">
-        <texture>$VAR[ThumbsBig]</texture>
+        <texture background="true">$VAR[ThumbsBig]</texture>
         <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
     </include>
     <include name="SquareThumbBig">
-        <texture>$VAR[ThumbsBig]</texture>
+        <texture background="true">$VAR[ThumbsBig]</texture>
         <aspectratio scalediffuse="false">keep</aspectratio>
     </include>
     <include name="EpisodeThumbBig">
-        <texture>$VAR[ThumbsBig]</texture>
+        <texture background="true">$VAR[ThumbsBig]</texture>
         <aspectratio scalediffuse="false">keep</aspectratio>
     </include>
     <include name="9000GrouplistParameters">

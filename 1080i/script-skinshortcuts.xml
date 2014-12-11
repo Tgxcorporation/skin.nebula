@@ -148,7 +148,7 @@
                             <posx>0</posx>
                             <height>287</height>
                             <width>287</width>
-                            <texture fallback="white/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
+                            <texture background="true" fallback="white/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
                             <include>ThumbBorder</include>
                             <aspectratio>keep</aspectratio>
                         </control>
@@ -157,7 +157,7 @@
                             <posx>0</posx>
                             <height>287</height>
                             <width>287</width>
-                            <texture fallback="black/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
+                            <texture background="true" fallback="black/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
                             <include>ThumbBorder</include>
                             <aspectratio>keep</aspectratio>
                         </control>
@@ -238,7 +238,7 @@
                             <posx>0</posx>
                             <height>287</height>
                             <width>287</width>
-                            <texture fallback="white/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
+                            <texture background="true" fallback="white/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
                             <include>ThumbBorder</include>
                             <aspectratio>keep</aspectratio>
                         </control>
@@ -247,7 +247,7 @@
                             <posx>0</posx>
                             <height>287</height>
                             <width>287</width>
-                            <texture fallback="black/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
+                            <texture background="true" fallback="black/defaultExtensionBig.png">$INFO[ListItem.Icon]</texture>
                             <include>ThumbBorder</include>
                             <aspectratio>keep</aspectratio>
                         </control>

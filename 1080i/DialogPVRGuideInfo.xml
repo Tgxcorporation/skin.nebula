@@ -36,7 +36,7 @@
                 <width>373</width>
                 <height>300</height>
                 <aspectratio>keep</aspectratio>
-                <texture fallback="white/defaultChannelTvBig_Wide.png">$INFO[ListItem.Icon]</texture>
+                <texture  background="true" fallback="white/defaultChannelTvBig_Wide.png">$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorder</include>
             </control>
             <control type="image">
@@ -47,7 +47,7 @@
                 <width>373</width>
                 <height>300</height>
                 <aspectratio>keep</aspectratio>
-                <texture fallback="black/defaultChannelTvBig_Wide.png">$INFO[ListItem.Icon]</texture>
+                <texture  background="true" fallback="black/defaultChannelTvBig_Wide.png">$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorder</include>
             </control>
             <control type="label">

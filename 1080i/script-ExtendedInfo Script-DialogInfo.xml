@@ -43,7 +43,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="white/defaultArtistBig.png">$INFO[Window(home).Property(actor.Poster)]</texture>
+                    <texture background="true" fallback="white/defaultArtistBig.png">$INFO[Window(home).Property(actor.Poster)]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -54,7 +54,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="black/defaultArtistBig.png">$INFO[Window(home).Property(actor.Poster)]</texture>
+                    <texture background="true" fallback="black/defaultArtistBig.png">$INFO[Window(home).Property(actor.Poster)]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -161,7 +161,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="white/defaultArtistBig.png">$INFO[Container(150).Listitem.Icon]</texture>
+                    <texture background="true" fallback="white/defaultArtistBig.png">$INFO[Container(150).Listitem.Icon]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -172,7 +172,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="black/defaultArtistBig.png">$INFO[Container(150).Listitem.Icon]</texture>
+                    <texture background="true" fallback="black/defaultArtistBig.png">$INFO[Container(150).Listitem.Icon]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -293,7 +293,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="white/defaultArtistBig.png">$INFO[Container(250).Listitem.Icon]</texture>
+                    <texture background="true" fallback="white/defaultArtistBig.png">$INFO[Container(250).Listitem.Icon]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -304,7 +304,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="black/defaultArtistBig.png">$INFO[Container(250).Listitem.Icon]</texture>
+                    <texture background="true" fallback="black/defaultArtistBig.png">$INFO[Container(250).Listitem.Icon]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -407,7 +407,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="white/defaultArtistBig.png">$INFO[Container(350).Listitem.Icon]</texture>
+                    <texture background="true" fallback="white/defaultArtistBig.png">$INFO[Container(350).Listitem.Icon]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -418,7 +418,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="black/defaultArtistBig.png">$INFO[Container(350).Listitem.Icon]</texture>
+                    <texture background="true" fallback="black/defaultArtistBig.png">$INFO[Container(350).Listitem.Icon]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -535,7 +535,7 @@
                             <posy>120</posy>
                             <width>295</width>
                             <height>396</height>
-                            <texture fallback="white/defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
+                            <texture background="true" fallback="white/defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
@@ -544,7 +544,7 @@
                             <posy>120</posy>
                             <width>295</width>
                             <height>396</height>
-                            <texture fallback="black/defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
+                            <texture background="true" fallback="black/defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
                             <include>ThumbBorder</include>
                         </control>
                     </itemlayout>
@@ -568,7 +568,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="white/defaultArtistBig.png">$INFO[Container(450).ListItem.Icon]</texture>
+                    <texture background="true" fallback="white/defaultArtistBig.png">$INFO[Container(450).ListItem.Icon]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -580,7 +580,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture fallback="black/defaultArtistBig.png">$INFO[Container(450).ListItem.Icon]</texture>
+                    <texture background="true" fallback="black/defaultArtistBig.png">$INFO[Container(450).ListItem.Icon]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio>keep</aspectratio>
                 </control>
