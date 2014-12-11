@@ -45,7 +45,7 @@
                                 <posy>431</posy>
                                 <width>424</width>
                                 <height>424</height>
-                                <texture diffuse="white/common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
+                                <texture background="true" diffuse="white/common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
                                 <include>Animation_ViewsCDart</include>
                             </control>
@@ -122,7 +122,7 @@
                             <posy>111</posy>
                             <width>414</width>
                             <height>414</height>
-                            <texture diffuse="white/common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
+                            <texture background="true" diffuse="white/common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>

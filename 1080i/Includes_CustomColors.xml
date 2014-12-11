@@ -16,10 +16,10 @@
     </include>
     <!-- EpisodeThumb -->
     <include name="EpisodeThumb_white">
-        <texture fallback="white/defaultIconBig.png">$VAR[Thumbs]</texture>
+        <texture background="true" fallback="white/defaultIconBig.png">$VAR[Thumbs]</texture>
     </include>
     <include name="EpisodeThumb_black">
-        <texture fallback="black/defaultIconBig.png">$VAR[Thumbs]</texture>
+        <texture background="true" fallback="black/defaultIconBig.png">$VAR[Thumbs]</texture>
     </include>
     <include name="EpisodeThumb">
         <include condition="Skin.HasSetting(Theme.Color.Black)">EpisodeThumb_black</include>
@@ -28,10 +28,10 @@
     </include>
     <!-- SquareThumb -->
     <include name="SquareThumb_white">
-        <texture fallback="white/defaultIconBig.png">$VAR[Thumbs]</texture>
+        <texture background="true" fallback="white/defaultIconBig.png">$VAR[Thumbs]</texture>
     </include>
     <include name="SquareThumb_black">
-        <texture fallback="black/defaultIconBig.png">$VAR[Thumbs]</texture>
+        <texture background="true" fallback="black/defaultIconBig.png">$VAR[Thumbs]</texture>
     </include>
     <include name="SquareThumb">
         <include condition="Skin.HasSetting(Theme.Color.Black)">SquareThumb_black</include>
@@ -40,10 +40,10 @@
     </include>
     <!-- PosterThumb -->
     <include name="PosterThumb_white">
-        <texture fallback="white/defaultIconBig.png">$VAR[Thumbs]</texture>
+        <texture background="true" fallback="white/defaultIconBig.png">$VAR[Thumbs]</texture>
     </include>
     <include name="PosterThumb_black">
-        <texture fallback="black/defaultIconBig.png">$VAR[Thumbs]</texture>
+        <texture background="true" fallback="black/defaultIconBig.png">$VAR[Thumbs]</texture>
     </include>
     <include name="PosterThumb">
         <include condition="Skin.HasSetting(Theme.Color.Black)">PosterThumb_black</include>

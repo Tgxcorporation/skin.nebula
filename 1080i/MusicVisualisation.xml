@@ -37,14 +37,14 @@
                         <width>300</width>
                         <height>235</height>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <texture>$INFO[Skin.String(cdartPath)]$INFO[MusicPlayer.Artist,,/logo.png]</texture>
+                        <texture background="true">$INFO[Skin.String(cdartPath)]$INFO[MusicPlayer.Artist,,/logo.png]</texture>
                     </control>
                     <control type="image">
                         <posx>1560</posx>
                         <posy>407</posy>
                         <width>300</width>
                         <height>235</height>
-                        <texture>$INFO[MusicPlayer.Art(clearart)]</texture>
+                        <texture background="true">$INFO[MusicPlayer.Art(clearart)]</texture>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
                     </control>
                 </control>
@@ -66,7 +66,7 @@
                             <posy>-122</posy>
                             <width>315</width>
                             <height>315</height>
-                            <texture diffuse="white/common/cdart_diffuse.png">$INFO[Player.FolderPath]cdart.png</texture>
+                            <texture background="true" diffuse="white/common/cdart_diffuse.png">$INFO[Player.FolderPath]cdart.png</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
@@ -77,7 +77,7 @@
                         <posy>0</posy>
                         <width>405</width>
                         <height>405</height>
-                        <texture fallback="white/defaultVideoBig.png">$INFO[MusicPlayer.Cover]</texture>
+                        <texture background="true" fallback="white/defaultVideoBig.png">$INFO[MusicPlayer.Cover]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio aligny="top">keep</aspectratio>
                     </control>
@@ -87,7 +87,7 @@
                         <posy>0</posy>
                         <width>405</width>
                         <height>405</height>
-                        <texture fallback="black/defaultVideoBig.png">$INFO[MusicPlayer.Cover]</texture>
+                        <texture background="true" fallback="black/defaultVideoBig.png">$INFO[MusicPlayer.Cover]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio aligny="top">keep</aspectratio>
                     </control>

@@ -17,7 +17,7 @@
                 <posy>120</posy>
                 <width>295</width>
                 <height>396</height>
-                <texture fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <texture background="true" fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                 <include>ThumbBorder</include>
             </control>
@@ -54,7 +54,7 @@
                 <posy>120</posy>
                 <width>295</width>
                 <height>396</height>
-                <texture fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <texture background="true" fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                 <include>ThumbBorder</include>
             </control>
@@ -91,7 +91,7 @@
                 <posy>120</posy>
                 <width>295</width>
                 <height>396</height>
-                <texture fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <texture background="true" fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                 <include>ThumbBorder</include>
             </control>
@@ -128,7 +128,7 @@
                 <posy>120</posy>
                 <width>295</width>
                 <height>396</height>
-                <texture fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <texture background="true" fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                 <include>ThumbBorder</include>
             </control>
@@ -165,7 +165,7 @@
                 <width>295</width>
                 <height>295</height>
                 <aspectratio>scale</aspectratio>
-                <texture fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <texture background="true" fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <include>ThumbBorder</include>
             </control>
         </itemlayout>
@@ -201,7 +201,7 @@
                 <width>295</width>
                 <height>295</height>
                 <aspectratio>scale</aspectratio>
-                <texture fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <texture background="true" fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <include>ThumbBorder</include>
             </control>
         </itemlayout>
@@ -237,7 +237,7 @@
                 <width>295</width>
                 <height>295</height>
                 <aspectratio>scale</aspectratio>
-                <texture fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
+                <texture background="true" fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <include>ThumbBorder</include>
             </control>
         </itemlayout>

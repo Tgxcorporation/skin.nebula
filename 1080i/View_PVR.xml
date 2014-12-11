@@ -174,7 +174,7 @@
                                 <posy>96</posy>
                                 <width>1550</width>
                                 <height>1</height>
-                                <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
+                                <texture background="true" border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                             </control>
                             <control type="group">
                                 <posx>415</posx>
@@ -686,7 +686,7 @@
                         <width>78</width>
                         <height>78</height>
                         <colordiffuse>NoFocusedColor</colordiffuse>
-                        <texture fallback="white/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture background="true" fallback="white/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                         <aspectratio align="left">keep</aspectratio>
                     </control>
                     <control type="image">
@@ -696,7 +696,7 @@
                         <width>78</width>
                         <height>78</height>
                         <colordiffuse>NoFocusedColor</colordiffuse>
-                        <texture fallback="black/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture background="true" fallback="black/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                         <aspectratio align="left">keep</aspectratio>
                     </control>
                     <control type="label" id="1">
@@ -725,7 +725,7 @@
                             <posy>0</posy>
                             <width>78</width>
                             <height>78</height>
-                            <texture fallback="white/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                            <texture background="true" fallback="white/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                             <aspectratio align="left">keep</aspectratio>
                         </control>
                         <control type="image">
@@ -734,7 +734,7 @@
                             <posy>0</posy>
                             <width>78</width>
                             <height>78</height>
-                            <texture fallback="black/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                            <texture background="true" fallback="black/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                             <aspectratio align="left">keep</aspectratio>
                         </control>
                         <control type="label" id="1">
@@ -806,7 +806,7 @@
                 <width>373</width>
                 <height>300</height>
                 <aspectratio>keep</aspectratio>
-                <texture fallback="white/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                <texture background="true" fallback="white/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorder</include>
             </control>
             <control type="image">
@@ -816,7 +816,7 @@
                 <width>373</width>
                 <height>300</height>
                 <aspectratio>keep</aspectratio>
-                <texture fallback="black/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                <texture background="true" fallback="black/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorder</include>
             </control>
             <control type="group">
