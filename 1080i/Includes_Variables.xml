@@ -314,4 +314,12 @@
         <value condition="System.HasAddon(script.grab.fanart)+Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(4)">$LOCALIZE[590]</value>
         <value>$INFO[Container(9004).ListItem.Thumb]</value>
     </variable>
+    <variable name="OverlayTransparency">
+        <value condition="skin.hassetting(OverlayTransparency90)">FFFFFFFF</value>
+        <value condition="skin.hassetting(OverlayTransparency80)">E6FFFFFF</value>
+        <value condition="skin.hassetting(OverlayTransparency70)">CDFFFFFF</value>
+        <value condition="skin.hassetting(OverlayTransparency60)">B4FFFFFF</value>
+        <value condition="skin.hassetting(OverlayTransparency50)">9BFFFFFF</value>
+        <value>FFFFFFFF</value>
+    </variable>
 </includes>

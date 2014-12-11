@@ -469,6 +469,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>1080</height>
+            <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
             <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
         </control>
     </include>
