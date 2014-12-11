@@ -294,7 +294,8 @@
         <value>prova</value>
     </variable>
     <variable name="Theme.Color">
-        <!-- <value condition="IntegerGreaterThan(Control.GetLabel(889988),8)+!IntegerGreaterThan(Control.GetLabel(889988),9)">black</value> -->
+        <value condition="skin.hassetting(Theme.Color.Auto)+System.Time(8:00,20:00)">white</value>
+        <value condition="skin.hassetting(Theme.Color.Auto)+!System.Time(8:00,20:00)">black</value>
         <value condition="skin.hassetting(Theme.Color.Black)">black</value>
         <value condition="skin.hassetting(Theme.Color.White)">white</value>
         <value>white</value>

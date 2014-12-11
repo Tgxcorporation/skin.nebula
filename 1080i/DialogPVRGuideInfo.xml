@@ -29,7 +29,7 @@
                 <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
-                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                <include>ConditionWhite</include>
                 <fadetime>250</fadetime>
                 <posx>25</posx>
                 <posy>443</posy>
@@ -40,7 +40,7 @@
                 <include>ThumbBorder</include>
             </control>
             <control type="image">
-                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <include>ConditionBlack</include>
                 <fadetime>250</fadetime>
                 <posx>25</posx>
                 <posy>443</posy>
