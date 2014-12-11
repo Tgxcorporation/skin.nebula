@@ -3314,14 +3314,14 @@
                         <selected>[Skin.HasSetting(Theme.Color.White)|!Skin.HasSetting(Theme.Color.Black)]+!Skin.HasSetting(Theme.Color.Auto)</selected>
                         <onclick>XBMC.ReloadSkin()</onclick>
                     </control>
-                    <!-- DAWN / SUNSET -->
+                    <!-- AUTO / DAWN / SUNSET -->
                     <control type="radiobutton" id="8528081">
                         <include>ButtonFocusAnimation</include>
                         <posx>671</posx>
                         <posy>903</posy>
                         <width>577</width>
                         <height>90</height>
-                        <label>Auto</label>
+                        <label>$LOCALIZE[16040]</label>
                         <align>center</align>
                         <radioposx>450</radioposx>
                         <onright>852808</onright>
