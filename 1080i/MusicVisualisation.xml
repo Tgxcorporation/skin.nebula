@@ -72,7 +72,7 @@
                         </control>
                     </control>
                     <control type="image">
-                        <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                        <include>ConditionWhite</include>
                         <posx>25</posx>
                         <posy>0</posy>
                         <width>405</width>
@@ -82,7 +82,7 @@
                         <aspectratio aligny="top">keep</aspectratio>
                     </control>
                     <control type="image">
-                        <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                        <include>ConditionBlack</include>
                         <posx>25</posx>
                         <posy>0</posy>
                         <width>405</width>

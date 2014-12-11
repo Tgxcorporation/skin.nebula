@@ -36,7 +36,7 @@
                 <visible>![control.hasfocus(105)|control.hasfocus(205)|control.hasfocus(305)|control.hasfocus(405)|ControlGroup(1500).HasFocus|ControlGroup(2500).HasFocus|ControlGroup(3500).HasFocus|ControlGroup(4500).HasFocus]</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
-                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <include>ConditionWhite</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
@@ -47,7 +47,7 @@
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="image">
-                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <include>ConditionBlack</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
@@ -113,7 +113,7 @@
                 <visible>control.hasfocus(105)|ControlGroup(1500).HasFocus</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
-                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <include>ConditionWhite</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
@@ -124,7 +124,7 @@
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="image">
-                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <include>ConditionBlack</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
@@ -190,7 +190,7 @@
                 <visible>control.hasfocus(205)|ControlGroup(2500).HasFocus</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
-                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <include>ConditionWhite</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
@@ -201,7 +201,7 @@
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="image">
-                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <include>ConditionBlack</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
@@ -267,7 +267,7 @@
                 <visible>control.hasfocus(305)|ControlGroup(3500).HasFocus</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
-                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <include>ConditionWhite</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
@@ -278,7 +278,7 @@
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="image">
-                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <include>ConditionBlack</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
@@ -344,7 +344,7 @@
                 <visible>control.hasfocus(405)|ControlGroup(4500).HasFocus</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
-                    <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                    <include>ConditionWhite</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
@@ -355,7 +355,7 @@
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="image">
-                    <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                    <include>ConditionBlack</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>

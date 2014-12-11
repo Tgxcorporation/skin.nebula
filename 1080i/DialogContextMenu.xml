@@ -6,7 +6,7 @@
         <control type="group">
             <include>DialogOpenClose</include>
             <control type="button">
-                <visible>!skin.hassetting(Theme.Color.Black)</visible>
+                <include>ConditionWhite</include>
                 <posx>1887</posx>
                 <posy>-33</posy>
                 <height>33</height>
@@ -18,7 +18,7 @@
                 <label>-</label>
             </control>
             <control type="button">
-                <visible>skin.hassetting(Theme.Color.Black)</visible>
+                <include>ConditionBlack</include>
                 <posx>1887</posx>
                 <posy>-33</posy>
                 <height>33</height>

@@ -53,7 +53,7 @@
             </control>
             <control type="image">
                 <visible>![Control.hasfocus(50)|Control.hasfocus(9012)|Control.HasFocus(9014)|Control.HasFocus(10)]</visible>
-                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                <include>ConditionWhite</include>
                 <include>VisibleFadeEffectDelay</include>
                 <fadetime>250</fadetime>
                 <posx>25</posx>
@@ -66,7 +66,7 @@
             </control>
             <control type="image">
                 <visible>![Control.hasfocus(50)|Control.hasfocus(9012)|Control.HasFocus(9014)|Control.HasFocus(10)]</visible>
-                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <include>ConditionBlack</include>
                 <include>VisibleFadeEffectDelay</include>
                 <fadetime>250</fadetime>
                 <posx>25</posx>
@@ -79,7 +79,7 @@
             </control>
             <control type="image">
                 <visible>[Control.HasFocus(50)| Control.HasFocus(61)| Control.HasFocus(9012)| Control.HasFocus(9014)]</visible>
-                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                <include>ConditionWhite</include>
                 <include>VisibleFadeEffectDelay</include>
                 <fadetime>250</fadetime>
                 <posx>25</posx>
@@ -92,7 +92,7 @@
             </control>
             <control type="image">
                 <visible>[Control.HasFocus(50)| Control.HasFocus(61)| Control.HasFocus(9012)| Control.HasFocus(9014)]</visible>
-                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <include>ConditionBlack</include>
                 <include>VisibleFadeEffectDelay</include>
                 <fadetime>250</fadetime>
                 <posx>25</posx>

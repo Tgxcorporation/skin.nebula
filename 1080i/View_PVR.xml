@@ -130,7 +130,7 @@
                                 <include>ThumbBorder</include>
                             </control>
                             <control type="progress">
-                                <visible>!skin.hassetting(Theme.Color.Black)</visible>
+                                <include>ConditionWhite</include>
                                 <posx>TextMargin</posx>
                                 <posy>346</posy>
                                 <height>54</height>
@@ -144,7 +144,7 @@
                                 <info>ListItem.Progress</info>
                             </control>
                             <control type="progress">
-                                <visible>skin.hassetting(Theme.Color.Black)</visible>
+                                <include>ConditionBlack</include>
                                 <posx>TextMargin</posx>
                                 <posy>346</posy>
                                 <height>54</height>
@@ -680,7 +680,7 @@
                 </rulerlayout>
                 <channellayout height="78" width="420">
                     <control type="image">
-                        <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                        <include>ConditionWhite</include>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>78</width>
@@ -690,7 +690,7 @@
                         <aspectratio align="left">keep</aspectratio>
                     </control>
                     <control type="image">
-                        <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                        <include>ConditionBlack</include>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>78</width>
@@ -720,7 +720,7 @@
                             <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="image">
-                            <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                            <include>ConditionWhite</include>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>78</width>
@@ -729,7 +729,7 @@
                             <aspectratio align="left">keep</aspectratio>
                         </control>
                         <control type="image">
-                            <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                            <include>ConditionBlack</include>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>78</width>
@@ -800,7 +800,7 @@
                 <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
-                <visible>!Skin.HasSetting(Theme.Color.Black)</visible>
+                <include>ConditionWhite</include>
                 <posx>63</posx>
                 <posy>732</posy>
                 <width>373</width>
@@ -810,7 +810,7 @@
                 <include>ThumbBorder</include>
             </control>
             <control type="image">
-                <visible>Skin.HasSetting(Theme.Color.Black)</visible>
+                <include>ConditionBlack</include>
                 <posx>63</posx>
                 <posy>732</posy>
                 <width>373</width>
@@ -1507,7 +1507,7 @@
                                 <include>ThumbBorder</include>
                             </control>
                             <control type="progress">
-                                <visible>!skin.hassetting(Theme.Color.Black)</visible>
+                                <include>ConditionWhite</include>
                                 <posx>TextMargin</posx>
                                 <posy>346</posy>
                                 <height>54</height>
@@ -1521,7 +1521,7 @@
                                 <info>ListItem.Progress</info>
                             </control>
                             <control type="progress">
-                                <visible>!skin.hassetting(Theme.Color.Black)</visible>
+                                <include>ConditionWhite</include>
                                 <posx>TextMargin</posx>
                                 <posy>346</posy>
                                 <height>54</height>
