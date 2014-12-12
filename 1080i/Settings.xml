@@ -43,19 +43,19 @@
                     </control>
                     <control type="image">
                         <include>ConditionWhite</include>
-                        <posx>603</posx>
-                        <posy>631</posy>
-                        <width>178</width>
-                        <height>44</height>
+                        <posx>591</posx>
+                        <posy>621</posy>
+                        <width>202</width>
+                        <height>56</height>
                         <texture>$VAR[Theme.Color]/common/logo.png</texture>
                         <colordiffuse>MainColor_white</colordiffuse>
                     </control>
                     <control type="image">
                         <include>ConditionBlack</include>
-                        <posx>603</posx>
-                        <posy>631</posy>
-                        <width>178</width>
-                        <height>44</height>
+                        <posx>591</posx>
+                        <posy>621</posy>
+                        <width>202</width>
+                        <height>56</height>
                         <texture>$VAR[Theme.Color]/common/logo.png</texture>
                         <colordiffuse>MainColor_black</colordiffuse>
                     </control>
