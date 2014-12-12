@@ -300,7 +300,12 @@
                             <label2 fallback="31502">$VAR[MovieEntryPointLabel2]</label2>
                             <onclick>ActivateWindow(1115)</onclick>
                         </item>
-                        <item id="13">
+                        <item id="30">
+                            <label>$LOCALIZE[31514]</label>
+                            <label2 fallback="31513">$VAR[MusicEntryPointLabel2]</label2>
+                            <onclick>ActivateWindow(1116)</onclick>
+                        </item>
+                        <!-- <item id="13">
                             <visible>Skin.HasSetting(ArtistView)</visible>
                             <label>$LOCALIZE[31960]</label>
                             <label2>$LOCALIZE[107]</label2>
@@ -311,7 +316,7 @@
                             <label>$LOCALIZE[31960]</label>
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(ArtistView)</onclick>
-                        </item>
+                        </item> -->
                         <item id="1003">
                             <label/>
                             <label2>$LOCALIZE[31029]</label2>

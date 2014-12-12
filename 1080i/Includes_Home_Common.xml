@@ -357,9 +357,7 @@
             <label>$LOCALIZE[2]</label>
             <thumb>$VAR[Music.Art]</thumb>
             <icon fallback="special://skin/backgrounds/Music.jpg">$INFO[Skin.String(Music.Icon)]</icon>
-            <onclick condition="Library.HasContent(Music) + !Skin.HasSetting(ArtistView)">ActivateWindow(MusicLibrary,root)</onclick>
-            <onclick condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,root)</onclick>
-            <onclick condition="Library.HasContent(Music) + Skin.HasSetting(ArtistView)">ActivateWindow(MusicLibrary,Artists)</onclick>
+            <onclick>$VAR[MusicEntryPoint]</onclick>
             <property name="submenuVisibility">music</property>
             <!-- <property name="count">$INFO[Window(home).Property(Music.AlbumsCount)]</property> -->
         </item>
