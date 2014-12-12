@@ -388,7 +388,15 @@ msgctxt "#31512"
 msgid "Artwork Downloader Gui"
 msgstr ""
 
-#empty strings from id 31513 to 31900
+msgctxt "#31513"
+msgid "All Music"
+msgstr ""
+
+msgctxt "#31514"
+msgid "Music homescreen button opens:"
+msgstr ""
+
+#empty strings from id 31515 to 31900
 #Weather plugin
 
 msgctxt "#31901"
