@@ -268,8 +268,8 @@
         <item id="1">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Pictures.Hide)</visible>
+            <label>$LOCALIZE[1]</label>
             <thumb>$VAR[Pictures.Art]</thumb>
-            <thumb fallback="special://skin/backgrounds/Pictures.jpg">$INFO[Skin.String(Pictures.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/Pictures.jpg">$INFO[Skin.String(Pictures.Icon)]</icon>
             <onclick>ActivateWindow(Pictures,root)</onclick>
             <property name="submenuVisibility">pictures</property>
