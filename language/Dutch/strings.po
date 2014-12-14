@@ -100,6 +100,22 @@ msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Recent toegevoegd"
 
+msgctxt "#31021"
+msgid "Info"
+msgstr "Info"
+
+msgctxt "#31022"
+msgid "Extended Info"
+msgstr "Uitgebreide info"
+
+msgctxt "#31023"
+msgid "Similar Movies"
+msgstr "Vergelijkbare films"
+
+msgctxt "#31024"
+msgid "MovieDB Users"
+msgstr "MovieDB-gebruikers"
+
 msgctxt "#31025"
 msgid "Items"
 msgstr "Items"
@@ -123,6 +139,10 @@ msgstr "Art Management"
 msgctxt "#31030"
 msgid "Enable Kiosk Mode"
 msgstr "Kioskmodus activeren (geen zij menu's)"
+
+msgctxt "#31031"
+msgid "Disable media infos in Icon View"
+msgstr "Media info's in pictogramweergave uitschakelen"
 
 msgctxt "#31035"
 msgid "Fuchsia"

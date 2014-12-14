@@ -20,6 +20,10 @@ msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Վերջերս ավելացված"
 
+msgctxt "#31021"
+msgid "Info"
+msgstr "Ինֆո"
+
 msgctxt "#31025"
 msgid "Items"
 msgstr "Պիտույք"
