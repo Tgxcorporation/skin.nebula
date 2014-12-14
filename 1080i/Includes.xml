@@ -748,7 +748,7 @@
             <include>LeftMenuButton</include>
             <onclick>Skin.ToggleSetting(52_ShowPlot)</onclick>
             <selected>Skin.HasSetting(52_ShowPlot)</selected>
-            <label>$LOCALIZE[31027]</label>
+            <label>$LOCALIZE[31968]</label>
         </control>
         <control type="label" id="9181">
             <include>LeftMenuTitleLabel</include>
