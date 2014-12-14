@@ -100,6 +100,22 @@ msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Ajoutés récemment"
 
+msgctxt "#31021"
+msgid "Info"
+msgstr "infos"
+
+msgctxt "#31022"
+msgid "Extended Info"
+msgstr "Infos supplémentaires"
+
+msgctxt "#31023"
+msgid "Similar Movies"
+msgstr "Films semblables"
+
+msgctxt "#31024"
+msgid "MovieDB Users"
+msgstr "Utilisateurs MovieDB"
+
 msgctxt "#31025"
 msgid "Items"
 msgstr "Éléments"
@@ -123,6 +139,10 @@ msgstr "Gestion des illustrations"
 msgctxt "#31030"
 msgid "Enable Kiosk Mode"
 msgstr "Activer le mode kiosque"
+
+msgctxt "#31031"
+msgid "Disable media infos in Icon View"
+msgstr "Désactiver les infos des médias dans la vue par icônes"
 
 msgctxt "#31035"
 msgid "Fuchsia"
@@ -150,7 +170,7 @@ msgstr "Activer le CDArt"
 
 msgctxt "#31041"
 msgid "Enable Extra Fanart"
-msgstr "Activer l'extra fanart"
+msgstr "Activer le fanart supplémentaire"
 
 msgctxt "#31042"
 msgid "Enable Clear Art"

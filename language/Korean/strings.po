@@ -100,6 +100,22 @@ msgctxt "#31020"
 msgid "Recently Added"
 msgstr "최근 추가"
 
+msgctxt "#31021"
+msgid "Info"
+msgstr "정보"
+
+msgctxt "#31022"
+msgid "Extended Info"
+msgstr "확장 정보"
+
+msgctxt "#31023"
+msgid "Similar Movies"
+msgstr "비슷한 영화"
+
+msgctxt "#31024"
+msgid "MovieDB Users"
+msgstr "영화 DB 사용자"
+
 msgctxt "#31025"
 msgid "Items"
 msgstr "항목"
@@ -123,6 +139,10 @@ msgstr "아트 관리"
 msgctxt "#31030"
 msgid "Enable Kiosk Mode"
 msgstr "전시모드 사용"
+
+msgctxt "#31031"
+msgid "Disable media infos in Icon View"
+msgstr "아이코 보기에서 미디어 정보 사용 안 함"
 
 msgctxt "#31035"
 msgid "Fuchsia"
