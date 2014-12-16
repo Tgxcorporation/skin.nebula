@@ -65,7 +65,7 @@
                         <visible>Skin.HasSetting(52_ShowPlot)</visible>
                         <include>Icon_Fade</include>
                         <control type="image">
-                            <visible>![IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                            <visible>![IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                             <visible>!StringCompare(ListItem.Label,..)</visible>
                             <fadetime>250</fadetime>
                             <posx>25</posx>
@@ -128,7 +128,7 @@
                         </control>
                     </control>
                     <control type="image">
-                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]|[Window.IsActive(MyMusicSongs.xml)+Skin.HasSetting(plexbmc)+Container.Content(Songs)]</visible>
+                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]|[Window.IsActive(MyMusicSongs.xml)+Skin.HasSetting(plexbmc)+Container.Content(Songs)]</visible>
                         <fadetime>250</fadetime>
                         <posx>75</posx>
                         <posy>323</posy>

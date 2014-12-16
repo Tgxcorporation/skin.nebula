@@ -195,7 +195,7 @@
                                 <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="image">
-                                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                                 <fadetime>250</fadetime>
                                 <posx>60</posx>
                                 <posy>75</posy>
@@ -406,7 +406,7 @@
                                 <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="image">
-                                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                                 <fadetime>250</fadetime>
                                 <posx>60</posx>
                                 <posy>75</posy>
@@ -836,7 +836,7 @@
                                 <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="image">
-                                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                                 <fadetime>250</fadetime>
                                 <posx>60</posx>
                                 <posy>75</posy>
@@ -1001,7 +1001,7 @@
                                 <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="image">
-                                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                                 <fadetime>250</fadetime>
                                 <posx>60</posx>
                                 <posy>75</posy>
@@ -1178,7 +1178,7 @@
                                 <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="image">
-                                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                                 <fadetime>250</fadetime>
                                 <posx>60</posx>
                                 <posy>75</posy>
@@ -1343,7 +1343,7 @@
                                 <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="image">
-                                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                                 <fadetime>250</fadetime>
                                 <posx>60</posx>
                                 <posy>75</posy>
@@ -1536,7 +1536,7 @@
                                 <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="image">
-                                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                                 <fadetime>300</fadetime>
                                 <posx>60</posx>
                                 <posy>75</posy>
