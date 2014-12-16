@@ -24,7 +24,7 @@
                     <visible>Control.IsVisible(52)</visible>
                     <include>Icon_Fade</include>
                     <control type="image">
-                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                         <fadetime>250</fadetime>
                         <posx>60</posx>
                         <posy>158</posy>
@@ -65,7 +65,7 @@
                         <visible>Skin.HasSetting(52_ShowPlot)</visible>
                         <include>Icon_Fade</include>
                         <control type="image">
-                            <visible>![IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                            <visible>![IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                             <visible>!StringCompare(ListItem.Label,..)</visible>
                             <fadetime>250</fadetime>
                             <posx>25</posx>
@@ -128,7 +128,7 @@
                         </control>
                     </control>
                     <control type="image">
-                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                         <fadetime>250</fadetime>
                         <posx>40</posx>
                         <posy>288</posy>

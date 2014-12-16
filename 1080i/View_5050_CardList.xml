@@ -20,7 +20,7 @@
             <control type="group">
                 <visible>!StringCompare(ListItem.Label,..)</visible>
                 <control type="image">
-                    <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                    <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                     <posx>60</posx>
                     <posy>183</posy>
                     <width>450</width>
@@ -164,7 +164,7 @@
                 <control type="group">
                     <visible>!StringCompare(ListItem.Label,..)</visible>
                     <control type="image">
-                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                         <posx>60</posx>
                         <posy>183</posy>
                         <width>450</width>
@@ -327,7 +327,7 @@
             <control type="group">
                 <visible>!StringCompare(ListItem.Label,..)</visible>
                 <control type="image">
-                    <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                    <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                     <posx>60</posx>
                     <posy>183</posy>
                     <width>450</width>
@@ -517,7 +517,7 @@
                 <control type="group">
                     <visible>!StringCompare(ListItem.Label,..)</visible>
                     <control type="image">
-                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem..Art(thumb))]</visible>
+                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                         <posx>60</posx>
                         <posy>183</posy>
                         <width>450</width>
