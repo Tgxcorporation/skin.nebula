@@ -151,7 +151,7 @@
                 <label>$VAR[Details]</label>
             </control>
             <control type="image">
-                <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+                <!--<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>-->
                 <posx>15</posx>
                 <posy>0</posy>
                 <width>30</width>
@@ -171,7 +171,7 @@
                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                 </control>
                 <control type="image">
-                    <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+                    <!--<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>-->
                     <posx>15</posx>
                     <posy>25</posy>
                     <width>30</width>

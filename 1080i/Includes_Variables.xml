@@ -302,7 +302,6 @@
         <value condition="Window.IsActive(MyMusicNav.xml)+Container.Content(albums)+[Control.isvisible(5050)|Control.isvisible(58)]">$INFO[ListItem.Path]/cdart.png</value>
         <value condition="Window.IsActive(MyMusicNav.xml)+Container.Content(songs)">$INFO[ListItem.Path]/cdart.png</value>
         <value condition="Window.IsActive(MyMusicSongs.xml)">$INFO[ListItem.Path]cdart.png</value>
-        <value>prova</value>
     </variable>
     <variable name="Theme.Color">
         <value condition="skin.hassetting(Theme.Color.Auto)+System.Time(8:00,20:00)">white</value>
