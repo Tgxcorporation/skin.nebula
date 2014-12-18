@@ -1697,7 +1697,7 @@
                                 <icon>special://skin/backgrounds/default/default.jpg</icon>
                                 <thumb>$INFO[Skin.String(CustomHome.9.Background)]</thumb>
                             </item>
-                            <item id="60">
+                            <!--<item id="60">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.0.title))</visible>
                                 <label>$INFO[Window(Home).Property(plexbmc.0.title)]</label>
                                 <onclick>Setfocus(3000)</onclick>
@@ -1773,7 +1773,7 @@
                                 <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.10.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.10.Background)]</thumb>
-                            </item>
+                            </item>-->
                         </content>
                     </control>
                     <control type="scrollbar" id="504">
@@ -1868,7 +1868,7 @@
                         <onclick condition="Container(9004).HasFocus(27)">Skin.SetImage(CustomHome.7.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(28)">Skin.SetImage(CustomHome.8.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(29)">Skin.SetImage(CustomHome.9.Background)</onclick>
-                        <onclick condition="Container(9004).HasFocus(60)">Skin.SetImage(Plexbmc.0.Background)</onclick>
+                        <!--<onclick condition="Container(9004).HasFocus(60)">Skin.SetImage(Plexbmc.0.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(61)">Skin.SetImage(Plexbmc.1.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(62)">Skin.SetImage(Plexbmc.2.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(63)">Skin.SetImage(Plexbmc.3.Background)</onclick>
@@ -1878,7 +1878,7 @@
                         <onclick condition="Container(9004).HasFocus(67)">Skin.SetImage(Plexbmc.7.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(68)">Skin.SetImage(Plexbmc.8.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(69)">Skin.SetImage(Plexbmc.9.Background)</onclick>
-                        <onclick condition="Container(9004).HasFocus(70)">Skin.SetImage(Plexbmc.10.Background)</onclick>
+                        <onclick condition="Container(9004).HasFocus(70)">Skin.SetImage(Plexbmc.10.Background)</onclick>-->
                     </control>
                     <control type="button" id="301">
                         <visible>![[Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)]|
@@ -1914,7 +1914,7 @@
                         <onclick condition="Container(9004).HasFocus(27)">Skin.SetPath(CustomHome.7.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(28)">Skin.SetPath(CustomHome.8.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(29)">Skin.SetPath(CustomHome.9.Background)</onclick>
-                        <onclick condition="Container(9004).HasFocus(60)">Skin.SetPath(Plexbmc.0.Background)</onclick>
+                        <!--<onclick condition="Container(9004).HasFocus(60)">Skin.SetPath(Plexbmc.0.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(61)">Skin.SetPath(Plexbmc.1.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(62)">Skin.SetPath(Plexbmc.2.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(63)">Skin.SetPath(Plexbmc.3.Background)</onclick>
@@ -1924,7 +1924,7 @@
                         <onclick condition="Container(9004).HasFocus(67)">Skin.SetPath(Plexbmc.7.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(68)">Skin.SetPath(Plexbmc.8.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(69)">Skin.SetPath(Plexbmc.9.Background)</onclick>
-                        <onclick condition="Container(9004).HasFocus(70)">Skin.SetPath(Plexbmc.10.Background)</onclick>
+                        <onclick condition="Container(9004).HasFocus(70)">Skin.SetPath(Plexbmc.10.Background)</onclick>-->
                     </control>
                     <control type="radiobutton" id="303">
                         <visible>System.HasAddon(script.grab.fanart)+Container(9004).HasFocus(1)</visible>
@@ -1992,7 +1992,7 @@
                         <onclick condition="Container(9004).HasFocus(27)">Skin.Reset(CustomHome.7.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(28)">Skin.Reset(CustomHome.8.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(29)">Skin.Reset(CustomHome.9.Background)</onclick>
-                        <onclick condition="Container(9004).HasFocus(60)">Skin.Reset(Plexbmc.0.Background)</onclick>
+                        <!--<onclick condition="Container(9004).HasFocus(60)">Skin.Reset(Plexbmc.0.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(61)">Skin.Reset(Plexbmc.1.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(62)">Skin.Reset(Plexbmc.2.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(63)">Skin.Reset(Plexbmc.3.Background)</onclick>
@@ -2002,7 +2002,7 @@
                         <onclick condition="Container(9004).HasFocus(67)">Skin.Reset(Plexbmc.7.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(68)">Skin.Reset(Plexbmc.8.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(69)">Skin.Reset(Plexbmc.9.Background)</onclick>
-                        <onclick condition="Container(9004).HasFocus(70)">Skin.Reset(Plexbmc.10.Background)</onclick>
+                        <onclick condition="Container(9004).HasFocus(70)">Skin.Reset(Plexbmc.10.Background)</onclick>-->
                     </control>
                 </control>
                 <!-- ICONS -->
@@ -2225,7 +2225,7 @@
                                 <icon>special://skin/backgrounds/default/default.jpg</icon>
                                 <thumb>$INFO[Skin.String(CustomHome.9.Icon)]</thumb>
                             </item>
-                            <item id="60">
+                            <!--<item id="60">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.0.title))</visible>
                                 <label>$INFO[Window(Home).Property(plexbmc.0.title)]</label>
                                 <onclick>Setfocus(300)</onclick>
@@ -2301,7 +2301,7 @@
                                 <onclick>Setfocus(300)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.10.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.10.Icon)]</thumb>
-                            </item>
+                            </item>-->
                         </content>
                     </control>
                     <control type="scrollbar" id="510">
@@ -2391,7 +2391,7 @@
                         <onclick condition="Container(9010).HasFocus(27)">Skin.SetImage(CustomHome.7.Icon)</onclick>
                         <onclick condition="Container(9010).HasFocus(28)">Skin.SetImage(CustomHome.8.Icon)</onclick>
                         <onclick condition="Container(9010).HasFocus(29)">Skin.SetImage(CustomHome.9.Icon)</onclick>
-                        <onclick condition="Container(9010).HasFocus(60)">Skin.SetImage(Plexbmc.0.Icon)</onclick>
+                        <!--<onclick condition="Container(9010).HasFocus(60)">Skin.SetImage(Plexbmc.0.Icon)</onclick>
                         <onclick condition="Container(9010).HasFocus(61)">Skin.SetImage(Plexbmc.1.Icon)</onclick>
                         <onclick condition="Container(9010).HasFocus(62)">Skin.SetImage(Plexbmc.2.Icon)</onclick>
                         <onclick condition="Container(9010).HasFocus(63)">Skin.SetImage(Plexbmc.3.Icon)</onclick>
@@ -2401,7 +2401,7 @@
                         <onclick condition="Container(9010).HasFocus(67)">Skin.SetImage(Plexbmc.7.Icon)</onclick>
                         <onclick condition="Container(9010).HasFocus(68)">Skin.SetImage(Plexbmc.8.Icon)</onclick>
                         <onclick condition="Container(9010).HasFocus(69)">Skin.SetImage(Plexbmc.9.Icon)</onclick>
-                        <onclick condition="Container(9010).HasFocus(70)">Skin.SetImage(Plexbmc.10.Icon)</onclick>
+                        <onclick condition="Container(9010).HasFocus(70)">Skin.SetImage(Plexbmc.10.Icon)</onclick>-->
                     </control>
                     <control type="button" id="302">
                         <include>ButtonFocusAnimation</include>
@@ -2433,7 +2433,7 @@
                         <onclick condition="Container(9010).HasFocus(27)">Skin.Reset(CustomHome.7.Icon)</onclick>
                         <onclick condition="Container(9010).HasFocus(28)">Skin.Reset(CustomHome.8.Icon)</onclick>
                         <onclick condition="Container(9010).HasFocus(29)">Skin.Reset(CustomHome.9.Icon)</onclick>
-                        <onclick condition="Container(9010).HasFocus(60)">Skin.Reset(Plexbmc.0.Icon)</onclick>
+                        <!--<onclick condition="Container(9010).HasFocus(60)">Skin.Reset(Plexbmc.0.Icon)</onclick>
                         <onclick condition="Container(9010).HasFocus(61)">Skin.Reset(Plexbmc.1.Icon)</onclick>
                         <onclick condition="Container(9010).HasFocus(62)">Skin.Reset(Plexbmc.2.Icon)</onclick>
                         <onclick condition="Container(9010).HasFocus(63)">Skin.Reset(Plexbmc.3.Icon)</onclick>
@@ -2443,7 +2443,7 @@
                         <onclick condition="Container(9010).HasFocus(67)">Skin.Reset(Plexbmc.7.Icon)</onclick>
                         <onclick condition="Container(9010).HasFocus(68)">Skin.Reset(Plexbmc.8.Icon)</onclick>
                         <onclick condition="Container(9010).HasFocus(69)">Skin.Reset(Plexbmc.9.Icon)</onclick>
-                        <onclick condition="Container(9010).HasFocus(70)">Skin.Reset(Plexbmc.10.Icon)</onclick>
+                        <onclick condition="Container(9010).HasFocus(70)">Skin.Reset(Plexbmc.10.Icon)</onclick>-->
                     </control>
                 </control>
                 <!-- SHELF -->
