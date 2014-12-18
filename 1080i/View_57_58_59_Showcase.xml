@@ -221,7 +221,7 @@
                     <posx>540</posx>
                     <posy>720</posy>
                     <control type="image">
-                        <visible>[Container.content(MusicVideos) | Container.Content(movies) | Container.Content(episodes)]</visible>
+                        <!--<visible>[Container.content(MusicVideos) | Container.Content(movies) | Container.Content(episodes)]</visible>-->
                         <posx>TextMargin</posx>
                         <posy>-47</posy>
                         <width>33</width>

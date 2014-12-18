@@ -53,7 +53,6 @@
                             </control>
                         </control>
                         <control type="image">
-                            <visible>!Container.content(episodes)</visible>
                             <fadetime>250</fadetime>
                             <posx>25</posx>
                             <posy>158</posy>
@@ -61,17 +60,6 @@
                             <height>703</height>
                             <aspectratio aligny="top">keep</aspectratio>
                             <include>PosterThumbBig</include>
-                            <include>ThumbBorder</include>
-                        </control>
-                        <control type="image">
-                            <visible>Container.content(episodes)</visible>
-                            <fadetime>250</fadetime>
-                            <posx>25</posx>
-                            <posy>158</posy>
-                            <width>520</width>
-                            <height>703</height>
-                            <aspectratio>scale</aspectratio>
-                            <include>EpisodeThumbBig</include>
                             <include>ThumbBorder</include>
                         </control>
                         <control type="grouplist">
@@ -141,7 +129,11 @@
                     <visible>!Skin.HasSetting(DisableIconViewInfos)</visible>
                     <visible>![StringCompare(ListItem.Label,..)|IsEmpty(ListItem.Label)]</visible>
                     <include>Icon_Fade</include>
-                    <animation effect="slide" tween="back" easing="out" time="100" start="0,0" end="0,-510" condition="[!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners)+[Container(53).Row(3)|Container(53).Row(4)|Container(53).Row(5)]]|[Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners)+[Container(53).Row(2)|Container(53).Row(3)]]|[Skin.HasSetting(53_UseBanners)+[Container(53).Row(3)|Container(53).Row(4)|Container(53).Row(5)]]">conditional</animation>
+                    <animation effect="slide" tween="back" easing="out" time="100" start="0,0" end="0,-510"
+                               condition="[!Container(53).content(episodes)+!Skin.HasSetting(53_BigGrid)+!Skin.HasSetting(53_UseBanners)+[Container(53).Row(3)|Container(53).Row(4)|Container(53).Row(5)]]
+                               |[!Container(53).content(episodes)+Skin.HasSetting(53_BigGrid)+!Skin.HasSetting(53_UseBanners)+[Container(53).Row(2)|Container(53).Row(3)]]
+                               |[!Container(53).content(episodes)+Skin.HasSetting(53_UseBanners)+[Container(53).Row(3)|Container(53).Row(4)|Container(53).Row(5)]]
+                               |[Container(53).content(episodes)+[Container(53).Row(2)|Container(53).Row(3)]]">conditional</animation>
                     <posy>255</posy>
                     <control type="image">
                         <posx>-40</posx>
@@ -176,25 +168,13 @@
                         <include>PosterThumb</include>
                     </control>
                     <control type="image">
-                        <visible>!Container.content(episodes)</visible>
                         <fadetime>250</fadetime>
                         <posx>40</posx>
                         <posy>288</posy>
                         <width>370</width>
                         <height>504</height>
-                        <aspectratio>keep</aspectratio>
+                        <aspectratio aligny="top">keep</aspectratio>
                         <include>PosterThumbBig</include>
-                        <include>ThumbBorder</include>
-                    </control>
-                    <control type="image">
-                        <visible>Container.content(episodes)</visible>
-                        <fadetime>250</fadetime>
-                        <posx>40</posx>
-                        <posy>288</posy>
-                        <width>370</width>
-                        <height>504</height>
-                        <aspectratio>scale</aspectratio>
-                        <include>EpisodeThumb</include>
                         <include>ThumbBorder</include>
                     </control>
                     <control type="grouplist">
@@ -213,7 +193,7 @@
                         <posx>395</posx>
                         <posy>355</posy>
                         <control type="image">
-                            <visible>[Container.content(MusicVideos) | Container.Content(movies) | Container.Content(episodes)]</visible>
+                            <!--<visible>[Container.content(MusicVideos) | Container.Content(movies) | Container.Content(episodes)]</visible>-->
                             <posx>10</posx>
                             <posy>-7</posy>
                             <width>33</width>

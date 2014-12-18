@@ -350,27 +350,16 @@
                     </control>
                 </control>
                 <control type="image">
-                    <visible>!Container.content(episodes)</visible>
                     <posx>25</posx>
                     <posy>183</posy>
                     <width>520</width>
                     <height>703</height>
-                    <aspectratio>scale</aspectratio>
+                    <aspectratio aligny="top">keep</aspectratio>
                     <include>PosterThumbBig</include>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="image">
-                    <visible>Container.content(episodes)</visible>
-                    <posx>25</posx>
-                    <posy>183</posy>
-                    <width>520</width>
-                    <height>703</height>
-                    <aspectratio>scale</aspectratio>
-                    <include>EpisodeThumbBig</include>
-                    <include>ThumbBorder</include>
-                </control>
-                <control type="image">
-                    <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+                    <!--<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>-->
                     <posx>545</posx>
                     <posy>228</posy>
                     <width>30</width>
@@ -540,27 +529,16 @@
                         </control>
                     </control>
                     <control type="image">
-                        <visible>!Container.content(episodes)</visible>
                         <posx>25</posx>
                         <posy>183</posy>
                         <width>520</width>
                         <height>703</height>
-                        <aspectratio>scale</aspectratio>
+                        <aspectratio aligny="top">keep</aspectratio>
                         <include>PosterThumbBig</include>
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>Container.content(episodes)</visible>
-                        <posx>25</posx>
-                        <posy>183</posy>
-                        <width>520</width>
-                        <height>703</height>
-                        <aspectratio>scale</aspectratio>
-                        <include>EpisodeThumbBig</include>
-                        <include>ThumbBorder</include>
-                    </control>
-                    <control type="image">
-                        <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+                        <!--<visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>-->
                         <posx>545</posx>
                         <posy>228</posy>
                         <width>30</width>
