@@ -338,4 +338,49 @@
         <value condition="skin.hassetting(OverlayTransparency50)">9BFFFFFF</value>
         <value>FFFFFFFF</value>
     </variable>
+    <variable name="CustomHome.1.Icon.Management">
+        <value condition="StringCompare(Skin.String(CustomHome.1.Icon),DefaultPlaylist.png)">special://skin/backgrounds/default/default.jpg</value>
+        <value condition="!IsEmpty(Skin.String(CustomHome.1.Icon))">$INFO[Skin.String(CustomHome.1.Icon)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
+    </variable>
+    <variable name="CustomHome.2.Icon.Management">
+        <value condition="StringCompare(Skin.String(CustomHome.2.Icon),DefaultPlaylist.png)">special://skin/backgrounds/default/default.jpg</value>
+        <value condition="!IsEmpty(Skin.String(CustomHome.2.Icon))">$INFO[Skin.String(CustomHome.2.Icon)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
+    </variable>
+    <variable name="CustomHome.3.Icon.Management">
+        <value condition="StringCompare(Skin.String(CustomHome.3.Icon),DefaultPlaylist.png)">special://skin/backgrounds/default/default.jpg</value>
+        <value condition="!IsEmpty(Skin.String(CustomHome.3.Icon))">$INFO[Skin.String(CustomHome.3.Icon)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
+    </variable>
+    <variable name="CustomHome.4.Icon.Management">
+        <value condition="StringCompare(Skin.String(CustomHome.4.Icon),DefaultPlaylist.png)">special://skin/backgrounds/default/default.jpg</value>
+        <value condition="!IsEmpty(Skin.String(CustomHome.4.Icon))">$INFO[Skin.String(CustomHome.4.Icon)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
+    </variable>
+    <variable name="CustomHome.5.Icon.Management">
+        <value condition="StringCompare(Skin.String(CustomHome.5.Icon),DefaultPlaylist.png)">special://skin/backgrounds/default/default.jpg</value>
+        <value condition="!IsEmpty(Skin.String(CustomHome.5.Icon))">$INFO[Skin.String(CustomHome.5.Icon)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
+    </variable>
+    <variable name="CustomHome.6.Icon.Management">
+        <value condition="StringCompare(Skin.String(CustomHome.6.Icon),DefaultPlaylist.png)">special://skin/backgrounds/default/default.jpg</value>
+        <value condition="!IsEmpty(Skin.String(CustomHome.6.Icon))">$INFO[Skin.String(CustomHome.6.Icon)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
+    </variable>
+    <variable name="CustomHome.7.Icon.Management">
+        <value condition="StringCompare(Skin.String(CustomHome.7.Icon),DefaultPlaylist.png)">special://skin/backgrounds/default/default.jpg</value>
+        <value condition="!IsEmpty(Skin.String(CustomHome.7.Icon))">$INFO[Skin.String(CustomHome.7.Icon)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
+    </variable>
+    <variable name="CustomHome.8.Icon.Management">
+        <value condition="StringCompare(Skin.String(CustomHome.8.Icon),DefaultPlaylist.png)">special://skin/backgrounds/default/default.jpg</value>
+        <value condition="!IsEmpty(Skin.String(CustomHome.8.Icon))">$INFO[Skin.String(CustomHome.8.Icon)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
+    </variable>
+    <variable name="CustomHome.9.Icon.Management">
+        <value condition="StringCompare(Skin.String(CustomHome.9.Icon),DefaultPlaylist.png)">special://skin/backgrounds/default/default.jpg</value>
+        <value condition="!IsEmpty(Skin.String(CustomHome.9.Icon))">$INFO[Skin.String(CustomHome.9.Icon)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
+    </variable>
 </includes>
