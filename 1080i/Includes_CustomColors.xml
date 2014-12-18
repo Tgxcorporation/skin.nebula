@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <include name="ConditionWhite">
-        <visible>!Skin.hasSetting(Theme.Color.Black)|[Skin.hasSetting(Theme.Color.Auto)+System.Time(8:00,20:00)]</visible>
+        <visible>Skin.hasSetting(Theme.Color.White)|[!Skin.hasSetting(Theme.Color.Black)+!Skin.hasSetting(Theme.Color.White)+!Skin.hasSetting(Theme.Color.Auto)]|[Skin.hasSetting(Theme.Color.Auto)+System.Time(8:00,20:00)]</visible>
     </include>
     <include name="ConditionBlack">
         <visible>Skin.hasSetting(Theme.Color.Black)|[Skin.hasSetting(Theme.Color.Auto)+!System.Time(8:00,20:00)]</visible>
