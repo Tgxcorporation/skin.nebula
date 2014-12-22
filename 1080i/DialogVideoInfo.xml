@@ -105,7 +105,7 @@
             </control>
             <control type="image">
                 <visible>Control.HasFocus(10)</visible>
-                <visible>!IsEmpty(Listitem.Property(Fanart_Image))</visible>
+                <include>ConditionWhite</include>
                 <include>VisibleFadeEffectDelay</include>
                 <description>Current Fanart image</description>
                 <fadetime>250</fadetime>
@@ -113,7 +113,21 @@
                 <posy>313</posy>
                 <width>1163</width>
                 <height>685</height>
-                <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                <texture background="true" fallback="white/defaultPictureBig.png">$INFO[ListItem.Art(fanart)]</texture>
+                <include>ThumbBorder</include>
+                <aspectratio>keep</aspectratio>
+            </control>
+            <control type="image">
+                <visible>Control.HasFocus(10)</visible>
+                <include>ConditionBlack</include>
+                <include>VisibleFadeEffectDelay</include>
+                <description>Current Fanart image</description>
+                <fadetime>250</fadetime>
+                <posx>25</posx>
+                <posy>313</posy>
+                <width>1163</width>
+                <height>685</height>
+                <texture background="true" fallback="black/defaultPictureBig.png">$INFO[ListItem.Art(fanart)]</texture>
                 <include>ThumbBorder</include>
                 <aspectratio>keep</aspectratio>
             </control>
