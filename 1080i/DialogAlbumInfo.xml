@@ -540,6 +540,12 @@
                     <include>LeftMenuButton</include>
                     <label>20413</label>
                 </control>
+                <control type="button" id="120">
+                    <label>cdART Manager</label>
+                    <include>LeftMenuButton</include>
+                    <onclick>RunAddon(script.cdartmanager)</onclick>
+                    <visible>System.HasAddon(script.cdartmanager)</visible>
+                </control>
             </control>
             <include>LeftMenuScroller</include>
         </control>
