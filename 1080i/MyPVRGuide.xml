@@ -234,7 +234,7 @@
                             <font>InfoDetailsFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
-                            <label>$INFO[ListItem.StartTime] / $INFO[ListItem.EndTime]</label>
+                            <label>$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, / ,]</label>
                         </control>
                         <control type="label">
                             <posx>500</posx>
