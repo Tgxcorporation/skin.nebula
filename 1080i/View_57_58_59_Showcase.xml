@@ -104,6 +104,24 @@
             </control>
         </control>
     </include>
+    <include name="58_RecOverlayFocus">
+        <control type="image">
+            <posx>1819</posx>
+            <width>50</width>
+            <height>70</height>
+            <texture>$VAR[Theme.Color]/OverlayRecording.png</texture>
+            <aspectratio>keep</aspectratio>
+            <visible>ListItem.IsRecording</visible>
+        </control>
+        <control type="image">
+            <posx>1819</posx>
+            <width>50</width>
+            <height>70</height>
+            <texture>$VAR[Theme.Color]/OverlayTimer.png</texture>
+            <aspectratio>keep</aspectratio>
+            <visible>ListItem.HasTimer</visible>
+        </control>
+    </include>
     <include name="View_59_Showcase">
         <control type="group">
             <visible>Control.IsVisible(59)</visible>
@@ -247,7 +265,7 @@
                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
-                        <visible>IntegerGreaterThan(ListItem.Rating,0)</visible>
+                        <visible>IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                         <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
@@ -393,7 +411,7 @@
                 <control type="group">
                     <!-- CDART -->
                     <visible>!StringCompare(ListItem.Label,..)</visible>
-                    <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[[Container.content(songs)+Window.IsActive(MyMusicNav.xml)]|Window.IsActive(MyMusicSongs.xml)]</visible>
+                    <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Window.IsActive(MyMusicNav.xml)|Window.IsActive(MyMusicSongs.xml)]</visible>
                     <include>UpperFade</include>
                     <control type="image">
                         <animation type="Conditional" reversible="false" condition="control.HasFocus(58)">
@@ -419,9 +437,39 @@
                     <posy>148</posy>
                     <width>520</width>
                     <height>520</height>
-                    <aspectratio>scale</aspectratio>
+                    <aspectratio>keep</aspectratio>
                     <include>SquareThumb</include>
                     <include>ThumbBorder</include>
+                </control>
+                <control type="progress">
+                    <visible>Window.isActive(MyPVRChannels.xml)</visible>
+                    <include>ConditionWhite</include>
+                    <posx>TextMargin</posx>
+                    <posy>646</posy>
+                    <height>54</height>
+                    <width>450</width>
+                    <texturebg border="14,20,14,20">white/buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                    <!-- <reveal>true</reveal> -->
+                    <lefttexture>-</lefttexture>
+                    <midtexture border="14,20,14,20">white/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                    <righttexture>-</righttexture>
+                    <overlaytexture>-</overlaytexture>
+                    <info>ListItem.Progress</info>
+                </control>
+                <control type="progress">
+                    <visible>Window.isActive(MyPVRChannels.xml)</visible>
+                    <include>ConditionBlack</include>
+                    <posx>TextMargin</posx>
+                    <posy>646</posy>
+                    <height>54</height>
+                    <width>450</width>
+                    <texturebg border="14,20,14,20">black/buttons/Scrollbar_Horizontal_bg.png</texturebg>
+                    <!-- <reveal>true</reveal> -->
+                    <lefttexture>-</lefttexture>
+                    <midtexture border="14,20,14,20">black/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
+                    <righttexture>-</righttexture>
+                    <overlaytexture>-</overlaytexture>
+                    <info>ListItem.Progress</info>
                 </control>
                 <control type="group">
                     <posx>0</posx>
@@ -429,13 +477,14 @@
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
-                        <width>1800</width>
+                        <width>1740</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
                         <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
-                        <label>$INFO[ListItem.Label]</label>
+                        <label>$VAR[DetailsTitle]</label>
                     </control>
+                    <include>58_RecOverlayFocus</include>
                     <control type="image">
                         <description>Default Seperator</description>
                         <posx>0</posx>
@@ -445,7 +494,8 @@
                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
-                        <visible>IntegerGreaterThan(ListItem.Rating,0)</visible>
+                        <visible>IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                        <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
                             <posy>91</posy>
@@ -656,7 +706,8 @@
                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="group">
-                        <visible>IntegerGreaterThan(ListItem.Rating,0)</visible>
+                        <visible>IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                        <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
                             <posy>91</posy>

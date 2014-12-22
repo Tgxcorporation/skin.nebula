@@ -51,7 +51,7 @@
         <value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,not Rated)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,not Rated)]">$VAR[Theme.Color]/badges/content_rating/notrated.png</value>
         <value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Not rated)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Not rated)]">$VAR[Theme.Color]/badges/content_rating/notrated.png</value>
         <value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,not rated)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,not rated)]">$VAR[Theme.Color]/badges/content_rating/notrated.png</value>
-        <!-- <value>$VAR[Theme.Color]/badges/content_rating/norating.png</value> -->
+        <value>$VAR[Theme.Color]/badges/content_rating/norating.png</value>
     </variable>
     <variable name="MediaFlag_MPAAOSD">
         <!-- US (IMDB) -->
@@ -104,7 +104,7 @@
         <value condition="[!IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,not Rated)] | [IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,not Rated)]">$VAR[Theme.Color]/badges/content_rating/notrated.png</value>
         <value condition="[!IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,Not rated)] | [IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,Not rated)]">$VAR[Theme.Color]/badges/content_rating/notrated.png</value>
         <value condition="[!IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,not rated)] | [IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,not rated)]">$VAR[Theme.Color]/badges/content_rating/notrated.png</value>
-        <!-- <value>$VAR[Theme.Color]/badges/content_rating/norating.png</value> -->
+        <value>$VAR[Theme.Color]/badges/content_rating/norating.png</value>
     </variable>
     <variable name="videosource">
         <value condition="[SubString(ListItem(0).Filenameandpath,bluray) | SubString(ListItem(0).Filenameandpath,blu-ray) | SubString(ListItem(0).Filenameandpath,bdrip)]">bluray</value>
@@ -432,35 +432,35 @@
     <include name="CodecsGrid">
         <control type="image">
             <description>Video rez Image</description>
-            <width>100</width>
+            <width>85</width>
             <height>60</height>
             <aspectratio>keep</aspectratio>
             <texture>$VAR[Theme.Color]/badges/video/$VAR[videores].png</texture>
         </control>
         <control type="image">
             <description>Codec Image</description>
-            <width>100</width>
+            <width>85</width>
             <height>60</height>
             <aspectratio>keep</aspectratio>
             <texture>$VAR[Theme.Color]/badges/video/$INFO[ListItem.VideoCodec,,.png]</texture>
         </control>
         <control type="image">
             <description>Audio Codec Image</description>
-            <width>100</width>
+            <width>85</width>
             <height>60</height>
             <aspectratio>keep</aspectratio>
             <texture>$VAR[Theme.Color]/badges/audio/$INFO[ListItem.AudioChannels,,.png]</texture>
         </control>
         <control type="image">
             <description>Audio Codec Image</description>
-            <width>100</width>
+            <width>85</width>
             <height>60</height>
             <aspectratio>keep</aspectratio>
             <texture>$VAR[Theme.Color]/badges/audio/$INFO[ListItem.AudioCodec,,.png]</texture>
         </control>
         <control type="image">
             <description>MPAA Image</description>
-            <width>100</width>
+            <width>85</width>
             <height>60</height>
             <aspectratio>keep</aspectratio>
             <texture>$VAR[MediaFlag_MPAA]</texture>
@@ -468,7 +468,7 @@
         <control type="image">
             <visible>[SubString(ListItem(0).Filenameandpath,bluray) | SubString(ListItem(0).Filenameandpath,blu-ray) | SubString(ListItem(0).Filenameandpath,bdrip)]|SubString(ListItem.Filenameandpath,web)|SubString(ListItem.Filenameandpath,hdtv)|SubString(ListItem.Filenameandpath,dvd) | SubString(ListItem.Filenameandpath,.ifo,Right) | SubString(ListItem.Filenameandpath,.iso,Right)|SubString(ListItem.Path,videodb://movies/sets,left)|SubString(Player.Filenameandpath,4k)</visible>
             <description>Codec Image</description>
-            <width>100</width>
+            <width>85</width>
             <height>60</height>
             <aspectratio>keep</aspectratio>
             <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource].png</texture>
@@ -476,17 +476,17 @@
         <control type="image">
             <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
             <description>3D Image</description>
-            <width>100</width>
+            <width>85</width>
             <height>60</height>
             <aspectratio>keep</aspectratio>
             <texture>$VAR[Theme.Color]/badges/video/3dbd.png</texture>
         </control>
         <control type="group" id="1">
             <visible>!IsEmpty(ListItem.Top250) + !SubString(ListItem.Top250,0,Left)</visible>
-            <width>100</width>
+            <width>85</width>
             <height>60</height>
             <control type="image" id="1">
-                <width>100</width>
+                <width>85</width>
                 <height>60</height>
                 <aspectratio>keep</aspectratio>
                 <texture>$VAR[Theme.Color]/badges/imdb.png</texture>
@@ -494,7 +494,7 @@
             <control type="label" id="1">
                 <posx>0</posx>
                 <top>11</top>
-                <width>100</width>
+                <width>85</width>
                 <height>60</height>
                 <font>BadgeFont</font>
                 <align>center</align>

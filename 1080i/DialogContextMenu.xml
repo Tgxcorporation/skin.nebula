@@ -55,6 +55,7 @@
                 <control type="button" id="2001">
                     <posx>0</posx>
                     <posy>0</posy>
+                    <width>1920</width>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
                     <include>LeftMenuButton</include>
