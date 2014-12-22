@@ -229,6 +229,10 @@ msgctxt "#31095"
 msgid "Card List"
 msgstr ""
 
+msgctxt "#31096"
+msgid "Slim List"
+msgstr ""
+
 #empty strings from id 31096 to 31109
 
 msgctxt "#31110"
