@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+    <defaultcontrol always="true">500</defaultcontrol>
+    <controls>
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <texture>white/common/BlackDot.png</texture>
+        </control>
+        <include condition="!Skin.HasSetting(DisableFanart)">Fanart_Art</include>
+        <!--<include>Player_Show</include>-->
+        <include>OverlayFull</include>
+        <!--<include>InfoBackground</include>-->
+        <include condition="skin.HasSetting(rssTicker)">rssTicker</include>
+        <control type="group">
+            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">conditional</animation>
+            <!--<animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="-2090,0" condition="Control.HasFocus(505050)">conditional</animation>-->
+            <include>OpenClose</include>
+            <control type="image">
+                <posx>-35</posx>
+                <posy>-35</posy>
+                <width>1990</width>
+                <height>1150</height>
+                <texture border="35">$VAR[Theme.Color]/common/JewelCase2.png</texture>
+            </control>
+            <control type="panel" id="500">
+                <visible>!Window.IsActive(busydialog)</visible>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1940</width>
+                <height>1080</height>
+                <viewtype label="536">Grid</viewtype>
+                <pagecontrol>72</pagecontrol>
+                <preloaditems>4</preloaditems>
+                <onleft>9000</onleft>
+                <onright>72</onright>
+                <onup>500</onup>
+                <ondown>500</ondown>
+                <orientation>vertical</orientation>
+                <itemlayout height="270" width="192">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>192</width>
+                        <height>270</height>
+                        <texture background="true">$INFO[ListItem.Art(poster)]</texture>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="270" width="192">
+                    <control type="image">
+                        <include>ButtonFocusAnimation</include>
+                        <posx>-35</posx>
+                        <posy>-35</posy>
+                        <width>262</width>
+                        <height>340</height>
+                        <texture background="true">$INFO[ListItem.Art(poster)]</texture>
+                        <include>ThumbBorderOverlay</include>
+                    </control>
+                    <!--<control type="image">-->
+                    <!--<width>55</width>-->
+                    <!--<height>55</height>-->
+                    <!--<posy>30</posy>-->
+                    <!--<posx>149</posx>-->
+                    <!--<texture>flags/local.png</texture>-->
+                    <!--<visible>!IsEmpty(ListItem.Property(DBID))</visible>-->
+                    <!--</control>-->
+                    <!--<control type="textbox">-->
+                    <!--<posx>0</posx>-->
+                    <!--<width>228</width>-->
+                    <!--<height>69</height>-->
+                    <!--<posy>320</posy>-->
+                    <!--<align>center</align>-->
+                    <!--<font>font12</font>-->
+                    <!--<label>$INFO[ListItem.Label]$INFO[ListItem.Property(User_Rating),[CR][COLOR grey],[/COLOR]]</label>-->
+                    <!--</control>-->
+                </focusedlayout>
+            </control>
+            <control type="scrollbar" id="72">
+                <posx>1886</posx>
+                <posy>0</posy>
+                <height>1080</height>
+                <include>VerticalScroller</include>
+                <onleft>500</onleft>
+                <onright>505050</onright>
+            </control>
+        </control>
+        <!--<include>FooterInfo</include>-->
+        <!--<include>Time</include>-->
+        <!-- SIDE MENU -->
+        <control type="group">
+            <visible>!Skin.HasSetting(EnableKioskMode)</visible>
+            <include>LeftMenu</include>
+            <control type="grouplist" id="9000">
+                <include>LeftMenuButtonGroup</include>
+                <onright>500</onright>
+                <ondown>9000</ondown>
+                <onback>500</onback>
+                <control type="label" id="7965">
+                    <include>LeftMenuTitleLabel</include>
+                    <label>$LOCALIZE[582]</label>
+                </control>
+                <control type="button" id="5001">
+                    <include>LeftMenuButton</include>
+                    <description>Sort by:</description>
+                    <label>$LOCALIZE[550]</label>
+                </control>
+                <control type="label" id="5333">
+                    <include>LeftMenuButton</include>
+                    <description>Filters</description>
+                    <label>$LOCALIZE[587]</label>
+                </control>
+                <control type="button" id="5002">
+                    <include>LeftMenuButton</include>
+                    <description>Genre</description>
+                    <label>$LOCALIZE[515]</label>
+                </control>
+                <control type="button" id="5003">
+                    <include>LeftMenuButton</include>
+                    <description>Release Year</description>
+                    <label>$LOCALIZE[172]</label>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

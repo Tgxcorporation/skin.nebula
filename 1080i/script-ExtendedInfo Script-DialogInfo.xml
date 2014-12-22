@@ -31,10 +31,13 @@
                 <align>center</align>
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
-                <label>$INFO[Window(home).Property(actor.title)]</label>
+                <label>$INFO[Window.Property(actor.title)]</label>
             </control>
             <control type="group" id="490">
-                <visible>![control.hasfocus(105)|control.hasfocus(205)|control.hasfocus(305)|control.hasfocus(405)|ControlGroup(1500).HasFocus|ControlGroup(2500).HasFocus|ControlGroup(3500).HasFocus|ControlGroup(4500).HasFocus]</visible>
+                <visible>![control.hasfocus(105)|control.hasfocus(205)|control.hasfocus(305)|control.hasfocus(405)|control.hasfocus(505)|
+                    control.hasfocus(605)|control.hasfocus(705)|ControlGroup(1500).HasFocus|ControlGroup(2500).HasFocus|
+                    ControlGroup(3500).HasFocus|ControlGroup(4500).HasFocus|ControlGroup(5500).HasFocus|ControlGroup(6500).HasFocus|
+                    ControlGroup(7500).HasFocus]</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
                     <include>ConditionWhite</include>
@@ -43,7 +46,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="white/defaultArtistBig.png">$INFO[Window(home).Property(actor.Poster)]</texture>
+                    <texture background="true" fallback="white/defaultArtistBig.png">$INFO[Window.Property(actor.Poster)]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -54,7 +57,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="black/defaultArtistBig.png">$INFO[Window(home).Property(actor.Poster)]</texture>
+                    <texture background="true" fallback="black/defaultArtistBig.png">$INFO[Window.Property(actor.Poster)]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -68,52 +71,58 @@
                     <include>List_9009_Commons</include>
                     <content>
                         <item>
-                            <label>Total Movies:</label>
-                            <label2>$INFO[Window(home).Property(actor.TotalMovies)]</label2>
+                            <label>$ADDON[script.extendedinfo 32011]:</label>
+                            <label2>$INFO[Window.Property(actor.TotalMovies)]</label2>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window(home).Property(actor.TotalMovies))</visible>
+                            <visible>!IsEmpty(Window.Property(actor.TotalMovies))</visible>
                         </item>
                         <item>
-                            <label>Birthday:</label>
-                            <label2>$INFO[Window(home).Property(actor.Birthday)]</label2>
+                            <label>$ADDON[script.extendedinfo 32021]:</label>
+                            <label2>$INFO[Window.Property(actor.DBMovies)]</label2>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window(home).Property(actor.Birthday))</visible>
+                            <visible>!IsEmpty(Window.Property(actor.DBMovies))</visible>
                         </item>
                         <item>
-                            <label>Age:</label>
-                            <label2>$INFO[Window(home).Property(actor.Age)]</label2>
+                            <label>$ADDON[script.extendedinfo 32012]:</label>
+                            <label2>$INFO[Window.Property(actor.Birthday)]</label2>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window(home).Property(actor.Age))</visible>
+                            <visible>!IsEmpty(Window.Property(actor.Birthday))</visible>
                         </item>
                         <item>
-                            <label>Death:</label>
-                            <label2>$INFO[Window(home).Property(actor.Deathday)]$INFO[Window(home).Property(actor.DeathageLong), (,)]</label2>
+                            <label>$ADDON[script.extendedinfo 32020]:</label>
+                            <label2>$INFO[Window.Property(actor.Age)]</label2>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window(home).Property(actor.Deathday))</visible>
+                            <visible>!IsEmpty(Window.Property(actor.Age))</visible>
                         </item>
                         <item>
-                            <label>Place Of Birth:</label>
-                            <label2>$INFO[Window(home).Property(actor.PlaceOfBirth)]</label2>
+                            <label>$ADDON[script.extendedinfo 32013]:</label>
+                            <label2>$INFO[Window.Property(actor.Deathday)]$INFO[Window.Property(actor.DeathageLong), (,)]</label2>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window(home).Property(actor.PlaceOfBirth))</visible>
+                            <visible>!IsEmpty(Window.Property(actor.Deathday))</visible>
                         </item>
                         <item>
-                            <label>Adult:</label>
-                            <label2>$INFO[Window(home).Property(actor.Adult)]</label2>
+                            <label>$ADDON[script.extendedinfo 32014]:</label>
+                            <label2>$INFO[Window.Property(actor.PlaceOfBirth)]</label2>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window(home).Property(actor.Adult))</visible>
+                            <visible>!IsEmpty(Window.Property(actor.PlaceOfBirth))</visible>
                         </item>
                         <item>
-                            <label>Also Known As:</label>
-                            <label2>$INFO[Window(home).Property(actor.AlsoKnownAs)]</label2>
+                            <label>$ADDON[script.extendedinfo 32015]:</label>
+                            <label2>$INFO[Window.Property(actor.Adult)]</label2>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window(home).Property(actor.AlsoKnownAs))</visible>
+                            <visible>Window.Property(actor.Adult)</visible>
                         </item>
                         <item>
-                            <label>Home Page:</label>
-                            <label2>$INFO[Window(home).Property(actor.Homepage)]</label2>
-                            <onclick>RunScript(script.extendedinfo,homepage=$INFO[Window(home).Property(actor.Homepage)])</onclick>
-                            <visible>!IsEmpty(Window(home).Property(actor.Homepage))</visible>
+                            <label>$ADDON[script.extendedinfo 32016]:</label>
+                            <label2>$INFO[Window.Property(actor.AlsoKnownAs)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(actor.AlsoKnownAs))</visible>
+                        </item>
+                        <item>
+                            <label>$ADDON[script.extendedinfo 32017]:</label>
+                            <label2>$INFO[Window.Property(actor.Homepage)]</label2>
+                            <onclick>RunScript(script.extendedinfo,homepage=$INFO[Window.Property(actor.Homepage)])</onclick>
+                            <visible>!IsEmpty(Window.Property(actor.Homepage))</visible>
                         </item>
                     </content>
                 </control>
@@ -138,7 +147,7 @@
                     <width>1300</width>
                     <height>292</height>
                     <font>InfoDetailsFont</font>
-                    <label>$INFO[Window(home).Property(actor.Biography)]</label>
+                    <label>$INFO[Window.Property(actor.Biography)]</label>
                     <pagecontrol>6649</pagecontrol>
                 </control>
                 <control type="scrollbar" id="6649">
@@ -153,6 +162,7 @@
             </control>
             <control type="group" id="1500">
                 <visible>control.hasfocus(105)|ControlGroup(1500).HasFocus</visible>
+                <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
                     <include>ConditionWhite</include>
@@ -161,7 +171,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(150).Listitem.Icon]</texture>
+                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(150).Listitem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -172,7 +182,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(150).Listitem.Icon]</texture>
+                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(150).Listitem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -189,6 +199,17 @@
                     <pagecontrol>6150</pagecontrol>
                     <itemlayout height="135" width="1420">
                         <control type="label">
+                            <visible>StringCompare(ListItem.Property(Character),)</visible>
+                            <posx>TextMargin</posx>
+                            <posy>0</posy>
+                            <height>135</height>
+                            <width>1300</width>
+                            <font>FacadeListMainFont</font>
+                            <include>TextColor_AlternateColor</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <visible>!StringCompare(ListItem.Property(Character),)</visible>
                             <posx>TextMargin</posx>
                             <posy>27</posy>
                             <aligny>top</aligny>
@@ -204,25 +225,16 @@
                             <width>1300</width>
                             <font>FacadeListSubFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Year]$INFO[ListItem.Property(releasedate),     ]$INFO[ListItem.Property(role),     $LOCALIZE[20347] ]$INFO[ListItem.Property(job),     ]</label>
+                            <label>$INFO[ListItem.Property(Character)]</label>
                         </control>
                         <control type="image">
                             <posx>58r</posx>
                             <posy>0</posy>
                             <width>30</width>
                             <height>132</height>
-                            <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
+                            <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
                             <aspectratio aligny="center">keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(DBID),1)+ !IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
-                        </control>
-                        <control type="image">
-                            <posx>58r</posx>
-                            <posy>0</posy>
-                            <width>30</width>
-                            <height>132</height>
-                            <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
-                            <aspectratio aligny="center">keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(DBID),1)+ IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                            <visible>!IsEmpty(ListItem.Property(DBID))</visible>
                         </control>
                     </itemlayout>
                     <focusedlayout height="135" width="1420">
@@ -236,6 +248,17 @@
                                 <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="label">
+                                <visible>StringCompare(ListItem.Property(Character),)</visible>
+                                <posx>TextMargin</posx>
+                                <posy>0</posy>
+                                <height>135</height>
+                                <width>1300</width>
+                                <font>FacadeListMainFont</font>
+                                <include>TextColor_MainColor</include>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <visible>!StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>27</posy>
                                 <aligny>top</aligny>
@@ -251,7 +274,7 @@
                                 <width>1300</width>
                                 <font>FacadeListSubFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Year]$INFO[ListItem.Property(releasedate),     ]$INFO[ListItem.Property(role),     $LOCALIZE[20347] ]$INFO[ListItem.Property(job),     ]</label>
+                                <label>$INFO[ListItem.Property(Character)]</label>
                             </control>
                             <control type="image">
                                 <posx>58r</posx>
@@ -259,17 +282,8 @@
                                 <width>30</width>
                                 <height>132</height>
                                 <aspectratio aligny="center">keep</aspectratio>
-                                <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
-                                <visible>StringCompare(ListItem.Property(DBID),1)+ !IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
-                            </control>
-                            <control type="image">
-                                <posx>58r</posx>
-                                <posy>0</posy>
-                                <width>30</width>
-                                <height>132</height>
-                                <aspectratio aligny="center">keep</aspectratio>
-                                <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
-                                <visible>StringCompare(ListItem.Property(DBID),1)+ IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                                <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
                             </control>
                         </control>
                     </focusedlayout>
@@ -285,6 +299,7 @@
             </control>
             <control type="group" id="2500">
                 <visible>control.hasfocus(205)|ControlGroup(2500).HasFocus</visible>
+                <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
                     <include>ConditionWhite</include>
@@ -293,7 +308,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(250).Listitem.Icon]</texture>
+                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(250).Listitem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -304,7 +319,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(250).Listitem.Icon]</texture>
+                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(250).Listitem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -313,77 +328,99 @@
                     <posx>500</posx>
                     <posy>318</posy>
                     <width>1420</width>
-                    <height>624</height>
+                    <height>685</height>
                     <onleft>9000</onleft>
                     <onright>6250</onright>
                     <onup>250</onup>
                     <ondown>250</ondown>
                     <pagecontrol>6250</pagecontrol>
-                    <itemlayout height="78" width="1420">
+                    <itemlayout height="135" width="1420">
                         <control type="label">
+                            <visible>StringCompare(ListItem.Property(Character),)</visible>
                             <posx>TextMargin</posx>
                             <posy>0</posy>
-                            <height>78</height>
+                            <height>135</height>
                             <width>1300</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
-                        <control type="image">
-                            <posx>58r</posx>
-                            <posy>0</posy>
-                            <width>30</width>
-                            <height>78</height>
-                            <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
-                            <aspectratio aligny="center">keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(DBID),1)+ !IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                        <control type="label">
+                            <visible>!StringCompare(ListItem.Property(Character),)</visible>
+                            <posx>TextMargin</posx>
+                            <posy>27</posy>
+                            <aligny>top</aligny>
+                            <width>1300</width>
+                            <font>FacadeListMainFont</font>
+                            <include>TextColor_AlternateColor</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <posx>TextMargin</posx>
+                            <posy>73</posy>
+                            <aligny>top</aligny>
+                            <width>1300</width>
+                            <font>FacadeListSubFont</font>
+                            <include>TextColor_AlternateColor</include>
+                            <label>$INFO[ListItem.Property(Character)]</label>
                         </control>
                         <control type="image">
                             <posx>58r</posx>
                             <posy>0</posy>
                             <width>30</width>
-                            <height>78</height>
-                            <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
+                            <height>132</height>
+                            <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
                             <aspectratio aligny="center">keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(DBID),1)+ IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                            <visible>!IsEmpty(ListItem.Property(DBID))</visible>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="78" width="1420">
+                    <focusedlayout height="135" width="1420">
                         <control type="group">
                             <include>ButtonWideFocusAnimation</include>
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
-                                <height>78</height>
+                                <height>135</height>
                                 <width>1420</width>
                                 <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="label">
+                                <visible>StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
-                                <height>78</height>
+                                <height>135</height>
                                 <width>1300</width>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
-                            <control type="image">
-                                <posx>58r</posx>
-                                <posy>0</posy>
-                                <width>30</width>
-                                <height>78</height>
-                                <aspectratio aligny="center">keep</aspectratio>
-                                <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
-                                <visible>StringCompare(ListItem.Property(DBID),1)+ !IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                            <control type="label">
+                                <visible>!StringCompare(ListItem.Property(Character),)</visible>
+                                <posx>TextMargin</posx>
+                                <posy>27</posy>
+                                <aligny>top</aligny>
+                                <width>1300</width>
+                                <font>FacadeListMainFont</font>
+                                <include>TextColor_MainColor</include>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <posx>TextMargin</posx>
+                                <posy>73</posy>
+                                <aligny>top</aligny>
+                                <width>1300</width>
+                                <font>FacadeListSubFont</font>
+                                <include>TextColor_MainColor</include>
+                                <label>$INFO[ListItem.Property(Character)]</label>
                             </control>
                             <control type="image">
                                 <posx>58r</posx>
                                 <posy>0</posy>
                                 <width>30</width>
-                                <height>78</height>
+                                <height>132</height>
                                 <aspectratio aligny="center">keep</aspectratio>
-                                <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
-                                <visible>StringCompare(ListItem.Property(DBID),1)+ IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                                <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
                             </control>
                         </control>
                     </focusedlayout>
@@ -391,14 +428,15 @@
                 <control type="scrollbar" id="6250">
                     <posx>1886</posx>
                     <posy>318</posy>
-                    <height>624</height>
+                    <height>685</height>
                     <include>VerticalScroller</include>
                     <onleft>250</onleft>
                     <onright>9000</onright>
                 </control>
             </control>
-            <control type="group" id="3500">
-                <visible>control.hasfocus(305)|ControlGroup(3500).HasFocus</visible>
+            <control type="group" id="5500">
+                <visible>control.hasfocus(505)|ControlGroup(5500).HasFocus</visible>
+                <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
                     <include>ConditionWhite</include>
@@ -407,7 +445,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(350).Listitem.Icon]</texture>
+                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(550).Listitem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -418,7 +456,281 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(350).Listitem.Icon]</texture>
+                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(550).Listitem.Thumb]</texture>
+                    <include>ThumbBorder</include>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="panel" id="550">
+                    <description>movies list</description>
+                    <posx>500</posx>
+                    <posy>318</posy>
+                    <width>1420</width>
+                    <height>685</height>
+                    <onleft>9000</onleft>
+                    <onright>6550</onright>
+                    <onup>550</onup>
+                    <ondown>550</ondown>
+                    <pagecontrol>6550</pagecontrol>
+                    <itemlayout height="135" width="1420">
+                        <control type="label">
+                            <visible>StringCompare(ListItem.Property(Job),)</visible>
+                            <posx>TextMargin</posx>
+                            <posy>0</posy>
+                            <height>135</height>
+                            <width>1300</width>
+                            <font>FacadeListMainFont</font>
+                            <include>TextColor_AlternateColor</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <visible>!StringCompare(ListItem.Property(Job),)</visible>
+                            <posx>TextMargin</posx>
+                            <posy>27</posy>
+                            <aligny>top</aligny>
+                            <width>1300</width>
+                            <font>FacadeListMainFont</font>
+                            <include>TextColor_AlternateColor</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <posx>TextMargin</posx>
+                            <posy>73</posy>
+                            <aligny>top</aligny>
+                            <width>1300</width>
+                            <font>FacadeListSubFont</font>
+                            <include>TextColor_AlternateColor</include>
+                            <label>$INFO[ListItem.Property(Job)]</label>
+                        </control>
+                        <control type="image">
+                            <posx>58r</posx>
+                            <posy>0</posy>
+                            <width>30</width>
+                            <height>132</height>
+                            <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
+                            <aspectratio aligny="center">keep</aspectratio>
+                            <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="135" width="1420">
+                        <control type="group">
+                            <include>ButtonWideFocusAnimation</include>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <height>135</height>
+                                <width>1420</width>
+                                <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                            </control>
+                            <control type="label">
+                                <visible>StringCompare(ListItem.Property(Job),)</visible>
+                                <posx>TextMargin</posx>
+                                <posy>0</posy>
+                                <height>135</height>
+                                <width>1300</width>
+                                <font>FacadeListMainFont</font>
+                                <include>TextColor_MainColor</include>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <visible>!StringCompare(ListItem.Property(Job),)</visible>
+                                <posx>TextMargin</posx>
+                                <posy>27</posy>
+                                <aligny>top</aligny>
+                                <width>1300</width>
+                                <font>FacadeListMainFont</font>
+                                <include>TextColor_MainColor</include>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <posx>TextMargin</posx>
+                                <posy>73</posy>
+                                <aligny>top</aligny>
+                                <width>1300</width>
+                                <font>FacadeListSubFont</font>
+                                <include>TextColor_MainColor</include>
+                                <label>$INFO[ListItem.Property(Job)]</label>
+                            </control>
+                            <control type="image">
+                                <posx>58r</posx>
+                                <posy>0</posy>
+                                <width>30</width>
+                                <height>132</height>
+                                <aspectratio aligny="center">keep</aspectratio>
+                                <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="6550">
+                    <posx>1886</posx>
+                    <posy>318</posy>
+                    <height>685</height>
+                    <include>VerticalScroller</include>
+                    <onleft>550</onleft>
+                    <onright>9000</onright>
+                </control>
+            </control>
+            <control type="group" id="6500">
+                <visible>control.hasfocus(605)|ControlGroup(6500).HasFocus</visible>
+                <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
+                <include>VisibleFadeEffectDelay</include>
+                <control type="image">
+                    <include>ConditionWhite</include>
+                    <fadetime>250</fadetime>
+                    <posx>25</posx>
+                    <posy>313</posy>
+                    <width>494</width>
+                    <height>685</height>
+                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(550).Listitem.Thumb]</texture>
+                    <include>ThumbBorder</include>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="image">
+                    <include>ConditionBlack</include>
+                    <fadetime>250</fadetime>
+                    <posx>25</posx>
+                    <posy>313</posy>
+                    <width>494</width>
+                    <height>685</height>
+                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(550).Listitem.Thumb]</texture>
+                    <include>ThumbBorder</include>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="panel" id="650">
+                    <description>movies list</description>
+                    <posx>500</posx>
+                    <posy>318</posy>
+                    <width>1420</width>
+                    <height>685</height>
+                    <onleft>9000</onleft>
+                    <onright>6650</onright>
+                    <onup>650</onup>
+                    <ondown>650</ondown>
+                    <pagecontrol>6650</pagecontrol>
+                    <itemlayout height="135" width="1420">
+                        <control type="label">
+                            <visible>StringCompare(ListItem.Property(Job),)</visible>
+                            <posx>TextMargin</posx>
+                            <posy>0</posy>
+                            <height>135</height>
+                            <width>1300</width>
+                            <font>FacadeListMainFont</font>
+                            <include>TextColor_AlternateColor</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <visible>!StringCompare(ListItem.Property(Job),)</visible>
+                            <posx>TextMargin</posx>
+                            <posy>27</posy>
+                            <aligny>top</aligny>
+                            <width>1300</width>
+                            <font>FacadeListMainFont</font>
+                            <include>TextColor_AlternateColor</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <posx>TextMargin</posx>
+                            <posy>73</posy>
+                            <aligny>top</aligny>
+                            <width>1300</width>
+                            <font>FacadeListSubFont</font>
+                            <include>TextColor_AlternateColor</include>
+                            <label>$INFO[ListItem.Property(Job)]</label>
+                        </control>
+                        <control type="image">
+                            <posx>58r</posx>
+                            <posy>0</posy>
+                            <width>30</width>
+                            <height>132</height>
+                            <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
+                            <aspectratio aligny="center">keep</aspectratio>
+                            <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="135" width="1420">
+                        <control type="group">
+                            <include>ButtonWideFocusAnimation</include>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <height>135</height>
+                                <width>1420</width>
+                                <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                            </control>
+                            <control type="label">
+                                <visible>StringCompare(ListItem.Property(Job),)</visible>
+                                <posx>TextMargin</posx>
+                                <posy>0</posy>
+                                <height>135</height>
+                                <width>1300</width>
+                                <font>FacadeListMainFont</font>
+                                <include>TextColor_MainColor</include>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <visible>!StringCompare(ListItem.Property(Job),)</visible>
+                                <posx>TextMargin</posx>
+                                <posy>27</posy>
+                                <aligny>top</aligny>
+                                <width>1300</width>
+                                <font>FacadeListMainFont</font>
+                                <include>TextColor_MainColor</include>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <posx>TextMargin</posx>
+                                <posy>73</posy>
+                                <aligny>top</aligny>
+                                <width>1300</width>
+                                <font>FacadeListSubFont</font>
+                                <include>TextColor_MainColor</include>
+                                <label>$INFO[ListItem.Property(Job)]</label>
+                            </control>
+                            <control type="image">
+                                <posx>58r</posx>
+                                <posy>0</posy>
+                                <width>30</width>
+                                <height>132</height>
+                                <aspectratio aligny="center">keep</aspectratio>
+                                <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                            </control>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="6650">
+                    <posx>1886</posx>
+                    <posy>318</posy>
+                    <height>685</height>
+                    <include>VerticalScroller</include>
+                    <onleft>650</onleft>
+                    <onright>9000</onright>
+                </control>
+            </control>
+            <control type="group" id="3500">
+                <visible>control.hasfocus(305)|ControlGroup(3500).HasFocus</visible>
+                <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
+                <include>VisibleFadeEffectDelay</include>
+                <control type="image">
+                    <include>ConditionWhite</include>
+                    <fadetime>250</fadetime>
+                    <posx>25</posx>
+                    <posy>313</posy>
+                    <width>494</width>
+                    <height>685</height>
+                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(350).Listitem.Thumb]</texture>
+                    <include>ThumbBorder</include>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="image">
+                    <include>ConditionBlack</include>
+                    <fadetime>250</fadetime>
+                    <posx>25</posx>
+                    <posy>313</posy>
+                    <width>494</width>
+                    <height>685</height>
+                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(350).Listitem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -443,24 +755,6 @@
                             <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
-                        <control type="image">
-                            <posx>58r</posx>
-                            <posy>0</posy>
-                            <width>30</width>
-                            <height>78</height>
-                            <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
-                            <aspectratio aligny="center">keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(DBID),1)+ !IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
-                        </control>
-                        <control type="image">
-                            <posx>58r</posx>
-                            <posy>0</posy>
-                            <width>30</width>
-                            <height>78</height>
-                            <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
-                            <aspectratio aligny="center">keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(DBID),1)+ IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
-                        </control>
                     </itemlayout>
                     <focusedlayout height="78" width="1420">
                         <control type="group">
@@ -481,24 +775,6 @@
                                 <include>TextColor_MainColor</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
-                            <control type="image">
-                                <posx>58r</posx>
-                                <posy>0</posy>
-                                <width>30</width>
-                                <height>78</height>
-                                <aspectratio aligny="center">keep</aspectratio>
-                                <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
-                                <visible>StringCompare(ListItem.Property(DBID),1)+ !IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
-                            </control>
-                            <control type="image">
-                                <posx>58r</posx>
-                                <posy>0</posy>
-                                <width>30</width>
-                                <height>78</height>
-                                <aspectratio aligny="center">keep</aspectratio>
-                                <texture>$VAR[Theme.Color]/OverlayUnwatched.png</texture>
-                                <visible>StringCompare(ListItem.Property(DBID),1)+ IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
-                            </control>
                         </control>
                     </focusedlayout>
                 </control>
@@ -513,7 +789,8 @@
             </control>
             <control type="group" id="4500">
                 <visible>control.hasfocus(405)|ControlGroup(4500).HasFocus</visible>
-                <!-- <include>VisibleFadeEffectDelay</include> -->
+                <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
+                <include>VisibleFadeEffectDelay</include>
                 <control type="fixedlist" id="450">
                     <include>UnderFade</include>
                     <posx>0</posx>
@@ -535,7 +812,7 @@
                             <posy>120</posy>
                             <width>295</width>
                             <height>396</height>
-                            <texture background="true" fallback="white/defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
+                            <texture background="true" fallback="white/defaultArtistBig.png">$INFO[ListItem.Thumb]</texture>
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
@@ -544,7 +821,7 @@
                             <posy>120</posy>
                             <width>295</width>
                             <height>396</height>
-                            <texture background="true" fallback="black/defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
+                            <texture background="true" fallback="black/defaultArtistBig.png">$INFO[ListItem.Thumb]</texture>
                             <include>ThumbBorder</include>
                         </control>
                     </itemlayout>
@@ -568,7 +845,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="white/defaultArtistBig.png">$INFO[Container(450).ListItem.Icon]</texture>
+                    <texture background="true" fallback="white/defaultArtistBig.png">$INFO[Container(450).ListItem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -580,7 +857,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="black/defaultArtistBig.png">$INFO[Container(450).ListItem.Icon]</texture>
+                    <texture background="true" fallback="black/defaultArtistBig.png">$INFO[Container(450).ListItem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -603,6 +880,100 @@
                     <onclick>Control.Move(450,1)</onclick>
                 </control>
             </control>
+            <control type="group" id="7500">
+                <visible>control.hasfocus(705)|ControlGroup(7500).HasFocus</visible>
+                <visible>IntegerGreaterThan(Container(750).NumItems,0)</visible>
+                <include>VisibleFadeEffectDelay</include>
+                <control type="fixedlist" id="750">
+                    <include>UnderFade</include>
+                    <posx>0</posx>
+                    <posy>337</posy>
+                    <width>1920</width>
+                    <height>723</height>
+                    <onleft>9000</onleft>
+                    <onright>750</onright>
+                    <onup>9000</onup>
+                    <ondown>750</ondown>
+                    <orientation>horizontal</orientation>
+                    <focusposition>0</focusposition>
+                    <movement>0</movement>
+                    <preloaditems>4</preloaditems>
+                    <itemlayout height="425" width="350">
+                        <control type="image">
+                            <include>ConditionWhite</include>
+                            <posx>-10</posx>
+                            <posy>199</posy>
+                            <width>370</width>
+                            <height>238</height>
+                            <texture background="true" fallback="white/defaultArtistBig.png">$INFO[ListItem.Thumb]</texture>
+                            <include>ThumbBorder</include>
+                        </control>
+                        <control type="image">
+                            <include>ConditionBlack</include>
+                            <posx>-10</posx>
+                            <posy>199</posy>
+                            <width>370</width>
+                            <height>238</height>
+                            <texture background="true" fallback="black/defaultArtistBig.png">$INFO[ListItem.Thumb]</texture>
+                            <include>ThumbBorder</include>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="425" width="1219">
+                        <control type="image">
+                            <posx>40</posx>
+                            <posy>199</posy>
+                            <width>1133</width>
+                            <width>464</width>
+                            <height>238</height>
+                            <aspectratio aligny="center">scale</aspectratio>
+                            <texture>$INFO[ListItem.Thumb]</texture>
+                            <include>ThumbBorder</include>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="image">
+                    <include>UpperFade</include>
+                    <include>ConditionWhite</include>
+                    <fadetime>250</fadetime>
+                    <posx>25</posx>
+                    <posy>313</posy>
+                    <width>1163</width>
+                    <height>685</height>
+                    <texture background="true" fallback="white/defaultPictureBig.png">$INFO[Container(750).ListItem.Thumb]</texture>
+                    <include>ThumbBorder</include>
+                    <aspectratio>keep</aspectratio>
+                </control>
+                <control type="image">
+                    <include>UpperFade</include>
+                    <include>ConditionBlack</include>
+                    <fadetime>250</fadetime>
+                    <posx>25</posx>
+                    <posy>313</posy>
+                    <width>1163</width>
+                    <height>685</height>
+                    <texture background="true" fallback="black/defaultPictureBig.png">$INFO[Container(750).ListItem.Thumb]</texture>
+                    <include>ThumbBorder</include>
+                    <aspectratio>keep</aspectratio>
+                </control>
+                <control type="button">
+                    <posx>TextMargin</posx>
+                    <posy>313</posy>
+                    <width>870</width>
+                    <height>685</height>
+                    <texturefocus>-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <onclick>Control.Move(750,-1)</onclick>
+                </control>
+                <control type="button">
+                    <posx>930</posx>
+                    <posy>313</posy>
+                    <width>930</width>
+                    <height>685</height>
+                    <texturefocus>-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <onclick>Control.Move(750,1)</onclick>
+                </control>
+            </control>
         </control>
         <!-- SIDE MENU -->
         <control type="group">
@@ -623,28 +994,53 @@
                     <onright>49</onright>
                 </control>
                 <control type="button" id="105">
-                    <description>Filmography</description>
+                    <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
+                    <description>Movie actor roles</description>
                     <include>LeftMenuButtonFocusTrick</include>
                     <label>342</label>
                     <onright>150</onright>
                 </control>
                 <control type="button" id="205">
-                    <description>TV Filmography</description>
+                    <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
+                    <description>TV Show actor roles</description>
                     <include>LeftMenuButtonFocusTrick</include>
                     <label>20343</label>
                     <onright>250</onright>
                 </control>
+                <control type="button" id="505">
+                    <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
+                    <description>Movie crew member</description>
+                    <include>LeftMenuButtonFocusTrick</include>
+                    <label>Movie crew member</label>
+                    <onright>550</onright>
+                </control>
+                <control type="button" id="605">
+                    <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
+                    <description>TVShow crew member</description>
+                    <include>LeftMenuButtonFocusTrick</include>
+                    <label>TVShow crew member</label>
+                    <onright>650</onright>
+                </control>
                 <control type="button" id="305">
+                    <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
                     <description>Youtube</description>
                     <include>LeftMenuButtonFocusTrick</include>
                     <label>YouTube</label>
                     <onright>350</onright>
                 </control>
                 <control type="button" id="405">
-                    <description>Fanart</description>
+                    <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
+                    <description>Artwork</description>
                     <include>LeftMenuButton</include>
                     <label>1213</label>
                     <onright>450</onright>
+                </control>
+                <control type="button" id="705">
+                    <visible>IntegerGreaterThan(Container(750).NumItems,0)</visible>
+                    <description>Fanart</description>
+                    <include>LeftMenuButton</include>
+                    <label>20445</label>
+                    <onright>750</onright>
                 </control>
             </control>
             <include>LeftMenuScroller</include>
