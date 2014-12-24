@@ -9,7 +9,7 @@
     <!--<onload condition="Container.Content(tvshows) + [SubString(Container.FolderPath,videodb://) | SubString(Container.FolderPath,.xsp]">Dialog.Close(movieinformation)</onload>-->
 
     <onload condition="System.HasAddon(script.videoextras)">XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
-    <defaultcontrol always="true">8</defaultcontrol>
+    <defaultcontrol always="true">2</defaultcontrol>
     <controls>
         <!-- <include>DimBG</include> -->
         <include>TopBar</include>
@@ -65,15 +65,23 @@
                     </control>
                 </control>
                 <control type="image">
-                    <!-- POSTER -->
+                    <visible>IsEmpty(Listitem.Thumb)</visible>
+                    <posx>TextMargin</posx>
+                    <posy>348</posy>
+                    <width>424</width>
+                    <height>615</height>
+                    <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="image">
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <aspectratio aligny="top">keep</aspectratio>
-                    <include>PosterThumb</include>
+                    <texture background="true">$INFO[Listitem.Thumb]</texture>
                     <include>ThumbBorder</include>
+                    <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="button">
                     <description>dummy for mouse navigation</description>
@@ -729,28 +737,21 @@
                 <include>VisibleFadeEffectDelay</include>
                 <!-- FANART -->
                 <control type="image">
-                    <include>ConditionWhite</include>
-                    <include>VisibleFadeEffectDelay</include>
-                    <description>Current Fanart image</description>
-                    <fadetime>250</fadetime>
-                    <posx>25</posx>
-                    <posy>313</posy>
-                    <width>1163</width>
-                    <height>685</height>
-                    <texture background="true" fallback="white/defaultPictureBig.png">$INFO[ListItem.Art(fanart)]</texture>
-                    <include>ThumbBorder</include>
+                    <visible>IsEmpty(ListItem.Art(fanart))</visible>
+                    <posx>60</posx>
+                    <posy>338</posy>
+                    <width>1093</width>
+                    <height>615</height>
+                    <texture>$VAR[Theme.Color]/defaultPictureBig.png</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image">
-                    <include>ConditionBlack</include>
-                    <include>VisibleFadeEffectDelay</include>
-                    <description>Current Fanart image</description>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>1163</width>
                     <height>685</height>
-                    <texture background="true" fallback="black/defaultPictureBig.png">$INFO[ListItem.Art(fanart)]</texture>
+                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -775,15 +776,23 @@
                     </control>
                 </control>
                 <control type="image">
-                    <!-- POSTER -->
+                    <visible>IsEmpty(Listitem.Thumb)</visible>
+                    <posx>TextMargin</posx>
+                    <posy>348</posy>
+                    <width>424</width>
+                    <height>615</height>
+                    <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="image">
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <aspectratio aligny="top">keep</aspectratio>
-                    <include>PosterThumb</include>
+                    <texture background="true">$INFO[Listitem.Thumb]</texture>
                     <include>ThumbBorder</include>
+                    <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="button">
                     <description>dummy for mouse navigation</description>
@@ -822,30 +831,23 @@
                 <include>VisibleFadeEffectDelay</include>
                 <!-- ACTOR LIST -->
                 <control type="image">
-                    <!-- ACTOR THUMB -->
-                    <include>ConditionWhite</include>
-                    <include>VisibleFadeEffectDelay</include>
-                    <fadetime>250</fadetime>
-                    <posx>25</posx>
-                    <posy>313</posy>
-                    <width>494</width>
-                    <height>685</height>
-                    <aspectratio>scale</aspectratio>
-                    <texture background="true" fallback="white/defaultArtistBig.png">$INFO[Container(50).ListItem.Thumb]</texture>
-                    <include>ThumbBorder</include>
+                    <visible>IsEmpty(Container(50).ListItem.Thumb)</visible>
+                    <posx>TextMargin</posx>
+                    <posy>348</posy>
+                    <width>424</width>
+                    <height>615</height>
+                    <texture>$VAR[Theme.Color]/defaultArtistBig.png</texture>
+                    <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="image">
-                    <!-- ACTOR THUMB -->
-                    <include>ConditionBlack</include>
-                    <include>VisibleFadeEffectDelay</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <aspectratio>scale</aspectratio>
-                    <texture background="true" fallback="black/defaultArtistBig.png">$INFO[Container(50).ListItem.Thumb]</texture>
+                    <texture background="true">$INFO[Container(50).ListItem.Thumb]</texture>
                     <include>ThumbBorder</include>
+                    <aspectratio>scale</aspectratio>
                 </control>
                 <control type="button">
                     <description>dummy for mouse navigation</description>

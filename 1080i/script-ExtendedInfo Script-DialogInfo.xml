@@ -40,24 +40,21 @@
                     ControlGroup(7500).HasFocus]</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
-                    <include>ConditionWhite</include>
-                    <fadetime>250</fadetime>
-                    <posx>25</posx>
-                    <posy>313</posy>
-                    <width>494</width>
-                    <height>685</height>
-                    <texture background="true" fallback="white/defaultArtistBig.png">$INFO[Window.Property(actor.Poster)]</texture>
-                    <include>ThumbBorder</include>
+                    <visible>IsEmpty(Window.Property(actor.Poster))</visible>
+                    <posx>TextMargin</posx>
+                    <posy>348</posy>
+                    <width>424</width>
+                    <height>615</height>
+                    <texture>$VAR[Theme.Color]/defaultArtistBig.png</texture>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="image">
-                    <include>ConditionBlack</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="black/defaultArtistBig.png">$INFO[Window.Property(actor.Poster)]</texture>
+                    <texture background="true">$INFO[Window.Property(actor.Poster)]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
@@ -165,26 +162,35 @@
                 <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
-                    <include>ConditionWhite</include>
-                    <fadetime>250</fadetime>
-                    <posx>25</posx>
-                    <posy>313</posy>
-                    <width>494</width>
-                    <height>685</height>
-                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(150).Listitem.Thumb]</texture>
-                    <include>ThumbBorder</include>
+                    <visible>IsEmpty(Container(150).Listitem.Thumb)</visible>
+                    <posx>TextMargin</posx>
+                    <posy>348</posy>
+                    <width>424</width>
+                    <height>615</height>
+                    <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="image">
-                    <include>ConditionBlack</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(150).Listitem.Thumb]</texture>
+                    <texture background="true">$INFO[Container(150).Listitem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
                 </control>
                 <control type="panel" id="150">
                     <description>movies list</description>
@@ -302,26 +308,35 @@
                 <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
-                    <include>ConditionWhite</include>
-                    <fadetime>250</fadetime>
-                    <posx>25</posx>
-                    <posy>313</posy>
-                    <width>494</width>
-                    <height>685</height>
-                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(250).Listitem.Thumb]</texture>
-                    <include>ThumbBorder</include>
+                    <visible>IsEmpty(Container(250).Listitem.Thumb)</visible>
+                    <posx>TextMargin</posx>
+                    <posy>348</posy>
+                    <width>424</width>
+                    <height>615</height>
+                    <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="image">
-                    <include>ConditionBlack</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(250).Listitem.Thumb]</texture>
+                    <texture background="true">$INFO[Container(250).Listitem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
                 </control>
                 <control type="panel" id="250">
                     <description>movies list</description>
@@ -439,26 +454,35 @@
                 <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
-                    <include>ConditionWhite</include>
-                    <fadetime>250</fadetime>
-                    <posx>25</posx>
-                    <posy>313</posy>
-                    <width>494</width>
-                    <height>685</height>
-                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(550).Listitem.Thumb]</texture>
-                    <include>ThumbBorder</include>
+                    <visible>IsEmpty(Container(550).Listitem.Thumb)</visible>
+                    <posx>TextMargin</posx>
+                    <posy>348</posy>
+                    <width>424</width>
+                    <height>615</height>
+                    <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="image">
-                    <include>ConditionBlack</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(550).Listitem.Thumb]</texture>
+                    <texture background="true">$INFO[Container(550).Listitem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
                 </control>
                 <control type="panel" id="550">
                     <description>movies list</description>
@@ -576,26 +600,35 @@
                 <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
-                    <include>ConditionWhite</include>
-                    <fadetime>250</fadetime>
-                    <posx>25</posx>
-                    <posy>313</posy>
-                    <width>494</width>
-                    <height>685</height>
-                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(550).Listitem.Thumb]</texture>
-                    <include>ThumbBorder</include>
+                    <visible>IsEmpty(Container(650).Listitem.Thumb)</visible>
+                    <posx>TextMargin</posx>
+                    <posy>348</posy>
+                    <width>424</width>
+                    <height>615</height>
+                    <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="image">
-                    <include>ConditionBlack</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(550).Listitem.Thumb]</texture>
+                    <texture background="true">$INFO[Container(650).Listitem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
                 </control>
                 <control type="panel" id="650">
                     <description>movies list</description>
@@ -713,26 +746,35 @@
                 <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
-                    <include>ConditionWhite</include>
-                    <fadetime>250</fadetime>
-                    <posx>25</posx>
-                    <posy>313</posy>
-                    <width>494</width>
-                    <height>685</height>
-                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(350).Listitem.Thumb]</texture>
-                    <include>ThumbBorder</include>
+                    <visible>IsEmpty(Container(350).Listitem.Thumb)</visible>
+                    <posx>TextMargin</posx>
+                    <posy>348</posy>
+                    <width>424</width>
+                    <height>615</height>
+                    <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="image">
-                    <include>ConditionBlack</include>
                     <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(350).Listitem.Thumb]</texture>
+                    <texture background="true">$INFO[Container(350).Listitem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
                 </control>
                 <control type="panel" id="350">
                     <description>movies list</description>
@@ -996,35 +1038,35 @@
                 <control type="button" id="105">
                     <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
                     <description>Movie actor roles</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>342</label>
                     <onright>150</onright>
                 </control>
                 <control type="button" id="205">
                     <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
                     <description>TV Show actor roles</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>20343</label>
                     <onright>250</onright>
                 </control>
                 <control type="button" id="505">
                     <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
                     <description>Movie crew member</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>Movie crew member</label>
                     <onright>550</onright>
                 </control>
                 <control type="button" id="605">
                     <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
                     <description>TVShow crew member</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>TVShow crew member</label>
                     <onright>650</onright>
                 </control>
                 <control type="button" id="305">
                     <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
                     <description>Youtube</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>YouTube</label>
                     <onright>350</onright>
                 </control>

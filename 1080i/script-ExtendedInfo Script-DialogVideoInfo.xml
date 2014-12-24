@@ -32,9 +32,11 @@
                 <include>TextColor_MainColor</include>
                 <label>$INFO[Window.Property(movie.Title)]</label>
             </control>
-            <!--CAST-->
-            <control type="group" id="10000">
-                <visible>![control.hasfocus(751)|ControlGroup(7500).HasFocus|
+            <!--DEFAULT DATA-->
+            <control type="group" id="90090">
+                <visible>![control.hasfocus(6061)|ControlGroup(60600).HasFocus|
+                    control.hasfocus(1001)|ControlGroup(10000).HasFocus|
+                    control.hasfocus(751)|ControlGroup(7500).HasFocus|
                     control.hasfocus(151)|ControlGroup(1500).HasFocus|
                     control.hasfocus(251)|ControlGroup(2500).HasFocus|
                     control.hasfocus(1151)|ControlGroup(11500).HasFocus|
@@ -50,6 +52,574 @@
                     control.hasfocus(1351)|ControlGroup(13500).HasFocus|
                     control.hasfocus(451)|ControlGroup(4500).HasFocus|
                     control.hasfocus(2001)|ControlGroup(20000).HasFocus]</visible>
+                <include>VisibleFadeEffectDelay</include>
+                <control type="group">
+                    <!-- CDART -->
+                    <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(Window.Property(movie.Poster))</visible>
+                    <include>VisibleFadeEffectDelay</include>
+                    <control type="image">
+                        <fadetime>250</fadetime>
+                        <posx>70</posx>
+                        <posy>143</posy>
+                        <width>404</width>
+                        <height>404</height>
+                        <texture background="true" diffuse="white/common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <include>Animation_ViewsCDart</include>
+                    </control>
+                </control>
+                <control type="image">
+                    <visible>IsEmpty(Window.Property(movie.Poster))</visible>
+                    <posx>TextMargin</posx>
+                    <posy>348</posy>
+                    <width>424</width>
+                    <height>615</height>
+                    <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="image">
+                    <fadetime>250</fadetime>
+                    <posx>25</posx>
+                    <posy>313</posy>
+                    <width>494</width>
+                    <height>685</height>
+                    <texture background="true">$INFO[Window.Property(movie.Poster)]</texture>
+                    <include>ThumbBorder</include>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="panel" id="9009">
+                    <visible>![container.content(tvshows) | container.content(episodes) | SubString(Container.FolderPath,videodb://musicvideos,left)]</visible>
+                    <include>VisibleFadeEffectDelay</include>
+                    <posx>500</posx>
+                    <posy>318</posy>
+                    <width>1420</width>
+                    <height>546</height>
+                    <include>List_9009_Commons</include>
+                    <content>
+                        <item>
+                            <label>$LOCALIZE[20376]:</label>
+                            <label2>$INFO[Window.Property(movie.OriginalTitle)]</label2>
+                            <onclick>noop</onclick>
+                            <!--<visible>!IsEmpty(Window.Property(movie.OriginalTitle)) + !stringcompare(Window.Property(movie.OriginalTitle),Window.Property(movie.Title))</visible>-->
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[20339]:</label>
+                            <label2>$INFO[Window.Property(movie.Director)]</label2>
+                            <onclick>noop</onclick>
+                            <!--<onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Window.Property(movie.Director)])</onclick>-->
+                            <visible>!IsEmpty(Window.Property(movie.Director))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[20417]:</label>
+                            <label2>$INFO[Window.Property(movie.Writer)]</label2>
+                            <onclick>noop</onclick>
+                            <!--<onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Window.Property(movie.Writer)])</onclick>-->
+                            <visible>!IsEmpty(Window.Property(movie.Writer))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[572]:</label>
+                            <label2>$INFO[Window.Property(movie.Studio)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.Studio))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[515]:</label>
+                            <label2>$INFO[Window.Property(movie.Genre)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.Genre))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[562]:</label>
+                            <label2>$INFO[Window.Property(movie.Year)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.Year))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[172]:</label>
+                            <label2>$INFO[Window.Property(movie.ReleaseDate)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.ReleaseDate))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[2050]:</label>
+                            <label2>$INFO[Window.Property(movie.Duration)] $LOCALIZE[12391]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.Duration))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[563]:</label>
+                            <label2>$INFO[Window.Property(movie.Rating)]$INFO[Window.Property(movie.Votes), (, $LOCALIZE[205])]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.Rating))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[202]:</label>
+                            <label2>$INFO[Window.Property(movie.TagLine)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.TagLine))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[20074]:</label>
+                            <label2>$INFO[Window.Property(movie.mpaa)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.mpaa))</visible>
+                        </item>
+                        <item>
+                            <label>Budget:</label>
+                            <label2>$INFO[Window.Property(movie.Budget),$]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.Budget))</visible>
+                        </item>
+                        <item>
+                            <label>Revenue:</label>
+                            <label2>$INFO[Window.Property(movie.Revenue),$]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.Revenue))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[21445]:</label>
+                            <label2>$INFO[Window.Property(movie.VideoCodec)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.VideoCodec))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[21805]:</label>
+                            <label2>$INFO[Window.Property(movie.VideoResolution)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.VideoResolution))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[21446]:</label>
+                            <label2>$INFO[Window.Property(movie.AudioCodec)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.AudioCodec))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[21444]:</label>
+                            <label2>$INFO[Window.Property(movie.AudioChannels)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.AudioChannels))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[21447]:</label>
+                            <label2>$INFO[Window.Property(movie.AudioLanguage)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.AudioLanguage))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[21448]:</label>
+                            <label2>$INFO[Window.Property(movie.SubtitleLanguage)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.SubtitleLanguage))</visible>
+                        </item>
+                        <item>
+                            <label>IMDB Top 250 #: </label>
+                            <label2>$INFO[Window.Property(movie.Top250)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.Top250))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[36501]:</label>
+                            <label2>$INFO[Window.Property(movie.StereoscopicMode)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.StereoscopicMode))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[15311]</label>
+                            <label2>$INFO[Window.Property(movie.FilenameAndPath)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.FilenameAndPath))</visible>
+                        </item>
+                    </content>
+                </control>
+                <control type="group">
+                    <visible>Container.Content(TVShows)</visible>
+                    <include>VisibleFadeEffectDelay</include>
+                    <control type="panel" id="9009">
+                        <include>List_9009_Commons</include>
+                        <content>
+                            <item>
+                                <label>$LOCALIZE[20360]:</label>
+                                <label2>$INFO[Window.Property(movie.episode)]     ($INFO[Window.Property(movie.WatchedEpisodes)),, $LOCALIZE[16102]] - $INFO[Window.Property(movie.Property(UnWatchedEpisodes)), , $LOCALIZE[16101]])</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Episode))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[31322]:</label>
+                                <label2>$INFO[Window.Property(movie.Premiered)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Premiered))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[515]:</label>
+                                <label2>$INFO[Window.Property(movie.Genre)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Genre))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[562]:</label>
+                                <label2>$INFO[Window.Property(movie.Year)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Year))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[563]:</label>
+                                <label2>$INFO[Window.Property(movie.Rating)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>IntegerGreaterThan(Window.Property(movie.Rating,0))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[15311]</label>
+                                <label2>$INFO[Window.Property(movie.FilenameAndPath)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.FilenameAndPath))</visible>
+                            </item>
+                        </content>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>container.content(episodes)</visible>
+                    <include>VisibleFadeEffectDelay</include>
+                    <control type="panel" id="9009">
+                        <include>List_9009_Commons</include>
+                        <content>
+                            <item>
+                                <label>$LOCALIZE[20364]:</label>
+                                <label2>$INFO[Window.Property(movie.TVShowTitle)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.TVShowTitle))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[20373]:</label>
+                                <label2>$INFO[Window.Property(movie.Season)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Season))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[20359]:</label>
+                                <label2>$INFO[Window.Property(movie.Episode)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Episode))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[31322]:</label>
+                                <label2>$INFO[Window.Property(movie.Premiered)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Premiered))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[515]:</label>
+                                <label2>$INFO[Window.Property(movie.Genre)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Genre))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[20339]:</label>
+                                <label2>$INFO[Window.Property(movie.Director)]</label2>
+                                <onclick>SendClick(2003,13)</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Director))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[20417]:</label>
+                                <label2>$INFO[Window.Property(movie.Writer)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Writer))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[562]:</label>
+                                <label2>$INFO[Window.Property(movie.Year)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Year))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[2050]:</label>
+                                <label2>$INFO[Window.Property(movie.Duration)] $LOCALIZE[12391]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Duration))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[563]:</label>
+                                <label2>$INFO[Window.Property(movie.Rating)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>IntegerGreaterThan(Window.Property(movie.Rating,0))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21445]:</label>
+                                <label2>$INFO[Window.Property(movie.VideoCodec)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.VideoCodec))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21805]:</label>
+                                <label2>$INFO[Window.Property(movie.VideoResolution)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.VideoResolution))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21446]:</label>
+                                <label2>$INFO[Window.Property(movie.AudioCodec)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.AudioCodec))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21444]:</label>
+                                <label2>$INFO[Window.Property(movie.AudioChannels)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.AudioChannels))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21447]:</label>
+                                <label2>$INFO[Window.Property(movie.AudioLanguage)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.AudioLanguage))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21448]:</label>
+                                <label2>$INFO[Window.Property(movie.SubtitleLanguage)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.SubtitleLanguage))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21448]</label>
+                                <label2>$INFO[Window.Property(movie.SubtitleLanguage)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.SubtitleLanguage))</visible>
+                            </item>
+                            <item>
+                                <label>IMDB Top 250 #:</label>
+                                <label2>$INFO[Window.Property(movie.Top250)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Top250))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[36501]:</label>
+                                <label2>$INFO[Window.Property(movie.StereoscopicMode)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(LiWindow.Property(moviestItem.StereoscopicMode))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[15311]</label>
+                                <label2>$INFO[Window.Property(movie.FilenameAndPath)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.FilenameAndPath))</visible>
+                            </item>
+                        </content>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>SubString(Container.FolderPath,videodb://musicvideos,left)</visible>
+                    <include>VisibleFadeEffectDelay</include>
+                    <control type="panel" id="9009">
+                        <include>List_9009_Commons</include>
+                        <content>
+                            <item>
+                                <label>$LOCALIZE[557]:</label>
+                                <label2>$INFO[ListItem.Artist]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.Artist)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[558]:</label>
+                                <label2>$INFO[ListItem.Album]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.Album)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[515]:</label>
+                                <label2>$INFO[ListItem.Genre]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.Genre)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[572]:</label>
+                                <label2>$INFO[ListItem.Studio]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.Studio)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[20417]:</label>
+                                <label2>$INFO[ListItem.Writer]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.Writer)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[20339]:</label>
+                                <label2>$INFO[ListItem.Director]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.Director)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[562]:</label>
+                                <label2>$INFO[ListItem.Year]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.Year)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[2050]:</label>
+                                <label2>$INFO[ListItem.Duration] $LOCALIZE[12391]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.Duration)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21445]:</label>
+                                <label2>$INFO[ListItem.VideoCodec]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21805]:</label>
+                                <label2>$INFO[ListItem.VideoResolution]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21446]:</label>
+                                <label2>$INFO[ListItem.AudioCodec]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21444]:</label>
+                                <label2>$INFO[ListItem.AudioChannels]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21447]:</label>
+                                <label2>$INFO[ListItem.AudioLanguage]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.AudioLanguage)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21448]:</label>
+                                <label2>$INFO[ListItem.SubtitleLanguage]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.SubtitleLanguage)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21448]:</label>
+                                <label2>$INFO[ListItem.SubtitleLanguage]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.SubtitleLanguage)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[36501]:</label>
+                                <label2>$INFO[ListItem.StereoscopicMode]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.StereoscopicMode)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[15311]</label>
+                                <label2>$INFO[ListItem.FilenameAndPath]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.FilenameAndPath)</visible>
+                            </item>
+                        </content>
+                    </control>
+                </control>
+                <control type="scrollbar" id="60">
+                    <posx>1886</posx>
+                    <posy>318</posy>
+                    <height>546</height>
+                    <include>VerticalScroller</include>
+                    <onleft>9009</onleft>
+                    <onright>60</onright>
+                </control>
+                <control type="image">
+                    <visible>!IsEmpty(Window.Property(movie.VideoResolution))</visible>
+                    <posx>475</posx>
+                    <posy>879</posy>
+                    <width>1420</width>
+                    <height>1</height>
+                    <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
+                </control>
+                <control type="grouplist">
+                    <visible>!IsEmpty(Window.Property(movie.VideoResolution))</visible>
+                    <posx>535</posx>
+                    <posy>897</posy>
+                    <width min="90" max="967">auto</width>
+                    <height>90</height>
+                    <itemgap>20</itemgap>
+                    <orientation>horizontal</orientation>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <include>CodecsExtendedInfo</include>
+                </control>
+            </control>
+            <!--PLOT-->
+            <control type="group" id="60600">
+                <visible>control.hasfocus(6061)|ControlGroup(60600).HasFocus</visible>
+                <include>VisibleFadeEffectDelay</include>
+                <control type="group">
+                    <!-- CDART -->
+                    <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(Window.Property(movie.Poster))</visible>
+                    <include>VisibleFadeEffectDelay</include>
+                    <control type="image">
+                        <fadetime>250</fadetime>
+                        <posx>70</posx>
+                        <posy>143</posy>
+                        <width>404</width>
+                        <height>404</height>
+                        <texture background="true" diffuse="white/common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <include>Animation_ViewsCDart</include>
+                    </control>
+                </control>
+                <control type="image">
+                    <visible>IsEmpty(Window.Property(movie.Poster))</visible>
+                    <posx>TextMargin</posx>
+                    <posy>348</posy>
+                    <width>424</width>
+                    <height>615</height>
+                    <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="image">
+                    <fadetime>250</fadetime>
+                    <posx>25</posx>
+                    <posy>313</posy>
+                    <width>494</width>
+                    <height>685</height>
+                    <texture background="true">$INFO[Window.Property(movie.Poster)]</texture>
+                    <include>ThumbBorder</include>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
+                </control>
+                <control type="textbox">
+                    <include>VisibleFadeEffectDelay</include>
+                    <posx>560</posx>
+                    <posy>360</posy>
+                    <width>1300</width>
+                    <height>590</height>
+                    <font>InfoDetailsFontBig</font>
+                    <label>$INFO[Window.Property(movie.plot)]</label>
+                    <pagecontrol>6060</pagecontrol>
+                </control>
+                <control type="scrollbar" id="6060">
+                    <visible>Skin.HasSetting(ManualScroll)</visible>
+                    <include>VisibleFadeEffectDelay</include>
+                    <posx>1886</posx>
+                    <posy>360</posy>
+                    <height>590</height>
+                    <include>VerticalScroller</include>
+                    <onleft>6061</onleft>
+                </control>
+            </control>
+            <!--CAST-->
+            <control type="group" id="10000">
+                <visible>control.hasfocus(1001)|ControlGroup(10000).HasFocus</visible>
+                <visible>IntegerGreaterThan(Container(1000).NumItems,0)</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
                     <visible>IsEmpty(Container(1000).ListItem.Thumb)</visible>
@@ -69,6 +639,18 @@
                     <texture background="true">$INFO[Container(1000).ListItem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
                 </control>
                 <control type="panel" id="1000">
                     <posx>500</posx>
@@ -186,6 +768,18 @@
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
+                </control>
                 <control type="panel" id="750">
                     <posx>500</posx>
                     <posy>318</posy>
@@ -301,6 +895,18 @@
                     <texture background="true">$INFO[Container(150).ListItem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
                 </control>
                 <control type="panel" id="150">
                     <posx>500</posx>
@@ -436,6 +1042,18 @@
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
+                </control>
                 <control type="panel" id="250">
                     <posx>500</posx>
                     <posy>318</posy>
@@ -570,6 +1188,18 @@
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
+                </control>
                 <control type="panel" id="1150">
                     <posx>500</posx>
                     <posy>318</posy>
@@ -686,6 +1316,18 @@
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
+                </control>
                 <control type="panel" id="350">
                     <posx>500</posx>
                     <posy>318</posy>
@@ -762,6 +1404,18 @@
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
+                </control>
                 <control type="panel" id="550">
                     <posx>500</posx>
                     <posy>318</posy>
@@ -814,7 +1468,7 @@
                     <onright>9000</onright>
                 </control>
             </control>
-            <!--NETWORKS-->
+            <!--NETWORKS STUDIOS-->
             <control type="group" id="14500">
                 <visible>control.hasfocus(1451)|ControlGroup(14500).HasFocus</visible>
                 <visible>IntegerGreaterThan(Container(1450).NumItems,0)</visible>
@@ -834,9 +1488,21 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true">$INFO[Container(1450).ListItem.Thumb]</texture>
+                    <texture background="true">$INFO[Container(1450).ListItem.Thumb,studios/]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
+                </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
                 </control>
                 <control type="panel" id="1450">
                     <posx>500</posx>
@@ -906,14 +1572,22 @@
                     <ondown>650</ondown>
                     <pagecontrol>656</pagecontrol>
                     <itemlayout height="78" width="1920">
-                        <control type="label">
+                        <control type="image">
                             <posx>TextMargin</posx>
                             <posy>0</posy>
+                            <width>78</width>
                             <height>78</height>
-                            <width>1800</width>
+                            <texture>$INFO[ListItem.Property(iso_3166_1),flags/,.png]</texture>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>180</posx>
+                            <posy>0</posy>
+                            <height>78</height>
+                            <width>1620</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Property(iso_3166_1)]$INFO[ListItem.Property(release_date),   ]$INFO[ListItem.Property(certification),   ]</label>
+                            <label>$INFO[ListItem.Property(iso_3166_1)]$INFO[ListItem.Property(release_date),  -  ]$INFO[ListItem.Property(certification),  -  ]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout height="78" width="1920">
@@ -926,14 +1600,22 @@
                                 <width>1920</width>
                                 <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
-                            <control type="label">
+                            <control type="image">
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
+                                <width>78</width>
                                 <height>78</height>
-                                <width>1800</width>
+                                <texture>$INFO[ListItem.Property(iso_3166_1),flags/,.png]</texture>
+                                <aspectratio>keep</aspectratio>
+                            </control>
+                            <control type="label">
+                                <posx>180</posx>
+                                <posy>0</posy>
+                                <height>78</height>
+                                <width>1620</width>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Property(iso_3166_1)]$INFO[ListItem.Property(release_date),   ]$INFO[ListItem.Property(certification),   ]</label>
+                                <label>$INFO[ListItem.Property(iso_3166_1)]$INFO[ListItem.Property(release_date),  -  ]$INFO[ListItem.Property(certification),  -  ]</label>
                             </control>
                         </control>
                     </focusedlayout>
@@ -1009,6 +1691,18 @@
                 <visible>control.hasfocus(1051)|ControlGroup(10500).HasFocus</visible>
                 <visible>IntegerGreaterThan(Container(1050).NumItems,0)</visible>
                 <include>VisibleFadeEffectDelay</include>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
+                </control>
                 <control type="textbox">
                     <posx>TextMargin</posx>
                     <posy>344</posy>
@@ -1351,6 +2045,18 @@
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
+                </control>
                 <control type="panel" id="450">
                     <posx>500</posx>
                     <posy>318</posy>
@@ -1485,6 +2191,18 @@
                     <include>ThumbBorder</include>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
+                <control type="button">
+                    <description>dummy for mouse navigation</description>
+                    <posx>0</posx>
+                    <posy>313</posy>
+                    <width>1920</width>
+                    <height>685</height>
+                    <onclick>noop</onclick>
+                    <onleft>9012</onleft>
+                    <onright>50</onright>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
+                </control>
                 <control type="panel" id="2000">
                     <posx>500</posx>
                     <posy>318</posy>
@@ -1590,59 +2308,98 @@
                     <include>LeftMenuTitleLabel</include>
                     <label>$LOCALIZE[33061]</label>
                 </control>
+                <control type="button" id="2">
+                    <description>Info</description>
+                    <label>$LOCALIZE[31021]</label>
+                    <include>LeftMenuButton</include>
+                    <onright>9009</onright>
+                </control>
+                <control type="button" id="8">
+                    <visible>!IsEmpty(Window.Property(movie.DBID))</visible>
+                    <description>Play</description>
+                    <label>$LOCALIZE[208]</label>
+                    <include>LeftMenuButton</include>
+                    <onright>9009</onright>
+                </control>
+                <!--<control type="button" id="9">-->
+                    <!--<visible>!IsEmpty(Window.Property(movie.DBID)) + IntegerGreaterThan(Window.Property(movie.PercentPlayed),0)</visible>-->
+                    <!--<description>Resume</description>-->
+                    <!--<label>$LOCALIZE[13404] $INFO[Window.Property(movie.PercentPlayed),(,%)]</label>-->
+                    <!--<include>LeftMenuButton</include>-->
+                    <!--<onright>9009</onright>-->
+                <!--</control>-->
+                <control type="button" id="20">
+                    <visible>system.hasaddon(script.cinema.experience) + !SubString(Container.FolderPath,plugin)</visible>
+                    <visible>!IsEmpty(Window.Property(movie.DBID))</visible>
+                    <description>Cinema Experience</description>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[31005]</label>
+                    <onclick>Playlist.Clear</onclick>
+                    <onclick>Dialog.Close(MovieInformation)</onclick>
+                    <onclick>RunScript(script.cinema.experience)</onclick>
+                    <onright>9009</onright>
+                </control>
+                <control type="togglebutton" id="6061">
+                    <visible>!IsEmpty(Window.Property(movie.Plot))</visible>
+                    <description>Plot</description>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[207]</label>
+                    <onright>Control.SetFocus(6060)</onright>
+                </control>
                 <control type="button" id="1001">
                     <visible>IntegerGreaterThan(Container(1000).NumItems,0)</visible>
                     <description>CAST</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>$LOCALIZE[344]</label>
                     <onright>1000</onright>
                 </control>
                 <control type="button" id="751">
                     <visible>IntegerGreaterThan(Container(750).NumItems,0)</visible>
                     <description>CREW</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>Crew</label>
                     <onright>750</onright>
                 </control>
                 <control type="button" id="151">
                     <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
                     <description>Recommended by TMDB</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>Recommended by TMDB</label>
                     <onright>150</onright>
                 </control>
                 <control type="button" id="251">
                     <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
                     <description>Set Movies</description>
-                    <include>LeftMenuButtonFocusTrick</include>
-                    <label>$INFO[Window.Property(movie.set.label)]</label>
+                    <include>LeftMenuButton</include>
+                    <!--<label>$INFO[Window.Property(movie.set.label)]</label>-->
+                    <label>Set Movies</label>
                     <onright>250</onright>
                 </control>
                 <control type="button" id="1151">
                     <visible>IntegerGreaterThan(Container(1150).NumItems,0)</visible>
                     <description>Official Videos</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>Official Videos</label>
                     <onright>1150</onright>
                 </control>
                 <control type="button" id="351">
                     <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
                     <description>Youtube</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>YouTube</label>
                     <onright>350</onright>
                 </control>
                 <control type="button" id="551">
                     <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
                     <description>Production Companies</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>Production Companies</label>
                     <onright>550</onright>
                 </control>
                 <control type="button" id="1451">
                     <visible>IntegerGreaterThan(Container(1450).NumItems,0)</visible>
                     <description>Networks</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>Networks</label>
                     <onright>1450</onright>
                 </control>
@@ -1663,7 +2420,7 @@
                 <control type="button" id="1051">
                     <visible>IntegerGreaterThan(Container(1050).NumItems,0)</visible>
                     <description>Reviews</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>Reviews</label>
                     <onright>1050</onright>
                 </control>
@@ -1688,19 +2445,36 @@
                     <label>20445</label>
                     <onright>1350</onright>
                 </control>
+                <control type="button" id="100">
+                    <visible>System.HasAddon(script.videoextras) + IsEmpty(Window(movieinformation).Property(HideVideoExtrasButton))</visible>
+                    <visible>!IsEmpty(Window.Property(movie.FilenameAndPath))</visible>
+                    <description>Videos Extras</description>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[31509]</label>
+                    <onclick>XBMC.RunScript(script.videoextras,display,"$INFO[Window.Property(movie.FilenameAndPath)]")</onclick>
+                    <onright>9009</onright>
+                </control>
                 <control type="button" id="451">
                     <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
                     <description>MovieDB Users</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>MovieDB Users</label>
                     <onright>450</onright>
                 </control>
                 <control type="button" id="2001">
                     <visible>IntegerGreaterThan(Container(2000).NumItems,0)</visible>
                     <description>Episode Index</description>
-                    <include>LeftMenuButtonFocusTrick</include>
+                    <include>LeftMenuButton</include>
                     <label>Episode Index</label>
                     <onright>2000</onright>
+                </control>
+                <control type="togglebutton" id="100">
+                    <visible>Skin.HasSetting(TVTunes.Enabled) + System.HasAddon(script.tvtunes)</visible>
+                    <description>Tv Tunes</description>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[31956]</label>
+                    <onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
+                    <onright>9009</onright>
                 </control>
             </control>
             <include>LeftMenuScroller</include>
