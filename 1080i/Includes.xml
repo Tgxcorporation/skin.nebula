@@ -1013,16 +1013,6 @@
         <include>TextureFocus</include>
         <include>AltTextureFocus</include>
     </include>
-    <include name="LeftMenuButtonFocusTrick">
-        <height>78</height>
-        <width>1400</width>
-        <font>LeftMenuButtonFont</font>
-        <align>left</align>
-        <radioposx>546</radioposx>
-        <textoffsetx>TextMargin</textoffsetx>
-        <include>TextureFocusTrick</include>
-        <include>AltTextureFocusTrick</include>
-    </include>
     <include name="VerticalScroller">
         <animation type="Focus" reversible="false">
             <effect type="zoom" start="100,100" end="150,100" time="100" center="auto"/>
