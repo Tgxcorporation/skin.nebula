@@ -171,6 +171,24 @@
                             <visible>!IsEmpty(Window.Property(movie.Budget))</visible>
                         </item>
                         <item>
+                            <label>$LOCALIZE[20416]:</label>
+                            <label2>$INFO[Window.Property(movie.Premiered)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.Premiered))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[574]:</label>
+                            <label2>$INFO[Window.Property(movie.Country)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.Country))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[570]:</label>
+                            <label2>$INFO[Window.Property(movie.DateAdded)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.DateAdded))</visible>
+                        </item>
+                        <item>
                             <label>Revenue:</label>
                             <label2>$INFO[Window.Property(movie.Revenue),$]</label2>
                             <onclick>noop</onclick>
@@ -225,10 +243,34 @@
                             <visible>!IsEmpty(Window.Property(movie.StereoscopicMode))</visible>
                         </item>
                         <item>
-                            <label>$LOCALIZE[15311]</label>
-                            <label2>$INFO[Window.Property(movie.FilenameAndPath)]</label2>
+                            <label>$LOCALIZE[573]:</label>
+                            <label2>$INFO[Window.Property(movie.Path)]</label2>
+                            <onclick>Dialog.Close(movieinformation)</onclick>
+                            <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[21800]:</label>
+                            <label2>$INFO[Window.Property(movie.Filename)]</label2>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(movie.FilenameAndPath))</visible>
+                            <visible>!IsEmpty(Window.Property(movie.Filename))</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[567]:</label>
+                            <label2>$INFO[Window.Property(movie.PlayCount)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.PlayCount))</visible>
+                        </item>
+                        <item>
+                            <label fallback="-">$LOCALIZE[575]:</label>
+                            <label2>$INFO[Window.Property(movie.PercentPlayed),,%)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>Window.Property(movie.IsResumable)</visible>
+                        </item>
+                        <item>
+                            <label fallback="-">$LOCALIZE[568]:</label>
+                            <label2>$INFO[Window.Property(movie.LastPlayed)]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.LastPlayed))</visible>
                         </item>
                     </content>
                 </control>
@@ -240,7 +282,7 @@
                         <content>
                             <item>
                                 <label>$LOCALIZE[20360]:</label>
-                                <label2>$INFO[Window.Property(movie.episode)]     ($INFO[Window.Property(movie.WatchedEpisodes)),, $LOCALIZE[16102]] - $INFO[Window.Property(movie.Property(UnWatchedEpisodes)), , $LOCALIZE[16101]])</label2>
+                                <label2>$INFO[Window.Property(movie.episode)]     ($INFO[Window.Property(movie.WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[Window.Property(movie.Property(UnWatchedEpisodes)), , $LOCALIZE[16101]])</label2>
                                 <onclick>noop</onclick>
                                 <visible>!IsEmpty(Window.Property(movie.Episode))</visible>
                             </item>
@@ -264,15 +306,21 @@
                             </item>
                             <item>
                                 <label>$LOCALIZE[563]:</label>
-                                <label2>$INFO[Window.Property(movie.Rating)]</label2>
+                                <label2>$INFO[Window.Property(movie.Rating)]$INFO[Window.Property(movie.Votes), (, $LOCALIZE[205])]</label2>
                                 <onclick>noop</onclick>
-                                <visible>IntegerGreaterThan(Window.Property(movie.Rating,0))</visible>
+                                <visible>!IsEmpty(Window.Property(movie.Rating))</visible>
                             </item>
                             <item>
-                                <label>$LOCALIZE[15311]</label>
-                                <label2>$INFO[Window.Property(movie.FilenameAndPath)]</label2>
+                                <label>$LOCALIZE[573]:</label>
+                                <label2>$INFO[Window.Property(movie.Path)]</label2>
+                                <onclick>Dialog.Close(movieinformation)</onclick>
+                                <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21800]:</label>
+                                <label2>$INFO[Window.Property(movie.Filename)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(movie.FilenameAndPath))</visible>
+                                <visible>!IsEmpty(Window.Property(movie.Filename))</visible>
                             </item>
                         </content>
                     </control>
@@ -339,9 +387,27 @@
                             </item>
                             <item>
                                 <label>$LOCALIZE[563]:</label>
-                                <label2>$INFO[Window.Property(movie.Rating)]</label2>
+                                <label2>$INFO[Window.Property(movie.Rating)]$INFO[Window.Property(movie.Votes), (, $LOCALIZE[205])]</label2>
                                 <onclick>noop</onclick>
-                                <visible>IntegerGreaterThan(Window.Property(movie.Rating,0))</visible>
+                                <visible>!IsEmpty(Window.Property(movie.Rating))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[20416]:</label>
+                                <label2>$INFO[Window.Property(movie.Premiered)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Premiered))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[574]:</label>
+                                <label2>$INFO[Window.Property(movie.Country)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Country))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[570]:</label>
+                                <label2>$INFO[Window.Property(movie.DateAdded)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.DateAdded))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21445]:</label>
@@ -398,10 +464,16 @@
                                 <visible>!IsEmpty(LiWindow.Property(moviestItem.StereoscopicMode))</visible>
                             </item>
                             <item>
-                                <label>$LOCALIZE[15311]</label>
-                                <label2>$INFO[Window.Property(movie.FilenameAndPath)]</label2>
+                                <label>$LOCALIZE[573]:</label>
+                                <label2>$INFO[Window.Property(movie.Path)]</label2>
+                                <onclick>Dialog.Close(movieinformation)</onclick>
+                                <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21800]:</label>
+                                <label2>$INFO[Window.Property(movie.Filename)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(movie.FilenameAndPath))</visible>
+                                <visible>!IsEmpty(Window.Property(movie.Filename))</visible>
                             </item>
                         </content>
                     </control>
@@ -414,45 +486,53 @@
                         <content>
                             <item>
                                 <label>$LOCALIZE[557]:</label>
-                                <label2>$INFO[ListItem.Artist]</label2>
+                                <label2>$INFO[Window.Property(movie.Artist)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Artist)</visible>
+                                <visible>!IsEmpty(Window.Property(movie.Artist))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[558]:</label>
-                                <label2>$INFO[ListItem.Album]</label2>
+                                <label2>$INFO[Window.Property(movie.Album)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Album)</visible>
-                            </item>
-                            <item>
-                                <label>$LOCALIZE[515]:</label>
-                                <label2>$INFO[ListItem.Genre]</label2>
-                                <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Genre)</visible>
-                            </item>
-                            <item>
-                                <label>$LOCALIZE[572]:</label>
-                                <label2>$INFO[ListItem.Studio]</label2>
-                                <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Studio)</visible>
-                            </item>
-                            <item>
-                                <label>$LOCALIZE[20417]:</label>
-                                <label2>$INFO[ListItem.Writer]</label2>
-                                <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Writer)</visible>
+                                <visible>!IsEmpty(Window.Property(movie.Album))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[20339]:</label>
-                                <label2>$INFO[ListItem.Director]</label2>
+                                <label2>$INFO[Window.Property(movie.Director)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Director)</visible>
+                                <!--<onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Window.Property(movie.Director)])</onclick>-->
+                                <visible>!IsEmpty(Window.Property(movie.Director))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[20417]:</label>
+                                <label2>$INFO[Window.Property(movie.Writer)]</label2>
+                                <onclick>noop</onclick>
+                                <!--<onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Window.Property(movie.Writer)])</onclick>-->
+                                <visible>!IsEmpty(Window.Property(movie.Writer))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[572]:</label>
+                                <label2>$INFO[Window.Property(movie.Studio)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Studio))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[515]:</label>
+                                <label2>$INFO[Window.Property(movie.Genre)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Genre))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[562]:</label>
-                                <label2>$INFO[ListItem.Year]</label2>
+                                <label2>$INFO[Window.Property(movie.Year)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Year)</visible>
+                                <visible>!IsEmpty(Window.Property(movie.Year))</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[172]:</label>
+                                <label2>$INFO[Window.Property(movie.ReleaseDate)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.ReleaseDate))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[2050]:</label>
@@ -462,57 +542,69 @@
                             </item>
                             <item>
                                 <label>$LOCALIZE[21445]:</label>
-                                <label2>$INFO[ListItem.VideoCodec]</label2>
+                                <label2>$INFO[Window.Property(movie.VideoCodec)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                                <visible>!IsEmpty(Window.Property(movie.VideoCodec))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21805]:</label>
-                                <label2>$INFO[ListItem.VideoResolution]</label2>
+                                <label2>$INFO[Window.Property(movie.VideoResolution)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                                <visible>!IsEmpty(Window.Property(movie.VideoResolution))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21446]:</label>
-                                <label2>$INFO[ListItem.AudioCodec]</label2>
+                                <label2>$INFO[Window.Property(movie.AudioCodec)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                                <visible>!IsEmpty(Window.Property(movie.AudioCodec))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21444]:</label>
-                                <label2>$INFO[ListItem.AudioChannels]</label2>
+                                <label2>$INFO[Window.Property(movie.AudioChannels)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                                <visible>!IsEmpty(Window.Property(movie.AudioChannels))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21447]:</label>
-                                <label2>$INFO[ListItem.AudioLanguage]</label2>
+                                <label2>$INFO[Window.Property(movie.AudioLanguage)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.AudioLanguage)</visible>
+                                <visible>!IsEmpty(Window.Property(movie.AudioLanguage))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21448]:</label>
-                                <label2>$INFO[ListItem.SubtitleLanguage]</label2>
+                                <label2>$INFO[Window.Property(movie.SubtitleLanguage)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.SubtitleLanguage)</visible>
+                                <visible>!IsEmpty(Window.Property(movie.SubtitleLanguage))</visible>
                             </item>
                             <item>
-                                <label>$LOCALIZE[21448]:</label>
-                                <label2>$INFO[ListItem.SubtitleLanguage]</label2>
+                                <label>$LOCALIZE[21448]</label>
+                                <label2>$INFO[Window.Property(movie.SubtitleLanguage)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.SubtitleLanguage)</visible>
+                                <visible>!IsEmpty(Window.Property(movie.SubtitleLanguage))</visible>
+                            </item>
+                            <item>
+                                <label>IMDB Top 250 #:</label>
+                                <label2>$INFO[Window.Property(movie.Top250)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Top250))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[36501]:</label>
-                                <label2>$INFO[ListItem.StereoscopicMode]</label2>
+                                <label2>$INFO[Window.Property(movie.StereoscopicMode)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.StereoscopicMode)</visible>
+                                <visible>!IsEmpty(LiWindow.Property(moviestItem.StereoscopicMode))</visible>
                             </item>
                             <item>
-                                <label>$LOCALIZE[15311]</label>
-                                <label2>$INFO[ListItem.FilenameAndPath]</label2>
+                                <label>$LOCALIZE[573]:</label>
+                                <label2>$INFO[Window.Property(movie.Path)]</label2>
+                                <onclick>Dialog.Close(movieinformation)</onclick>
+                                <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21800]:</label>
+                                <label2>$INFO[Window.Property(movie.Filename)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.FilenameAndPath)</visible>
+                                <visible>!IsEmpty(Window.Property(movie.Filename))</visible>
                             </item>
                         </content>
                     </control>
@@ -1574,7 +1666,7 @@
                     <itemlayout height="78" width="1920">
                         <control type="image">
                             <posx>TextMargin</posx>
-                            <posy>0</posy>
+                            <posy>2</posy>
                             <width>78</width>
                             <height>78</height>
                             <texture>$INFO[ListItem.Property(iso_3166_1),flags/,.png]</texture>
@@ -1602,7 +1694,7 @@
                             </control>
                             <control type="image">
                                 <posx>TextMargin</posx>
-                                <posy>0</posy>
+                                <posy>2</posy>
                                 <width>78</width>
                                 <height>78</height>
                                 <texture>$INFO[ListItem.Property(iso_3166_1),flags/,.png]</texture>
