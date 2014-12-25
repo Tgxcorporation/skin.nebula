@@ -1,10 +1,15 @@
 Nebula is a simple and full-featured light or dark color skin designed for Full HD TV screens.
 
+
 ### Thanks
 All the xbmc team and addon developers
 
+
+
 ### Screenshots
 Some pictures of the skin: [Screenshots](http://forum.xbmc.org/showthread.php?tid=202711)
+
+
 
 ### Special features & Supported Plugins
 
@@ -27,6 +32,7 @@ Some pictures of the skin: [Screenshots](http://forum.xbmc.org/showthread.php?ti
 * Mouse support
 
 
+
 ### Install from GitHub
 If you can't wait for the official skin update in xbmc add-on repository, you can manually install the latest skin revision from GitHub. Here is how:
 
@@ -34,7 +40,6 @@ If you can't wait for the official skin update in xbmc add-on repository, you ca
 2. Uninstall "Nebula" from installed Addons
 3. Close XBMC
 4. Go into your "packages" folder:
-
 
 * Android -> Android/data/org.xbmc.xbmc/files/.xbmc/addons/packages/
 * iOS -> /private/var/mobile/Library/Preferences/XBMC/addons/packages/
@@ -45,8 +50,10 @@ If you can't wait for the official skin update in xbmc add-on repository, you ca
 
 and delete every file starting with "skin.nebula"
 
-5. Download the zipped skin from [url=https://github.com/Tgxcorporation/skin.nebula/archive/master.zip]https://github.com/Tgxcorporation/skin.nebula/archive/master.zip[/url]
+5. Download the zipped skin for HELIX from https://github.com/Tgxcorporation/skin.nebula/archive/master.zip
 6. Start XBMC and go to Settings -> Add-ons and select "Install from zipped file". Browse for the file downloaded in point n. 5 and press "ok". The updated skin should install.
+
+
 
 ### Donations
 If you like this skin so much that you want to help a little bit, you can donate here (much appreciated):
