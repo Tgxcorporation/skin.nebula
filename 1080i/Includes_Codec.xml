@@ -14,8 +14,8 @@
         <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + StringCompare(Window.Property(movie.mpaa),NC-17)] | [IsEmpty(Window.Property(movie.mpaa)) + StringCompare(VideoPlayer.mpaa,NC-17)]">$VAR[Theme.Color]/badges/content_rating/us/nc17.png</value>
         <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + StringCompare(Window.Property(movie.mpaa),G)] | [IsEmpty(Window.Property(movie.mpaa)) + StringCompare(VideoPlayer.mpaa,G)]">$VAR[Theme.Color]/badges/content_rating/us/mpaa_general.png</value>
         <!-- US (TV) -->
-        <value condition="!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),TV-)">$VAR[Theme.Color]/badges/content_rating/tv/$INFO[Window.Property(movie.mpaa,,.png]</value>
-        <value condition="IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa),TV-)">$VAR[Theme.Color]/badges/content_rating/tv/$INFO[VideoPlayer.mpaa,,.png]</value>
+        <value condition="!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),TV-)">$VAR[Theme.Color]/badges/content_rating/tv/$INFO[Window.Property(movie.mpaa),,.png]</value>
+        <value condition="IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,TV-)">$VAR[Theme.Color]/badges/content_rating/tv/$INFO[VideoPlayer.mpaa,,.png]</value>
         <!-- Germany -->
         <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Germany:0)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Germany:0)]">$VAR[Theme.Color]/badges/content_rating/de/0.png</value>
         <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Germany:6)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Germany:6)]">$VAR[Theme.Color]/badges/content_rating/de/6.png</value>
