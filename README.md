@@ -2,7 +2,7 @@ Nebula is a simple and full-featured light or dark color skin designed for Full 
 
 
 ### Thanks
-All the xbmc team and addon developers
+All the Kodi/XBMC team and addon developers.
 
 
 
@@ -22,7 +22,7 @@ Some pictures of the skin: [Screenshots](http://forum.xbmc.org/showthread.php?ti
 * Extra Fanart for Movies, TV Series, MusicVideos: Artwork Downloader - http://wiki.xbmc.org/index.php?title=Add-on:Artwork_Downloader
 * TvTunes - http://wiki.xbmc.org/index.php?title=Add-on:TvTunes
 * Recently added/Random items: Skin Widgets - http://wiki.xbmc.org/index.php?title=Add-on:Skin_Widgets
-* Extra data for actors: Script Extended Info - https://github.com/phil65/script.extendedinfo
+* Extra data for actors/movies/tvshows: Script Extended Info - https://github.com/phil65/script.extendedinfo
 * Cinema Experience - http://wiki.xbmc.org/index.php?title=Add-on:Cinema_Experience
 * Music playing screen: Artist Slideshow - http://wiki.xbmc.org/index.php?title=Add-on:Artist_Slideshow
 * VideoExtras - http://wiki.xbmc.org/index.php?title=Add-on:VideoExtras
