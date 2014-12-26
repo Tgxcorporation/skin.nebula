@@ -25,7 +25,7 @@
                 <include>View_53_Grid</include>
                 <include>Info_53_Grid</include>
                 <include>View_54_Fanart</include>
-                <include>Info_54_Fanart</include>
+                <!--<include>Info_54_Fanart</include>-->
                 <include>View_5050_CardList</include>
             </control>
         </control>
