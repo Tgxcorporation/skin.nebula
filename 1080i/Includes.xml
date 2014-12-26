@@ -468,7 +468,7 @@
             <visible>![Control.HasFocus(505050)]</visible>
             <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="-1920,0" condition="control.isvisible(54)">Conditional</animation>
             <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="control.isvisible(54)+control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
-            <include>Icon_Fade</include>
+            <include>Overlay_Fade</include>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
