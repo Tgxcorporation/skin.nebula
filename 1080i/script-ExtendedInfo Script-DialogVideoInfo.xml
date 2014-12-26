@@ -637,6 +637,14 @@
                     <aligny>center</aligny>
                     <include>CodecsExtendedInfo</include>
                 </control>
+                <control type="image">
+                    <posx>1740</posx>
+                    <posy>897</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$VAR[Theme.Color]/common/themoviedb.png</texture>
+                </control>
             </control>
             <!--PLOT-->
             <control type="group" id="60600">
