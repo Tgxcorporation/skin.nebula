@@ -34,24 +34,24 @@ Some pictures of the skin: [Screenshots](http://forum.xbmc.org/showthread.php?ti
 
 
 ### Install from GitHub
-If you can't wait for the official skin update in xbmc add-on repository, you can manually install the latest skin revision from GitHub. Here is how:
+If you can't wait for the official skin update in Kodi add-on repository, you can manually install the latest skin revision from GitHub. Here is how:
 
 1. Switch to the "Confluence" skin in Settings.
 2. Uninstall "Nebula" from installed Addons
-3. Close XBMC
+3. Close Kodi
 4. Go into your "packages" folder:
 
-* Android -> Android/data/org.xbmc.xbmc/files/.xbmc/addons/packages/
-* iOS -> /private/var/mobile/Library/Preferences/XBMC/addons/packages/
-* Linux -> ~/.xbmc/addons/packages/
-* Mac OS X -> /Users/<your_user_name>/Library/Application Support/XBMC/addons/packages/
-* OpenELEC -> /storage/.xbmc/addons/packages/
-* Windows XP, 7, 8 -> %appdata%\XBMC\addons\packages\
+* Android -> Android/data/org.xbmc.kodi/files/.kodi/addons/packages/
+* iOS -> /private/var/mobile/Library/Preferences/kodi/addons/packages/
+* Linux -> ~/.kodi/addons/packages/
+* Mac OS X -> /Users/<your_user_name>/Library/Application Support/kodi/addons/packages/
+* OpenELEC -> /storage/.kodi/addons/packages/
+* Windows XP, 7, 8 -> %appdata%\kodi\addons\packages\
 
 and delete every file starting with "skin.nebula"
 
 5. Download the zipped skin for HELIX from https://github.com/Tgxcorporation/skin.nebula/archive/master.zip
-6. Start XBMC and go to Settings -> Add-ons and select "Install from zipped file". Browse for the file downloaded in point n. 5 and press "ok". The updated skin should install.
+6. Start Kodi and go to Settings -> Add-ons and select "Install from zipped file". Browse for the file downloaded in point n. 5 and press "ok". The updated skin should install.
 
 
 
