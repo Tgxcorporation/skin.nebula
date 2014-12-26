@@ -22,8 +22,8 @@
     </include>
     <include name="Info_54_Fanart">
         <control type="group">
-            <visible>Control.IsVisible(54)</visible>
-            <include>Icon_Fade</include>
+            <!--<visible>Control.IsVisible(54)</visible>-->
+            <!--<include>Icon_Fade</include>-->
             <posy>642</posy>
             <control type="image">
                 <posx>-35</posx>
@@ -240,33 +240,13 @@
     </include>
     <include name="Fanart_Layout">
         <itemlayout height="1080" width="1920">
-            <control type="group">
-                <include>ListFocusAnimation</include>
-                <control type="group">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1920</width>
-                        <height>1080</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture background="true">$VAR[Fanart.Art]</texture>
-                    </control>
-                </control>
-            </control>
+            <include>ListFocusAnimation</include>
+            <include>Info_54_Fanart</include>
         </itemlayout>
         <focusedlayout height="1080" width="1920">
             <control type="group">
                 <include>ListFocusAnimation</include>
-                <control type="group">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1920</width>
-                        <height>1080</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture background="true">$VAR[Fanart.Art]</texture>
-                    </control>
-                 </control>
+                <include>Info_54_Fanart</include>
             </control>
         </focusedlayout>
     </include>
@@ -275,6 +255,20 @@
             <visible>Control.IsVisible(54)</visible>
             <include>Icon_Fade</include>
             <control type="group">
+                <control type="image">
+                    <posx>-35</posx>
+                    <posy>-35</posy>
+                    <width>4910</width>
+                    <height>1150</height>
+                    <texture border="35">$VAR[Theme.Color]/common/JewelCase2.png</texture>
+                </control>
+                <control type="image">
+                    <posx>-1920</posx>
+                    <posy>750</posy>
+                    <width>3840</width>
+                    <height>330</height>
+                    <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
+                </control>
                 <control type="list" id="54">
                     <viewtype label="20445">biginfo</viewtype>
                     <posx>0</posx>
@@ -294,23 +288,16 @@
                 </control>
             </control>
             <control type="image">
-                <posx>0</posx>
+                <posx>-1920</posx>
                 <posy>0</posy>
-                <width>1920</width>
+                <width>3840</width>
                 <height>183</height>
                 <texture flipy="true" border="1">$VAR[Theme.Color]/common/HomeGradient.png</texture>
             </control>
             <control type="image">
-                <posx>0</posx>
-                <posy>750</posy>
-                <width>1920</width>
-                <height>330</height>
-                <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
-            </control>
-            <control type="image">
-                <posx>-35</posx>
+                <posx>-1955</posx>
                 <posy>0</posy>
-                <width>1990</width>
+                <width>3910</width>
                 <height>183</height>
                 <colordiffuse>ddffffff</colordiffuse>
                 <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
