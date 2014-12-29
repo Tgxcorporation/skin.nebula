@@ -416,10 +416,16 @@ msgid "Weekend Forecast"
 msgstr ""
 
 msgctxt "#31904"
-msgid "10 Day Forecast"
+msgid "Daily Forecast"
 msgstr ""
 
-#empty strings from id 31905 to 31946
+#empty strings from id 31905 to 31909
+
+msgctxt "#31910"
+msgid "Maps"
+msgstr ""
+
+#empty strings from id 31911 to 31946
 #NEBULA
 
 msgctxt "#31947"

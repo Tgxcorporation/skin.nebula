@@ -294,10 +294,10 @@
         <value condition="!IsEmpty(Skin.String(Settings.Background))">$INFO[Skin.String(Settings.Background)]</value>
         <value>special://skin/backgrounds/Settings.jpg</value>
     </variable>
-    <!--  <variable name="Weather.Art">
+    <variable name="Weather.Art">
         <value condition="!IsEmpty(Skin.String(Weather.Background))">$INFO[Skin.String(Weather.Background)]</value>
         <value>special://skin/backgrounds/Weather.jpg</value>
-    </variable> -->
+    </variable>
     <variable name="Pvr.Art">
         <value condition="!IsEmpty(Skin.String(Pvr.Background))">$INFO[Skin.String(Pvr.Background)]</value>
         <value>special://skin/backgrounds/Pvr.jpg</value>
@@ -319,7 +319,7 @@
         <value condition="Window.IsActive(DialogContentSettings.xml)|Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(MyPVR.xml)">$VAR[Pvr.Art]</value>
         <value condition="Window.IsActive(CustomMoviesHomeButton.xml)|Window.IsActive(CustomMusicHomeButton.xml)">$VAR[Settings.Art]</value>
         <value condition="Window.IsActive(Startup.xml)">$VAR[Favourites.Art]</value>
-        <!-- <value condition="Window.IsActive(MyWeather.xml)">$VAR[Weather.Art]</value> -->
+         <value condition="Window.IsActive(MyWeather.xml)">$VAR[Weather.Art]</value>
         <value condition="Window.IsActive(MyPics.xml)">$VAR[Pictures.Art]</value>
         <value condition="Window.IsActive(DialogFavourites.xml)">$VAR[Favourites.Art]</value>
         <value>$VAR[Default.Art]</value>
