@@ -429,4 +429,203 @@
             </control>
         </control>
     </include>
+    <include name="List_Layout_Weather">
+        <itemlayout height="135" width="1390">
+            <control type="label">
+                <visible>StringCompare(ListItem.Property(Property3),)</visible>
+                <posx>TextMargin</posx>
+                <height>135</height>
+                <width>1210</width>
+                <font>FacadeListMainFont</font>
+                <include>TextColor_AlternateColor</include>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label">
+                <visible>!StringCompare(ListItem.Property(Property3),)</visible>
+                <posx>TextMargin</posx>
+                <posy>27</posy>
+                <aligny>top</aligny>
+                <width>1210</width>
+                <font>FacadeListMainFont</font>
+                <include>TextColor_AlternateColor</include>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label">
+                <visible>!StringCompare(ListItem.Property(Property3),)</visible>
+                <posx>TextMargin</posx>
+                <posy>73</posy>
+                <aligny>top</aligny>
+                <width>1210</width>
+                <font>FacadeListSubFont</font>
+                <include>TextColor_AlternateColor</include>
+                <label>$INFO[ListItem.Property(Property3)]</label>
+            </control>
+        </itemlayout>
+        <focusedlayout height="270" width="1390">
+            <control type="group">
+                <include>ListFocusAnimation</include>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <height>270</height>
+                    <width>1390</width>
+                    <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                </control>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>25</posy>
+                    <width>1210</width>
+                    <aligny>top</aligny>
+                    <font>InfoTitleFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Label]$INFO[ListItem.Property(Property3),     ]$INFO[ListItem.Property(Property4),     ]</label>
+                </control>
+                <control type="image">
+                    <description>Default Seperator</description>
+                    <posx>0</posx>
+                    <posy>100</posy>
+                    <width>1410</width>
+                    <height>1</height>
+                    <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
+                </control>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>107</posy>
+                    <width>283</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Property(Property1)]</label>
+                </control>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>180</posy>
+                    <width>283</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Property(Property2)]</label>
+                </control>
+                <control type="label">
+                    <posx>403</posx>
+                    <posy>107</posy>
+                    <width>333</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Property(Property5)]</label>
+                </control>
+                <control type="label">
+                    <posx>403</posx>
+                    <posy>180</posy>
+                    <width>333</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Property(Property8)]</label>
+                </control>
+                <control type="label">
+                    <posx>796</posx>
+                    <posy>107</posy>
+                    <width>533</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Property(Property9)]</label>
+                </control>
+                <control type="label">
+                    <posx>796</posx>
+                    <posy>180</posy>
+                    <width>533</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Property(Property10)]$INFO[ListItem.Property(Property11),     ,]</label>
+                </control>
+                <!--<control type="label">-->
+                <!--<posx>TextMargin</posx>-->
+                <!--<posy>205</posy>-->
+                <!--<aligny>top</aligny>-->
+                <!--<width>542</width>-->
+                <!--<font>InfoRatingFont</font>-->
+                <!--<include>TextColor_MainColor</include>-->
+                <!--<scroll>false</scroll>-->
+                <!--<label>$INFO[ListItem.Property(CurrentDewPoint)]</label>-->
+                <!--</control>-->
+                <!--<control type="label">-->
+                <!--<posx>TextMargin</posx>-->
+                <!--<posy>275</posy>-->
+                <!--<aligny>top</aligny>-->
+                <!--<width>542</width>-->
+                <!--<font>InfoRatingFont</font>-->
+                <!--<include>TextColor_MainColor</include>-->
+                <!--<scroll>false</scroll>-->
+                <!--<label>$INFO[ListItem.Property(CurrentUVIndex)]</label>-->
+                <!--</control>-->
+            </control>
+        </focusedlayout>
+    </include>
+    <include name="View_52_ShortList_Weather">
+        <control type="group">
+            <visible>Skin.String(WeatherView,Shortlist)</visible>
+            <include>Icon_Fade</include>
+            <control type="image">
+                <posx>530</posx>
+                <posy>142</posy>
+                <width>1390</width>
+                <height>892</height>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+            </control>
+            <control type="image">
+                <visible>[IsEmpty(Container(52).ListItem.thumb)]</visible>
+                <posx>25</posx>
+                <posy>158</posy>
+                <width>520</width>
+                <height>863</height>
+                <aspectratio aligny="top">scale</aspectratio>
+                <texture>special://skin/backgrounds/Weather/na.jpg</texture>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <fadetime>250</fadetime>
+                <posx>25</posx>
+                <posy>158</posy>
+                <width>520</width>
+                <height>863</height>
+                <aspectratio aligny="top">scale</aspectratio>
+                <texture background="true">$INFO[Container(52).Listitem.Thumb]</texture>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="list" id="52">
+                <viewtype label="535">Large List</viewtype>
+                <posx>530</posx>
+                <posy>183</posy>
+                <width>1390</width>
+                <height>810</height>
+                <pagecontrol>60</pagecontrol>
+                <onleft>9000</onleft>
+                <onright>60</onright>
+                <onup>52</onup>
+                <ondown>52</ondown>
+                <preloaditems>4</preloaditems>
+                <include>List_Layout_Weather</include>
+                <include>WeatherContent</include>
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>1886</posx>
+                <posy>183</posy>
+                <height>810</height>
+                <include>VerticalScroller</include>
+                <onleft>52</onleft>
+                <onright>505050</onright>
+            </control>
+        </control>
+    </include>
 </includes>

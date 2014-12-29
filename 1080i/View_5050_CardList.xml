@@ -533,7 +533,7 @@
             <include>Icon_Fade</include>
             <control type="group">
                 <control type="list" id="5050">
-                    <viewtype label="31095">biginfo</viewtype>
+                    <viewtype label="31095">cardlist</viewtype>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>1920</width>
