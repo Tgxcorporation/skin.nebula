@@ -698,7 +698,7 @@
     <include name="View_50_BigList_Weather">
         <control type="group">
             <!--BIG LIST-->
-            <visible>Skin.String(WeatherView,biglist)</visible>
+            <visible>Skin.String(WeatherView,biglist)|Skin.String(WeatherView,)</visible>
             <include>Icon_Fade</include>
             <control type="image">
                 <posx>0</posx>

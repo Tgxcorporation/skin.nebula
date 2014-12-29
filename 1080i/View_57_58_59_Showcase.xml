@@ -1011,6 +1011,7 @@
                     </control>
                     <control type="label">
                         <visible>!StringCompare(Container(57).ListItem.Property(Property6),[COLOR AlternateColor_$VAR[Theme.Color]]$LOCALIZE[403]:[/COLOR] )</visible><posx>TextMargin</posx>
+                        <posx>TextMargin</posx>
                         <posy>234</posy>
                         <width>760</width>
                         <height>71</height>

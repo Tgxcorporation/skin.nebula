@@ -83,15 +83,15 @@
                 <visible>Skin.String(WeatherType,Map)</visible>
                 <include>Icon_Fade</include>
                 <control type="group">
-                    <control type="list" id="55">
+                    <control type="list" id="155">
                         <viewtype label="20445">biginfo</viewtype>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>1920</width>
                         <height>1080</height>
                         <pagecontrol>60</pagecontrol>
-                        <onleft>55</onleft>
-                        <onright>55</onright>
+                        <onleft>155</onleft>
+                        <onright>155</onright>
                         <onup>9000</onup>
                         <ondown>60</ondown>
                         <orientation>horizontal</orientation>
@@ -186,7 +186,7 @@
                         <font>InfoTitleFont</font>
                         <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
-                        <label>$INFO[Container(55).ListItem.Label]</label>
+                        <label>$INFO[Container(155).ListItem.Label]</label>
                     </control>
                     <control type="image">
                         <description>legend image</description>
@@ -194,7 +194,7 @@
                         <posy>955</posy>
                         <width>294</width>
                         <height>105</height>
-                        <texture>$INFO[Container(55).ListItem.Property(Legend)]</texture>
+                        <texture>$INFO[Container(155).ListItem.Property(Legend)]</texture>
                         <include>ThumbBorder</include>
                     </control>
                     <control type="scrollbar" id="60">
@@ -202,7 +202,7 @@
                         <posy>1046</posy>
                         <width>1920</width>
                         <include>HorizontalScroller</include>
-                        <onup>55</onup>
+                        <onup>155</onup>
                         <onright>noop</onright>
                         <ondown>60</ondown>
                     </control>
@@ -213,8 +213,8 @@
                         <height>800</height>
                         <texturefocus>-</texturefocus>
                         <texturenofocus>-</texturenofocus>
-                        <onclick>Control.Move(55,1)</onclick>
-                        <onfocus>Control.Move(55,1)</onfocus>
+                        <onclick>Control.Move(155,1)</onclick>
+                        <onfocus>Control.Move(155,1)</onfocus>
                     </control>
                     <control type="button">
                         <posx>0</posx>
@@ -223,8 +223,8 @@
                         <height>800</height>
                         <texturefocus>-</texturefocus>
                         <texturenofocus>-</texturenofocus>
-                        <onclick>Control.Move(55,-1)</onclick>
-                        <onfocus>Control.Move(55,-1)</onfocus>
+                        <onclick>Control.Move(155,-1)</onclick>
+                        <onfocus>Control.Move(155,-1)</onfocus>
                     </control>
                 </control>
             </control>
@@ -261,7 +261,7 @@
                 <font>InfoDetailsFont</font>
                 <include>TextColor_AlternateColor</include>
                 <scroll>false</scroll>
-                <label>$INFO[Container(50).ListItem.Property(Outlook)]</label>
+                <label>$INFO[Container(50).ListItem.Property(Property3)]</label>
             </control>
         </control>
         <!-- <include>FooterInfo</include> -->
