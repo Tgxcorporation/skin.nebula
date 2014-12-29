@@ -261,7 +261,7 @@
                 <font>InfoDetailsFont</font>
                 <include>TextColor_AlternateColor</include>
                 <scroll>false</scroll>
-                <label>$INFO[Container(50).ListItem.Property(Property3)]</label>
+                <label>$INFO[Window.Property(WeatherProvider)]$INFO[Window.Property(Updated),     ]</label>
             </control>
         </control>
         <!-- <include>FooterInfo</include> -->
