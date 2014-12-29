@@ -479,6 +479,8 @@
             <control type="group">
                 <include>OpenClose</include>
                 <visible>[[Window.isVisible(MyWeather.xml)+Skin.String(WeatherView,fanart)]|[!Window.isVisible(MyWeather.xml)+control.isvisible(54)]]</visible>
+                <!--<animation effect="fade" time="250" start="0" end="100">Visible</animation>-->
+                <!--<animation effect="fade" time="250" start="100" end="0">Hidden</animation>-->
                 <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
                 <control type="image">
                     <posx>-1920</posx>
@@ -489,6 +491,9 @@
                     <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
                 </control>
                 <control type="image">
+                    <visible>control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]</visible>
+                    <animation effect="fade" time="250" start="0" end="100">Visible</animation>
+                    <animation effect="fade" time="250" start="100" end="0">Hidden</animation>
                     <posx>-1955</posx>
                     <posy>-35</posy>
                     <width>1990</width>
