@@ -242,6 +242,26 @@
                     <height>330</height>
                     <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
                 </control>
+                <control type="group">
+                    <!-- CLEAR ART -->
+                    <visible>Skin.HasSetting(EnableClearArt)</visible>
+                    <control type="image">
+                        <posx>1560</posx>
+                        <posy>407</posy>
+                        <width>300</width>
+                        <height>235</height>
+                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                        <texture background="true">$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
+                    </control>
+                    <control type="image">
+                        <posx>1560</posx>
+                        <posy>407</posy>
+                        <width>300</width>
+                        <height>235</height>
+                        <texture background="true">$INFO[ListItem.Art(clearart)]</texture>
+                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    </control>
+                </control>
                 <control type="image">
                     <posx>-35</posx>
                     <posy>609</posy>
