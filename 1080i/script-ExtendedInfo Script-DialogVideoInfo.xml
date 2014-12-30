@@ -811,7 +811,7 @@
                                 <width>1300</width>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Property(Character),$LOCALIZE[20347] ]</label>
                             </control>
                             <control type="label">
                                 <visible>!StringCompare(ListItem.Property(Character),)</visible>
@@ -830,7 +830,7 @@
                                 <width>1300</width>
                                 <font>FacadeListSubFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Property(Character)]</label>
+                                <label>$INFO[ListItem.Property(Character),$LOCALIZE[20347] ]</label>
                             </control>
                         </control>
                     </focusedlayout>
@@ -1485,41 +1485,41 @@
                 <visible>control.hasfocus(551)|ControlGroup(5500).HasFocus</visible>
                 <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
                 <include>VisibleFadeEffectDelay</include>
-                <control type="image">
-                    <visible>IsEmpty(Container(550).ListItem.Thumb)</visible>
-                    <posx>TextMargin</posx>
-                    <posy>348</posy>
-                    <width>424</width>
-                    <height>615</height>
-                    <texture>$VAR[Theme.Color]/defaultPictureBig.png</texture>
-                    <aspectratio aligny="top">keep</aspectratio>
-                </control>
-                <control type="image">
-                    <fadetime>250</fadetime>
-                    <posx>25</posx>
-                    <posy>313</posy>
-                    <width>494</width>
-                    <height>685</height>
-                    <texture background="true">$INFO[Container(550).ListItem.Thumb]</texture>
-                    <include>ThumbBorder</include>
-                    <aspectratio aligny="top">keep</aspectratio>
-                </control>
-                <control type="button">
-                    <description>dummy for mouse navigation</description>
-                    <posx>0</posx>
-                    <posy>313</posy>
-                    <width>1920</width>
-                    <height>685</height>
-                    <onclick>noop</onclick>
-                    <onleft>9012</onleft>
-                    <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
-                </control>
+                <!--<control type="image">-->
+                    <!--<visible>IsEmpty(Container(550).ListItem.Thumb)</visible>-->
+                    <!--<posx>TextMargin</posx>-->
+                    <!--<posy>348</posy>-->
+                    <!--<width>424</width>-->
+                    <!--<height>615</height>-->
+                    <!--<texture>$VAR[Theme.Color]/defaultPictureBig.png</texture>-->
+                    <!--<aspectratio aligny="top">keep</aspectratio>-->
+                <!--</control>-->
+                <!--<control type="image">-->
+                    <!--<fadetime>250</fadetime>-->
+                    <!--<posx>25</posx>-->
+                    <!--<posy>313</posy>-->
+                    <!--<width>494</width>-->
+                    <!--<height>685</height>-->
+                    <!--<texture background="true">$INFO[Container(550).ListItem.Thumb]</texture>-->
+                    <!--<include>ThumbBorder</include>-->
+                    <!--<aspectratio aligny="top">keep</aspectratio>-->
+                <!--</control>-->
+                <!--<control type="button">-->
+                    <!--<description>dummy for mouse navigation</description>-->
+                    <!--<posx>0</posx>-->
+                    <!--<posy>313</posy>-->
+                    <!--<width>1920</width>-->
+                    <!--<height>685</height>-->
+                    <!--<onclick>noop</onclick>-->
+                    <!--<onleft>9012</onleft>-->
+                    <!--<onright>50</onright>-->
+                    <!--<texturenofocus>-</texturenofocus>-->
+                    <!--<texturefocus>-</texturefocus>-->
+                <!--</control>-->
                 <control type="panel" id="550">
-                    <posx>500</posx>
+                    <posx>0</posx>
                     <posy>318</posy>
-                    <width>1420</width>
+                    <width>1920</width>
                     <height>624</height>
                     <onleft>9000</onleft>
                     <onright>556</onright>
@@ -1531,7 +1531,7 @@
                             <posx>TextMargin</posx>
                             <posy>0</posy>
                             <height>78</height>
-                            <width>1300</width>
+                            <width>1800</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
@@ -1544,14 +1544,14 @@
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <height>78</height>
-                                <width>1420</width>
+                                <width>1920</width>
                                 <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="label">
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>78</height>
-                                <width>1300</width>
+                                <width>1800</width>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
                                 <label>$INFO[ListItem.Label]</label>
@@ -1573,41 +1573,41 @@
                 <visible>control.hasfocus(1451)|ControlGroup(14500).HasFocus</visible>
                 <visible>IntegerGreaterThan(Container(1450).NumItems,0)</visible>
                 <include>VisibleFadeEffectDelay</include>
-                <control type="image">
-                    <visible>IsEmpty(Container(1450).ListItem.Thumb)</visible>
-                    <posx>TextMargin</posx>
-                    <posy>348</posy>
-                    <width>424</width>
-                    <height>615</height>
-                    <texture>$VAR[Theme.Color]/defaultPictureBig.png</texture>
-                    <aspectratio aligny="top">keep</aspectratio>
-                </control>
-                <control type="image">
-                    <fadetime>250</fadetime>
-                    <posx>25</posx>
-                    <posy>313</posy>
-                    <width>494</width>
-                    <height>685</height>
-                    <texture background="true">$INFO[Container(1450).ListItem.Thumb,studios/]</texture>
-                    <include>ThumbBorder</include>
-                    <aspectratio aligny="top">keep</aspectratio>
-                </control>
-                <control type="button">
-                    <description>dummy for mouse navigation</description>
-                    <posx>0</posx>
-                    <posy>313</posy>
-                    <width>1920</width>
-                    <height>685</height>
-                    <onclick>noop</onclick>
-                    <onleft>9012</onleft>
-                    <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
-                </control>
+                <!--<control type="image">-->
+                    <!--<visible>IsEmpty(Container(1450).ListItem.Thumb)</visible>-->
+                    <!--<posx>TextMargin</posx>-->
+                    <!--<posy>348</posy>-->
+                    <!--<width>424</width>-->
+                    <!--<height>615</height>-->
+                    <!--<texture>$VAR[Theme.Color]/defaultPictureBig.png</texture>-->
+                    <!--<aspectratio aligny="top">keep</aspectratio>-->
+                <!--</control>-->
+                <!--<control type="image">-->
+                    <!--<fadetime>250</fadetime>-->
+                    <!--<posx>25</posx>-->
+                    <!--<posy>313</posy>-->
+                    <!--<width>494</width>-->
+                    <!--<height>685</height>-->
+                    <!--<texture background="true">$INFO[Container(1450).ListItem.Thumb,studios/]</texture>-->
+                    <!--<include>ThumbBorder</include>-->
+                    <!--<aspectratio aligny="top">keep</aspectratio>-->
+                <!--</control>-->
+                <!--<control type="button">-->
+                    <!--<description>dummy for mouse navigation</description>-->
+                    <!--<posx>0</posx>-->
+                    <!--<posy>313</posy>-->
+                    <!--<width>1920</width>-->
+                    <!--<height>685</height>-->
+                    <!--<onclick>noop</onclick>-->
+                    <!--<onleft>9012</onleft>-->
+                    <!--<onright>50</onright>-->
+                    <!--<texturenofocus>-</texturenofocus>-->
+                    <!--<texturefocus>-</texturefocus>-->
+                <!--</control>-->
                 <control type="panel" id="1450">
-                    <posx>500</posx>
+                    <posx>0</posx>
                     <posy>318</posy>
-                    <width>1420</width>
+                    <width>1920</width>
                     <height>624</height>
                     <onleft>9000</onleft>
                     <onright>1456</onright>
@@ -1619,7 +1619,7 @@
                             <posx>TextMargin</posx>
                             <posy>0</posy>
                             <height>78</height>
-                            <width>1300</width>
+                            <width>1800</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_AlternateColor</include>
                             <label>$INFO[ListItem.Label]</label>
@@ -1632,14 +1632,14 @@
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <height>78</height>
-                                <width>1420</width>
+                                <width>1920</width>
                                 <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="label">
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>78</height>
-                                <width>1300</width>
+                                <width>1800</width>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
                                 <label>$INFO[ListItem.Label]</label>
@@ -1978,7 +1978,7 @@
                             <width>464</width>
                             <height>396</height>
                             <aspectratio aligny="center">scale</aspectratio>
-                            <texture>$INFO[ListItem.Icon]</texture>
+                            <texture>$INFO[ListItem.Thumb]</texture>
                             <include>ThumbBorder</include>
                         </control>
                     </focusedlayout>
@@ -2204,7 +2204,7 @@
                             <height>132</height>
                             <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
                             <aspectratio aligny="center">keep</aspectratio>
-                            <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                            <visible>!IsEmpty(ListItem.Property(account))</visible>
                         </control>
                     </itemlayout>
                     <focusedlayout height="135" width="1420">
@@ -2253,7 +2253,7 @@
                                 <height>132</height>
                                 <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
                                 <aspectratio aligny="center">keep</aspectratio>
-                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!IsEmpty(ListItem.Property(account))</visible>
                             </control>
                         </control>
                     </focusedlayout>

@@ -138,13 +138,13 @@
                     <height>1</height>
                     <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                 </control>
-                <control type="textbox">
+                <control type="textbox" id="800">
                     <posx>560</posx>
                     <posy>670</posy>
                     <width>1300</width>
                     <height>292</height>
                     <font>InfoDetailsFont</font>
-                    <label>$INFO[Window.Property(actor.Biography)]</label>
+                    <label fallback="416">$INFO[Window.Property(actor.Biography)]</label>
                     <pagecontrol>6649</pagecontrol>
                 </control>
                 <control type="scrollbar" id="6649">
@@ -874,7 +874,7 @@
                             <width>464</width>
                             <height>396</height>
                             <aspectratio aligny="center">scale</aspectratio>
-                            <texture>$INFO[ListItem.Icon]</texture>
+                            <texture>$INFO[ListItem.Thumb]</texture>
                             <include>ThumbBorder</include>
                         </control>
                     </focusedlayout>
