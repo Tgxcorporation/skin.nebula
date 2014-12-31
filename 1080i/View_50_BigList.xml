@@ -118,7 +118,7 @@
                     <include>ThumbBorder</include>
                 </control>
                 <control type="progress">
-                    <visible>Window.IsActive(MyPVRChannels.xml)</visible>
+                    <visible>Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)</visible>
                     <include>ConditionWhite</include>
                     <posx>TextMargin</posx>
                     <posy>346</posy>
@@ -133,7 +133,7 @@
                     <info>ListItem.Progress</info>
                 </control>
                 <control type="progress">
-                    <visible>Window.IsActive(MyPVRChannels.xml)</visible>
+                    <visible>Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)</visible>
                     <include>ConditionBlack</include>
                     <posx>TextMargin</posx>
                     <posy>346</posy>

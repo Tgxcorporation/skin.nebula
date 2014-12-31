@@ -27,10 +27,8 @@
         <value condition="!IsEmpty(ListItem.thumb)">$INFO[ListItem.thumb]</value>
         <value condition="StringCompare(ListItem.thumb,)+[Window.IsActive(MyPVR.xml)+Control.isvisible(12)]">$VAR[Theme.Color]/defaultRadioBig.png</value>
         <value condition="StringCompare(ListItem.thumb,)+[Window.IsActive(MyPVR.xml)+!Control.isvisible(12)]">$VAR[Theme.Color]/defaultChannelTvBig_Wide.png</value>
-        <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)+[control.isvisible(58)|control.isvisible(53)]">$INFO[ListItem.Icon]</value>-->
-        <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)">$VAR[Theme.Color]/common/TransparentDot.png</value>-->
-        <!--<value condition="StringCompare(ListItem.thumb,)+!IsEmpty(Window.Property(IsRadio))">$VAR[Theme.Color]/defaultRadioBig.png</value>-->
-        <!--<value condition="StringCompare(ListItem.thumb,)+[Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">$VAR[Theme.Color]/defaultChannelTvBig_Wide.png</value>-->
+        <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+IsEmpty(ListItem.Icon)">$VAR[Theme.Color]/defaultChannelTvBig.png</value>
+        <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+!IsEmpty(ListItem.Icon)">$VAR[Theme.Color]/common/TransparentDot.png</value>
         <value condition="StringCompare(ListItem.Label,..)+[Container.content(episodes)|Window.IsActive(MyPics.xml)|Window.IsActive(MyVideoPlaylist.xml)]">$VAR[Theme.Color]/defaultFolderBackEpisode.png</value>
         <value condition="StringCompare(ListItem.Label,..)+[Container.content(actors)|Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.Content(Seasons)]">$VAR[Theme.Color]/defaultFolderBackPoster.png</value>
         <value condition="StringCompare(ListItem.Label,..)">$VAR[Theme.Color]/defaultFolderBack.png</value>
@@ -40,8 +38,8 @@
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Window.IsActive(script-videoextras-main.xml)]">$VAR[Theme.Color]/defaultVideoBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Genres)]">$VAR[Theme.Color]/defaultGenreBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Playlists)]">$VAR[Theme.Color]/defaultPlaylistBig.png</value>
-        <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(movies)|Container.content(musicvideos)]">$VAR[Theme.Color]/defaultVideoBig.png</value>
-        <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(tvshows)|Container.content(episodes)|Container.Content(Seasons)|Container.content(LiveTV)]">$VAR[Theme.Color]/defaultChannelTvBig.png</value>
+        <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.content(episodes)|Container.Content(Seasons)]">$VAR[Theme.Color]/defaultVideoBig.png</value>
+        <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(LiveTV)]">$VAR[Theme.Color]/defaultChannelTvBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Addons)|Container.content(plugins)]">$VAR[Theme.Color]/defaultExtensionBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Artists)|Container.content(Actors)|Container.content(directors)]">$VAR[Theme.Color]/defaultArtistBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Albums)|Container.content(songs)]">$VAR[Theme.Color]/defaultAudioBig.png</value>
@@ -49,7 +47,8 @@
         <value condition="!IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
     </variable>
     <variable name="ThumbsBig">
-        <value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)">$INFO[ListItem.Icon]</value>
+        <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]">$INFO[ListItem.Icon]</value>
+        <value condition="[Window.IsActive(MyPVR.xml)]+!SubString(ListItem.Icon,Default,Left)">$INFO[ListItem.Icon]</value>
         <value condition="window.IsActive(CustomAddons.xml)">$VAR[Theme.Color]/defaultExtensionBig.png</value>
         <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.Property(Icon))">$INFO[ListItem.Property(Icon)]</value>
@@ -137,12 +136,12 @@
         <value condition="ListItem.HasTimer">$VAR[Theme.Color]/list/tvguide_button_timer_nofocus.png</value>
     </variable>
     <variable name="UnfocusedTitle">
-        <value condition="[Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)]+!IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
+        <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)]+!IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
         <value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
         <value>$LOCALIZE[416]</value>
     </variable>
     <variable name="DetailsTitle">
-        <value condition="[Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)]+!IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
+        <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)]+!IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
         <value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
         <value>$LOCALIZE[416]</value>
     </variable>
@@ -150,7 +149,7 @@
         <value condition="Window.IsActive(MyPVRTimers.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
         <value condition="Window.IsActive(MyPVRSearch.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
-        <value condition="Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</value>
+        <value condition="Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</value>
         <value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Born)]$INFO[ListItem.Property(Artist_Formed)]</value>
         <value condition="Container.Content(Albums)">$INFO[ListItem.Artist]</value>
         <value condition="Container.Content(TVShows)+skin.hassetting(plexbmc)">$INFO[ListItem.Studio]</value>
@@ -164,7 +163,7 @@
         <value condition="Window.IsActive(MyPVRTimers.xml)">$INFO[ListItem.Date]</value>
         <value condition="Window.IsActive(MyPVRSearch.xml)">$INFO[ListItem.Date]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.Date]</value>
-        <value condition="Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</value>
+        <value condition="Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</value>
         <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_genre))">$INFO[ListItem.Property(artist_genre)]</value>
         <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_style))">$INFO[ListItem.Property(artist_style)]</value>
         <value condition="Container.Content(Songs)">$INFO[ListItem.Year,,     ]$INFO[ListItem.Duration]</value>
@@ -181,7 +180,7 @@
     <variable name="DetailsRow3">
         <value condition="Window.IsActive(MyPVRTimers.xml)">$INFO[ListItem.Comment]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.Duration]</value>
-        <value condition="Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.Genre]</value>
+        <value condition="Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.Genre]</value>
         <value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Mood)]</value>
         <value condition="Container.Content(Songs)">$INFO[ListItem.Album]</value>
         <value condition="Container.Content(Albums)">$INFO[ListItem.Genre]</value>
@@ -194,7 +193,7 @@
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.PictureResolution]</value>
     </variable>
     <variable name="DetailsRow4">
-        <value condition="Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.NextTitle,$LOCALIZE[19031]: ]</value>
+        <value condition="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.NextTitle,$LOCALIZE[19031]: ]</value>
         <value condition="Window.IsActive(AddonBrowser.xml)">$INFO[ListItem.Label2]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.PictureCamModel]</value>
         <value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]]</value>
@@ -202,6 +201,9 @@
     <variable name="Details">
         <value condition="Window.IsActive(MyPVR.xml)+[control.isvisible(13)|control.isvisible(14)|control.isvisible(17)]">$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]$INFO[ListItem.Date,     ]</value>
         <value condition="Window.IsActive(MyPVR.xml)+[control.isvisible(11)|control.isvisible(12)|control.isvisible(14)|control.isvisible(17)|control.isvisible(15)|control.isvisible(16)]">$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]     $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
+        <value condition="Window.IsActive(DialogPVRGuideOSD.xml)">$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
+        <value condition="Window.IsActive(DialogPVRChannelsOSD.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]     $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
+        <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]$INFO[ListItem.Date,     ]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,,     ]$INFO[ListItem.Size]</value>
         <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album)">$INFO[ListItem.Artist]$INFO[ListItem.Year,     ]$INFO[ListItem.Genre,     ]</value>
         <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,     ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]     $INFO[ListItem.Season,$LOCALIZE[31973],.]$INFO[ListItem.Episode]</value>
