@@ -242,7 +242,7 @@
                             <label2>$INFO[Skin.String(LyricPath)]</label2>
                             <onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
                         </item>
-                        <!-- <item id="15">
+                        <item id="15">
                             <visible>Skin.HasSetting(PVRChannelListBig)</visible>
                             <label>$LOCALIZE[31996]</label>
                             <label2>$LOCALIZE[107]</label2>
@@ -253,7 +253,7 @@
                             <label>$LOCALIZE[31996]</label>
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(PVRChannelListBig)</onclick>
-                        </item> -->
+                        </item>
                         <item id="1002">
                             <label/>
                             <label2>$LOCALIZE[513]</label2>
