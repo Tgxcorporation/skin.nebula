@@ -997,7 +997,7 @@
                         <font>InfoDetailsFont</font>
                         <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
-                        <label>$INFO[Container(57).ListItem.Property(Property9)]</label>
+                        <label>$INFO[Container(57).ListItem.Property(Property7)]</label>
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -1007,10 +1007,9 @@
                         <font>InfoDetailsFont</font>
                         <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
-                        <label>$INFO[Container(57).ListItem.Property(Property10)]$INFO[Container(57).ListItem.Property(Property11),     ,]</label>
+                        <label>$INFO[Container(57).ListItem.Property(Property9)]</label>
                     </control>
                     <control type="label">
-                        <visible>!StringCompare(Container(57).ListItem.Property(Property6),[COLOR AlternateColor_$VAR[Theme.Color]]$LOCALIZE[403]:[/COLOR] )</visible><posx>TextMargin</posx>
                         <posx>TextMargin</posx>
                         <posy>234</posy>
                         <width>760</width>
@@ -1018,7 +1017,7 @@
                         <font>InfoDetailsFont</font>
                         <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
-                        <label>$INFO[Container(57).ListItem.Property(Property6)]</label>
+                        <label>$INFO[Container(57).ListItem.Property(Property10)]$INFO[Container(57).ListItem.Property(Property11),     ,]</label>
                     </control>
                 </control>
             </control>
