@@ -103,7 +103,7 @@
                 <control type="image">
                     <!-- <visible>![Window.IsActive(MyMusicSongs.xml)+Skin.HasSetting(plexbmc)+Container.Content(Songs)]</visible> -->
                     <animation effect="fade" tween="cubic" easing="out" time="3000" delay="3000" start="100" end="0" pulse="true"
-                               condition="Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Art(discart))">Conditional</animation>
+                               condition="Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Art(discart))+!Skin.HasSetting(plexbmc)">Conditional</animation>
                     <animation effect="fade" tween="cubic" easing="out" time="3000" delay="3000" start="100" end="0" pulse="true"
                                condition="Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+
                                [[Container.content(songs)+Window.IsActive(MyMusicNav.xml)]|Window.IsActive(MyMusicSongs.xml)]
@@ -149,6 +149,7 @@
                 </control>
                 <control type="group">
                     <!-- CDART AUDIO -->
+                    <visible>!Skin.HasSetting(plexbmc)</visible>
                     <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+
                         [[Container.content(songs)+Window.IsActive(MyMusicNav.xml)]|
                         [Window.IsActive(MyMusicSongs.xml)+!Skin.HasSetting(plexbmc)]]</visible>
@@ -166,6 +167,7 @@
                 </control>
                 <control type="group">
                     <!-- CDART VIDEO -->
+                    <visible>!Skin.HasSetting(plexbmc)</visible>
                     <visible>Skin.HasSetting(EnableCdArt)+[Container.content(movies)|Container.content(MusicVideos)]+!IsEmpty(ListItem.Art(discart))</visible>
                     <animation effect="fade" tween="cubic" easing="out" time="3000" delay="3000" start="0" end="100" pulse="true" condition="true">Conditional</animation>
                     <control type="image">
