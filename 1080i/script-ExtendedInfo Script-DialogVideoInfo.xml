@@ -55,6 +55,7 @@
                 <include>VisibleFadeEffectDelay</include>
                 <control type="group">
                     <!-- CDART -->
+                    <visible>!Skin.HasSetting(plexbmc)</visible>
                     <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(Window.Property(movie.Poster))</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="image">
@@ -652,6 +653,7 @@
                 <include>VisibleFadeEffectDelay</include>
                 <control type="group">
                     <!-- CDART -->
+                    <visible>!Skin.HasSetting(plexbmc)</visible>
                     <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(Window.Property(movie.Poster))</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="image">

@@ -74,6 +74,7 @@
                 <posy>642</posy>
                 <control type="group">
                     <!-- CDART -->
+                    <visible>!Skin.HasSetting(plexbmc)</visible>
                     <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(VideoPlayer.Cover)</visible>
                     <control type="image">
                         <posx>122</posx>
