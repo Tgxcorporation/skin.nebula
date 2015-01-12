@@ -57,7 +57,7 @@
                     <include>LeftMenuButton</include>
                     <label>-</label>
                 </control>
-               <control type="button" id="3">
+                <control type="button" id="3">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[103]</label>
                 </control>
