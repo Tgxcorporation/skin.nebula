@@ -6,7 +6,7 @@
         <control type="group">
             <visible>!Skin.String(WeatherType,Map)</visible>
             <control type="image">
-                <visible>!Skin.HasSetting(DisableFanart)+Skin.String(WeatherView,biglist)</visible>
+                <visible>!Skin.HasSetting(DisableFanart)+[Skin.String(WeatherView,biglist)|Skin.String(WeatherView,)]</visible>
                 <include>KenBurns</include>
                 <fadetime>250</fadetime>
                 <posx>0</posx>
@@ -363,10 +363,27 @@
                     <onclick>Skin.Reset(WeatherType)</onclick>
                     <onclick>ActivateWindow(MyWeatherSettings)</onclick>
                 </control>
-                <control type="spincontrolex" id="3">
-                    <label>21873</label>
-                    <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[396]</label>
+                <control type="group" id="300">
+                    <width>660</width>
+                    <height>78</height>
+                    <control type="spincontrolex" id="3">
+                        <description>change location button</description>
+                        <font>-</font>
+                        <onup>4</onup>
+                        <ondown>490</ondown>
+                        <onright>49</onright>
+                        <include>LeftMenuButton</include>
+                    </control>
+                    <control type="label" id="301">
+                        <animation type="Conditional" reversible="false" condition="control.hasfocus(3)">
+                            <effect type="zoom" start="100" end="108" time="100" center="auto"/>
+                            <effect type="zoom" start="100" end="92.592592592593" time="50" delay="100" center="auto"/>
+                            <effect type="fade" start="10" end="100" time="100"/>
+                        </animation>
+                        <animation effect="fade" start="100" end="66" time="0" condition="!control.hasfocus(3)">Conditional</animation>
+                        <label>396</label>
+                        <include>LeftMenuButton</include>
+                    </control>
                 </control>
             </control>
             <include>LeftMenuScroller</include>
