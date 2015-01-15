@@ -85,12 +85,12 @@
                             <onclick>noop</onclick>
                             <visible>!IsEmpty(Window.Property(actor.Birthday))</visible>
                         </item>
-                        <item>
-                            <label>$ADDON[script.extendedinfo 32020]:</label>
-                            <label2>$INFO[Window.Property(actor.Age)]</label2>
-                            <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(actor.Age))</visible>
-                        </item>
+                        <!--<item>-->
+                            <!--<label>$ADDON[script.extendedinfo 32020]:</label>-->
+                            <!--<label2>$INFO[Window.Property(actor.Age)]</label2>-->
+                            <!--<onclick>noop</onclick>-->
+                            <!--<visible>!IsEmpty(Window.Property(actor.Age))</visible>-->
+                        <!--</item>-->
                         <item>
                             <label>$ADDON[script.extendedinfo 32013]:</label>
                             <label2>$INFO[Window.Property(actor.Deathday)]$INFO[Window.Property(actor.DeathageLong), (,)]</label2>
@@ -103,12 +103,12 @@
                             <onclick>noop</onclick>
                             <visible>!IsEmpty(Window.Property(actor.PlaceOfBirth))</visible>
                         </item>
-                        <item>
-                            <label>$ADDON[script.extendedinfo 32015]:</label>
-                            <label2>$INFO[Window.Property(actor.Adult)]</label2>
-                            <onclick>noop</onclick>
-                            <visible>Window.Property(actor.Adult)</visible>
-                        </item>
+                        <!--<item>-->
+                            <!--<label>$ADDON[script.extendedinfo 32015]:</label>-->
+                            <!--<label2>$INFO[Window.Property(actor.Adult)]</label2>-->
+                            <!--<onclick>noop</onclick>-->
+                            <!--<visible>Window.Property(actor.Adult)</visible>-->
+                        <!--</item>-->
                         <item>
                             <label>$ADDON[script.extendedinfo 32016]:</label>
                             <label2>$INFO[Window.Property(actor.AlsoKnownAs)]</label2>
@@ -212,7 +212,7 @@
                             <width>1300</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                         </control>
                         <control type="label">
                             <visible>!StringCompare(ListItem.Property(Character),)</visible>
@@ -222,7 +222,7 @@
                             <width>1300</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -231,7 +231,7 @@
                             <width>1300</width>
                             <font>FacadeListSubFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Property(Character)]</label>
+                            <label>$INFO[ListItem.Property(Character),]</label>
                         </control>
                         <control type="image">
                             <posx>58r</posx>
@@ -261,7 +261,7 @@
                                 <width>1300</width>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
                                 <visible>!StringCompare(ListItem.Property(Character),)</visible>
@@ -271,7 +271,7 @@
                                 <width>1300</width>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
                                 <posx>TextMargin</posx>
@@ -358,7 +358,7 @@
                             <width>1300</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                         </control>
                         <control type="label">
                             <visible>!StringCompare(ListItem.Property(Character),)</visible>
@@ -368,7 +368,7 @@
                             <width>1300</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -407,7 +407,7 @@
                                 <width>1300</width>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
                                 <visible>!StringCompare(ListItem.Property(Character),)</visible>
@@ -417,7 +417,7 @@
                                 <width>1300</width>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
                                 <posx>TextMargin</posx>
@@ -504,7 +504,7 @@
                             <width>1300</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                         </control>
                         <control type="label">
                             <visible>!StringCompare(ListItem.Property(Job),)</visible>
@@ -514,7 +514,7 @@
                             <width>1300</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -553,7 +553,7 @@
                                 <width>1300</width>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
                                 <visible>!StringCompare(ListItem.Property(Job),)</visible>
@@ -563,7 +563,7 @@
                                 <width>1300</width>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
                                 <posx>TextMargin</posx>
@@ -650,7 +650,7 @@
                             <width>1300</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                         </control>
                         <control type="label">
                             <visible>!StringCompare(ListItem.Property(Job),)</visible>
@@ -660,7 +660,7 @@
                             <width>1300</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -699,7 +699,7 @@
                                 <width>1300</width>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
                                 <visible>!StringCompare(ListItem.Property(Job),)</visible>
@@ -709,7 +709,7 @@
                                 <width>1300</width>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
                                 <posx>TextMargin</posx>
@@ -1053,28 +1053,28 @@
                     <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
                     <description>Movie crew member</description>
                     <include>LeftMenuButton</include>
-                    <label>Movie crew member</label>
+                    <label>$ADDON[script.extendedinfo 32122]</label>
                     <onright>550</onright>
                 </control>
                 <control type="button" id="605">
                     <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
                     <description>TVShow crew member</description>
                     <include>LeftMenuButton</include>
-                    <label>TVShow crew member</label>
+                    <label>$ADDON[script.extendedinfo 32123]</label>
                     <onright>650</onright>
                 </control>
                 <control type="button" id="305">
                     <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
                     <description>Youtube</description>
                     <include>LeftMenuButton</include>
-                    <label>YouTube</label>
+                    <label>$ADDON[script.extendedinfo 32118]</label>
                     <onright>350</onright>
                 </control>
                 <control type="button" id="405">
                     <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
                     <description>Artwork</description>
                     <include>LeftMenuButton</include>
-                    <label>1213</label>
+                    <label>$ADDON[script.extendedinfo 32119]</label>
                     <onright>450</onright>
                 </control>
                 <control type="button" id="705">
