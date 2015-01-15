@@ -65,7 +65,7 @@
         <value condition="Window.IsActive(AddonBrowser.xml) + IsEmpty(Container.FolderName)">$LOCALIZE[31291]</value>
         <value condition="Window.IsActive(MyVideoPlaylist.xml)">$LOCALIZE[20012]</value>
         <value condition="Window.IsActive(MyMusicPlaylist.xml)">$LOCALIZE[20011]</value>
-        <value condition="Window.IsActive(DialogVideoInfo.xml)">$LOCALIZE[20159]</value>
+        <value condition="Window.IsActive(DialogVideoInfo.xml)">$LOCALIZE[20060]</value>
         <value condition="Window.IsActive(DialogFavourites.xml)">$LOCALIZE[1036]</value>
         <value condition="Container.content(movies) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20342]</value>
         <value condition="Container.content(tvshows) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343]</value>
@@ -409,5 +409,9 @@
         <value condition="StringCompare(Skin.String(CustomHome.9.Icon),DefaultPlaylist.png)">special://skin/backgrounds/default/default.jpg</value>
         <value condition="!IsEmpty(Skin.String(CustomHome.9.Icon))">$INFO[Skin.String(CustomHome.9.Icon)]</value>
         <value>special://skin/backgrounds/default/default.jpg</value>
+    </variable>
+    <variable name="YouTubeContent">
+        <value condition="Container.Content(albums)">plugin://script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] $ESCINFO[ListItem.Album]</value>
+        <value>plugin://script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] Music</value>
     </variable>
 </includes>

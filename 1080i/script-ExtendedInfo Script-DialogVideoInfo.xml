@@ -920,7 +920,8 @@
                             <width>1300</width>
                             <font>FacadeListSubFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Property(department)]$INFO[ListItem.Property(Job),   ]</label>
+                            <!--<label>$INFO[ListItem.Property(department)]$INFO[ListItem.Property(Job),   ]</label>-->
+                            <label>$INFO[ListItem.Property(Job)]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout height="135" width="1420">
@@ -960,7 +961,8 @@
                                 <width>1300</width>
                                 <font>FacadeListSubFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Property(department)]$INFO[ListItem.Property(Job),   ]</label>
+                                <!--<label>$INFO[ListItem.Property(department)]$INFO[ListItem.Property(Job),   ]</label>-->
+                                <label>$INFO[ListItem.Property(Job)]</label>
                             </control>
                         </control>
                     </focusedlayout>
@@ -2459,14 +2461,14 @@
                     <visible>IntegerGreaterThan(Container(750).NumItems,0)</visible>
                     <description>CREW</description>
                     <include>LeftMenuButton</include>
-                    <label>Crew</label>
+                    <label>$ADDON[script.extendedinfo 32115]</label>
                     <onright>750</onright>
                 </control>
                 <control type="button" id="151">
                     <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
                     <description>Recommended by TMDB</description>
                     <include>LeftMenuButton</include>
-                    <label>Recommended by TMDB</label>
+                    <label>$ADDON[script.extendedinfo 32116]</label>
                     <onright>150</onright>
                 </control>
                 <control type="button" id="251">
@@ -2481,35 +2483,35 @@
                     <visible>IntegerGreaterThan(Container(1150).NumItems,0)</visible>
                     <description>Official Videos</description>
                     <include>LeftMenuButton</include>
-                    <label>Official Videos</label>
+                    <label>$ADDON[script.extendedinfo 32117]</label>
                     <onright>1150</onright>
                 </control>
                 <control type="button" id="351">
                     <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
                     <description>Youtube</description>
                     <include>LeftMenuButton</include>
-                    <label>YouTube</label>
+                    <label>$ADDON[script.extendedinfo 32118]</label>
                     <onright>350</onright>
                 </control>
                 <control type="button" id="551">
                     <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
                     <description>Production Companies</description>
                     <include>LeftMenuButton</include>
-                    <label>Production Companies</label>
+                    <label>20388</label>
                     <onright>550</onright>
                 </control>
                 <control type="button" id="1451">
                     <visible>IntegerGreaterThan(Container(1450).NumItems,0)</visible>
                     <description>Networks</description>
                     <include>LeftMenuButton</include>
-                    <label>Networks</label>
+                    <label>$ADDON[script.extendedinfo 32152]</label>
                     <onright>1450</onright>
                 </control>
                 <control type="button" id="651">
                     <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
                     <description>Releases</description>
                     <include>LeftMenuButton</include>
-                    <label>Releases</label>
+                    <label>172</label>
                     <onright>650</onright>
                 </control>
                 <control type="button" id="851">
@@ -2523,7 +2525,7 @@
                     <visible>IntegerGreaterThan(Container(1050).NumItems,0)</visible>
                     <description>Reviews</description>
                     <include>LeftMenuButton</include>
-                    <label>Reviews</label>
+                    <label>$ADDON[script.extendedinfo 32167]</label>
                     <onright>1050</onright>
                 </control>
                 <control type="button" id="951">
@@ -2560,7 +2562,7 @@
                     <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
                     <description>MovieDB Users</description>
                     <include>LeftMenuButton</include>
-                    <label>MovieDB Users</label>
+                    <label>TMDB Users</label>
                     <onright>450</onright>
                 </control>
                 <control type="button" id="2001">
