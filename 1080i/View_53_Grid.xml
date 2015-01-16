@@ -300,7 +300,7 @@
                         <include>ThumbBorderOverlay</include>
                     </control>
                 </focusedlayout>
-                <itemlayout condition="[Container.Content(TVShows)|Container.Content(movies)] + Skin.HasSetting(53_UseBanners)" height="180" width="960">
+                <itemlayout condition="[Container.Content(TVShows)|Container.Content(movies)|Container.Content(sets)] + Skin.HasSetting(53_UseBanners)" height="180" width="960">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -310,7 +310,7 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="[Container.Content(TVShows)|Container.Content(movies)] + Skin.HasSetting(53_UseBanners)" height="180" width="960">
+                <focusedlayout condition="[Container.Content(TVShows)|Container.Content(movies)|Container.Content(sets)] + Skin.HasSetting(53_UseBanners)" height="180" width="960">
                     <control type="image">
                         <include>ButtonFocusAnimation</include>
                         <posx>-35</posx>
@@ -322,7 +322,7 @@
                         <include>ThumbBorderOverlay</include>
                     </control>
                 </focusedlayout>
-                <itemlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="180" width="128">
+                <itemlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="180" width="128">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -332,7 +332,7 @@
                         <include>PosterThumb</include>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="180" width="128">
+                <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="180" width="128">
                     <control type="image">
                         <include>ButtonFocusAnimation</include>
                         <posx>-35</posx>
@@ -344,7 +344,7 @@
                         <include>ThumbBorderOverlay</include>
                     </control>
                 </focusedlayout>
-                <itemlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="270" width="192">
+                <itemlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="270" width="192">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -354,7 +354,7 @@
                         <include>PosterThumb</include>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="270" width="192">
+                <focusedlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="270" width="192">
                     <control type="image">
                         <include>ButtonFocusAnimation</include>
                         <posx>-35</posx>
@@ -388,7 +388,7 @@
                         <include>ThumbBorderOverlay</include>
                     </control>
                 </focusedlayout>
-                <itemlayout condition="!Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="180" width="175">
+                <itemlayout condition="!Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="180" width="175">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -398,7 +398,7 @@
                         <include>SquareThumb</include>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="180" width="175">
+                <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="180" width="175">
                     <control type="image">
                         <include>ButtonFocusAnimation</include>
                         <posx>-35</posx>
@@ -410,7 +410,7 @@
                         <include>ThumbBorderOverlay</include>
                     </control>
                 </focusedlayout>
-                <itemlayout condition="Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="270" width="275">
+                <itemlayout condition="Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="270" width="275">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -420,7 +420,7 @@
                         <include>SquareThumb</include>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="270" width="275">
+                <focusedlayout condition="Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="270" width="275">
                     <control type="image">
                         <include>ButtonFocusAnimation</include>
                         <posx>-35</posx>

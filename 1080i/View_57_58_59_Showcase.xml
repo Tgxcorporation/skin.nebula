@@ -34,7 +34,7 @@
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label" id="45742">
-                    <visible>![Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]+!Control.isvisible(45741)</visible>
+                    <visible>![Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)|Container.Content(sets)]+!Control.isvisible(45741)</visible>
                     <posx>407</posx>
                     <posy>1010</posy>
                     <height>33</height>
@@ -46,7 +46,7 @@
                     <label>$VAR[Fanart_Details]</label>
                 </control>
                 <control type="label">
-                    <visible>![Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]+Control.isvisible(45741)</visible>
+                    <visible>![Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)|Container.Content(sets)]+Control.isvisible(45741)</visible>
                     <posx>52</posx>
                     <posy>1010</posy>
                     <height>33</height>
@@ -78,7 +78,7 @@
                     </control>
                 </control>
                 <control type="grouplist">
-                    <visible>[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]+!IsEmpty(ListItem.VideoResolution)</visible>
+                    <visible>[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)|Container.Content(sets)]+!IsEmpty(ListItem.VideoResolution)</visible>
                     <posx>52</posx>
                     <posy>985</posy>
                     <width>1830</width>
@@ -90,7 +90,7 @@
                     <include>CodecsShowcase</include>
                 </control>
                 <control type="label">
-                    <visible>[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]</visible>
+                    <visible>[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)|Container.Content(sets)]</visible>
                     <posx>52</posx>
                     <posy>1010</posy>
                     <height>33</height>
