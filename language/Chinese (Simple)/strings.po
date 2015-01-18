@@ -268,6 +268,10 @@ msgctxt "#31510"
 msgid "Timer Set"
 msgstr "定时器设定"
 
+msgctxt "#31513"
+msgid "All Music"
+msgstr "所有音乐"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "36小时预报"
@@ -281,8 +285,12 @@ msgid "Weekend Forecast"
 msgstr "一周预报"
 
 msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "10日预报"
+msgid "Daily Forecast"
+msgstr "每日预报"
+
+msgctxt "#31910"
+msgid "Maps"
+msgstr "地图"
 
 msgctxt "#31949"
 msgid "Enable window closing icon"

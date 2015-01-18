@@ -220,6 +220,10 @@ msgctxt "#31095"
 msgid "Card List"
 msgstr "Lista de tarjetas"
 
+msgctxt "#31096"
+msgid "Slim List"
+msgstr "Lista estrecha"
+
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
 msgstr "Editar fondo para el tipo de medio"
@@ -356,6 +360,10 @@ msgctxt "#31512"
 msgid "Artwork Downloader Gui"
 msgstr "Gestor de Descargas Artwork Gráfico"
 
+msgctxt "#31513"
+msgid "All Music"
+msgstr "Toda la Música"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "Pronóstico de 36 horas"
@@ -369,8 +377,12 @@ msgid "Weekend Forecast"
 msgstr "Pronóstico semanal"
 
 msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "Pronóstico de 10 días"
+msgid "Daily Forecast"
+msgstr "Pronóstico Diario"
+
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Mapas"
 
 msgctxt "#31947"
 msgid "Resulting sub menu"
