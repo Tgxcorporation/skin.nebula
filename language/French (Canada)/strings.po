@@ -220,6 +220,10 @@ msgctxt "#31095"
 msgid "Card List"
 msgstr "Liste de cartes"
 
+msgctxt "#31096"
+msgid "Slim List"
+msgstr "Liste réduite"
+
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
 msgstr "Modifier l'arrière-plan pour le type de média"
@@ -334,7 +338,7 @@ msgstr "Groupes[CR]disponibles"
 
 msgctxt "#31507"
 msgid "Movies homescreen button opens:"
-msgstr "Le bouton Films sur l'écran d'accueil ouvre :"
+msgstr "Le bouton Films de l'écran d'accueil ouvre :"
 
 msgctxt "#31508"
 msgid "Last Updated"
@@ -356,6 +360,14 @@ msgctxt "#31512"
 msgid "Artwork Downloader Gui"
 msgstr "IUG du téléchargeur d'illustrations"
 
+msgctxt "#31513"
+msgid "All Music"
+msgstr "Toute la musique"
+
+msgctxt "#31514"
+msgid "Music homescreen button opens:"
+msgstr "Le bouton Musique de l'écran d'accueil ouvre :"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "Prévisions sur 36 heures"
@@ -369,8 +381,12 @@ msgid "Weekend Forecast"
 msgstr "Prévisions pour la fin de semaine"
 
 msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "Prévisions sur 10 jours"
+msgid "Daily Forecast"
+msgstr "Prévisions quotidiennes"
+
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Cartes"
 
 msgctxt "#31947"
 msgid "Resulting sub menu"

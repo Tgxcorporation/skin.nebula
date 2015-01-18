@@ -220,6 +220,10 @@ msgctxt "#31095"
 msgid "Card List"
 msgstr "Lista kart"
 
+msgctxt "#31096"
+msgid "Slim List"
+msgstr "Wąska lista"
+
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
 msgstr "Edytuj tła typów mediów"
@@ -356,6 +360,14 @@ msgctxt "#31512"
 msgid "Artwork Downloader Gui"
 msgstr "Artwork Downloader interfejs"
 
+msgctxt "#31513"
+msgid "All Music"
+msgstr "Wszystkie utwory muzyczne"
+
+msgctxt "#31514"
+msgid "Music homescreen button opens:"
+msgstr "Przycisk Muzyka ekranu startowego otwiera:"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "Prognoza 36 godzinna"
@@ -369,8 +381,12 @@ msgid "Weekend Forecast"
 msgstr "Prognoza na weekend"
 
 msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "Prognoza 10 dniowa"
+msgid "Daily Forecast"
+msgstr "Prognoza dzienna"
+
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Mapy"
 
 msgctxt "#31947"
 msgid "Resulting sub menu"
@@ -546,7 +562,7 @@ msgstr "Funkcja przycisku Koniec menu startowego"
 
 msgctxt "#31990"
 msgid "Quit Menu"
-msgstr "Menu Zamknij"
+msgstr "Menu zamykania"
 
 msgctxt "#31991"
 msgid "Disable background music visualization/video player"
@@ -566,7 +582,7 @@ msgstr "Używaj pionowego menu startowego"
 
 msgctxt "#31995"
 msgid "Home layout"
-msgstr "Układ ekranu startowego"
+msgstr "Kompozycja ekranu startowego"
 
 msgctxt "#31996"
 msgid "Big Channel List in OSD"
@@ -574,7 +590,7 @@ msgstr "Duża lista kanałów w menu ekranowym"
 
 msgctxt "#31997"
 msgid "Ken Burns Effect on backdrops"
-msgstr "Używaj efektu zbliżania i przeciągana obrazów tła"
+msgstr "Używaj efektu Kena Burnsa dla tapet"
 
 msgctxt "#31998"
 msgid "Use fixed list on Home Menu"
