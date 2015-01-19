@@ -15,7 +15,9 @@ Enabled Large List, Slim List, List and Fanart view in Weather screen.
 Updated country flags.
 Enhancement for fanart images in DialogVideoInfo.
 Added cdART Manager button in DialogAlbumInfo.
-Added Slim List and Fanart View. Code reorganisation.
+Added Slim List and Fanart View. 
+Enabled "view as" button in PVR Channels, Timers, Search, Recordings. 
+Code reorganisation.
 Simplified code for Big Lists. Made episodes thumbs fully visible.
 Enabled watched / unwatched marks for every type of videos.
 Improved management for icons of home items. Works better with smart playlists.
