@@ -220,10 +220,6 @@ msgctxt "#31357"
 msgid "Local subtitle available"
 msgstr "本地字幕可用"
 
-msgctxt "#31392"
-msgid "(3/3) Asap (Fixed Width)"
-msgstr "(3/3) Asap (固定宽度)"
-
 msgctxt "#31500"
 msgid "Live TV"
 msgstr "直播电视"
