@@ -705,7 +705,7 @@
                     <width>1300</width>
                     <height>590</height>
                     <font>InfoDetailsFontBig</font>
-                    <label>$INFO[Window.Property(movie.plot)]</label>
+                    <label fallback="416">$INFO[Window.Property(movie.plot)]</label>
                     <pagecontrol>6060</pagecontrol>
                 </control>
                 <control type="scrollbar" id="6060">
@@ -719,11 +719,11 @@
                 </control>
             </control>
             <!--CAST-->
-            <control type="group" id="10000">
-                <visible>control.hasfocus(1001)|ControlGroup(10000).HasFocus</visible>
-                <visible>IntegerGreaterThan(Container(1000).NumItems,0)</visible>
-                <include>VisibleFadeEffectDelay</include>
-                <control type="image">
+                <control type="group" id="10000">
+                    <visible>control.hasfocus(1001)|ControlGroup(10000).HasFocus</visible>
+                    <visible>IntegerGreaterThan(Container(1000).NumItems,0)</visible>
+                    <include>VisibleFadeEffectDelay</include>
+                    <control type="image">
                     <visible>IsEmpty(Container(1000).ListItem.Thumb)</visible>
                     <posx>TextMargin</posx>
                     <posy>348</posy>
@@ -1962,7 +1962,7 @@
                             <posy>120</posy>
                             <width>295</width>
                             <height>396</height>
-                            <texture background="true" fallback="white/defaultArtistBig.png">$INFO[ListItem.Thumb]</texture>
+                            <texture background="true" fallback="white/defaultVideoBig.png">$INFO[ListItem.Thumb]</texture>
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
@@ -1971,7 +1971,7 @@
                             <posy>120</posy>
                             <width>295</width>
                             <height>396</height>
-                            <texture background="true" fallback="black/defaultArtistBig.png">$INFO[ListItem.Thumb]</texture>
+                            <texture background="true" fallback="black/defaultVideoBig.png">$INFO[ListItem.Thumb]</texture>
                             <include>ThumbBorder</include>
                         </control>
                     </itemlayout>
@@ -1995,7 +1995,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="white/defaultArtistBig.png">$INFO[Container(1250).ListItem.Thumb]</texture>
+                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(1250).ListItem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -2007,7 +2007,7 @@
                     <posy>313</posy>
                     <width>494</width>
                     <height>685</height>
-                    <texture background="true" fallback="black/defaultArtistBig.png">$INFO[Container(1250).ListItem.Thumb]</texture>
+                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(1250).ListItem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -2056,7 +2056,7 @@
                             <posy>199</posy>
                             <width>370</width>
                             <height>238</height>
-                            <texture background="true" fallback="white/defaultArtistBig.png">$INFO[ListItem.Thumb]</texture>
+                            <texture background="true" fallback="white/defaultVideoBig.png">$INFO[ListItem.Thumb]</texture>
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
@@ -2065,7 +2065,7 @@
                             <posy>199</posy>
                             <width>370</width>
                             <height>238</height>
-                            <texture background="true" fallback="black/defaultArtistBig.png">$INFO[ListItem.Thumb]</texture>
+                            <texture background="true" fallback="black/defaultVideoBig.png">$INFO[ListItem.Thumb]</texture>
                             <include>ThumbBorder</include>
                         </control>
                     </itemlayout>
@@ -2090,7 +2090,7 @@
                     <posy>313</posy>
                     <width>1163</width>
                     <height>685</height>
-                    <texture background="true" fallback="white/defaultPictureBig.png">$INFO[Container(1350).ListItem.Thumb]</texture>
+                    <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(1350).ListItem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -2102,7 +2102,7 @@
                     <posy>313</posy>
                     <width>1163</width>
                     <height>685</height>
-                    <texture background="true" fallback="black/defaultPictureBig.png">$INFO[Container(1350).ListItem.Thumb]</texture>
+                    <texture background="true" fallback="black/defaultVideoBig.png">$INFO[Container(1350).ListItem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -2412,7 +2412,7 @@
                     <include>LeftMenuTitleLabel</include>
                     <label>$LOCALIZE[33061]</label>
                 </control>
-                <control type="button" id="2">
+                <control type="button" id="2222">
                     <description>Info</description>
                     <label>$LOCALIZE[31021]</label>
                     <include>LeftMenuButton</include>
