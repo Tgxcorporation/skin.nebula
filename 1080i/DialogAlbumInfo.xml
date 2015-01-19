@@ -800,7 +800,7 @@
             <control type="group" id="5070">
                 <visible>Control.HasFocus(507)|ControlGroup(5070).HasFocus</visible>
                 <include>VisibleFadeEffectDelay</include>
-               <control type="image">
+                <control type="image">
                     <visible>IsEmpty(Container(5071).Listitem.Icon)</visible>
                     <posx>TextMargin</posx>
                     <posy>378</posy>
@@ -1003,7 +1003,7 @@
                     <posy>378</posy>
                     <width>468</width>
                     <height>468</height>
-                    <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
+                    <texture>$VAR[Theme.Color]/defaultAudioBig.png</texture>
                     <aspectratio aligny="top">keep</aspectratio>
                 </control>
                 <control type="image">
@@ -1200,12 +1200,12 @@
                     <onright>5051</onright>
                 </control>
                 <!--<control type="button" id="506">-->
-                    <!--<visible>System.HasAddon(script.extendedinfo)</visible>-->
-                    <!--&lt;!&ndash;<visible>container.content(artists)</visible>&ndash;&gt;-->
-                    <!--<description>Similar Artists ExtendedInfo</description>-->
-                    <!--<include>LeftMenuButton</include>-->
-                    <!--<label>31971</label>-->
-                    <!--<onright>5061</onright>-->
+                <!--<visible>System.HasAddon(script.extendedinfo)</visible>-->
+                <!--&lt;!&ndash;<visible>container.content(artists)</visible>&ndash;&gt;-->
+                <!--<description>Similar Artists ExtendedInfo</description>-->
+                <!--<include>LeftMenuButton</include>-->
+                <!--<label>31971</label>-->
+                <!--<onright>5061</onright>-->
                 <!--</control>-->
                 <control type="button" id="507">
                     <visible>System.HasAddon(script.extendedinfo)</visible>

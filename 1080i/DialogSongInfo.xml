@@ -185,6 +185,12 @@
                             <visible>!IsEmpty(ListItem.TrackNumber)</visible>
                         </item>
                         <item>
+                            <label>$LOCALIZE[427]:</label>
+                            <label2>$INFO[ListItem.discnumber]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(ListItem.discnumber)</visible>
+                        </item>
+                        <item>
                             <label>$LOCALIZE[180]:</label>
                             <label2>$INFO[ListItem.Duration]</label2>
                             <onclick>noop</onclick>
@@ -275,7 +281,6 @@
                     <height>785</height>
                     <onclick>noop</onclick>
                     <onleft>9000</onleft>
-                    <ondown>9001</ondown>
                     <onright>5600</onright>
                     <texturenofocus>-</texturenofocus>
                     <texturefocus>-</texturefocus>
@@ -292,7 +297,7 @@
                         <font>InfoPlotFont</font>
                         <include>TextColor_MainColor</include>
                         <pagecontrol>5600</pagecontrol>
-                        <label>$INFO[Window(home).Property(summary)]</label>
+                        <label fallback="161">$INFO[Window(home).Property(summary)]</label>
                     </control>
                     <control type="scrollbar" id="5600">
                         <visible>Skin.HasSetting(ManualScroll)</visible>

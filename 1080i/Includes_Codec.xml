@@ -319,7 +319,7 @@
                 <height>80</height>
                 <font>BadgeFont</font>
                 <align>center</align>
-                <label>$INFO[ListItem.Top250]</label>
+                <label>$INFO[Window.Property(movie.Top250)]</label>
                 <include>TextColor_MainColor</include>
             </control>
         </control>

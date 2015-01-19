@@ -33,6 +33,7 @@
                 <include>TextColor_MainColor</include>
                 <label>$INFO[Window.Property(actor.title)]</label>
             </control>
+            <!--BIOGRAPHY-->
             <control type="group" id="490">
                 <visible>![control.hasfocus(105)|control.hasfocus(205)|control.hasfocus(305)|control.hasfocus(405)|control.hasfocus(505)|
                     control.hasfocus(605)|control.hasfocus(705)|ControlGroup(1500).HasFocus|ControlGroup(2500).HasFocus|
@@ -157,6 +158,7 @@
                     <onright>6649</onright>
                 </control>
             </control>
+            <!--Movie actor roles-->
             <control type="group" id="1500">
                 <visible>control.hasfocus(105)|ControlGroup(1500).HasFocus</visible>
                 <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
@@ -231,7 +233,7 @@
                             <width>1300</width>
                             <font>FacadeListSubFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Property(Character),]</label>
+                            <label>$INFO[ListItem.Property(Character),$LOCALIZE[20347] ]</label>
                         </control>
                         <control type="image">
                             <posx>58r</posx>
@@ -280,7 +282,7 @@
                                 <width>1300</width>
                                 <font>FacadeListSubFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Property(Character)]</label>
+                                <label>$INFO[ListItem.Property(Character),$LOCALIZE[20347] ]</label>
                             </control>
                             <control type="image">
                                 <posx>58r</posx>
@@ -303,6 +305,7 @@
                     <onright>9000</onright>
                 </control>
             </control>
+            <!--TV Show actor roles-->
             <control type="group" id="2500">
                 <visible>control.hasfocus(205)|ControlGroup(2500).HasFocus</visible>
                 <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
@@ -377,7 +380,7 @@
                             <width>1300</width>
                             <font>FacadeListSubFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Property(Character)]</label>
+                            <label>$INFO[ListItem.Property(Character),$LOCALIZE[20347] ]</label>
                         </control>
                         <control type="image">
                             <posx>58r</posx>
@@ -426,7 +429,7 @@
                                 <width>1300</width>
                                 <font>FacadeListSubFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Property(Character)]</label>
+                                <label>$INFO[ListItem.Property(Character),$LOCALIZE[20347] ]</label>
                             </control>
                             <control type="image">
                                 <posx>58r</posx>
@@ -449,6 +452,7 @@
                     <onright>9000</onright>
                 </control>
             </control>
+            <!--Movie crew member-->
             <control type="group" id="5500">
                 <visible>control.hasfocus(505)|ControlGroup(5500).HasFocus</visible>
                 <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
@@ -595,6 +599,7 @@
                     <onright>9000</onright>
                 </control>
             </control>
+            <!--TVShow crew member-->
             <control type="group" id="6500">
                 <visible>control.hasfocus(605)|ControlGroup(6500).HasFocus</visible>
                 <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
@@ -741,6 +746,7 @@
                     <onright>9000</onright>
                 </control>
             </control>
+            <!--Youtube-->
             <control type="group" id="3500">
                 <visible>control.hasfocus(305)|ControlGroup(3500).HasFocus</visible>
                 <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
@@ -829,6 +835,7 @@
                     <onright>9000</onright>
                 </control>
             </control>
+            <!--PICTURES-->
             <control type="group" id="4500">
                 <visible>control.hasfocus(405)|ControlGroup(4500).HasFocus</visible>
                 <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
@@ -922,6 +929,7 @@
                     <onclick>Control.Move(450,1)</onclick>
                 </control>
             </control>
+            <!--FANART-->
             <control type="group" id="7500">
                 <visible>control.hasfocus(705)|ControlGroup(7500).HasFocus</visible>
                 <visible>IntegerGreaterThan(Container(750).NumItems,0)</visible>
