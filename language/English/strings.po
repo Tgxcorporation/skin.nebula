@@ -326,19 +326,23 @@ msgstr ""
 #Skin Fontsets
 
 msgctxt "#31390"
-msgid "(1/4) Ubuntu (Regular)"
+msgid "Ubuntu (Regular)"
 msgstr ""
 
 msgctxt "#31391"
-msgid "(2/4) Ubuntu (Medium)"
+msgid "Ubuntu (Medium)"
 msgstr ""
 
 msgctxt "#31392"
-msgid "(3/4) Asap (Fixed Width)"
+msgid "Asap (Fixed Width)"
 msgstr ""
 
 msgctxt "#31393"
-msgid "(4/4) DejaVuSans (Regular)"
+msgid "DejaVuSans (Regular)"
+msgstr ""
+
+msgctxt "#31394"
+msgid "MC360 (Regular)"
 msgstr ""
 
 #empty strings from id 31394 to 31499
