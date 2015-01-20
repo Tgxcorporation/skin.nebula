@@ -294,7 +294,7 @@
             <visible>!IsEmpty(Skin.String(CustomHome.3.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.3.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/default/default.jpg">$VAR[CustomHome.2.Icon.Management]</icon>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$VAR[CustomHome.3.Icon.Management]</icon>
             <onclick>$INFO[Skin.String(CustomHome.3.Path)]</onclick>
             <property name="submenuVisibility">CustomGroupName3</property>
         </item>
@@ -311,7 +311,7 @@
             <visible>!IsEmpty(Skin.String(CustomHome.4.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.4.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/default/default.jpg">$VAR[CustomHome.2.Icon.Management]</icon>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$VAR[CustomHome.4.Icon.Management]</icon>
             <onclick>$INFO[Skin.String(CustomHome.4.Path)]</onclick>
             <property name="submenuVisibility">CustomGroupName4</property>
         </item>
@@ -329,7 +329,7 @@
             <visible>!IsEmpty(Skin.String(CustomHome.5.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.5.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.5.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/default/default.jpg">$VAR[CustomHome.2.Icon.Management]</icon>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$VAR[CustomHome.5.Icon.Management]</icon>
             <onclick>$INFO[Skin.String(CustomHome.5.Path)]</onclick>
             <property name="submenuVisibility">CustomGroupName5</property>
         </item>
