@@ -322,8 +322,8 @@
         <value condition="Window.IsActive(MyMusicPlaylistEditor.xml)|Window.IsActive(SmartPlaylistEditor.xml)|Window.IsActive(MusicVisualization.xml)|Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)|Window.IsActive(MyMusicPlaylist.xml)|Window.IsActive(MyMusicPlaylistEditor.xml)">$VAR[Music.Art]</value>
         <value condition="Window.IsActive(DialogContentSettings.xml)|Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(MyPVR.xml)">$VAR[Pvr.Art]</value>
         <value condition="Window.IsActive(CustomMoviesHomeButton.xml)|Window.IsActive(CustomMusicHomeButton.xml)">$VAR[Settings.Art]</value>
-        <value condition="Window.IsActive(Startup.xml)">$VAR[Favourites.Art]</value>
-         <value condition="Window.IsActive(MyWeather.xml)">$VAR[Weather.Art]</value>
+        <value condition="Window.IsActive(Startup.xml)">$VAR[Default.Art]</value>
+        <value condition="Window.IsActive(MyWeather.xml)">$VAR[Weather.Art]</value>
         <value condition="Window.IsActive(MyPics.xml)">$VAR[Pictures.Art]</value>
         <value condition="Window.IsActive(DialogFavourites.xml)">$VAR[Favourites.Art]</value>
         <value>$VAR[Default.Art]</value>
