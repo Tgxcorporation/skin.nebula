@@ -9,7 +9,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.0.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.0.path)]</onclick>
             <thumb background="true">$INFO[Skin.String(Plexbmc.0.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.0.art)]</icon>
+            <icon>$VAR[Plex.0.Icon.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.0.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.0.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.0.partialpath)]</property>
@@ -30,7 +30,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.1.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.1.path)]</onclick>
             <thumb background="true">$INFO[Skin.String(Plexbmc.1.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.1.art)]</icon>
+            <icon>$VAR[Plex.1.Icon.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.1.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.1.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.1.partialpath)]</property>
@@ -50,7 +50,7 @@
             <label>$INFO[Window(Home).Property(plexbmc.2.title)]</label>
             <label2>$INFO[Window(Home).Property(plexbmc.2.subtitle)]</label2>
             <thumb background="true">$INFO[Skin.String(Plexbmc.2.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.2.art)]</icon>
+            <icon>$VAR[Plex.2.Icon.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.2.uuid)]</property>
             <onclick>$INFO[Window(Home).Property(plexbmc.2.path)]</onclick>
             <property name="type">$INFO[Window(Home).Property(plexbmc.2.type)]</property>
@@ -72,7 +72,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.3.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.3.path)]</onclick>
             <thumb background="true">$INFO[Skin.String(Plexbmc.3.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.3.art)]</icon>
+            <icon>$VAR[Plex.3.Icon.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.3.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.3.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.3.partialpath)]</property>
@@ -93,7 +93,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.4.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.4.path)]</onclick>
             <thumb background="true">$INFO[Skin.String(Plexbmc.4.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.4.art)]</icon>
+            <icon>$VAR[Plex.4.Icon.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.4.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.4.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.4.partialpath)]</property>
@@ -114,7 +114,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.5.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.5.path)]</onclick>
             <thumb background="true">$INFO[Skin.String(Plexbmc.5.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.5.art)]</icon>
+            <icon>$VAR[Plex.5.Icon.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.5.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.5.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.5.partialpath)]</property>
@@ -135,7 +135,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.6.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.6.path)]</onclick>
             <thumb background="true">$INFO[Skin.String(Plexbmc.6.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.6.art)]</icon>
+            <icon>$VAR[Plex.6.Icon.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.6.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.6.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.6.partialpath)]</property>
@@ -156,7 +156,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.7.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.7.path)]</onclick>
             <thumb background="true">$INFO[Skin.String(Plexbmc.7.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.7.art)]</icon>
+            <icon>$VAR[Plex.7.Icon.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.7.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.7.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.7.partialpath)]</property>
@@ -177,7 +177,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.8.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.8.path)]</onclick>
             <thumb background="true">$INFO[Skin.String(Plexbmc.8.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.8.art)]</icon>
+            <icon>$VAR[Plex.8.Icon.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.8.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.8.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.8.partialpath)]</property>
@@ -198,7 +198,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.9.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.9.path)]</onclick>
             <thumb background="true">$INFO[Skin.String(Plexbmc.9.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.9.art)]</icon>
+            <icon>$VAR[Plex.9.Icon.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.9.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.9.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.9.partialpath)]</property>
@@ -219,7 +219,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.10.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.10.path)]</onclick>
             <thumb background="true">$INFO[Skin.String(Plexbmc.10.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Window(Home).Property(plexbmc.10.art)]</icon>
+            <icon>$VAR[Plex.10.Icon.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.10.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.10.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.10.partialpath)]</property>
