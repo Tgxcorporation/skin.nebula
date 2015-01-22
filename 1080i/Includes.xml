@@ -19,9 +19,13 @@
     <include file="defaults.xml"/>
     <include file="Includes_Plexbmc.xml"/>
     <include file="Includes_Home_Common.xml"/>
+    <include file="Includes_Home_Common_Plexbmc.xml"/>
     <include file="Includes_Horizontal_Home.xml"/>
     <include file="Includes_Vertical_Home.xml"/>
+    <include file="Includes_Shelf.xml"/>
     <include file="Includes_Shelf_Contents.xml"/>
+    <include file="Includes_Shelf_Plexbmc.xml"/>
+    <include file="Includes_Shelf_Plexbmc_Contents.xml"/>
     <include file="Includes_PVR.xml"/>
     <include file="Includes_Weather.xml"/>
     <include file="View_50_BigList.xml"/>
