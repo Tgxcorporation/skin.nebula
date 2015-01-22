@@ -83,6 +83,7 @@
                                 <posx>TextMargin</posx>
                                 <height>78</height>
                                 <width>900</width>
+                                <scroll>true</scroll>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
                                 <label>$INFO[ListItem.Label]</label>
@@ -92,6 +93,7 @@
                                 <posx>TextMarginR</posx>
                                 <height>78</height>
                                 <width>900</width>
+                                <scroll>true</scroll>
                                 <align>right</align>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
@@ -111,6 +113,7 @@
                                 <posy>19</posy>
                                 <height>78</height>
                                 <width>900</width>
+                                <scroll>true</scroll>
                                 <font>LeftMenuTitleFont</font>
                                 <include>TextColor_MainColor</include>
                                 <label>$INFO[ListItem.Label2]</label>
@@ -627,6 +630,7 @@
                                 <posx>TextMargin</posx>
                                 <height>78</height>
                                 <width>900</width>
+                                <scroll>true</scroll>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
                                 <label>$INFO[ListItem.Label]</label>
@@ -635,6 +639,7 @@
                                 <posx>TextMarginR</posx>
                                 <height>78</height>
                                 <width>900</width>
+                                <scroll>true</scroll>
                                 <align>right</align>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
@@ -1275,6 +1280,7 @@
                                 <posx>TextMargin</posx>
                                 <height>78</height>
                                 <width>1800</width>
+                                <scroll>true</scroll>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
                                 <label>$INFO[ListItem.Label]</label>
@@ -1445,6 +1451,7 @@
                                     <posx>TextMargin</posx>
                                     <height>78</height>
                                     <width>520</width>
+                                    <scroll>true</scroll>
                                     <font>FacadeListMainFont</font>
                                     <include>TextColor_MainColor</include>
                                     <label>$INFO[ListItem.Label]</label>
@@ -2566,6 +2573,7 @@
                                 <posx>TextMargin</posx>
                                 <height>78</height>
                                 <width>900</width>
+                                <scroll>true</scroll>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
                                 <label>$INFO[ListItem.Label]</label>
@@ -2574,6 +2582,7 @@
                                 <posx>TextMarginR</posx>
                                 <height>78</height>
                                 <width>900</width>
+                                <scroll>true</scroll>
                                 <align>right</align>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
@@ -2718,6 +2727,7 @@
                                 <posx>TextMargin</posx>
                                 <height>78</height>
                                 <width>900</width>
+                                <scroll>true</scroll>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
                                 <label>$INFO[ListItem.Label]</label>
@@ -2726,6 +2736,7 @@
                                 <posx>TextMarginR</posx>
                                 <height>78</height>
                                 <width>900</width>
+                                <scroll>true</scroll>
                                 <align>right</align>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
