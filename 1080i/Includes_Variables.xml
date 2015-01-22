@@ -327,8 +327,8 @@
         <value condition="!IsEmpty(Window.Property(IsRadio))">$VAR[Radio.Art]</value>
         <value condition="Window.IsActive(DialogContentSettings.xml)|Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)">$VAR[Tv.Art]</value>
         <value condition="Window.IsActive(CustomMoviesHomeButton.xml)|Window.IsActive(CustomMusicHomeButton.xml)">$VAR[Settings.Art]</value>
-        <value condition="Window.IsActive(Startup.xml)">$VAR[Favourites.Art]</value>
-         <value condition="Window.IsActive(MyWeather.xml)">$VAR[Weather.Art]</value>
+        <value condition="Window.IsActive(Startup.xml)">$VAR[Default.Art]</value>
+        <value condition="Window.IsActive(MyWeather.xml)">$VAR[Weather.Art]</value>
         <value condition="Window.IsActive(MyPics.xml)">$VAR[Pictures.Art]</value>
         <value condition="Window.IsActive(DialogFavourites.xml)">$VAR[Favourites.Art]</value>
         <value>$VAR[Default.Art]</value>
