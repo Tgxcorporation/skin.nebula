@@ -307,6 +307,15 @@
             </control>
             <control type="button" id="1624">
                 <include>TopBarButton</include>
+                <texturefocus>white/topbar/topbar_settings_focus.png</texturefocus>
+                <texturenofocus>white/topbar/topbar_settings_nofocus.png</texturenofocus>
+                <onclick>ActivateWindow(Settings,return)</onclick>
+            </control>
+            <control type="button" id="1625">
+                <include>FakeTopbarButton</include>
+            </control>
+            <control type="button" id="1626">
+                <include>TopBarButton</include>
                 <texturefocus>white/topbar/topbar_shutdown_focus.png</texturefocus>
                 <texturenofocus>white/topbar/topbar_shutdown_nofocus.png</texturenofocus>
                 <onclick>$VAR[QuitAction]</onclick>
@@ -449,6 +458,15 @@
                 <include>FakeTopbarButton</include>
             </control>
             <control type="button" id="1624">
+                <include>TopBarButton</include>
+                <texturefocus>black/topbar/topbar_settings_focus.png</texturefocus>
+                <texturenofocus>black/topbar/topbar_settings_nofocus.png</texturenofocus>
+                <onclick>ActivateWindow(Settings,return)</onclick>
+            </control>
+            <control type="button" id="1625">
+                <include>FakeTopbarButton</include>
+            </control>
+            <control type="button" id="1626">
                 <include>TopBarButton</include>
                 <texturefocus>black/topbar/topbar_shutdown_focus.png</texturefocus>
                 <texturenofocus>black/topbar/topbar_shutdown_nofocus.png</texturenofocus>
