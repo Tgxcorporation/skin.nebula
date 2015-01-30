@@ -195,7 +195,7 @@
                     <scroll>false</scroll>
                     <label>$VAR[DetailsRow4]</label>
                 </control>
-                <control type="grouplist">
+                <control type="group">
                     <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                     <posx>40</posx>
                     <posy>285</posy>
