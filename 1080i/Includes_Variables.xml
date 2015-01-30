@@ -362,6 +362,14 @@
         <value condition="skin.hassetting(OverlayTransparency50)">9BFFFFFF</value>
         <value>FFFFFFFF</value>
     </variable>
+    <variable name="OverlayStripTransparency">
+        <value condition="skin.hassetting(OverlayTransparency90)">ddFFFFFF</value>
+        <value condition="skin.hassetting(OverlayTransparency80)">c4FFFFFF</value>
+        <value condition="skin.hassetting(OverlayTransparency70)">abFFFFFF</value>
+        <value condition="skin.hassetting(OverlayTransparency60)">92FFFFFF</value>
+        <value condition="skin.hassetting(OverlayTransparency50)">79FFFFFF</value>
+        <value>ddFFFFFF</value>
+    </variable>
     <variable name="CustomHome.1.Icon.Management">
         <value condition="StringCompare(Skin.String(CustomHome.1.Icon),DefaultPlaylist.png)">$VAR[Default.Art]</value>
         <value condition="!IsEmpty(Skin.String(CustomHome.1.Icon))">$INFO[Skin.String(CustomHome.1.Icon)]</value>
