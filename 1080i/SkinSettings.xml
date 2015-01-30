@@ -1259,12 +1259,44 @@
                             <label2>$LOCALIZE[1223]</label2>
                             <onclick>Skin.ToggleSetting(Weather.Hide)</onclick>
                         </item>
+                        <!--<item id="10">-->
+                            <!--<visible>!Skin.HasSetting(Settings.Hide)</visible>-->
+                            <!--<label>$LOCALIZE[5]</label>-->
+                            <!--<label2>$LOCALIZE[31293]</label2>-->
+                            <!--<thumb fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Background)]</thumb>-->
+                            <!--<onclick>Notification($LOCALIZE[416],,6,$VAR[Theme.Color]/DefaultIconWarning.png)</onclick>-->
+                        <!--</item>-->
                         <item id="10">
-                            <visible>!Skin.HasSetting(QuitMenu_Show_Settings)</visible>
-                            <label>$LOCALIZE[5]</label>
-                            <label2>$LOCALIZE[31293]</label2>
+                            <visible>!Skin.HasSetting(Settings.Hide)</visible>
+                            <include>ConditionWhite</include>
+                            <label>[COLOR=SelectedColor_white]$LOCALIZE[5][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_white]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Background)]</thumb>
-                            <onclick>Notification($LOCALIZE[416],,6,$VAR[Theme.Color]/DefaultIconWarning.png)</onclick>
+                            <onclick>Skin.ToggleSetting(Settings.Hide)</onclick>
+                        </item>
+                        <item id="10">
+                            <visible>!Skin.HasSetting(Settings.Hide)</visible>
+                            <include>ConditionBlack</include>
+                            <label>[COLOR=SelectedColor_black]$LOCALIZE[5][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor_black]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Settings.Hide)</onclick>
+                        </item>
+                        <item id="10">
+                            <visible>Skin.HasSetting(Settings.Hide)</visible>
+                            <include>ConditionWhite</include>
+                            <label>[COLOR=DisabledColor_white]$LOCALIZE[5][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Settings.Hide)</onclick>
+                        </item>
+                        <item id="10">
+                            <visible>Skin.HasSetting(Settings.Hide)</visible>
+                            <include>ConditionBlack</include>
+                            <label>[COLOR=DisabledColor_black]$LOCALIZE[5][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Settings.Hide)</onclick>
                         </item>
                         <item id="11">
                             <visible>!Skin.HasSetting(Quit.Hide)</visible>
@@ -1464,7 +1496,7 @@
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=weather)</onclick>
                         </item>
                         <item id="10">
-                            <visible>!Skin.HasSetting(QuitMenu_Show_Settings)</visible>
+                            <visible>!Skin.HasSetting(Settings.Hide)</visible>
                             <label>$LOCALIZE[5]</label>
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=settings)</onclick>
                         </item>
@@ -2741,20 +2773,6 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot)</onclick>
                         </item>
-                        <!-- <item id="6">
-                            <visible>IsEmpty(Skin.String(shutdown))</visible>
-                            <visible>Skin.HasSetting(QuitMenu_Show_Settings)</visible>
-                            <label> - $LOCALIZE[5]</label>
-                            <label2>$LOCALIZE[107]</label2>
-                            <onclick>Skin.ToggleSetting(QuitMenu_Show_Settings)</onclick>
-                        </item>
-                        <item id="6">
-                            <visible>IsEmpty(Skin.String(shutdown))</visible>
-                            <visible>!Skin.HasSetting(QuitMenu_Show_Settings)</visible>
-                            <label> - $LOCALIZE[5]</label>
-                            <label2>$LOCALIZE[106]</label2>
-                            <onclick>Skin.ToggleSetting(QuitMenu_Show_Settings)</onclick>
-                        </item> -->
                         <item id="7">
                             <visible>IsEmpty(Skin.String(timer))</visible>
                             <visible>Skin.HasSetting(QuitMenu_Hide_Timer)</visible>
