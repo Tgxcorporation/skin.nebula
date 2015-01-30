@@ -38,6 +38,7 @@
                 <posy>272</posy>
                 <width>2000</width>
                 <height>536</height>
+                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
                 <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_grid.png</texture>
             </control>
             <control type="group">
