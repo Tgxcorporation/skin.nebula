@@ -438,7 +438,7 @@
             <property name="submenuVisibility">weather</property>
         </item>
         <item id="10">
-            <visible>!Skin.HasSetting(QuitMenu_Show_Settings)</visible>
+            <visible>!Skin.HasSetting(Settings.Hide)</visible>
             <label>$LOCALIZE[5]</label>
             <thumb>$VAR[Settings.Art]</thumb>
             <icon fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Icon)]</icon>
