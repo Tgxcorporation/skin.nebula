@@ -290,7 +290,7 @@
                     <posx>455</posx>
                     <posy>80</posy>
                     <width>1405</width>
-                    <height>80</height>
+                    <height>84</height>
                     <font>InfoRatingFont</font>
                     <include>TextColor_MainColor</include>
                     <label>$VAR[Plots]</label>
