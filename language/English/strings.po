@@ -345,7 +345,11 @@ msgctxt "#31394"
 msgid "MC360 (Regular)"
 msgstr ""
 
-#empty strings from id 31395 to 31499
+msgctxt "#31395"
+msgid "Arial (Regular)"
+msgstr ""
+
+#empty strings from id 31396 to 31499
 #PVR Labels
 
 msgctxt "#31500"
