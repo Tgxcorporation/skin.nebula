@@ -111,6 +111,13 @@
         <value condition="Library.HasContent(Music)">ActivateWindow(MusicLibrary,Albums)</value>
         <value condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,root)</value>
     </variable>
+    <variable name="TvShowEntryPoint">
+        <value condition="!IsEmpty(Skin.String(CustomTvShow.1.Path))">$INFO[Skin.String(CustomTvShow.1.Path)]</value>
+        <value condition="StringCompare(Skin.String(tvshows_entries),playlists)">ActivateWindow(Videos,Playlists,return)</value>
+        <value condition="StringCompare(Skin.String(tvshows_entries),files)">ActivateWindow(Videos,Files,return)</value>
+        <value condition="StringCompare(Skin.String(tvshows_entries),library)">ActivateWindow(Videos,TvShows,return)</value>
+        <value>ActivateWindow(VideoLibrary,TVShowTitles,return)</value>
+    </variable>
     <variable name="MovieEntryPointLabel2">
         <value condition="!IsEmpty(Skin.String(CustomMovie.1.Path))">$INFO[Skin.String(CustomMovie.1.Label)]</value>
         <value condition="StringCompare(Skin.String(movie_entries),playlists)">$LOCALIZE[136]</value>
@@ -123,6 +130,12 @@
         <value condition="StringCompare(Skin.String(music_entries),files)">$LOCALIZE[744]</value>
         <value condition="StringCompare(Skin.String(music_entries),library)">$LOCALIZE[15100]</value>
         <value condition="StringCompare(Skin.String(music_entries),artists)">$LOCALIZE[133]</value>
+    </variable>
+    <variable name="TvShowEntryPointLabel2">
+        <value condition="!IsEmpty(Skin.String(CustomTvShow.1.Path))">$INFO[Skin.String(CustomTvShow.1.Label)]</value>
+        <value condition="StringCompare(Skin.String(tvshows_entries),playlists)">$LOCALIZE[136]</value>
+        <value condition="StringCompare(Skin.String(tvshows_entries),files)">$LOCALIZE[744]</value>
+        <value condition="StringCompare(Skin.String(tvshows_entries),library)">$LOCALIZE[15100]</value>
     </variable>
     <variable name="MusicPlayingFanartLabel2">
         <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[449]</value>

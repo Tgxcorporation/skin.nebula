@@ -6,7 +6,7 @@
     _1114 Quit * define Quit menu
     _1115 CustomMoviesHomeButton.xml * define movies entry point
     _1116 CustomMusicHomeButton.xml * define music entry point
-    _1117 ShelfCustomizer
+    _1117 CustomTvShowsHomeButton.xml * define tvshows entry point
     _1118 Custom_FullscreenMusic * start fullscreen audio playback
     _1119 CustomAddons * browse addons united under the same roof
     _50 Custom_Debug dialog * my favourite one

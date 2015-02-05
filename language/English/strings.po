@@ -412,7 +412,16 @@ msgctxt "#31514"
 msgid "Music homescreen button opens:"
 msgstr ""
 
-#empty strings from id 31515 to 31900
+msgctxt "#31515"
+msgid "Tv Shows homescreen button opens:"
+msgstr ""
+
+msgctxt "#31516"
+msgid "All Tv Shows"
+msgstr ""
+
+#empty strings from id 31517 to 31900
+
 #Weather plugin
 
 msgctxt "#31901"
