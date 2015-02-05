@@ -339,7 +339,7 @@
             <label>$LOCALIZE[20343]</label>
             <thumb>$VAR[TVShows.Art]</thumb>
             <icon fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Icon)]</icon>
-            <onclick>ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
+            <onclick>$VAR[TvShowEntryPoint]</onclick>
             <property name="submenuVisibility">tvshows</property>
             <!-- <property name="count">$INFO[Window(home).Property(TVShows.Count)]</property> -->
         </item>

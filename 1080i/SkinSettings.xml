@@ -307,6 +307,11 @@
                             <label2 fallback="31513">$VAR[MusicEntryPointLabel2]</label2>
                             <onclick>ActivateWindow(1116)</onclick>
                         </item>
+                        <item id="31">
+                            <label>$LOCALIZE[31515]</label>
+                            <label2 fallback="31516">$VAR[TvShowEntryPointLabel2]</label2>
+                            <onclick>ActivateWindow(1117)</onclick>
+                        </item>
                         <!-- <item id="13">
                             <visible>Skin.HasSetting(ArtistView)</visible>
                             <label>$LOCALIZE[31960]</label>
