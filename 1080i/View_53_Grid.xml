@@ -130,6 +130,7 @@
                 <info>ListItem.Progress</info>
             </control>
             <control type="grouplist">
+                <visible>![Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]</visible>
                 <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                 <posx>569</posx>
                 <posy>670</posy>
