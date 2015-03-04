@@ -278,7 +278,7 @@
                     <width>590</width>
                     <font>LeftMenuTitleFont</font>
                     <textcolor>60ffffff</textcolor>
-                    <label>XBMC</label>
+                    <label>Kodi</label>
                 </control>
                 <control type="image">
                     <posx>0</posx>
