@@ -96,6 +96,12 @@
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[24999]</label>
                 </control>
+                <control type="button" id="9">
+                    <description>Check for updates</description>
+                    <textwidth>450</textwidth>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[24034]</label>
+                </control>
             </control>
             <include>LeftMenuScroller</include>
         </control>

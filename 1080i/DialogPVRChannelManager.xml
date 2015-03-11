@@ -139,28 +139,6 @@
                     <onup>13</onup>
                     <ondown>31</ondown>
                 </control>
-                <control type="button" id="31">
-                    <posy>756</posy>
-                    <label>$LOCALIZE[19203]</label>
-                    <width>960</width>
-                    <height>73</height>
-                    <include>LeftMenuButton</include>
-                    <onleft>9000</onleft>
-                    <onright>20</onright>
-                    <onup>14</onup>
-                    <ondown>32</ondown>
-                </control>
-                <control type="button" id="32">
-                    <posy>829</posy>
-                    <label>$LOCALIZE[19211]</label>
-                    <width>960</width>
-                    <height>74</height>
-                    <include>LeftMenuButton</include>
-                    <onleft>9000</onleft>
-                    <onright>20</onright>
-                    <onup>31</onup>
-                    <ondown>9001</ondown>
-                </control>
             </control>
             <control type="list" id="20">
                 <posx>960</posx>
@@ -293,7 +271,8 @@
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[19205]</label>
                 </control>
-                <control type="button" id="33">
+                <control type="button" id="31">
+                    <description>New channel Button</description>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[19204]</label>
                 </control>

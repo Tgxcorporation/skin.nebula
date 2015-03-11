@@ -528,4 +528,9 @@
         <value condition="Container.Content(albums)">plugin://script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] $ESCINFO[ListItem.Album]</value>
         <value>plugin://script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] Music</value>
     </variable>
+    <variable name="SeekLabel">
+    	<value condition="!IsEmpty(Player.SeekStepSize) + ![player.forwarding | player.rewinding]">$LOCALIZE[773] $INFO[Player.SeekStepSize]</value>
+    	<value condition="Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]">$LOCALIZE[773] $INFO[Player.SeekOffset]</value>
+    	<value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[773]</value>
+    </variable>
 </includes>

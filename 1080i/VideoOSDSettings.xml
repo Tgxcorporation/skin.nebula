@@ -66,20 +66,8 @@
                 <height>117</height>
                 <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
-            <control type="label">
-                <visible>Window.IsVisible(123)</visible>
-                <label>$LOCALIZE[3] - $LOCALIZE[5]</label>
-                <posx>TextMargin</posx>
-                <posy>183</posy>
-                <width>1800</width>
-                <height>100</height>
-                <align>center</align>
-                <font>InfoTitleFont</font>
-                <include>TextColor_MainColor</include>
-            </control>
-            <control type="label">
-                <visible>Window.IsVisible(124)</visible>
-                <label>$LOCALIZE[292] - $LOCALIZE[5]</label>
+            <control type="label" id="2">
+                <label>-</label>
                 <posx>TextMargin</posx>
                 <posy>183</posy>
                 <width>1800</width>

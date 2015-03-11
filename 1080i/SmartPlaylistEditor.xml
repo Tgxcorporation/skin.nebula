@@ -52,14 +52,14 @@
                 <onup>12</onup>
                 <ondown>10</ondown>
             </control>
-            <control type="label">
+            <control type="label" id="2">
                 <posx>0</posx>
                 <posy>273</posy>
                 <width>1920</width>
                 <align>center</align>
                 <font>LeftMenuTitleFont</font>
                 <include>LeftMenuButton</include>
-                <label>$LOCALIZE[21434]</label>
+                <label>-</label>
             </control>
             <control type="panel" id="10">
                 <posy>340</posy>

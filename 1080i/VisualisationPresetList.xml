@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <defaultcontrol always="true">2</defaultcontrol>
+    <defaultcontrol always="true">5</defaultcontrol>
     <controls>
         <!-- <include>DimBG</include> -->
         <include>TopBar</include>
@@ -21,7 +21,7 @@
                 <height>217</height>
                 <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
-            <control type="label">
+            <control type="label" id="2">
                 <posx>TextMargin</posx>
                 <posy>183</posy>
                 <width>1800</width>
@@ -29,7 +29,7 @@
                 <align>center</align>
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
-                <label>$LOCALIZE[31048]</label>
+                <label>-</label>
             </control>
             <control type="label">
                 <posx>TextMargin</posx>
@@ -41,7 +41,7 @@
                 <include>TextColor_MainColor</include>
                 <label>$INFO[Container(2).NumItems,, $LOCALIZE[31025]]</label>
             </control>
-            <control type="list" id="2">
+            <control type="list" id="5">
                 <description>Preset List</description>
                 <posx>0</posx>
                 <posy>318</posy>
@@ -92,7 +92,7 @@
                 <posy>318</posy>
                 <height>675</height>
                 <include>VerticalScroller</include>
-                <onleft>2</onleft>
+                <onleft>5</onleft>
                 <onright>60</onright>
             </control>
         </control>

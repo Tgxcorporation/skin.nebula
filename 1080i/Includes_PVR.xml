@@ -65,6 +65,12 @@
                     <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
                     <include>LeftMenuButton</include>
                 </control>
+                <control type="radiobutton" id="7">
+                    <description>Show deleted recordings</description>
+                    <label>19184</label>
+                    <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+                    <include>LeftMenuButton</include>
+                </control>
                 <control type="button" id="2">
                     <!--<visible>Window.IsActive(MyPVRGuide.xml)</visible>-->
                     <visible>!Skin.HasSetting(EnableKioskMode)</visible>
@@ -84,6 +90,19 @@
                     <label>31051</label>
                     <altlabel>31050</altlabel>
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                    <include>LeftMenuButton</include>
+                </control>
+                <control type="radiobutton" id="31">
+                    <visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
+                    <description>Filter</description>
+                    <label>587</label>
+                    <selected>Container.Filtered</selected>
+                    <include>LeftMenuButton</include>
+                </control>
+                <control type="radiobutton" id="6">
+                    <visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
+                    <description>Show hidden channels</description>
+                    <label>19051</label>
                     <include>LeftMenuButton</include>
                 </control>
             </control>

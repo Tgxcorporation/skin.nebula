@@ -283,6 +283,11 @@
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[31503]</label>
                 </control>
+                <control type="radiobutton" id="25">
+                    <description>Hide Group</description>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[19289]</label>
+                </control>
                 <control type="button" id="27">
                     <description>Rename Group</description>
                     <include>LeftMenuButton</include>
