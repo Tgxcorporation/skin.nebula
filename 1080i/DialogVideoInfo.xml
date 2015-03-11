@@ -889,7 +889,41 @@
                     <pagecontrol>61</pagecontrol>
                     <onleft>9014</onleft>
                     <onright>61</onright>
-                    <include>List_9009_Commons_Actors</include>
+                    <onup>50</onup>
+					<ondown>50</ondown>
+					<orientation>vertical</orientation>
+					<itemlayout height="78" width="1420">
+						<control type="label">
+							<posx>TextMargin</posx>
+							<posy>0</posy>
+							<height>78</height>
+							<width>1300</width>
+							<font>FacadeListMainFont</font>
+							<include>TextColor_MainColor</include>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout height="78" width="1420">
+						<control type="group">
+							<include>ButtonWideFocusAnimation</include>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<height>78</height>
+								<width>1420</width>
+								<texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+							</control>
+							<control type="label">
+								<posx>TextMargin</posx>
+								<posy>0</posy>
+								<height>78</height>
+								<width>1300</width>
+								<font>FacadeListMainFont</font>
+								<include>TextColor_MainColor</include>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+						</control>
+					</focusedlayout>
                 </control>
                 <control type="scrollbar" id="61">
                     <posx>1886</posx>
