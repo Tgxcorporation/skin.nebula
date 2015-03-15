@@ -451,8 +451,12 @@ msgctxt "#31910"
 msgid "Maps"
 msgstr ""
 
-#empty strings from id 31911 to 31946
+#empty strings from id 31911 to 31945
 #NEBULA
+
+msgctxt "#31946"
+msgid "Related TMDB Lists"
+msgstr ""
 
 msgctxt "#31947"
 msgid "Resulting sub menu"
