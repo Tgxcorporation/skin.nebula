@@ -39,6 +39,7 @@
                     control.hasfocus(751)|ControlGroup(7500).HasFocus|
                     control.hasfocus(151)|ControlGroup(1500).HasFocus|
                     control.hasfocus(251)|ControlGroup(2500).HasFocus|
+                    control.hasfocus(252)|ControlGroup(2500).HasFocus|
                     control.hasfocus(1151)|ControlGroup(11500).HasFocus|
                     control.hasfocus(351)|ControlGroup(3500).HasFocus|
                     control.hasfocus(551)|ControlGroup(5500).HasFocus|
@@ -166,7 +167,7 @@
                             <visible>!IsEmpty(Window.Property(movie.mpaa))</visible>
                         </item>
                         <item>
-                            <label>Budget:</label>
+                            <label>$ADDON[script.extendedinfo 32108]:</label>
                             <label2>$INFO[Window.Property(movie.Budget),$]</label2>
                             <onclick>noop</onclick>
                             <visible>!IsEmpty(Window.Property(movie.Budget))</visible>
@@ -190,7 +191,7 @@
                             <visible>!IsEmpty(Window.Property(movie.DateAdded))</visible>
                         </item>
                         <item>
-                            <label>Revenue:</label>
+                            <label>$ADDON[script.extendedinfo 32109]:</label>
                             <label2>$INFO[Window.Property(movie.Revenue),$]</label2>
                             <onclick>noop</onclick>
                             <visible>!IsEmpty(Window.Property(movie.Revenue))</visible>
@@ -1124,7 +1125,7 @@
             </control>
             <!--SET MOVIES-->
             <control type="group" id="2500">
-                <visible>control.hasfocus(251)|ControlGroup(2500).HasFocus</visible>
+                <visible>control.hasfocus(251)|control.hasfocus(252)|ControlGroup(2500).HasFocus</visible>
                 <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="image">
@@ -2473,10 +2474,18 @@
                 </control>
                 <control type="button" id="251">
                     <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
-                    <description>Set Movies</description>
+                    <visible>!IsEmpty(Window.Property(movie.set.label))</visible>
+                    <description>Movie Sets</description>
                     <include>LeftMenuButton</include>
-                    <!--<label>$INFO[Window.Property(movie.set.label)]</label>-->
-                    <label>Set Movies</label>
+                    <label>$INFO[Window.Property(movie.set.label)]</label>
+                    <onright>250</onright>
+                </control>
+                <control type="button" id="252">
+                    <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
+                    <visible>IsEmpty(Window.Property(movie.set.label))</visible>
+                    <description>Seasons</description>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[33054]</label>
                     <onright>250</onright>
                 </control>
                 <control type="button" id="1151">
@@ -2560,16 +2569,16 @@
                 </control>
                 <control type="button" id="451">
                     <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
-                    <description>MovieDB Users</description>
+                    <description>Related TMDB Lists</description>
                     <include>LeftMenuButton</include>
-                    <label>TMDB Users</label>
+                    <label>$LOCALIZE[31946]</label>
                     <onright>450</onright>
                 </control>
                 <control type="button" id="2001">
                     <visible>IntegerGreaterThan(Container(2000).NumItems,0)</visible>
-                    <description>Episode Index</description>
+                    <description>Episodes</description>
                     <include>LeftMenuButton</include>
-                    <label>Episode Index</label>
+                    <label>$LOCALIZE[20360]</label>
                     <onright>2000</onright>
                 </control>
                 <control type="togglebutton" id="100">
