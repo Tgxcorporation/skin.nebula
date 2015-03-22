@@ -117,7 +117,7 @@
                     <textwidth>450</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[20336]</label>
-                    <onclick>50.mastermode</onclick>
+                    <onclick>mastermode</onclick>
                     <selected>system.ismaster</selected>
                     <visible>system.haslocks</visible>
                 </control>
