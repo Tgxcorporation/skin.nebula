@@ -62,7 +62,7 @@
         <include condition="Skin.HasSetting(Theme.Color.Auto)+!System.Time(8:00,20:00)">PosterThumb_black</include>
         <include condition="Skin.HasSetting(Theme.Color.Black)">PosterThumb_black</include>
         <include>PosterThumb_white</include>
-        <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+        <aspectratio scalediffuse="false">keep</aspectratio>
     </include>
     <!-- THUMB BORDER -->
     <include name="ThumbBorderShadow_white">
