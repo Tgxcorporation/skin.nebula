@@ -28,6 +28,7 @@
     <include file="Includes_Shelf_Plexbmc_Contents.xml"/>
     <include file="Includes_PVR.xml"/>
     <include file="Includes_Weather.xml"/>
+    <include file="Includes_View_Modes.xml"/>
     <include file="View_50_BigList.xml"/>
     <include file="View_51_SlimList.xml"/>
     <include file="View_52_ShortList.xml"/>
