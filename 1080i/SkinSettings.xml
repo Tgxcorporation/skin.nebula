@@ -151,6 +151,36 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(Hide_Unwatched_Marks)</onclick>
                         </item>
+                        <item id="32">
+                            <visible>Skin.HasSetting(DefaultView50)|[!Skin.HasSetting(DefaultView51)+!Skin.HasSetting(DefaultView52)]</visible>
+                            <label>$LOCALIZE[13377]</label>
+                            <label2>$LOCALIZE[31091]</label2>
+                            <onclick>Skin.Reset(DefaultView50)</onclick>
+                            <onclick>Skin.Reset(DefaultView51)</onclick>
+                            <onclick>Skin.Reset(DefaultView52)</onclick>
+                            <onclick>Skin.ToggleSetting(DefaultView51)</onclick>
+                            <onclick>Skin.SetString(WeatherView,slimlist)</onclick>
+                        </item>
+                        <item id="32">
+                            <visible>Skin.HasSetting(DefaultView51)</visible>
+                            <label>$LOCALIZE[13377]</label>
+                            <label2>$LOCALIZE[31096]</label2>
+                            <onclick>Skin.Reset(DefaultView50)</onclick>
+                            <onclick>Skin.Reset(DefaultView51)</onclick>
+                            <onclick>Skin.Reset(DefaultView52)</onclick>
+                            <onclick>Skin.ToggleSetting(DefaultView52)</onclick>
+                            <onclick>Skin.SetString(WeatherView,shortlist)</onclick>
+                        </item>
+                        <item id="32">
+                            <visible>Skin.HasSetting(DefaultView52)</visible>
+                            <label>$LOCALIZE[13377]</label>
+                            <label2>$LOCALIZE[535]</label2>
+                            <onclick>Skin.Reset(DefaultView50)</onclick>
+                            <onclick>Skin.Reset(DefaultView51)</onclick>
+                            <onclick>Skin.Reset(DefaultView52)</onclick>
+                            <onclick>Skin.ToggleSetting(DefaultView50)</onclick>
+                            <onclick>Skin.SetString(WeatherView,biglist)</onclick>
+                        </item>
                         <item id="2">
                             <visible>!Skin.HasSetting(AutoScroll)</visible>
                             <label>$LOCALIZE[20189]</label>
