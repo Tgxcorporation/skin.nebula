@@ -314,6 +314,17 @@
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow3]</label>
                     </control>
+                    <control type="label">
+                        <posx>-555</posx>
+                        <posy>234</posy>
+                        <width>600</width>
+                        <height>71</height>
+                        <align>center</align>
+                        <font>InfoDetailsFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>false</scroll>
+                        <label>$VAR[DetailsRow4]</label>
+                    </control>
                     <control type="textbox">
                         <posx>720</posx>
                         <posy>90</posy>
