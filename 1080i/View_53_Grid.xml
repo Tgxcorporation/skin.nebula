@@ -330,7 +330,7 @@
                         <posy>0</posy>
                         <width>128</width>
                         <height>180</height>
-                        <!-- <aspectratio>scale</aspectratio> -->
+                        <aspectratio>scale</aspectratio>
                         <include>PosterThumb</include>
                     </control>
                 </itemlayout>
@@ -341,8 +341,8 @@
                         <posy>-35</posy>
                         <width>198</width>
                         <height>250</height>
-                        <include>PosterThumb</include>
                         <aspectratio>scale</aspectratio>
+                        <include>PosterThumb</include>
                         <include>ThumbBorderOverlay</include>
                     </control>
                 </focusedlayout>
@@ -352,7 +352,7 @@
                         <posy>0</posy>
                         <width>192</width>
                         <height>270</height>
-                        <!-- <aspectratio>scale</aspectratio> -->
+                         <aspectratio>scale</aspectratio>
                         <include>PosterThumb</include>
                     </control>
                 </itemlayout>
@@ -363,8 +363,8 @@
                         <posy>-35</posy>
                         <width>262</width>
                         <height>340</height>
+                         <aspectratio>scale</aspectratio>
                         <include>PosterThumb</include>
-                        <!-- <aspectratio>scale</aspectratio> -->
                         <include>ThumbBorderOverlay</include>
                     </control>
                 </focusedlayout>
