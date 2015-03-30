@@ -767,7 +767,7 @@
     </include>
     <include name="PosterThumbBig">
         <texture background="true">$VAR[ThumbsBig]</texture>
-        <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+        <aspectratio scalediffuse="false">keep</aspectratio>
     </include>
     <include name="SquareThumbBig">
         <texture background="true">$VAR[ThumbsBig]</texture>

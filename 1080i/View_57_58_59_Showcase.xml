@@ -634,7 +634,7 @@
                         <posy>120</posy>
                         <width>470</width>
                         <height>295</height>
-                        <aspectratio>scale</aspectratio>
+                        <aspectratio>keep</aspectratio>
                         <include>EpisodeThumb</include>
                         <include>ThumbBorder</include>
                     </control>
@@ -674,7 +674,7 @@
                     <posy>148</posy>
                     <width>870</width>
                     <height>520</height>
-                    <aspectratio>scale</aspectratio>
+                    <aspectratio>keep</aspectratio>
                     <include>EpisodeThumb</include>
                     <include>ThumbBorder</include>
                 </control>
@@ -834,7 +834,7 @@
                         <posy>120</posy>
                         <width>470</width>
                         <height>295</height>
-                        <aspectratio>scale</aspectratio>
+                        <aspectratio>keep</aspectratio>
                         <include>EpisodeThumb</include>
                         <include>ThumbBorder</include>
                     </control>
@@ -866,7 +866,7 @@
             <control type="image">
                 <visible>IsEmpty(ListItem.thumb)</visible>
                 <animation type="Conditional" reversible="false" condition="control.HasFocus(57)">
-                    <include>CoverWrapFocusAnimationEpisode</include>
+                <include>CoverWrapFocusAnimationEpisode</include>
                 </animation>
                 <posx>25</posx>
                 <posy>148</posy>
@@ -878,7 +878,7 @@
             </control>
             <control type="image">
                 <animation type="Conditional" reversible="false" condition="control.HasFocus(57)">
-                    <include>CoverWrapFocusAnimationEpisode</include>
+                <include>CoverWrapFocusAnimationEpisode</include>
                 </animation>
                 <include>UpperFade</include>
                 <fadetime>250</fadetime>

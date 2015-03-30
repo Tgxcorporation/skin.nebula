@@ -35,7 +35,7 @@
                         <posy>148</posy>
                         <width>520</width>
                         <height>520</height>
-                        <aspectratio>scale</aspectratio>
+                        <aspectratio>keep</aspectratio>
                         <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(900).ListItem.thumb]</texture>
                         <include>ThumbBorder</include>
                     </control>
@@ -106,7 +106,7 @@
                         <posy>148</posy>
                         <width>520</width>
                         <height>520</height>
-                        <aspectratio>scale</aspectratio>
+                        <aspectratio>keep</aspectratio>
                         <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(901).ListItem.thumb]</texture>
                         <include>ThumbBorder</include>
                     </control>
@@ -206,7 +206,7 @@
                         <width>520</width>
                         <height>723</height>
                         <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(311).ListItem.thumb]</texture>
-                        <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                        <aspectratio>keep</aspectratio>
                         <include>ThumbBorder</include>
                     </control>
                     <control type="button">
@@ -380,7 +380,7 @@
                         <width>520</width>
                         <height>723</height>
                         <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(312).ListItem.thumb]</texture>
-                        <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                        <aspectratio>keep</aspectratio>
                         <include>ThumbBorder</include>
                     </control>
                     <control type="button">
@@ -516,7 +516,7 @@
                         <posy>148</posy>
                         <width>520</width>
                         <height>520</height>
-                        <aspectratio>scale</aspectratio>
+                        <aspectratio>keep</aspectratio>
                         <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(511).ListItem.thumb]</texture>
                         <include>ThumbBorder</include>
                     </control>
@@ -605,7 +605,7 @@
                         <posy>148</posy>
                         <width>520</width>
                         <height>520</height>
-                        <aspectratio>scale</aspectratio>
+                        <aspectratio>keep</aspectratio>
                         <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(212).ListItem.thumb]</texture>
                         <include>ThumbBorder</include>
                     </control>
@@ -677,7 +677,7 @@
                         <width>520</width>
                         <height>723</height>
                         <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(411).ListItem.thumb]</texture>
-                        <aspectratio>scale</aspectratio>
+                        <aspectratio>keep</aspectratio>
                         <include>ThumbBorder</include>
                     </control>
                     <control type="button">
@@ -776,7 +776,7 @@
                         <width>520</width>
                         <height>723</height>
                         <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(412).ListItem.thumb]</texture>
-                        <aspectratio>scale</aspectratio>
+                        <aspectratio>keep</aspectratio>
                         <include>ThumbBorder</include>
                     </control>
                     <control type="button">

@@ -65,7 +65,7 @@
                         <posy>183</posy>
                         <width>450</width>
                         <height>450</height>
-                        <aspectratio>scale</aspectratio>
+                        <aspectratio>keep</aspectratio>
                         <include>SquareThumb</include>
                     </control>
                     <control type="group">
@@ -320,7 +320,7 @@
                         <posy>183</posy>
                         <width>450</width>
                         <height>450</height>
-                        <aspectratio>scale</aspectratio>
+                        <aspectratio>keep</aspectratio>
                         <include>SquareThumb</include>
                     </control>
                     <control type="group">

@@ -1982,7 +1982,7 @@
                             <posy>120</posy>
                             <width>464</width>
                             <height>396</height>
-                            <aspectratio aligny="center">scale</aspectratio>
+                            <aspectratio>scale</aspectratio>
                             <texture>$INFO[ListItem.Thumb]</texture>
                             <include>ThumbBorder</include>
                         </control>
@@ -2077,7 +2077,7 @@
                             <width>1133</width>
                             <width>464</width>
                             <height>238</height>
-                            <aspectratio aligny="center">scale</aspectratio>
+                            <aspectratio>scale</aspectratio>
                             <texture>$INFO[ListItem.Thumb]</texture>
                             <include>ThumbBorder</include>
                         </control>
