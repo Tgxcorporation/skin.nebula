@@ -18,7 +18,7 @@
                 <width>295</width>
                 <height>396</height>
                 <texture background="true" fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
-                <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                <aspectratio>keep</aspectratio>
                 <include>ThumbBorder</include>
             </control>
         </itemlayout>
@@ -30,7 +30,7 @@
                 <posy>120</posy>
                 <width>490</width>
                 <height>396</height>
-                <aspectratio aligny="center">scale</aspectratio>
+                <aspectratio>scale</aspectratio>
                 <colordiffuse>90ffffff</colordiffuse>
                 <include>PosterThumbBig</include>
                 <include>ThumbBorder</include>
@@ -55,7 +55,7 @@
                 <width>295</width>
                 <height>396</height>
                 <texture background="true" fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
-                <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                <aspectratio>keep</aspectratio>
                 <include>ThumbBorder</include>
             </control>
         </itemlayout>
@@ -67,7 +67,7 @@
                 <posy>120</posy>
                 <width>490</width>
                 <height>396</height>
-                <aspectratio aligny="center">scale</aspectratio>
+                <aspectratio>scale</aspectratio>
                 <colordiffuse>90ffffff</colordiffuse>
                 <include>PosterThumbBig</include>
                 <include>ThumbBorder</include>
@@ -92,7 +92,7 @@
                 <width>295</width>
                 <height>396</height>
                 <texture background="true" fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
-                <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                <aspectratio>keep</aspectratio>
                 <include>ThumbBorder</include>
             </control>
         </itemlayout>
@@ -104,7 +104,7 @@
                 <posy>120</posy>
                 <width>490</width>
                 <height>396</height>
-                <aspectratio aligny="center">scale</aspectratio>
+                <aspectratio>scale</aspectratio>
                 <colordiffuse>90ffffff</colordiffuse>
                 <include>PosterThumbBig</include>
                 <include>ThumbBorder</include>
@@ -129,7 +129,7 @@
                 <width>295</width>
                 <height>396</height>
                 <texture background="true" fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
-                <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                <aspectratio>keep</aspectratio>
                 <include>ThumbBorder</include>
             </control>
         </itemlayout>
@@ -141,7 +141,7 @@
                 <posy>120</posy>
                 <width>490</width>
                 <height>396</height>
-                <aspectratio aligny="center">scale</aspectratio>
+                <aspectratio>scale</aspectratio>
                 <colordiffuse>90ffffff</colordiffuse>
                 <include>PosterThumbBig</include>
                 <include>ThumbBorder</include>
@@ -164,7 +164,7 @@
                 <posy>120</posy>
                 <width>295</width>
                 <height>295</height>
-                <aspectratio>scale</aspectratio>
+                <aspectratio>keep</aspectratio>
                 <texture background="true" fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <include>ThumbBorder</include>
             </control>
@@ -177,7 +177,7 @@
                 <posy>120</posy>
                 <width>490</width>
                 <height>295</height>
-                <aspectratio aligny="center">stretch</aspectratio>
+                <aspectratio>scale</aspectratio>
                 <colordiffuse>90ffffff</colordiffuse>
                 <include>PosterThumbBig</include>
                 <include>ThumbBorder</include>
@@ -200,7 +200,7 @@
                 <posy>120</posy>
                 <width>295</width>
                 <height>295</height>
-                <aspectratio>scale</aspectratio>
+                <aspectratio>keep</aspectratio>
                 <texture background="true" fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <include>ThumbBorder</include>
             </control>
@@ -213,7 +213,7 @@
                 <posy>120</posy>
                 <width>490</width>
                 <height>295</height>
-                <aspectratio aligny="center">stretch</aspectratio>
+                <aspectratio>scale</aspectratio>
                 <colordiffuse>90ffffff</colordiffuse>
                 <include>PosterThumbBig</include>
                 <include>ThumbBorder</include>
@@ -236,7 +236,7 @@
                 <posy>120</posy>
                 <width>295</width>
                 <height>295</height>
-                <aspectratio>scale</aspectratio>
+                <aspectratio>keep</aspectratio>
                 <texture background="true" fallback="white/common/BlackDotT.png">$VAR[Thumbs]</texture>
                 <include>ThumbBorder</include>
             </control>
@@ -248,7 +248,7 @@
                 <posy>120</posy>
                 <width>490</width>
                 <height>295</height>
-                <aspectratio aligny="center">stretch</aspectratio>
+                <aspectratio>scale</aspectratio>
                 <colordiffuse>90ffffff</colordiffuse>
                 <include>PosterThumbBig</include>
                 <include>ThumbBorder</include>
