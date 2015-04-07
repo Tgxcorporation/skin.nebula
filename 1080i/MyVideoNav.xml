@@ -20,8 +20,8 @@
                 <include>View_52_ShortList</include>
                 <include>Info_52_ShortList</include>
                 <include>View_59_Showcase</include>
-                <include condition="Container.Content(tvshows)|[Container.Content(movies)+![Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)]]">View_56_BannerList</include>
-                <include condition="Container.Content(tvshows)|[Container.Content(movies)+![Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)]]">Info_56_BannerList</include>
+                <include>View_56_BannerList</include>
+                <include>Info_56_BannerList</include>
                 <include>View_53_Grid</include>
                 <include>Info_53_Grid</include>
                 <include>View_54_Fanart</include>
