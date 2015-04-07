@@ -245,26 +245,6 @@
                     <height>330</height>
                     <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
                 </control>
-                <control type="group">
-                    <!-- CLEAR ART -->
-                    <visible>Skin.HasSetting(EnableClearArt)</visible>
-                    <control type="image">
-                        <posx>1560</posx>
-                        <posy>407</posy>
-                        <width>300</width>
-                        <height>235</height>
-                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <texture background="true">$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
-                    </control>
-                    <control type="image">
-                        <posx>1560</posx>
-                        <posy>407</posy>
-                        <width>300</width>
-                        <height>235</height>
-                        <texture background="true">$INFO[ListItem.Art(clearart)]</texture>
-                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    </control>
-                </control>
                 <control type="image">
                     <posx>-35</posx>
                     <posy>609</posy>
@@ -314,6 +294,31 @@
                 <height>183</height>
                 <colordiffuse>$VAR[OverlayStripTransparency]</colordiffuse>
                 <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
+            </control>
+            <control type="group">
+                <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="-660,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">conditional</animation>
+                <!-- CLEAR ART -->
+                <control type="image">
+                    <visible>Skin.HasSetting(EnableClearArt)</visible>
+                    <fadetime>250</fadetime>
+                    <posx>645r</posx>
+                    <posy>40</posy>
+                    <width>300</width>
+                    <height>110</height>
+                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <texture background="true">$VAR[DefaultClearArt]</texture>
+                </control>
+                <!-- CLEAR LOGO -->
+                <control type="image">
+                    <visible>Skin.HasSetting(EnableClearLogo)</visible>
+                    <fadetime>250</fadetime>
+                    <posx>455</posx>
+                    <posy>40</posy>
+                    <width>300</width>
+                    <height>110</height>
+                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <texture background="true">$VAR[DefaultClearLogo]</texture>
+                </control>
             </control>
             <control type="scrollbar" id="60">
                 <posx>0</posx>
