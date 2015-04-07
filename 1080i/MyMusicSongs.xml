@@ -104,6 +104,13 @@
                     <label>$LOCALIZE[16003]</label>
                     <onclick>fullscreen</onclick>
                 </control>
+                <control type="button" id="612">
+                    <description>Go to playlist</description>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[13350]</label>
+                    <onclick>ActivateWindow(musicplaylist)</onclick>
+                    <visible>!StringCompare(Playlist.Length(music),0)</visible>
+                </control>
             </control>
             <include>LeftMenuScroller</include>
         </control>
