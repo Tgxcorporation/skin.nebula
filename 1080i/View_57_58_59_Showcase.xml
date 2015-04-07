@@ -180,6 +180,38 @@
             </control>
             <control type="group">
                 <control type="group">
+                    <!-- CLEAR ART -->
+                    <control type="image">
+                        <visible>Skin.HasSetting(EnableClearArt)</visible>
+                        <fadetime>250</fadetime>
+                        <posx>645r</posx>
+                        <posy>34</posy>
+                        <width>300</width>
+                        <height>149</height>
+                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                        <texture background="true">$VAR[DefaultClearArt]</texture>
+                    </control>
+                    <!-- CLEAR LOGO -->
+                    <control type="image">
+                        <visible>Skin.HasSetting(EnableClearLogo)</visible>
+                        <fadetime>250</fadetime>
+                        <posx>600</posx>
+                        <posy>34</posy>
+                        <width>300</width>
+                        <height>149</height>
+                        <aspectratio align="left" aligny="bottom">keep</aspectratio>
+                        <texture background="true">$VAR[DefaultClearLogo]</texture>
+                    </control>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(EnableClearLogo)|Skin.HasSetting(EnableClearArt)</visible>
+                    <posx>0</posx>
+                    <posy>142</posy>
+                    <width>1920</width>
+                    <height>1092</height>
+                    <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+                </control>
+                <control type="group">
                     <!-- CDART -->
                     <visible>!Skin.HasSetting(plexbmc)</visible>
                     <visible>!StringCompare(ListItem.Label,..)</visible>
@@ -241,8 +273,8 @@
                     <posy>720</posy>
                     <control type="image">
                         <!--<visible>[Container.content(MusicVideos) | Container.Content(movies) | Container.Content(episodes)]</visible>-->
-                        <posx>TextMargin</posx>
-                        <posy>-47</posy>
+                        <posx>-2</posx>
+                        <posy>11</posy>
                         <width>33</width>
                         <height>33</height>
                         <texture>$VAR[Overlay]</texture>
@@ -418,6 +450,30 @@
                 <include>HorizontalScroller</include>
                 <onup>58</onup>
                 <ondown>505050</ondown>
+            </control>
+            <control type="group">
+                <!-- CLEAR ART -->
+                <control type="image">
+                    <visible>Skin.HasSetting(EnableClearArt)</visible>
+                    <fadetime>250</fadetime>
+                    <posx>645r</posx>
+                    <posy>34</posy>
+                    <width>300</width>
+                    <height>149</height>
+                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <texture background="true">$VAR[DefaultClearArt]</texture>
+                </control>
+                <!-- CLEAR LOGO -->
+                <control type="image">
+                    <visible>Skin.HasSetting(EnableClearLogo)</visible>
+                    <fadetime>250</fadetime>
+                    <posx>560</posx>
+                    <posy>34</posy>
+                    <width>300</width>
+                    <height>149</height>
+                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
+                    <texture background="true">$VAR[DefaultClearLogo]</texture>
+                </control>
             </control>
             <control type="group">
                 <control type="group">
@@ -664,6 +720,38 @@
                 <ondown>505050</ondown>
             </control>
             <control type="group">
+                <!-- CLEAR ART -->
+                <control type="image">
+                    <visible>Skin.HasSetting(EnableClearArt)</visible>
+                    <fadetime>250</fadetime>
+                    <posx>645r</posx>
+                    <posy>34</posy>
+                    <width>300</width>
+                    <height>149</height>
+                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <texture background="true">$VAR[DefaultClearArt]</texture>
+                </control>
+                <!-- CLEAR LOGO -->
+                <control type="image">
+                    <visible>Skin.HasSetting(EnableClearLogo)</visible>
+                    <fadetime>250</fadetime>
+                    <posx>560</posx>
+                    <posy>34</posy>
+                    <width>300</width>
+                    <height>149</height>
+                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <texture background="true">$VAR[DefaultClearLogo]</texture>
+                </control>
+            </control>
+            <control type="image">
+                <visible>Skin.HasSetting(EnableClearLogo)|Skin.HasSetting(EnableClearArt)</visible>
+                <posx>0</posx>
+                <posy>142</posy>
+                <width>1920</width>
+                <height>1092</height>
+                <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+            </control>
+            <control type="group">
                 <control type="image">
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(57)">
                         <include>CoverWrapFocusAnimationEpisode</include>
@@ -694,8 +782,8 @@
                     <posx>0</posx>
                     <posy>720</posy>
                     <control type="image">
-                        <posx>TextMargin</posx>
-                        <posy>-47</posy>
+                        <posx>16</posx>
+                        <posy>11</posy>
                         <width>33</width>
                         <height>33</height>
                         <texture>$VAR[Overlay]</texture>

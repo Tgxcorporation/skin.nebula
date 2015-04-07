@@ -16,6 +16,7 @@
     <variable name="Banner">
         <value condition="StringCompare(ListItem.Label,..)+[Container.Content(TVShows)|Container.Content(movies)]">$VAR[Theme.Color]/defaultFolderBackBanner.png</value>
         <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+        <value condition="Container.Content(episodes)">$INFO[ListItem.Art(tvshow.banner)]</value>
         <value condition="Skin.HasSetting(plexbmc)">$INFO[ListItem.Property(banner)]</value>
         <value>$INFO[ListItem.Art(thumb)]</value>
     </variable>
@@ -527,5 +528,26 @@
     <variable name="YouTubeContent">
         <value condition="Container.Content(albums)">plugin://script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] $ESCINFO[ListItem.Album]</value>
         <value>plugin://script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] Music</value>
+    </variable>
+    <variable name="VideoPlayerClearArt">
+        <value condition="VideoPlayer.Content(episodes) + !IsEmpty(Player.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearart)]</value>
+        <value>$INFO[Player.Art(clearart)]</value>
+    </variable>
+    <variable name="VideoPlayerClearLogo">
+        <value condition="VideoPlayer.Content(episodes)+!IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearlogo)]</value>
+        <value>$INFO[Player.Art(clearlogo)]</value>
+    </variable>
+    <variable name="MusicPlayerClearArt">
+        <value condition="!IsEmpty(MusicPlayer.Art(clearart))">$INFO[MusicPlayer.Art(clearart)]</value>
+        <value>$INFO[Skin.String(cdartPath)]$INFO[MusicPlayer.Artist,,/logo.png]</value>
+    </variable>
+    <variable name="DefaultClearArt">
+        <value condition="Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)">$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</value>
+        <value condition="Window.IsActive(MyVideoNav.xml)+Container.Content(episodes)+!IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[ListItem.Art(tvshow.clearart)]</value>
+        <value>$INFO[ListItem.Art(clearart)]</value>
+    </variable>
+    <variable name="DefaultClearLogo">
+        <value condition="Window.IsActive(MyVideoNav.xml)+Container.Content(episodes)">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+        <value>$INFO[ListItem.Art(clearlogo)]</value>
     </variable>
 </includes>

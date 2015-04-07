@@ -44,22 +44,24 @@
             </control> -->
             <control type="group">
                 <!-- CLEAR ART -->
-                <visible>Skin.HasSetting(EnableClearArt)</visible>
                 <control type="image">
+                    <visible>Skin.HasSetting(EnableClearArt)</visible>
                     <posx>1560</posx>
                     <posy>407</posy>
                     <width>300</width>
                     <height>235</height>
                     <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <texture background="true">$INFO[Skin.String(cdartPath)]$INFO[Player.Artist,,/logo.png]</texture>
+                    <texture background="true">$VAR[VideoPlayerClearArt]</texture>
                 </control>
+                <!-- CLEAR LOGO -->
                 <control type="image">
-                    <posx>1560</posx>
+                    <visible>Skin.HasSetting(EnableClearLogo)</visible>
+                    <posx>455</posx>
                     <posy>407</posy>
                     <width>300</width>
                     <height>235</height>
-                    <texture background="true">$INFO[Player.Art(clearart)]</texture>
-                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
+                    <texture background="true">$VAR[VideoPlayerClearLogo]</texture>
                 </control>
             </control>
             <control type="image">
