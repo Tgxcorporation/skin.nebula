@@ -112,6 +112,13 @@
                     <label>$LOCALIZE[16003]</label>
                     <onclick>fullscreen</onclick>
                 </control>
+                <control type="button" id="612">
+                    <description>Go to playlist</description>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[13350]</label>
+                    <onclick>ActivateWindow(videoplaylist)</onclick>
+                    <visible>!StringCompare(Playlist.Length(video),0)</visible>
+                </control>
                 <control type="radiobutton" id="11">
                     <description>Unlock Shares</description>
                     <textwidth>450</textwidth>
