@@ -3547,35 +3547,35 @@
                 </focusedlayout>
                 <content>
                     <item id="1">
-                        <label>$LOCALIZE[20077]</label>
+                        <label>[CAPITALIZE]$LOCALIZE[20077][/CAPITALIZE]</label>
                         <onclick>noop</onclick>
                     </item>
                     <item id="3">
-                        <label>$LOCALIZE[31974]</label>
+                        <label>[CAPITALIZE]$LOCALIZE[31974][/CAPITALIZE]</label>
                         <onclick>noop</onclick>
                     </item>
                     <item id="12">
-                        <label>$LOCALIZE[31948]</label>
+                        <label>[CAPITALIZE]$LOCALIZE[31948][/CAPITALIZE]</label>
                         <onclick>noop</onclick>
                     </item>
                     <item id="5">
-                        <label>$LOCALIZE[31976]</label>
+                        <label>[CAPITALIZE]$LOCALIZE[31976][/CAPITALIZE]</label>
                         <onclick>noop</onclick>
                     </item>
                     <item id="4">
-                        <label>$LOCALIZE[33069]</label>
+                        <label>[CAPITALIZE]$LOCALIZE[33069][/CAPITALIZE]</label>
                         <onclick>noop</onclick>
                     </item>
                     <item id="10">
-                        <label>$LOCALIZE[10000] - $LOCALIZE[536]</label>
+                        <label>[CAPITALIZE]$LOCALIZE[10000] - $LOCALIZE[536][/CAPITALIZE]</label>
                         <onclick>noop</onclick>
                     </item>
                     <item id="7">
-                        <label>$LOCALIZE[31990]</label>
+                        <label>[CAPITALIZE]$LOCALIZE[31990][/CAPITALIZE]</label>
                         <onclick>noop</onclick>
                     </item>
                     <item id="13">
-                        <label>$LOCALIZE[21895]</label>
+                        <label>[CAPITALIZE]$LOCALIZE[21895][/CAPITALIZE]</label>
                         <onclick>noop</onclick>
                     </item>
                     <item id="9">
