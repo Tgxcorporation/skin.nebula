@@ -329,16 +329,19 @@
                             <onclick>Skin.ToggleSetting(Fixed_HomeMenu)</onclick>
                         </item>
                         <item id="12">
+                            <visible>!Skin.HasSetting(plexbmc)</visible>
                             <label>$LOCALIZE[31507]</label>
                             <label2 fallback="31502">$VAR[MovieEntryPointLabel2]</label2>
                             <onclick>ActivateWindow(1115)</onclick>
                         </item>
                         <item id="30">
+                            <visible>!Skin.HasSetting(plexbmc)</visible>
                             <label>$LOCALIZE[31514]</label>
                             <label2 fallback="31513">$VAR[MusicEntryPointLabel2]</label2>
                             <onclick>ActivateWindow(1116)</onclick>
                         </item>
                         <item id="31">
+                            <visible>!Skin.HasSetting(plexbmc)</visible>
                             <label>$LOCALIZE[31515]</label>
                             <label2 fallback="31516">$VAR[TvShowEntryPointLabel2]</label2>
                             <onclick>ActivateWindow(1117)</onclick>
@@ -553,6 +556,11 @@
                             <label/>
                             <label2>$LOCALIZE[31985]</label2>
                             <onclick>noop</onclick>
+                        </item>
+                        <item id="32">
+                            <label>$LOCALIZE[512]</label>
+                            <label2 fallback="31517">$VAR[StartupWindowName]</label2>
+                            <onclick>ActivateWindow(1120)</onclick>
                         </item>
                         <item id="93">
                             <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
