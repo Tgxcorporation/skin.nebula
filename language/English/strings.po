@@ -429,7 +429,11 @@ msgctxt "#31516"
 msgid "All Tv Shows"
 msgstr ""
 
-#empty strings from id 31517 to 31900
+msgctxt "#31517"
+msgid "Defined by General Settings"
+msgstr ""
+
+#empty strings from id 31518 to 31900
 
 #Weather plugin
 
