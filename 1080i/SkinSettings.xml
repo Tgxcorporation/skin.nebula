@@ -1629,6 +1629,13 @@
                                 <thumb>$INFO[Skin.String(Videos.Background)]</thumb>
                             </item>
                             <item id="2">
+                                <visible>Skin.HasSetting(plexbmc)</visible>
+                                <label>$LOCALIZE[20342]</label>
+                                <onclick>Setfocus(3000)</onclick>
+                                <icon>special://skin/backgrounds/Movies.jpg</icon>
+                                <thumb>$INFO[Skin.String(Movies.Background)]</thumb>
+                            </item>
+                            <item id="2">
                                 <visible>!Skin.HasSetting(plexbmc)</visible>
                                 <visible>!Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)</visible>
                                 <label>$LOCALIZE[20342]</label>
@@ -1637,12 +1644,26 @@
                                 <thumb>$INFO[Skin.String(Movies.Background)]</thumb>
                             </item>
                             <item id="3">
+                                <visible>Skin.HasSetting(plexbmc)</visible>
+                                <label>$LOCALIZE[20343]</label>
+                                <onclick>Setfocus(3000)</onclick>
+                                <icon>special://skin/backgrounds/TVShows.jpg</icon>
+                                <thumb>$INFO[Skin.String(TVShows.Background)]</thumb>
+                            </item>
+                            <item id="3">
                                 <visible>!Skin.HasSetting(plexbmc)</visible>
                                 <visible>!Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)</visible>
                                 <label>$LOCALIZE[20343]</label>
                                 <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/TVShows.jpg</icon>
                                 <thumb>$INFO[Skin.String(TVShows.Background)]</thumb>
+                            </item>
+                            <item id="4">
+                                <visible>Skin.HasSetting(plexbmc)</visible>
+                                <label>$LOCALIZE[2]</label>
+                                <onclick>Setfocus(3000)</onclick>
+                                <icon>special://skin/backgrounds/Music.jpg</icon>
+                                <thumb>$INFO[Skin.String(Music.Background)]</thumb>
                             </item>
                             <item id="4">
                                 <visible>!Skin.HasSetting(plexbmc)</visible>
@@ -1665,6 +1686,13 @@
                                 <onclick>Setfocus(3000)</onclick>
                                 <icon>special://skin/backgrounds/Concerts.jpg</icon>
                                 <thumb>$INFO[Skin.String(Concerts.Background)]</thumb>
+                            </item>
+                            <item id="5">
+                                <visible>Skin.HasSetting(plexbmc)</visible>
+                                <label>$LOCALIZE[1]</label>
+                                <onclick>Setfocus(3000)</onclick>
+                                <icon>special://skin/backgrounds/Pictures.jpg</icon>
+                                <thumb>$INFO[Skin.String(Pictures.Background)]</thumb>
                             </item>
                             <item id="5">
                                 <visible>!Skin.HasSetting(plexbmc)</visible>
@@ -1793,77 +1821,77 @@
                             </item>
                             <item id="60">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.0.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.0.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.0.title)] (Plex)</label>
                                 <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.0.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.0.Background)]</thumb>
                             </item>
                             <item id="61">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.1.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.1.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.1.title)] (Plex)</label>
                                 <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.1.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.1.Background)]</thumb>
                             </item>
                             <item id="62">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.2.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.2.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.2.title)] (Plex)</label>
                                 <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.2.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.2.Background)]</thumb>
                             </item>
                             <item id="63">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.3.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.3.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.3.title)] (Plex)</label>
                                 <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.3.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.3.Background)]</thumb>
                             </item>
                             <item id="64">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.4.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.4.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.4.title)] (Plex)</label>
                                 <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.4.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.4.Background)]</thumb>
                             </item>
                             <item id="65">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.5.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.5.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.5.title)] (Plex)</label>
                                 <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.5.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.5.Background)]</thumb>
                             </item>
                             <item id="66">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.6.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.6.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.6.title)] (Plex)</label>
                                 <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.6.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.6.Background)]</thumb>
                             </item>
                             <item id="67">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.7.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.7.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.7.title)] (Plex)</label>
                                 <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.7.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.7.Background)]</thumb>
                             </item>
                             <item id="68">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.8.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.8.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.8.title)] (Plex)</label>
                                 <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.8.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.8.Background)]</thumb>
                             </item>
                             <item id="69">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.9.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.9.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.9.title)] (Plex)</label>
                                 <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.9.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.9.Background)]</thumb>
                             </item>
                             <item id="70">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.10.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.10.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.10.title)] (Plex)</label>
                                 <onclick>Setfocus(3000)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.10.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.10.Background)]</thumb>
@@ -2321,77 +2349,77 @@
                             </item>
                             <item id="60">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.0.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.0.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.0.title)] (Plex)</label>
                                 <onclick>Setfocus(300)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.0.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.0.Icon)]</thumb>
                             </item>
                             <item id="61">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.1.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.1.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.1.title)] (Plex)</label>
                                 <onclick>Setfocus(300)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.1.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.1.Icon)]</thumb>
                             </item>
                             <item id="62">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.2.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.2.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.2.title)] (Plex)</label>
                                 <onclick>Setfocus(300)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.2.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.2.Icon)]</thumb>
                             </item>
                             <item id="63">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.3.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.3.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.3.title)] (Plex)</label>
                                 <onclick>Setfocus(300)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.3.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.3.Icon)]</thumb>
                             </item>
                             <item id="64">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.4.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.4.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.4.title)] (Plex)</label>
                                 <onclick>Setfocus(300)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.4.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.4.Icon)]</thumb>
                             </item>
                             <item id="65">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.5.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.5.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.5.title)] (Plex)</label>
                                 <onclick>Setfocus(300)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.5.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.5.Icon)]</thumb>
                             </item>
                             <item id="66">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.6.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.6.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.6.title)] (Plex)</label>
                                 <onclick>Setfocus(300)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.6.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.6.Icon)]</thumb>
                             </item>
                             <item id="67">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.7.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.7.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.7.title)] (Plex)</label>
                                 <onclick>Setfocus(300)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.7.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.7.Icon)]</thumb>
                             </item>
                             <item id="68">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.8.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.8.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.8.title)] (Plex)</label>
                                 <onclick>Setfocus(300)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.8.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.8.Icon)]</thumb>
                             </item>
                             <item id="69">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.9.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.9.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.9.title)] (Plex)</label>
                                 <onclick>Setfocus(300)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.9.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.9.Icon)]</thumb>
                             </item>
                             <item id="70">
                                 <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.10.title))</visible>
-                                <label>$INFO[Window(Home).Property(plexbmc.10.title)]</label>
+                                <label>$INFO[Window(Home).Property(plexbmc.10.title)] (Plex)</label>
                                 <onclick>Setfocus(300)</onclick>
                                 <icon>$INFO[Window(Home).Property(plexbmc.10.art)]</icon>
                                 <thumb>$INFO[Skin.String(Plexbmc.10.Icon)]</thumb>
