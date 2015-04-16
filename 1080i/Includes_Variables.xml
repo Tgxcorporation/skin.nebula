@@ -305,6 +305,7 @@
         <value condition="StringCompare(Container(300).ListItem.Property(Background),Radio.Art)">$VAR[Radio.Art]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(Background),Music.Art)">$VAR[Music.Art]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(Background),Clips.Art)">$VAR[Clips.Art]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(Background),Concerts.Art)">$VAR[Concerts.Art]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(Background),Weather.Art)">$VAR[Weather.Art]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(Background),Addons.Art)">$VAR[Addons.Art]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(Background),DVD.Art)">$VAR[DVD.Art]</value>
@@ -330,6 +331,7 @@
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Radio.Art)">$VAR[Radio.Art]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Music.Art)">$VAR[Music.Art]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Clips.Art)">$VAR[Clips.Art]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(Background),Concerts.Art)">$VAR[Concerts.Art]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Weather.Art)">$VAR[Weather.Art]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Addons.Art)">$VAR[Addons.Art]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),DVD.Art)">$VAR[DVD.Art]</value>
@@ -355,7 +357,8 @@
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Radio.Art)">$LOCALIZE[13278] / $ADDON[script.skinshortcuts 32087]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Music.Art)">$LOCALIZE[13278] / $LOCALIZE[10005]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Clips.Art)">$LOCALIZE[13278] / $LOCALIZE[31972]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(Background),Weather.Art)">$LOCALIZE[13278] / $LOCALIZE[31971]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(Background),Concerts.Art)">$LOCALIZE[13278] / $LOCALIZE[31971]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(Background),Weather.Art)">$LOCALIZE[13278] / $LOCALIZE[8]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Addons.Art)">$LOCALIZE[13278] / $LOCALIZE[24001]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),DVD.Art)">$LOCALIZE[13278] / $ADDON[script.skinshortcuts 32032]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Settings.Art)">$LOCALIZE[13278] / $LOCALIZE[10006]</value>
