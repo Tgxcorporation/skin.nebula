@@ -96,8 +96,6 @@ msgctxt "#31019"
 msgid "Enable Rss ticker on main screens (only in list views)"
 msgstr ""
 
-#empty strings from id 31020 to 31019
-
 msgctxt "#31020"
 msgid "Recently Added"
 msgstr ""
@@ -146,7 +144,13 @@ msgctxt "#31031"
 msgid "Disable media infos in Icon View"
 msgstr ""
 
-#empty strings from id 31032 to 31033
+msgctxt "#31032"
+msgid "Startup"
+msgstr ""
+
+msgctxt "#31033"
+msgid "Startup Screen Type"
+msgstr ""
 
 msgctxt "#31034"
 msgid "Customize menu items and widgets"
@@ -275,7 +279,19 @@ msgctxt "#31066"
 msgid "Move right"
 msgstr ""
 
-#empty strings from id 31067 to 31089
+msgctxt "#31067"
+msgid "Custom Image"
+msgstr ""
+
+msgctxt "#31068"
+msgid "Custom Video"
+msgstr ""
+
+msgctxt "#31069"
+msgid "Startup Playlist"
+msgstr ""
+
+#empty strings from id 31070 to 31089
 #Viewtype
 
 msgctxt "#31090"

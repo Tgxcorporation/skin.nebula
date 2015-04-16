@@ -134,6 +134,28 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(DisableIconViewInfos)</onclick>
                         </item>
+                        <item id="194">
+                            <visible>!Skin.HasSetting(EnableKioskMode)</visible>
+                            <label>$LOCALIZE[31030]</label>
+                            <label2>$LOCALIZE[106]</label2>
+                            <onclick>Skin.ToggleSetting(EnableKioskMode)</onclick>
+                        </item>
+                        <item id="194">
+                            <visible>Skin.HasSetting(EnableKioskMode)</visible>
+                            <label>$LOCALIZE[31030]</label>
+                            <label2>$LOCALIZE[107]</label2>
+                            <onclick>Skin.ToggleSetting(EnableKioskMode)</onclick>
+                        </item>
+                        <item id="1005">
+                            <label/>
+                            <label2>$LOCALIZE[19098]</label2>
+                            <onclick>noop</onclick>
+                        </item>
+                        <item id="125">
+                            <label>$LOCALIZE[31038]</label>
+                            <onclick>Skin.ResetSettings</onclick>
+                            <onclick>XBMC.ReloadSkin()</onclick>
+                        </item>
                     </content>
                 </control>
                 <control type="scrollbar" id="501">
@@ -418,7 +440,7 @@
                     <include>VerticalScroller</include>
                 </control>
 
-                <!-- ADVANCED -->
+                <!-- STARTUP -->
                 <control type="group">
                     <visible>Container(9000).HasFocus(6)</visible>
                     <!--<include>Icon_Fade</include>-->
@@ -453,39 +475,74 @@
                                 <label2>$LOCALIZE[305]</label2>
                                 <onclick>Skin.ToggleSetting(Use.FastStart)</onclick>
                             </item>
-                            <item id="94">
-                                <visible>!Skin.HasSetting(Hide.LibraryUpdate.Button)</visible>
-                                <label>$LOCALIZE[31957]</label>
-                                <label2>$LOCALIZE[106]</label2>
-                                <onclick>Skin.ToggleSetting(Hide.LibraryUpdate.Button)</onclick>
+                            <!--DEFAULT IMAGE STARTUP-->
+                            <item id="200">
+                                <visible>IsEmpty(Skin.String(startup-screentype))|StringCompare(Skin.String(startup-screentype),default)</visible>
+                                <label>$LOCALIZE[31033]</label>
+                                <label2>$LOCALIZE[13278]</label2>
+                                <onclick>Skin.SetString(startup-screentype,image)</onclick>
                             </item>
-                            <item id="94">
-                                <visible>Skin.HasSetting(Hide.LibraryUpdate.Button)</visible>
-                                <label>$LOCALIZE[31957]</label>
-                                <label2>$LOCALIZE[107]</label2>
-                                <onclick>Skin.ToggleSetting(Hide.LibraryUpdate.Button)</onclick>
+                            <!--Custom IMAGE STARTUP-->
+                            <item id="201">
+                                <visible>StringCompare(Skin.String(startup-screentype),image)</visible>
+                                <label>$LOCALIZE[31033]</label>
+                                <label2>$LOCALIZE[31067]</label2>
+                                <onclick>Skin.SetString(startup-screentype,video)</onclick>
                             </item>
-                            <item id="194">
-                                <visible>!Skin.HasSetting(EnableKioskMode)</visible>
-                                <label>$LOCALIZE[31030]</label>
-                                <label2>$LOCALIZE[106]</label2>
-                                <onclick>Skin.ToggleSetting(EnableKioskMode)</onclick>
+                            <!--Custom VIDEO STARTUP-->
+                            <item id="202">
+                                <visible>StringCompare(Skin.String(startup-screentype),video)</visible>
+                                <label>$LOCALIZE[31033]</label>
+                                <label2>$LOCALIZE[31068]</label2>
+                                <onclick>Skin.SetString(startup-screentype,default)</onclick>
                             </item>
-                            <item id="194">
-                                <visible>Skin.HasSetting(EnableKioskMode)</visible>
-                                <label>$LOCALIZE[31030]</label>
-                                <label2>$LOCALIZE[107]</label2>
-                                <onclick>Skin.ToggleSetting(EnableKioskMode)</onclick>
+                            <!--Custom Image Selector-->
+                            <item id="203">
+                                <visible>StringCompare(Skin.String(startup-screentype),image)</visible>
+                                <label>$LOCALIZE[31067] - $LOCALIZE[21801]</label>
+                                <label2>$INFO[Skin.String(startup-imagepath)]</label2>
+                                <onclick>Skin.SetImage(startup-imagepath)</onclick>
                             </item>
-                            <item id="1005">
-                                <label/>
-                                <label2>$LOCALIZE[19098]</label2>
-                                <onclick>noop</onclick>
+                            <!--Custom Image Selector-->
+                            <item id="204">
+                                <visible>StringCompare(Skin.String(startup-screentype),video)</visible>
+                                <label>$LOCALIZE[31068] - $LOCALIZE[21801]</label>
+                                <label2>$INFO[Skin.String(startup-videopath)]</label2>
+                                <onclick>Skin.SetFile(startup-videopath)</onclick>
                             </item>
-                            <item id="125">
-                                <label>$LOCALIZE[31038]</label>
-                                <onclick>Skin.ResetSettings</onclick>
-                                <onclick>XBMC.ReloadSkin()</onclick>
+                            <!--PLAYLIST STARTUP-->
+                            <item id="205">
+                                <visible>!Skin.HasSetting(startup-playlist)</visible>
+                                <label>$LOCALIZE[31069]</label>
+                                <label2>$LOCALIZE[13106]</label2>
+                                <onclick>Skin.ToggleSetting(startup-playlist)</onclick>
+                                <onclick>Skin.SetString(startup-playlisttype,music)</onclick>
+                            </item>
+                            <item id="205">
+                                <visible>Skin.HasSetting(startup-playlist)+StringCompare(Skin.String(startup-playlisttype),music)</visible>
+                                <label>$LOCALIZE[31069]</label>
+                                <label2>$LOCALIZE[10500]</label2>
+                                <onclick>Skin.SetString(startup-playlisttype,video)</onclick>
+                            </item>
+                            <item id="205">
+                                <visible>Skin.HasSetting(startup-playlist)+StringCompare(Skin.String(startup-playlisttype),video)</visible>
+                                <label>$LOCALIZE[31069]</label>
+                                <label2>$LOCALIZE[10028]</label2>
+                                <onclick>Skin.ToggleSetting(startup-playlist)</onclick>
+                            </item>
+                            <!-- MUSIC Playlist Selector-->
+                            <item id="206">
+                                <visible>Skin.HasSetting(startup-playlist)+StringCompare(Skin.String(startup-playlisttype),music)</visible>
+                                <label>$LOCALIZE[10500]</label>
+                                <label2>$INFO[Skin.String(startup-musicplaylistpath)]</label2>
+                                <onclick>Skin.SetFile(startup-musicplaylistpath,,special://musicplaylists)</onclick>
+                            </item>
+                            <!-- VIDEO Playlist Selector-->
+                            <item id="206">
+                                <visible>Skin.HasSetting(startup-playlist)+StringCompare(Skin.String(startup-playlisttype),video)</visible>
+                                <label>$LOCALIZE[10028]</label>
+                                <label2>$INFO[Skin.String(startup-videoplaylistpath)]</label2>
+                                <onclick>Skin.SetFile(startup-videoplaylistpath,,special://videoplaylists)</onclick>
                             </item>
                         </content>
                     </control>
@@ -880,7 +937,7 @@
                     </control>
                 </control>
 
-                <!-- SHELF -->
+                <!-- HOME -->
                 <control type="panel" id="9005">
                     <visible>Container(9000).HasFocus(5)</visible>
                     <!--<include>Icon_Fade</include>-->
@@ -1283,6 +1340,11 @@
                         <label>[CAPITALIZE]$LOCALIZE[31029][/CAPITALIZE]</label>
                         <onclick>noop</onclick>
                     </item>
+                    <!--STARTUP-->
+                    <item id="6">
+                        <label>[CAPITALIZE]$LOCALIZE[31032][/CAPITALIZE]</label>
+                        <onclick>noop</onclick>
+                    </item>
                     <!--QUIT MENU-->
                     <item id="7">
                         <label>[CAPITALIZE]$LOCALIZE[31990][/CAPITALIZE]</label>
@@ -1296,11 +1358,6 @@
                     <!--THEMES-->
                     <item id="13">
                         <label>[CAPITALIZE]$LOCALIZE[21895][/CAPITALIZE]</label>
-                        <onclick>noop</onclick>
-                    </item>
-                    <!--ADVANCED-->
-                    <item id="6">
-                        <label>$LOCALIZE[31985]</label>
                         <onclick>noop</onclick>
                     </item>
                 </content>
