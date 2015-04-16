@@ -1342,7 +1342,7 @@
                     </item>
                     <!--STARTUP-->
                     <item id="6">
-                        <label>[CAPITALIZE]$LOCALIZE[31032][/CAPITALIZE]</label>
+                        <label>$LOCALIZE[31032]</label>
                         <onclick>noop</onclick>
                     </item>
                     <!--QUIT MENU-->
