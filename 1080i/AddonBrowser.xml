@@ -96,6 +96,11 @@
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[24999]</label>
                 </control>
+                <control type="label" id="9184">
+                    <include>LeftMenuTitleLabel</include>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[31508]: $INFO[Window.Property(Updated)]</label>
+                </control>
                 <control type="button" id="9">
                     <description>Check for updates</description>
                     <textwidth>450</textwidth>
