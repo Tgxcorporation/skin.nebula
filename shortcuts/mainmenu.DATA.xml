@@ -133,6 +133,15 @@
         <action>ActivateWindow(Settings)</action>
     </shortcut>
     <shortcut>
+        <visible>!Skin.HasSetting(plexbmc) + System.HasAddon(script.globalsearch)</visible>
+        <defaultID>script.globalsearch</defaultID>
+        <label>137</label>
+        <label2>Program</label2>
+        <icon>DefaultShortcut.png</icon>
+        <thumb></thumb>
+        <action>RunAddOn(script.globalsearch)</action>
+    </shortcut>
+    <shortcut>
         <defaultID>1114</defaultID>
         <label>13009</label>
         <label2>Common Shortcut</label2>
