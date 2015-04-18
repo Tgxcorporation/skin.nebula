@@ -490,7 +490,21 @@
             <visible>![Control.HasFocus(505050)]</visible>
             <include>Overlay_Fade</include>
             <control type="image">
-                <visible>![[Window.isVisible(MyWeather.xml)+Skin.String(WeatherView,fanart)]|[!Window.isVisible(MyWeather.xml)+control.isvisible(54)]]</visible>
+                <visible>![
+                    [Window.isVisible(MyWeather.xml)+Skin.String(WeatherView,fanart)]|
+                    [!Window.isVisible(MyWeather.xml)+control.isvisible(54)]
+                    ]+!Window.Isvisible(MusicVisualisation.xml)</visible>
+                <include>Overlay_Fade</include>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>1080</height>
+                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
+                <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
+            </control>
+            <control type="image">
+                <visible>[Window.Isvisible(MusicVisualisation.xml)+!Window.Isvisible(script-cu-lrclyrics-main.xml)+!Skin.HasSetting(DisableOverlayMusicPlaying)]|Window.Isvisible(script-cu-lrclyrics-main.xml)</visible>
+                <include>Overlay_Fade</include>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>1920</width>
