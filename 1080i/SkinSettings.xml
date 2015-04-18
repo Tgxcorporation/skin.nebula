@@ -207,22 +207,22 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(FullscreenMusic)</onclick>
                         </item>
-                        <!--<item id="26">-->
-                        <!--<visible>Skin.HasSetting(HidePlayingMusicInfo)</visible>-->
-                        <!--<label>$LOCALIZE[31028]</label>-->
-                        <!--<label2>$LOCALIZE[107]</label2>-->
-                        <!--<onclick>Skin.ToggleSetting(HidePlayingMusicInfo)</onclick>-->
-                        <!--</item>-->
-                        <!--<item id="26">-->
-                        <!--<visible>!Skin.HasSetting(HidePlayingMusicInfo)</visible>-->
-                        <!--<label>$LOCALIZE[31028]</label>-->
-                        <!--<label2>$LOCALIZE[106]</label2>-->
-                        <!--<onclick>Skin.ToggleSetting(HidePlayingMusicInfo)</onclick>-->
-                        <!--</item>-->
                         <item id="3">
                             <label>$LOCALIZE[24020] $LOCALIZE[31132]</label>
                             <label2>$INFO[Skin.String(LyricPath)]</label2>
                             <onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
+                        </item>
+                        <item id="15">
+                            <visible>Skin.HasSetting(DisableOverlayMusicPlaying)</visible>
+                            <label>$LOCALIZE[31945]</label>
+                            <label2>$LOCALIZE[107]</label2>
+                            <onclick>Skin.ToggleSetting(DisableOverlayMusicPlaying)</onclick>
+                        </item>
+                        <item id="15">
+                            <visible>!Skin.HasSetting(DisableOverlayMusicPlaying)</visible>
+                            <label>$LOCALIZE[31945]</label>
+                            <label2>$LOCALIZE[106]</label2>
+                            <onclick>Skin.ToggleSetting(DisableOverlayMusicPlaying)</onclick>
                         </item>
                         <item id="15">
                             <visible>Skin.HasSetting(PVRChannelListBig)</visible>
