@@ -899,7 +899,7 @@
 							<height>78</height>
 							<width>1300</width>
 							<font>FacadeListMainFont</font>
-							<include>TextColor_MainColor</include>
+							<include>TextColor_AlternateColor</include>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
