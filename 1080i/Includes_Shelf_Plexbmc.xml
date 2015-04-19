@@ -30,7 +30,6 @@
                         <animation type="Conditional" reversible="false" condition="control.HasFocus(900)">
                             <include>CoverWrapFocusAnimationSquare</include>
                         </animation>
-                        <fadetime>250</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -101,7 +100,6 @@
                         <animation type="Conditional" reversible="false" condition="control.HasFocus(901)">
                             <include>CoverWrapFocusAnimationSquare</include>
                         </animation>
-                        <fadetime>250</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -200,7 +198,6 @@
                         <animation type="Conditional" reversible="false" condition="control.HasFocus(311)">
                             <include>CoverWrapFocusAnimationPoster</include>
                         </animation>
-                        <fadetime>250</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -374,7 +371,6 @@
                         <animation type="Conditional" reversible="false" condition="control.HasFocus(312)">
                             <include>CoverWrapFocusAnimationPoster</include>
                         </animation>
-                        <fadetime>250</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -511,7 +507,6 @@
                         <animation type="Conditional" reversible="false" condition="control.HasFocus(511)">
                             <include>CoverWrapFocusAnimationSquare</include>
                         </animation>
-                        <fadetime>250</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -600,7 +595,6 @@
                         <animation type="Conditional" reversible="false" condition="control.HasFocus(212)">
                             <include>CoverWrapFocusAnimationSquare</include>
                         </animation>
-                        <fadetime>250</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -671,7 +665,6 @@
                         <animation type="Conditional" reversible="false" condition="control.HasFocus(411)">
                             <include>CoverWrapFocusAnimationPoster</include>
                         </animation>
-                        <fadetime>250</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>
@@ -770,7 +763,6 @@
                         <animation type="Conditional" reversible="false" condition="control.HasFocus(412)">
                             <include>CoverWrapFocusAnimationPoster</include>
                         </animation>
-                        <fadetime>250</fadetime>
                         <posx>25</posx>
                         <posy>148</posy>
                         <width>520</width>

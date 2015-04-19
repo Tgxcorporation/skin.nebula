@@ -19,7 +19,6 @@
                 <visible>!Skin.HasSetting(plexbmc)</visible>
                 <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]</visible>
                 <control type="image">
-                    <fadetime>250</fadetime>
                     <posx>73</posx>
                     <posy>431</posy>
                     <width>424</width>
@@ -35,7 +34,6 @@
                 <visible>!StringCompare(ListItem.Label,..)</visible>
                 <visible>!IsEmpty(ListItem.Art(discart))+Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]</visible>
                 <control type="image">
-                    <fadetime>250</fadetime>
                     <posx>73</posx>
                     <posy>-19</posy>
                     <width>424</width>
@@ -46,7 +44,6 @@
                 </control>
             </control>
             <control type="image">
-                <fadetime>250</fadetime>
                 <posx>25</posx>
                 <posy>148</posy>
                 <width>520</width>
@@ -98,7 +95,6 @@
             <posy>0</posy>
             <control type="image">
                 <visible>![IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
-                <fadetime>250</fadetime>
                 <posx>25</posx>
                 <posy>148</posy>
                 <width>1195</width>
@@ -216,7 +212,6 @@
                 <!-- CLEAR ART / LOGO -->
                 <control type="image">
                     <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
-                    <fadetime>250</fadetime>
                     <posx>645r</posx>
                     <posy>34</posy>
                     <width>300</width>
