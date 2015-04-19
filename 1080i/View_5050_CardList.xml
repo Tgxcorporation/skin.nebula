@@ -258,27 +258,16 @@
             <control type="group">
                 <include>ListFocusAnimation</include>
                 <control type="group">
-                    <!-- CLEAR ART -->
+                    <!-- CLEAR ART / LOGO -->
                     <control type="image">
-                        <visible>Skin.HasSetting(EnableClearArt)</visible>
+                        <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
                         <fadetime>250</fadetime>
                         <posx>645r</posx>
                         <posy>34</posy>
                         <width>300</width>
                         <height>149</height>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <texture background="true">$VAR[DefaultClearArt]</texture>
-                    </control>
-                    <!-- CLEAR LOGO -->
-                    <control type="image">
-                        <visible>Skin.HasSetting(EnableClearLogo)</visible>
-                        <fadetime>250</fadetime>
-                        <posx>590</posx>
-                        <posy>34</posy>
-                        <width>300</width>
-                        <height>149</height>
-                        <aspectratio align="left" aligny="bottom">keep</aspectratio>
-                        <texture background="true">$VAR[DefaultClearLogo]</texture>
+                        <texture background="true">$VAR[DefaultClearArtLogo]</texture>
                     </control>
                 </control>
                 <control type="image">

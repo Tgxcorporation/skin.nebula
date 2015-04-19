@@ -622,26 +622,22 @@
         <value condition="StringCompare(Skin.String(StartupWindow),favourites)">$LOCALIZE[1036]</value>
         <value condition="!IsEmpty(Skin.String(CustomStartup.Path))">$INFO[Skin.String(CustomStartup.Label)]</value>
     </variable>
-    <variable name="VideoPlayerClearArt">
-        <value condition="VideoPlayer.Content(episodes) + !IsEmpty(Player.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearart)]</value>
-        <value>$INFO[Player.Art(clearart)]</value>
+    <variable name="VideoPlayerClearArtLogo">
+        <value condition="Skin.HasSetting(EnableClearArt) + VideoPlayer.Content(episodes) + !IsEmpty(Player.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearart)]</value>
+        <value condition="Skin.HasSetting(EnableClearArt)">$INFO[Player.Art(clearart)]</value>
+        <value condition="Skin.HasSetting(EnableClearLogo) + VideoPlayer.Content(episodes)+!IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearlogo)]</value>
+        <value condition="Skin.HasSetting(EnableClearLogo)">$INFO[Player.Art(clearlogo)]</value>
     </variable>
-    <variable name="VideoPlayerClearLogo">
-        <value condition="VideoPlayer.Content(episodes)+!IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearlogo)]</value>
-        <value>$INFO[Player.Art(clearlogo)]</value>
+    <variable name="MusicPlayerClearArtLogo">
+        <value condition="Skin.HasSetting(EnableClearArt) + !IsEmpty(MusicPlayer.Art(clearart))">$INFO[MusicPlayer.Art(clearart)]</value>
+        <value condition="Skin.HasSetting(EnableClearArt)">$INFO[Skin.String(cdartPath)]$INFO[MusicPlayer.Artist,,/logo.png]</value>
     </variable>
-    <variable name="MusicPlayerClearArt">
-        <value condition="!IsEmpty(MusicPlayer.Art(clearart))">$INFO[MusicPlayer.Art(clearart)]</value>
-        <value>$INFO[Skin.String(cdartPath)]$INFO[MusicPlayer.Artist,,/logo.png]</value>
-    </variable>
-    <variable name="DefaultClearArt">
-        <value condition="Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)">$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</value>
-        <value condition="Window.IsActive(MyVideoNav.xml)+Container.Content(episodes)+!IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[ListItem.Art(tvshow.clearart)]</value>
-        <value>$INFO[ListItem.Art(clearart)]</value>
-    </variable>
-    <variable name="DefaultClearLogo">
-        <value condition="Window.IsActive(MyVideoNav.xml)+Container.Content(episodes)">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
-        <value>$INFO[ListItem.Art(clearlogo)]</value>
+    <variable name="DefaultClearArtLogo">
+        <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</value>
+        <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyVideoNav.xml)+Container.Content(episodes)+!IsEmpty(ListItem.Art(tvshow.clearart))]">$INFO[ListItem.Art(tvshow.clearart)]</value>
+        <value condition="Skin.HasSetting(EnableClearArt)">$INFO[ListItem.Art(clearart)]</value>
+        <value condition="Skin.HasSetting(EnableClearLogo) + Window.IsActive(MyVideoNav.xml)+Container.Content(episodes)">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+        <value condition="Skin.HasSetting(EnableClearLogo)">$INFO[ListItem.Art(clearlogo)]</value>
     </variable>
     <variable name="SkinShortcutsMoveUpLabel">
         <value condition="[Skin.HasSetting(VerticalHome)+StringCompare(Window.Property(groupname),mainmenu)]|!StringCompare(Window.Property(groupname),mainmenu)">$ADDON[script.skinshortcuts 32002]</value>
