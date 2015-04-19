@@ -183,7 +183,6 @@
                     <!-- CLEAR ART / LOGO -->
                     <control type="image">
                         <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
-                        <fadetime>250</fadetime>
                         <posx>645r</posx>
                         <posy>34</posy>
                         <width>300</width>
@@ -210,7 +209,6 @@
                         <animation type="Conditional" reversible="false" condition="control.HasFocus(59)">
                             <include>CoverWrapFocusAnimationPoster</include>
                         </animation>
-                        <fadetime>250</fadetime>
                         <posx>298</posx>
                         <posy>254</posy>
                         <width>424</width>
@@ -225,7 +223,6 @@
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
                     <include>UpperFade</include>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -444,7 +441,6 @@
                 <!-- CLEAR ART / LOGO -->
                 <control type="image">
                     <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
-                    <fadetime>250</fadetime>
                     <posx>645r</posx>
                     <posy>34</posy>
                     <width>300</width>
@@ -464,7 +460,6 @@
                         <animation type="Conditional" reversible="false" condition="control.HasFocus(58)">
                             <include>CoverWrapFocusAnimationSquare</include>
                         </animation>
-                        <fadetime>250</fadetime>
                         <posx>295</posx>
                         <posy>193</posy>
                         <width>430</width>
@@ -479,7 +474,6 @@
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
                     <include>UpperFade</include>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -701,7 +695,6 @@
                 <!-- CLEAR ART / LOGO -->
                 <control type="image">
                     <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
-                    <fadetime>250</fadetime>
                     <posx>645r</posx>
                     <posy>34</posy>
                     <width>300</width>
@@ -724,7 +717,6 @@
                         <include>CoverWrapFocusAnimationEpisode</include>
                     </animation>
                     <include>UpperFade</include>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>870</width>
@@ -936,7 +928,6 @@
                 <include>CoverWrapFocusAnimationEpisode</include>
                 </animation>
                 <include>UpperFade</include>
-                <fadetime>250</fadetime>
                 <posx>25</posx>
                 <posy>148</posy>
                 <width>870</width>

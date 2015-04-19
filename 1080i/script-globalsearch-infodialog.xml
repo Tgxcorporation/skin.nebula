@@ -53,7 +53,6 @@
                 <aspectratio aligny="top">keep</aspectratio>
             </control>
             <control type="image">
-                <fadetime>250</fadetime>
                 <posx>25</posx>
                 <posy>313</posy>
                 <width>494</width>

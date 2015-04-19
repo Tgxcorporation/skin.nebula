@@ -792,7 +792,7 @@
                         <imagepath background="true">$VAR[SkinSettings.RandomBackground.Art]</imagepath>
                         <timeperimage>6000</timeperimage>
                         <randomize>true</randomize>
-                        <fadetime>500</fadetime>
+                        <fadetime>400</fadetime>
                     </control>
                     <control type="image">
                         <posx>35</posx>

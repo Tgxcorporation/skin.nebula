@@ -21,7 +21,7 @@
                 <visible>Control.IsVisible(111)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
                 <include>Square_Header</include>
-                <label>$INFO[Container(111).ListItem.Property(ItemType)]: $INFO[Container(111).NumItems,, $LOCALIZE[31025]]$INFO[Container(111).CurrentPage,  -  ]$INFO[Container(111).NumPages,/]</label>
+                <label>$INFO[Container(111).ListItem.Property(ItemType)]: $INFO[Container(111).NumItems,, $LOCALIZE[31025]]$INFO[Container(111).CurrentPage, - ]$INFO[Container(111).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(111)+!Skin.HasSetting(VerticalHome)</visible>
@@ -29,7 +29,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(111)">
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -94,7 +93,7 @@
                 <visible>Control.IsVisible(211)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
                 <include>Square_Header</include>
-                <label>$INFO[Container(211).ListItem.Property(ItemType)]: $INFO[Container(211).NumItems,, $LOCALIZE[31025]]$INFO[Container(211).CurrentPage,  -  ]$INFO[Container(211).NumPages,/]</label>
+                <label>$INFO[Container(211).ListItem.Property(ItemType)]: $INFO[Container(211).NumItems,, $LOCALIZE[31025]]$INFO[Container(211).CurrentPage, - ]$INFO[Container(211).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(211)+!Skin.HasSetting(VerticalHome)</visible>
@@ -102,7 +101,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(211)">
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -168,7 +166,7 @@
                 <visible>Control.IsVisible(311)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
                 <include>Poster_Header</include>
-                <label>$INFO[Container(311).ListItem.Property(ItemType)]: $INFO[Container(311).NumItems,, $LOCALIZE[31025]]$INFO[Container(311).CurrentPage,  -  ]$INFO[Container(311).NumPages,/]</label>
+                <label>$INFO[Container(311).ListItem.Property(ItemType)]: $INFO[Container(311).NumItems,, $LOCALIZE[31025]]$INFO[Container(311).CurrentPage, - ]$INFO[Container(311).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(311)+!Skin.HasSetting(VerticalHome)</visible>
@@ -176,7 +174,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(311)">
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -295,7 +292,7 @@
                             <font>InfoDetailsFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
-                            <label>$INFO[Container(311).ListItem.Property(Year),,     ]$INFO[Container(311).ListItem.Property(Runtime),, $LOCALIZE[31297]]$INFO[Container(311).ListItem.Property(Mpaa),     ]</label>
+                            <label>$INFO[Container(311).ListItem.Property(Year),, ]$INFO[Container(311).ListItem.Property(Runtime),, $LOCALIZE[31297]]$INFO[Container(311).ListItem.Property(Mpaa), ]</label>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -344,7 +341,7 @@
                 <visible>Control.IsVisible(312)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
                 <include>Poster_Header</include>
-                <label>$INFO[Container(312).ListItem.Property(ItemType)]: $INFO[Container(312).NumItems,, $LOCALIZE[31025]]$INFO[Container(312).CurrentPage,  -  ]$INFO[Container(312).NumPages,/]</label>
+                <label>$INFO[Container(312).ListItem.Property(ItemType)]: $INFO[Container(312).NumItems,, $LOCALIZE[31025]]$INFO[Container(312).CurrentPage, - ]$INFO[Container(312).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(312)+!Skin.HasSetting(VerticalHome)</visible>
@@ -352,7 +349,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(312)">
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -471,7 +467,7 @@
                             <font>InfoDetailsFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
-                            <label>$INFO[Container(312).ListItem.Property(Year),,     ]$INFO[Container(312).ListItem.Property(Runtime),, $LOCALIZE[31297]]$INFO[Container(312).ListItem.Property(Mpaa),     ]</label>
+                            <label>$INFO[Container(312).ListItem.Property(Year),, ]$INFO[Container(312).ListItem.Property(Runtime),, $LOCALIZE[31297]]$INFO[Container(312).ListItem.Property(Mpaa), ]</label>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -520,7 +516,7 @@
                 <visible>Control.IsVisible(313)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
                 <include>Poster_Header</include>
-                <label>$INFO[Container(313).ListItem.Property(ItemType)]: $INFO[Container(313).NumItems,, $LOCALIZE[31025]]$INFO[Container(313).CurrentPage,  -  ]$INFO[Container(313).NumPages,/]</label>
+                <label>$INFO[Container(313).ListItem.Property(ItemType)]: $INFO[Container(313).NumItems,, $LOCALIZE[31025]]$INFO[Container(313).CurrentPage, - ]$INFO[Container(313).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(313)+!Skin.HasSetting(VerticalHome)</visible>
@@ -528,7 +524,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(313)">
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -647,7 +642,7 @@
                             <font>InfoDetailsFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
-                            <label>$INFO[Container(313).ListItem.Property(Year),,     ]$INFO[Container(313).ListItem.Property(Runtime),, $LOCALIZE[31397]]$INFO[Container(313).ListItem.Property(Mpaa),     ]</label>
+                            <label>$INFO[Container(313).ListItem.Property(Year),, ]$INFO[Container(313).ListItem.Property(Runtime),, $LOCALIZE[31397]]$INFO[Container(313).ListItem.Property(Mpaa), ]</label>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -696,7 +691,7 @@
                 <visible>Control.IsVisible(314)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
                 <include>Poster_Header</include>
-                <label>$INFO[Container(314).ListItem.Property(ItemType)]: $INFO[Container(314).NumItems,, $LOCALIZE[31025]]$INFO[Container(314).CurrentPage,  -  ]$INFO[Container(314).NumPages,/]</label>
+                <label>$INFO[Container(314).ListItem.Property(ItemType)]: $INFO[Container(314).NumItems,, $LOCALIZE[31025]]$INFO[Container(314).CurrentPage, - ]$INFO[Container(314).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(314)+!Skin.HasSetting(VerticalHome)</visible>
@@ -704,7 +699,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(314)">
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -820,7 +814,7 @@
                 <visible>Control.IsVisible(315)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
                 <include>Poster_Header</include>
-                <label>$INFO[Container(315).ListItem.Property(ItemType)]: $INFO[Container(315).NumItems,, $LOCALIZE[31025]]$INFO[Container(315).CurrentPage,  -  ]$INFO[Container(315).NumPages,/]</label>
+                <label>$INFO[Container(315).ListItem.Property(ItemType)]: $INFO[Container(315).NumItems,, $LOCALIZE[31025]]$INFO[Container(315).CurrentPage, - ]$INFO[Container(315).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(315)+!Skin.HasSetting(VerticalHome)</visible>
@@ -828,7 +822,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(315)">
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -944,7 +937,7 @@
                 <visible>Control.IsVisible(316)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
                 <include>Poster_Header</include>
-                <label>$INFO[Container(316).ListItem.Property(ItemType)]: $INFO[Container(316).NumItems,, $LOCALIZE[31025]]$INFO[Container(316).CurrentPage,  -  ]$INFO[Container(316).NumPages,/]</label>
+                <label>$INFO[Container(316).ListItem.Property(ItemType)]: $INFO[Container(316).NumItems,, $LOCALIZE[31025]]$INFO[Container(316).CurrentPage, - ]$INFO[Container(316).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(316)+!Skin.HasSetting(VerticalHome)</visible>
@@ -952,7 +945,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(316)">
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1068,7 +1060,7 @@
                 <visible>Control.IsVisible(411)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
                 <include>Poster_Header</include>
-                <label>$INFO[Container(411).ListItem.Property(ItemType)]: $INFO[Container(411).NumItems,, $LOCALIZE[31025]]$INFO[Container(411).CurrentPage,  -  ]$INFO[Container(411).NumPages,/]</label>
+                <label>$INFO[Container(411).ListItem.Property(ItemType)]: $INFO[Container(411).NumItems,, $LOCALIZE[31025]]$INFO[Container(411).CurrentPage, - ]$INFO[Container(411).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(411)+!Skin.HasSetting(VerticalHome)</visible>
@@ -1076,7 +1068,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(411)">
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1205,7 +1196,7 @@
                             <font>InfoDetailsFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
-                            <label>$INFO[Container(411).ListItem.Property(TVshowTitle)]     $INFO[Container(411).ListItem.Property(SeasonEpisode)]</label>
+                            <label>$INFO[Container(411).ListItem.Property(TVshowTitle)] $INFO[Container(411).ListItem.Property(SeasonEpisode)]</label>
                         </control>
                     </control>
                     <control type="textbox">
@@ -1244,7 +1235,7 @@
                 <visible>Control.IsVisible(412)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
                 <include>Poster_Header</include>
-                <label>$INFO[Container(412).ListItem.Property(ItemType)]: $INFO[Container(412).NumItems,, $LOCALIZE[31025]]$INFO[Container(412).CurrentPage,  -  ]$INFO[Container(412).NumPages,/]</label>
+                <label>$INFO[Container(412).ListItem.Property(ItemType)]: $INFO[Container(412).NumItems,, $LOCALIZE[31025]]$INFO[Container(412).CurrentPage, - ]$INFO[Container(412).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(412)+!Skin.HasSetting(VerticalHome)</visible>
@@ -1252,7 +1243,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(412)">
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1381,7 +1371,7 @@
                             <font>InfoDetailsFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
-                            <label>$INFO[Container(412).ListItem.Property(TVshowTitle)]     $INFO[Container(412).ListItem.Property(SeasonEpisode)]</label>
+                            <label>$INFO[Container(412).ListItem.Property(TVshowTitle)] $INFO[Container(412).ListItem.Property(SeasonEpisode)]</label>
                         </control>
                     </control>
                     <control type="textbox">
@@ -1420,7 +1410,7 @@
                 <visible>Control.IsVisible(413)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
                 <include>Poster_Header</include>
-                <label>$INFO[Container(413).ListItem.Property(ItemType)]: $INFO[Container(413).NumItems,, $LOCALIZE[31025]]$INFO[Container(413).CurrentPage,  -  ]$INFO[Container(413).NumPages,/]</label>
+                <label>$INFO[Container(413).ListItem.Property(ItemType)]: $INFO[Container(413).NumItems,, $LOCALIZE[31025]]$INFO[Container(413).CurrentPage, - ]$INFO[Container(413).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(413)+!Skin.HasSetting(VerticalHome)</visible>
@@ -1428,7 +1418,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(413)">
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1557,7 +1546,7 @@
                             <font>InfoDetailsFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
-                            <label>$INFO[Container(413).ListItem.Property(TVshowTitle)]     $INFO[Container(413).ListItem.Property(SeasonEpisode)]</label>
+                            <label>$INFO[Container(413).ListItem.Property(TVshowTitle)] $INFO[Container(413).ListItem.Property(SeasonEpisode)]</label>
                         </control>
                     </control>
                     <control type="textbox">
@@ -1596,7 +1585,7 @@
                 <visible>Control.IsVisible(511)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
                 <include>Square_Header</include>
-                <label>$INFO[Container(511).ListItem.Property(ItemType)]: $INFO[Container(511).NumItems,, $LOCALIZE[31025]]$INFO[Container(511).CurrentPage,  -  ]$INFO[Container(511).NumPages,/]</label>
+                <label>$INFO[Container(511).ListItem.Property(ItemType)]: $INFO[Container(511).NumItems,, $LOCALIZE[31025]]$INFO[Container(511).CurrentPage, - ]$INFO[Container(511).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(511)+!Skin.HasSetting(VerticalHome)</visible>
@@ -1604,7 +1593,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(511)">
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1720,7 +1708,7 @@
                 <visible>Control.IsVisible(512)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
                 <include>Square_Header</include>
-                <label>$INFO[Container(512).ListItem.Property(ItemType)]: $INFO[Container(512).NumItems,, $LOCALIZE[31025]]$INFO[Container(512).CurrentPage,  -  ]$INFO[Container(512).NumPages,/]</label>
+                <label>$INFO[Container(512).ListItem.Property(ItemType)]: $INFO[Container(512).NumItems,, $LOCALIZE[31025]]$INFO[Container(512).CurrentPage, - ]$INFO[Container(512).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(512)+!Skin.HasSetting(VerticalHome)</visible>
@@ -1728,7 +1716,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(512)">
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1844,7 +1831,7 @@
                 <visible>Control.IsVisible(513)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
                 <include>Square_Header</include>
-                <label>$INFO[Container(513).ListItem.Property(ItemType)]: $INFO[Container(513).NumItems,, $LOCALIZE[31025]]$INFO[Container(513).CurrentPage,  -  ]$INFO[Container(513).NumPages,/]</label>
+                <label>$INFO[Container(513).ListItem.Property(ItemType)]: $INFO[Container(513).NumItems,, $LOCALIZE[31025]]$INFO[Container(513).CurrentPage, - ]$INFO[Container(513).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(513)+!Skin.HasSetting(VerticalHome)</visible>
@@ -1852,7 +1839,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(513)">
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -1968,7 +1954,7 @@
                 <visible>Control.IsVisible(514)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
                 <include>Square_Header</include>
-                <label>$INFO[Container(514).ListItem.Property(ItemType)]: $INFO[Container(514).NumItems,, $LOCALIZE[31025]]$INFO[Container(514).CurrentPage,  -  ]$INFO[Container(514).NumPages,/]</label>
+                <label>$INFO[Container(514).ListItem.Property(ItemType)]: $INFO[Container(514).NumItems,, $LOCALIZE[31025]]$INFO[Container(514).CurrentPage, - ]$INFO[Container(514).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(514)+!Skin.HasSetting(VerticalHome)</visible>
@@ -1976,7 +1962,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(514)">
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -2092,7 +2077,7 @@
                 <visible>Control.IsVisible(515)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
                 <include>Square_Header</include>
-                <label>$INFO[Container(515).ListItem.Property(ItemType)]: $INFO[Container(515).NumItems,, $LOCALIZE[31025]]$INFO[Container(515).CurrentPage,  -  ]$INFO[Container(515).NumPages,/]</label>
+                <label>$INFO[Container(515).ListItem.Property(ItemType)]: $INFO[Container(515).NumItems,, $LOCALIZE[31025]]$INFO[Container(515).CurrentPage, - ]$INFO[Container(515).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(515)+!Skin.HasSetting(VerticalHome)</visible>
@@ -2100,7 +2085,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(515)">
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>
@@ -2216,7 +2200,7 @@
                 <visible>Control.IsVisible(516)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
                 <include>Square_Header</include>
-                <label>$INFO[Container(516).ListItem.Property(ItemType)]: $INFO[Container(516).NumItems,, $LOCALIZE[31025]]$INFO[Container(516).CurrentPage,  -  ]$INFO[Container(516).NumPages,/]</label>
+                <label>$INFO[Container(516).ListItem.Property(ItemType)]: $INFO[Container(516).NumItems,, $LOCALIZE[31025]]$INFO[Container(516).CurrentPage, - ]$INFO[Container(516).NumPages,/]</label>
             </control>
             <control type="group">
                 <visible>Control.IsVisible(516)+!Skin.HasSetting(VerticalHome)</visible>
@@ -2224,7 +2208,6 @@
                     <animation type="Conditional" reversible="false" condition="control.HasFocus(516)">
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
-                    <fadetime>250</fadetime>
                     <posx>25</posx>
                     <posy>148</posy>
                     <width>520</width>

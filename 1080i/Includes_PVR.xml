@@ -314,7 +314,6 @@
                 <include>SquareThumb</include>
             </control>
             <control type="image">
-                <fadetime>250</fadetime>
                 <posx>25</posx>
                 <posy>248</posy>
                 <width>408</width>
@@ -540,7 +539,6 @@
                 <include>SquareThumb</include>
             </control>
             <control type="image">
-                <fadetime>250</fadetime>
                 <posx>25</posx>
                 <posy>248</posy>
                 <width>408</width>

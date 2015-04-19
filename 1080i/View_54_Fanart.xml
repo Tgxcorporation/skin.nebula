@@ -30,7 +30,6 @@
                 <visible>!Skin.HasSetting(plexbmc)</visible>
                 <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]</visible>
                 <control type="image">
-                    <fadetime>250</fadetime>
                     <posx>70</posx>
                     <posy>-122</posy>
                     <width>315</width>
@@ -45,7 +44,6 @@
                 <visible>!Skin.HasSetting(plexbmc)</visible>
                 <visible>!IsEmpty(ListItem.Art(discart))+Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]</visible>
                 <control type="image">
-                    <fadetime>250</fadetime>
                     <posx>122</posx>
                     <posy>-70</posy>
                     <width>211</width>
@@ -57,7 +55,6 @@
             </control>
             <control type="image">
                 <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
-                <fadetime>250</fadetime>
                 <posx>TextMargin</posx>
                 <posy>25</posy>
                 <width>335</width>
@@ -66,7 +63,6 @@
                 <include>SquareThumb</include>
             </control>
             <control type="image">
-                <fadetime>250</fadetime>
                 <posx>25</posx>
                 <posy>0</posy>
                 <width>405</width>
@@ -300,7 +296,6 @@
                 <!-- CLEAR ART / LOGO -->
                 <control type="image">
                     <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
-                    <fadetime>250</fadetime>
                     <posx>645r</posx>
                     <posy>40</posy>
                     <width>300</width>
@@ -345,7 +340,6 @@
             <posy>642</posy>
             <control type="image">
                 <visible>[IsEmpty(ListItem.thumb)]</visible>
-                <fadetime>250</fadetime>
                 <posx>25</posx>
                 <posy>0</posy>
                 <width>665</width>
@@ -355,7 +349,6 @@
                 <include>ThumbBorder</include>
             </control>
             <control type="image">
-                <fadetime>250</fadetime>
                 <posx>25</posx>
                 <posy>0</posy>
                 <width>665</width>
