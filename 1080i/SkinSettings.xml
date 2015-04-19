@@ -377,6 +377,7 @@
                             <label>$LOCALIZE[31044]</label>
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(EnableClearLogo)</onclick>
+                            <onclick>Skin.Reset(EnableClearArt)</onclick>
                         </item>
                         <item id="33">
                             <visible>Skin.HasSetting(EnableClearLogo)</visible>
@@ -395,6 +396,7 @@
                             <label>$LOCALIZE[31042]</label>
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(EnableClearArt)</onclick>
+                            <onclick>Skin.Reset(EnableClearLogo)</onclick>
                         </item>
                         <item id="25">
                             <visible>Skin.HasSetting(EnableClearArt)|Skin.HasSetting(EnableCdArt)|Skin.HasSetting(EnableClearLogo)</visible>
