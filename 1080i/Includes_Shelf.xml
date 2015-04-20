@@ -30,7 +30,7 @@
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>keep</aspectratio>
@@ -55,9 +55,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(111,1)</onclick>
                 </control>
+                <include>CoverWrapSquareBounds</include>
                 <control type="group">
                     <posx>0</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -102,7 +103,7 @@
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>keep</aspectratio>
@@ -127,9 +128,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(211,1)</onclick>
                 </control>
+                <include>CoverWrapSquareBounds</include>
                 <control type="group">
                     <posx>0</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -175,9 +177,9 @@
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
-                    <height>723</height>
+                    <height>693</height>
                     <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(311).ListItem.thumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <include>ThumbBorder</include>
@@ -200,9 +202,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(311,1)</onclick>
                 </control>
+                <include>CoverWrapPosterBounds</include>
                 <control type="grouplist">
                     <posx>25</posx>
-                    <posy>860</posy>
+                    <posy>840</posy>
                     <width>520</width>
                     <height>90</height>
                     <itemgap>10</itemgap>
@@ -224,7 +227,7 @@
                 </control>
                 <control type="grouplist">
                     <posx>25</posx>
-                    <posy>940</posy>
+                    <posy>910</posy>
                     <width>520</width>
                     <height>90</height>
                     <itemgap>10</itemgap>
@@ -246,7 +249,7 @@
                 </control>
                 <control type="group">
                     <posx>540</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -350,9 +353,9 @@
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
-                    <height>723</height>
+                    <height>703</height>
                     <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(312).ListItem.thumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <include>ThumbBorder</include>
@@ -375,9 +378,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(312,1)</onclick>
                 </control>
+                <include>CoverWrapPosterBounds</include>
                 <control type="grouplist">
                     <posx>25</posx>
-                    <posy>860</posy>
+                    <posy>840</posy>
                     <width>520</width>
                     <height>90</height>
                     <itemgap>10</itemgap>
@@ -399,7 +403,7 @@
                 </control>
                 <control type="grouplist">
                     <posx>25</posx>
-                    <posy>940</posy>
+                    <posy>910</posy>
                     <width>520</width>
                     <height>90</height>
                     <itemgap>10</itemgap>
@@ -421,7 +425,14 @@
                 </control>
                 <control type="group">
                     <posx>540</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
+                    <control type="image">
+                        <posx>-2</posx>
+                        <posy>11</posy>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture>$VAR[Theme.Color]/OverlayInProgress.png</texture>
+                    </control>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -525,9 +536,9 @@
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
-                    <height>723</height>
+                    <height>703</height>
                     <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(313).ListItem.thumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <include>ThumbBorder</include>
@@ -550,9 +561,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(313,1)</onclick>
                 </control>
+                <include>CoverWrapPosterBounds</include>
                 <control type="grouplist">
                     <posx>25</posx>
-                    <posy>860</posy>
+                    <posy>840</posy>
                     <width>520</width>
                     <height>90</height>
                     <itemgap>10</itemgap>
@@ -574,7 +586,7 @@
                 </control>
                 <control type="grouplist">
                     <posx>25</posx>
-                    <posy>940</posy>
+                    <posy>910</posy>
                     <width>520</width>
                     <height>90</height>
                     <itemgap>10</itemgap>
@@ -596,7 +608,7 @@
                 </control>
                 <control type="group">
                     <posx>540</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -700,9 +712,9 @@
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
-                    <height>723</height>
+                    <height>703</height>
                     <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(314).ListItem.thumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <include>ThumbBorder</include>
@@ -725,9 +737,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(314,1)</onclick>
                 </control>
+                <include>CoverWrapPosterBounds</include>
                 <control type="group">
                     <posx>540</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -823,9 +836,9 @@
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
-                    <height>723</height>
+                    <height>703</height>
                     <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(315).ListItem.thumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <include>ThumbBorder</include>
@@ -848,9 +861,17 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(315,1)</onclick>
                 </control>
+                <include>CoverWrapPosterBounds</include>
                 <control type="group">
                     <posx>540</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
+                    <control type="image">
+                        <posx>-2</posx>
+                        <posy>11</posy>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture>$VAR[Theme.Color]/OverlayInProgress.png</texture>
+                    </control>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -946,9 +967,9 @@
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
-                    <height>723</height>
+                    <height>703</height>
                     <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(316).ListItem.thumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <include>ThumbBorder</include>
@@ -971,9 +992,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(316,1)</onclick>
                 </control>
+                <include>CoverWrapPosterBounds</include>
                 <control type="group">
                     <posx>540</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -1069,9 +1091,9 @@
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
-                    <height>723</height>
+                    <height>703</height>
                     <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(411).ListItem.thumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <include>ThumbBorder</include>
@@ -1094,9 +1116,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(411,1)</onclick>
                 </control>
+                <include>CoverWrapPosterBounds</include>
                 <control type="grouplist">
                     <posx>25</posx>
-                    <posy>860</posy>
+                    <posy>840</posy>
                     <width>520</width>
                     <height>90</height>
                     <itemgap>10</itemgap>
@@ -1118,7 +1141,7 @@
                 </control>
                 <control type="grouplist">
                     <posx>25</posx>
-                    <posy>940</posy>
+                    <posy>910</posy>
                     <width>520</width>
                     <height>90</height>
                     <itemgap>10</itemgap>
@@ -1140,7 +1163,7 @@
                 </control>
                 <control type="group">
                     <posx>540</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -1244,9 +1267,9 @@
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
-                    <height>723</height>
+                    <height>703</height>
                     <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(412).ListItem.thumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <include>ThumbBorder</include>
@@ -1269,9 +1292,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(412,1)</onclick>
                 </control>
+                <include>CoverWrapPosterBounds</include>
                 <control type="grouplist">
                     <posx>25</posx>
-                    <posy>860</posy>
+                    <posy>840</posy>
                     <width>520</width>
                     <height>90</height>
                     <itemgap>10</itemgap>
@@ -1293,7 +1317,7 @@
                 </control>
                 <control type="grouplist">
                     <posx>25</posx>
-                    <posy>940</posy>
+                    <posy>910</posy>
                     <width>520</width>
                     <height>90</height>
                     <itemgap>10</itemgap>
@@ -1315,7 +1339,14 @@
                 </control>
                 <control type="group">
                     <posx>540</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
+                    <control type="image">
+                        <posx>-2</posx>
+                        <posy>11</posy>
+                        <width>33</width>
+                        <height>33</height>
+                        <texture>$VAR[Theme.Color]/OverlayInProgress.png</texture>
+                    </control>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -1419,9 +1450,9 @@
                         <include>CoverWrapFocusAnimationPoster</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
-                    <height>723</height>
+                    <height>703</height>
                     <texture background="true" fallback="white/common/BlackDotT.png">$INFO[Container(413).ListItem.thumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <include>ThumbBorder</include>
@@ -1444,9 +1475,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(413,1)</onclick>
                 </control>
+                <include>CoverWrapPosterBounds</include>
                 <control type="grouplist">
                     <posx>25</posx>
-                    <posy>860</posy>
+                    <posy>840</posy>
                     <width>520</width>
                     <height>90</height>
                     <itemgap>10</itemgap>
@@ -1468,7 +1500,7 @@
                 </control>
                 <control type="grouplist">
                     <posx>25</posx>
-                    <posy>940</posy>
+                    <posy>910</posy>
                     <width>520</width>
                     <height>90</height>
                     <itemgap>10</itemgap>
@@ -1490,7 +1522,7 @@
                 </control>
                 <control type="group">
                     <posx>540</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -1594,7 +1626,7 @@
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>keep</aspectratio>
@@ -1619,9 +1651,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(511,1)</onclick>
                 </control>
+                <include>CoverWrapSquareBounds</include>
                 <control type="group">
                     <posx>0</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -1717,7 +1750,7 @@
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>keep</aspectratio>
@@ -1742,9 +1775,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(512,1)</onclick>
                 </control>
+                <include>CoverWrapPosterBounds</include>
                 <control type="group">
                     <posx>0</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -1840,7 +1874,7 @@
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>keep</aspectratio>
@@ -1865,9 +1899,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(513,1)</onclick>
                 </control>
+                <include>CoverWrapPosterBounds</include>
                 <control type="group">
                     <posx>0</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -1963,7 +1998,7 @@
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>keep</aspectratio>
@@ -1988,9 +2023,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(514,1)</onclick>
                 </control>
+                <include>CoverWrapPosterBounds</include>
                 <control type="group">
                     <posx>0</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -2086,7 +2122,7 @@
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>keep</aspectratio>
@@ -2111,9 +2147,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(515,1)</onclick>
                 </control>
+                <include>CoverWrapPosterBounds</include>
                 <control type="group">
                     <posx>0</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
@@ -2209,7 +2246,7 @@
                         <include>CoverWrapFocusAnimationSquare</include>
                     </animation>
                     <posx>25</posx>
-                    <posy>148</posy>
+                    <posy>158</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>keep</aspectratio>
@@ -2234,9 +2271,10 @@
                     <texturenofocus>-</texturenofocus>
                     <onclick>Control.Move(516,1)</onclick>
                 </control>
+                <include>CoverWrapPosterBounds</include>
                 <control type="group">
                     <posx>0</posx>
-                    <posy>720</posy>
+                    <posy>670</posy>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>

@@ -110,7 +110,7 @@
                     <posx>25</posx>
                     <posy>0</posy>
                     <width>405</width>
-                    <height>405</height>
+                    <height>375</height>
                     <aspectratio>keep</aspectratio>
                     <include>SquareThumbBig</include>
                     <include>ThumbBorder</include>

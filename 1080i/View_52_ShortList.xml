@@ -169,8 +169,8 @@
                 <control type="grouplist">
                     <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                     <posx>25</posx>
-                    <posy>860</posy>
-                    <width>515</width>
+                    <posy>850</posy>
+                    <width>520</width>
                     <height>90</height>
                     <itemgap>10</itemgap>
                     <orientation>horizontal</orientation>
@@ -181,7 +181,7 @@
                 <control type="grouplist">
                     <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                     <posx>25</posx>
-                    <posy>930</posy>
+                    <posy>920</posy>
                     <width>520</width>
                     <height>90</height>
                     <itemgap>10</itemgap>
