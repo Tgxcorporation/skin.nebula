@@ -90,20 +90,10 @@
         <action>ActivateWindow(RadioChannels)</action>
     </shortcut>
     <shortcut>
-        <visible>!Skin.HasSetting(BlackGlassMode)</visible>
         <defaultID>favourites</defaultID>
         <label>1036</label>
         <label2>Common Shortcut</label2>
         <icon>special://skin/backgrounds/Favourites.jpg</icon>
-        <thumb></thumb>
-        <action>ActivateWindow(Favourites)</action>
-    </shortcut>
-    <shortcut>
-        <visible>Skin.HasSetting(BlackGlassMode)</visible>
-        <defaultID>favourites</defaultID>
-        <label>1036</label>
-        <label2>Common Shortcut</label2>
-        <icon>special://skin/backgrounds/Favourites2.jpg</icon>
         <thumb></thumb>
         <action>ActivateWindow(Favourites)</action>
     </shortcut>
