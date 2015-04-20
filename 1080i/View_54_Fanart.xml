@@ -67,7 +67,7 @@
                 <posx>25</posx>
                 <posy>0</posy>
                 <width>405</width>
-                <height>405</height>
+                <height>385</height>
                 <aspectratio aligny="top">keep</aspectratio>
                 <include>SquareThumbBig</include>
                 <include>ThumbBorder</include>
@@ -76,7 +76,7 @@
                 <visible>Window.isActive(MyPVRChannels.xml)</visible>
                 <include>ConditionWhite</include>
                 <posx>60</posx>
-                <posy>362</posy>
+                <posy>352</posy>
                 <height>54</height>
                 <width>335</width>
                 <texturebg border="14,20,14,20">white/buttons/Scrollbar_Horizontal_bg.png</texturebg>
@@ -91,7 +91,7 @@
                 <visible>Window.isActive(MyPVRChannels.xml)</visible>
                 <include>ConditionBlack</include>
                 <posx>60</posx>
-                <posy>362</posy>
+                <posy>352</posy>
                 <height>54</height>
                 <width>335</width>
                 <texturebg border="14,20,14,20">black/buttons/Scrollbar_Horizontal_bg.png</texturebg>

@@ -45,7 +45,7 @@
             </control>
             <control type="image">
                 <posx>25</posx>
-                <posy>148</posy>
+                <posy>158</posy>
                 <width>520</width>
                 <height>703</height>
                 <aspectratio aligny="top">keep</aspectratio>
@@ -55,8 +55,8 @@
             <control type="grouplist">
                 <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                 <posx>25</posx>
-                <posy>840</posy>
-                <width>515</width>
+                <posy>850</posy>
+                <width>520</width>
                 <height>90</height>
                 <itemgap>10</itemgap>
                 <orientation>horizontal</orientation>
@@ -67,7 +67,7 @@
             <control type="grouplist">
                 <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                 <posx>25</posx>
-                <posy>910</posy>
+                <posy>920</posy>
                 <width>520</width>
                 <height>90</height>
                 <itemgap>10</itemgap>
@@ -96,7 +96,7 @@
             <control type="image">
                 <visible>![IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
                 <posx>25</posx>
-                <posy>148</posy>
+                <posy>158</posy>
                 <width>1195</width>
                 <height>278</height>
                 <aspectratio aligny="top">scale</aspectratio>
@@ -222,9 +222,9 @@
             </control>
             <control type="group">
                 <control type="image">
-                    <posx>0</posx>
+                    <posx>550</posx>
                     <posy>142</posy>
-                    <width>1920</width>
+                    <width>1370</width>
                     <height>892</height>
                     <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                 </control>
