@@ -46,7 +46,7 @@
             <posy>268</posy>
             <width>669</width>
             <height>407</height>
-            <texture background="true">$INFO[Container(211).ListItem.Icon]</texture>
+            <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[Container(211).ListItem.Icon]</texture>
             <include>SkinShortcuts_DisabledItem</include>
             <aspectratio>scale</aspectratio>
             <include>ThumbBorder</include>
@@ -96,7 +96,7 @@
                 <posy>21</posy>
                 <width>470</width>
                 <height>295</height>
-                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
                 <aspectratio>scale</aspectratio>
                 <include>ThumbBorder</include>
             </control>
@@ -107,7 +107,7 @@
                 <width>470</width>
                 <height>295</height>
                 <colordiffuse>90ffffff</colordiffuse>
-                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
                 <aspectratio>scale</aspectratio>
                 <include>ThumbBorder</include>
             </control>
