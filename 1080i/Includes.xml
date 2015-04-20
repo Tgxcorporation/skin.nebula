@@ -538,6 +538,44 @@
                 </control>
             </control>
         </control>
+        <!--DUMMY FOR DIALOG ANIMATIONS-->
+        <control type="image" id="123001">
+            <visible>![Window.IsVisible(DialogVideoInfo.xml)|
+                Window.IsVisible(DialogAddonSettings.xml)|
+                Window.IsVisible(DialogAddonInfo.xml)|
+                Window.IsVisible(DialogKeyboard.xml)|
+                Window.IsVisible(DialogOK.xml)|
+                Window.IsVisible(DialogNumeric.xml)|
+                Window.IsVisible(DialogPictureInfo.xml)|
+                Window.IsVisible(DialogMediaFilter.xml)|
+                Window.IsVisible(DialogMediaSource.xml)|
+                Window.IsVisible(DialogNetworkSetup.xml)|
+                Window.IsVisible(DialogAlbumInfo.xml)|
+                Window.IsVisible(DialogSelect.xml)|
+                Window.IsVisible(DialogContextMenu.xml)|
+                Window.IsVisible(DialogSongInfo.xml)|
+                Window.IsVisible(DialogButtonMenu.xml)|
+                Window.IsVisible(DialogYesNo.xml)|
+                Window.IsVisible(DialogPVRGuideInfo.xml)|
+                Window.IsVisible(DialogPVRGuideSearch.xml)|
+                Window.IsVisible(DialogPVRRecordingInfo.xml)|
+                Window.IsVisible(DialogPVRTimerSettings.xml)|
+                Window.IsVisible(DialogRecordSettings.xml)|
+                Window.IsVisible(DialogTextViewer.xml)|
+                Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml)|
+                Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)|
+                Window.IsVisible(script-ExtendedInfo Script-SlideShow.xml)|
+                Window.IsVisible(script-videoextras-context.xml)|
+                Window.IsVisible(script-videoextras-main.xml)|
+                Window.IsVisible(script-videoextras-resume.xml)|
+                Window.IsVisible(DialogTextViewer.xml)|
+                Window.IsVisible(DialogProgress.xml)]</visible>
+            <posx>-30</posx>
+            <posy>-30</posy>
+            <width>1</width>
+            <height>1</height>
+            <texture>-</texture>
+        </control>
     </include>
     <include name="Time">
         <control type="group">
