@@ -23,7 +23,8 @@
     <include name="Info_54_Fanart">
         <control type="group">
             <!--<visible>Control.IsVisible(54)</visible>-->
-            <!--<include>Icon_Fade</include>-->
+            <visible>Control.IsVisible(123001)</visible> <!--Dialogs are Visible-->
+            <include>Icon_Fade</include>
             <posy>642</posy>
             <control type="group">
                 <!-- CDART AUDIO -->
@@ -235,6 +236,8 @@
             <include>Icon_Fade</include>
             <control type="group">
                 <control type="image">
+                    <visible>Control.IsVisible(123001)</visible> <!--Dialogs are Visible-->
+                    <include>Icon_Fade</include>
                     <posx>-1920</posx>
                     <posy>750</posy>
                     <width>3840</width>
@@ -242,6 +245,8 @@
                     <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
                 </control>
                 <control type="image">
+                    <visible>Control.IsVisible(123001)</visible> <!--Dialogs are Visible-->
+                    <include>Icon_Fade</include>
                     <posx>-35</posx>
                     <posy>609</posy>
                     <width>1990</width>
