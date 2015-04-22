@@ -42,10 +42,10 @@
             </animation>
             <include>UpperFade</include>
             <fadetime>300</fadetime>
-            <posx>626</posx>
+            <posx>676</posx>
             <posy>268</posy>
-            <width>669</width>
-            <height>407</height>
+            <width>569</width>
+            <height>351</height>
             <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[Container(211).ListItem.Icon]</texture>
             <include>SkinShortcuts_DisabledItem</include>
             <aspectratio>scale</aspectratio>
@@ -81,38 +81,38 @@
         <itemgap>0</itemgap>
         <onright>211</onright>
         <onleft>211</onleft>
-        <ondown>260</ondown>
+        <ondown>211</ondown>
         <onup>9000</onup>
         <orientation>horizontal</orientation>
         <viewtype label="535">list</viewtype>
         <preloaditems>2</preloaditems>
         <pagecontrol>260</pagecontrol>
         <movement>0</movement>
-        <focusposition>1</focusposition>
-        <itemlayout height="425" width="577">
+        <focusposition>2</focusposition>
+        <itemlayout height="425" width="313">
             <control type="image">
                 <visible>StringCompare(ListItem.Property(hide),True)</visible>
-                <posx>53</posx>
+                <posx>-15</posx>
                 <posy>21</posy>
-                <width>470</width>
-                <height>295</height>
+                <width>343</width>
+                <height>224</height>
                 <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
                 <aspectratio>scale</aspectratio>
                 <include>ThumbBorder</include>
             </control>
             <control type="image">
                 <visible>!StringCompare(ListItem.Property(hide),True)</visible>
-                <posx>53</posx>
+                <posx>-15</posx>
                 <posy>21</posy>
-                <width>470</width>
-                <height>295</height>
+                <width>343</width>
+                <height>224</height>
                 <colordiffuse>90ffffff</colordiffuse>
                 <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
                 <aspectratio>scale</aspectratio>
                 <include>ThumbBorder</include>
             </control>
         </itemlayout>
-        <focusedlayout height="425" width="645">
+        <focusedlayout height="425" width="545">
             <!--<control type="image">-->
                 <!--<animation effect="fade" start="100" end="0" time="100" condition="Container(211).OnNext|Container(211).OnPrevious">Focus</animation>-->
                 <!--<animation effect="fade" start="100" end="0" time="0" condition="![Container(211).OnNext|Container(211).OnPrevious]">Focus</animation>-->
