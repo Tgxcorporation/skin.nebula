@@ -51,8 +51,7 @@
         </control>
         <control type="group">
             <include>OpenClose</include>
-            <include condition="Skin.HasSetting(VerticalHome)">Vertical_Home_Layout</include>
-            <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Home_Layout</include>
+            <include>Horizontal_Home_Layout</include>
         </control>
         <include>Time</include>
     </controls>

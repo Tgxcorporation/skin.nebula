@@ -7,7 +7,6 @@
     _1118 Custom_FullscreenMusic * start fullscreen audio playback
     _1119 CustomAddons * browse addons united under the same roof
     _1120 CustomStartupWindow.xml * define startup window
-    _50 Custom_Debug dialog * my favourite one
 
    -->
     <include file="Includes_Variables.xml"/>
@@ -19,7 +18,6 @@
     <include file="Includes_Home_Common.xml"/>
     <include file="Includes_Home_Common_Plexbmc.xml"/>
     <include file="Includes_Horizontal_Home.xml"/>
-    <include file="Includes_Vertical_Home.xml"/>
     <include file="Includes_Shelf.xml"/>
     <include file="Includes_Shelf_Contents.xml"/>
     <include file="Includes_Shelf_Plexbmc.xml"/>
@@ -38,12 +36,6 @@
     <include file="View_5050_CardList.xml"/>
     <include file="View_PVR.xml"/>
     <include file="script-skinshortcuts-includes.xml"/>
-    <include name="Dummy_Time">
-        <control type="label" id="889988">
-            <posx>3000</posx>
-            <label>$INFO[System.Time(hh)]</label>
-        </control>
-    </include>
     <include name="Player_Show">
         <control type="image">
             <visible>Player.HasVideo + !Skin.HasSetting(Show_Player) + !Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
@@ -1111,12 +1103,6 @@
         <orientation>horizontal</orientation>
         <height>54</height>
     </include>
-    <include name="SlideViewScroller">
-        <showonepage>true</showonepage>
-    </include>
-    <include name="SlideViewLabelWidth">
-        <width>1385</width>
-    </include>
     <include name="myautoscroll">
         <autoscroll delay="5000" time="2500" repeat="10000">true</autoscroll>
     </include>
@@ -1171,7 +1157,6 @@
             <control type="label">
                 <posx>960r</posx>
                 <visible>!StringCompare(ListItem.Label,)</visible>
-                <posx>TextMarginR</posx>
                 <height>78</height>
                 <width>900</width>
                 <align>right</align>

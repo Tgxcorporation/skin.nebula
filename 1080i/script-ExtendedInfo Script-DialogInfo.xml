@@ -965,7 +965,6 @@
                             <posx>40</posx>
                             <posy>199</posy>
                             <width>1133</width>
-                            <width>464</width>
                             <height>238</height>
                             <aspectratio>scale</aspectratio>
                             <texture>$INFO[ListItem.Thumb]</texture>

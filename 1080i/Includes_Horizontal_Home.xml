@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+    <include name="Poster_Header">
+        <posx>515</posx>
+        <align>left</align>
+        <posy>340</posy>
+        <height>45</height>
+        <width>1920</width>
+        <include>TextColor_AlternateColor</include>
+        <font>FacadeListSubFont</font>
+    </include>
+    <include name="Square_Header">
+        <posx>515</posx>
+        <align>left</align>
+        <posy>360</posy>
+        <height>45</height>
+        <width>1920</width>
+        <include>TextColor_AlternateColor</include>
+        <font>FacadeListSubFont</font>
+    </include>
     <include name="Horizontal_Shelf_Poster_Commons">
         <posx>0</posx>
         <posy>148</posy>
@@ -31,15 +49,6 @@
         <posy>220</posy>
         <width>1200</width>
         <align>left</align>
-    </include>
-    <include name="Horizontal_BigLabel_Commons">
-        <posx>600</posx>
-        <posy>720</posy>
-        <width>1260</width>
-        <aligny>top</aligny>
-        <font>InfoTitleFont</font>
-        <include>TextColor_MainColor</include>
-        <scroll>false</scroll>
     </include>
     <include name="Horizontal_HomeSubMenu">
         <control type="panel" id="9001">
