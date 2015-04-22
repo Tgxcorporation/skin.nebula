@@ -363,7 +363,7 @@
                     <width>300</width>
                     <height>149</height>
                     <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <texture background="true">$VAR[DefaultClearArtlogo]</texture>
+                    <texture background="true">$VAR[DefaultClearArtLogo]</texture>
                 </control>
             </control>
             <control type="group">
