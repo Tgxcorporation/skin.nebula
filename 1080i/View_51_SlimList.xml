@@ -40,7 +40,7 @@
     </include>
     <include name="SlimList_Layout">
         <itemlayout height="105" width="1920">
-            <include>51_RecOverlayFocus</include>
+            <include>51_RecOverlayNoFocus</include>
             <control type="label">
                 <visible>StringCompare(ListItem.Label2,)</visible>
                 <posx>455</posx>
