@@ -182,7 +182,7 @@
                 <control type="group">
                     <!-- CLEAR ART / LOGO -->
                     <control type="image">
-                        <visible>Skin.H asSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
+                        <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
                         <posx>645r</posx>
                         <posy>34</posy>
                         <width>300</width>
