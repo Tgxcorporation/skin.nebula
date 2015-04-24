@@ -53,7 +53,7 @@ msgid "Go Plex"
 msgstr ""
 
 msgctxt "#31009"
-msgid "Go XBMC"
+msgid "Go Kodi"
 msgstr ""
 
 msgctxt "#31010"
