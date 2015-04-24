@@ -45,7 +45,7 @@ msgid "Shared"
 msgstr ""
 
 msgctxt "#31007"
-msgid "PleXBMC settings"
+msgid "PleKodi settings"
 msgstr ""
 
 msgctxt "#31008"
@@ -53,7 +53,7 @@ msgid "Go Plex"
 msgstr ""
 
 msgctxt "#31009"
-msgid "Go XBMC"
+msgid "Go Kodi"
 msgstr ""
 
 msgctxt "#31010"
@@ -197,7 +197,7 @@ msgid "Enable Clear Logo"
 msgstr ""
 
 msgctxt "#31045"
-msgid "Customize PleXBMC menu items"
+msgid "Customize PleKodi menu items"
 msgstr ""
 
 #empty strings from id 31046 to 31047
