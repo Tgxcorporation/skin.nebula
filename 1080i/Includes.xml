@@ -1242,7 +1242,7 @@
             <posx>550</posx>
             <posy>142</posy>
             <width>1370</width>
-            <height>1892</height>
+            <height>3892</height>
             <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
         </control>
         <control type="image">
