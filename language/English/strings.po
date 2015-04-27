@@ -518,6 +518,10 @@ msgctxt "#31517"
 msgid "Defined by General Settings"
 msgstr ""
 
+msgctxt "#31518"
+msgid "Random Image"
+msgstr ""
+
 msgctxt "#31519"
 msgid "Root Folder for Custom Weather Fanarts"
 msgstr ""
