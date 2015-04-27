@@ -518,7 +518,15 @@ msgctxt "#31517"
 msgid "Defined by General Settings"
 msgstr ""
 
-#empty strings from id 31518 to 31900
+msgctxt "#31519"
+msgid "Root Folder for Custom Weather Fanarts"
+msgstr ""
+
+msgctxt "#31520"
+msgid "Root Folder for Custom Weather Icons"
+msgstr ""
+
+#empty strings from id 31521 to 31900
 
 #Weather plugin
 

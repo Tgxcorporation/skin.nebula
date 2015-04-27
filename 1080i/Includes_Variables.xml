@@ -201,6 +201,14 @@
         <value condition="Window.IsActive(MyPics.xml) + !IsEmpty(ListItem.PictureKeywords)">$INFO[ListItem.PictureKeywords]</value>
         <value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
     </variable>
+    <variable name="WeatherFanartPath">
+        <value condition="!IsEmpty(Skin.String(weatherArtPath))">$INFO[Skin.String(weatherArtPath)]</value>
+        <value>special://skin/backgrounds/weather/</value>
+    </variable>
+    <!--<variable name="WeatherIconPath">-->
+        <!--<value condition="!IsEmpty(Skin.String(weatherIconPath))">$INFO[Skin.String(weatherIconPath)]</value>-->
+        <!--<value>weather/</value>-->
+    <!--</variable>-->
     <variable name="Default.Art">
         <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
         <value>special://skin/backgrounds/default/default.jpg</value>
@@ -254,7 +262,7 @@
         <value>special://skin/backgrounds/Settings.jpg</value>
     </variable>
     <variable name="Weather.Art">
-        <value condition="!IsEmpty(Weather.fanartcode)">$INFO[Weather.fanartcode,special://skin/backgrounds/weather/,.jpg]</value>
+        <value condition="!IsEmpty(Weather.fanartcode)">$VAR[WeatherFanartPath]$INFO[Weather.fanartcode].jpg</value>
         <value condition="!IsEmpty(Skin.String(Weather.Background))">$INFO[Skin.String(Weather.Background)]</value>
         <value>special://skin/backgrounds/Weather.jpg</value>
     </variable>
@@ -296,7 +304,7 @@
         <value condition="StringCompare(Container(300).ListItem.Property(background),tvshowFanart)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(background),videoFanart)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(background),musicFanart)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
-        <value condition="StringCompare(Container(300).ListItem.Property(background),weatherFanart)">$INFO[Weather.fanartcode,special://skin/backgrounds/weather/,.jpg]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(background),weatherFanart)">$VAR[WeatherFanartPath]$INFO[Weather.fanartcode].jpg</value>
         <value condition="StringCompare(Container(300).ListItem.Property(Background),Videos.Art)">$VAR[Videos.Art]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(Background),Movies.Art)">$VAR[Movies.Art]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(Background),Pictures.Art)">$VAR[Pictures.Art]</value>
@@ -322,7 +330,7 @@
         <value condition="StringCompare(Container(211).ListItem.Property(background),tvshowFanart)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(background),videoFanart)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(background),musicFanart)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(background),weatherFanart)">$INFO[Weather.fanartcode,special://skin/backgrounds/weather/,.jpg]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(background),weatherFanart)">$VAR[WeatherFanartPath]$INFO[Weather.fanartcode].jpg</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Videos.Art)">$VAR[Videos.Art]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Movies.Art)">$VAR[Movies.Art]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Pictures.Art)">$VAR[Pictures.Art]</value>
