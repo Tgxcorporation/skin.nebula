@@ -10,7 +10,6 @@
         </control>
         <control type="multiimage">
             <visible>!Skin.HasSetting(Home_DefaultBG) + !Skin.HasSetting(DisableFanart)</visible>
-            <include>KenBurns</include>
             <posx>60</posx>
             <posy>218</posy>
             <width>1800</width>
