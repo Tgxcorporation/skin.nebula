@@ -370,7 +370,7 @@
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Weather.Art)">$LOCALIZE[13278] / $LOCALIZE[8]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Addons.Art)">$LOCALIZE[13278] / $LOCALIZE[24001]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),DVD.Art)">$LOCALIZE[13278] / $ADDON[script.skinshortcuts 32032]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(Background),Settings.Art)">$LOCALIZE[13278] / $LOCALIZE[10006]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(Background),Settings.Art)">$LOCALIZE[13278] / $LOCALIZE[5]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Favourites.Art)">$LOCALIZE[13278] / $LOCALIZE[10004]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Quit.Art)">$LOCALIZE[13278] / $LOCALIZE[13009]</value>
         <value condition="!IsEmpty(Container(211).ListItem.Property(Background))">$INFO[Container(211).ListItem.Property(Background)]</value>
