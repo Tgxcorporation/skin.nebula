@@ -21,6 +21,7 @@ Some pictures of the skin: [Screenshots](http://forum.xbmc.org/showthread.php?ti
 * ClearArt and ClearLogo for Music: CdArt Manager - http://wiki.xbmc.org/index.php?title=Add-on:CdART_Manager
 * Extra Fanart for Movies, TV Series, MusicVideos: Artwork Downloader - http://wiki.xbmc.org/index.php?title=Add-on:Artwork_Downloader
 * Global Search - http://kodi.wiki/view/Add-on:Global_Search
+* TV Show Next Aired - http://kodi.wiki/view/Add-on:TV_Show_-_Next_Aired
 * TvTunes - http://wiki.xbmc.org/index.php?title=Add-on:TvTunes
 * Recently added/Recommended/Random items: Skin Widgets - http://wiki.xbmc.org/index.php?title=Add-on:Skin_Widgets
 * Extended Info for Movies/TvShows/Music/LiveTv: Script Extended Info - https://github.com/phil65/script.extendedinfo
