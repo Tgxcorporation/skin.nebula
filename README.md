@@ -1,13 +1,15 @@
+## Nebula skin for Kodi 15 Isengard
 Nebula is a simple and full-featured light or dark color skin designed for Full HD TV screens.
-
-
-### Thanks
-All the Kodi/XBMC team and addon developers.
 
 
 
 ### Screenshots
 Some pictures of the skin: [Screenshots](http://forum.xbmc.org/showthread.php?tid=202711)
+
+
+
+### Update Log
+[Changelog](https://github.com/Tgxcorporation/skin.nebula/blob/master/changelog.txt)
 
 
 
@@ -54,6 +56,11 @@ and delete every file starting with "skin.nebula"
 
 5. Download the zipped skin for KODI 15 ISENGARD from https://github.com/Tgxcorporation/skin.nebula/archive/master.zip
 6. Start Kodi and go to Settings -> Add-ons and select "Install from zipped file". Browse for the file downloaded in point n. 5 and press "ok". The updated skin should install.
+
+
+
+### Thanks
+All the Kodi/XBMC team and addon developers.
 
 
 
