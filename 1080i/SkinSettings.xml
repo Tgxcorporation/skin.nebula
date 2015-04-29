@@ -153,7 +153,13 @@
                         </item>
                         <item id="125">
                             <label>$LOCALIZE[31038]</label>
+                            <onclick>RunScript(script.skinshortcuts,type=resetall&amp;warning=false)</onclick>
                             <onclick>Skin.ResetSettings</onclick>
+                            <onclick>XBMC.ReloadSkin()</onclick>
+                        </item>
+                        <item id="126">
+                            <label>$LOCALIZE[31944]</label>
+                            <onclick>RunScript(script.skinshortcuts,type=resetall&amp;warning=false)</onclick>
                             <onclick>XBMC.ReloadSkin()</onclick>
                         </item>
                     </content>

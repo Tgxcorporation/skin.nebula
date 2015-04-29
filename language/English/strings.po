@@ -559,6 +559,10 @@ msgstr ""
 #empty strings from id 31911 to 31944
 #NEBULA
 
+msgctxt "#31944"
+msgid "Reset Home Menu ONLY to default values"
+msgstr ""
+
 msgctxt "#31945"
 msgid "Disable Overlay in Music Playing Screen"
 msgstr ""
