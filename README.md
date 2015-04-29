@@ -3,7 +3,7 @@ Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented 
 
 ![](http://i.imgur.com/UVLYuNY.jpg)
 
-#### [Screenshots](https://github.com/Tgxcorporation/skin.nebula/wiki/Screenshots-BGN)
+#### [Screenshots](https://github.com/Tgxcorporation/skin.nebula/wiki/Screenshots)
 
 #### [Wiki](https://github.com/Tgxcorporation/skin.nebula/wiki)
 
