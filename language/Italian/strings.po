@@ -96,6 +96,10 @@ msgctxt "#31030"
 msgid "Enable Kiosk Mode"
 msgstr "Abilita modalità Kiosk"
 
+msgctxt "#31032"
+msgid "Startup"
+msgstr "Avvio"
+
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
 msgstr "Reimposta la skin sui valori di default"
@@ -115,6 +119,22 @@ msgstr "Ordina: Crescente"
 msgctxt "#31051"
 msgid "Sort: Descending"
 msgstr "Ordina: Decrescente"
+
+msgctxt "#31052"
+msgid "Label"
+msgstr "Etichetta"
+
+msgctxt "#31053"
+msgid "Widget"
+msgstr "Widgets"
+
+msgctxt "#31059"
+msgid "Background"
+msgstr "Sfondo"
+
+msgctxt "#31060"
+msgid "Widgets"
+msgstr "Widgets"
 
 msgctxt "#31090"
 msgid "Panel"

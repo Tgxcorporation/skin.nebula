@@ -9,28 +9,28 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
-"Language-Team: French (http://www.transifex.com/projects/p/xbmc-skins/language/fr/)\n"
+"Language-Team: French (Canada) (http://www.transifex.com/projects/p/xbmc-skins/language/fr_CA/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
+"Language: fr_CA\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgctxt "#31000"
 msgid "Picture Channels"
-msgstr "Chaînes d'Image"
+msgstr "Chaînes d'images"
 
 msgctxt "#31001"
 msgid "Video Channels"
-msgstr "Chaînes Vidéo"
+msgstr "Chaînes vidéos"
 
 msgctxt "#31002"
 msgid "Music Channels"
-msgstr "Chaînes Musique"
+msgstr "Chaînes musicales"
 
 msgctxt "#31003"
 msgid "Channels Directory"
-msgstr "Dossier des chaînes"
+msgstr "Répertoire des chaînes"
 
 msgctxt "#31004"
 msgid "Last.fm"
@@ -45,16 +45,16 @@ msgid "Shared"
 msgstr "Partagé"
 
 msgctxt "#31007"
-msgid "PleXBMC settings"
-msgstr "Paramètres PleXBMC"
+msgid "PleKodi settings"
+msgstr "Paramètres de PleKodi"
 
 msgctxt "#31008"
 msgid "Go Plex"
-msgstr "Aller vers Plex"
+msgstr "Lancer Plex"
 
 msgctxt "#31009"
 msgid "Go Kodi"
-msgstr "Aller vers Kodi"
+msgstr "Lancer Kodi"
 
 msgctxt "#31010"
 msgid "Queue"
@@ -62,55 +62,55 @@ msgstr "File d'attente"
 
 msgctxt "#31011"
 msgid "Recently Viewed"
-msgstr "Vu récemment"
+msgstr "Vus récemment"
 
 msgctxt "#31012"
 msgid "Recently Released"
-msgstr "Publié récemment"
+msgstr "Publiés récemment"
 
 msgctxt "#31013"
 msgid "Recently Aired"
-msgstr "Diffusé récemment"
+msgstr "Diffusés récemment"
 
 msgctxt "#31014"
 msgid "On Deck"
-msgstr "Prêt"
+msgstr "En place"
 
 msgctxt "#31015"
 msgid "Actor Info"
-msgstr "Info sur l'Acteur"
+msgstr "Infos sur l'acteur"
 
 msgctxt "#31016"
 msgid "Director Info"
-msgstr "Info sur le Directeur"
+msgstr "Infos sur le réalisateur"
 
 msgctxt "#31017"
 msgid "Writer Info"
-msgstr "Information sur le Scénariste"
+msgstr "Infos sur le scripteur"
 
 msgctxt "#31018"
 msgid "Cover Wrap"
-msgstr "Envelope de Couvertures"
+msgstr "Défilement des couvertures"
 
 msgctxt "#31019"
 msgid "Enable Rss ticker on main screens (only in list views)"
-msgstr "Activer le téléscripteur RSS sur les écrans principaux (uniquement dans les vues de liste)"
+msgstr "Activer le téléscripteur RSS sur les écrans principaux (seulement en vues de listes)"
 
 msgctxt "#31020"
 msgid "Recently Added"
-msgstr "Ajouté récemment"
+msgstr "Ajoutés récemment"
 
 msgctxt "#31021"
 msgid "Info"
-msgstr "Info"
+msgstr "infos"
 
 msgctxt "#31022"
 msgid "Extended Info"
-msgstr "Info Avancée"
+msgstr "Infos supplémentaires"
 
 msgctxt "#31023"
 msgid "Similar Movies"
-msgstr "Films Similaires"
+msgstr "Films semblables"
 
 msgctxt "#31024"
 msgid "MovieDB Users"
@@ -118,11 +118,11 @@ msgstr "Utilisateurs MovieDB"
 
 msgctxt "#31025"
 msgid "Items"
-msgstr "Objets"
+msgstr "Éléments"
 
 msgctxt "#31026"
 msgid "Enable manual scrolling for plot & review"
-msgstr "Activer le défilement manuel pour l'intrigue & avis"
+msgstr "Activer le défilement manuel de l'intrigue et de la critique"
 
 msgctxt "#31027"
 msgid "Show Plot"
@@ -130,19 +130,19 @@ msgstr "Afficher l'intrigue"
 
 msgctxt "#31028"
 msgid "Auto hide music playing infos"
-msgstr "Masquer les infos du morceau en cours"
+msgstr "Cacher automatiquement les infos sur la musique en cours de lecture"
 
 msgctxt "#31029"
 msgid "Art Management"
-msgstr "Gestion des Illustrations"
+msgstr "Gestion des illustrations"
 
 msgctxt "#31030"
 msgid "Enable Kiosk Mode"
-msgstr "Activer Le Mode Kiosque"
+msgstr "Activer le mode kiosque"
 
 msgctxt "#31031"
 msgid "Disable media infos in Icon View"
-msgstr "Désactiver les informations médias dans la Vue Icônes"
+msgstr "Désactiver les infos des médias dans la vue par icônes"
 
 msgctxt "#31032"
 msgid "Startup"
@@ -150,11 +150,11 @@ msgstr "Démarrage"
 
 msgctxt "#31033"
 msgid "Startup Screen Type"
-msgstr "Type d'Écran de Démarrage"
+msgstr "Type d'écran de démarrage"
 
 msgctxt "#31034"
 msgid "Customize menu items and widgets"
-msgstr "Personnaliser les éléments du menu et les widgets"
+msgstr "Personnaliser les éléments et les widgets du menu"
 
 msgctxt "#31035"
 msgid "Fuchsia"
@@ -170,55 +170,52 @@ msgstr "Couleurs en surbrillance"
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
-msgstr "Réinitialiser TOUS les paramètres du thème avec les valeurs par défaut"
+msgstr "Réinitialiser tous les paramètres d'habillage à leurs valeurs par défaut"
 
 msgctxt "#31039"
 msgid "Root Folder of Music library"
-msgstr "Dossier racine de la bibliothèque musicale"
+msgstr "Dossier racine de l'audiothèque"
 
 msgctxt "#31040"
 msgid "Enable CdArt"
-msgstr "Activer CdArt"
+msgstr "Activer le CDArt"
 
 msgctxt "#31041"
 msgid "Enable Extra Fanart"
-msgstr "Activer les Fanarts supplémentaires"
+msgstr "Activer le fanart supplémentaire"
 
 msgctxt "#31042"
 msgid "Enable Clear Art"
-msgstr "Activer Clear Art"
+msgstr "Utiliser l'illustration claire"
 
 msgctxt "#31043"
 msgid "Root Folder of cdART Manager library"
-msgstr "Dossier Racine pour la librairie cdART Manager"
+msgstr "Dossier racine de la bibliothèque du gestionnaire d'illustrations de CD"
 
 msgctxt "#31044"
 msgid "Enable Clear Logo"
-msgstr "Activer Clear Logo"
+msgstr "Activer les logos clairs"
 
 msgctxt "#31045"
-msgid "Customize PleXBMC menu items"
-msgstr "Personnaliser les éléments du menu PleXBMC"
-
-#empty strings from id 31046 to 31047
+msgid "Customize PleKodi menu items"
+msgstr "Personnaliser les éléments du menu PleKodi"
 
 msgctxt "#31048"
 msgid "Visualization Presets"
-msgstr "Préréglage de visualisation"
+msgstr "Préréglages des visualisations"
 
 msgctxt "#31049"
 msgid "Settings Level"
-msgstr "Niveau De Paramétrage"
+msgstr "Niveau des paramètres"
 
 msgctxt "#31050"
 msgid "Sort: Ascending"
-msgstr "Tri: Ascendant"
+msgstr "Trier : croissant"
 
 msgctxt "#31051"
 msgid "Sort: Descending"
-msgstr "Tri: Descendant"
+msgstr "Trier : décroissant"
 
-#Label for strings
 msgctxt "#31052"
 msgid "Label"
 msgstr "Étiquette"
@@ -229,27 +226,27 @@ msgstr "Widget"
 
 msgctxt "#31054"
 msgid "Random Movie Fanart"
-msgstr "Illustration des Films aléatoire"
+msgstr "Fanart aléatoire de film"
 
 msgctxt "#31055"
 msgid "Random TvShow Fanart"
-msgstr "Illustration des Séries TV aléatoire"
+msgstr "Fanart aléatoire d'émission télé"
 
 msgctxt "#31056"
 msgid "Random Video Fanart"
-msgstr "Illustration Vidéo aléatoire"
+msgstr "Fanart aléatoire de vidéo"
 
 msgctxt "#31057"
 msgid "Random Music Fanart"
-msgstr "Illustration Musique aléatoire"
+msgstr "Fanart aléatoire de musique"
 
 msgctxt "#31058"
 msgid "Actual Weather Condition"
-msgstr "Conditions météorologiques actuelles"
+msgstr "Conditions météo actuelles"
 
 msgctxt "#31059"
 msgid "Background"
-msgstr "Fond d'Écran"
+msgstr "Arrière-plan"
 
 msgctxt "#31060"
 msgid "Widgets"
@@ -257,19 +254,19 @@ msgstr "Widgets"
 
 msgctxt "#31061"
 msgid "Reset thumbnail"
-msgstr "Remettre miniature"
+msgstr "Réinitialiser l'imagette"
 
 msgctxt "#31062"
 msgid "Reset background"
-msgstr "Remetre image de fond"
+msgstr "Réinitialiser l'arrière-plan"
 
 msgctxt "#31063"
 msgid "Reset everything"
-msgstr "Remetre tout"
+msgstr "Tout réinitialiser"
 
 msgctxt "#31064"
 msgid "Set multi image background"
-msgstr "Régler fond multi image"
+msgstr "Définir l'arrière-plan à images multiples"
 
 msgctxt "#31065"
 msgid "Move left"
@@ -281,18 +278,15 @@ msgstr "Déplacer à droite"
 
 msgctxt "#31067"
 msgid "Custom Image"
-msgstr "Image Personnalisé"
+msgstr "Image personnalisée"
 
 msgctxt "#31068"
 msgid "Custom Video"
-msgstr "Vidéo Personnalisé"
+msgstr "Vidéo personnalisée"
 
 msgctxt "#31069"
 msgid "Startup Playlist"
 msgstr "Liste de lecture de démarrage"
-
-#empty strings from id 31070 to 31089
-#Viewtype
 
 msgctxt "#31090"
 msgid "Panel"
@@ -304,7 +298,7 @@ msgstr "Grande liste"
 
 msgctxt "#31092"
 msgid "Low List"
-msgstr "Petite liste"
+msgstr "Liste basse"
 
 msgctxt "#31093"
 msgid "Big Panel"
@@ -312,69 +306,55 @@ msgstr "Grand panneau"
 
 msgctxt "#31094"
 msgid "Banner List"
-msgstr "Bannière"
+msgstr "Liste de bannières"
 
 msgctxt "#31095"
 msgid "Card List"
-msgstr "Liste de Carte"
+msgstr "Liste de cartes"
 
 msgctxt "#31096"
 msgid "Slim List"
-msgstr "Liste fine"
-
-#empty strings from id 31096 to 31109
+msgstr "Liste réduite"
 
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
 msgstr "Modifier l'arrière-plan pour le type de média"
 
-#empty strings from id 31111 to 31112
-
 msgctxt "#31113"
 msgid "Single Image"
-msgstr "Image Simple"
+msgstr "Une seule image"
 
 msgctxt "#31114"
 msgid "Multi Image"
-msgstr "Image Multiple"
-
-#empty strings from id 31115 to 31131
+msgstr "Multi-images"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
-msgstr "Extension gérant les paroles"
+msgstr "Addiciel de paroles"
 
 msgctxt "#31133"
 msgid "Subtitle Add-on"
-msgstr "Extension gérant les sous-titres"
-
-#empty strings from id 31134 to 31290
+msgstr "Addiciel pour les sous-titres"
 
 msgctxt "#31291"
 msgid "Add-on manager"
-msgstr "Gestionnaire d'extensions"
+msgstr "Gestionnaire d'addiciels"
 
 msgctxt "#31292"
 msgid "items"
-msgstr "objets"
+msgstr "éléments"
 
 msgctxt "#31293"
 msgid "Can not be customized"
-msgstr "Non personnalisable"
-
-#empty strings from id 31294 to 31296
+msgstr "Ne peut pas être personnalisé"
 
 msgctxt "#31297"
 msgid "min"
 msgstr "min"
 
-#empty strings from id 31298 to 31308
-
 msgctxt "#31309"
 msgid "Memory Used:"
-msgstr "Mémoire utilisée:"
-
-#empty strings from id 31310 to 31321
+msgstr "Mémoire utilisée :"
 
 msgctxt "#31322"
 msgid "Aired"
@@ -382,10 +362,7 @@ msgstr "Diffusé"
 
 msgctxt "#31323"
 msgid "Most Loved Tracks"
-msgstr "Pistes Préférées"
-
-#empty strings from id 31324 to 31350
-#Video and Music OSD Labels
+msgstr "Les pistes coups de cœur"
 
 msgctxt "#31351"
 msgid "Pause"
@@ -393,7 +370,7 @@ msgstr "Pause"
 
 msgctxt "#31352"
 msgid "Stop"
-msgstr "Arrêter"
+msgstr "Arrêt"
 
 msgctxt "#31353"
 msgid "Fast Forward"
@@ -405,7 +382,7 @@ msgstr "Retour rapide"
 
 msgctxt "#31355"
 msgid "Movie menu"
-msgstr "Menu du film"
+msgstr "Menu des films"
 
 msgctxt "#31356"
 msgid "Download Subtitles"
@@ -413,89 +390,83 @@ msgstr "Télécharger les sous-titres"
 
 msgctxt "#31357"
 msgid "Local subtitle available"
-msgstr "Sous-titre disponible localement"
-
-#empty strings from id 31358 to 31389
-#Skin Fontsets
+msgstr "Sous-titres locaux proposés"
 
 msgctxt "#31390"
 msgid "Ubuntu (Regular)"
-msgstr "Ubuntu (Regular)"
+msgstr "Ubuntu (régulier)"
 
 msgctxt "#31391"
 msgid "Ubuntu (Medium)"
-msgstr "Ubuntu (Medium)"
+msgstr "Ubuntu (moyen)"
 
 msgctxt "#31392"
 msgid "Asap (Fixed Width)"
-msgstr "Asap (Largeur Fixe)"
+msgstr "Asap (largeur fixe)"
 
 msgctxt "#31393"
 msgid "DejaVuSans (Regular)"
-msgstr "DejaVuSans (Regular)"
+msgstr "DejaVuSans (régulier)"
 
 msgctxt "#31394"
 msgid "MC360 (Regular)"
-msgstr "MC360 (Regular)"
+msgstr "MC360 (régulier)"
 
 msgctxt "#31395"
 msgid "Arial (Regular)"
-msgstr "Arial (Regular)"
-
-#empty strings from id 31396 to 31499
-#PVR Labels
+msgstr "Arial (régulier)"
 
 msgctxt "#31500"
 msgid "Live TV"
-msgstr "TV En Direct"
+msgstr "Télé en direct"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
-msgstr "Heure prévue"
+msgstr "Heure planifiée"
 
 msgctxt "#31502"
 msgid "All Movies"
-msgstr "Tous Les Films"
+msgstr "Tous les films"
 
 msgctxt "#31503"
 msgid "Add Group"
-msgstr "Ajouter un Groupe"
+msgstr "Ajouter un groupe"
 
 msgctxt "#31504"
 msgid "Rename Group"
-msgstr "Renommer le Groupe"
+msgstr "Renommer le groupe"
 
 msgctxt "#31505"
 msgid "Delete Group"
-msgstr "Supprimer le Groupe"
+msgstr "Supprimer le groupe"
 
 msgctxt "#31506"
 msgid "Available[CR]Groups"
-msgstr "Groupes[CR]disponibles"
+msgstr "Groupes[CR]proposés"
 
 msgctxt "#31507"
 msgid "Movies homescreen button opens:"
-msgstr "Le bouton Films de l'écran d'Accueil ouvre:"
+msgstr "Le bouton Films de l'écran d'accueil ouvre :"
 
 msgctxt "#31508"
 msgid "Last Updated"
-msgstr "Dernière mise à  jour"
+msgstr "Dernière mise à jour"
 
 msgctxt "#31509"
 msgid "Extras"
-msgstr "Extras"
+msgstr "Suppléments"
 
 msgctxt "#31510"
 msgid "Timer Set"
-msgstr "Réglage de la minuterie"
+msgstr "Minuterie réglée"
 
 msgctxt "#31511"
 msgid "Artwork Downloader Solo"
-msgstr "Artwork Downloader: mode Solo"
+msgstr "Téléchargeur d'illustrations - Solo"
 
 msgctxt "#31512"
 msgid "Artwork Downloader Gui"
-msgstr "Artwork Downloader: mode Interface Utilisateur"
+msgstr "IUG du téléchargeur d'illustrations"
 
 msgctxt "#31513"
 msgid "All Music"
@@ -503,23 +474,31 @@ msgstr "Toute la musique"
 
 msgctxt "#31514"
 msgid "Music homescreen button opens:"
-msgstr "Le bouton Musique de l'écran d'Accueil ouvre :"
+msgstr "Le bouton Musique de l'écran d'accueil ouvre :"
 
 msgctxt "#31515"
 msgid "Tv Shows homescreen button opens:"
-msgstr "Le bouton Emissions TV de l'écran d'Accueil ouvre :"
+msgstr "Le bouton Sériés télé de l'écran d'accueil ouvre : "
 
 msgctxt "#31516"
 msgid "All Tv Shows"
-msgstr "Toutes les Emission TV"
+msgstr "Toutes les émissions télé"
 
 msgctxt "#31517"
 msgid "Defined by General Settings"
-msgstr "Défini par les Réglages Général"
+msgstr "Défini par les paramètres généraux"
 
-#empty strings from id 31518 to 31900
+msgctxt "#31518"
+msgid "Random Image"
+msgstr "Image aléatoire"
 
-#Weather plugin
+msgctxt "#31519"
+msgid "Root Folder for Custom Weather Fanarts"
+msgstr "Dossier racine pour les fanarts météo personnalisés"
+
+msgctxt "#31520"
+msgid "Root Folder for Custom Weather Icons"
+msgstr "Dossier racine pour les icônes météo personnalisées"
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
@@ -527,60 +506,55 @@ msgstr "Prévisions sur 36 heures"
 
 msgctxt "#31902"
 msgid "Hourly Forecast"
-msgstr "Prévisions heure par heure"
+msgstr "Prévisions horaires"
 
 msgctxt "#31903"
 msgid "Weekend Forecast"
-msgstr "Prévisions pour le weekend"
+msgstr "Prévisions pour la fin de semaine"
 
 msgctxt "#31904"
 msgid "Daily Forecast"
-msgstr "Prévisions Quotidiennes"
-
-#empty strings from id 31905 to 31909
+msgstr "Prévisions quotidiennes"
 
 msgctxt "#31910"
 msgid "Maps"
 msgstr "Cartes"
 
-#empty strings from id 31911 to 31944
-#NEBULA
-
 msgctxt "#31945"
 msgid "Disable Overlay in Music Playing Screen"
-msgstr "Désactiver cache transparent sur l'écrand de lecture de musique"
+msgstr "Désactiver la surcouche dans l'écran de lecture de la musique"
 
 msgctxt "#31946"
 msgid "Related TMDB Lists"
-msgstr "Listes TMDB reliés"
+msgstr "Listes apparentées de TMDB"
 
 msgctxt "#31947"
 msgid "Resulting sub menu"
-msgstr "Sous-menu obtenu"
+msgstr "Sous-menu résultant"
 
 msgctxt "#31948"
 msgid "Home sub menu"
-msgstr "Sous-menu Accueil"
+msgstr "Sous-menu de l'accueil"
 
 msgctxt "#31949"
 msgid "Enable window closing icon"
-msgstr "Activer l'icon de fermeture de la fenêtre"
+msgstr "Activer l'icône de fermeture de la fenêtre"
 
 msgctxt "#31950"
 msgid "Disable Fanart Backdrops"
-msgstr "Désactiver les arrières-plans Fanart"
+msgstr "Désactiver le fanart pour la toile de fond"
 
 msgctxt "#31951"
 msgid "Disable Sliding Animations"
-msgstr "Désactiver les Animations Coulissantes"
+msgstr "Désactiver les animations coulissantes"
 
 msgctxt "#31952"
 msgid "Disable Pause, FF, RW icons in OSD"
-msgstr "Désactiver les icônes Pause, Avance Rapide, Retour Rapide dans le menu d'affichage à l'écran (OSD)"
+msgstr "Désactiver les icônes Pause, Avance rapide, Retour rapide dans l'affichage à l'écran"
 
 msgctxt "#31953"
 msgid "Large List"
-msgstr "Grande Liste"
+msgstr "Grande liste"
 
 msgctxt "#31954"
 msgid "S"
@@ -588,7 +562,7 @@ msgstr "S"
 
 msgctxt "#31955"
 msgid "Display shelf items after a short delay"
-msgstr "Afficher les objets de l'étagère après un court délai"
+msgstr "Afficher les éléments sur la tablette après un court délai"
 
 msgctxt "#31956"
 msgid "Get theme"
@@ -596,7 +570,7 @@ msgstr "Obtenir le thème"
 
 msgctxt "#31957"
 msgid "Hide Update library button from home submenu"
-msgstr "Cacher 'Actualiser la médiathèque' dans le sous-menu Accueil"
+msgstr "Cacher le bouton de mise à jour de la médiathèque du sous-menu de l’accueil"
 
 msgctxt "#31958"
 msgid "Big Panel"
@@ -604,34 +578,31 @@ msgstr "Grand panneau"
 
 msgctxt "#31959"
 msgid "Go fullscreen on music playback"
-msgstr "Affichage plein écran lors de la lecture de musique"
+msgstr "Lecture de la musique en plein écran"
 
 msgctxt "#31960"
 msgid "Music opens artists"
-msgstr "Musique ouvre Artistes"
+msgstr "Musique ouvre les artistes"
 
 msgctxt "#31961"
 msgid "Recently added"
-msgstr "Récemment ajouté"
+msgstr "Ajouté récemment"
 
-#.view label
 msgctxt "#31962"
 msgid "Low List"
-msgstr "Petite liste"
+msgstr "Liste basse"
 
-#.view label
 msgctxt "#31963"
 msgid "Panel"
 msgstr "Panneau"
 
 msgctxt "#31964"
 msgid "Configure shelf items"
-msgstr "Configurer les objets de l'étagère"
+msgstr "Configurer les éléments de la tablette"
 
-#.view label
 msgctxt "#31965"
 msgid "Banner List"
-msgstr "Bannière"
+msgstr "Liste de bannières"
 
 msgctxt "#31966"
 msgid "Recommended"
@@ -639,19 +610,19 @@ msgstr "Recommandé"
 
 msgctxt "#31967"
 msgid "Enable Home shelf"
-msgstr "Activer l'étagère de l'écran d'Accueil"
+msgstr "Activer la tablette de l'écran d’accueil"
 
 msgctxt "#31968"
 msgid "Show info"
-msgstr "Afficher les informations"
+msgstr "Afficher les infos"
 
 msgctxt "#31969"
 msgid "Artist slideshow (requires Artist slideshow add-on)"
-msgstr "Diaporama Artiste (extension Artist slideshow nécessaire)"
+msgstr "Diaporama d'artiste (exige l'addiciel Diaporama d'artiste)"
 
 msgctxt "#31970"
 msgid "Push down for Gallery"
-msgstr "Appuyer vers le bas pour la Galerie"
+msgstr "Pousser vers le bas pour la galerie"
 
 msgctxt "#31971"
 msgid "Concerts"
@@ -667,7 +638,7 @@ msgstr "E"
 
 msgctxt "#31974"
 msgid "Home menu"
-msgstr "Menu d'Accueil"
+msgstr "Menu d'accueil"
 
 msgctxt "#31975"
 msgid "Channels"
@@ -675,7 +646,7 @@ msgstr "Chaînes"
 
 msgctxt "#31976"
 msgid "Home shelf"
-msgstr "Étagère d'Accueil"
+msgstr "Tablette de l'écran d’accueil"
 
 msgctxt "#31977"
 msgid "Fast start"
@@ -683,7 +654,7 @@ msgstr "Démarrage rapide"
 
 msgctxt "#31978"
 msgid "Show library info on Home (totals, unwatched...)"
-msgstr "Afficher les infos de la médiathèque sur l'Accueil (total, non vus...)"
+msgstr "Afficher les infos de la médiathèque dans l'accueil (totaux, non regardés...)"
 
 msgctxt "#31979"
 msgid "Loading..."
@@ -691,15 +662,15 @@ msgstr "Chargement..."
 
 msgctxt "#31980"
 msgid "Hide unwatched and partialy watched marks"
-msgstr "Masquer les indications 'Non vu' et 'Partiellement vu'"
+msgstr "Cacher les marques Non regardé et Partiellement regardé"
 
 msgctxt "#31981"
 msgid "Hide watched marks"
-msgstr "Masquer les indications 'Déjà vu'"
+msgstr "Cacher les marques Regardé"
 
 msgctxt "#31982"
 msgid "Shelf items populate more slowly on some systems. By default, skin waits for them to be ready and presents Home screen afterwards.[CR][CR]This option skips this step and presents Home page immediately. Shelf items will appear with a delay, depending on a speed of your system."
-msgstr "L'étagère se remplit moins vite sur certains systèmes. Par défaut, le thème attend et affiche l'écran d'Accueil après. [CR][CR]Cette option saute cette étape et affiche l'Accueil immédiatement. Les objets de l'étagère apparaitront plus tard, en fonction de la vitesse de votre système."
+msgstr "Les éléments de la tablette se remplissent plus lentement sur ​​certains systèmes. Par défaut, l'habillage attend qu'ils soient prêts et présente ensuite l'écran d'accueil.[CR][CR]Cette option saute cette étape et présente l'écran d'accueil immédiatement. Les éléments de la tablette apparaissent avec un retard, selon la vitesse de votre système."
 
 msgctxt "#31983"
 msgid "Choose from menu"
@@ -707,7 +678,7 @@ msgstr "Choisir à partir du menu"
 
 msgctxt "#31984"
 msgid "TV Tunes (requires TV Tunes add-on)"
-msgstr "TV Tunes (extension TV Tunes nécessaire)"
+msgstr "TvTunes (exige l'addiciel TvTunes)"
 
 msgctxt "#31985"
 msgid "Advanced"
@@ -715,7 +686,7 @@ msgstr "Avancé"
 
 msgctxt "#31986"
 msgid "Use default background on Home page"
-msgstr "Utiliser l'arrière-plan par défaut sur la page d'Accueil"
+msgstr "Utiliser l'arrière-plan par défaut sur la page d’accueil"
 
 msgctxt "#31987"
 msgid "Random"
@@ -727,44 +698,44 @@ msgstr "Menu"
 
 msgctxt "#31989"
 msgid "Home menu quit button function"
-msgstr "Fonction du bouton Quitter sur le menu d'Accueil"
+msgstr "Fonction du bouton quitter du menu d'accueil"
 
 msgctxt "#31990"
 msgid "Quit Menu"
-msgstr "Menu Quitter"
+msgstr "Quitter le menu"
 
 msgctxt "#31991"
 msgid "Disable background music visualization/video player"
-msgstr "Désactiver la visualisation de la musique/lecteur vidéo en arrière-plan"
+msgstr "Désactiver la visualisation de la musique/le lecteur vidéo d'arrière-plan"
 
 msgctxt "#31992"
 msgid "Banner (wide) thumbs"
-msgstr "Vignettes des bannières (larges)"
+msgstr "Imagettes des bannières (larges)"
 
 msgctxt "#31993"
 msgid "Not used - click to customize"
-msgstr "Non utilisé - cliquer pour personnaliser"
+msgstr "Inutilisé - cliquer pour personnaliser"
 
 msgctxt "#31994"
 msgid "Use vertical main menu on Home screen"
-msgstr "Utiliser le menu vertical sur l'écran d'Accueil"
+msgstr "Utiliser le menu principal vertical à l'écran d’accueil"
 
 msgctxt "#31995"
 msgid "Home layout"
-msgstr "Disposition Accueil"
+msgstr "Agencement de l'accueil"
 
 msgctxt "#31996"
 msgid "Big Channel List in OSD"
-msgstr "Grande Liste de Chaînes dans le menu d'affichage à l'écran (OSD)"
+msgstr "Grande liste des chaînes dans l'affichage à l'écran"
 
 msgctxt "#31997"
 msgid "Ken Burns Effect on backdrops"
-msgstr "Effet Ken Burns sur les arrières-plans"
+msgstr "Effet de Ken Burns sur les toiles de fond"
 
 msgctxt "#31998"
 msgid "Use fixed list on Home Menu"
-msgstr "Utiliser une liste fixe sur le menu d'accueil"
+msgstr "Utiliser des listes fixes pour le menu d’accueil"
 
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
-msgstr "Coulisser vers la gauche les animation des vues format liste"
+msgstr "Glisser vers la gauche les animations des vues de listes"
