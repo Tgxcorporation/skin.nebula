@@ -45,8 +45,8 @@ msgid "Shared"
 msgstr "Udostępnione"
 
 msgctxt "#31007"
-msgid "PleKodi settings"
-msgstr "Ustawienia PleKodi"
+msgid "PleXBMC settings"
+msgstr "Ustawienia PleXBMC"
 
 msgctxt "#31008"
 msgid "Go Plex"
@@ -197,8 +197,8 @@ msgid "Enable Clear Logo"
 msgstr "Pokazuj logo"
 
 msgctxt "#31045"
-msgid "Customize PleKodi menu items"
-msgstr "Dostosuj pozycje menu PleKodi"
+msgid "Customize PleXBMC menu items"
+msgstr "Dostosuj pozycje menu PleXBMC"
 
 msgctxt "#31048"
 msgid "Visualization Presets"
@@ -488,6 +488,18 @@ msgctxt "#31517"
 msgid "Defined by General Settings"
 msgstr "Zdefiniowane przez Ogólne ustawienia"
 
+msgctxt "#31518"
+msgid "Random Image"
+msgstr "Obraz losowy"
+
+msgctxt "#31519"
+msgid "Root Folder for Custom Weather Fanarts"
+msgstr "Folder główny dla niestandardowych fototapet pogody"
+
+msgctxt "#31520"
+msgid "Root Folder for Custom Weather Icons"
+msgstr "Folder główny dla niestandardowych ikon pogody"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "Prognoza 36 godzinna"
@@ -507,6 +519,10 @@ msgstr "Prognoza dzienna"
 msgctxt "#31910"
 msgid "Maps"
 msgstr "Mapy"
+
+msgctxt "#31944"
+msgid "Reset Home Menu ONLY to default values"
+msgstr "Przywróć TYLKO domyślne menu startowe"
 
 msgctxt "#31945"
 msgid "Disable Overlay in Music Playing Screen"
