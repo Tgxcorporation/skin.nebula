@@ -326,6 +326,7 @@
         <value>$VAR[Default.Art]</value>
     </variable>
     <variable name="SkinShortcutBackgrounds">
+        <value condition="Skin.HasSetting(Home_DefaultBG)">$VAR[Default.Art]</value>
         <value condition="Skin.HasSetting(plexbmc)+!StringCompare(Container(211).ListItem.Property(uuid),)+!IsEmpty(Container(211).ListItem.ActualIcon)">$INFO[Container(211).ListItem.ActualIcon]</value>
         <value condition="Skin.HasSetting(plexbmc)+!StringCompare(Container(211).ListItem.Property(uuid),)+IsEmpty(Container(211).ListItem.ActualIcon)">$INFO[Container(211).ListItem.Icon]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(background),movieFanart)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>

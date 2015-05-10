@@ -9,7 +9,7 @@
             <texture border="35">$VAR[Theme.Color]/common/JewelCase2.png</texture>
         </control>
         <control type="multiimage">
-            <visible>!Skin.HasSetting(Home_DefaultBG) + !Skin.HasSetting(DisableFanart)</visible>
+            <visible>!Skin.HasSetting(DisableFanart)</visible>
             <posx>60</posx>
             <posy>218</posy>
             <width>1800</width>
