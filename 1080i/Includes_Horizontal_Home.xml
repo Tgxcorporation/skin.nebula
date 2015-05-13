@@ -423,7 +423,7 @@
                             <effect type="fade" start="40" end="100" time="100"/>
                         </animation>
                         <posx>0</posx>
-                        <posy>739</posy>
+                        <posy>741</posy>
                         <width>1920</width>
                         <height>316</height>
                         <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>

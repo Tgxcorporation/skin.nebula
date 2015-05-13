@@ -104,6 +104,7 @@
         <value>$LOCALIZE[416]</value>
     </variable>
     <variable name="DetailsRow1">
+        <value condition="!IsEmpty(ListItem.Rating)">[COLOR=Dummy][/COLOR]</value>
         <value condition="Window.IsActive(MyPVRTimers.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
         <value condition="Window.IsActive(MyPVRSearch.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
@@ -147,7 +148,8 @@
         <value condition="Container.Content(Movies)">$INFO[ListItem.Genre]</value>
         <value condition="Container.Content(TVShows)">$INFO[ListItem.Genre]</value>
         <value condition="Container.Content(Seasons)">$INFO[ListItem.Genre]</value>
-        <value condition="Container.Content(Episodes)">$INFO[ListItem.Season,$LOCALIZE[31973],.]$INFO[ListItem.Episode,,     ]$INFO[ListItem.TVShowTitle]</value>
+        <value condition="Container.Content(Episodes)+!IsEmpty(ListItem.TVShowTitle)">$INFO[ListItem.Season,$LOCALIZE[31973],.]$INFO[ListItem.Episode,,     ]$INFO[ListItem.TVShowTitle]</value>
+        <value condition="Container.Content(Episodes)+IsEmpty(ListItem.TVShowTitle)+!IsEmpty(ListItem.Studio)">$INFO[ListItem.Studio]</value>
         <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Genre]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.PictureResolution]</value>
     </variable>
@@ -156,6 +158,7 @@
         <value condition="Window.IsActive(AddonBrowser.xml)">$INFO[ListItem.Label2]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.PictureCamModel]</value>
         <value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]]</value>
+        <!--<value condition="IsEmpty(ListItem.VideoResolution)">$INFO[ListItem.Label2]</value>-->
     </variable>
     <variable name="Details">
         <value condition="Window.IsActive(DialogPVRGuideOSD.xml)">$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
