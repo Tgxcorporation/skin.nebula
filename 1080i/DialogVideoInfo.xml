@@ -27,7 +27,7 @@
                 <posx>TextMargin</posx>
                 <posy>183</posy>
                 <width>1800</width>
-                <height>135</height>
+                <height>105</height>
                 <align>center</align>
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
@@ -42,6 +42,16 @@
                     ControlGroup(90130).HasFocus|
                     ControlGroup(90131).HasFocus]</visible>
                 <include>VisibleFadeEffectDelay</include>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>270</posy>
+                    <width>1800</width>
+                    <height>35</height>
+                    <align>center</align>
+                    <font>InfoTitleSubFont</font>
+                    <include>TextColor_MainColor</include>
+                    <label>$INFO[ListItem.Year]</label>
+                </control>
                 <control type="group">
                     <!-- CDART -->
                     <visible>!Skin.HasSetting(plexbmc)</visible>
@@ -739,6 +749,16 @@
             <control type="group" id="90131">
                 <visible>Control.HasFocus(10)|ControlGroup(90131).HasFocus</visible>
                 <include>VisibleFadeEffectDelay</include>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>270</posy>
+                    <width>1800</width>
+                    <height>35</height>
+                    <align>center</align>
+                    <font>InfoTitleSubFont</font>
+                    <include>TextColor_MainColor</include>
+                    <label>$INFO[ListItem.Year]</label>
+                </control>
                 <!-- FANART -->
                 <control type="image">
                     <visible>IsEmpty(ListItem.Art(fanart))</visible>
@@ -762,6 +782,16 @@
             <control type="group" id="90130">
                 <visible>Control.HasFocus(9013)|ControlGroup(90130).HasFocus</visible>
                 <include>VisibleFadeEffectDelay</include>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>270</posy>
+                    <width>1800</width>
+                    <height>35</height>
+                    <align>center</align>
+                    <font>InfoTitleSubFont</font>
+                    <include>TextColor_MainColor</include>
+                    <label>$INFO[ListItem.Year]</label>
+                </control>
                 <!-- PLOT -->
                 <control type="group">
                     <!-- CDART -->
@@ -831,6 +861,16 @@
             <control type="group" id="90120">
                 <visible>control.hasfocus(9012)|ControlGroup(90120).HasFocus</visible>
                 <include>VisibleFadeEffectDelay</include>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>270</posy>
+                    <width>1800</width>
+                    <height>35</height>
+                    <align>center</align>
+                    <font>InfoTitleSubFont</font>
+                    <include>TextColor_MainColor</include>
+                    <label>$INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
+                </control>
                 <!-- ACTOR LIST -->
                 <control type="image">
                     <visible>IsEmpty(Container(50).ListItem.Thumb)</visible>
