@@ -292,7 +292,7 @@
                             <font>InfoRatingFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
-                            <label fallback="416">$INFO[ListItem.Rating]</label>
+                            <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
                         </control>
                     </control>
                     <control type="label">
@@ -546,7 +546,7 @@
                             <font>InfoRatingFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
-                            <label fallback="416">$INFO[ListItem.Rating]</label>
+                            <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
                         </control>
                     </control>
                     <control type="label">
@@ -770,7 +770,7 @@
                             <font>InfoRatingFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
-                            <label fallback="416">$INFO[ListItem.Rating]</label>
+                            <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
                         </control>
                     </control>
                     <control type="label">
