@@ -126,6 +126,7 @@
         <control type="group">
             <visible>Control.IsVisible(59)</visible>
             <include>Icon_Fade</include>
+            <include>ScrollOffsetLabel_50</include>
             <control type="fixedlist" id="59">
                 <include>UnderFade</include>
                 <visible>[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)</visible>
@@ -379,6 +380,7 @@
         <control type="group">
             <visible>Control.IsVisible(58)</visible>
             <include>Icon_Fade</include>
+            <include>ScrollOffsetLabel_50</include>
             <control type="fixedlist" id="58">
                 <include>UnderFade</include>
                 <visible>![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
@@ -634,6 +636,7 @@
         <control type="group">
             <visible>Control.IsVisible(57)</visible>
             <include>Icon_Fade</include>
+            <include>ScrollOffsetLabel_50</include>
             <control type="fixedlist" id="57">
                 <include>UnderFade</include>
                 <visible>container.content(episodes)</visible>
