@@ -80,6 +80,12 @@
         <value condition="Window.IsActive(DialogFavourites.xml)">$LOCALIZE[1036]</value>
         <value condition="!IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
     </variable>
+    <variable name="HomeSubTitles">
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),music)+Library.HasContent(Music)">$INFO[Window(Home).Property(Music.ArtistsCount),, $LOCALIZE[132]] / $INFO[Window(Home).Property(Music.AlbumsCount),, $LOCALIZE[133]] / $INFO[Window(Home).Property(Music.SongsCount),, $LOCALIZE[134]]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),movies)">$INFO[Window(Home).Property(Movies.Count),, $LOCALIZE[20342]]$INFO[Window(Home).Property(Movies.UnWatched), - , $LOCALIZE[16101]]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),tvshows)">$INFO[Window(Home).Property(TVShows.Count),, $LOCALIZE[20343]]$INFO[Window(Home).Property(TVShows.UnWatched), - , $LOCALIZE[16101]] / $INFO[Window(Home).Property(episodes.Count),, $LOCALIZE[20360]]$INFO[Window(Home).Property(episodes.UnWatched), - , $LOCALIZE[16101]]</value>
+        <value>$INFO[Container(300).ListItem.Label]</value>
+    </variable>
     <variable name="MusicPlayingFanartLabel2">
         <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[449]</value>
         <value>$LOCALIZE[13113]</value>
