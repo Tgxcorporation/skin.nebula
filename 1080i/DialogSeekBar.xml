@@ -138,7 +138,7 @@
             <font>NotificationFont</font>
             <include>TextColor_AlternateColor</include>
             <label>$INFO[Player.FinishTime]</label>
-        </control>l
+        </control>
         <control type="group" id="22929">
             <visible>![Window.IsVisible(videoosd)|Window.IsVisible(musicosd)]</visible>
             <include>TopBarOSDVisibleFadeEffect</include>
