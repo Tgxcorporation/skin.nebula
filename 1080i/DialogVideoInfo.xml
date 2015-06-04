@@ -37,10 +37,8 @@
                 <!-- INFO -->
                 <visible>![Control.HasFocus(9013)|
                     Control.HasFocus(9012)|
-                    Control.HasFocus(10)|
                     ControlGroup(90120).HasFocus|
-                    ControlGroup(90130).HasFocus|
-                    ControlGroup(90131).HasFocus]</visible>
+                    ControlGroup(90130).HasFocus]</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <control type="label">
                     <posx>TextMargin</posx>
@@ -746,39 +744,39 @@
                     <include>Codecs</include>
                 </control>
             </control>
-            <control type="group" id="90131">
-                <visible>Control.HasFocus(10)|ControlGroup(90131).HasFocus</visible>
-                <include>VisibleFadeEffectDelay</include>
-                <control type="label">
-                    <posx>TextMargin</posx>
-                    <posy>270</posy>
-                    <width>1800</width>
-                    <height>35</height>
-                    <align>center</align>
-                    <font>InfoTitleSubFont</font>
-                    <include>TextColor_MainColor</include>
-                    <label>$INFO[ListItem.Year]</label>
-                </control>
-                <!-- FANART -->
-                <control type="image">
-                    <visible>IsEmpty(ListItem.Art(fanart))</visible>
-                    <posx>60</posx>
-                    <posy>338</posy>
-                    <width>1093</width>
-                    <height>615</height>
-                    <texture>$VAR[Theme.Color]/defaultPictureBig.png</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
-                <control type="image">
-                    <posx>25</posx>
-                    <posy>313</posy>
-                    <width>1163</width>
-                    <height>685</height>
-                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-                    <include>ThumbBorder</include>
-                    <aspectratio>keep</aspectratio>
-                </control>
-            </control>
+            <!--<control type="group" id="90131">-->
+                <!--<visible>Control.HasFocus(10)|ControlGroup(90131).HasFocus</visible>-->
+                <!--<include>VisibleFadeEffectDelay</include>-->
+                <!--<control type="label">-->
+                    <!--<posx>TextMargin</posx>-->
+                    <!--<posy>270</posy>-->
+                    <!--<width>1800</width>-->
+                    <!--<height>35</height>-->
+                    <!--<align>center</align>-->
+                    <!--<font>InfoTitleSubFont</font>-->
+                    <!--<include>TextColor_MainColor</include>-->
+                    <!--<label>$INFO[ListItem.Year]</label>-->
+                <!--</control>-->
+                <!--&lt;!&ndash; FANART &ndash;&gt;-->
+                <!--<control type="image">-->
+                    <!--<visible>IsEmpty(ListItem.Art(fanart))</visible>-->
+                    <!--<posx>60</posx>-->
+                    <!--<posy>338</posy>-->
+                    <!--<width>1093</width>-->
+                    <!--<height>615</height>-->
+                    <!--<texture>$VAR[Theme.Color]/defaultPictureBig.png</texture>-->
+                    <!--<aspectratio>keep</aspectratio>-->
+                <!--</control>-->
+                <!--<control type="image">-->
+                    <!--<posx>25</posx>-->
+                    <!--<posy>313</posy>-->
+                    <!--<width>1163</width>-->
+                    <!--<height>685</height>-->
+                    <!--<texture background="true">$INFO[ListItem.Art(fanart)]</texture>-->
+                    <!--<include>ThumbBorder</include>-->
+                    <!--<aspectratio>keep</aspectratio>-->
+                <!--</control>-->
+            <!--</control>-->
             <control type="group" id="90130">
                 <visible>Control.HasFocus(9013)|ControlGroup(90130).HasFocus</visible>
                 <include>VisibleFadeEffectDelay</include>
@@ -1078,6 +1076,16 @@
                     <description>Fanart</description>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[13511]</label>
+                    <onright>9009</onright>
+                </control>
+                <control type="togglebutton" id="9018">
+                    <visible>System.HasAddon(script.artwork.downloader) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
+                    <description>Artwork Downloader</description>
+                    <include>LeftMenuButton</include>
+                    <label>Artwork Downloader</label>
+                    <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
+                    <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
+                    <onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideos, dbid=$INFO[ListItem.DBID])</onclick>
                     <onright>9009</onright>
                 </control>
                 <control type="button" id="105">
