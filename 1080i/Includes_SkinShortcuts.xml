@@ -47,7 +47,6 @@
             <width>569</width>
             <height>351</height>
             <texture background="true">special://skin/backgrounds/weather.jpg</texture>
-            <include>SkinShortcuts_DisabledItem</include>
             <aspectratio>scale</aspectratio>
             <include>ThumbBorder</include>
         </control>
@@ -68,7 +67,6 @@
             <width>569</width>
             <height>351</height>
             <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[Container(211).ListItem.Icon]</texture>
-            <include>SkinShortcuts_DisabledItem</include>
             <aspectratio>scale</aspectratio>
             <include>ThumbBorder</include>
         </control>
