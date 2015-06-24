@@ -159,11 +159,11 @@
     <include name="OpenClose">
         <animation type="WindowOpen" reversible="false">
             <effect type="fade" start="0" end="100" time="150" delay="0" tween="circle" easing="inout"/>
-            <effect type="zoom" start="105" end="100" time="150" delay="0" center="960,540" tween="circle" easing="inout"/>
+            <effect type="zoom" start="105" end="100" time="150" delay="0" center="960,588" tween="circle" easing="inout"/>
         </animation>
         <animation type="WindowClose" reversible="false">
             <effect type="fade" start="100" end="0" time="150" delay="0" tween="circle" easing="inout"/>
-            <effect type="zoom" start="100" end="105" time="150" delay="0" center="960,540" tween="circle" easing="inout"/>
+            <effect type="zoom" start="100" end="105" time="150" delay="0" center="960,588" tween="circle" easing="inout"/>
         </animation>
     </include>
     <include name="DialogOpenClose">
@@ -174,6 +174,16 @@
         <animation type="WindowClose" reversible="false">
             <effect type="fade" start="100" end="0" time="150" delay="0" tween="circle" easing="inout"/>
             <effect type="zoom" start="100" end="110" time="150" delay="0" center="960,540" tween="circle" easing="inout"/>
+        </animation>
+    </include>
+    <include name="DialogContextOpenClose">
+        <animation type="WindowOpen" reversible="false">
+            <effect type="fade" start="0" end="100" time="150" delay="0" tween="circle" easing="inout"/>
+            <effect type="zoom" start="110" end="100" time="150" delay="0" center="960,405" tween="circle" easing="inout"/>
+        </animation>
+        <animation type="WindowClose" reversible="false">
+            <effect type="fade" start="100" end="0" time="150" delay="0" tween="circle" easing="inout"/>
+            <effect type="zoom" start="100" end="110" time="150" delay="0" center="960,405" tween="circle" easing="inout"/>
         </animation>
     </include>
     <include name="NotificationOpenClose">
