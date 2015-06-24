@@ -131,9 +131,9 @@
                 <include>UnderFade</include>
                 <visible>[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)</visible>
                 <posx>0</posx>
-                <posy>148</posy>
+                <posy>183</posy>
                 <width>1920</width>
-                <height>723</height>
+                <height>810</height>
                 <onleft>59</onleft>
                 <onright>59</onright>
                 <onup>9000</onup>
@@ -148,7 +148,7 @@
                     <control type="image">
                         <visible>!StringCompare(ListItem.Label,..)</visible>
                         <posx>-25</posx>
-                        <posy>120</posy>
+                        <posy>85</posy>
                         <width>295</width>
                         <height>396</height>
                         <include>PosterThumb</include>
@@ -161,7 +161,7 @@
                         <animation effect="fade" start="100" end="0" time="100" condition="Container(59).OnNext|Container(59).OnPrevious">Focus</animation>
                         <animation effect="fade" start="100" end="0" time="0" condition="![Container(59).OnNext|Container(59).OnPrevious]">Focus</animation>
                         <posx>40</posx>
-                        <posy>120</posy>
+                        <posy>85</posy>
                         <width>490</width>
                         <height>396</height>
                         <aspectratio aligny="center">scale</aspectratio>
@@ -385,9 +385,9 @@
                 <include>UnderFade</include>
                 <visible>![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
                 <posx>0</posx>
-                <posy>150</posy>
+                <posy>183</posy>
                 <width>1920</width>
-                <height>723</height>
+                <height>810</height>
                 <onleft>58</onleft>
                 <onright>58</onright>
                 <onup>9000</onup>
@@ -401,7 +401,7 @@
                 <itemlayout height="425" width="265">
                     <control type="image">
                         <posx>-25</posx>
-                        <posy>120</posy>
+                        <posy>87</posy>
                         <width>295</width>
                         <height>295</height>
                         <include>SquareThumb</include>
@@ -414,7 +414,7 @@
                         <animation effect="fade" start="100" end="0" time="100" condition="Container(58).OnNext|Container(58).OnPrevious">Focus</animation>
                         <animation effect="fade" start="100" end="0" time="0" condition="![Container(58).OnNext|Container(58).OnPrevious]">Focus</animation>
                         <posx>40</posx>
-                        <posy>120</posy>
+                        <posy>87</posy>
                         <width>490</width>
                         <height>295</height>
                         <aspectratio aligny="center">stretch</aspectratio>
@@ -641,9 +641,9 @@
                 <include>UnderFade</include>
                 <visible>container.content(episodes)</visible>
                 <posx>0</posx>
-                <posy>150</posy>
+                <posy>183</posy>
                 <width>1920</width>
-                <height>723</height>
+                <height>810</height>
                 <onleft>57</onleft>
                 <onright>57</onright>
                 <onup>9000</onup>
@@ -658,7 +658,7 @@
                     <control type="image">
                         <visible>!StringCompare(ListItem.Label,..)</visible>
                         <posx>-25</posx>
-                        <posy>120</posy>
+                        <posy>87</posy>
                         <width>470</width>
                         <height>295</height>
                         <aspectratio>keep</aspectratio>
@@ -672,7 +672,7 @@
                         <animation effect="fade" start="100" end="0" time="100" condition="Container(57).OnNext|Container(57).OnPrevious">Focus</animation>
                         <animation effect="fade" start="100" end="0" time="0" condition="![Container(57).OnNext|Container(57).OnPrevious]">Focus</animation>
                         <posx>40</posx>
-                        <posy>120</posy>
+                        <posy>87</posy>
                         <width>840</width>
                         <height>295</height>
                         <aspectratio aligny="center">scale</aspectratio>
