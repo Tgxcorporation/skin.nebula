@@ -159,7 +159,7 @@
                                 <font>InfoDetailsFont</font>
                                 <include>TextColor_MainColor</include>
                                 <scroll>true</scroll>
-                                <label>$INFO[ListItem.Label2]</label>
+                                <label>$INFO[ListItem.Label2,,     ]$INFO[ListItem.Property(Addon.Version),$LOCALIZE[24051] ]</label>
                             </control>
                             <control type="label">
                                 <posx>TextMargin</posx>
