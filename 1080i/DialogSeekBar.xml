@@ -130,6 +130,7 @@
             <label>$INFO[VideoPlayer.TimeRemaining]</label>
         </control>
         <control type="label">
+            <visible>![!VideoPlayer.HasEpg+VideoPlayer.Content(livetv)]</visible>
             <posx>TextMarginR</posx>
             <posy>95</posy>
             <height>41</height>
