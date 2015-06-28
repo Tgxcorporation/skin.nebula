@@ -498,9 +498,12 @@
                 Window.IsVisible(DialogPVRTimerSettings.xml)|
                 Window.IsVisible(DialogRecordSettings.xml)|
                 Window.IsVisible(DialogTextViewer.xml)|
+                Window.IsVisible(SmartPlaylistRule.xml)|
+                Window.IsVisible(script-ExtendedInfo Script-T9Search.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-SlideShow.xml)|
+                Window.IsVisible(script-globalsearch-contextmenu.xml)|
                 Window.IsVisible(script-videoextras-context.xml)|
                 Window.IsVisible(script-videoextras-main.xml)|
                 Window.IsVisible(script-videoextras-resume.xml)|
