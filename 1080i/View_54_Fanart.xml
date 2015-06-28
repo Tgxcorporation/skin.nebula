@@ -22,8 +22,8 @@
     </include>
     <include name="Info_54_Fanart">
         <control type="group">
-            <!--<visible>Control.IsVisible(54)</visible>-->
-            <visible>Control.IsVisible(123001)</visible> <!--Dialogs are Visible-->
+            <visible>Control.IsVisible(54)</visible>
+            <include>FacadeFadeDialogs</include>
             <include>Icon_Fade</include>
             <posy>559</posy>
             <control type="group">
@@ -247,7 +247,7 @@
             <include>Icon_Fade</include>
             <control type="group">
                 <control type="image">
-                    <visible>Control.IsVisible(123001)</visible> <!--Dialogs are Visible-->
+                    <include>FacadeFadeDialogs</include>
                     <include>Icon_Fade</include>
                     <posx>-1920</posx>
                     <posy>750</posy>
@@ -256,7 +256,7 @@
                     <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
                 </control>
                 <control type="image">
-                    <visible>Control.IsVisible(123001)</visible> <!--Dialogs are Visible-->
+                    <include>FacadeFadeDialogs</include>
                     <include>Icon_Fade</include>
                     <posx>-35</posx>
                     <posy>609</posy>

@@ -19,6 +19,7 @@
         <control type="group">
             <include>OpenClose</include>
             <include>Icon_Fade</include>
+            <include>FacadeFadeDialogs</include>
             <visible>Control.hasfocus(505050)</visible>
             <control type="group">
                 <visible>![StringCompare(ListItem.Label,..)]</visible>
@@ -126,6 +127,7 @@
         <control type="group">
             <visible>Control.IsVisible(59)</visible>
             <include>Icon_Fade</include>
+            <include>FacadeFadeDialogs</include>
             <include>ScrollOffsetLabel_50</include>
             <control type="fixedlist" id="59">
                 <include>UnderFade</include>
@@ -380,6 +382,7 @@
         <control type="group">
             <visible>Control.IsVisible(58)</visible>
             <include>Icon_Fade</include>
+            <include>FacadeFadeDialogs</include>
             <include>ScrollOffsetLabel_50</include>
             <control type="fixedlist" id="58">
                 <include>UnderFade</include>
@@ -636,6 +639,7 @@
         <control type="group">
             <visible>Control.IsVisible(57)</visible>
             <include>Icon_Fade</include>
+            <include>FacadeFadeDialogs</include>
             <include>ScrollOffsetLabel_50</include>
             <control type="fixedlist" id="57">
                 <include>UnderFade</include>
