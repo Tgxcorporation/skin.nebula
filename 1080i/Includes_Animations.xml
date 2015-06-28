@@ -203,8 +203,8 @@
     </include>
     <include name="Icon_Fade">
         <animation type="Visible" reversible="false">
-            <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out"/>
-            <effect type="slide" start="50,0" end="0,0" time="300" tween="cubic" easing="out"/>
+            <effect type="fade" start="0" end="100" time="200" delay="100" tween="sine" easing="out"/>
+            <effect type="slide" start="50,0" end="0,0" time="200" delay="100" tween="cubic" easing="out"/>
         </animation>
     </include>
     <include name="Overlay_Fade">
