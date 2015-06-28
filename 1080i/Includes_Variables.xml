@@ -145,7 +145,7 @@
         <value condition="Window.IsActive(MyPVRTimers.xml)">$INFO[ListItem.Date]</value>
         <value condition="Window.IsActive(MyPVRSearch.xml)">$INFO[ListItem.Date]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.Date]</value>
-        <value condition="Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</value>
+        <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]+ListItem.HasEpg">$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</value>
         <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_genre))">$INFO[ListItem.Property(artist_genre)]</value>
         <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_style))">$INFO[ListItem.Property(artist_style)]</value>
         <value condition="Container.Content(Songs)">$INFO[ListItem.Year,,     ]$INFO[ListItem.Duration]</value>
@@ -185,7 +185,8 @@
     </variable>
     <variable name="Details">
         <value condition="Window.IsActive(DialogPVRGuideOSD.xml)">$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
-        <value condition="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRTimers.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRGuide.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]     $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
+        <value condition="[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRTimers.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRGuide.xml)]+ListItem.HasEpg">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]     $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
+        <value condition="[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRTimers.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRGuide.xml)]+!ListItem.HasEpg">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]$INFO[ListItem.Date,     ]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,,     ]$INFO[ListItem.Size]</value>
         <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album)">$INFO[ListItem.Artist]$INFO[ListItem.Year,     ]$INFO[ListItem.Genre,     ]</value>
