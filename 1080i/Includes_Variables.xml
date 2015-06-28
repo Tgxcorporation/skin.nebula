@@ -94,6 +94,13 @@
         <value condition="StringCompare(Container(300).ListItem.Property(defaultID),music)+Library.HasContent(Music)">$INFO[Window(Home).Property(Music.ArtistsCount),, $LOCALIZE[132]] / $INFO[Window(Home).Property(Music.AlbumsCount),, $LOCALIZE[133]] / $INFO[Window(Home).Property(Music.SongsCount),, $LOCALIZE[134]]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(defaultID),movies)">$INFO[Window(Home).Property(Movies.Count),, $LOCALIZE[20342]]$INFO[Window(Home).Property(Movies.UnWatched), - , $LOCALIZE[16101]]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(defaultID),tvshows)">$INFO[Window(Home).Property(TVShows.Count),, $LOCALIZE[20343]]$INFO[Window(Home).Property(TVShows.UnWatched), - , $LOCALIZE[16101]] / $INFO[Window(Home).Property(episodes.Count),, $LOCALIZE[20360]]$INFO[Window(Home).Property(episodes.UnWatched), - , $LOCALIZE[16101]]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),livetv)">$ADDON[script.skinshortcuts 32022]$INFO[Pvr.BackendName,  -  ]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),radio)">$ADDON[script.skinshortcuts 32087]$INFO[Pvr.BackendName,  -  ]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),favourites)">$INFO[Window(Home).Property(favourite.count),, $LOCALIZE[1036]]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),$LOCALIZE[24001])">$INFO[Window(Home).Property(RandomAddon.Count),, $LOCALIZE[20161] $LOCALIZE[24001]]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),$LOCALIZE[1114])">$LOCALIZE[12390]: $INFO[System.Uptime]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),settings)">$INFO[System.memory(used.percent),$LOCALIZE[31309] ]$INFO[System.CPUUsage,  -  $LOCALIZE[13271] ]</value>
+        <value condition="Stringcompare(Container(300).ListItem.Property(defaultID),weather)">$INFO[Window(Weather).Property(Location),,  -  ]$INFO[Window(Weather).Property(Current.Condition),,  -  ]$INFO[Window(Weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</value>
         <value>$INFO[Container(300).ListItem.Label]</value>
     </variable>
     <variable name="MusicPlayingFanartLabel2">
