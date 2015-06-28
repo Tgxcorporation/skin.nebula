@@ -257,4 +257,11 @@
             <include>PulseBasicHidden</include>
         </animation>
     </include>
+    <include name="FacadeFadeDialogs">
+        <!--Dialogs are Visible-->
+        <visible>Control.IsVisible(123001)</visible>
+        <!--<animation type="Conditional" reversible="true" condition="Window.IsVisible(DialogContextMenu.xml)">-->
+            <!--<effect type="fade" start="100" end="25" time="150" delay="0"/>-->
+        <!--</animation>-->
+    </include>
 </includes>

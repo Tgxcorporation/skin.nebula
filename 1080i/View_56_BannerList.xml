@@ -4,6 +4,7 @@
         <control type="group">
             <visible>Control.IsVisible(56)</visible>
             <include>Icon_Fade</include>
+            <include>FacadeFadeDialogs</include>
             <control type="image">
                 <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]|
                     [Window.IsActive(MyMusicSongs.xml)+Skin.HasSetting(plexbmc)+Container.Content(Songs)]</visible>
@@ -94,6 +95,7 @@
         <control type="group">
             <visible>Control.IsVisible(56)</visible>
             <include>Icon_Fade</include>
+            <include>FacadeFadeDialogs</include>
             <posx>520</posx>
             <posy>0</posy>
             <control type="image">
@@ -211,6 +213,7 @@
         <control type="group">
             <visible>Control.IsVisible(56)</visible>
             <include>Icon_Fade</include>
+            <include>FacadeFadeDialogs</include>
             <include>ScrollOffsetLabel_50</include>
             <control type="group">
                 <!-- CLEAR ART / LOGO -->

@@ -485,6 +485,7 @@
         <control type="group">
             <visible>Control.IsVisible(5050)</visible>
             <include>Icon_Fade</include>
+            <include>FacadeFadeDialogs</include>
             <include>ScrollOffsetLabel_50</include>
             <control type="group">
                 <!-- CLEAR ART / LOGO -->
