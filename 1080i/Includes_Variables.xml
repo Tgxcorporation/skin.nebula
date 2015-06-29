@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <variable name="ChapterLabel">
-        <value condition="Player.ChapterCount + !IsEmpty(Player.ChapterName)"> - $INFO[Player.ChapterName]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
-        <value condition="Player.ChapterCount"> - $LOCALIZE[21396]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
+        <value condition="Player.ChapterCount + !IsEmpty(Player.ChapterName)">$INFO[Player.ChapterName]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
+        <value condition="Player.ChapterCount">$LOCALIZE[21396]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
     </variable>
     <variable name="Overlay">
         <value condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets) | Container.HasFiles]">-</value>
