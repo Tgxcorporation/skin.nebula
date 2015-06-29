@@ -1416,17 +1416,6 @@
                             <label fallback="416">$INFO[VideoPlayer.RatingAndVotes]</label>
                         </control>
                     </control>
-                    <control type="grouplist">
-                        <posx>530</posx>
-                        <posy>70</posy>
-                        <width>1006</width>
-                        <height>408</height>
-                        <itemgap>0</itemgap>
-                        <orientation>horizontal</orientation>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <include>CodecsVideoOSD2</include>
-                    </control>
                     <control type="label">
                         <visible>VideoPlayer.Content(LiveTV)+VideoPlayer.HasEpg</visible>
                         <posx>TextMargin</posx>
@@ -1460,6 +1449,10 @@
                         <label>$INFO[VideoPlayer.Genre]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,     ]$INFO[VideoPlayer.TVShowTitle]</label>
                     </control>
                     <control type="grouplist">
+                        <animation type="Conditional" pulse="true" reversible="false" condition="[!IsEmpty(VideoPlayer.AudioLanguage)+!StringCompare(VideoPlayer.AudioLanguage,und)]
+                        |[!IsEmpty(VideoPlayer.SubtitlesLanguage)+!StringCompare(VideoPlayer.SubtitlesLanguage,und)]">
+                            <include>PulseBasicVisible</include>
+                        </animation>
                         <visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
                         <posx>40</posx>
                         <posy>285</posy>
@@ -1470,6 +1463,21 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <include>CodecsVideoOSD</include>
+                    </control>
+                    <control type="grouplist">
+                        <animation type="Conditional" pulse="true" reversible="false" condition="[!IsEmpty(VideoPlayer.AudioLanguage)+!StringCompare(VideoPlayer.AudioLanguage,und)]
+                        |[!IsEmpty(VideoPlayer.SubtitlesLanguage)+!StringCompare(VideoPlayer.SubtitlesLanguage,und)]">
+                            <include>PulseBasicHidden</include>
+                        </animation>
+                        <posx>50</posx>
+                        <posy>285</posy>
+                        <width>1006</width>
+                        <height>408</height>
+                        <itemgap>0</itemgap>
+                        <orientation>horizontal</orientation>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <include>CodecsVideoOSD2</include>
                     </control>
                     <control type="textbox">
                         <posx>772</posx>
