@@ -88,9 +88,10 @@
             <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
         </control>
         <control type="label">
-            <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]">Conditional</animation>
+            <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount]">Conditional</animation>
             <include>TopBarOSDVisibleFadeEffect</include>
             <visible>![window.IsVisible(videoosd)|window.IsVisible(musicosd)]</visible>
+            <visible>VideoPlayer.Content(livetv)</visible>
             <animation effect="fade" time="250">Visible</animation>
             <posx>250</posx>
             <posy>55</posy>
@@ -99,7 +100,22 @@
             <align>center</align>
             <font>NotificationFontDouble</font>
             <include>TextColor_MainColor</include>
-            <label>$INFO[MusicPlayer.Title]$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.ChannelNumber,, - ]$INFO[VideoPlayer.ChannelName,,   ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Season, - $LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,, - ]$INFO[VideoPlayer.Title]$VAR[ChapterLabel]</label>
+            <label>$INFO[VideoPlayer.ChannelNumber,, - ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title, - ]</label>
+        </control>
+        <control type="label">
+            <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount]">Conditional</animation>
+            <include>TopBarOSDVisibleFadeEffect</include>
+            <visible>![window.IsVisible(videoosd)|window.IsVisible(musicosd)]</visible>
+            <visible>!VideoPlayer.Content(livetv)</visible>
+            <animation effect="fade" time="250">Visible</animation>
+            <posx>250</posx>
+            <posy>55</posy>
+            <height>30</height>
+            <width>1420</width>
+            <align>center</align>
+            <font>NotificationFontDouble</font>
+            <include>TextColor_MainColor</include>
+            <label>$INFO[MusicPlayer.Title]$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Season, - $LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,, - ]$INFO[VideoPlayer.Title]</label>
         </control>
         <control type="label">
             <posx>TextMargin</posx>

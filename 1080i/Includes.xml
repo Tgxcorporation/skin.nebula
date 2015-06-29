@@ -618,8 +618,8 @@
                         <visible>[[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo] + ![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
                         <include>NowPlayingVisibleFadeEffect</include>
                         <control type="label">
-                            <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]">Conditional</animation>
-                            <visible>Player.hasvideo</visible>
+                            <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount]">Conditional</animation>
+                            <visible>Player.hasvideo + VideoPlayer.Content(livetv)</visible>
                             <posx>250</posx>
                             <posy>55</posy>
                             <height>30</height>
@@ -627,10 +627,22 @@
                             <align>center</align>
                             <font>NotificationFontDouble</font>
                             <include>TextColor_MainColor</include>
-                            <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.ChannelNumber,, - ]$INFO[VideoPlayer.ChannelName,,   ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Season, - $LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,, - ]$INFO[VideoPlayer.Title]$VAR[ChapterLabel]</label>
+                            <label>$INFO[VideoPlayer.ChannelNumber,, - ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title, - ]</label>
                         </control>
                         <control type="label">
-                            <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]">Conditional</animation>
+                            <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount]">Conditional</animation>
+                            <visible>Player.hasvideo + !VideoPlayer.Content(livetv)</visible>
+                            <posx>250</posx>
+                            <posy>55</posy>
+                            <height>30</height>
+                            <width>1420</width>
+                            <align>center</align>
+                            <font>NotificationFontDouble</font>
+                            <include>TextColor_MainColor</include>
+                            <label>$INFO[MusicPlayer.Title]$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Season, - $LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,, - ]$INFO[VideoPlayer.Title]</label>
+                        </control>
+                        <control type="label">
+                            <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount]">Conditional</animation>
                             <visible>[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]</visible>
                             <posx>250</posx>
                             <posy>55</posy>
@@ -724,8 +736,14 @@
             <label>32 X</label>
         </control>
         <control type="label">
+            <visible>Player.Seeking</visible>
             <include>SeekbarLabels</include>
             <label>$VAR[SeekLabel]</label>
+        </control>
+        <control type="label">
+            <visible>Player.ChapterCount + ![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]</visible>
+            <include>SeekbarLabels</include>
+            <label>$VAR[ChapterLabel]</label>
         </control>
         <control type="image">
             <visible>player.rewinding</visible>
