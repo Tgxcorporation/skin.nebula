@@ -736,7 +736,6 @@
             <label>32 X</label>
         </control>
         <control type="label">
-            <visible>Player.Seeking</visible>
             <include>SeekbarLabels</include>
             <label>$VAR[SeekLabel]</label>
         </control>
