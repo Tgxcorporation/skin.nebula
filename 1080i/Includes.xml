@@ -1421,6 +1421,7 @@
                         <label>$INFO[VideoPlayer.StartTime,, / ]$INFO[VideoPlayer.EndTime]</label>
                     </control>
                     <control type="label">
+                        <visible>![VideoPlayer.Content(LiveTV)+!VideoPlayer.HasEpg]</visible>
                         <posx>TextMargin</posx>
                         <posy>135</posy>
                         <width>672</width>
