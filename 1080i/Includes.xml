@@ -1347,13 +1347,24 @@
                     </control>
                 </control>
                 <control type="label">
+                    <visible>VideoPlayer.Content(livetv)</visible>
                     <posx>455</posx>
                     <posy>25</posy>
                     <width>1405</width>
                     <aligny>top</aligny>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[VideoPlayer.ChannelNumber,, - ]$INFO[VideoPlayer.ChannelName,, - ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,, - ]$INFO[VideoPlayer.Title]</label>
+                    <label>$INFO[VideoPlayer.ChannelNumber,, - ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title, - ]</label>
+                </control>
+                <control type="label">
+                    <visible>!VideoPlayer.Content(livetv)</visible>
+                    <posx>455</posx>
+                    <posy>25</posy>
+                    <width>1405</width>
+                    <aligny>top</aligny>
+                    <font>InfoTitleFont</font>
+                    <include>TextColor_MainColor</include>
+                    <label>$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,, - ]$INFO[VideoPlayer.Title]</label>
                 </control>
                 <control type="image">
                     <description>Default Seperator</description>
