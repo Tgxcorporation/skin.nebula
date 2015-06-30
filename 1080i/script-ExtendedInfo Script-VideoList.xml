@@ -73,7 +73,7 @@
                 <height>810</height>
                 <include>VerticalScroller</include>
                 <onleft>500</onleft>
-                <onright>500</onright>
+                <onright>505050</onright>
             </control>
         </control>
         <control type="label">
@@ -86,7 +86,7 @@
             <include>WindowTitleSub</include>
             <label>$INFO[Window.Property(Filter_Label),, - ]$INFO[Window.Property(TotalItems),, $LOCALIZE[31025]]$INFO[Window.Property(CurrentPage),  -  ]$INFO[Window.Property(TotalPages),/]</label>
         </control>
-        <include>FooterInfo</include>
+        <include>FooterInfo_ExtendedInfo</include>
         <include>Time</include>
         <!-- SIDE MENU -->
         <control type="group">
