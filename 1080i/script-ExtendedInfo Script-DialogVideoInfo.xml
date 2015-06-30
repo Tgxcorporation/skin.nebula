@@ -230,15 +230,15 @@
                         </item>
                         <item>
                             <label>$LOCALIZE[21447]:</label>
-                            <label2>$INFO[Window.Property(movie.AudioLanguage)]</label2>
+                            <label2>$INFO[Window.Property(movie.AudioLanguage.1)]$INFO[Window.Property(movie.AudioLanguage.2),  •  ]$INFO[Window.Property(movie.AudioLanguage.3),  •  ]$INFO[Window.Property(movie.AudioLanguage.3),  •  ]$INFO[Window.Property(movie.AudioLanguage.4),  •  ]$INFO[Window.Property(movie.AudioLanguage.5),  •  ]$INFO[Window.Property(movie.AudioLanguage.6),  •  ]$INFO[Window.Property(movie.AudioLanguage.7),  •  ]$INFO[Window.Property(movie.AudioLanguage.8),  •  ]$INFO[Window.Property(movie.AudioLanguage.9),  •  ]$INFO[Window.Property(movie.AudioLanguage.10),  •  ]</label2>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(movie.AudioLanguage))</visible>
+                            <visible>!IsEmpty(Window.Property(movie.AudioLanguage.1))</visible>
                         </item>
                         <item>
                             <label>$LOCALIZE[21448]:</label>
-                            <label2>$INFO[Window.Property(movie.SubtitleLanguage)]</label2>
+                            <label2>$INFO[Window.Property(movie.SubtitleLanguage.1)]$INFO[Window.Property(movie.SubtitleLanguage.2),  •  ]$INFO[Window.Property(movie.SubtitleLanguage.3),  •  ]$INFO[Window.Property(movie.SubtitleLanguage.3),  •  ]$INFO[Window.Property(movie.SubtitleLanguage.4),  •  ]$INFO[Window.Property(movie.SubtitleLanguage.5),  •  ]$INFO[Window.Property(movie.SubtitleLanguage.6),  •  ]$INFO[Window.Property(movie.SubtitleLanguage.7),  •  ]$INFO[Window.Property(movie.SubtitleLanguage.8),  •  ]$INFO[Window.Property(movie.SubtitleLanguage.9),  •  ]$INFO[Window.Property(movie.SubtitleLanguage.10),  •  ]</label2>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(movie.SubtitleLanguage))</visible>
+                            <visible>!IsEmpty(Window.Property(movie.SubtitleLanguage.1))</visible>
                         </item>
                         <item>
                             <label>IMDB Top 250 #: </label>
