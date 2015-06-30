@@ -251,8 +251,8 @@
                     <posx>395</posx>
                     <posy>35</posy>
                     <control type="group">
-                        <visible>IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
-                        <visible>!Container.Content(Addons)</visible>
+                        <visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)|
+                            [!Container.Content(Addons)+[IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]]]</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
                             <posy>85</posy>

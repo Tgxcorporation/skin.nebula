@@ -105,6 +105,69 @@
             </control>
         </control>
     </include>
+    <include name="FooterInfo_ExtendedInfo">
+        <control type="group">
+            <include>OpenClose</include>
+            <include>Icon_Fade</include>
+            <include>FacadeFadeDialogs</include>
+            <visible>Control.hasfocus(505050)</visible>
+            <control type="group">
+                <visible>![StringCompare(Container(500).ListItem.Label,..)]</visible>
+                <animation effect="slide" time="0" start="0,0" end="0,40" condition="[IsEmpty(control.getlabel(45742))]">Conditional</animation>
+                <control type="label">
+                    <posx>52</posx>
+                    <posy>933</posy>
+                    <width>1830</width>
+                    <height>45</height>
+                    <align>center</align>
+                    <font>InfoTitleFont</font>
+                    <include>TextColor_MainColor</include>
+                    <label>$INFO[Container(500).ListItem.Label]</label>
+                </control>
+                <control type="label" id="45742">
+                    <posx>407</posx>
+                    <posy>1010</posy>
+                    <height>33</height>
+                    <width>1120</width>
+                    <align>center</align>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[Container(500).ListItem.Genre]</label>
+                </control>
+                <control type="label">
+                    <posx>52</posx>
+                    <posy>1010</posy>
+                    <height>33</height>
+                    <width>1120</width>
+                    <align>left</align>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$VAR[Fanart_Details]</label>
+                </control>
+                <control type="group" id="45741">
+                    <control type="image">
+                        <posx>1715</posx>
+                        <posy>1009</posy>
+                        <align>right</align>
+                        <include>Stars_ExtendedInfo</include>
+                    </control>
+                    <control type="label">
+                        <posx>1690</posx>
+                        <posy>1010</posy>
+                        <height>33</height>
+                        <width>1120</width>
+                        <align>right</align>
+                        <font>InfoDetailsFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>false</scroll>
+                        <label fallback="416">$INFO[Container(500).ListItem.Rating]</label>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </include>
     <include name="58_RecOverlayFocus">
         <control type="image">
             <posx>1819</posx>

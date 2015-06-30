@@ -142,6 +142,7 @@
         <value condition="!IntegerGreaterThan(ListItem.Rating,0)+!Container.Content(Songs)">$INFO[ListItem.Label2]</value>
     </variable>
     <variable name="DetailsRow2">
+        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[ListItem.Year]</value>
         <value condition="Window.IsActive(MyPVRTimers.xml)">$INFO[ListItem.Date]</value>
         <value condition="Window.IsActive(MyPVRSearch.xml)">$INFO[ListItem.Date]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.Date]</value>
@@ -161,6 +162,7 @@
         <value condition="!Library.HasContent(Music)">$INFO[ListItem.Label2]</value>
     </variable>
     <variable name="DetailsRow3">
+        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[ListItem.Genre]</value>
         <value condition="Window.IsActive(MyPVRTimers.xml)">$INFO[ListItem.Comment]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.Duration]</value>
         <value condition="Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.Genre]</value>
@@ -201,6 +203,7 @@
         <value condition="!IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2]</value>
     </variable>
     <variable name="Fanart_Details">
+        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Year]</value>
         <value condition="Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.Title]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Size,,     ]$INFO[ListItem.Date]</value>
         <value condition="Container.content(Albums)">$INFO[ListItem.Artist,,     ]$INFO[ListItem.Year]</value>
@@ -311,6 +314,7 @@
         <value condition="Window.IsActive(Home.xml)">$VAR[HomeBackgrounds]</value>
         <value condition="Window.IsActive(script-NextAired-TVGuide.xml)|Window.IsActive(script-NextAired-TVGuide2.xml)">$VAR[TVShows.Art]</value>
         <value condition="Window.IsActive(MyPics.xml)">$VAR[Pictures.Art]</value>
+        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)+!IsEmpty(Container(500).ListItem.Art(fanart))">$INFO[Container(500).ListItem.Art(fanart)]</value>
         <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="[Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyVideoPlaylist.xml)]+[container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]">$VAR[TVShows.Art]</value>
         <value condition="[Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyVideoPlaylist.xml)]+[Container.Content(movies)|Container.Content(sets)]">$VAR[Movies.Art]</value>
