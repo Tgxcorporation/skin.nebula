@@ -218,13 +218,22 @@
             <control type="group">
                 <!-- CLEAR ART / LOGO -->
                 <control type="image">
-                    <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
                     <posx>645r</posx>
                     <posy>34</posy>
                     <width>300</width>
                     <height>149</height>
                     <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <texture background="true">$VAR[DefaultClearArtLogo]</texture>
+                    <include>PulseClearArt</include>
+                    <texture background="true">$VAR[DefaultClearArt]</texture>
+                </control>
+                <control type="image">
+                    <posx>645r</posx>
+                    <posy>34</posy>
+                    <width>300</width>
+                    <height>149</height>
+                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <include>PulseClearLogo</include>
+                    <texture background="true">$VAR[DefaultClearLogo]</texture>
                 </control>
             </control>
             <control type="group">
