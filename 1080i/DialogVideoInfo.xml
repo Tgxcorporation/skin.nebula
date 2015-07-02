@@ -247,12 +247,14 @@
                             <label2>$INFO[ListItem.StereoscopicMode]</label2>
                             <onclick>noop</onclick>
                             <visible>!IsEmpty(ListItem.StereoscopicMode)</visible>
+                            <visible>!Skin.HasSetting(plexbmc)</visible>
                         </item>
                         <item>
                             <label>$LOCALIZE[573]:</label>
                             <label2>$INFO[ListItem.Path]</label2>
                             <onclick>Dialog.Close(movieinformation)</onclick>
                             <onclick>ActivateWindow(Videos,$INFO[ListItem.Path],return)</onclick>
+                            <visible>!Skin.HasSetting(plexbmc)</visible>
                         </item>
                         <item>
                             <label>$LOCALIZE[21800]:</label>
@@ -372,12 +374,14 @@
                                 <label2>$INFO[ListItem.Season]</label2>
                                 <onclick>noop</onclick>
                                 <visible>!IsEmpty(ListItem.Season)</visible>
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[20359]:</label>
                                 <label2>$INFO[ListItem.Episode]</label2>
                                 <onclick>noop</onclick>
                                 <visible>!IsEmpty(ListItem.Episode)</visible>
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[31322]:</label>
@@ -516,12 +520,14 @@
                                 <label2>$INFO[ListItem.StereoscopicMode]</label2>
                                 <onclick>noop</onclick>
                                 <visible>!IsEmpty(ListItem.StereoscopicMode)</visible>
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[573]:</label>
                                 <label2>$INFO[ListItem.Path]</label2>
                                 <onclick>Dialog.Close(movieinformation)</onclick>
                                 <onclick>ActivateWindow(Videos,$INFO[ListItem.Path],return)</onclick>
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21800]:</label>
@@ -1084,21 +1090,17 @@
                     <onright>Control.SetFocus(6060)</onright>
                 </control>
                 <control type="togglebutton" id="9010">
-                    <visible>System.HasAddon(script.extendedinfo)+Container.Content(movies)</visible>
-                    <description>Extended info</description>
-                    <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[31022]</label>
-                    <onclick>dialog.close(all,true)</onclick>
-                    <onclick>RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onclick>
-                </control>
-                <control type="togglebutton" id="9016">
                     <visible>System.HasAddon(script.extendedinfo)</visible>
-                    <visible>Container.Content(tvshows)</visible>
-                    <description>Extended info</description>
+                    <visible>Container.Content(movies)|Container.Content(tvshows)|[Container.Content(episodes)+Skin.HasSetting(plexbmc)+!SubString(ListItem.Title,Season,Left)+IsEmpty(ListItem.VideoCodec)]</visible>
+                    <visible>![!Stringcompare(Container.FolderPath,videodb://tvshows/titles/) + Substring(Container.FolderPath,videodb://tvshows/titles/,left) + !Container.Content(episodes)]</visible>
+                    <description>Extended Info</description>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[31022]</label>
                     <onclick>dialog.close(all,true)</onclick>
-                    <onclick>RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID])</onclick>
+                    <onclick condition="Container.Content(movies)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onclick>
+                    <onclick condition="Container.Content(tvshows)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID])</onclick>
+                    <onclick condition="Container.Content(episodes)">RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[ListItem.Title])</onclick>
+                    <!--<onclick condition="Container.Content(Seasons) + !IsEmpty(ListItem.Season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</onclick>-->
                 </control>
                 <control type="togglebutton" id="9012">
                     <visible>IntegerGreaterThan(Container(50).NumItems,0)</visible>
