@@ -13,6 +13,7 @@
         <value condition="ListItem.IsResumable">$VAR[Theme.Color]/overlay_inprogress/$INFO[ListItem.Overlay]</value>
         <value condition="Skin.HasSetting(Hide_Watched_Marks)">$VAR[Theme.Color]/overlay_unwatched/$INFO[ListItem.Overlay]</value>
         <value condition="!IsEmpty(ListItem.Overlay)">$VAR[Theme.Color]/$INFO[ListItem.Overlay]</value>
+        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)+!IsEmpty(ListItem.Property(DBID))">$VAR[Theme.Color]/OverlayUnwatched.png</value>
     </variable>
     <variable name="Banner">
         <value condition="StringCompare(ListItem.Label,..)+[Container.Content(TVShows)|Container.Content(movies)]">$VAR[Theme.Color]/defaultFolderBackBanner.png</value>
@@ -664,21 +665,25 @@
         <value condition="StringCompare(Skin.String(StartupWindow),favourites)">$LOCALIZE[1036]</value>
         <value condition="!IsEmpty(Skin.String(CustomStartup.Path))">$INFO[Skin.String(CustomStartup.Label)]</value>
     </variable>
-    <variable name="VideoPlayerClearArtLogo">
+    <variable name="VideoPlayerClearArt">
         <value condition="Skin.HasSetting(EnableClearArt) + VideoPlayer.Content(episodes) + !IsEmpty(Player.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearart)]</value>
         <value condition="Skin.HasSetting(EnableClearArt)">$INFO[Player.Art(clearart)]</value>
+    </variable>
+    <variable name="VideoPlayerClearLogo">
         <value condition="Skin.HasSetting(EnableClearLogo) + VideoPlayer.Content(episodes)+!IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearlogo)]</value>
         <value condition="Skin.HasSetting(EnableClearLogo)">$INFO[Player.Art(clearlogo)]</value>
     </variable>
     <variable name="MusicPlayerClearArtLogo">
-        <value condition="Skin.HasSetting(EnableClearArt) + !IsEmpty(MusicPlayer.Art(clearart))">$INFO[MusicPlayer.Art(clearart)]</value>
-        <value condition="Skin.HasSetting(EnableClearArt)">$INFO[Skin.String(cdartPath)]$INFO[MusicPlayer.Artist,,/logo.png]</value>
+        <value condition="[Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)] + !IsEmpty(MusicPlayer.Art(clearart))">$INFO[MusicPlayer.Art(clearart)]</value>
+        <value condition="[Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)]">$INFO[Skin.String(cdartPath)]$INFO[MusicPlayer.Artist,,/logo.png]</value>
     </variable>
-    <variable name="DefaultClearArtLogo">
+    <variable name="DefaultClearArt">
         <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</value>
-        <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyVideoNav.xml)+Container.Content(episodes)+!IsEmpty(ListItem.Art(tvshow.clearart))]">$INFO[ListItem.Art(tvshow.clearart)]</value>
+        <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]+!IsEmpty(ListItem.Art(tvshow.clearart))]">$INFO[ListItem.Art(tvshow.clearart)]</value>
         <value condition="Skin.HasSetting(EnableClearArt)">$INFO[ListItem.Art(clearart)]</value>
-        <value condition="Skin.HasSetting(EnableClearLogo) + Window.IsActive(MyVideoNav.xml)+Container.Content(episodes)">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+    </variable>
+    <variable name="DefaultClearLogo">
+        <value condition="Skin.HasSetting(EnableClearLogo) + Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
         <value condition="Skin.HasSetting(EnableClearLogo)">$INFO[ListItem.Art(clearlogo)]</value>
     </variable>
     <variable name="SkinShortcutsMoveUpLabel">
