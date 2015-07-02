@@ -110,6 +110,7 @@
                             <label>$LOCALIZE[20376]:</label>
                             <label2>$INFO[Window.Property(movie.OriginalTitle)]</label2>
                             <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.OriginalTitle))</visible>
                             <!--<visible>!IsEmpty(Window.Property(movie.OriginalTitle)) + !stringcompare(Window.Property(movie.OriginalTitle),Window.Property(movie.Title))</visible>-->
                         </item>
                         <item>
@@ -152,9 +153,9 @@
                         </item>
                         <item>
                             <label>$LOCALIZE[172]:</label>
-                            <label2>$INFO[Window.Property(movie.ReleaseDate)]</label2>
+                            <label2>$INFO[Window.Property(movie.release_date)]</label2>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(Window.Property(movie.ReleaseDate))</visible>
+                            <visible>!IsEmpty(Window.Property(movie.release_date))</visible>
                         </item>
                         <item>
                             <label>$LOCALIZE[2050]:</label>
@@ -251,12 +252,15 @@
                             <label2>$INFO[Window.Property(movie.StereoscopicMode)]</label2>
                             <onclick>noop</onclick>
                             <visible>!IsEmpty(Window.Property(movie.StereoscopicMode))</visible>
+                            <visible>!Skin.HasSetting(plexbmc)</visible>
                         </item>
                         <item>
                             <label>$LOCALIZE[573]:</label>
                             <label2>$INFO[Window.Property(movie.Path)]</label2>
                             <onclick>Dialog.Close(movieinformation)</onclick>
                             <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
+                            <visible>!IsEmpty(Window.Property(movie.Path))</visible>
+                            <visible>!Skin.HasSetting(plexbmc)</visible>
                         </item>
                         <item>
                             <label>$LOCALIZE[21800]:</label>
@@ -331,6 +335,7 @@
                                 <label2>$INFO[Window.Property(movie.Path)]</label2>
                                 <onclick>Dialog.Close(movieinformation)</onclick>
                                 <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21800]:</label>
@@ -484,12 +489,14 @@
                                 <label2>$INFO[Window.Property(movie.StereoscopicMode)]</label2>
                                 <onclick>noop</onclick>
                                 <visible>!IsEmpty(LiWindow.Property(moviestItem.StereoscopicMode))</visible>
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[573]:</label>
                                 <label2>$INFO[Window.Property(movie.Path)]</label2>
                                 <onclick>Dialog.Close(movieinformation)</onclick>
                                 <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21800]:</label>
@@ -881,7 +888,7 @@
                     <height>675</height>
                     <include>VerticalScroller</include>
                     <onleft>1000</onleft>
-                    <onright>9000</onright>
+                    <onright>1006</onright>
                 </control>
             </control>
             <!--CREW-->
@@ -1020,7 +1027,7 @@
                     <height>675</height>
                     <include>VerticalScroller</include>
                     <onleft>750</onleft>
-                    <onright>9000</onright>
+                    <onright>756</onright>
                 </control>
             </control>
             <!--RECOMMENDED TMDB-->
@@ -1175,7 +1182,7 @@
                     <height>675</height>
                     <include>VerticalScroller</include>
                     <onleft>150</onleft>
-                    <onright>9000</onright>
+                    <onright>156</onright>
                 </control>
             </control>
             <!--SET MOVIES-->
@@ -1330,7 +1337,7 @@
                     <height>675</height>
                     <include>VerticalScroller</include>
                     <onleft>250</onleft>
-                    <onright>9000</onright>
+                    <onright>256</onright>
                 </control>
             </control>
             <!--OFFICIAL VIDEOS-->
@@ -1467,7 +1474,7 @@
                     <height>675</height>
                     <include>VerticalScroller</include>
                     <onleft>1150</onleft>
-                    <onright>9000</onright>
+                    <onright>1156</onright>
                 </control>
             </control>
             <!--YOUTUBE-->
@@ -1564,7 +1571,7 @@
                     <height>624</height>
                     <include>VerticalScroller</include>
                     <onleft>350</onleft>
-                    <onright>9000</onright>
+                    <onright>356</onright>
                 </control>
             </control>
             <!--PRODUCTION COMPANIES-->
@@ -1662,7 +1669,7 @@
                     <height>624</height>
                     <include>VerticalScroller</include>
                     <onleft>550</onleft>
-                    <onright>9000</onright>
+                    <onright>556</onright>
                 </control>
             </control>
             <!--NETWORKS STUDIOS-->
@@ -1760,7 +1767,7 @@
                     <height>624</height>
                     <include>VerticalScroller</include>
                     <onleft>1450</onleft>
-                    <onright>9000</onright>
+                    <onright>1456</onright>
                 </control>
             </control>
             <!--RELEASES-->
@@ -1843,7 +1850,7 @@
                     <height>624</height>
                     <include>VerticalScroller</include>
                     <onleft>650</onleft>
-                    <onright>9000</onright>
+                    <onright>656</onright>
                 </control>
             </control>
             <!--GENRES-->
@@ -1910,7 +1917,7 @@
                     <height>624</height>
                     <include>VerticalScroller</include>
                     <onleft>850</onleft>
-                    <onright>9000</onright>
+                    <onright>856</onright>
                 </control>
             </control>
             <!--REVIEWS-->
@@ -2009,7 +2016,7 @@
                     <height>675</height>
                     <include>VerticalScroller</include>
                     <onleft>1050</onleft>
-                    <onright>9000</onright>
+                    <onright>1056</onright>
                 </control>
             </control>
             <!--KEYWORDS-->
@@ -2076,7 +2083,7 @@
                     <height>624</height>
                     <include>VerticalScroller</include>
                     <onleft>950</onleft>
-                    <onright>9000</onright>
+                    <onright>956</onright>
                 </control>
             </control>
             <!--ARTWORK-->
@@ -2435,7 +2442,7 @@
                     <height>675</height>
                     <include>VerticalScroller</include>
                     <onleft>450</onleft>
-                    <onright>9000</onright>
+                    <onright>456</onright>
                 </control>
             </control>
             <!--EPISODE INDEX-->
@@ -2487,81 +2494,41 @@
                     <posx>500</posx>
                     <posy>318</posy>
                     <width>1420</width>
-                    <height>675</height>
+                    <height>624</height>
                     <onleft>9000</onleft>
                     <onright>2006</onright>
                     <onup>2000</onup>
                     <ondown>2000</ondown>
                     <pagecontrol>2006</pagecontrol>
-                    <itemlayout height="135" width="1420">
+                    <itemlayout height="78" width="1420">
                         <control type="label">
-                            <visible>StringCompare(ListItem.Episode,)</visible>
                             <posx>TextMargin</posx>
                             <posy>0</posy>
-                            <height>135</height>
+                            <height>78</height>
                             <width>1300</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                        <control type="label">
-                            <visible>!StringCompare(ListItem.Episode,)</visible>
-                            <posx>TextMargin</posx>
-                            <posy>27</posy>
-                            <aligny>top</aligny>
-                            <width>1300</width>
-                            <font>FacadeListMainFont</font>
-                            <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                        <control type="label">
-                            <posx>TextMargin</posx>
-                            <posy>73</posy>
-                            <aligny>top</aligny>
-                            <width>1300</width>
-                            <font>FacadeListSubFont</font>
-                            <include>TextColor_AlternateColor</include>
-                            <label>$INFO[ListItem.Episode]</label>
+                            <label>$INFO[ListItem.Episode]$INFO[ListItem.Label, - ]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="135" width="1420">
+                    <focusedlayout height="78" width="1420">
                         <control type="group">
                             <include>ButtonWideFocusAnimation</include>
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
-                                <height>135</height>
+                                <height>78</height>
                                 <width>1420</width>
                                 <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                             </control>
                             <control type="label">
-                                <visible>StringCompare(ListItem.Episode,)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
-                                <height>135</height>
+                                <height>78</height>
                                 <width>1300</width>
                                 <font>FacadeListMainFont</font>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                            <control type="label">
-                                <visible>!StringCompare(ListItem.Episode,)</visible>
-                                <posx>TextMargin</posx>
-                                <posy>27</posy>
-                                <aligny>top</aligny>
-                                <width>1300</width>
-                                <font>FacadeListMainFont</font>
-                                <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                            <control type="label">
-                                <posx>TextMargin</posx>
-                                <posy>73</posy>
-                                <aligny>top</aligny>
-                                <width>1300</width>
-                                <font>FacadeListSubFont</font>
-                                <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Episode]</label>
+                                <label>$INFO[ListItem.Episode]$INFO[ListItem.Label, - ]</label>
                             </control>
                         </control>
                     </focusedlayout>
@@ -2572,7 +2539,7 @@
                     <height>675</height>
                     <include>VerticalScroller</include>
                     <onleft>2000</onleft>
-                    <onright>9000</onright>
+                    <onright>2006</onright>
                 </control>
             </control>
         </control>

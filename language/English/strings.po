@@ -559,6 +559,10 @@ msgstr ""
 #empty strings from id 31911 to 31943
 #NEBULA
 
+msgctxt "#31942"
+msgid "Similar Artists"
+msgstr ""
+
 msgctxt "#31943"
 msgid "Show Info Panel in paused video playback"
 msgstr ""
