@@ -422,18 +422,18 @@
                             <label2>$INFO[Skin.String(cdartPath)]</label2>
                             <onclick>Skin.SetPath(cdartPath)</onclick>
                         </item>
-                        <item id="91">
-                            <visible>!Skin.HasSetting(TVTunes.Enabled)</visible>
-                            <label>$LOCALIZE[31984]</label>
-                            <label2>$LOCALIZE[13106]</label2>
-                            <onclick>Skin.ToggleSetting(TVTunes.Enabled)</onclick>
-                        </item>
-                        <item id="91">
-                            <visible>Skin.HasSetting(TVTunes.Enabled)</visible>
-                            <label>$LOCALIZE[31984]</label>
-                            <label2>$LOCALIZE[305]</label2>
-                            <onclick>Skin.ToggleSetting(TVTunes.Enabled)</onclick>
-                        </item>
+                        <!--<item id="91">-->
+                            <!--<visible>!Skin.HasSetting(TVTunes.Enabled)</visible>-->
+                            <!--<label>$LOCALIZE[31984]</label>-->
+                            <!--<label2>$LOCALIZE[13106]</label2>-->
+                            <!--<onclick>Skin.ToggleSetting(TVTunes.Enabled)</onclick>-->
+                        <!--</item>-->
+                        <!--<item id="91">-->
+                            <!--<visible>Skin.HasSetting(TVTunes.Enabled)</visible>-->
+                            <!--<label>$LOCALIZE[31984]</label>-->
+                            <!--<label2>$LOCALIZE[305]</label2>-->
+                            <!--<onclick>Skin.ToggleSetting(TVTunes.Enabled)</onclick>-->
+                        <!--</item>-->
                         <item id="92">
                             <visible>System.HasAddon(script.artistslideshow)</visible>
                             <visible>!Skin.HasSetting(Use_Artist_Slideshow)</visible>
