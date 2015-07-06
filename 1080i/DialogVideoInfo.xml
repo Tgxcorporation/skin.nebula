@@ -1100,7 +1100,7 @@
                     <onright>9009</onright>
                 </control>
                 <control type="togglebutton" id="100">
-                    <visible>Skin.HasSetting(TVTunes.Enabled) + System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
+                    <visible>System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
                     <description>Tv Tunes</description>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[31956]</label>
