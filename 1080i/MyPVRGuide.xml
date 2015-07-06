@@ -92,6 +92,7 @@
                                 <font>TvGuideChannelFont</font>
                                 <include>TextColor_AlternateColor</include>
                                 <label>$INFO[ListItem.ChannelName]</label>
+                                <scroll>false</scroll>
                             </control>
                         </channellayout>
                         <focusedchannellayout height="78" width="420">
