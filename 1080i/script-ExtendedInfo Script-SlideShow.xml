@@ -2,6 +2,7 @@
 <window>
     <defaultcontrol always="true">10000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
+    <include>DialogOpenClose</include>
     <controls>
         <control type="list" id="10000">
             <left>-125</left>

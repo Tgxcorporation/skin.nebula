@@ -474,9 +474,13 @@
                 </control>
             </control>
         </control>
+        <include>FacadeFadeDialogs1stLevelCondition</include>
+    </include>
+    <include name="FacadeFadeDialogs1stLevelCondition">
         <!--DUMMY FOR DIALOG ANIMATIONS-->
         <control type="image" id="123001">
-            <visible>![Window.IsVisible(DialogVideoInfo.xml)|
+            <visible>![
+                Window.IsVisible(DialogVideoInfo.xml)|
                 Window.IsVisible(DialogAddonSettings.xml)|
                 Window.IsVisible(DialogAddonInfo.xml)|
                 Window.IsVisible(DialogKeyboard.xml)|
@@ -496,9 +500,21 @@
                 Window.IsVisible(DialogPVRGuideSearch.xml)|
                 Window.IsVisible(DialogPVRRecordingInfo.xml)|
                 Window.IsVisible(DialogPVRTimerSettings.xml)|
+                Window.IsVisible(DialogPVRGroupManager.xml)|
+                Window.IsVisible(DialogPVRChannelManager.xml)|
                 Window.IsVisible(DialogRecordSettings.xml)|
+                Window.IsVisible(DialogPeripheralManager.xml)|
+                Window.IsVisible(DialogPeripheralSettings.xml)|
+                Window.IsVisible(DialogAccessPoints.xml)|
+                Window.IsVisible(DialogFileStacking.xml)|
+                Window.IsVisible(DialogContentSettings.xml)|
                 Window.IsVisible(DialogTextViewer.xml)|
+                Window.IsVisible(DialogProgress.xml)|
                 Window.IsVisible(SmartPlaylistRule.xml)|
+                Window.IsVisible(DeleteTimer.xml)|
+                Window.IsVisible(FileBrowser.xml)|
+                Window.IsVisible(RecordPrefs.xml)|
+                Window.IsVisible(ProfileSettings.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-T9Search.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)|
@@ -506,15 +522,33 @@
                 Window.IsVisible(script-globalsearch-contextmenu.xml)|
                 Window.IsVisible(script-videoextras-context.xml)|
                 Window.IsVisible(script-videoextras-main.xml)|
-                Window.IsVisible(script-videoextras-resume.xml)|
-                Window.IsVisible(DialogTextViewer.xml)|
-                Window.IsVisible(DialogProgress.xml)]</visible>
+                Window.IsVisible(script-videoextras-resume.xml)
+                ]</visible>
             <posx>-30</posx>
             <posy>-30</posy>
             <width>1</width>
             <height>1</height>
             <texture>-</texture>
         </control>
+    </include>
+    <include name="FacadeFadeDialogs2ndLevelCondition">
+        <visible>![
+            Window.IsVisible(DialogButtonMenu.xml)|
+            Window.IsVisible(DialogKeyboard.xml)|
+            Window.IsVisible(DialogNumeric.xml)|
+            Window.IsVisible(DialogOk.xml)|
+            Window.IsVisible(DialogContextMenu.xml)|
+            Window.IsVisible(DialogYesNo.xml)|
+            Window.IsVisible(DialogSelect.xml)|
+            Window.IsVisible(FileBrowser.xml)|
+            Window.IsVisible(DialogTextViewer.xml)|
+            Window.IsVisible(DialogProgress.xml)
+            ]</visible>
+    </include>
+    <include name="FacadeFadeDialogs3rdLevelCondition">
+        <visible>![
+            Window.IsVisible(DialogButtonMenu.xml)
+            ]</visible>
     </include>
     <include name="Time">
         <control type="group">
@@ -1332,7 +1366,7 @@
                 <posy>609</posy>
                 <width>2320</width>
                 <height>471</height>
-                <colordiffuse>ddffffff</colordiffuse>
+                <include>DialogTransparency</include>
                 <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="group">
@@ -1501,5 +1535,8 @@
                 </control>
             </control>
         </control>
+    </include>
+    <include name="DialogTransparency">
+        <colordiffuse>ddffffff</colordiffuse>
     </include>
 </includes>

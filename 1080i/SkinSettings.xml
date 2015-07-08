@@ -606,6 +606,7 @@
                         <posy>550</posy>
                         <width>1990</width>
                         <height>444</height>
+                        <include>DialogTransparency</include>
                         <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                     </control>
                     <control type="textbox">

@@ -17,6 +17,7 @@
                 <control type="group">
                     <visible>Control.IsVisible(10)</visible>
                     <include>Icon_Fade</include>
+                    <include>FacadeFadeDialogs</include>
                     <control type="image">
                         <posx>0</posx>
                         <posy>142</posy>
@@ -273,6 +274,7 @@
                 <control type="group">
                     <visible>Control.IsVisible(11)</visible>
                     <include>Icon_Fade</include>
+                    <include>FacadeFadeDialogs</include>
                     <control type="group">
                         <control type="image">
                             <posx>0</posx>
@@ -462,6 +464,7 @@
                 <control type="group">
                     <visible>Control.IsVisible(12)</visible>
                     <include>Icon_Fade</include>
+                    <include>FacadeFadeDialogs</include>
                     <control type="group">
                         <control type="image">
                             <posx>0</posx>
@@ -623,6 +626,7 @@
                 <control type="group">
                     <visible>Control.IsVisible(13)</visible>
                     <include>Icon_Fade</include>
+                    <include>FacadeFadeDialogs</include>
                     <control type="group">
                         <control type="image">
                             <posx>0</posx>
