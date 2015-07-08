@@ -12,6 +12,7 @@
                 <posy>240</posy>
                 <width>2320</width>
                 <height>660</height>
+                <include>DialogTransparency</include>
                 <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
@@ -29,23 +30,20 @@
                 <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="image">
-                <include>ConditionWhite</include>
                 <posx>25</posx>
                 <posy>443</posy>
                 <width>373</width>
                 <height>300</height>
                 <aspectratio>keep</aspectratio>
-                <texture background="true" fallback="white/defaultChannelTvBig_Wide.png">$INFO[ListItem.Thumb]</texture>
-                <include>ThumbBorder</include>
+                <texture>$VAR[Thumbs]</texture>
             </control>
             <control type="image">
-                <include>ConditionBlack</include>
                 <posx>25</posx>
                 <posy>443</posy>
                 <width>373</width>
                 <height>300</height>
                 <aspectratio>keep</aspectratio>
-                <texture background="true" fallback="black/defaultChannelTvBig_Wide.png">$INFO[ListItem.Thumb]</texture>
+                <texture>$VAR[ThumbsBig]</texture>
                 <include>ThumbBorder</include>
             </control>
             <control type="label">

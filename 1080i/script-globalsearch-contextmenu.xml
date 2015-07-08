@@ -44,6 +44,7 @@
                 <posy>468</posy>
                 <width>2320</width>
                 <height>144</height>
+                <include>DialogTransparency</include>
                 <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="group">
