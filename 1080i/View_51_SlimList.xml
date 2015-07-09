@@ -523,6 +523,7 @@
             <!--SLIM LIST-->
             <visible>Skin.String(WeatherView,slimlist)</visible>
             <include>Icon_Fade</include>
+            <include>FacadeFadeDialogs</include>
             <control type="image">
                 <posx>0</posx>
                 <posy>142</posy>

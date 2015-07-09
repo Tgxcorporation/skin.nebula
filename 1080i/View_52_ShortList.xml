@@ -580,6 +580,7 @@
         <control type="group">
             <visible>Skin.String(WeatherView,Shortlist)</visible>
             <include>Icon_Fade</include>
+            <include>FacadeFadeDialogs</include>
             <control type="image">
                 <posx>530</posx>
                 <posy>142</posy>

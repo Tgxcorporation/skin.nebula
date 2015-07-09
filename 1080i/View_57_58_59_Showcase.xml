@@ -946,6 +946,7 @@
             <!--COVER WRAP-->
             <visible>Skin.String(WeatherView,coverwrap)</visible>
             <include>Icon_Fade</include>
+            <include>FacadeFadeDialogs</include>
             <control type="fixedlist" id="57">
                 <include>UnderFade</include>
                 <posx>0</posx>
