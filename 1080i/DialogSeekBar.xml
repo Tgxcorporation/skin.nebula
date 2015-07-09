@@ -19,7 +19,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>14</height>
-            <texturebg>white/OSD/osd_progress_background.png</texturebg>
+            <texturebg border="1,1,1,1">white/OSD/osd_progress_background.png</texturebg>
             <midtexture border="1,1,5,1">white/OSD/osd_progress_mid_caching.png</midtexture>
             <info>Player.CacheLevel</info>
             <visible>Player.Caching</visible>
@@ -30,7 +30,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>14</height>
-            <texturebg>white/OSD/osd_progress_background.png</texturebg>
+            <texturebg border="1,1,1,1">white/OSD/osd_progress_background.png</texturebg>
             <midtexture border="1,1,5,1">white/OSD/osd_progress_mid_caching.png</midtexture>
             <info>Player.ProgressCache</info>
             <visible>true</visible>
@@ -41,7 +41,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>14</height>
-            <texturebg>white/OSD/osd_progress_background.png</texturebg>
+            <texturebg border="1,1,1,1">white/OSD/osd_progress_background.png</texturebg>
             <midtexture border="1,1,5,1">white/OSD/osd_progress_mid.png</midtexture>
             <info>Player.Progress</info>
             <visible>true</visible>
@@ -52,7 +52,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>14</height>
-            <texturebg>black/OSD/osd_progress_background.png</texturebg>
+            <texturebg border="1,1,1,1">black/OSD/osd_progress_background.png</texturebg>
             <midtexture border="1,1,5,1">black/OSD/osd_progress_mid_caching.png</midtexture>
             <info>Player.CacheLevel</info>
             <visible>Player.Caching</visible>
@@ -63,7 +63,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>14</height>
-            <texturebg>black/OSD/osd_progress_background.png</texturebg>
+            <texturebg border="1,1,1,1">black/OSD/osd_progress_background.png</texturebg>
             <midtexture border="1,1,5,1">black/OSD/osd_progress_mid_caching.png</midtexture>
             <info>Player.ProgressCache</info>
             <visible>true</visible>
@@ -74,7 +74,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>14</height>
-            <texturebg>black/OSD/osd_progress_background.png</texturebg>
+            <texturebg border="1,1,1,1">black/OSD/osd_progress_background.png</texturebg>
             <midtexture border="1,1,5,1">black/OSD/osd_progress_mid.png</midtexture>
             <info>Player.Progress</info>
             <visible>true</visible>
