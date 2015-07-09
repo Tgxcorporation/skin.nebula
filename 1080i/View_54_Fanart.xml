@@ -363,6 +363,8 @@
     </include>
     <include name="Info_54_Fanart_Weather">
         <control type="group">
+            <include>FacadeFadeDialogs</include>
+            <include>Icon_Fade</include>
             <posy>642</posy>
             <control type="image">
                 <visible>[IsEmpty(ListItem.thumb)]</visible>
@@ -497,6 +499,8 @@
             <include>Icon_Fade</include>
             <control type="group">
                 <control type="image">
+                    <include>FacadeFadeDialogs</include>
+                    <include>Icon_Fade</include>
                     <posx>-1920</posx>
                     <posy>750</posy>
                     <width>3840</width>
@@ -504,6 +508,8 @@
                     <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
                 </control>
                 <control type="image">
+                    <include>FacadeFadeDialogs</include>
+                    <include>Icon_Fade</include>
                     <posx>-35</posx>
                     <posy>609</posy>
                     <width>1990</width>

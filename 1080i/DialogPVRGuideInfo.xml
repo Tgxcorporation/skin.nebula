@@ -5,7 +5,7 @@
         <!-- <include>DimBG</include> -->
         <include>TopBar</include>
         <control type="group">
-            <visible>!Window.IsVisible(DialogYesNo.xml)</visible>
+            <include>FacadeFadeDialogs2ndLevelCondition</include>
             <include>Icon_Fade</include>
             <animation effect="slide" start="0,0" end="0,156" time="0" condition="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(DialogPVRGuideOSD.xml)">Conditional</animation>
             <control type="group">
