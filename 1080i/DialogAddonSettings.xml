@@ -131,6 +131,7 @@
                 </control>
                 <control type="grouplist" id="9">
                     <posy>261</posy>
+                    <height>702</height>
                     <include>LeftMenuButtonGroup</include>
                     <onright>2</onright>
                     <ondown>9</ondown>
