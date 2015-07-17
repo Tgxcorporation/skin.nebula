@@ -953,7 +953,7 @@
                         <pagecontrol>756</pagecontrol>
                         <itemlayout height="135" width="1420">
                             <control type="label">
-                                <visible>StringCompare(ListItem.Property(Job),)</visible>
+                                <visible>StringCompare(ListItem.Property(department),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>135</height>
@@ -963,7 +963,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!StringCompare(ListItem.Property(Job),)</visible>
+                                <visible>!StringCompare(ListItem.Property(department),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>27</posy>
                                 <aligny>top</aligny>
@@ -979,8 +979,7 @@
                                 <width>1300</width>
                                 <font>FacadeListSubFont</font>
                                 <include>TextColor_AlternateColor</include>
-                                <!--<label>$INFO[ListItem.Property(department)]$INFO[ListItem.Property(Job),   ]</label>-->
-                                <label>$INFO[ListItem.Property(Job)]</label>
+                                <label>$INFO[ListItem.Property(department)]$INFO[ListItem.Property(Job), - ]</label>
                             </control>
                         </itemlayout>
                         <focusedlayout height="135" width="1420">
@@ -994,7 +993,7 @@
                                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                 </control>
                                 <control type="label">
-                                    <visible>StringCompare(ListItem.Property(Job),)</visible>
+                                    <visible>StringCompare(ListItem.Property(department),)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>0</posy>
                                     <height>135</height>
@@ -1004,7 +1003,7 @@
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <visible>!StringCompare(ListItem.Property(Job),)</visible>
+                                    <visible>!StringCompare(ListItem.Property(department),)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>27</posy>
                                     <aligny>top</aligny>
@@ -1020,8 +1019,7 @@
                                     <width>1300</width>
                                     <font>FacadeListSubFont</font>
                                     <include>TextColor_MainColor</include>
-                                    <!--<label>$INFO[ListItem.Property(department)]$INFO[ListItem.Property(Job),   ]</label>-->
-                                    <label>$INFO[ListItem.Property(Job)]</label>
+                                    <label>$INFO[ListItem.Property(department)]$INFO[ListItem.Property(Job), - ]</label>
                                 </control>
                             </control>
                         </focusedlayout>

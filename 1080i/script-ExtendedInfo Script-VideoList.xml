@@ -103,90 +103,94 @@
             <include>LeftMenu</include>
             <include>FacadeFadeDialogs</include>
             <include>Icon_Fade</include>
-            <control type="grouplist" id="9000">
-                <include>LeftMenuButtonGroup</include>
-                <onright>500</onright>
-                <ondown>9000</ondown>
-                <onback>500</onback>
-                <control type="label" id="7965">
-                    <include>LeftMenuTitleLabel</include>
-                    <label>$LOCALIZE[33061]</label>
+            <control type="group">
+                <visible>!Window.IsVisible(script-ExtendedInfo Script-T9Search.xml)</visible>
+                <include>VisibleFadeEffect</include>
+                <control type="grouplist" id="9000">
+                    <include>LeftMenuButtonGroup</include>
+                    <onright>500</onright>
+                    <ondown>9000</ondown>
+                    <onback>500</onback>
+                    <control type="label" id="7965">
+                        <include>LeftMenuTitleLabel</include>
+                        <label>$LOCALIZE[33061]</label>
+                    </control>
+                    <control type="button" id="6000">
+                        <include>LeftMenuButton</include>
+                        <description>Search</description>
+                        <label>$LOCALIZE[19140]</label>
+                    </control>
+                    <control type="button" id="7000">
+                        <include>LeftMenuButton</include>
+                        <description>My Account</description>
+                        <label>$ADDON[script.extendedinfo 32024]</label>
+                    </control>
+                    <control type="button" id="5007">
+                        <include>LeftMenuButton</include>
+                        <description>Type</description>
+                        <label>$LOCALIZE[467]:</label> <!--564-->
+                        <label2>$INFO[Window.Property(Type)]</label2>
+                    </control>
+                    <control type="button" id="5001">
+                        <include>LeftMenuButton</include>
+                        <description>Sort By</description>
+                        <label>$ADDON[script.extendedinfo 32104]</label>
+                        <label2>$INFO[Window.Property(Sort_Label)]</label2>
+                    </control>
+                    <control type="button" id="5004">
+                        <include>LeftMenuButton</include>
+                        <description>Order By</description>
+                        <label>$ADDON[script.extendedinfo 32128]</label>
+                        <label2>$INFO[Window.Property(Order_Label)]</label2>
+                    </control>
+                    <control type="label" id="9183">
+                        <include>LeftMenuTitleLabel</include>
+                        <include>LeftMenuButton</include>
+                        <label>$ADDON[script.extendedinfo 32023]</label>
+                    </control>
+                    <control type="button" id="5002">
+                        <include>LeftMenuButton</include>
+                        <description>Genre</description>
+                        <label>$LOCALIZE[515]</label>
+                    </control>
+                    <control type="button" id="5003">
+                        <include>LeftMenuButton</include>
+                        <description>Release Date</description>
+                        <label>$LOCALIZE[172]</label>
+                    </control>
+                    <control type="button" id="5006">
+                        <include>LeftMenuButton</include>
+                        <description>Certification</description>
+                        <label>$ADDON[script.extendedinfo 32127]</label>
+                    </control>
+                    <control type="button" id="5008">
+                        <include>LeftMenuButton</include>
+                        <description>Actor Crew Member</description>
+                        <label>$ADDON[script.extendedinfo 32126]</label>
+                    </control>
+                    <control type="button" id="5009">
+                        <include>LeftMenuButton</include>
+                        <description>Keyword</description>
+                        <label>$ADDON[script.extendedinfo 32114]</label>
+                    </control>
+                    <control type="button" id="5010">
+                        <include>LeftMenuButton</include>
+                        <description>Studio</description>
+                        <label>$LOCALIZE[572]</label>
+                    </control>
+                    <control type="button" id="5012">
+                        <include>LeftMenuButton</include>
+                        <description>Vote Count</description>
+                        <label>$ADDON[script.extendedinfo 32111]</label>
+                    </control>
+                    <control type="button" id="5005">
+                        <include>LeftMenuButton</include>
+                        <description>Reset Filters</description>
+                        <label>$ADDON[script.extendedinfo 32022]</label>
+                    </control>
                 </control>
-                <control type="button" id="6000">
-                    <include>LeftMenuButton</include>
-                    <description>Search</description>
-                    <label>$LOCALIZE[19140]</label>
-                </control>
-                <control type="button" id="7000">
-                    <include>LeftMenuButton</include>
-                    <description>My Account</description>
-                    <label>$ADDON[script.extendedinfo 32024]</label>
-                </control>
-                <control type="button" id="5007">
-                    <include>LeftMenuButton</include>
-                    <description>Type</description>
-                    <label>$LOCALIZE[467]:</label> <!--564-->
-                    <label2>$INFO[Window.Property(Type)]</label2>
-                </control>
-                <control type="button" id="5001">
-                    <include>LeftMenuButton</include>
-                    <description>Sort By</description>
-                    <label>$ADDON[script.extendedinfo 32104]</label>
-                    <label2>$INFO[Window.Property(Sort_Label)]</label2>
-                </control>
-                <control type="button" id="5004">
-                    <include>LeftMenuButton</include>
-                    <description>Order By</description>
-                    <label>$ADDON[script.extendedinfo 32128]</label>
-                    <label2>$INFO[Window.Property(Order_Label)]</label2>
-                </control>
-                <control type="label" id="9183">
-                    <include>LeftMenuTitleLabel</include>
-                    <include>LeftMenuButton</include>
-                    <label>$ADDON[script.extendedinfo 32023]</label>
-                </control>
-                <control type="button" id="5002">
-                    <include>LeftMenuButton</include>
-                    <description>Genre</description>
-                    <label>$LOCALIZE[515]</label>
-                </control>
-                <control type="button" id="5003">
-                    <include>LeftMenuButton</include>
-                    <description>Release Date</description>
-                    <label>$LOCALIZE[172]</label>
-                </control>
-                <control type="button" id="5006">
-                    <include>LeftMenuButton</include>
-                    <description>Certification</description>
-                    <label>$ADDON[script.extendedinfo 32127]</label>
-                </control>
-                <control type="button" id="5008">
-                    <include>LeftMenuButton</include>
-                    <description>Actor Crew Member</description>
-                    <label>$ADDON[script.extendedinfo 32126]</label>
-                </control>
-                <control type="button" id="5009">
-                    <include>LeftMenuButton</include>
-                    <description>Keyword</description>
-                    <label>$ADDON[script.extendedinfo 32114]</label>
-                </control>
-                <control type="button" id="5010">
-                    <include>LeftMenuButton</include>
-                    <description>Studio</description>
-                    <label>$LOCALIZE[572]</label>
-                </control>
-                <control type="button" id="5012">
-                    <include>LeftMenuButton</include>
-                    <description>Vote Count</description>
-                    <label>$ADDON[script.extendedinfo 32111]</label>
-                </control>
-                <control type="button" id="5005">
-                    <include>LeftMenuButton</include>
-                    <description>Reset Filters</description>
-                    <label>$ADDON[script.extendedinfo 32022]</label>
-                </control>
+                <include>LeftMenuScroller</include>
             </control>
-            <include>LeftMenuScroller</include>
         </control>
     </controls>
 </window>
