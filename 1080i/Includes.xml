@@ -515,7 +515,6 @@
                 Window.IsVisible(FileBrowser.xml)|
                 Window.IsVisible(RecordPrefs.xml)|
                 Window.IsVisible(ProfileSettings.xml)|
-                Window.IsVisible(script-ExtendedInfo Script-T9Search.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-SlideShow.xml)|
