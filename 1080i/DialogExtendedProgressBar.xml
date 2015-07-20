@@ -3,6 +3,12 @@
     <zorder>2</zorder>
     <controls>
         <control type="group">
+            <visible>![Window.IsActive(DialogFullScreenInfo.xml)
+                |[
+                Player.HasMedia |
+                Window.IsActive(VideoOSD.xml) |
+                window.isvisible(MusicOSD.xml)
+                ]]</visible>
             <include>NotificationOpenClose</include>
             <posy>0</posy>
             <control type="image">
