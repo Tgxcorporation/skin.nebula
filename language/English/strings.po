@@ -559,6 +559,10 @@ msgstr ""
 #empty strings from id 31911 to 31940
 #NEBULA
 
+msgctxt "#31940"
+msgid "Disable OSD in paused video playback"
+msgstr ""
+
 msgctxt "#31941"
 msgid "Highlight first letter while scrolling"
 msgstr ""
