@@ -99,12 +99,12 @@
                                 <onclick>noop</onclick>
                                 <visible>!IsEmpty(Window.Property(actor.Birthday))</visible>
                             </item>
-                            <!--<item>-->
-                            <!--<label>$ADDON[script.extendedinfo 32020]:</label>-->
-                            <!--<label2>$INFO[Window.Property(actor.Age)]</label2>-->
-                            <!--<onclick>noop</onclick>-->
-                            <!--<visible>!IsEmpty(Window.Property(actor.Age))</visible>-->
-                            <!--</item>-->
+                            <item>
+                                <label>$ADDON[script.extendedinfo 32020]:</label>
+                                <label2>$INFO[Window.Property(actor.Age)]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(actor.Age))</visible>
+                            </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32013]:</label>
                                 <label2>$INFO[Window.Property(actor.Deathday)]$INFO[Window.Property(actor.DeathageLong), (,)]</label2>
