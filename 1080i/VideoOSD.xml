@@ -15,7 +15,7 @@
                 <posy>13</posy>
                 <width>1920</width>
                 <height>33</height>
-                <onup>100</onup>
+                <onup>87</onup>
                 <ondown>100</ondown>
                 <action>seek</action>
                 <texturesliderbar>white/OSD/osd_progress_empty.png</texturesliderbar>
@@ -29,7 +29,7 @@
                 <posy>13</posy>
                 <width>1920</width>
                 <height>33</height>
-                <onup>100</onup>
+                <onup>87</onup>
                 <ondown>100</ondown>
                 <action>seek</action>
                 <texturesliderbar>black/OSD/osd_progress_empty.png</texturesliderbar>
