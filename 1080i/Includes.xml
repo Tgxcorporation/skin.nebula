@@ -512,6 +512,7 @@
                 Window.IsVisible(DialogProgress.xml)|
                 Window.IsVisible(SmartPlaylistRule.xml)|
                 Window.IsVisible(DeleteTimer.xml)|
+                Window.IsVisible(LockSettings.xml)|
                 Window.IsVisible(FileBrowser.xml)|
                 Window.IsVisible(RecordPrefs.xml)|
                 Window.IsVisible(ProfileSettings.xml)|
