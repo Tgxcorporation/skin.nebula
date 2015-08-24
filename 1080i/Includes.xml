@@ -1021,6 +1021,7 @@
             <texturenofocus>-</texturenofocus>
             <texturefocus>-</texturefocus>
             <visible>true</visible>
+            <onfocus>SetFocus(9000)</onfocus>
         </control>
     </include>
     <include name="LeftMenuScroller">
