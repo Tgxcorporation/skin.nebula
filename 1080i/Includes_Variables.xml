@@ -138,7 +138,7 @@
         <value>$LOCALIZE[416]</value>
     </variable>
     <variable name="DetailsRow1">
-        <value condition="!IsEmpty(ListItem.Rating)">[COLOR=Dummy][/COLOR]</value>
+        <value condition="!IsEmpty(ListItem.Rating)+!Container.Content(Artists)">[COLOR=Dummy][/COLOR]</value>
         <value condition="Window.IsActive(MyPVRTimers.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
         <value condition="Window.IsActive(MyPVRSearch.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
