@@ -508,6 +508,7 @@
                 Window.IsVisible(DialogContentSettings.xml)|
                 Window.IsVisible(DialogTextViewer.xml)|
                 Window.IsVisible(DialogProgress.xml)|
+                Window.IsVisible(DialogGamepad.xml)|
                 Window.IsVisible(SmartPlaylistRule.xml)|
                 Window.IsVisible(DeleteTimer.xml)|
                 Window.IsVisible(LockSettings.xml)|
@@ -545,6 +546,7 @@
             Window.IsVisible(FileBrowser.xml)|
             Window.IsVisible(DialogTextViewer.xml)|
             Window.IsVisible(DialogProgress.xml)|
+            Window.IsVisible(DialogGamepad.xml)|
             Window.IsVisible(script-globalsearch-contextmenu.xml)|
             Window.IsVisible(script-globalsearch-infodialog.xml)
             ]</visible>

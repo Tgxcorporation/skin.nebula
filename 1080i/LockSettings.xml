@@ -12,6 +12,7 @@
                 Window.IsVisible(DialogOk.xml)|
                 Window.IsVisible(DialogFileStacking.xml)|
                 Window.IsVisible(DialogContextMenu.xml)|
+                Window.IsVisible(DialogGamepad.xml)|
                 Window.IsVisible(DialogYesNo.xml)|
                 Window.IsVisible(DialogSelect.xml)|
                 Window.IsVisible(DialogTextViewer.xml)|
