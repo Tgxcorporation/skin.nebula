@@ -549,7 +549,7 @@
                                 <!--Custom MULTI IMAGE STARTUP-->
                                 <item id="208">
                                     <visible>StringCompare(Skin.String(startup-screentype),multiimage)</visible>
-                                    <label>$LOCALIZE[31019]</label>
+                                    <label>$LOCALIZE[31033]</label>
                                     <label2>$LOCALIZE[31518]</label2>
                                     <onclick>Skin.SetString(startup-screentype,video)</onclick>
                                 </item>
