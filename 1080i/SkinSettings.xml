@@ -149,6 +149,18 @@
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(DisableIconViewInfos)</onclick>
                             </item>
+                            <item id="195">
+                                <visible>!Skin.HasSetting(EnableJustify)</visible>
+                                <label>$LOCALIZE[31939]</label>
+                                <label2>$LOCALIZE[106]</label2>
+                                <onclick>Skin.ToggleSetting(EnableJustify)</onclick>
+                            </item>
+                            <item id="195">
+                                <visible>Skin.HasSetting(EnableJustify)</visible>
+                                <label>$LOCALIZE[31939]</label>
+                                <label2>$LOCALIZE[107]</label2>
+                                <onclick>Skin.ToggleSetting(EnableJustify)</onclick>
+                            </item>
                             <item id="194">
                                 <visible>!Skin.HasSetting(EnableKioskMode)</visible>
                                 <label>$LOCALIZE[31030]</label>
