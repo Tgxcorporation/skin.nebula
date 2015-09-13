@@ -1593,4 +1593,7 @@
             <font>WindowTitleFont</font>
         </control>
     </include>
+    <include name="TextboxAlignment">
+        <align>justify</align>
+    </include>
 </includes>
