@@ -1,3 +1,15 @@
+3.4.5
+Updated Ubuntu font.
+Added option to enable text alignment of plots.
+Updated support for Extended Info.
+Added support for GamePad.
+Improved Video Playlist screen.
+New cursor for more precision.
+Improved mouse navigation in left menu.
+Improved management of header titles.
+Updated languages from Transifex.
+Bugs fixed.
+
 3.4.0
 Added complete support for Wmc, NextPvr and Dvblink pvr clients.
 Added option to disable osd when player is paused.
