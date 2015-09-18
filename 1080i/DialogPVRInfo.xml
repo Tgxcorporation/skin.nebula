@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
-    <defaultcontrol always="true">10</defaultcontrol>
+    <defaultcontrol always="true">7</defaultcontrol>
     <controls>
         <!-- <include>DimBG</include> -->
         <include>TopBar</include>
         <control type="group">
             <include>FacadeFadeDialogs2ndLevelCondition</include>
             <include>Icon_Fade</include>
+            <animation effect="slide" start="0,0" end="0,156" time="0" condition="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(DialogPVRGuideOSD.xml)">Conditional</animation>
             <control type="group">
                 <posy>-30</posy>
                 <include>DialogOpenClose</include>
@@ -50,6 +51,7 @@
                     <include>ThumbBorder</include>
                 </control>
                 <control type="label">
+                    <animation effect="slide" start="0,0" end="0,-15" time="0" condition="!IsEmpty(ListItem.EpisodeName)">Conditional</animation>
                     <posx>TextMargin</posx>
                     <posy>273</posy>
                     <width>1800</width>
@@ -58,6 +60,16 @@
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
                     <label>$INFO[ListItem.Title]</label>
+                </control>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>360</posy>
+                    <width>1800</width>
+                    <height>35</height>
+                    <align>center</align>
+                    <font>InfoTitleSubFont</font>
+                    <include>TextColor_MainColor</include>
+                    <label>$INFO[ListItem.EpisodeName]</label>
                 </control>
                 <control type="label">
                     <posx>423</posx>
@@ -75,7 +87,7 @@
                     <height>78</height>
                     <font>InfoDetailsFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[ListItem.StartDate]     $INFO[ListItem.StartTime]</label>
+                    <label>$INFO[ListItem.StartTime,, / ]$INFO[ListItem.EndTime]</label>
                 </control>
                 <control type="label">
                     <posx>423</posx>
@@ -84,7 +96,7 @@
                     <height>78</height>
                     <font>InfoDetailsFont</font>
                     <include>TextColor_MainColor</include>
-                    <label fallback="161">$INFO[ListItem.Genre]</label>
+                    <label>$INFO[ListItem.Genre]</label>
                 </control>
                 <control type="label">
                     <posx>423</posx>
@@ -95,7 +107,7 @@
                     <include>TextColor_MainColor</include>
                     <label>$INFO[ListItem.Duration]</label>
                 </control>
-                <control type="textbox" id="400">
+                <control type="textbox">
                     <posx>1171</posx>
                     <posy>471</posy>
                     <width>688</width>
@@ -110,10 +122,10 @@
                     <posy>471</posy>
                     <height>249</height>
                     <include>VerticalScroller</include>
-                    <onleft>10</onleft>
-                    <onright>10</onright>
+                    <onleft>5</onleft>
+                    <onright>5</onright>
                 </control>
-                <control type="grouplist" id="9001">
+                <control type="grouplist">
                     <posx>0</posx>
                     <posy>777</posy>
                     <width>1920</width>
@@ -128,15 +140,46 @@
                     <onright>6060</onright>
                     <control type="button" id="122">
                         <include>ButtonFocusAnimation</include>
+                        <width>348</width>
                         <label>Extended Info</label>
                         <visible>System.HasAddon(script.extendedinfo)</visible>
                         <onclick>Action(Close)</onclick>
                         <onclick>dialog.close(all,true)</onclick>
                         <onclick>RunScript(script.extendedinfo,info=extendedinfo,name=$INFO[ListItem.Title])</onclick>
                     </control>
-                    <control type="button" id="10">
+                    <control type="button" id="4">
                         <include>ButtonFocusAnimation</include>
-                        <label>$LOCALIZE[186]</label>
+                        <width>348</width>
+                        <description>Find similar</description>
+                        <label>19003</label>
+                        <visible>Window.IsActive(PVRGuideInfo)</visible>
+                    </control>
+                    <control type="button" id="5">
+                        <include>ButtonFocusAnimation</include>
+                        <width>348</width>
+                        <description>Switch to Channel</description>
+                        <label>19165</label>
+                        <visible>Window.IsActive(PVRGuideInfo)</visible>
+                    </control>
+                    <control type="button" id="8">
+                        <include>ButtonFocusAnimation</include>
+                        <width>348</width>
+                        <description>Play recording</description>
+                        <label>19687</label>
+                        <visible>Window.IsActive(PVRGuideInfo)</visible>
+                    </control>
+                    <control type="button" id="6">
+                        <include>ButtonFocusAnimation</include>
+                        <width>348</width>
+                        <description>Record</description>
+                        <label>-</label>
+                        <visible>Window.IsActive(PVRGuideInfo)</visible>
+                    </control>
+                    <control type="button" id="7">
+                        <width>180</width>
+                        <include>ButtonFocusAnimation</include>
+                        <description>OK</description>
+                        <label>186</label>
                     </control>
                 </control>
             </control>

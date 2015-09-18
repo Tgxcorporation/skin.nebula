@@ -55,7 +55,6 @@
     <default type="button">
         <posx>0</posx>
         <posy>0</posy>
-
         <width>450</width>
         <height>90</height>
         <align>center</align>
