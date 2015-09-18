@@ -121,8 +121,10 @@
         <radioheight>33</radioheight>
         <include>TextureFocus</include>
         <texturenofocus>-</texturenofocus>
-        <include>TextureRadioFocus</include>
-        <include>TextureRadioNoFocus</include>
+        <include>TextureRadioOffNoFocus</include>
+        <include>TextureRadioOnNoFocus</include>
+        <include>TextureRadioOffFocus</include>
+        <include>TextureRadioOnFocus</include>
         <textoffsetx>20</textoffsetx>
         <pulseonselect>false</pulseonselect>
     </default>
