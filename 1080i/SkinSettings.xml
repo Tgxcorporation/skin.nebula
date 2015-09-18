@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
+    <menucontrol>9000</menucontrol>
     <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=300)</onunload>
     <controls>
         <include condition="!Skin.HasSetting(DisableFanart)">Fanart_Art</include>

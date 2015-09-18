@@ -3,6 +3,7 @@
     <zorder>0</zorder>
     <onload condition="System.HasAddon(script.videoextras)">XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
     <defaultcontrol always="true">2</defaultcontrol>
+    <menucontrol>9000</menucontrol>
     <controls>
         <!-- <include>DimBG</include> -->
         <include>TopBar</include>

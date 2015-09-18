@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
     <defaultcontrol always="true">9000</defaultcontrol>
+    <menucontrol>9000</menucontrol>
     <onload condition="Container.Content(artists)">RunScript(script.extendedinfo,info=artistdetails,artistname='$ESCINFO[ListItem.Artist]',silent=False)</onload>
     <onload condition="Container.Content(albums)">RunScript(script.extendedinfo,info=artistdetails,info=albuminfo,artistname='$ESCINFO[ListItem.Artist]',albumname='$ESCINFO[ListItem.Album]',silent=False)</onload>
     <controls>

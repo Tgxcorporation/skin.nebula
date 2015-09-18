@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="window" id="1115">
     <defaultcontrol always="true">9000</defaultcontrol>
+    <menucontrol>9000</menucontrol>
     <controls>
         <include condition="!Skin.HasSetting(DisableFanart)">Fanart_Art</include>
         <include>Player_Show</include>
