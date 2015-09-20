@@ -48,6 +48,17 @@
             <info>Player.Progress</info>
             <visible>true</visible>
         </control>
+        <control type="progress">
+            <visible>PVR.IsTimeshift</visible>
+            <include>ConditionWhite</include>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>14</height>
+            <texturebg border="1,1,1,1">white/OSD/osd_progress_background_dummy.png</texturebg>
+            <midtexture border="1,1,5,1">black/OSD/osd_progress_timeshift.png</midtexture>
+            <info>PVR.TimeshiftProgress</info>
+        </control>
         <control type="slider" id="401">
             <description>Seek Slider</description>
             <visible>Player.Seeking</visible>
@@ -95,6 +106,17 @@
             <midtexture border="1,1,5,1">black/OSD/osd_progress_mid.png</midtexture>
             <info>Player.Progress</info>
             <visible>true</visible>
+        </control>
+        <control type="progress">
+            <visible>PVR.IsTimeshift</visible>
+            <include>ConditionBlack</include>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>14</height>
+            <texturebg border="1,1,1,1">black/OSD/osd_progress_background_dummy.png</texturebg>
+            <midtexture border="1,1,5,1">black/OSD/osd_progress_timeshift.png</midtexture>
+            <info>PVR.TimeshiftProgress</info>
         </control>
         <control type="slider" id="401">
             <description>Seek Slider</description>
