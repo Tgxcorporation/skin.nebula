@@ -494,6 +494,7 @@
                 Window.IsVisible(DialogSongInfo.xml)|
                 Window.IsVisible(DialogButtonMenu.xml)|
                 Window.IsVisible(DialogYesNo.xml)|
+                Window.IsVisible(DialogAudioDSPManager.xml)|
                 Window.IsVisible(DialogPVRInfo.xml)|
                 Window.IsVisible(DialogPVRGuideSearch.xml)|
                 Window.IsVisible(DialogPVRTimerSettings.xml)|
