@@ -9,6 +9,7 @@
             <visible>!window.IsVisible(DialogVolumeBar.xml)</visible>
             <include>TopBarOSDVisibleFadeEffect</include>
             <control type="slider" id="87">
+                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks) | VideoPlayer.Content(LiveTV)]</visible>
                 <include>ConditionWhite</include>
                 <description>Seek Slider</description>
                 <posx>0</posx>
@@ -23,6 +24,7 @@
                 <textureslidernibfocus>white/buttons/SliderNibFO.png</textureslidernibfocus>
             </control>
             <control type="slider" id="87">
+                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks) | VideoPlayer.Content(LiveTV)]</visible>
                 <include>ConditionBlack</include>
                 <description>Seek Slider</description>
                 <posx>0</posx>
