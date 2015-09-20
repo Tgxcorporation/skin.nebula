@@ -59,7 +59,7 @@
             <width>1920</width>
             <height>33</height>
             <texturesliderbar>white/OSD/osd_progress_empty.png</texturesliderbar>
-            <textureslidernib>white/buttons/SliderNibNF.png</textureslidernib>
+            <textureslidernib>white/buttons/SliderNibFO.png</textureslidernib>
             <textureslidernibfocus>white/buttons/SliderNibFO.png</textureslidernibfocus>
         </control>
 
@@ -107,7 +107,7 @@
             <width>1920</width>
             <height>33</height>
             <texturesliderbar>black/OSD/osd_progress_empty.png</texturesliderbar>
-            <textureslidernib>black/buttons/SliderNibNF.png</textureslidernib>
+            <textureslidernib>black/buttons/SliderNibFO.png</textureslidernib>
             <textureslidernibfocus>black/buttons/SliderNibFO.png</textureslidernibfocus>
         </control>
         <control type="image">
