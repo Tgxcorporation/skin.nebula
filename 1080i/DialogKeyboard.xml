@@ -11,27 +11,56 @@
                 <visible>!Window.IsVisible(numericinput)</visible>
                 <include>DialogOpenClose</include>
                 <posy>-80</posy>
-                <control type="image">
-                    <posx>-200</posx>
-                    <posy>240</posy>
-                    <width>2320</width>
-                    <height>760</height>
-                    <include>DialogTransparency</include>
-                    <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
+                <animation effect="slide" start="0,0" end="0,-50" time="0" condition="Control.IsVisible(313)">Conditional</animation>
+                <control type="group">
+                    <visible>!Control.IsVisible(313)</visible>
+                    <control type="image">
+                        <posx>-200</posx>
+                        <posy>240</posy>
+                        <width>2320</width>
+                        <height>760</height>
+                        <include>DialogTransparency</include>
+                        <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>100</posx>
+                        <posy>232</posy>
+                        <width>1720</width>
+                        <height>217</height>
+                        <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>100</posx>
+                        <posy>455</posy>
+                        <width>1720</width>
+                        <height>553</height>
+                        <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+                    </control>
                 </control>
-                <control type="image">
-                    <posx>100</posx>
-                    <posy>232</posy>
-                    <width>1720</width>
-                    <height>217</height>
-                    <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
-                </control>
-                <control type="image">
-                    <posx>100</posx>
-                    <posy>455</posy>
-                    <width>1720</width>
-                    <height>553</height>
-                    <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+                <control type="group">
+                    <visible>Control.IsVisible(313)</visible>
+                    <control type="image">
+                        <posx>-200</posx>
+                        <posy>240</posy>
+                        <width>2320</width>
+                        <height>860</height>
+                        <include>DialogTransparency</include>
+                        <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>100</posx>
+                        <posy>232</posy>
+                        <width>1720</width>
+                        <height>317</height>
+                        <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>100</posx>
+                        <posy>555</posy>
+                        <width>1720</width>
+                        <height>553</height>
+                        <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+                    </control>
                 </control>
                 <control type="label" id="311">
                     <posx>TextMargin</posx>
@@ -42,18 +71,44 @@
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
                 </control>
-                <control type="edit" id="312">
-                    <posx>TextMargin</posx>
-                    <posy>408</posy>
-                    <width>1800</width>
-                    <height>87</height>
-                    <align>center</align>
-                    <include>TextColor_MainColor</include>
-                    <font>InfoDetailsFont</font>
+                <control type="group">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <visible>Control.IsVisible(313)</visible>
+                    <control type="label" id="313">
+                        <description>HZCODE label</description>
+                        <posx>TextMargin</posx>
+                        <posy>393</posy>
+                        <width>1800</width>
+                        <font>InfoDetailsFont</font>
+                        <scroll>true</scroll>
+                        <include>TextColor_MainColor</include>
+                        <align>center</align>
+                    </control>
+                    <control type="label" id="314">
+                        <description>HZLIST label</description>
+                        <posx>TextMargin</posx>
+                        <posy>443</posy>
+                        <width>1800</width>
+                        <font>DialogSubFont</font>
+                        <scroll>true</scroll>
+                        <include>TextColor_AlternateColor</include>
+                        <align>center</align>
+                    </control>
                 </control>
                 <control type="group">
                     <left>280</left>
                     <top>533</top>
+                    <animation effect="slide" start="0,0" end="0,100" time="0" condition="Control.IsVisible(313)">Conditional</animation>
+                    <control type="edit" id="312">
+                        <posx>-220</posx>
+                        <posy>-125</posy>
+                        <width>1800</width>
+                        <height>87</height>
+                        <align>center</align>
+                        <include>TextColor_MainColor</include>
+                        <font>InfoDetailsFont</font>
+                    </control>
                     <!-- 1st row -->
                     <control type="grouplist">
                         <itemgap>0</itemgap>
