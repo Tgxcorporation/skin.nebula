@@ -669,12 +669,10 @@
         <value condition="StringCompare(Skin.String(StartupWindow),VideoLibrary) + StringCompare(Skin.String(StartupWindowOption),TVShowTitles)">$LOCALIZE[20343]</value>
         <value condition="StringCompare(Skin.String(StartupWindow),VideoLibrary) + StringCompare(Skin.String(StartupWindowOption),MusicVideoTitles)">$LOCALIZE[31971]</value>
         <value condition="StringCompare(Skin.String(StartupWindow),Videos) + StringCompare(Skin.String(StartupWindowOption),Playlists)">$LOCALIZE[3] - $LOCALIZE[136]</value>
-        <value condition="StringCompare(Skin.String(StartupWindow),MusicFiles) + StringCompare(Skin.String(StartupWindowOption),root)">$LOCALIZE[2]</value>
-        <value condition="StringCompare(Skin.String(StartupWindow),MusicLibrary) + StringCompare(Skin.String(StartupWindowOption),Albums)">$LOCALIZE[132]</value>
-        <value condition="StringCompare(Skin.String(StartupWindow),MusicLibrary) + StringCompare(Skin.String(StartupWindowOption),Artists)">$LOCALIZE[133]</value>
-        <value condition="StringCompare(Skin.String(StartupWindow),MusicFiles) + SubString(Skin.String(StartupWindowOption),videodb://musicvideos/)">$LOCALIZE[31972]</value>
-        <value condition="StringCompare(Skin.String(StartupWindow),MusicLibrary) + SubString(Skin.String(StartupWindowOption),videodb://musicvideos/)">$LOCALIZE[31972]</value>
-        <value condition="StringCompare(Skin.String(StartupWindow),Music) + StringCompare(Skin.String(StartupWindowOption),Playlists)">$LOCALIZE[2] - $LOCALIZE[136]</value>
+        <value condition="StringCompare(Skin.String(StartupWindow),Music) + StringCompare(Skin.String(StartupWindowOption),root)">$LOCALIZE[2]</value>
+        <value condition="StringCompare(Skin.String(StartupWindow),Music) + StringCompare(Skin.String(StartupWindowOption),Albums)">$LOCALIZE[132]</value>
+        <value condition="StringCompare(Skin.String(StartupWindow),Music) + StringCompare(Skin.String(StartupWindowOption),Artists)">$LOCALIZE[133]</value>
+        <value condition="StringCompare(Skin.String(StartupWindow),Music) + SubString(Skin.String(StartupWindowOption),videodb://musicvideos/)">$LOCALIZE[31972]</value>
         <value condition="StringCompare(Skin.String(StartupWindow),tvchannels)">$LOCALIZE[19023]</value>
         <value condition="StringCompare(Skin.String(StartupWindow),tvrecordings)">$LOCALIZE[19020] - $LOCALIZE[20007]</value>
         <value condition="StringCompare(Skin.String(StartupWindow),tvguide)">$LOCALIZE[19020] - $LOCALIZE[22020]</value>

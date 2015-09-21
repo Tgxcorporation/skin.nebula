@@ -99,16 +99,7 @@
                     <visible>Library.HasContent(music) | Library.HasContent(musicvideos)</visible>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[1024] $LOCALIZE[14022]</label>
-                    <onclick>ActivateWindow(MusicLibrary,root)</onclick>
-                </control>
-                <control type="radiobutton" id="99">
-                    <visible>!Skin.HasSetting(plexbmc)</visible>
-                    <description>Library button</description>
-                    <label>$LOCALIZE[29800]</label>
-                    <onclick>ReplaceWindow(MusicFiles)</onclick>
-                    <selected>Window.IsVisible(MusicLibrary)</selected>
-                    <textwidth>450</textwidth>
-                    <include>LeftMenuButton</include>
+                    <onclick>ActivateWindow(Music,root)</onclick>
                 </control>
                 <control type="togglebutton" id="699">
                     <enable>Player.HasMedia</enable>

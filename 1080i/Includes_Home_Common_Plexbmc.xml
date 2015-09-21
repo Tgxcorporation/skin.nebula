@@ -606,8 +606,7 @@
         <item id="53">
             <visible>Container(300).HasFocus(50)</visible>
             <label>$LOCALIZE[2]</label>
-            <onclick condition="!Library.HasContent(music)">ActivateWindow(MusicFiles,"plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22",return)</onclick>
-            <onclick condition="Library.HasContent(music)">ActivateWindow(MusicLibrary,"plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22",return)</onclick>
+            <onclick>ActivateWindow(Music,"plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22",return)</onclick>
         </item>
         <item id="58">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>

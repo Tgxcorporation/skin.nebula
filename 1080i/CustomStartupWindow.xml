@@ -155,7 +155,7 @@
                         <onclick>Skin.SetString(StartupWindowOption,Playlists)</onclick>
                         <selected>StringCompare(Skin.String(StartupWindow),Videos) + StringCompare(Skin.String(StartupWindowOption),Playlists)</selected>
                     </control>
-                    <!--MUSICSONGS-->
+                    <!--MUSIC-->
                     <control type="radiobutton" id="723">
                         <visible>Library.HasContent(music)</visible>
                         <visible>!Skin.HasSetting(plexbmc)</visible>
@@ -165,12 +165,12 @@
                         <textwidth>460</textwidth>
                         <include>LeftMenuButtonWide</include>
                         <label>$LOCALIZE[2]</label>
-                        <onclick>Skin.SetString(StartupWindow,MusicFiles)</onclick>
+                        <onclick>Skin.SetString(StartupWindow,Music)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                         <onclick>Skin.Reset(StartupWindowOption)</onclick>
                         <onclick>Skin.SetString(StartupWindowOption,root)</onclick>
-                        <selected>StringCompare(Skin.String(StartupWindow),MusicFiles) + StringCompare(Skin.String(StartupWindowOption),root)</selected>
+                        <selected>StringCompare(Skin.String(StartupWindow),Music) + StringCompare(Skin.String(StartupWindowOption),root)</selected>
                     </control>
                     <!--ALBUMS-->
                     <control type="radiobutton" id="724">
@@ -182,14 +182,14 @@
                         <textwidth>460</textwidth>
                         <include>LeftMenuButtonWide</include>
                         <label>$LOCALIZE[132]</label>
-                        <onclick>Skin.SetString(StartupWindow,MusicLibrary)</onclick>
+                        <onclick>Skin.SetString(StartupWindow,Music)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                         <onclick>Skin.Reset(StartupWindowOption)</onclick>
                         <onclick>Skin.SetString(StartupWindowOption,Albums)</onclick>
-                        <selected>StringCompare(Skin.String(StartupWindow),MusicLibrary) + StringCompare(Skin.String(StartupWindowOption),Albums)</selected>
+                        <selected>StringCompare(Skin.String(StartupWindow),Music) + StringCompare(Skin.String(StartupWindowOption),Albums)</selected>
                     </control>
-                    <!--ARTIRTS-->
+                    <!--ARTISTS-->
                     <control type="radiobutton" id="725">
                         <visible>Library.HasContent(music)</visible>
                         <visible>!Skin.HasSetting(plexbmc)</visible>
@@ -199,46 +199,29 @@
                         <textwidth>460</textwidth>
                         <include>LeftMenuButtonWide</include>
                         <label>$LOCALIZE[133]</label>
-                        <onclick>Skin.SetString(StartupWindow,MusicLibrary)</onclick>
+                        <onclick>Skin.SetString(StartupWindow,Music)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                         <onclick>Skin.Reset(StartupWindowOption)</onclick>
                         <onclick>Skin.SetString(StartupWindowOption,Artists)</onclick>
-                        <selected>StringCompare(Skin.String(StartupWindow),MusicLibrary) + StringCompare(Skin.String(StartupWindowOption),Artists)</selected>
+                        <selected>StringCompare(Skin.String(StartupWindow),Music) + StringCompare(Skin.String(StartupWindowOption),Artists)</selected>
                     </control>
                     <!--CLIPS-->
                     <control type="radiobutton" id="726">
                         <visible>!Skin.HasSetting(plexbmc)</visible>
-                        <visible>Library.HasContent(music) + Library.HasContent(MusicVideos)</visible>
+                        <visible>Library.HasContent(MusicVideos)</visible>
                         <align>center</align>
                         <width>1920</width>
                         <radioposx>1806</radioposx>
                         <textwidth>460</textwidth>
                         <include>LeftMenuButtonWide</include>
                         <label>$LOCALIZE[31972]</label>
-                        <onclick>Skin.SetString(StartupWindow,MusicFiles)</onclick>
+                        <onclick>Skin.SetString(StartupWindow,Music)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                         <onclick>Skin.Reset(StartupWindowOption)</onclick>
                         <onclick>Skin.SetString(StartupWindowOption,"videodb://musicvideos/")</onclick>
-                        <selected>StringCompare(Skin.String(StartupWindow),MusicFiles) + StringCompare(Skin.String(StartupWindowOption),"videodb://musicvideos/")</selected>
-                    </control>
-                    <!--CLIPS-->
-                    <control type="radiobutton" id="727">
-                        <visible>!Skin.HasSetting(plexbmc)</visible>
-                        <visible>!Library.HasContent(music) + Library.HasContent(MusicVideos)</visible>
-                        <align>center</align>
-                        <width>1920</width>
-                        <radioposx>1806</radioposx>
-                        <textwidth>460</textwidth>
-                        <include>LeftMenuButtonWide</include>
-                        <label>$LOCALIZE[31972]</label>
-                        <onclick>Skin.SetString(StartupWindow,MusicLibrary)</onclick>
-                        <onclick>Skin.Reset(CustomStartup.Label)</onclick>
-                        <onclick>Skin.Reset(CustomStartup.Path)</onclick>
-                        <onclick>Skin.Reset(StartupWindowOption)</onclick>
-                        <onclick>Skin.SetString(StartupWindowOption,"videodb://musicvideos/")</onclick>
-                        <selected>StringCompare(Skin.String(StartupWindow),MusicLibrary) + StringCompare(Skin.String(StartupWindowOption),"videodb://musicvideos/")</selected>
+                        <selected>StringCompare(Skin.String(StartupWindow),Music) + StringCompare(Skin.String(StartupWindowOption),"videodb://musicvideos/")</selected>
                     </control>
                     <!--MUSIC PLAYLISTS-->
                     <control type="radiobutton" id="728">
