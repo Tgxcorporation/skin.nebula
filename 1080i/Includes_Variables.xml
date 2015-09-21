@@ -332,6 +332,7 @@
         <value condition="Window.IsActive(MyPics.xml)">$VAR[Pictures.Art]</value>
         <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)+!IsEmpty(Container(500).ListItem.Art(fanart))">$INFO[Container(500).ListItem.Art(fanart)]</value>
         <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+        <value condition="!IsEmpty(Container.Art(set.fanart))">$INFO[Container.Art(set.fanart)]</value>
         <value condition="[Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyVideoPlaylist.xml)]+[container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]">$VAR[TVShows.Art]</value>
         <value condition="[Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyVideoPlaylist.xml)]+[Container.Content(movies)|Container.Content(sets)]">$VAR[Movies.Art]</value>
         <value condition="[Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyVideoPlaylist.xml)]+[Container.Content(musicvideos)]">$VAR[Clips.Art]</value>
