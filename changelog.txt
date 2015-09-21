@@ -1,4 +1,11 @@
-3.4.5
+4.0.0
+Made the skin Jarvis compatible.
+Bugs fixed.
+
+3.5.0
+Improved VideoFullScreen with missing pvr infos.
+Improved Seekbar with seek position.
+Improved radio buttons.
 Updated Ubuntu font.
 Added option to enable text alignment of plots.
 Updated support for Extended Info.
