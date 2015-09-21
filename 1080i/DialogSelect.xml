@@ -62,6 +62,15 @@
                     <include>TextColor_MainColor</include>
                     <label>$INFO[Container(3).NumItems,, $LOCALIZE[31025]]</label>
                 </control>
+                <control type="label" id="4">
+                    <description>No Settings Label</description>
+                    <posx>0</posx>
+                    <posy>318</posy>
+                    <width>1920</width>
+                    <height>135</height>
+                    <font>FacadeListMainFont</font>
+                    <include>TextColor_AlternateColor</include>
+                </control>
                 <control type="list" id="6">
                     <posx>0</posx>
                     <posy>318</posy>

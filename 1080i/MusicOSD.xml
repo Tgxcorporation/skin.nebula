@@ -6,7 +6,7 @@
     <controls>
         <control type="group">
             <visible>![Skin.HasSetting(DisableOSDInfoOnPause)+Player.Paused]</visible>
-            <visible>![Window.IsVisible(DialogSelect.xml) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(DialogSubtitles.xml) | Window.IsVisible(DialogAddonSettings.xml)| Window.IsVisible(VisualisationPresetList.xml)| Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
+            <visible>![Window.IsVisible(DialogSelect.xml) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(DialogSubtitles.xml) | Window.IsVisible(DialogAddonSettings.xml)| Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
             <visible>!window.IsVisible(DialogVolumeBar.xml)</visible>
             <include>TopBarOSDVisibleFadeEffect</include>
             <control type="slider" id="87">

@@ -19,7 +19,7 @@
                 <include>FacadeFadeDialogs2ndLevelCondition</include>
                 <include>Icon_Fade</include>
                 <control type="group">
-                    <visible>[Player.Paused |Player.ShowInfo | Window.IsActive(MusicOSD) | Window.IsVisible(script-cu-lrclyrics-main.xml)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
+                    <visible>[Player.Paused |Player.ShowInfo | Window.IsActive(MusicOSD) | Window.IsVisible(script-cu-lrclyrics-main.xml)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog)]</visible>
                     <include>MusicOSDFade</include>
                     <posy>-56</posy>
                     <control type="group">
