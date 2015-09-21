@@ -1,4 +1,6 @@
-2.9.5
+2.10.0
+Improved VideoFullScreen with missing pvr infos.
+Improved Seekbar with seek position.
 Updated Ubuntu font.
 Added option to enable text alignment of plots.
 Updated support for Extended Info.
