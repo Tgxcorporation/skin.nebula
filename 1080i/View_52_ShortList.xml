@@ -171,7 +171,6 @@
                     <include>ThumbBorder</include>
                 </control>
                 <control type="grouplist">
-                    <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                     <posx>25</posx>
                     <posy>850</posy>
                     <width>520</width>
@@ -183,7 +182,6 @@
                     <include>CodecsView1</include>
                 </control>
                 <control type="grouplist">
-                    <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                     <posx>25</posx>
                     <posy>920</posy>
                     <width>520</width>

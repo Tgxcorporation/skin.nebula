@@ -625,7 +625,6 @@
                         <onright>60</onright>
                     </control>
                     <control type="image">
-                        <visible>!IsEmpty(Window.Property(movie.VideoResolution))</visible>
                         <posx>475</posx>
                         <posy>879</posy>
                         <width>1420</width>
@@ -633,7 +632,6 @@
                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
                     <control type="grouplist">
-                        <visible>!IsEmpty(Window.Property(movie.VideoResolution))</visible>
                         <posx>535</posx>
                         <posy>897</posy>
                         <width min="90" max="967">auto</width>

@@ -1486,7 +1486,7 @@
                             <visible>VideoPlayer.Content(LiveTV)+VideoPlayer.HasEpg</visible>
                             <posx>TextMargin</posx>
                             <posy>65</posy>
-                            <width>672</width>
+                            <width>670</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
                             <include>TextColor_MainColor</include>
@@ -1497,7 +1497,7 @@
                             <visible>![VideoPlayer.Content(LiveTV)+!VideoPlayer.HasEpg]</visible>
                             <posx>TextMargin</posx>
                             <posy>135</posy>
-                            <width>672</width>
+                            <width>670</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
                             <include>TextColor_MainColor</include>
@@ -1507,7 +1507,7 @@
                         <control type="label">
                             <posx>TextMargin</posx>
                             <posy>205</posy>
-                            <width>672</width>
+                            <width>670</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
                             <include>TextColor_MainColor</include>
@@ -1519,7 +1519,6 @@
                         |[!IsEmpty(VideoPlayer.SubtitlesLanguage)+!StringCompare(VideoPlayer.SubtitlesLanguage,und)]">
                                 <include>PulseBasicVisible</include>
                             </animation>
-                            <visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
                             <posx>40</posx>
                             <posy>285</posy>
                             <width>1006</width>
@@ -1546,9 +1545,9 @@
                             <include>CodecsVideoOSD2</include>
                         </control>
                         <control type="textbox">
-                            <posx>772</posx>
+                            <posx>840</posx>
                             <posy>80</posy>
-                            <width>672</width>
+                            <width>625</width>
                             <height>250</height>
                             <font>InfoPlotFont</font>
                             <include>TextColor_MainColor</include>

@@ -79,7 +79,7 @@
                     </control>
                 </control>
                 <control type="grouplist">
-                    <visible>[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)|Container.Content(sets)]+!IsEmpty(ListItem.VideoResolution)</visible>
+                    <visible>[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)|Container.Content(sets)]</visible>
                     <posx>52</posx>
                     <posy>985</posy>
                     <width>1830</width>
@@ -299,7 +299,6 @@
                     <include>ThumbBorder</include>
                 </control>
                 <control type="grouplist">
-                    <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                     <posx>25</posx>
                     <posy>840</posy>
                     <width>520</width>
@@ -311,7 +310,6 @@
                     <include>CodecsView1</include>
                 </control>
                 <control type="grouplist">
-                    <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                     <posx>25</posx>
                     <posy>910</posy>
                     <width>520</width>
@@ -812,7 +810,6 @@
                     <include>ThumbBorder</include>
                 </control>
                 <control type="grouplist">
-                    <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                     <posx>910</posx>
                     <posy>575</posy>
                     <width>950</width>
