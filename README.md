@@ -7,7 +7,7 @@ Simple and full-featured light or dark color skin designed for Full HD TV screen
 
 #### [Wiki](https://github.com/Tgxcorporation/skin.nebula/wiki)
 
-#### [Changelog](https://github.com/Tgxcorporation/skin.nebula/blob/master/changelog.txt)
+#### [Changelog](https://github.com/Tgxcorporation/skin.nebula/blob/isengard/changelog.txt)
 
 #### [Download from GitHub](https://github.com/Tgxcorporation/skin.nebula/wiki/Install-from-GitHub)
 
