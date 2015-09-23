@@ -260,14 +260,6 @@
                                 <visible>!Skin.HasSetting(plexbmc)</visible>
                             </item>
                             <item>
-                                <label>$LOCALIZE[573]:</label>
-                                <label2>$INFO[Window.Property(movie.Path)]</label2>
-                                <onclick>Dialog.Close(movieinformation)</onclick>
-                                <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
-                                <visible>!IsEmpty(Window.Property(movie.Path))</visible>
-                                <visible>!Skin.HasSetting(plexbmc)</visible>
-                            </item>
-                            <item>
                                 <label>$LOCALIZE[21800]:</label>
                                 <label2>$INFO[Window.Property(movie.Filename)]</label2>
                                 <onclick>noop</onclick>
@@ -334,13 +326,6 @@
                                     <label2>$INFO[Window.Property(movie.Rating)]$INFO[Window.Property(movie.Votes), (, $LOCALIZE[205])]</label2>
                                     <onclick>noop</onclick>
                                     <visible>!IsEmpty(Window.Property(movie.Rating))</visible>
-                                </item>
-                                <item>
-                                    <label>$LOCALIZE[573]:</label>
-                                    <label2>$INFO[Window.Property(movie.Path)]</label2>
-                                    <onclick>Dialog.Close(movieinformation)</onclick>
-                                    <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
-                                    <visible>!Skin.HasSetting(plexbmc)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21800]:</label>
@@ -497,13 +482,6 @@
                                     <visible>!Skin.HasSetting(plexbmc)</visible>
                                 </item>
                                 <item>
-                                    <label>$LOCALIZE[573]:</label>
-                                    <label2>$INFO[Window.Property(movie.Path)]</label2>
-                                    <onclick>Dialog.Close(movieinformation)</onclick>
-                                    <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
-                                    <visible>!Skin.HasSetting(plexbmc)</visible>
-                                </item>
-                                <item>
                                     <label>$LOCALIZE[21800]:</label>
                                     <label2>$INFO[Window.Property(movie.Filename)]</label2>
                                     <onclick>noop</onclick>
@@ -627,12 +605,6 @@
                                     <label2>$INFO[Window.Property(movie.StereoscopicMode)]</label2>
                                     <onclick>noop</onclick>
                                     <visible>!IsEmpty(LiWindow.Property(moviestItem.StereoscopicMode))</visible>
-                                </item>
-                                <item>
-                                    <label>$LOCALIZE[573]:</label>
-                                    <label2>$INFO[Window.Property(movie.Path)]</label2>
-                                    <onclick>Dialog.Close(movieinformation)</onclick>
-                                    <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21800]:</label>
