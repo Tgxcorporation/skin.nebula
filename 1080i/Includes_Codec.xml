@@ -303,7 +303,7 @@
             <texture>$VAR[Theme.Color]/badges/video/$VAR[videocodec_ExtendedInfo].png</texture>
         </control>
         <control type="image">
-            <visible>!IsEmpty(Window.Property(movie.VideoCodec))</visible>
+            <visible>!IsEmpty(Window.Property(movie.AudioChannels))</visible>
             <description>Audio Codec Image</description>
             <width>120</width>
             <height>80</height>
@@ -311,7 +311,7 @@
             <texture>$VAR[Theme.Color]/badges/audio/$INFO[Window.Property(movie.AudioChannels),,.png]</texture>
         </control>
         <control type="image">
-            <visible>!IsEmpty(Window.Property(movie.VideoCodec))</visible>
+            <visible>!IsEmpty(Window.Property(movie.AudioCodec))</visible>
             <description>Audio Codec Image</description>
             <width>120</width>
             <height>80</height>
