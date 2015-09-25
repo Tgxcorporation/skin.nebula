@@ -189,6 +189,14 @@
                                 <onclick>RunScript(script.skinshortcuts,type=resetall&amp;warning=false)</onclick>
                                 <onclick>XBMC.ReloadSkin()</onclick>
                             </item>
+                            <item id="127">
+                                <label>$ADDON[script.skin.helper.service 32028]</label>
+                                <onclick>RunScript(script.skin.helper.service,action=backup)</onclick>
+                            </item>
+                            <item id="128">
+                                <label>$ADDON[script.skin.helper.service 32032]</label>
+                                <onclick>RunScript(script.skin.helper.service,action=restore)</onclick>
+                            </item>
                         </content>
                     </control>
                     <control type="scrollbar" id="501">
