@@ -85,6 +85,16 @@
                 <include>TextColor_AlternateColor</include>
                 <label>by Tgx</label>
             </control>
+            <control type="label">
+                <posx>55</posx>
+                <posy>1010</posy>
+                <height>36</height>
+                <width>1173</width>
+                <align>left</align>
+                <font>WindowTitleSubFont</font>
+                <include>TextColor_AlternateColor</include>
+                <label>$INFO[Window(Home).Property(SkinHelper.skinVersion)]</label>
+            </control>
         </control>
     </controls>
 </window>
