@@ -79,7 +79,7 @@
                         <align>center</align>
                         <font>WindowTitleSubFont</font>
                         <include>TextColor_MainColor</include>
-                        <label>by Tgx</label>
+                        <label>$INFO[Window(Home).Property(SkinHelper.skinVersion)] by Tgx</label>
                     </control>
                 </control>
             </control>
