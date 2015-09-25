@@ -463,23 +463,27 @@
                         <item id="2">
                             <visible>!Skin.HasSetting(Addons.Hide)</visible>
                             <label>$LOCALIZE[0]</label>
+                            <label2>$INFO[Window(Home).Property(SkinHelper.TotalProgramAddons),, $LOCALIZE[24001]]</label2>
                             <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
                             <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
                         </item>
                         <item id="3">
                             <visible>!Skin.HasSetting(Addons.Hide)</visible>
                             <label>$LOCALIZE[1037]</label>
+                            <label2>$INFO[Window(Home).Property(SkinHelper.TotalVideoAddons),, $LOCALIZE[24001]]</label2>
                             <onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
                         </item>
                         <item id="4">
                             <visible>!Skin.HasSetting(Addons.Hide)</visible>
                             <label>$LOCALIZE[1038]</label>
+                            <label2>$INFO[Window(Home).Property(SkinHelper.TotalAudioAddons),, $LOCALIZE[24001]]</label2>
                             <onclick condition="Library.HasContent(Music)">ActivateWindow(MusicLibrary,Addons,return)</onclick>
                             <onclick condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,Addons,return)</onclick>
                         </item>
                         <item id="5">
                             <visible>!Skin.HasSetting(Addons.Hide)</visible>
                             <label>$LOCALIZE[1039]</label>
+                            <label2>$INFO[Window(Home).Property(SkinHelper.TotalPicturesAddons),, $LOCALIZE[24001]]</label2>
                             <onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
                         </item>
                         <item id="51">
@@ -506,6 +510,7 @@
                         <item id="2">
                             <visible>!Skin.HasSetting(Addons.Hide)</visible>
                             <label>$LOCALIZE[10040]</label>
+                            <label2>$INFO[Window(Home).Property(SkinHelper.TotalAddons),, $LOCALIZE[24001]]</label2>
                             <onclick>ActivateWindow(AddonBrowser,root)</onclick>
                         </item>
                     </content>
