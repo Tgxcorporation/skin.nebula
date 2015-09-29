@@ -1008,6 +1008,13 @@
             <height>892</height>
             <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
         </control>
+        <control type="image">
+            <posx>-41</posx>
+            <posy>183</posy>
+            <width>41</width>
+            <height>810</height>
+            <texture border="0,100,0,100">$VAR[Theme.Color]/common/vertical_separator.png</texture>
+        </control>
         <control type="button" id="8999">
             <description>Fake button for mouse control</description>
             <posx>-660</posx>
