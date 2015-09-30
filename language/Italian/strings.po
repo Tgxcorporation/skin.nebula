@@ -520,6 +520,30 @@ msgctxt "#31910"
 msgid "Maps"
 msgstr "Mappe"
 
+msgctxt "#31933"
+msgid "Songs"
+msgstr "Canzoni"
+
+msgctxt "#31934"
+msgid "Movies"
+msgstr "Film"
+
+msgctxt "#31935"
+msgid "Episodes"
+msgstr "Episodi"
+
+msgctxt "#31936"
+msgid "TV Shows"
+msgstr "Serie TV"
+
+msgctxt "#31937"
+msgid "Artists"
+msgstr "Artisti"
+
+msgctxt "#31938"
+msgid "Albums"
+msgstr "Album"
+
 msgctxt "#31939"
 msgid "Enable text alignment of plots"
 msgstr "Attiva l'allineamento del testo nelle descrizioni"
