@@ -246,11 +246,11 @@
     </variable>
     <variable name="WeatherFanartPath">
         <value condition="!IsEmpty(Skin.String(weatherArtPath))">$INFO[Skin.String(weatherArtPath)]</value>
-        <value>special://skin/backgrounds/weather/</value>
+        <value>resource://resource.images.weatherfanart.single/</value>
     </variable>
     <!--<variable name="WeatherIconPath">-->
         <!--<value condition="!IsEmpty(Skin.String(weatherIconPath))">$INFO[Skin.String(weatherIconPath)]</value>-->
-        <!--<value>weather/</value>-->
+        <!--<value>resource://resource.images.weathericons.outline/</value>-->
     <!--</variable>-->
     <variable name="Default.Art">
         <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>

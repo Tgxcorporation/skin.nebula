@@ -7,6 +7,7 @@
         <import addon="service.skin.widgets" version="0.0.27"/>
         <import addon="script.skinshortcuts" version="0.2.4"/>
         <import addon="script.skin.helper.service" version="0.0.11"/>
+        <import addon="resource.images.weatherfanart.single" version="0.0.4"/>
     </requires>
     <extension point="xbmc.gui.skin" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
