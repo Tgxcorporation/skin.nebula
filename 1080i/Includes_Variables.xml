@@ -56,9 +56,9 @@
         <value condition="StringCompare(ListItem.thumb,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">$VAR[Theme.Color]/defaultChannelTvBig_Wide.png</value>
         <!--NORMAL-->
         <value condition="StringCompare(ListItem.Label,..)">$VAR[ThumbsFolderBack]</value>
+        <value condition="!IsEmpty(ListItem.Art(poster))+!SubString(ListItem.Art(poster),Default,Left)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.Icon)+!SubString(ListItem.Icon,Default,Left)">$INFO[ListItem.Icon]</value>
         <value condition="!IsEmpty(ListItem.Property(Icon))+!SubString(ListItem.Property(Icon),Default,Left)">$INFO[ListItem.Property(Icon)]</value>
-        <value condition="!IsEmpty(ListItem.Art(poster))+!SubString(ListItem.Art(poster),Default,Left)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.thumb)+!SubString(ListItem.thumb,Default,Left)">$INFO[ListItem.thumb]</value>
         <value condition="!IsEmpty(ListItem.Art(thumb))+!SubString(ListItem.Art(thumb),Default,Left)">$INFO[ListItem.Art(thumb)]</value>
         <value>$VAR[ThumbsMissing]</value>
@@ -67,9 +67,9 @@
         <value condition="[Window.IsActive(DialogPVRRecordingInfo.xml)]">$INFO[ListItem.Thumb]</value>
         <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(DialogPVRGuideInfo.xml)]">$INFO[ListItem.Icon]</value>
         <value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)">$INFO[ListItem.Icon]</value>
+        <value condition="!IsEmpty(ListItem.Art(poster))+!SubString(ListItem.Art(poster),Default,Left)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.Icon)+!SubString(ListItem.Icon,Default,Left)">$INFO[ListItem.Icon]</value>
         <value condition="!IsEmpty(ListItem.Property(Icon))+!SubString(ListItem.Property(Icon),Default,Left)">$INFO[ListItem.Property(Icon)]</value>
-        <value condition="!IsEmpty(ListItem.Art(poster))+!SubString(ListItem.Art(poster),Default,Left)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.thumb)+!SubString(ListItem.thumb,Default,Left)">$INFO[ListItem.thumb]</value>
         <value condition="!IsEmpty(ListItem.Art(thumb))+!SubString(ListItem.Art(thumb),Default,Left)">$INFO[ListItem.Art(thumb)]</value>
     </variable>
