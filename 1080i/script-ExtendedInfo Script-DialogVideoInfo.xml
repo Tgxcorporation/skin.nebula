@@ -2562,6 +2562,16 @@
                         <onclick>RunScript(script.cinema.experience)</onclick>
                         <onright>9009</onright>
                     </control>
+                    <control type="button" id="21">
+                        <visible>System.HasAddon(script.cinemavision) + !SubString(Container.FolderPath,plugin)</visible>
+                        <visible>!IsEmpty(Window.Property(movie.DBID))</visible>
+                        <description>Cinema Vision</description>
+                        <include>LeftMenuButton</include>
+                        <label>CinemaVision</label>
+                        <onclick>Dialog.Close(MovieInformation)</onclick>
+                        <onclick>RunScript(script.cinemavision,experience)</onclick>
+                        <onright>9009</onright>
+                    </control>
                     <control type="togglebutton" id="6061">
                         <visible>!IsEmpty(Window.Property(movie.Plot))</visible>
                         <description>Plot</description>
