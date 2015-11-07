@@ -694,7 +694,7 @@
         <value condition="Skin.HasSetting(EnableClearArt)">$INFO[Player.Art(clearart)]</value>
     </variable>
     <variable name="VideoPlayerClearLogo">
-        <value condition="Skin.HasSetting(EnableClearLogo) + VideoPlayer.Content(episodes)+!IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearlogo)]</value>
+        <value condition="Skin.HasSetting(EnableClearLogo) + VideoPlayer.Content(episodes)+!IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearlogo)]</value>
         <value condition="Skin.HasSetting(EnableClearLogo)">$INFO[Player.Art(clearlogo)]</value>
     </variable>
     <variable name="MusicPlayerClearArtLogo">
