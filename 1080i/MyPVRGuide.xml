@@ -189,20 +189,20 @@
                     </control>
                     <control type="image">
                         <include>ConditionWhite</include>
-                        <posx>63</posx>
-                        <posy>732</posy>
-                        <width>373</width>
-                        <height>300</height>
+                        <posx>47</posx>
+                        <posy>694</posy>
+                        <width>405</width>
+                        <height>375</height>
                         <aspectratio>keep</aspectratio>
                         <texture background="true" fallback="white/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
                         <include>ConditionBlack</include>
-                        <posx>63</posx>
-                        <posy>732</posy>
-                        <width>373</width>
-                        <height>300</height>
+                        <posx>47</posx>
+                        <posy>694</posy>
+                        <width>405</width>
+                        <height>375</height>
                         <aspectratio>keep</aspectratio>
                         <texture background="true" fallback="black/defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                         <include>ThumbBorder</include>
