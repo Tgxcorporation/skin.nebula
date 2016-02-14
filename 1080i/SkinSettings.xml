@@ -419,12 +419,6 @@
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(EnableCdArt)</onclick>
                             </item>
-                            <item id="22">
-                                <visible>Skin.HasSetting(EnableCdArt)</visible>
-                                <label>$LOCALIZE[31039]</label>
-                                <label2>$INFO[Skin.String(MusicPath)]</label2>
-                                <onclick>Skin.SetPath(MusicPath)</onclick>
-                            </item>
                             <item id="23">
                                 <visible>Skin.HasSetting(EnableExtraFanart)</visible>
                                 <label>$LOCALIZE[31041]</label>
@@ -463,12 +457,6 @@
                                 <onclick>Skin.ToggleSetting(EnableClearArt)</onclick>
                                 <!--<onclick>Skin.Reset(EnableClearLogo)</onclick>-->
                             </item>
-                            <!--<item id="25">-->
-                                <!--<visible>Skin.HasSetting(EnableClearArt)|Skin.HasSetting(EnableCdArt)|Skin.HasSetting(EnableClearLogo)</visible>-->
-                                <!--<label>$LOCALIZE[31043]</label>-->
-                                <!--<label2>$INFO[Skin.String(cdartPath)]</label2>-->
-                                <!--<onclick>Skin.SetPath(cdartPath)</onclick>-->
-                            <!--</item>-->
                             <!--<item id="91">-->
                             <!--<visible>!Skin.HasSetting(TVTunes.Enabled)</visible>-->
                             <!--<label>$LOCALIZE[31984]</label>-->

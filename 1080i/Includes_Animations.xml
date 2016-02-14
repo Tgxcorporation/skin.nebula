@@ -232,9 +232,7 @@
         <effect type="fade" start="100" end="0" time="500" delay="3000"/>
     </include>
     <include name="PulseThumb">
-        <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableCdArt)
-                                +!IsEmpty(ListItem.Art(discart))
-                                +!Skin.HasSetting(plexbmc)">
+        <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableCdArt)+!Skin.HasSetting(plexbmc)">
             <include>PulseBasicVisible</include>
         </animation>
         <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableCdArt)
@@ -244,18 +242,14 @@
             <include>PulseBasicVisible</include>
         </animation>
     </include>
-    <include name="PulseCdArtAudio">
+    <include name="PulseCdArt">
         <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableCdArt)
                                 +!IsEmpty(ListItem.Thumb)
                                 +[[Container.content(songs)+Window.IsActive(MyMusicNav.xml)]|Window.IsActive(MyMusicSongs.xml)]
                                 +!Skin.HasSetting(plexbmc)">
             <include>PulseBasicHidden</include>
         </animation>
-    </include>
-    <include name="PulseCdArtVideo">
-        <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableCdArt)
-                            +!IsEmpty(ListItem.Art(discart))
-                            +!Skin.HasSetting(plexbmc)">
+        <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableCdArt)+!Skin.HasSetting(plexbmc)">
             <include>PulseBasicHidden</include>
         </animation>
     </include>
