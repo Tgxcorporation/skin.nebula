@@ -50,14 +50,15 @@
             <control type="group">
                 <!-- CDART -->
                 <visible>!Skin.HasSetting(plexbmc)</visible>
+                <visible>!StringCompare(ListItem.Label,..)</visible>
                 <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)</visible>
                 <control type="image">
                     <posx>73</posx>
                     <posy>626</posy>
                     <width>424</width>
                     <height>424</height>
-                    <texture background="true" diffuse="white/common/cdart_diffuse.png">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</texture>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <texture background="true" diffuse="white/common/cdart_diffuse.png">$VAR[VideoCdArt]</texture>
+                    <aspectratio align="center" aligny="center">stretch</aspectratio>
                     <include>Animation_ViewsCDart</include>
                 </control>
             </control>

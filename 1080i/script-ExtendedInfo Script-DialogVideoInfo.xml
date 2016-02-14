@@ -79,8 +79,8 @@
                             <posy>143</posy>
                             <width>404</width>
                             <height>404</height>
-                            <texture background="true" diffuse="white/common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
+                            <texture background="true" diffuse="white/common/cdart_diffuse.png">$VAR[VideoCdArt]</texture>
+                            <aspectratio align="center" aligny="center">stretch</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
                     </control>
@@ -674,8 +674,8 @@
                             <posy>143</posy>
                             <width>404</width>
                             <height>404</height>
-                            <texture background="true" diffuse="white/common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
+                            <texture background="true" diffuse="white/common/cdart_diffuse.png">$VAR[VideoCdArt]</texture>
+                            <aspectratio align="center" aligny="center">stretch</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
                     </control>

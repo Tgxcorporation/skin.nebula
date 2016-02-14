@@ -132,6 +132,7 @@
                 <control type="group">
                     <!-- CDART AUDIO -->
                     <visible>!Skin.HasSetting(plexbmc)</visible>
+                    <visible>!StringCompare(ListItem.Label,..)</visible>
                     <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]</visible>
                     <include>PulseCdArtAudio</include>
                     <control type="image">
@@ -139,8 +140,8 @@
                         <posy>193</posy>
                         <width>424</width>
                         <height>424</height>
-                        <texture background="true" diffuse="white/common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <texture background="true" diffuse="white/common/cdart_diffuse.png">$VAR[MusicCdArt]</texture>
+                        <aspectratio align="center" aligny="center">stretch</aspectratio>
                         <!--<include>Animation_ViewsCDart</include>-->
                     </control>
                 </control>
@@ -148,15 +149,15 @@
                     <!-- CDART VIDEO -->
                     <visible>!Skin.HasSetting(plexbmc)</visible>
                     <visible>!StringCompare(ListItem.Label,..)</visible>
-                    <visible>!IsEmpty(ListItem.Art(discart))+Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]</visible>
+                    <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]</visible>
                     <include>PulseCdArtVideo</include>
                     <control type="image">
                         <posx>73</posx>
                         <posy>193</posy>
                         <width>424</width>
                         <height>424</height>
-                        <texture background="true" diffuse="white/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <texture background="true" diffuse="white/common/cdart_diffuse.png">$VAR[VideoCdArt]</texture>
+                        <aspectratio align="center" aligny="center">stretch</aspectratio>
                         <!--<include>Animation_ViewsCDart</include>-->
                     </control>
                 </control>
