@@ -71,21 +71,20 @@
                         ControlGroup(5090).HasFocus|
                         ControlGroup(120).HasFocus]</visible>
                     <include>VisibleFadeEffectDelay</include>
-                    <control type="group">
-                        <!-- CDART -->
-                        <visible>!Skin.HasSetting(plexbmc)</visible>
-                        <visible>!container.content(artists)</visible>
-                        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+container.content(Albums)</visible>
-                        <control type="image">
-                            <posx>79</posx>
-                            <posy>631</posy>
-                            <width>430</width>
-                            <height>430</height>
-                            <texture background="true" diffuse="white/common/cdart_diffuse.png">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</texture>
-                            <aspectratio align="center" aligny="center">stretch</aspectratio>
-                            <include>Animation_ViewsCDart</include>
-                        </control>
-                    </control>
+                    <!-- CDART MUSIC -->
+                    <include name="DiscArt">
+                        <param name="visible" value="!container.content(artists)+!IsEmpty(ListItem.Thumb)+[Container.content(Albums)]"/>
+                        <param name="x" value="79"/>
+                        <param name="y" value="631"/>
+                        <param name="width" value="430"/>
+                        <param name="height" value="430"/>
+                        <param name="texture" value="$VAR[MusicCdArt]"/>
+                        <param name="xShadow" value="49"/>
+                        <param name="yShadow" value="601"/>
+                        <param name="widthShadow" value="490"/>
+                        <param name="heightShadow" value="490"/>
+                        <param name="pulse" value="false"/>
+                    </include>
                     <control type="image">
                         <posx>25</posx>
                         <posy>343</posy>
@@ -437,21 +436,19 @@
                         <include>TextColor_MainColor</include>
                         <label>$INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <control type="group">
-                        <!-- CDART -->
-                        <visible>!Skin.HasSetting(plexbmc)</visible>
-                        <visible>!container.content(artists)</visible>
-                        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+container.content(Albums)</visible>
-                        <control type="image">
-                            <posx>79</posx>
-                            <posy>631</posy>
-                            <width>430</width>
-                            <height>430</height>
-                            <texture background="true" diffuse="white/common/cdart_diffuse.png">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</texture>
-                            <aspectratio align="center" aligny="center">stretch</aspectratio>
-                            <include>Animation_ViewsCDart</include>
-                        </control>
-                    </control>
+                    <include name="DiscArt">
+                        <param name="visible" value="!container.content(artists)+!IsEmpty(ListItem.Thumb)+[Container.content(Albums)]"/>
+                        <param name="x" value="79"/>
+                        <param name="y" value="631"/>
+                        <param name="width" value="430"/>
+                        <param name="height" value="430"/>
+                        <param name="texture" value="$VAR[MusicCdArt]"/>
+                        <param name="xShadow" value="49"/>
+                        <param name="yShadow" value="601"/>
+                        <param name="widthShadow" value="490"/>
+                        <param name="heightShadow" value="490"/>
+                        <param name="pulse" value="false"/>
+                    </include>
                     <control type="image">
                         <posx>25</posx>
                         <posy>343</posy>
@@ -612,21 +609,19 @@
                         <include>TextColor_MainColor</include>
                         <label>$INFO[Container(5041).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <control type="group">
-                        <!-- CDART -->
-                        <visible>!Skin.HasSetting(plexbmc)</visible>
-                        <visible>!container.content(artists)</visible>
-                        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+container.content(Albums)</visible>
-                        <control type="image">
-                            <posx>79</posx>
-                            <posy>631</posy>
-                            <width>430</width>
-                            <height>430</height>
-                            <texture background="true" diffuse="white/common/cdart_diffuse.png">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[Container(5041).ListItem.Label]/cdart.png</texture>
-                            <aspectratio align="center" aligny="center">stretch</aspectratio>
-                            <include>Animation_ViewsCDart</include>
-                        </control>
-                    </control>
+                    <include name="DiscArt">
+                        <param name="visible" value="!container.content(artists)+!IsEmpty(ListItem.Thumb)+[Container.content(Albums)]"/>
+                        <param name="x" value="79"/>
+                        <param name="y" value="631"/>
+                        <param name="width" value="430"/>
+                        <param name="height" value="430"/>
+                        <param name="texture" value="$VAR[MusicCdArt]"/>
+                        <param name="xShadow" value="49"/>
+                        <param name="yShadow" value="601"/>
+                        <param name="widthShadow" value="490"/>
+                        <param name="heightShadow" value="490"/>
+                        <param name="pulse" value="false"/>
+                    </include>
                     <control type="image">
                         <visible>IsEmpty(Container(5041).Listitem.Icon)</visible>
                         <posx>TextMargin</posx>
@@ -1447,13 +1442,6 @@
                         <include>LeftMenuButton</include>
                         <label>20413</label>
                         <onright>121</onright>
-                    </control>
-                    <control type="button" id="150">
-                        <label>cdART Manager</label>
-                        <include>LeftMenuButton</include>
-                        <onclick>RunAddon(script.cdartmanager)</onclick>
-                        <visible>System.HasAddon(script.cdartmanager)</visible>
-                        <onright>49</onright>
                     </control>
                 </control>
                 <include>LeftMenuScroller</include>

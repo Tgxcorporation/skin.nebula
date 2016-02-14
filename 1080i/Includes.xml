@@ -1401,20 +1401,20 @@
                 </control>
                 <control type="group">
                     <posy>642</posy>
-                    <control type="group">
-                        <!-- CDART -->
-                        <visible>!Skin.HasSetting(plexbmc)</visible>
-                        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(VideoPlayer.Cover)</visible>
-                        <control type="image">
-                            <posx>122</posx>
-                            <posy>-70</posy>
-                            <width>211</width>
-                            <height>211</height>
-                            <texture background="true" diffuse="white/common/cdart_diffuse.png">$VAR[VideoPlayerCdArt]</texture>
-                            <aspectratio align="center" aligny="center">stretch</aspectratio>
-                            <include>Animation_ViewsCDart</include>
-                        </control>
-                    </control>
+                    <!-- CDART VIDEO -->
+                    <include name="DiscArt">
+                        <param name="visible" value="!IsEmpty(VideoPlayer.Cover)"/>
+                        <param name="x" value="122"/>
+                        <param name="y" value="-70"/>
+                        <param name="width" value="211"/>
+                        <param name="height" value="211"/>
+                        <param name="texture" value="$VAR[VideoPlayerCdArt]"/>
+                        <param name="xShadow" value="107"/>
+                        <param name="yShadow" value="-85"/>
+                        <param name="widthShadow" value="241"/>
+                        <param name="heightShadow" value="241"/>
+                        <param name="pulse" value="false"/>
+                    </include>
                     <control type="group">
                         <control type="image">
                             <include>ConditionWhite</include>
@@ -1602,5 +1602,30 @@
     </include>
     <include name="TextboxAlignment">
         <align>justify</align>
+    </include>
+    <include name="DiscArt">
+        <control type="group">
+            <visible>!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)</visible>
+            <visible>$PARAM[visible]</visible>
+            <include condition="$PARAM[pulse]">PulseCdArt</include>
+            <include>VisibleFadeEffectDelay</include>
+            <control type="image">
+                <posx>$PARAM[xShadow]</posx>
+                <posy>$PARAM[yShadow]</posy>
+                <width>$PARAM[widthShadow]</width>
+                <height>$PARAM[heightShadow]</height>
+                <texture>white/common/cdart_shadow.png</texture>
+                <aspectratio align="center" aligny="center">stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <texture background="true" diffuse="white/common/cdart_diffuse.png">$PARAM[texture]</texture>
+                <aspectratio align="center" aligny="center">stretch</aspectratio>
+                <include>Animation_ViewsCDart</include>
+            </control>
+        </control>
     </include>
 </includes>

@@ -48,21 +48,20 @@
                 <include>TextColor_MainColor</include>
                 <label>$INFO[Container(50).NumItems,, $LOCALIZE[31025]]</label>
             </control>
-            <control type="group">
-                <!-- CDART -->
-                <visible>!Skin.HasSetting(plexbmc)</visible>
-                <visible>!StringCompare(ListItem.Label,..)</visible>
-                <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)</visible>
-                <control type="image">
-                    <posx>140</posx>
-                    <posy>693</posy>
-                    <width>290</width>
-                    <height>290</height>
-                    <texture background="true" diffuse="white/common/cdart_diffuse.png">$VAR[VideoCdArt]</texture>
-                    <aspectratio align="center" aligny="center">stretch</aspectratio>
-                    <include>Animation_ViewsCDart</include>
-                </control>
-            </control>
+            <!-- CDART VIDEO -->
+            <include name="DiscArt">
+                <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)"/>
+                <param name="x" value="140"/>
+                <param name="y" value="693"/>
+                <param name="width" value="290"/>
+                <param name="height" value="290"/>
+                <param name="texture" value="$VAR[VideoCdArt]"/>
+                <param name="xShadow" value="120"/>
+                <param name="yShadow" value="473"/>
+                <param name="widthShadow" value="330"/>
+                <param name="heightShadow" value="330"/>
+                <param name="pulse" value="false"/>
+            </include>
             <control type="image">
                 <visible>IsEmpty(ListItem.Icon)</visible>
                 <posx>25</posx>
