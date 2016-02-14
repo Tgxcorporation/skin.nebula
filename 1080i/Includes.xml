@@ -1410,8 +1410,8 @@
                             <posy>-70</posy>
                             <width>211</width>
                             <height>211</height>
-                            <texture background="true" diffuse="white/common/cdart_diffuse.png">$INFO[Player.Art(discart)]</texture>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
+                            <texture background="true" diffuse="white/common/cdart_diffuse.png">$VAR[VideoPlayerCdArt]</texture>
+                            <aspectratio align="center" aligny="center">stretch</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
                     </control>

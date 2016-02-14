@@ -31,7 +31,7 @@
                             <width>300</width>
                             <height>235</height>
                             <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                            <texture background="true">$VAR[MusicPlayerClearArtLogo]</texture>
+                            <texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Music.ClearLogo)]</texture>
                         </control>
                     </control>
                     <control type="image">
@@ -53,8 +53,8 @@
                                 <posy>-122</posy>
                                 <width>315</width>
                                 <height>315</height>
-                                <texture background="true" diffuse="white/common/cdart_diffuse.png">$INFO[Player.FolderPath]cdart.png</texture>
-                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture background="true" diffuse="white/common/cdart_diffuse.png">$VAR[MusicPlayerCdArt]</texture>
+                                <aspectratio align="center" aligny="center">stretch</aspectratio>
                                 <include>Animation_ViewsCDart</include>
                             </control>
                         </control>

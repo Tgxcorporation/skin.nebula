@@ -281,8 +281,8 @@
                         <posy>254</posy>
                         <width>424</width>
                         <height>424</height>
-                        <texture background="true" diffuse="white/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <texture background="true" diffuse="white/common/cdart_diffuse.png">$VAR[VideoCdArt]</texture>
+                        <aspectratio align="center" aligny="center">stretch</aspectratio>
                         <include>Animation_ViewsCDart</include>
                     </control>
                 </control>
