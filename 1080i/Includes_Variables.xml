@@ -432,11 +432,6 @@
         <value condition="!IsEmpty(Container(211).ListItem.Property(Background))">$INFO[Container(211).ListItem.Property(Background)]</value>
         <value>$LOCALIZE[13278]</value>
     </variable>
-    <variable name="Cd.Art">
-        <value condition="Window.IsActive(MyMusicNav.xml)+Container.Content(albums)">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Label]/cdart.png</value>
-        <value condition="Window.IsActive(MyMusicNav.xml)+Container.Content(songs)">$INFO[ListItem.Path]/cdart.png</value>
-        <value condition="Window.IsActive(MyMusicSongs.xml)">$INFO[ListItem.Path]cdart.png</value>
-    </variable>
     <variable name="Theme.Color">
         <value condition="skin.hassetting(Theme.Color.Auto)+System.Time(8:00,20:00)">white</value>
         <value condition="skin.hassetting(Theme.Color.Auto)+!System.Time(8:00,20:00)">black</value>
