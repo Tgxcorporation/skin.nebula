@@ -2,6 +2,7 @@
 <window>
     <defaultcontrol always="true">500</defaultcontrol>
     <menucontrol>9000</menucontrol>
+    <views>500</views>
     <controls>
         <control type="image">
             <posx>0</posx>
