@@ -106,7 +106,7 @@
             <include>FacadeFadeDialogs</include>
             <include>Icon_Fade</include>
             <control type="group">
-                <visible>!Window.IsVisible(script-ExtendedInfo Script-T9Search.xml)</visible>
+                <visible>!Window.IsVisible(script-script.module.t9.search-Main.xml)</visible>
                 <include>VisibleFadeEffect</include>
                 <control type="grouplist" id="9000">
                     <include>LeftMenuButtonGroup</include>
