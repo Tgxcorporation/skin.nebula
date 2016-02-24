@@ -182,12 +182,12 @@
                                 <label>$LOCALIZE[31038]</label>
                                 <onclick>RunScript(script.skinshortcuts,type=resetall&amp;warning=false)</onclick>
                                 <onclick>Skin.ResetSettings</onclick>
-                                <onclick>XBMC.ReloadSkin()</onclick>
+                                <onclick>ReloadSkin()</onclick>
                             </item>
                             <item id="126">
                                 <label>$LOCALIZE[31944]</label>
                                 <onclick>RunScript(script.skinshortcuts,type=resetall&amp;warning=false)</onclick>
-                                <onclick>XBMC.ReloadSkin()</onclick>
+                                <onclick>ReloadSkin()</onclick>
                             </item>
                             <item id="127">
                                 <label>$ADDON[script.skin.helper.service 32028]</label>
@@ -526,19 +526,77 @@
                                     <label2 fallback="31517">$VAR[StartupWindowName]</label2>
                                     <onclick>ActivateWindow(1120)</onclick>
                                 </item>
-                                <item id="93">
-                                    <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                                    <visible>!Skin.HasSetting(Use.FastStart)</visible>
-                                    <label>$LOCALIZE[31977]</label>
-                                    <label2>$LOCALIZE[13106]</label2>
-                                    <onclick>Skin.ToggleSetting(Use.FastStart)</onclick>
+                                <item id="30">
+                                    <visible>Skin.HasSetting(StartupDelay0)</visible>
+                                    <label>$LOCALIZE[31046]</label>
+                                    <label2>0"</label2>
+                                    <onclick>Skin.Reset(StartupDelay0)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay1)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay2)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay3)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay5)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay10)</onclick>
+                                    <onclick>Skin.ToggleSetting(StartupDelay1)</onclick>
                                 </item>
-                                <item id="93">
-                                    <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                                    <visible>Skin.HasSetting(Use.FastStart)</visible>
-                                    <label>$LOCALIZE[31977]</label>
-                                    <label2>$LOCALIZE[305]</label2>
-                                    <onclick>Skin.ToggleSetting(Use.FastStart)</onclick>
+                                <item id="30">
+                                    <visible>Skin.HasSetting(StartupDelay1)</visible>
+                                    <label>$LOCALIZE[31046]</label>
+                                    <label2>1"</label2>
+                                    <onclick>Skin.Reset(StartupDelay0)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay1)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay2)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay3)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay5)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay10)</onclick>
+                                    <onclick>Skin.ToggleSetting(StartupDelay2)</onclick>
+                                </item>
+                                <item id="30">
+                                    <visible>Skin.HasSetting(StartupDelay2)|[!Skin.HasSetting(StartupDelay0)+!Skin.HasSetting(StartupDelay1)+!Skin.HasSetting(StartupDelay2)+!Skin.HasSetting(StartupDelay3)+!Skin.HasSetting(StartupDelay5)+!Skin.HasSetting(StartupDelay10)]</visible>
+                                    <label>$LOCALIZE[31046]</label>
+                                    <label2>2" ($LOCALIZE[15109])</label2>
+                                    <onclick>Skin.Reset(StartupDelay0)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay1)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay2)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay3)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay5)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay10)</onclick>
+                                    <onclick>Skin.ToggleSetting(StartupDelay3)</onclick>
+                                </item>
+                                <item id="30">
+                                    <visible>Skin.HasSetting(StartupDelay3)</visible>
+                                    <label>$LOCALIZE[31046]</label>
+                                    <label2>3"</label2>
+                                    <onclick>Skin.Reset(StartupDelay0)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay1)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay2)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay3)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay5)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay10)</onclick>
+                                    <onclick>Skin.ToggleSetting(StartupDelay5)</onclick>
+                                </item>
+                                <item id="30">
+                                    <visible>Skin.HasSetting(StartupDelay5)</visible>
+                                    <label>$LOCALIZE[31046]</label>
+                                    <label2>5"</label2>
+                                    <onclick>Skin.Reset(StartupDelay0)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay1)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay2)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay3)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay5)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay10)</onclick>
+                                    <onclick>Skin.ToggleSetting(StartupDelay10)</onclick>
+                                </item>
+                                <item id="30">
+                                    <visible>Skin.HasSetting(StartupDelay10)</visible>
+                                    <label>$LOCALIZE[31046]</label>
+                                    <label2>10"</label2>
+                                    <onclick>Skin.Reset(StartupDelay0)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay1)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay2)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay3)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay5)</onclick>
+                                    <onclick>Skin.Reset(StartupDelay10)</onclick>
+                                    <onclick>Skin.ToggleSetting(StartupDelay0)</onclick>
                                 </item>
                                 <!--DEFAULT IMAGE STARTUP-->
                                 <item id="200">
@@ -633,27 +691,6 @@
                             <onleft>9006</onleft>
                             <onright>9000</onright>
                             <include>VerticalScroller</include>
-                        </control>
-                        <control type="image">
-                            <visible>Container(9006).HasFocus(93)+Container(9000).HasFocus(6)+!Control.hasfocus(9000)</visible>
-                            <include>VisibleFadeEffect</include>
-                            <posx>-35</posx>
-                            <posy>550</posy>
-                            <width>1990</width>
-                            <height>444</height>
-                            <include>DialogTransparency</include>
-                            <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
-                        </control>
-                        <control type="textbox">
-                            <visible>Container(9006).HasFocus(93)+Container(9000).HasFocus(6)+!Control.hasfocus(9000)</visible>
-                            <include>VisibleFadeEffect</include>
-                            <posx>TextMargin</posx>
-                            <posy>622</posy>
-                            <width>1800</width>
-                            <height>248</height>
-                            <font>InfoPlotFont</font>
-                            <label>$LOCALIZE[31982]</label>
-                            <include>myautoscroll</include>
                         </control>
                     </control>
 
@@ -1067,11 +1104,6 @@
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(Fixed_HomeMenu)</onclick>
                             </item>
-                            <item id="1001">
-                                <label/>
-                                <label2>$LOCALIZE[31976] - $LOCALIZE[31060]</label2>
-                                <onclick>noop</onclick>
-                            </item>
                             <item id="1">
                                 <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
                                 <label>$LOCALIZE[31967]</label>
@@ -1083,95 +1115,6 @@
                                 <label>$LOCALIZE[31967]</label>
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.Reset(Hide.RecentlyAdded)</onclick>
-                            </item>
-                            <item id="3">
-                                <visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                                <label>$LOCALIZE[31964]</label>
-                                <onclick>Addon.OpenSettings(service.skin.widgets)</onclick>
-                            </item>
-                            <item id="4">
-                                <visible>!Skin.HasSetting(Hide.Favourites)</visible>
-                                <label>$LOCALIZE[1036]</label>
-                                <label2>$LOCALIZE[107]</label2>
-                                <onclick>Skin.ToggleSetting(Hide.Favourites)</onclick>
-                            </item>
-                            <item id="4">
-                                <visible>Skin.HasSetting(Hide.Favourites)</visible>
-                                <label>$LOCALIZE[1036]</label>
-                                <label2>$LOCALIZE[106]</label2>
-                                <onclick>Skin.Reset(Hide.Favourites)</onclick>
-                            </item>
-                            <item id="5">
-                                <visible>!Skin.HasSetting(Shelf.Addons)</visible>
-                                <label>$LOCALIZE[24001]</label>
-                                <label2>$LOCALIZE[106]</label2>
-                                <onclick>Skin.ToggleSetting(Shelf.Addons)</onclick>
-                            </item>
-                            <item id="5">
-                                <visible>Skin.HasSetting(Shelf.Addons)</visible>
-                                <label>$LOCALIZE[24001]</label>
-                                <label2>$LOCALIZE[107]</label2>
-                                <onclick>Skin.Reset(Shelf.Addons)</onclick>
-                            </item>
-                            <item id="6">
-                                <visible>Skin.HasSetting(Shelf.Addons)</visible>
-                                <label>$LOCALIZE[24000] 1</label>
-                                <label2>$INFO[Skin.String(ShelfAddons.1.Label)]</label2>
-                                <onclick>Skin.SetAddon(ShelfAddons.1.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
-                            </item>
-                            <item id="7">
-                                <visible>Skin.HasSetting(Shelf.Addons)</visible>
-                                <label>$LOCALIZE[24000] 2</label>
-                                <label2>$INFO[Skin.String(ShelfAddons.2.Label)]</label2>
-                                <onclick>Skin.SetAddon(ShelfAddons.2.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
-                            </item>
-                            <item id="8">
-                                <visible>Skin.HasSetting(Shelf.Addons)</visible>
-                                <label>$LOCALIZE[24000] 3</label>
-                                <label2>$INFO[Skin.String(ShelfAddons.3.Label)]</label2>
-                                <onclick>Skin.SetAddon(ShelfAddons.3.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
-                            </item>
-                            <item id="9">
-                                <visible>Skin.HasSetting(Shelf.Addons)</visible>
-                                <label>$LOCALIZE[24000] 4</label>
-                                <label2>$INFO[Skin.String(ShelfAddons.4.Label)]</label2>
-                                <onclick>Skin.SetAddon(ShelfAddons.4.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
-                            </item>
-                            <item id="10">
-                                <visible>Skin.HasSetting(Shelf.Addons)</visible>
-                                <label>$LOCALIZE[24000] 5</label>
-                                <label2>$INFO[Skin.String(ShelfAddons.5.Label)]</label2>
-                                <onclick>Skin.SetAddon(ShelfAddons.5.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
-                            </item>
-                            <item id="11">
-                                <visible>Skin.HasSetting(Shelf.Addons) + !IsEmpty(Skin.String(ShelfAddons.1.Label)) + !IsEmpty(Skin.String(ShelfAddons.2.Label)) + !IsEmpty(Skin.String(ShelfAddons.3.Label)) + !IsEmpty(Skin.String(ShelfAddons.4.Label)) + !IsEmpty(Skin.String(ShelfAddons.5.Label))</visible>
-                                <label>$LOCALIZE[24000] 6</label>
-                                <label2>$INFO[Skin.String(ShelfAddons.6.Label)]</label2>
-                                <onclick>Skin.SetAddon(ShelfAddons.6.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
-                            </item>
-                            <item id="12">
-                                <visible>Skin.HasSetting(Shelf.Addons) + !IsEmpty(Skin.String(ShelfAddons.1.Label)) + !IsEmpty(Skin.String(ShelfAddons.2.Label)) + !IsEmpty(Skin.String(ShelfAddons.3.Label)) + !IsEmpty(Skin.String(ShelfAddons.4.Label)) + !IsEmpty(Skin.String(ShelfAddons.5.Label))</visible>
-                                <label>$LOCALIZE[24000] 7</label>
-                                <label2>$INFO[Skin.String(ShelfAddons.7.Label)]</label2>
-                                <onclick>Skin.SetAddon(ShelfAddons.7.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
-                            </item>
-                            <item id="13">
-                                <visible>Skin.HasSetting(Shelf.Addons) + !IsEmpty(Skin.String(ShelfAddons.1.Label)) + !IsEmpty(Skin.String(ShelfAddons.2.Label)) + !IsEmpty(Skin.String(ShelfAddons.3.Label)) + !IsEmpty(Skin.String(ShelfAddons.4.Label)) + !IsEmpty(Skin.String(ShelfAddons.5.Label))</visible>
-                                <label>$LOCALIZE[24000] 8</label>
-                                <label2>$INFO[Skin.String(ShelfAddons.8.Label)]</label2>
-                                <onclick>Skin.SetAddon(ShelfAddons.8.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
-                            </item>
-                            <item id="14">
-                                <visible>Skin.HasSetting(Shelf.Addons) + !IsEmpty(Skin.String(ShelfAddons.1.Label)) + !IsEmpty(Skin.String(ShelfAddons.2.Label)) + !IsEmpty(Skin.String(ShelfAddons.3.Label)) + !IsEmpty(Skin.String(ShelfAddons.4.Label)) + !IsEmpty(Skin.String(ShelfAddons.5.Label))</visible>
-                                <label>$LOCALIZE[24000] 9</label>
-                                <label2>$INFO[Skin.String(ShelfAddons.9.Label)]</label2>
-                                <onclick>Skin.SetAddon(ShelfAddons.9.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
-                            </item>
-                            <item id="15">
-                                <visible>Skin.HasSetting(Shelf.Addons) + !IsEmpty(Skin.String(ShelfAddons.1.Label)) + !IsEmpty(Skin.String(ShelfAddons.2.Label)) + !IsEmpty(Skin.String(ShelfAddons.3.Label)) + !IsEmpty(Skin.String(ShelfAddons.4.Label)) + !IsEmpty(Skin.String(ShelfAddons.5.Label))</visible>
-                                <label>$LOCALIZE[24000] 10</label>
-                                <label2>$INFO[Skin.String(ShelfAddons.10.Label)]</label2>
-                                <onclick>Skin.SetAddon(ShelfAddons.10.Label,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
                             </item>
                         </content>
                     </control>
@@ -1292,7 +1235,7 @@
                             <onclick>Skin.Reset(Theme.Color.Auto)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.White)</onclick>
                             <selected>[Skin.HasSetting(Theme.Color.White)|!Skin.HasSetting(Theme.Color.Black)]+!Skin.HasSetting(Theme.Color.Auto)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                         <!-- AUTO / DAWN / SUNSET -->
                         <control type="radiobutton" id="8528081">
@@ -1313,7 +1256,7 @@
                             <onclick>Skin.Reset(Theme.Color.Auto)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.Auto)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.Auto)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                         <!-- BLACK -->
                         <control type="radiobutton" id="852808">
@@ -1334,7 +1277,7 @@
                             <onclick>Skin.Reset(Theme.Color.Auto)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.Black)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.Black)+!Skin.HasSetting(Theme.Color.Auto)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                 </control>
