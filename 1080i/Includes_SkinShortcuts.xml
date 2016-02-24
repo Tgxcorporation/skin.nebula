@@ -43,7 +43,7 @@
             <include>UpperFade</include>
             <fadetime>300</fadetime>
             <posx>676</posx>
-            <posy>268</posy>
+            <posy>368</posy>
             <width>569</width>
             <height>351</height>
             <texture background="true">special://skin/backgrounds/Weather.jpg</texture>
@@ -63,7 +63,7 @@
             <include>UpperFade</include>
             <fadetime>300</fadetime>
             <posx>676</posx>
-            <posy>268</posy>
+            <posy>368</posy>
             <width>569</width>
             <height>351</height>
             <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[Container(211).ListItem.Icon]</texture>
@@ -91,10 +91,9 @@
             </control>
         </control>
     </include>
-
     <include name="SkinShortcuts_MainMenu_Horizontal">
         <posx>60</posx>
-        <posy>303</posy>
+        <posy>403</posy>
         <width>1800</width>
         <height>669</height>
         <itemgap>0</itemgap>
@@ -158,16 +157,28 @@
         <include condition="Skin.HasSetting(plexbmc)+Window.isactive(CustomPlexHomeSettings.xml)">Plexbmc.Items.SkinSettings</include>
     </include>
     <include name="SkinShortcuts_Widgets_Horizontal">
+        <control type="image">
+            <animation type="Conditional" reversible="false" condition="control.HasFocus(31200)|control.HasFocus(31201)|control.HasFocus(31202)|control.HasFocus(31203)|control.HasFocus(31204)">
+                <effect type="zoom" start="100" end="108" time="100" center="auto"/>
+                <effect type="zoom" start="100" end="92.592592592593" time="50" delay="100" center="auto"/>
+                <effect type="fade" start="40" end="100" time="100"/>
+            </animation>
+            <posx>60</posx>
+            <posy>230</posy>
+            <width>1800</width>
+            <height>160</height>
+            <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+        </control>
         <control type="group">
-            <posx>128</posx>
-            <posy>650</posy>
-            <width>246</width>
-            <height>85</height>
+            <posx>60</posx>
+            <posy>271</posy>
+            <width>360</width>
+            <height>78</height>
             <control type="button" id="31200">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>246</width>
-                <height>85</height>
+                <width>360</width>
+                <height>78</height>
                 <label>-</label>
                 <onclick>SendClick(312)</onclick>
                 <include>LeftMenuButton</include>
@@ -175,18 +186,18 @@
             <control type="label">
                 <posx>20</posx>
                 <posy>3</posy>
-                <width>206</width>
-                <height>50</height>
+                <width>320</width>
+                <height>40</height>
                 <align>center</align>
                 <font>LeftMenuTitleFont</font>
-                <textcolor>AlternateColor</textcolor>
+                <include>TextColor_AlternateColor</include>
                 <label>$ADDON[script.skinshortcuts 32099] 1</label>
             </control>
             <control type="label">
                 <posx>20</posx>
                 <posy>32</posy>
-                <width>206</width>
-                <height>50</height>
+                <width>320</width>
+                <height>45</height>
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
                 <scroll>true</scroll>
@@ -194,15 +205,15 @@
             </control>
         </control>
         <control type="group">
-            <posx>374</posx>
-            <posy>650</posy>
-            <width>246</width>
-            <height>85</height>
+            <posx>420</posx>
+            <posy>271</posy>
+            <width>360</width>
+            <height>78</height>
             <control type="button" id="31201">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>246</width>
-                <height>85</height>
+                <width>360</width>
+                <height>78</height>
                 <label>-</label>
                 <onclick>SetProperty(widgetID,1)</onclick>
                 <onclick>SendClick(312)</onclick>
@@ -211,18 +222,18 @@
             <control type="label">
                 <posx>20</posx>
                 <posy>3</posy>
-                <width>206</width>
-                <height>50</height>
+                <width>320</width>
+                <height>40</height>
                 <align>center</align>
                 <font>LeftMenuTitleFont</font>
-                <textcolor>AlternateColor</textcolor>
+                <include>TextColor_AlternateColor</include>
                 <label>$ADDON[script.skinshortcuts 32099] 2</label>
             </control>
             <control type="label">
                 <posx>20</posx>
                 <posy>32</posy>
-                <width>206</width>
-                <height>50</height>
+                <width>320</width>
+                <height>45</height>
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
                 <scroll>true</scroll>
@@ -230,15 +241,15 @@
             </control>
         </control>
         <control type="group">
-            <posx>620</posx>
-            <posy>650</posy>
-            <width>246</width>
-            <height>85</height>
+            <posx>780</posx>
+            <posy>271</posy>
+            <width>360</width>
+            <height>78</height>
             <control type="button" id="31202">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>246</width>
-                <height>85</height>
+                <width>360</width>
+                <height>78</height>
                 <label>-</label>
                 <onclick>SetProperty(widgetID,2)</onclick>
                 <onclick>SendClick(312)</onclick>
@@ -247,18 +258,18 @@
             <control type="label">
                 <posx>20</posx>
                 <posy>3</posy>
-                <width>206</width>
-                <height>50</height>
+                <width>320</width>
+                <height>40</height>
                 <align>center</align>
                 <font>LeftMenuTitleFont</font>
-                <textcolor>AlternateColor</textcolor>
+                <include>TextColor_AlternateColor</include>
                 <label>$ADDON[script.skinshortcuts 32099] 3</label>
             </control>
             <control type="label">
                 <posx>20</posx>
                 <posy>32</posy>
-                <width>206</width>
-                <height>50</height>
+                <width>320</width>
+                <height>45</height>
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
                 <scroll>true</scroll>
@@ -266,15 +277,15 @@
             </control>
         </control>
         <control type="group">
-            <posx>866</posx>
-            <posy>650</posy>
-            <width>246</width>
-            <height>85</height>
+            <posx>1140</posx>
+            <posy>271</posy>
+            <width>360</width>
+            <height>78</height>
             <control type="button" id="31203">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>246</width>
-                <height>85</height>
+                <width>360</width>
+                <height>78</height>
                 <label>-</label>
                 <onclick>SetProperty(widgetID,3)</onclick>
                 <onclick>SendClick(312)</onclick>
@@ -283,18 +294,18 @@
             <control type="label">
                 <posx>20</posx>
                 <posy>3</posy>
-                <width>206</width>
-                <height>50</height>
+                <width>320</width>
+                <height>40</height>
                 <align>center</align>
                 <font>LeftMenuTitleFont</font>
-                <textcolor>AlternateColor</textcolor>
+                <include>TextColor_AlternateColor</include>
                 <label>$ADDON[script.skinshortcuts 32099] 4</label>
             </control>
             <control type="label">
                 <posx>20</posx>
                 <posy>32</posy>
-                <width>206</width>
-                <height>50</height>
+                <width>320</width>
+                <height>45</height>
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
                 <scroll>true</scroll>
@@ -302,35 +313,35 @@
             </control>
         </control>
         <control type="group">
-            <posx>1112</posx>
-            <posy>650</posy>
-            <width>246</width>
-            <height>85</height>
+            <posx>1500</posx>
+            <posy>271</posy>
+            <width>360</width>
+            <height>78</height>
             <control type="button" id="31204">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>246</width>
-                <height>85</height>
+                <width>360</width>
+                <height>78</height>
                 <label>-</label>
                 <onclick>SetProperty(widgetID,4)</onclick>
                 <onclick>SendClick(312)</onclick>
                 <include>LeftMenuButton</include>
             </control>
             <control type="label">
-                <posx>10</posx>\
+                <posx>20</posx>
                 <posy>3</posy>
-                <width>206</width>
-                <height>50</height>
+                <width>320</width>
+                <height>40</height>
                 <align>center</align>
                 <font>LeftMenuTitleFont</font>
-                <textcolor>AlternateColor</textcolor>
+                <include>TextColor_AlternateColor</include>
                 <label>$ADDON[script.skinshortcuts 32099] 5</label>
             </control>
             <control type="label">
                 <posx>10</posx>
                 <posy>32</posy>
-                <width>206</width>
-                <height>50</height>
+                <width>320</width>
+                <height>45</height>
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
                 <scroll>true</scroll>

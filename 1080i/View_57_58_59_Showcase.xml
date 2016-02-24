@@ -600,7 +600,7 @@
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>0</posy>
-                        <width>1740</width>
+                        <width>1800</width>
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
                         <include>TextColor_MainColor</include>
