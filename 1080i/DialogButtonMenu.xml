@@ -212,6 +212,13 @@
                             <thumb>$VAR[Theme.Color]/topbar/topbar_settings_nofocus.png</thumb>
                             <icon>$VAR[Theme.Color]/topbar/topbar_settings_focus.png</icon>
                         </item>
+                        <item id="22">
+                            <onclick>dialog.close(all,true)</onclick>
+                            <onclick>activatewindow(skinsettings)</onclick>
+                            <label>$LOCALIZE[20077]</label>
+                            <thumb>$VAR[Theme.Color]/topbar/topbar_settings_nofocus.png</thumb>
+                            <icon>$VAR[Theme.Color]/topbar/topbar_settings_focus.png</icon>
+                        </item>
                         <item id="17">
                             <visible>!System.HasAlarm(shutdowntimer)</visible>
                             <visible>Skin.HasSetting(QuitMenu_Hide_Timer)</visible>
