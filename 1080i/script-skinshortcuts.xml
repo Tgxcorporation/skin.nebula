@@ -28,20 +28,20 @@
                     <include>SkinShortcuts_MainMenu_Horizontal</include>
                 </control>
                 <control type="scrollbar" id="260">
-                    <posx>128</posx>
-                    <posy>1140</posy>
-                    <width>1230</width>
+                    <posx>120</posx>
+                    <posy>700</posy>
+                    <width>1680</width>
                     <include>HorizontalScroller</include>
                     <onup>211</onup>
                     <ondown>9000</ondown>
                 </control>
-                <include>SkinShortcuts_Widgets_Horizontal</include>
                 <include>SkinShortcuts_Window_Navigation</include>
+                <include>SkinShortcuts_Widgets_Horizontal</include>
                 <control type="group">
                     <posy>-270</posy>
                     <control type="label">
                         <posx>120</posx>
-                        <posy>960</posy>
+                        <posy>1010</posy>
                         <width>1680</width>
                         <height>100</height>
                         <align>center</align>
@@ -49,7 +49,7 @@
                     </control>
                     <control type="label">
                         <posx>120</posx>
-                        <posy>1010</posy>
+                        <posy>1060</posy>
                         <width>1680</width>
                         <height>100</height>
                         <align>center</align>
