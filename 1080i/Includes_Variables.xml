@@ -103,11 +103,14 @@
         <value condition="!IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
     </variable>
     <variable name="HomeTitles">
-        <value condition="Control.hasfocus(900)">$LOCALIZE[20342] - $LOCALIZE[31961]</value>
-        <value condition="Control.hasfocus(901)">$LOCALIZE[20342] - $LOCALIZE[31966]</value>
-        <value condition="Control.hasfocus(311)">$LOCALIZE[20342] - $LOCALIZE[31961]</value>
-        <value condition="Control.hasfocus(312)">$LOCALIZE[20342] - $LOCALIZE[31966]</value>
-        <value condition="Control.hasfocus(511)">$LOCALIZE[132] - $LOCALIZE[31961]</value>
+        <value condition="Control.hasfocus(900)">$LOCALIZE[31961]</value>
+        <value condition="Control.hasfocus(901)">$LOCALIZE[31961]</value>
+        <value condition="Control.hasfocus(212)">$LOCALIZE[31961]</value>
+        <value condition="Control.hasfocus(311)">$LOCALIZE[31961]</value>
+        <value condition="Control.hasfocus(312)">$LOCALIZE[31966]</value>
+        <value condition="Control.hasfocus(411)">$LOCALIZE[31961]</value>
+        <value condition="Control.hasfocus(412)">$LOCALIZE[31966]</value>
+        <value condition="Control.hasfocus(511)">$LOCALIZE[31961]</value>
         <value condition="Control.hasfocus(700011)|Control.hasfocus(700012)|Control.hasfocus(700013)|Control.hasfocus(700014)|Control.hasfocus(700015)">$INFO[Container(300).ListItem.Property(widgetName)]</value>
         <value condition="Control.hasfocus(700021)|Control.hasfocus(700022)|Control.hasfocus(700023)|Control.hasfocus(700024)|Control.hasfocus(700025)">$INFO[Container(300).ListItem.Property(widgetName.1)]</value>
         <value condition="Control.hasfocus(700031)|Control.hasfocus(700032)|Control.hasfocus(700033)|Control.hasfocus(700034)|Control.hasfocus(700035)">$INFO[Container(300).ListItem.Property(widgetName.2)]</value>
@@ -479,10 +482,6 @@
         <value>$LOCALIZE[13278]</value>
     </variable>
     <variable name="WidgetsBackgrounds">
-        <value condition="Control.HasFocus(311)">$INFO[Container(311).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(312)">$INFO[Container(312).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(411)">$INFO[Container(411).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(412)">$INFO[Container(412).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700011)">$INFO[Container(700011).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700012)">$INFO[Container(700012).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700013)">$INFO[Container(700013).ListItem.Art(fanart)]</value>
