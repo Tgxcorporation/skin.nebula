@@ -489,10 +489,20 @@
                                 <label2>$INFO[Skin.String(weatherArtPath)]</label2>
                                 <onclick>Skin.SetPath(weatherArtPath)</onclick>
                             </item>
+                            <item id="95">
+                                <visible>!IsEmpty(Skin.String(weatherArtPath))</visible>
+                                <label>$LOCALIZE[10035] - $LOCALIZE[31519]</label>
+                                <onclick>Skin.Reset(weatherArtPath)</onclick>
+                            </item>
                             <!--<item id="94">-->
                             <!--<label>$LOCALIZE[31520]</label>-->
                             <!--<label2>$INFO[Skin.String(weatherIconPath)]</label2>-->
                             <!--<onclick>Skin.SetPath(weatherIconPath)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="96">-->
+                                <!--<visible>!IsEmpty(Skin.String(weatherIconPath))</visible>-->
+                                <!--<label>$LOCALIZE[10035] - $LOCALIZE[31520]</label>-->
+                                <!--<onclick>Skin.Reset(weatherIconPath)</onclick>-->
                             <!--</item>-->
                         </content>
                     </control>
