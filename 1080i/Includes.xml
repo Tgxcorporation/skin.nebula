@@ -189,6 +189,7 @@
                 <include>TopBarButton</include>
                 <texturefocus>white/topbar/large_topbar_home_focus.png</texturefocus>
                 <texturenofocus>white/topbar/large_topbar_home_nofocus.png</texturenofocus>
+                <onclick>Dialog.Close(all,true)</onclick>
                 <onclick>ActivateWindow(home)</onclick>
             </control>
             <control type="button" id="1604">
@@ -312,6 +313,7 @@
                 <include>TopBarButton</include>
                 <texturefocus>black/topbar/large_topbar_home_focus.png</texturefocus>
                 <texturenofocus>black/topbar/large_topbar_home_nofocus.png</texturenofocus>
+                <onclick>Dialog.Close(all,true)</onclick>
                 <onclick>ActivateWindow(home)</onclick>
             </control>
             <control type="button" id="1604">
