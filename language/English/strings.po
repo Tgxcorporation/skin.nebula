@@ -537,7 +537,11 @@ msgctxt "#31416"
 msgid "Random Clips"
 msgstr ""
 
-#empty strings from id 31417 to 31499
+msgctxt "#31417"
+msgid "Recommended Episodes"
+msgstr ""
+
+#empty strings from id 31418 to 31499
 
 #PVR Labels
 
