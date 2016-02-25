@@ -467,7 +467,11 @@ msgctxt "#31395"
 msgid "Arial (Regular)"
 msgstr ""
 
-#empty strings from id 31396 to 31399
+msgctxt "#31396"
+msgid "Ubuntu (Light)"
+msgstr ""
+
+#empty strings from id 31397 to 31399
 
 msgctxt "#31400"
 msgid "Recommended Movies"
