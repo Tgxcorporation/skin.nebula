@@ -36,7 +36,7 @@
                     <align>center</align>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Window.Property(actor.title)]</label>
+                    <label>$INFO[Window.Property(title)]</label>
                 </control>
                 <!--BIOGRAPHY-->
                 <control type="group" id="490">
@@ -53,10 +53,10 @@
                         <align>center</align>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MainColor</include>
-                        <label>$ADDON[script.extendedinfo 32012]: $INFO[Window.Property(actor.Birthday)]</label>
+                        <label>$ADDON[script.extendedinfo 32012]: $INFO[Window.Property(Birthday)]</label>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Window.Property(actor.Poster))</visible>
+                        <visible>IsEmpty(Window.Property(Poster))</visible>
                         <posx>TextMargin</posx>
                         <posy>348</posy>
                         <width>424</width>
@@ -69,7 +69,7 @@
                         <posy>313</posy>
                         <width>494</width>
                         <height>685</height>
-                        <texture background="true">$INFO[Window.Property(actor.Poster)]</texture>
+                        <texture background="true">$INFO[Window.Property(Poster)]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio aligny="top">keep</aspectratio>
                     </control>
@@ -84,57 +84,57 @@
                         <content>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32011]:</label>
-                                <label2>$INFO[Window.Property(actor.TotalMovies)]</label2>
+                                <label2>$INFO[Window.Property(TotalMovies)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(actor.TotalMovies))</visible>
+                                <visible>!IsEmpty(Window.Property(TotalMovies))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32021]:</label>
-                                <label2>$INFO[Window.Property(actor.DBMovies)]</label2>
+                                <label2>$INFO[Window.Property(DBMovies)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(actor.DBMovies))</visible>
+                                <visible>!IsEmpty(Window.Property(DBMovies))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32012]:</label>
-                                <label2>$INFO[Window.Property(actor.Birthday)]</label2>
+                                <label2>$INFO[Window.Property(Birthday)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(actor.Birthday))</visible>
+                                <visible>!IsEmpty(Window.Property(Birthday))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32020]:</label>
-                                <label2>$INFO[Window.Property(actor.Age)]</label2>
+                                <label2>$INFO[Window.Property(Age)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(actor.Age))</visible>
+                                <visible>!IsEmpty(Window.Property(Age))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32013]:</label>
-                                <label2>$INFO[Window.Property(actor.Deathday)]$INFO[Window.Property(actor.DeathageLong), (,)]</label2>
+                                <label2>$INFO[Window.Property(Deathday)]$INFO[Window.Property(DeathageLong), (,)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(actor.Deathday))</visible>
+                                <visible>!IsEmpty(Window.Property(Deathday))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32014]:</label>
-                                <label2>$INFO[Window.Property(actor.PlaceOfBirth)]</label2>
+                                <label2>$INFO[Window.Property(PlaceOfBirth)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(actor.PlaceOfBirth))</visible>
+                                <visible>!IsEmpty(Window.Property(PlaceOfBirth))</visible>
                             </item>
                             <!--<item>-->
                             <!--<label>$ADDON[script.extendedinfo 32015]:</label>-->
-                            <!--<label2>$INFO[Window.Property(actor.Adult)]</label2>-->
+                            <!--<label2>$INFO[Window.Property(Adult)]</label2>-->
                             <!--<onclick>noop</onclick>-->
-                            <!--<visible>Window.Property(actor.Adult)</visible>-->
+                            <!--<visible>Window.Property(Adult)</visible>-->
                             <!--</item>-->
                             <item>
                                 <label>$ADDON[script.extendedinfo 32016]:</label>
-                                <label2>$INFO[Window.Property(actor.AlsoKnownAs)]</label2>
+                                <label2>$INFO[Window.Property(AlsoKnownAs)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(actor.AlsoKnownAs))</visible>
+                                <visible>!IsEmpty(Window.Property(AlsoKnownAs))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32017]:</label>
-                                <label2>$INFO[Window.Property(actor.Homepage)]</label2>
-                                <onclick>RunScript(script.extendedinfo,homepage=$INFO[Window.Property(actor.Homepage)])</onclick>
-                                <visible>!IsEmpty(Window.Property(actor.Homepage))</visible>
+                                <label2>$INFO[Window.Property(Homepage)]</label2>
+                                <onclick>RunScript(script.extendedinfo,homepage=$INFO[Window.Property(Homepage)])</onclick>
+                                <visible>!IsEmpty(Window.Property(Homepage))</visible>
                             </item>
                         </content>
                     </control>
@@ -159,7 +159,7 @@
                         <width>1300</width>
                         <height>292</height>
                         <font>InfoDetailsFont</font>
-                        <label fallback="416">$INFO[Window.Property(actor.Biography)]</label>
+                        <label fallback="416">$INFO[Window.Property(Biography)]</label>
                         <pagecontrol>6649</pagecontrol>
                     </control>
                     <control type="scrollbar" id="6649">
