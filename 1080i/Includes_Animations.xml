@@ -263,8 +263,17 @@
     <include name="PulseClearArt">
         <visible>Skin.HasSetting(EnableClearArt)</visible>
         <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearLogo)+
-                    [!IsEmpty(ListItem.Art(clearlogo))|!IsEmpty(ListItem.Art(tvshow.clearlogo))]+
-                    [!IsEmpty(ListItem.Art(clearart))|!IsEmpty(ListItem.Art(tvshow.clearart))]">
+                    [
+                    [!IsEmpty(ListItem.Art(clearlogo)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                    |
+                    [!IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                    ]+[
+                    [!IsEmpty(ListItem.Art(clearart)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]] + ![Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
+                    |
+                    [!IsEmpty(ListItem.Art(tvshow.clearart)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                    |
+                    [!IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
+                    ]">
             <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
             <effect type="fade" start="100" end="0" time="500" delay="3000"/>
         </animation>
@@ -272,8 +281,17 @@
     <include name="PulseClearLogo">
         <visible>Skin.HasSetting(EnableClearLogo)</visible>
         <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearArt)+
-                    [!IsEmpty(ListItem.Art(clearlogo))|!IsEmpty(ListItem.Art(tvshow.clearlogo))]+
-                    [!IsEmpty(ListItem.Art(clearart))|!IsEmpty(ListItem.Art(tvshow.clearart))]">
+                    [
+                    [!IsEmpty(ListItem.Art(clearlogo)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                    |
+                    [!IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                    ]+[
+                    [!IsEmpty(ListItem.Art(clearart)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]] + ![Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
+                    |
+                    [!IsEmpty(ListItem.Art(tvshow.clearart)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                    |
+                    [!IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
+                    ]">
             <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
             <effect type="fade" start="0" end="100" time="500" delay="3000"/>
         </animation>

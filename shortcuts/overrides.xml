@@ -28,6 +28,10 @@
 
 
     <!--BACKGROUNDS OVERRIDES-->
+    <background label="31071">defaultFanart</background>
+    <background label="31072">pictureFanart</background>
+    <background label="31073">clipFanart</background>
+    <background label="31074">concertFanart</background>
     <background label="31054">movieFanart</background>
     <background label="31055">tvshowFanart</background>
     <background label="31056">videoFanart</background>

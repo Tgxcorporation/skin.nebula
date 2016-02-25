@@ -301,11 +301,12 @@
         <!--<value>weather/</value>-->
     <!--</variable>-->
     <variable name="Default.Art">
+        <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
         <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Videos.Art">
-        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
+        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Videos.Background))">$INFO[Skin.String(Videos.Background)]</value>
         <value>special://skin/backgrounds/Videos.jpg</value>
     </variable>
@@ -318,17 +319,17 @@
         <value>special://skin/backgrounds/Quit.jpg</value>
     </variable>
     <variable name="Movies.Art">
-        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>
+        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Movies.Background))">$INFO[Skin.String(Movies.Background)]</value>
         <value>special://skin/backgrounds/Movies.jpg</value>
     </variable>
     <variable name="TVShows.Art">
-        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
+        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
         <value condition="!IsEmpty(Skin.String(TVShows.Background))">$INFO[Skin.String(TVShows.Background)]</value>
         <value>special://skin/backgrounds/TVShows.jpg</value>
     </variable>
     <variable name="Music.Art">
-        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
+        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Music.Background))">$INFO[Skin.String(Music.Background)]</value>
         <value>special://skin/backgrounds/Music.jpg</value>
     </variable>
@@ -337,10 +338,12 @@
         <value>special://skin/backgrounds/Addons.jpg</value>
     </variable>
     <variable name="Concerts.Art">
+        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Concerts.Background))">$INFO[Skin.String(Concerts.Background)]</value>
         <value>special://skin/backgrounds/Concerts.jpg</value>
     </variable>
     <variable name="Clips.Art">
+        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Clips.Background))">$INFO[Skin.String(Clips.Background)]</value>
         <value>special://skin/backgrounds/Clips.jpg</value>
     </variable>
@@ -366,6 +369,7 @@
         <value>special://skin/backgrounds/Radio.jpg</value>
     </variable>
     <variable name="Pictures.Art">
+        <value condition="Skin.HasSetting(Pictures.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Pictures.Background))">$INFO[Skin.String(Pictures.Background)]</value>
         <value>special://skin/backgrounds/Pictures.jpg</value>
     </variable>
@@ -398,10 +402,14 @@
     <variable name="HomeBackgrounds">
         <value condition="Skin.HasSetting(plexbmc)+!StringCompare(Container(300).ListItem.Property(uuid),)+!IsEmpty(Container(300).ListItem.ActualIcon)">$INFO[Container(300).ListItem.ActualIcon]</value>
         <value condition="Skin.HasSetting(plexbmc)+!StringCompare(Container(300).ListItem.Property(uuid),)+IsEmpty(Container(300).ListItem.ActualIcon)">$INFO[Container(300).ListItem.Icon]</value>
-        <value condition="StringCompare(Container(300).ListItem.Property(background),movieFanart)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>
-        <value condition="StringCompare(Container(300).ListItem.Property(background),tvshowFanart)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
-        <value condition="StringCompare(Container(300).ListItem.Property(background),videoFanart)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
-        <value condition="StringCompare(Container(300).ListItem.Property(background),musicFanart)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(background),defaultFanart)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(background),pictureFanart)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(background),clipFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(background),concertFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(background),movieFanart)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(background),tvshowFanart)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(background),videoFanart)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(background),musicFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(background),weatherFanart)">$VAR[WeatherFanartPath]$INFO[Weather.fanartcode].jpg</value>
         <value condition="StringCompare(Container(300).ListItem.Property(Background),Videos.Art)">$VAR[Videos.Art]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(Background),Movies.Art)">$VAR[Movies.Art]</value>
@@ -428,10 +436,14 @@
         <value condition="Skin.HasSetting(Home_DefaultBG)">$VAR[Default.Art]</value>
         <value condition="Skin.HasSetting(plexbmc)+!StringCompare(Container(211).ListItem.Property(uuid),)+!IsEmpty(Container(211).ListItem.ActualIcon)">$INFO[Container(211).ListItem.ActualIcon]</value>
         <value condition="Skin.HasSetting(plexbmc)+!StringCompare(Container(211).ListItem.Property(uuid),)+IsEmpty(Container(211).ListItem.ActualIcon)">$INFO[Container(211).ListItem.Icon]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(background),movieFanart)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(background),tvshowFanart)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(background),videoFanart)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(background),musicFanart)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(background),defaultFanart)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(background),pictureFanart)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(background),clipFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(background),concertFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(background),movieFanart)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(background),tvshowFanart)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(background),videoFanart)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(background),musicFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(background),weatherFanart)">$VAR[WeatherFanartPath]$INFO[Weather.fanartcode].jpg</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Videos.Art)">$VAR[Videos.Art]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Movies.Art)">$VAR[Movies.Art]</value>
@@ -455,6 +467,10 @@
     <variable name="SkinShortcutBackgroundDescription">
         <value condition="Skin.HasSetting(plexbmc)+!StringCompare(Container(211).ListItem.Property(uuid),)+!IsEmpty(Container(211).ListItem.ActualIcon)">$INFO[Container(211).ListItem.ActualIcon]</value>
         <value condition="Skin.HasSetting(plexbmc)+!StringCompare(Container(211).ListItem.Property(uuid),)+IsEmpty(Container(211).ListItem.ActualIcon)+!SubString(Container(211).ListItem.Icon,:/resources/)+!StringCompare(Container(211).ListItem.Icon,special://skin/backgrounds/Channels.jpg)+!StringCompare(Container(211).ListItem.Icon,special://skin/backgrounds/Queue.jpg)">$INFO[Container(211).ListItem.Icon]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(background),defaultFanart)">$LOCALIZE[31071]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(background),pictureFanart)">$LOCALIZE[31072]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(background),clipFanart)">$LOCALIZE[31073]</value>
+        <value condition="StringCompare(Container(211).ListItem.Property(background),concertFanart)">$LOCALIZE[31074]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(background),movieFanart)">$LOCALIZE[31054]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(background),tvshowFanart)">$LOCALIZE[31055]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(background),videoFanart)">$LOCALIZE[31056]</value>
@@ -514,17 +530,25 @@
         <value>white</value>
     </variable>
     <variable name="SkinSettings.RandomBackground.Art">
-        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(1)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
-        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(2)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>
-        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(3)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
-        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(4)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
+        <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(0)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
+        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(1)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
+        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(2)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
+        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(3)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
+        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(4)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
+        <value condition="Skin.HasSetting(Pictures.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(5)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
+        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(13)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(14)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
         <value>$INFO[Container(9004).ListItem.Icon]</value>
     </variable>
     <variable name="SkinSettings.RandomBackground.Label">
+        <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(0)">$LOCALIZE[590]</value>
         <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(1)">$LOCALIZE[590]</value>
         <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(2)">$LOCALIZE[590]</value>
         <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(3)">$LOCALIZE[590]</value>
         <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(4)">$LOCALIZE[590]</value>
+        <value condition="Skin.HasSetting(Pictures.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(5)">$LOCALIZE[590]</value>
+        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(13)">$LOCALIZE[590]</value>
+        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(14)">$LOCALIZE[590]</value>
         <value>$INFO[Container(9004).ListItem.Thumb]</value>
     </variable>
     <variable name="OverlayTransparency">
