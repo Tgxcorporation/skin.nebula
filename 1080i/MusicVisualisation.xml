@@ -55,7 +55,7 @@
                         <posy>642</posy>
                         <!-- CDART MUSIC -->
                         <include name="DiscArt">
-                            <param name="visible" value="!IsEmpty(MusicPlayer.Cover)"/>
+                            <param name="visible" value="!IsEmpty(Player.Art(thumb))"/>
                             <param name="x" value="70"/>
                             <param name="y" value="-122"/>
                             <param name="width" value="315"/>
@@ -73,7 +73,7 @@
                             <posy>0</posy>
                             <width>405</width>
                             <height>405</height>
-                            <texture background="true" fallback="white/defaultAudioBig.png">$INFO[MusicPlayer.Cover]</texture>
+                            <texture background="true" fallback="white/defaultAudioBig.png">$INFO[Player.Art(thumb)]</texture>
                             <include>ThumbBorder</include>
                             <aspectratio aligny="top">keep</aspectratio>
                         </control>
@@ -83,7 +83,7 @@
                             <posy>0</posy>
                             <width>405</width>
                             <height>405</height>
-                            <texture background="true" fallback="black/defaultAudioBig.png">$INFO[MusicPlayer.Cover]</texture>
+                            <texture background="true" fallback="black/defaultAudioBig.png">$INFO[Player.Art(thumb)]</texture>
                             <include>ThumbBorder</include>
                             <aspectratio aligny="top">keep</aspectratio>
                         </control>
