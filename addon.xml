@@ -6,6 +6,8 @@
         <import addon="script.skinshortcuts" version="0.2.4"/>
         <import addon="script.skin.helper.service" version="0.0.11"/>
         <import addon="resource.images.weatherfanart.single" version="0.0.4"/>
+        <import addon="resource.images.studios.white" version="0.0.6"/>
+        <import addon="resource.images.recordlabels.white" version="0.0.6"/>
     </requires>
     <extension point="xbmc.gui.skin" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>

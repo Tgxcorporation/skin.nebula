@@ -34,6 +34,8 @@
         <value condition="[Container.content(years)]">$VAR[Theme.Color]/defaultYearBig.png</value>
         <value condition="[Window.IsActive(MyPics.xml)]">$VAR[Theme.Color]/defaultPictureBig.png</value>
         <value condition="[Window.IsActive(script-videoextras-main.xml)]">$VAR[Theme.Color]/defaultVideoBig.png</value>
+        <value condition="[Container.content(studios)]">resource://resource.images.studios.white/$INFO[ListItem.Label].png</value>
+        <!--<value condition="[Container.content(Genres)]">resource://resource.images.moviegenreicons.white/$INFO[ListItem.Label].png</value>-->
         <value condition="[Container.content(Genres)]">$VAR[Theme.Color]/defaultGenreBig.png</value>
         <value condition="[Container.content(Playlists)]">$VAR[Theme.Color]/defaultPlaylistBig.png</value>
         <value condition="[Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.content(episodes)|Container.Content(Seasons)]">$VAR[Theme.Color]/defaultVideoBig.png</value>
@@ -816,11 +818,20 @@
     <variable name="DefaultClearArt">
         <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]+!IsEmpty(ListItem.Art(tvshow.clearart))]">$INFO[ListItem.Art(tvshow.clearart)]</value>
+        <!--<value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(script-ExtendedInfo Script-VideoList.xml)]">$INFO[Container(500).ListItem.Art(clearart)]</value>-->
         <value condition="Skin.HasSetting(EnableClearArt)">$INFO[ListItem.Art(clearart)]</value>
     </variable>
     <variable name="DefaultClearLogo">
         <value condition="Skin.HasSetting(EnableClearLogo) + Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+        <!--<value condition="Skin.HasSetting(EnableClearLogo) + [Window.IsActive(script-ExtendedInfo Script-VideoList.xml)]">$INFO[Container(500).ListItem.Art(clearlogo)]</value>-->
         <value condition="Skin.HasSetting(EnableClearLogo)">$INFO[ListItem.Art(clearlogo)]</value>
+    </variable>
+    <variable name="DefaultStudioArt">
+        <value condition="Skin.HasSetting(EnableStudioArt) + [Window.IsActive(MusicVisualisation.xml)]">resource://resource.images.recordlabels.white/$INFO[MusicPlayer.Property(Album_Label)].png</value>
+        <value condition="Skin.HasSetting(EnableStudioArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">resource://resource.images.recordlabels.white/$INFO[ListItem.Property(Album_Label)].png</value>
+        <value condition="Skin.HasSetting(EnableStudioArt) + [Window.IsActive(VideoFullScreen.xml)]">resource://resource.images.studios.white/$INFO[VideoPlayer.Studio].png</value>
+        <value condition="Skin.HasSetting(EnableStudioArt) + [Window.IsActive(script-ExtendedInfo Script-VideoList.xml)]">resource://resource.images.studios.white/$INFO[Container(500).ListItem.Studio].png</value>
+        <value condition="Skin.HasSetting(EnableStudioArt)">resource://resource.images.studios.white/$INFO[ListItem.Studio].png</value>
     </variable>
     <variable name="SkinShortcutsMoveUpLabel">
         <value condition="[Skin.HasSetting(VerticalHome)+StringCompare(Window.Property(groupname),mainmenu)]|!StringCompare(Window.Property(groupname),mainmenu)">$ADDON[script.skinshortcuts 32002]</value>

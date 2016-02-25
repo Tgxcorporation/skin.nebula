@@ -315,7 +315,11 @@ msgctxt "#31074"
 msgid "Random Concert Fanart"
 msgstr ""
 
-#empty strings from id 31075 to 31089
+msgctxt "#31075"
+msgid "Enable Studio/Album Label Art"
+msgstr ""
+
+#empty strings from id 31076 to 31089
 #Viewtype
 
 msgctxt "#31090"

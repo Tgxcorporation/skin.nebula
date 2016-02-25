@@ -481,27 +481,24 @@
             <include>Icon_Fade</include>
             <include>FacadeFadeDialogs</include>
             <include>ScrollOffsetLabel_50</include>
-            <control type="group">
-                <!-- CLEAR ART / LOGO -->
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>34</posy>
-                    <width>1920</width>
-                    <height>149</height>
-                    <aspectratio align="center" aligny="bottom">keep</aspectratio>
-                    <include>PulseClearArt</include>
-                    <texture background="true">$VAR[DefaultClearArt]</texture>
-                </control>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>34</posy>
-                    <width>1920</width>
-                    <height>149</height>
-                    <aspectratio align="center" aligny="bottom">keep</aspectratio>
-                    <include>PulseClearLogo</include>
-                    <texture background="true">$VAR[DefaultClearLogo]</texture>
-                </control>
-            </control>
+            <include name="ClearArtLogo">
+                <param name="x" value="0"/>
+                <param name="y" value="34"/>
+                <param name="width" value="1920"/>
+                <param name="height" value="149"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="bottom"/>
+            </include>
+            <include name="StudioArt">
+                <param name="x" value="0"/>
+                <param name="y" value="34"/>
+                <param name="width" value="1920"/>
+                <param name="height" value="149"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="bottom"/>
+            </include>
             <control type="image">
                 <posx>0</posx>
                 <posy>142</posy>

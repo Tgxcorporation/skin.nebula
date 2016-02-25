@@ -309,25 +309,24 @@
             <include>ScrollOffsetLabel_50</include>
             <control type="group">
                 <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="-660,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">conditional</animation>
-                <!-- CLEAR ART / LOGO -->
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>40</posy>
-                    <width>1920</width>
-                    <height>110</height>
-                    <aspectratio align="center" aligny="bottom">keep</aspectratio>
-                    <include>PulseClearArt</include>
-                    <texture background="true">$VAR[DefaultClearArt]</texture>
-                </control>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>40</posy>
-                    <width>1920</width>
-                    <height>110</height>
-                    <aspectratio align="center" aligny="bottom">keep</aspectratio>
-                    <include>PulseClearLogo</include>
-                    <texture background="true">$VAR[DefaultClearLogo]</texture>
-                </control>
+                <include name="ClearArtLogo">
+                    <param name="x" value="0"/>
+                    <param name="y" value="40"/>
+                    <param name="width" value="1920"/>
+                    <param name="height" value="110"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="center"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
+                <include name="StudioArt">
+                    <param name="x" value="0"/>
+                    <param name="y" value="40"/>
+                    <param name="width" value="1920"/>
+                    <param name="height" value="110"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="center"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
             </control>
             <control type="scrollbar" id="60">
                 <posx>0</posx>

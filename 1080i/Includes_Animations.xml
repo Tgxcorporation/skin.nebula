@@ -112,12 +112,12 @@
     </include>
     <include name="ScrollOffsetLabelVisibleFadeEffect">
         <animation type="Visible" reversible="false">
-            <effect type="fade" start="0" end="100" time="150" delay="0" tween="circle" easing="inout"/>
-            <effect type="zoom" start="110" end="100" time="150" delay="0" center="960,59" tween="circle" easing="inout"/>
+            <effect type="fade" start="0" end="100" time="150" delay="100" tween="circle" easing="inout"/>
+            <effect type="zoom" start="110" end="100" time="150" delay="100" center="960,59" tween="circle" easing="inout"/>
         </animation>
         <animation type="Hidden" reversible="false">
-            <effect type="fade" start="100" end="0" time="150" delay="0" tween="circle" easing="inout"/>
-            <effect type="zoom" start="100" end="110" time="150" delay="0" center="960,59" tween="circle" easing="inout"/>
+            <effect type="fade" start="100" end="0" time="150" delay="100" tween="circle" easing="inout"/>
+            <effect type="zoom" start="100" end="110" time="150" delay="100" center="960,59" tween="circle" easing="inout"/>
         </animation>
     </include>
     <include name="VisibleFadeEffectDelay">
@@ -262,38 +262,52 @@
     </include>
     <include name="PulseClearArt">
         <visible>Skin.HasSetting(EnableClearArt)</visible>
-        <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearLogo)+
-                    [
-                    [!IsEmpty(ListItem.Art(clearlogo)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
-                    |
-                    [!IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
-                    ]+[
-                    [!IsEmpty(ListItem.Art(clearart)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]] + ![Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
-                    |
-                    [!IsEmpty(ListItem.Art(tvshow.clearart)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
-                    |
-                    [!IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
-                    ]">
+        <animation type="Conditional" pulse="true" reversible="false" condition="Control.IsVisible(983731)+Control.IsVisible(983732)+!Control.IsVisible(983733)">
             <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
+            <effect type="fade" start="100" end="0" time="500" delay="3000"/>
+        </animation>
+        <animation type="Conditional" pulse="true" reversible="false" condition="Control.IsVisible(983731)+!Control.IsVisible(983732)+Control.IsVisible(983733)">
+            <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
+            <effect type="fade" start="100" end="0" time="500" delay="3000"/>
+        </animation>
+        <animation type="Conditional" pulse="true" reversible="false" condition="Control.IsVisible(983731)+Control.IsVisible(983732)+Control.IsVisible(983733)">
+            <effect type="slide" start="0,0" end="0,0" time="3000" delay="0"/>
+            <effect type="slide" start="0,0" end="0,0" time="5000" delay="3500"/>
             <effect type="fade" start="100" end="0" time="500" delay="3000"/>
         </animation>
     </include>
     <include name="PulseClearLogo">
         <visible>Skin.HasSetting(EnableClearLogo)</visible>
-        <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearArt)+
-                    [
-                    [!IsEmpty(ListItem.Art(clearlogo)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
-                    |
-                    [!IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
-                    ]+[
-                    [!IsEmpty(ListItem.Art(clearart)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]] + ![Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
-                    |
-                    [!IsEmpty(ListItem.Art(tvshow.clearart)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
-                    |
-                    [!IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
-                    ]">
+        <animation type="Conditional" pulse="true" reversible="false" condition="Control.IsVisible(983731)+Control.IsVisible(983732)+!Control.IsVisible(983733)">
             <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
             <effect type="fade" start="0" end="100" time="500" delay="3000"/>
+        </animation>
+        <animation type="Conditional" pulse="true" reversible="false" condition="!Control.IsVisible(983731)+Control.IsVisible(983732)+Control.IsVisible(983733)">
+            <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
+            <effect type="fade" start="100" end="0" time="500" delay="3000"/>
+        </animation>
+        <animation type="Conditional" pulse="true" reversible="false" condition="Control.IsVisible(983731)+Control.IsVisible(983732)+Control.IsVisible(983733)">
+            <effect type="slide" start="0,0" end="0,0" time="3000" delay="0"/>
+            <effect type="slide" start="0,0" end="0,0" time="3000" delay="3500"/>
+            <effect type="fade" start="0" end="100" time="500" delay="3000"/>
+            <effect type="fade" start="100" end="0" time="500" delay="6500"/>
+            <effect type="slide" start="0,0" end="0,0" time="1500" delay="7000"/>
+        </animation>
+    </include>
+    <include name="PulseStudioArt">
+        <visible>Skin.HasSetting(EnableStudioArt)</visible>
+        <animation type="Conditional" pulse="true" reversible="false" condition="Control.IsVisible(983731)+!Control.IsVisible(983732)+Control.IsVisible(983733)">
+            <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
+            <effect type="fade" start="0" end="100" time="500" delay="3000"/>
+        </animation>
+        <animation type="Conditional" pulse="true" reversible="false" condition="!Control.IsVisible(983731)+Control.IsVisible(983732)+Control.IsVisible(983733)">
+            <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
+            <effect type="fade" start="0" end="100" time="500" delay="3000"/>
+        </animation>
+        <animation type="Conditional" pulse="true" reversible="false" condition="Control.IsVisible(983731)+Control.IsVisible(983732)+Control.IsVisible(983733)">
+            <effect type="slide" start="0,0" end="0,0" time="6500" delay="0"/>
+            <effect type="slide" start="0,0" end="0,0" time="1500" delay="7000"/>
+            <effect type="fade" start="0" end="100" time="500" delay="6500"/>
         </animation>
     </include>
 </includes>

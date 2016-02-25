@@ -737,6 +737,7 @@
                 <include>TopBar</include>
             </control>
         </control>
+        <include>DummyClearStudioArt</include>
     </include>
     <include name="SeekBar">
         <control type="label">
@@ -1388,6 +1389,15 @@
                         <texture background="true">$VAR[VideoPlayerClearLogo]</texture>
                     </control>
                 </control>
+                <include name="StudioArt">
+                    <param name="x" value="1210"/>
+                    <param name="y" value="490"/>
+                    <param name="width" value="300"/>
+                    <param name="height" value="140"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="left"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
                 <control type="image">
                     <posx>-200</posx>
                     <posy>609</posy>
@@ -1623,6 +1633,100 @@
                 <aspectratio align="center" aligny="center">stretch</aspectratio>
                 <include>Animation_ViewsCDart</include>
             </control>
+        </control>
+    </include>
+    <include name="ClearArtLogo">
+        <control type="group">
+            <animation effect="fade" time="100" start="100" end="0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">conditional</animation>
+            <animation effect="fade" time="0" start="100" end="0" condition="Control.IsVisible(983739)">conditional</animation>
+            <control type="image">
+                <animation effect="fade" time="0" start="100" end="0" condition="!Control.IsVisible(983731)|StringCompare(ListItem.Label,..)">conditional</animation>
+                <visible>$PARAM[visible]</visible>
+                <include>Icon_Fade</include>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">keep</aspectratio>
+                <include>PulseClearArt</include>
+                <texture background="true">$VAR[DefaultClearArt]</texture>
+            </control>
+            <control type="image">
+                <animation effect="fade" time="0" start="100" end="0" condition="!Control.IsVisible(983732)|StringCompare(ListItem.Label,..)">conditional</animation>
+                <visible>$PARAM[visible]</visible>
+                <include>Icon_Fade</include>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">keep</aspectratio>
+                <include>PulseClearLogo</include>
+                <texture background="true">$VAR[DefaultClearLogo]</texture>
+            </control>
+        </control>
+    </include>
+    <include name="StudioArt">
+        <control type="group">
+            <visible>!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableStudioArt)</visible>
+            <animation effect="fade" time="100" start="100" end="0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]+!Control.IsVisible(54)">conditional</animation>
+            <animation effect="fade" time="0" start="100" end="0" condition="Control.IsVisible(983739)">conditional</animation>
+            <animation effect="fade" time="0" start="100" end="0" condition="StringCompare(ListItem.Label,..)">conditional</animation>
+            <control type="image">
+                <animation effect="slide" start="0,0" end="1,1" time="0" reversible="false" condition="true">Conditional</animation>
+                <visible>$PARAM[visible]</visible>
+                <include>Icon_Fade</include>
+                <include>PulseStudioArt</include>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">keep</aspectratio>
+                <colordiffuse>ff000000</colordiffuse>
+                <texture background="true">$VAR[DefaultStudioArt]</texture>
+            </control>
+            <control type="image">
+                <visible>$PARAM[visible]</visible>
+                <include>Icon_Fade</include>
+                <include>PulseStudioArt</include>
+                <posx>$PARAM[x]</posx>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">keep</aspectratio>
+                <texture background="true">$VAR[DefaultStudioArt]</texture>
+            </control>
+        </control>
+    </include>
+    <include name="DummyClearStudioArt">
+        <control type="button" id="983731">
+            <!--DUMMY CLEAR ART -->
+            <visible>Skin.HasSetting(EnableClearArt)+
+                [
+                [!IsEmpty(ListItem.Art(clearart)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]] + ![Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
+                |
+                [!IsEmpty(ListItem.Art(tvshow.clearart)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                |
+                [!IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
+                ]
+            </visible>
+            <include>HiddenButton</include>
+        </control>
+        <control type="button" id="983732">
+            <!--DUMMY CLEAR LOGO-->
+            <visible>Skin.HasSetting(EnableClearLogo)+
+                [
+                [!IsEmpty(ListItem.Art(clearlogo)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                |
+                [!IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                ]
+            </visible>
+            <include>HiddenButton</include>
+        </control>
+        <control type="button" id="983733">
+            <!--DUMMY STUDIO ART -->
+            <visible>Skin.HasSetting(EnableStudioArt)</visible>
+            <include>HiddenButton</include>
         </control>
     </include>
 </includes>

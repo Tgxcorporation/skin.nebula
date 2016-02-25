@@ -34,6 +34,15 @@
                             <texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Music.ClearLogo)]</texture>
                         </control>
                     </control>
+                    <include name="StudioArt">
+                        <param name="x" value="1210"/>
+                        <param name="y" value="490"/>
+                        <param name="width" value="300"/>
+                        <param name="height" value="140"/>
+                        <param name="visible" value="true"/>
+                        <param name="align" value="left"/>
+                        <param name="aligny" value="bottom"/>
+                    </include>
                     <control type="image">
                         <posx>-200</posx>
                         <posy>609</posy>
