@@ -2,7 +2,6 @@
 <window type="dialog">
     <zorder>1</zorder>
     <defaultcontrol>9000</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <menucontrol>9000</menucontrol>
     <controls>
         <!-- <include>DimBG</include> -->
