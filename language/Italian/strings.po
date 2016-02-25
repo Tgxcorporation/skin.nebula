@@ -292,6 +292,26 @@ msgctxt "#31069"
 msgid "Startup Playlist"
 msgstr "Playlist per l'avvio"
 
+msgctxt "#31070"
+msgid "Custom Color"
+msgstr "Colore Personalizzato"
+
+msgctxt "#31071"
+msgid "Random Global Fanart"
+msgstr "Fanart Casuali Globali"
+
+msgctxt "#31072"
+msgid "Random Picture Fanart"
+msgstr "Fanart Casuali per Immagini"
+
+msgctxt "#31073"
+msgid "Random Clip Fanart"
+msgstr "Fanart Casuali per Clip"
+
+msgctxt "#31074"
+msgid "Random Concert Fanart"
+msgstr "Fanart Casuali per Concerti"
+
 msgctxt "#31090"
 msgid "Panel"
 msgstr "Pannello"

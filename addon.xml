@@ -2,7 +2,6 @@
 <addon id="skin.nebula" version="4.0.0" name="Nebula" provider-name="Tgx">
     <requires>
         <import addon="xbmc.gui" version="5.10.0"/>
-        <import addon="script.grab.fanart" version="0.12.8"/>
         <import addon="script.favourites" version="3.2.0"/>
         <import addon="script.skinshortcuts" version="0.2.4"/>
         <import addon="script.skin.helper.service" version="0.0.11"/>
