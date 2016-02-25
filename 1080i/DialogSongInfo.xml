@@ -348,15 +348,9 @@
                         <include>LeftMenuTitleLabel</include>
                         <label>$LOCALIZE[33061]</label>
                     </control>
-                    <control type="button" id="14">
+                    <control type="button" id="7">
                         <include>LeftMenuButton</include>
-                        <label>$LOCALIZE[563] -</label>
-                        <onclick>DecreaseRating</onclick>
-                    </control>
-                    <control type="button" id="15">
-                        <include>LeftMenuButton</include>
-                        <label>$LOCALIZE[563] +</label>
-                        <onclick>IncreaseRating</onclick>
+                        <label>$LOCALIZE[38023]</label>
                     </control>
                     <control type="button" id="500">
                         <visible>System.HasAddon(script.extendedinfo)</visible>
