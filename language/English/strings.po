@@ -633,7 +633,13 @@ msgctxt "#31520"
 msgid "Root Folder for Custom Weather Icons"
 msgstr ""
 
-#empty strings from id 31521 to 31900
+#empty strings from id 31521 to 31525
+
+msgctxt "#31526"
+msgid "Use Single Row Submenu"
+msgstr ""
+
+#empty strings from id 31527 to 31900
 
 #Weather plugin
 
