@@ -1347,6 +1347,7 @@
                         <include>LeftMenuButton</include>
                         <label>21887</label>
                         <onright>49</onright>
+                        <onclick>Control.SetFocus(49)</onclick>
                     </control>
                     <control type="button" id="501">
                         <visible>container.content(albums)</visible>
@@ -1354,6 +1355,7 @@
                         <include>LeftMenuButton</include>
                         <label>183</label>
                         <onright>49</onright>
+                        <onclick>Control.SetFocus(49)</onclick>
                     </control>
                     <control type="button" id="502">
                         <visible>!System.HasAddon(script.extendedinfo)</visible>
@@ -1362,6 +1364,7 @@
                         <include>LeftMenuButton</include>
                         <label>21888</label>
                         <onright>50</onright>
+                        <onclick>Control.SetFocus(50)</onclick>
                     </control>
                     <control type="button" id="503">
                         <visible>container.content(albums)</visible>
@@ -1369,6 +1372,7 @@
                         <include>LeftMenuButton</include>
                         <label>182</label>
                         <onright>50</onright>
+                        <onclick>Control.SetFocus(50)</onclick>
                     </control>
                     <control type="button" id="504">
                         <visible>System.HasAddon(script.extendedinfo)</visible>
@@ -1378,6 +1382,7 @@
                         <include>LeftMenuButton</include>
                         <label>21888</label>
                         <onright>5041</onright>
+                        <onclick>Control.SetFocus(5041)</onclick>
                     </control>
                     <control type="button" id="509">
                         <visible>System.HasAddon(script.extendedinfo)</visible>
@@ -1387,6 +1392,7 @@
                         <include>LeftMenuButton</include>
                         <label>Twitter</label>
                         <onright>5091</onright>
+                        <onclick>Control.SetFocus(5091)</onclick>
                     </control>
                     <control type="button" id="505">
                         <visible>System.HasAddon(script.extendedinfo)</visible>
@@ -1396,6 +1402,7 @@
                         <include>LeftMenuButton</include>
                         <label>31971</label>
                         <onright>5051</onright>
+                        <onclick>Control.SetFocus(5051)</onclick>
                     </control>
                     <control type="button" id="506">
                         <visible>System.HasAddon(script.extendedinfo)</visible>
@@ -1404,6 +1411,7 @@
                         <include>LeftMenuButton</include>
                         <label>31942</label>
                         <onright>5061</onright>
+                        <onclick>Control.SetFocus(5061)</onclick>
                     </control>
                     <control type="button" id="507">
                         <visible>System.HasAddon(script.extendedinfo)</visible>
@@ -1413,6 +1421,7 @@
                         <include>LeftMenuButton</include>
                         <label>20389</label>
                         <onright>5071</onright>
+                        <onclick>Control.SetFocus(5071)</onclick>
                     </control>
                     <control type="button" id="508">
                         <visible>System.HasAddon(script.extendedinfo)</visible>
@@ -1422,6 +1431,7 @@
                         <include>LeftMenuButton</include>
                         <label>$ADDON[script.extendedinfo 32118]</label>
                         <onright>5081</onright>
+                        <onclick>Control.SetFocus(5081)</onclick>
                     </control>
                     <control type="button" id="6">
                         <description>Refresh</description>

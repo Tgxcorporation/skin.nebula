@@ -363,10 +363,7 @@
                     <include>LeftMenuButton</include>
                     <label>20037</label>
                     <onright>5001</onright>
-                </control>
-                <control type="button" id="12">
-                    <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[558]</label>
+                    <onclick>Control.SetFocus(5001)</onclick>
                 </control>
                 <control type="button" id="13">
                     <include>LeftMenuButton</include>
