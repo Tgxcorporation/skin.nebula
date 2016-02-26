@@ -2712,14 +2712,6 @@
                         <label>$LOCALIZE[20360]</label>
                         <onright>2000</onright>
                     </control>
-                    <control type="togglebutton" id="101">
-                        <visible>System.HasAddon(script.tvtunes)</visible>
-                        <description>Tv Tunes</description>
-                        <include>LeftMenuButton</include>
-                        <label>$LOCALIZE[31956]</label>
-                        <onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
-                        <onright>9009</onright>
-                    </control>
                 </control>
                 <include>LeftMenuScroller</include>
             </control>
