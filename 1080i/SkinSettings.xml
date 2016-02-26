@@ -1168,6 +1168,18 @@
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(Fixed_HomeMenu)</onclick>
                             </item>
+                            <item id="64">
+                                <visible>Skin.HasSetting(SingleRowSubMenu)</visible>
+                                <label>$LOCALIZE[31526]</label>
+                                <label2>$LOCALIZE[107]</label2>
+                                <onclick>Skin.ToggleSetting(SingleRowSubMenu)</onclick>
+                            </item>
+                            <item id="64">
+                                <visible>!Skin.HasSetting(SingleRowSubMenu)</visible>
+                                <label>$LOCALIZE[31526]</label>
+                                <label2>$LOCALIZE[106]</label2>
+                                <onclick>Skin.ToggleSetting(SingleRowSubMenu)</onclick>
+                            </item>
                             <item id="1">
                                 <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
                                 <label>$LOCALIZE[31967]</label>
