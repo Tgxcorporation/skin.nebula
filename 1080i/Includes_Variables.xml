@@ -799,6 +799,7 @@
     </variable>
     <variable name="VideoCdArt">
         <value condition="Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)+!IsEmpty(Window.Property(movie.DiscArt))">$INFO[Window.Property(movie.DiscArt)]</value>
+        <value condition="Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)+IsEmpty(Window.Property(movie.DiscArt))">$INFO[Window.Property(movie.Poster)]</value>
         <value condition="!IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
         <value>$INFO[ListItem.Art(poster)]</value>
     </variable>
