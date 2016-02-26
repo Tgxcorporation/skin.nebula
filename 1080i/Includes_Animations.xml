@@ -67,37 +67,37 @@
     <include name="CoverWrapFocusAnimationSquare">
         <effect type="zoom" start="100" end="106" time="100" center="auto"/>
         <effect type="zoom" start="100" end="94.339622641509" time="50" delay="100" center="auto"/>
-        <effect type="fade" start="40" end="100" time="100"/>
+        <!--<effect type="fade" start="40" end="100" time="100"/>-->
     </include>
     <include name="CoverWrapFocusAnimationPoster">
         <effect type="zoom" start="100" end="106" time="100" center="auto"/>
         <effect type="zoom" start="100" end="94.339622641509" time="50" delay="100" center="auto"/>
-        <effect type="fade" start="40" end="100" time="100"/>
+        <!--<effect type="fade" start="40" end="100" time="100"/>-->
     </include>
     <include name="CoverWrapFocusAnimationEpisode">
         <effect type="zoom" start="100" end="106" time="100" center="auto"/>
         <effect type="zoom" start="100" end="94.339622641509" time="50" delay="100" center="auto"/>
-        <effect type="fade" start="40" end="100" time="100"/>
+        <!--<effect type="fade" start="40" end="100" time="100"/>-->
     </include>
     <include name="ButtonFocusAnimation">
         <animation type="Focus" reversible="false">
             <effect type="zoom" start="100" end="108" time="100" center="auto"/>
             <effect type="zoom" start="100" end="92.592592592593" time="50" delay="100" center="auto"/>
-            <effect type="fade" start="10" end="100" time="100"/>
+            <!--<effect type="fade" start="10" end="100" time="100"/>-->
         </animation>
     </include>
     <include name="ButtonWideFocusAnimation">
         <animation type="Focus" reversible="false">
             <effect type="zoom" start="100,100" end="103,108" time="100" center="auto"/>
             <effect type="zoom" start="100,100" end="97.087378640777,92.592592592593" time="50" delay="100" center="auto"/>
-            <effect type="fade" start="10" end="100" time="100"/>
+            <!--<effect type="fade" start="10" end="100" time="100"/>-->
         </animation>
     </include>
     <include name="ListFocusAnimation">
         <animation type="Focus" reversible="false">
             <effect type="zoom" start="100,100" end="100,103" time="100" center="auto"/>
             <effect type="zoom" start="100,100" end="100,97.087378640777" time="50" delay="100" center="auto"/>
-            <effect type="fade" start="10" end="100" time="100"/>
+            <!--<effect type="fade" start="10" end="100" time="100"/>-->
         </animation>
     </include>
     <include name="NowPlayingVisibleFadeEffect">
