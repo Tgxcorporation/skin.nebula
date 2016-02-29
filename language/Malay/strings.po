@@ -45,8 +45,8 @@ msgid "Shared"
 msgstr "Dikongsi"
 
 msgctxt "#31007"
-msgid "PleXBMC settings"
-msgstr "Tetapan PleXBMC"
+msgid "PleKodi settings"
+msgstr "Tetapan PleKodi"
 
 msgctxt "#31008"
 msgid "Go Plex"
@@ -197,8 +197,8 @@ msgid "Enable Clear Logo"
 msgstr "Benarkan Logo Kosong"
 
 msgctxt "#31045"
-msgid "Customize PleXBMC menu items"
-msgstr "Suaikan item menu PleXBMC"
+msgid "Customize PleKodi menu items"
+msgstr "Suaikan item menu PleKodi"
 
 msgctxt "#31048"
 msgid "Visualization Presets"
@@ -519,6 +519,10 @@ msgstr "Ramalan Harian"
 msgctxt "#31910"
 msgid "Maps"
 msgstr "Peta"
+
+msgctxt "#31939"
+msgid "Enable text alignment of plots"
+msgstr "Benarkan jajaran teks bagi plot"
 
 msgctxt "#31940"
 msgid "Disable OSD in paused video playback"
