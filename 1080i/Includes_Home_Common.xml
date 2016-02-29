@@ -896,7 +896,7 @@
                 <onup condition="control.isvisible(901)">SetFocus(901)</onup>
             </item>
             <!--RECOMMENDED-->
-            <item type="button" id="703">
+            <item id="703">
                 <visible>[control.isvisible(312)+IntegerGreaterThan(Container(312).NumItems,0)]|
                     [control.isvisible(412)+IntegerGreaterThan(Container(412).NumItems,0)]</visible>
                 <include>VisibleFadeEffect</include>
@@ -907,7 +907,7 @@
                 <onup condition="control.isvisible(412)">SetFocus(412)</onup>
             </item>
             <!--CUSTOM WIDGETS-->
-            <item type="button" id="7001">
+            <item id="7001">
                 <visible>!IsEmpty(Container(300).ListItem.Property(widgetName))</visible>
                 <visible>IntegerGreaterThan(Container(700011).NumItems,0)|IntegerGreaterThan(Container(700012).NumItems,0)|IntegerGreaterThan(Container(700013).NumItems,0)|IntegerGreaterThan(Container(700014).NumItems,0)|IntegerGreaterThan(Container(700015).NumItems,0)</visible>
                 <include>VisibleFadeEffect</include>
@@ -923,7 +923,7 @@
                 <onclick condition="control.isvisible(700015)">SetFocus(700015)</onclick>
                 <onup condition="control.isvisible(700015)">SetFocus(700015)</onup>
             </item>
-            <item type="button" id="7002">
+            <item id="7002">
                 <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.1))</visible>
                 <visible>IntegerGreaterThan(Container(700021).NumItems,0)|IntegerGreaterThan(Container(700022).NumItems,0)|IntegerGreaterThan(Container(700023).NumItems,0)|IntegerGreaterThan(Container(700024).NumItems,0)|IntegerGreaterThan(Container(700025).NumItems,0)</visible>
                 <include>VisibleFadeEffect</include>
@@ -939,7 +939,7 @@
                 <onclick condition="control.isvisible(700025)">SetFocus(700025)</onclick>
                 <onup condition="control.isvisible(700025)">SetFocus(700025)</onup>
             </item>
-            <item type="button" id="7003">
+            <item id="7003">
                 <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.2))</visible>
                 <visible>IntegerGreaterThan(Container(700031).NumItems,0)|IntegerGreaterThan(Container(700032).NumItems,0)|IntegerGreaterThan(Container(700033).NumItems,0)|IntegerGreaterThan(Container(700034).NumItems,0)|IntegerGreaterThan(Container(700035).NumItems,0)</visible>
                 <include>VisibleFadeEffect</include>
@@ -955,7 +955,7 @@
                 <onclick condition="control.isvisible(700035)">SetFocus(700035)</onclick>
                 <onup condition="control.isvisible(700035)">SetFocus(700035)</onup>
             </item>
-            <item type="button" id="7004">
+            <item id="7004">
                 <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.3))</visible>
                 <visible>IntegerGreaterThan(Container(700041).NumItems,0)|IntegerGreaterThan(Container(700042).NumItems,0)|IntegerGreaterThan(Container(700043).NumItems,0)|IntegerGreaterThan(Container(700044).NumItems,0)|IntegerGreaterThan(Container(700045).NumItems,0)</visible>
                 <include>VisibleFadeEffect</include>
@@ -971,7 +971,7 @@
                 <onclick condition="control.isvisible(700045)">SetFocus(700045)</onclick>
                 <onup condition="control.isvisible(700045)">SetFocus(700045)</onup>
             </item>
-            <item type="button" id="7005">
+            <item id="7005">
                 <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.4))</visible>
                 <visible>IntegerGreaterThan(Container(700051).NumItems,0)|IntegerGreaterThan(Container(700052).NumItems,0)|IntegerGreaterThan(Container(700053).NumItems,0)|IntegerGreaterThan(Container(700054).NumItems,0)|IntegerGreaterThan(Container(700055).NumItems,0)</visible>
                 <include>VisibleFadeEffect</include>
