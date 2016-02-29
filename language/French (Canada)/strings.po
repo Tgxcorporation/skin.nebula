@@ -45,8 +45,8 @@ msgid "Shared"
 msgstr "Partagé"
 
 msgctxt "#31007"
-msgid "PleXBMC settings"
-msgstr "Paramètres de PleXBMC"
+msgid "PleKodi settings"
+msgstr "Paramètres de PleKodi"
 
 msgctxt "#31008"
 msgid "Go Plex"
@@ -197,8 +197,8 @@ msgid "Enable Clear Logo"
 msgstr "Activer les logos clairs"
 
 msgctxt "#31045"
-msgid "Customize PleXBMC menu items"
-msgstr "Personnaliser les éléments du menu PleXBMC"
+msgid "Customize PleKodi menu items"
+msgstr "Personnaliser les éléments du menu PleKodi"
 
 msgctxt "#31048"
 msgid "Visualization Presets"
@@ -330,7 +330,7 @@ msgstr "Multi-images"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
-msgstr "Addiciel de paroles"
+msgstr "Addiciel des paroles"
 
 msgctxt "#31133"
 msgid "Subtitle Add-on"
@@ -519,6 +519,10 @@ msgstr "Prévisions quotidiennes"
 msgctxt "#31910"
 msgid "Maps"
 msgstr "Cartes"
+
+msgctxt "#31939"
+msgid "Enable text alignment of plots"
+msgstr "Activer l'alignement du texte des intrigues"
 
 msgctxt "#31940"
 msgid "Disable OSD in paused video playback"

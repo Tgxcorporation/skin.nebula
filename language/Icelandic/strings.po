@@ -45,8 +45,8 @@ msgid "Shared"
 msgstr "Deilt"
 
 msgctxt "#31007"
-msgid "PleXBMC settings"
-msgstr "PleXBMC stillingar"
+msgid "PleKodi settings"
+msgstr "PleKodi stillingar"
 
 msgctxt "#31010"
 msgid "Queue"
@@ -75,6 +75,10 @@ msgstr "Upplýsingar"
 msgctxt "#31025"
 msgid "Items"
 msgstr "Hlutir"
+
+msgctxt "#31032"
+msgid "Startup"
+msgstr "Ræsing"
 
 msgctxt "#31048"
 msgid "Visualization Presets"

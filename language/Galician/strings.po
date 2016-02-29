@@ -45,8 +45,8 @@ msgid "Shared"
 msgstr "Compartido"
 
 msgctxt "#31007"
-msgid "PleXBMC settings"
-msgstr "Configuración do PleXBMC"
+msgid "PleKodi settings"
+msgstr "Configuración do PleKodi"
 
 msgctxt "#31008"
 msgid "Go Plex"
@@ -107,6 +107,10 @@ msgstr "Filmes Semellantes"
 msgctxt "#31025"
 msgid "Items"
 msgstr "Elementos"
+
+msgctxt "#31026"
+msgid "Enable manual scrolling for plot & review"
+msgstr "Activar desprazamento manual para a sinopse e a reportaxe"
 
 msgctxt "#31027"
 msgid "Show Plot"
