@@ -357,34 +357,6 @@
                                         <texture background="true">$INFO[ListItem.Icon]</texture>
                                         <include>ThumbBorder</include>
                                     </control>
-                                    <control type="progress">
-                                        <include>ConditionWhite</include>
-                                        <posx>TextMargin</posx>
-                                        <posy>346</posy>
-                                        <height>54</height>
-                                        <width>335</width>
-                                        <texturebg border="14,20,14,20">white/buttons/Scrollbar_Horizontal_bg.png</texturebg>
-                                        <!-- <reveal>true</reveal> -->
-                                        <lefttexture>-</lefttexture>
-                                        <midtexture border="14,20,14,20">white/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
-                                        <righttexture>-</righttexture>
-                                        <overlaytexture>-</overlaytexture>
-                                        <info>ListItem.Progress</info>
-                                    </control>
-                                    <control type="progress">
-                                        <include>ConditionBlack</include>
-                                        <posx>TextMargin</posx>
-                                        <posy>346</posy>
-                                        <height>54</height>
-                                        <width>335</width>
-                                        <texturebg border="14,20,14,20">black/buttons/Scrollbar_Horizontal_bg.png</texturebg>
-                                        <!-- <reveal>true</reveal> -->
-                                        <lefttexture>-</lefttexture>
-                                        <midtexture border="14,20,14,20">black/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
-                                        <righttexture>-</righttexture>
-                                        <overlaytexture>-</overlaytexture>
-                                        <info>ListItem.Progress</info>
-                                    </control>
                                     <control type="label">
                                         <posx>475</posx>
                                         <posy>25</posy>
@@ -404,6 +376,19 @@
                                         <height>1</height>
                                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                                     </control>
+                                    <include name="ProgressBar">
+                                        <param name="id" value="0"/>
+                                        <param name="visible" value="true"/>
+                                        <param name="x" value="475"/>
+                                        <param name="y" value="95"/>
+                                        <param name="width" value="1250"/>
+                                        <param name="height" value="3"/>
+                                        <param name="texturebg" value="OSD/osd_progress_mini_empty.png"/>
+                                        <param name="gfx" value="OSD/osd_progress_mini_mid.png"/>
+                                        <param name="border" value="0,0,0,0"/>
+                                        <param name="borderbg" value="0,0,0,0"/>
+                                        <param name="info" value="ListItem.Progress"/>
+                                    </include>
                                     <control type="group">
                                         <posx>415</posx>
                                         <posy>45</posy>
