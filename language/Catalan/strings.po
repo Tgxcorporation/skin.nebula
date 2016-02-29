@@ -45,8 +45,8 @@ msgid "Shared"
 msgstr "Compartit"
 
 msgctxt "#31007"
-msgid "PleKodi settings"
-msgstr "Ajusts del PleKodi"
+msgid "PleXBMC settings"
+msgstr "Ajusts del PleXBMC"
 
 msgctxt "#31008"
 msgid "Go Plex"

@@ -145,8 +145,8 @@ msgid "Enable Clear Art"
 msgstr "Включи изчистените изображения"
 
 msgctxt "#31045"
-msgid "Customize PleKodi menu items"
-msgstr "Персонализирайте елементите на менюто на PleKodi "
+msgid "Customize PleXBMC menu items"
+msgstr "Персонализирайте елементите на менюто на PleXBMC "
 
 msgctxt "#31048"
 msgid "Visualization Presets"
