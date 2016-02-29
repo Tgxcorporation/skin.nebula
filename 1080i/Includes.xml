@@ -1617,7 +1617,6 @@
         <control type="progress" id="$PARAM[id]">
             <include>ConditionWhite</include>
             <visible>$PARAM[visible]</visible>
-            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <posx>$PARAM[x]</posx>
             <posy>$PARAM[y]</posy>
             <height>$PARAM[height]</height>
@@ -1632,7 +1631,6 @@
         <control type="progress" id="$PARAM[id]">
             <include>ConditionBlack</include>
             <visible>$PARAM[visible]</visible>
-            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <posx>$PARAM[x]</posx>
             <posy>$PARAM[y]</posy>
             <height>$PARAM[height]</height>
