@@ -1401,6 +1401,8 @@
         <control type="group">
             <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="[Control.HasFocus(9000)|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
             <include>LeftMenu</include>
+            <include>FacadeFadeDialogs</include>
+            <include>Icon_Fade</include>
             <control type="list" id="9000">
                 <include>LeftMenuButtonGroup</include>
                 <onright>9110</onright>
