@@ -113,38 +113,6 @@
                     <include>PosterThumbBig</include>
                     <include>ThumbBorder</include>
                 </control>
-                <control type="progress">
-                    <animation effect="rotate" time="0" end="90" center="auto" condition="true">conditional</animation>
-                    <visible>Window.IsActive(MyPVRChannels.xml)</visible>
-                    <include>ConditionWhite</include>
-                    <posx>355</posx>
-                    <posy>65</posy>
-                    <height>54</height>
-                    <width>140</width>
-                    <texturebg border="14,20,14,20">white/buttons/Scrollbar_Horizontal_bg.png</texturebg>
-                    <!-- <reveal>true</reveal> -->
-                    <lefttexture>-</lefttexture>
-                    <midtexture border="14,20,14,20">white/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
-                    <righttexture>-</righttexture>
-                    <overlaytexture>-</overlaytexture>
-                    <info>ListItem.Progress</info>
-                </control>
-                <control type="progress">
-                    <animation effect="rotate" time="0" end="90" center="auto" condition="true">conditional</animation>
-                    <visible>Window.IsActive(MyPVRChannels.xml)</visible>
-                    <include>ConditionBlack</include>
-                    <posx>355</posx>
-                    <posy>65</posy>
-                    <height>54</height>
-                    <width>140</width>
-                    <texturebg border="14,20,14,20">black/buttons/Scrollbar_Horizontal_bg.png</texturebg>
-                    <!-- <reveal>true</reveal> -->
-                    <lefttexture>-</lefttexture>
-                    <midtexture border="14,20,14,20">black/buttons/Scrollbar_Horizontal_Focus.png</midtexture>
-                    <righttexture>-</righttexture>
-                    <overlaytexture>-</overlaytexture>
-                    <info>ListItem.Progress</info>
-                </control>
                 <control type="group">
                     <animation effect="zoom" time="0" end="170" center="227,90" condition="[Container.Row(0)|Container.Row(1)|Container.Row(2)|Container.Row(3)|Container.Row(4)|Container.Row(5)|Container.Row(6)]">conditional</animation>
                     <animation effect="slide" time="0" start="0,0" end="0,35" condition="[Container.Row(0)]">conditional</animation>
@@ -206,6 +174,32 @@
                     <height>1</height>
                     <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                 </control>
+                <include name="ProgressBar">
+                    <param name="id" value="0"/>
+                    <param name="visible" value="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)"/>
+                    <param name="x" value="455"/>
+                    <param name="y" value="63"/>
+                    <param name="width" value="1345"/>
+                    <param name="height" value="3"/>
+                    <param name="texturebg" value="OSD/osd_progress_mini_empty.png"/>
+                    <param name="gfx" value="OSD/osd_progress_mini_mid.png"/>
+                    <param name="border" value="0,0,0,0"/>
+                    <param name="borderbg" value="0,0,0,0"/>
+                    <param name="info" value="ListItem.Progress"/>
+                </include>
+                <include name="ProgressBar">
+                    <param name="id" value="0"/>
+                    <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
+                    <param name="x" value="455"/>
+                    <param name="y" value="63"/>
+                    <param name="width" value="1345"/>
+                    <param name="height" value="3"/>
+                    <param name="texturebg" value="OSD/osd_progress_mini_empty.png"/>
+                    <param name="gfx" value="OSD/osd_progress_mini_mid.png"/>
+                    <param name="border" value="0,0,0,0"/>
+                    <param name="borderbg" value="0,0,0,0"/>
+                    <param name="info" value="ListItem.PercentPlayed"/>
+                </include>
                 <control type="group">
                     <visible>IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                     <visible>!Container.Content(Addons)</visible>
