@@ -45,8 +45,8 @@ msgid "Shared"
 msgstr "משותף"
 
 msgctxt "#31007"
-msgid "PleKodi settings"
-msgstr "הגדרות PleKodi"
+msgid "PleXBMC settings"
+msgstr "הגדרות PleXBMC"
 
 msgctxt "#31008"
 msgid "Go Plex"
@@ -197,7 +197,7 @@ msgid "Enable Clear Logo"
 msgstr "הפעל Clear Logo"
 
 msgctxt "#31045"
-msgid "Customize PleKodi menu items"
+msgid "Customize PleXBMC menu items"
 msgstr "ערוך תפריט PieKodi"
 
 msgctxt "#31048"

@@ -45,8 +45,8 @@ msgid "Shared"
 msgstr "Delt"
 
 msgctxt "#31007"
-msgid "PleKodi settings"
-msgstr "PleKodi indstillinger"
+msgid "PleXBMC settings"
+msgstr "PleXBMC indstillinger"
 
 msgctxt "#31008"
 msgid "Go Plex"
