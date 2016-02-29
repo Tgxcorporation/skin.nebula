@@ -220,19 +220,6 @@
                     </control>
                     <include name="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="true"/>
-                        <param name="x" value="TextMargin"/>
-                        <param name="y" value="69"/>
-                        <param name="width" value="1260"/>
-                        <param name="height" value="3"/>
-                        <param name="texturebg" value="OSD/osd_progress_mini_empty.png"/>
-                        <param name="gfx" value="OSD/osd_progress_mini_mid.png"/>
-                        <param name="border" value="0,0,0,0"/>
-                        <param name="borderbg" value="0,0,0,0"/>
-                        <param name="info" value="Container($PARAM[id]).ListItem.Progress"/>
-                    </include>
-                    <include name="ProgressBar">
-                        <param name="id" value="0"/>
                         <param name="visible" value="IntegerGreaterThan(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>
                         <param name="y" value="69"/>
@@ -409,19 +396,6 @@
                         <height>1</height>
                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
-                    <include name="ProgressBar">
-                        <param name="id" value="0"/>
-                        <param name="visible" value="true"/>
-                        <param name="x" value="TextMargin"/>
-                        <param name="y" value="69"/>
-                        <param name="width" value="1800"/>
-                        <param name="height" value="3"/>
-                        <param name="texturebg" value="OSD/osd_progress_mini_empty.png"/>
-                        <param name="gfx" value="OSD/osd_progress_mini_mid.png"/>
-                        <param name="border" value="0,0,0,0"/>
-                        <param name="borderbg" value="0,0,0,0"/>
-                        <param name="info" value="Container($PARAM[id]).ListItem.Progress"/>
-                    </include>
                     <include name="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="IntegerGreaterThan(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
@@ -635,19 +609,6 @@
                         <height>1</height>
                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
-                    <include name="ProgressBar">
-                        <param name="id" value="0"/>
-                        <param name="visible" value="true"/>
-                        <param name="x" value="TextMargin"/>
-                        <param name="y" value="69"/>
-                        <param name="width" value="1800"/>
-                        <param name="height" value="3"/>
-                        <param name="texturebg" value="OSD/osd_progress_mini_empty.png"/>
-                        <param name="gfx" value="OSD/osd_progress_mini_mid.png"/>
-                        <param name="border" value="0,0,0,0"/>
-                        <param name="borderbg" value="0,0,0,0"/>
-                        <param name="info" value="Container($PARAM[id]).ListItem.Progress"/>
-                    </include>
                     <include name="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="IntegerGreaterThan(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
