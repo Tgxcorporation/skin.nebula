@@ -1379,7 +1379,7 @@
                     </control>
                 </control>
                 <include name="StudioArt">
-                    <param name="x" value="1210"/>
+                    <param name="x" value="1235"/>
                     <param name="y" value="490"/>
                     <param name="width" value="300"/>
                     <param name="height" value="140"/>
@@ -1399,7 +1399,7 @@
                     <posy>642</posy>
                     <!-- CDART VIDEO -->
                     <include name="DiscArt">
-                        <param name="visible" value="!IsEmpty(VideoPlayer.Cover)+!VideoPlayer.Content(LiveTV)"/>
+                        <param name="visible" value="!IsEmpty(VideoPlayer.Cover)+!VideoPlayer.Content(LiveTV)+!VideoPlayer.Content(episodes)"/>
                         <param name="x" value="122"/>
                         <param name="y" value="-70"/>
                         <param name="width" value="211"/>
