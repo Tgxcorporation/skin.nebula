@@ -839,11 +839,6 @@
         <value condition="Skin.HasSetting(EnableClearLogo) + VideoPlayer.Content(episodes)+!IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearlogo)]</value>
         <value condition="Skin.HasSetting(EnableClearLogo)">$INFO[Player.Art(clearlogo)]</value>
     </variable>
-    <variable name="ContentType">
-        <value condition="Container.Content(artists)">artists</value>
-        <value condition="Container.Content(albums)">albums</value>
-        <value condition="Container.Content(songs)">songs</value>
-    </variable>
     <variable name="VideoCdArt">
         <value condition="Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)+!IsEmpty(Window.Property(movie.DiscArt))">$INFO[Window.Property(movie.DiscArt)]</value>
         <value condition="Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)+IsEmpty(Window.Property(movie.DiscArt))">$INFO[Window.Property(movie.Poster)]</value>
@@ -851,7 +846,7 @@
         <value>$INFO[ListItem.Art(poster)]</value>
     </variable>
     <variable name="MusicCdArt">
-        <value condition="!Skin.HasSetting(plexbmc)+!StringCompare(ListItem.Label,..)+Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;dbid=$INFO[Listitem.DBID]&amp;type=discart&amp;contenttype=$VAR[ContentType]&amp;fallback=$INFO[ListItem.Thumb]</value>
+        <value condition="!Skin.HasSetting(plexbmc)+!StringCompare(ListItem.Label,..)+Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=$INFO[ListItem.Thumb]</value>
     </variable>
     <variable name="VideoPlayerCdArt">
         <value condition="!IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
