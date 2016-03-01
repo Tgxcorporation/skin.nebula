@@ -176,11 +176,11 @@
                 </control>
                 <include name="ProgressBar">
                     <param name="id" value="0"/>
-                    <param name="visible" value="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)"/>
+                    <param name="visible" value="IntegerGreaterThan(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
                     <param name="x" value="455"/>
                     <param name="y" value="63"/>
                     <param name="width" value="1345"/>
-                    <param name="height" value="3"/>
+                    <param name="height" value="2"/>
                     <param name="texturebg" value="OSD/osd_progress_mini_empty.png"/>
                     <param name="gfx" value="OSD/osd_progress_mini_mid.png"/>
                     <param name="border" value="0,0,0,0"/>
@@ -193,7 +193,7 @@
                     <param name="x" value="455"/>
                     <param name="y" value="63"/>
                     <param name="width" value="1345"/>
-                    <param name="height" value="3"/>
+                    <param name="height" value="2"/>
                     <param name="texturebg" value="OSD/osd_progress_mini_empty.png"/>
                     <param name="gfx" value="OSD/osd_progress_mini_mid.png"/>
                     <param name="border" value="0,0,0,0"/>
