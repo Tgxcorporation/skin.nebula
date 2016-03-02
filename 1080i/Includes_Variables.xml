@@ -160,7 +160,7 @@
         <value condition="StringCompare(Container(300).ListItem.Property(defaultID),livetv)">$ADDON[script.skinshortcuts 32022]$INFO[Pvr.BackendName,  -  ]$INFO[Window(Home).Property(SkinHelper.TotalTVChannels),  -  , $LOCALIZE[19023]]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(defaultID),radio)">$ADDON[script.skinshortcuts 32087]$INFO[Pvr.BackendName,  -  ]$INFO[Window(Home).Property(SkinHelper.TotalRadioChannels),  -  , $LOCALIZE[19024]]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(defaultID),favourites)">$INFO[Window(Home).Property(favourite.count),, $LOCALIZE[1036]]</value>
-        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),$LOCALIZE[24001])">$INFO[Window(Home).Property(RandomAddon.Count),, $LOCALIZE[20161] $LOCALIZE[24001]]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),$LOCALIZE[24001])">$INFO[Window(Home).Property(SkinHelper.TotalAddons),, $LOCALIZE[20161] $LOCALIZE[24001]]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(defaultID),$LOCALIZE[1114])">$LOCALIZE[12390]: $INFO[System.Uptime]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(defaultID),settings)">$INFO[System.memory(used.percent),$LOCALIZE[31309] ]$INFO[System.CPUUsage,  -  $LOCALIZE[13271] ]</value>
         <value condition="Stringcompare(Container(300).ListItem.Property(defaultID),weather)">$INFO[Window(Weather).Property(Location),,  -  ]$INFO[Window(Weather).Property(Current.Condition),,  -  ]$INFO[Window(Weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</value>
