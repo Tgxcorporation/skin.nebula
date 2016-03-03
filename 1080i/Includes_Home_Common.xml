@@ -1144,7 +1144,7 @@
                 <param name="id" value="700012"/>
                 <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
                 <param name="labelTitle" value="$INFO[Container(700012).ListItem.TVShowTitle,, - ]$INFO[Container(700012).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700012).ListItem.Year]$INFO[Container(700012).ListItem.Duration,       , $LOCALIZE[31297]]$INFO[Container(700012).ListItem.MPAA,       ]"/>
+                <param name="labelRow1" value="$INFO[Container(700012).ListItem.Year,,       ]$INFO[Container(700012).ListItem.Duration,, $LOCALIZE[31297]]$INFO[Container(700012).ListItem.MPAA,       ]"/>
                 <param name="labelRow2" value="$INFO[Container(700012).ListItem.Artist,,       ]$INFO[Container(700012).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700012).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700012).ListItem.Plot]"/>
@@ -1220,7 +1220,7 @@
                 <param name="id" value="700022"/>
                 <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.1),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.1),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
                 <param name="labelTitle" value="$INFO[Container(700022).ListItem.TVShowTitle,, - ]$INFO[Container(700022).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700022).ListItem.Year]$INFO[Container(700022).ListItem.Duration,       , $LOCALIZE[31297]]$INFO[Container(700022).ListItem.MPAA,       ]"/>
+                <param name="labelRow1" value="$INFO[Container(700022).ListItem.Year,,       ]$INFO[Container(700022).ListItem.Duration,, $LOCALIZE[31297]]$INFO[Container(700022).ListItem.MPAA,       ]"/>
                 <param name="labelRow2" value="$INFO[Container(700022).ListItem.Artist,,       ]$INFO[Container(700022).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700022).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700022).ListItem.Plot]"/>
@@ -1296,7 +1296,7 @@
                 <param name="id" value="700032"/>
                 <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.2),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.2),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
                 <param name="labelTitle" value="$INFO[Container(700032).ListItem.TVShowTitle,, - ]$INFO[Container(700032).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700032).ListItem.Year]$INFO[Container(700032).ListItem.Duration,       , $LOCALIZE[31297]]$INFO[Container(700032).ListItem.MPAA,       ]"/>
+                <param name="labelRow1" value="$INFO[Container(700032).ListItem.Year,,       ]$INFO[Container(700032).ListItem.Duration,, $LOCALIZE[31297]]$INFO[Container(700032).ListItem.MPAA,       ]"/>
                 <param name="labelRow2" value="$INFO[Container(700032).ListItem.Artist,,       ]$INFO[Container(700032).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700032).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700032).ListItem.Plot]"/>
@@ -1372,7 +1372,7 @@
                 <param name="id" value="700042"/>
                 <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.3),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.3),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
                 <param name="labelTitle" value="$INFO[Container(700042).ListItem.TVShowTitle,, - ]$INFO[Container(700042).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700042).ListItem.Year]$INFO[Container(700042).ListItem.Duration,       , $LOCALIZE[31297]]$INFO[Container(700042).ListItem.MPAA,       ]"/>
+                <param name="labelRow1" value="$INFO[Container(700042).ListItem.Year,,       ]$INFO[Container(700042).ListItem.Duration,, $LOCALIZE[31297]]$INFO[Container(700042).ListItem.MPAA,       ]"/>
                 <param name="labelRow2" value="$INFO[Container(700042).ListItem.Artist,,       ]$INFO[Container(700042).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700042).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700042).ListItem.Plot]"/>
@@ -1448,7 +1448,7 @@
                 <param name="id" value="700052"/>
                 <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.4),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.4),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
                 <param name="labelTitle" value="$INFO[Container(700052).ListItem.TVShowTitle,, - ]$INFO[Container(700052).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700052).ListItem.Year]$INFO[Container(700052).ListItem.Duration,       , $LOCALIZE[31297]]$INFO[Container(700052).ListItem.MPAA,       ]"/>
+                <param name="labelRow1" value="$INFO[Container(700052).ListItem.Year,,       ]$INFO[Container(700052).ListItem.Duration,, $LOCALIZE[31297]]$INFO[Container(700052).ListItem.MPAA,       ]"/>
                 <param name="labelRow2" value="$INFO[Container(700052).ListItem.Artist,,       ]$INFO[Container(700052).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700052).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700052).ListItem.Plot]"/>
