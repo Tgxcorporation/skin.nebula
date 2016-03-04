@@ -23,7 +23,6 @@
                 <param name="labelRow1" value="$PARAM[labelRow1]"/>
                 <param name="labelRow2" value="$PARAM[labelRow2]"/>
                 <param name="labelPlot" value="$PARAM[labelPlot]"/>
-                <param name="icon" value="$PARAM[icon]"/>
                 <param name="visibilitylabelRating" value="$PARAM[visibilitylabelRating]"/>
             </include>
         </control>
@@ -37,6 +36,7 @@
                 <onright>$PARAM[id]</onright>
                 <onup>9900</onup>
                 <ondown>701</ondown>
+                <onleft condition="Skin.HasSetting(VerticalHome)">701</onleft>
                 <onleft>$PARAM[id]</onleft>
                 <include name="Widget_$PARAM[gfxType]">
                     <param name="id" value="$PARAM[id]"/>
@@ -50,7 +50,6 @@
                 <param name="labelRow1" value="$PARAM[labelRow1]"/>
                 <param name="labelRow2" value="$PARAM[labelRow2]"/>
                 <param name="labelPlot" value="$PARAM[labelPlot]"/>
-                <param name="icon" value="$PARAM[icon]"/>
                 <param name="visibilitylabelRating" value="$PARAM[visibilitylabelRating]"/>
             </include>
         </control>
@@ -109,29 +108,34 @@
             <visible>Control.IsVisible($PARAM[id])</visible>
             <control type="group">
                 <control type="image">
-                    <include>ConditionWhite</include>
+                    <visible>!control.isvisible(378434)</visible>
                     <animation type="Conditional" reversible="false" condition="control.HasFocus($PARAM[id])">
                         <include>CoverWrapFocusAnimationSquare</include>
+                    </animation>
+                    <animation type="Conditional" reversible="false" condition="!control.HasFocus($PARAM[id])">
+                        <include>WidgetFocusAnimationFade</include>
                     </animation>
                     <posx>25</posx>
                     <posy>158</posy>
                     <width>520</width>
                     <height>693</height>
                     <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="white/defaultVideoBig.png">$PARAM[icon]</texture>
+                    <texture background="true">$VAR[Theme.Color]/defaultVideoBig.png</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="image">
-                    <include>ConditionBlack</include>
                     <animation type="Conditional" reversible="false" condition="control.HasFocus($PARAM[id])">
                         <include>CoverWrapFocusAnimationSquare</include>
+                    </animation>
+                    <animation type="Conditional" reversible="false" condition="!control.HasFocus($PARAM[id])">
+                        <include>WidgetFocusAnimationFade</include>
                     </animation>
                     <posx>25</posx>
                     <posy>158</posy>
                     <width>520</width>
                     <height>693</height>
                     <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="black/defaultVideoBig.png">$PARAM[icon]</texture>
+                    <texture background="true">$VAR[WidgetIcon]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -301,11 +305,23 @@
         <preloaditems>4</preloaditems>
         <itemlayout height="425" width="265">
             <control type="image">
+                <include>ConditionWhite</include>
                 <posx>-25</posx>
                 <posy>87</posy>
                 <width>295</width>
                 <height>295</height>
-                <include>SquareThumb</include>
+                <texture background="true" fallback="white/defaultIconBig.png">$VAR[Thumbs]</texture>
+                <aspectratio>keep</aspectratio>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <include>ConditionBlack</include>
+                <posx>-25</posx>
+                <posy>87</posy>
+                <width>295</width>
+                <height>295</height>
+                <texture background="true" fallback="black/defaultIconBig.png">$VAR[Thumbs]</texture>
+                <aspectratio>keep</aspectratio>
                 <include>ThumbBorder</include>
             </control>
         </itemlayout>
@@ -331,29 +347,34 @@
             <visible>Control.IsVisible($PARAM[id])</visible>
             <control type="group">
                 <control type="image">
-                    <include>ConditionWhite</include>
+                    <visible>!control.isvisible(378434)</visible>
                     <animation type="Conditional" reversible="false" condition="control.HasFocus($PARAM[id])">
                         <include>CoverWrapFocusAnimationSquare</include>
+                    </animation>
+                    <animation type="Conditional" reversible="false" condition="!control.HasFocus($PARAM[id])">
+                        <include>WidgetFocusAnimationFade</include>
                     </animation>
                     <posx>25</posx>
                     <posy>158</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="white/defaultVideoBig.png">$PARAM[icon]</texture>
+                    <texture background="true">$VAR[Theme.Color]/defaultIconBig.png</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="image">
-                    <include>ConditionBlack</include>
                     <animation type="Conditional" reversible="false" condition="control.HasFocus($PARAM[id])">
                         <include>CoverWrapFocusAnimationSquare</include>
+                    </animation>
+                    <animation type="Conditional" reversible="false" condition="!control.HasFocus($PARAM[id])">
+                        <include>WidgetFocusAnimationFade</include>
                     </animation>
                     <posx>25</posx>
                     <posy>158</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="black/defaultVideoBig.png">$PARAM[icon]</texture>
+                    <texture background="true">$VAR[WidgetIcon]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -478,13 +499,23 @@
         <orientation>horizontal</orientation>
         <itemlayout height="425" width="450">
             <control type="image">
-                <visible>!StringCompare(ListItem.Label,..)</visible>
+                <include>ConditionWhite</include>
                 <posx>-25</posx>
                 <posy>87</posy>
                 <width>470</width>
                 <height>295</height>
+                <texture background="true" fallback="white/defaultVideoBig.png">$VAR[Thumbs]</texture>
                 <aspectratio>keep</aspectratio>
-                <include>EpisodeThumb</include>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <include>ConditionBlack</include>
+                <posx>-25</posx>
+                <posy>87</posy>
+                <width>470</width>
+                <height>295</height>
+                <texture background="true" fallback="black/defaultVideoBig.png">$VAR[Thumbs]</texture>
+                <aspectratio>keep</aspectratio>
                 <include>ThumbBorder</include>
             </control>
         </itemlayout>
@@ -510,29 +541,34 @@
             <visible>Control.IsVisible($PARAM[id])</visible>
             <control type="group">
                 <control type="image">
-                    <include>ConditionWhite</include>
+                    <visible>!control.isvisible(378434)</visible>
                     <animation type="Conditional" reversible="false" condition="control.HasFocus($PARAM[id])">
                         <include>CoverWrapFocusAnimationSquare</include>
+                    </animation>
+                    <animation type="Conditional" reversible="false" condition="!control.HasFocus($PARAM[id])">
+                        <include>WidgetFocusAnimationFade</include>
                     </animation>
                     <posx>25</posx>
                     <posy>158</posy>
                     <width>870</width>
                     <height>520</height>
                     <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="white/defaultVideoBig.png">$PARAM[icon]</texture>
+                    <texture background="true">$VAR[Theme.Color]/defaultVideoBig.png</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="image">
-                    <include>ConditionBlack</include>
                     <animation type="Conditional" reversible="false" condition="control.HasFocus($PARAM[id])">
                         <include>CoverWrapFocusAnimationSquare</include>
+                    </animation>
+                    <animation type="Conditional" reversible="false" condition="!control.HasFocus($PARAM[id])">
+                        <include>WidgetFocusAnimationFade</include>
                     </animation>
                     <posx>25</posx>
                     <posy>158</posy>
                     <width>870</width>
                     <height>520</height>
                     <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="black/defaultVideoBig.png">$PARAM[icon]</texture>
+                    <texture background="true">$VAR[WidgetIcon]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -692,11 +728,23 @@
         <preloaditems>4</preloaditems>
         <itemlayout height="425" width="265">
             <control type="image">
+                <include>ConditionWhite</include>
                 <posx>-25</posx>
                 <posy>87</posy>
                 <width>295</width>
                 <height>295</height>
-                <include>SquareThumb</include>
+                <texture background="true" fallback="white/defaultChannelTvBig.png">$VAR[Thumbs]</texture>
+                <aspectratio>keep</aspectratio>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <include>ConditionBlack</include>
+                <posx>-25</posx>
+                <posy>87</posy>
+                <width>295</width>
+                <height>295</height>
+                <texture background="true" fallback="black/defaultChannelTvBig.png">$VAR[Thumbs]</texture>
+                <aspectratio>keep</aspectratio>
                 <include>ThumbBorder</include>
             </control>
         </itemlayout>
@@ -722,29 +770,34 @@
             <visible>Control.IsVisible($PARAM[id])</visible>
             <control type="group">
                 <control type="image">
-                    <include>ConditionWhite</include>
+                    <visible>!control.isvisible(378434)</visible>
                     <animation type="Conditional" reversible="false" condition="control.HasFocus($PARAM[id])">
                         <include>CoverWrapFocusAnimationSquare</include>
+                    </animation>
+                    <animation type="Conditional" reversible="false" condition="!control.HasFocus($PARAM[id])">
+                        <include>WidgetFocusAnimationFade</include>
                     </animation>
                     <posx>25</posx>
                     <posy>158</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="white/defaultVideoBig.png">$PARAM[icon]</texture>
+                    <texture background="true">$VAR[Theme.Color]/defaultChannelTvBig.png</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="image">
-                    <include>ConditionBlack</include>
                     <animation type="Conditional" reversible="false" condition="control.HasFocus($PARAM[id])">
                         <include>CoverWrapFocusAnimationSquare</include>
+                    </animation>
+                    <animation type="Conditional" reversible="false" condition="!control.HasFocus($PARAM[id])">
+                        <include>WidgetFocusAnimationFade</include>
                     </animation>
                     <posx>25</posx>
                     <posy>158</posy>
                     <width>520</width>
                     <height>520</height>
                     <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="black/defaultVideoBig.png">$PARAM[icon]</texture>
+                    <texture background="true">$VAR[WidgetIcon]</texture>
                     <include>ThumbBorder</include>
                 </control>
                 <control type="button">
@@ -1133,7 +1186,6 @@
                 <param name="labelRow2" value="$INFO[Container(700011).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700011).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700011).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700011).ListItem.Art(poster)]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
@@ -1148,7 +1200,6 @@
                 <param name="labelRow2" value="$INFO[Container(700012).ListItem.Artist,,       ]$INFO[Container(700012).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700012).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700012).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700012).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
@@ -1163,7 +1214,6 @@
                 <param name="labelRow2" value="$INFO[Container(700013).ListItem.Artist,,       ]$INFO[Container(700013).ListItem.Genre]"/>
                 <param name="labelRating" value=""/>
                 <param name="labelPlot" value="$INFO[Container(700013).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700013).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
@@ -1178,7 +1228,6 @@
                 <param name="labelRow2" value="$INFO[Container(700014).ListItem.Genre]"/>
                 <param name="labelRating" value=""/>
                 <param name="labelPlot" value="$INFO[Container(700014).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700014).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
@@ -1193,7 +1242,6 @@
                 <param name="labelRow2" value=""/>
                 <param name="labelRating" value=""/>
                 <param name="labelPlot" value="$INFO[Container(700015).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700015).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="true"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
@@ -1209,7 +1257,6 @@
                 <param name="labelRow2" value="$INFO[Container(700021).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700021).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700021).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700021).ListItem.Art(poster)]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
@@ -1224,7 +1271,6 @@
                 <param name="labelRow2" value="$INFO[Container(700022).ListItem.Artist,,       ]$INFO[Container(700022).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700022).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700022).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700022).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
@@ -1239,7 +1285,6 @@
                 <param name="labelRow2" value="$INFO[Container(700023).ListItem.Artist,,       ]$INFO[Container(700023).ListItem.Genre]"/>
                 <param name="labelRating" value=""/>
                 <param name="labelPlot" value="$INFO[Container(700023).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700023).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
@@ -1254,7 +1299,6 @@
                 <param name="labelRow2" value="$INFO[Container(700024).ListItem.Genre]"/>
                 <param name="labelRow1" value="$INFO[Container(700024).ListItem.Label2,,       ]$INFO[Container(700024).ListItem.Duration,, $LOCALIZE[31297]]"/>
                 <param name="labelRow2" value="$INFO[Container(700024).ListItem.Genre]"/>
-                <param name="icon" value="$INFO[Container(700024).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
@@ -1269,7 +1313,6 @@
                 <param name="labelRow2" value=""/>
                 <param name="labelRating" value=""/>
                 <param name="labelPlot" value="$INFO[Container(700025).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700025).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="true"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
@@ -1285,7 +1328,6 @@
                 <param name="labelRow2" value="$INFO[Container(700031).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700031).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700031).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700031).ListItem.Art(poster)]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
@@ -1300,7 +1342,6 @@
                 <param name="labelRow2" value="$INFO[Container(700032).ListItem.Artist,,       ]$INFO[Container(700032).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700032).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700032).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700032).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
@@ -1315,7 +1356,6 @@
                 <param name="labelRow2" value="$INFO[Container(700033).ListItem.Artist,,       ]$INFO[Container(700033).ListItem.Genre]"/>
                 <param name="labelRating" value=""/>
                 <param name="labelPlot" value="$INFO[Container(700033).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700033).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
@@ -1330,7 +1370,6 @@
                 <param name="labelRow2" value="$INFO[Container(700034).ListItem.Genre]"/>
                 <param name="labelRating" value=""/>
                 <param name="labelPlot" value="$INFO[Container(700034).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700034).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
@@ -1345,7 +1384,6 @@
                 <param name="labelRow2" value=""/>
                 <param name="labelRating" value=""/>
                 <param name="labelPlot" value="$INFO[Container(700035).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700035).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="true"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
@@ -1361,7 +1399,6 @@
                 <param name="labelRow2" value="$INFO[Container(700041).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700041).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700041).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700041).ListItem.Art(poster)]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
@@ -1376,7 +1413,6 @@
                 <param name="labelRow2" value="$INFO[Container(700042).ListItem.Artist,,       ]$INFO[Container(700042).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700042).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700042).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700042).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
@@ -1391,7 +1427,6 @@
                 <param name="labelRow2" value="$INFO[Container(700043).ListItem.Artist,,       ]$INFO[Container(700043).ListItem.Genre]"/>
                 <param name="labelRating" value=""/>
                 <param name="labelPlot" value="$INFO[Container(700043).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700043).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
@@ -1406,7 +1441,6 @@
                 <param name="labelRow2" value="$INFO[Container(700044).ListItem.Genre]"/>
                 <param name="labelRating" value=""/>
                 <param name="labelPlot" value="$INFO[Container(700044).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700044).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
@@ -1421,7 +1455,6 @@
                 <param name="labelRow2" value=""/>
                 <param name="labelRating" value=""/>
                 <param name="labelPlot" value="$INFO[Container(700045).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700045).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="true"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
@@ -1437,7 +1470,6 @@
                 <param name="labelRow2" value="$INFO[Container(700051).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700051).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700051).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700051).ListItem.Art(poster)]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
@@ -1452,7 +1484,6 @@
                 <param name="labelRow2" value="$INFO[Container(700052).ListItem.Artist,,       ]$INFO[Container(700052).ListItem.Genre]"/>
                 <param name="labelRating" value="$INFO[Container(700052).ListItem.Rating]"/>
                 <param name="labelPlot" value="$INFO[Container(700052).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700052).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
@@ -1467,7 +1498,6 @@
                 <param name="labelRow2" value="$INFO[Container(700053).ListItem.Artist,,       ]$INFO[Container(700053).ListItem.Genre]"/>
                 <param name="labelRating" value=""/>
                 <param name="labelPlot" value="$INFO[Container(700052).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700052).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
@@ -1482,7 +1512,6 @@
                 <param name="labelRow2" value="$INFO[Container(700054).ListItem.Genre]"/>
                 <param name="labelRating" value=""/>
                 <param name="labelPlot" value="$INFO[Container(700054).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700054).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
@@ -1497,7 +1526,6 @@
                 <param name="labelRow2" value=""/>
                 <param name="labelRating" value=""/>
                 <param name="labelPlot" value="$INFO[Container(700055).ListItem.Plot]"/>
-                <param name="icon" value="$INFO[Container(700055).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="true"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>

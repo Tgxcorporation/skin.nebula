@@ -61,6 +61,62 @@
                 control.hasfocus(700055)]</visible>
             <include>HiddenButton</include>
         </control>
+        <!--DUMMY BUTTON-->
+        <control type="button" id="378434">
+            <visible>
+                [Control.HasFocus(700011)+!IsEmpty(Container(700011).ListItem.Thumb)+!SubString(Container(700011).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700012)+!IsEmpty(Container(700012).ListItem.Thumb)+!SubString(Container(700012).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700013)+!IsEmpty(Container(700013).ListItem.Thumb)+!SubString(Container(700013).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700014)+!IsEmpty(Container(700014).ListItem.Thumb)+!SubString(Container(700014).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700015)+!IsEmpty(Container(700015).ListItem.Thumb)+!SubString(Container(700015).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700021)+!IsEmpty(Container(700021).ListItem.Thumb)+!SubString(Container(700021).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700022)+!IsEmpty(Container(700022).ListItem.Thumb)+!SubString(Container(700022).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700023)+!IsEmpty(Container(700023).ListItem.Thumb)+!SubString(Container(700023).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700024)+!IsEmpty(Container(700024).ListItem.Thumb)+!SubString(Container(700024).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700025)+!IsEmpty(Container(700025).ListItem.Thumb)+!SubString(Container(700025).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700031)+!IsEmpty(Container(700031).ListItem.Thumb)+!SubString(Container(700031).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700032)+!IsEmpty(Container(700032).ListItem.Thumb)+!SubString(Container(700032).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700033)+!IsEmpty(Container(700033).ListItem.Thumb)+!SubString(Container(700033).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700034)+!IsEmpty(Container(700034).ListItem.Thumb)+!SubString(Container(700034).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700035)+!IsEmpty(Container(700035).ListItem.Thumb)+!SubString(Container(700035).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700041)+!IsEmpty(Container(700041).ListItem.Thumb)+!SubString(Container(700041).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700042)+!IsEmpty(Container(700042).ListItem.Thumb)+!SubString(Container(700042).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700043)+!IsEmpty(Container(700043).ListItem.Thumb)+!SubString(Container(700043).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700044)+!IsEmpty(Container(700044).ListItem.Thumb)+!SubString(Container(700044).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700045)+!IsEmpty(Container(700045).ListItem.Thumb)+!SubString(Container(700045).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700051)+!IsEmpty(Container(700051).ListItem.Thumb)+!SubString(Container(700051).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700052)+!IsEmpty(Container(700052).ListItem.Thumb)+!SubString(Container(700052).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700053)+!IsEmpty(Container(700053).ListItem.Thumb)+!SubString(Container(700053).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700054)+!IsEmpty(Container(700054).ListItem.Thumb)+!SubString(Container(700054).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700055)+!IsEmpty(Container(700055).ListItem.Thumb)+!SubString(Container(700055).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(700011)+!IsEmpty(Container(700011).ListItem.Art(poster))+!SubString(Container(700011).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700012)+!IsEmpty(Container(700012).ListItem.Art(poster))+!SubString(Container(700012).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700013)+!IsEmpty(Container(700013).ListItem.Art(poster))+!SubString(Container(700013).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700014)+!IsEmpty(Container(700014).ListItem.Art(poster))+!SubString(Container(700014).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700015)+!IsEmpty(Container(700015).ListItem.Art(poster))+!SubString(Container(700015).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700021)+!IsEmpty(Container(700021).ListItem.Art(poster))+!SubString(Container(700021).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700022)+!IsEmpty(Container(700022).ListItem.Art(poster))+!SubString(Container(700022).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700023)+!IsEmpty(Container(700023).ListItem.Art(poster))+!SubString(Container(700023).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700024)+!IsEmpty(Container(700024).ListItem.Art(poster))+!SubString(Container(700024).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700025)+!IsEmpty(Container(700025).ListItem.Art(poster))+!SubString(Container(700025).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700031)+!IsEmpty(Container(700031).ListItem.Art(poster))+!SubString(Container(700031).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700032)+!IsEmpty(Container(700032).ListItem.Art(poster))+!SubString(Container(700032).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700033)+!IsEmpty(Container(700033).ListItem.Art(poster))+!SubString(Container(700033).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700034)+!IsEmpty(Container(700034).ListItem.Art(poster))+!SubString(Container(700034).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700035)+!IsEmpty(Container(700035).ListItem.Art(poster))+!SubString(Container(700035).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700041)+!IsEmpty(Container(700041).ListItem.Art(poster))+!SubString(Container(700041).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700042)+!IsEmpty(Container(700042).ListItem.Art(poster))+!SubString(Container(700042).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700043)+!IsEmpty(Container(700043).ListItem.Art(poster))+!SubString(Container(700043).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700044)+!IsEmpty(Container(700044).ListItem.Art(poster))+!SubString(Container(700044).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700045)+!IsEmpty(Container(700045).ListItem.Art(poster))+!SubString(Container(700045).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700051)+!IsEmpty(Container(700051).ListItem.Art(poster))+!SubString(Container(700051).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700052)+!IsEmpty(Container(700052).ListItem.Art(poster))+!SubString(Container(700052).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700053)+!IsEmpty(Container(700053).ListItem.Art(poster))+!SubString(Container(700053).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700054)+!IsEmpty(Container(700054).ListItem.Art(poster))+!SubString(Container(700054).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(700055)+!IsEmpty(Container(700055).ListItem.Art(poster))+!SubString(Container(700055).ListItem.Art(poster),Default,Left)]
+            </visible>
+            <include>HiddenButton</include>
+        </control>
         <include condition="!Skin.HasSetting(DisableFanart)">Fanart_Art</include>
         <control type="multiimage">
             <visible>ControlGroup(700).HasFocus</visible>
