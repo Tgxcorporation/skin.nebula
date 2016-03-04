@@ -79,6 +79,9 @@
         <effect type="zoom" start="100" end="94.339622641509" time="50" delay="100" center="auto"/>
         <!--<effect type="fade" start="40" end="100" time="100"/>-->
     </include>
+    <include name="WidgetFocusAnimationFade">
+        <effect type="fade" start="0" end="0" time="250"/>
+    </include>
     <include name="ButtonFocusAnimation">
         <animation type="Focus" reversible="false">
             <effect type="zoom" start="100" end="108" time="100" center="auto"/>
