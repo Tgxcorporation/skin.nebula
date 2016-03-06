@@ -1267,24 +1267,17 @@
                         <!--<include>Icon_Fade</include>-->
                         <control type="image">
                             <posx>100</posx>
-                            <posy>752</posy>
-                            <width>1720</width>
-                            <height>172</height>
-                            <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>100</posx>
                             <posy>862</posy>
                             <width>1720</width>
                             <height>172</height>
                             <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                         </control>
                         <control type="image">
-                            <posx>418</posx>
+                            <posx>347</posx>
                             <posy>185</posy>
-                            <width>1084</width>
-                            <height>610</height>
-                            <aspectratio>keep</aspectratio>
+                            <width>1225</width>
+                            <height>720</height>
+                            <aspectratio>scale</aspectratio>
                             <include>ThumbBorder</include>
                             <texture>special://skin/fanart.jpg</texture>
                         </control>
@@ -1292,7 +1285,7 @@
                         <control type="radiobutton" id="852801">
                             <include>ButtonFocusAnimation</include>
                             <posx>47</posx>
-                            <posy>793</posy>
+                            <posy>903</posy>
                             <width>577</width>
                             <height>90</height>
                             <label>$LOCALIZE[742]</label>
@@ -1313,7 +1306,7 @@
                         <control type="radiobutton" id="8528081">
                             <include>ButtonFocusAnimation</include>
                             <posx>671</posx>
-                            <posy>793</posy>
+                            <posy>903</posy>
                             <width>577</width>
                             <height>90</height>
                             <label>$LOCALIZE[16040]</label>
@@ -1321,7 +1314,7 @@
                             <radioposx>450</radioposx>
                             <onright>852808</onright>
                             <onleft>852801</onleft>
-                            <ondown>8528082</ondown>
+                            <ondown>8528081</ondown>
                             <onup>8528081</onup>
                             <onclick>Skin.Reset(Theme.Color.White)</onclick>
                             <onclick>Skin.Reset(Theme.Color.Black)</onclick>
@@ -1334,7 +1327,7 @@
                         <control type="radiobutton" id="852808">
                             <include>ButtonFocusAnimation</include>
                             <posx>1295</posx>
-                            <posy>793</posy>
+                            <posy>903</posy>
                             <width>577</width>
                             <height>90</height>
                             <label>$LOCALIZE[353]</label>
@@ -1350,37 +1343,6 @@
                             <onclick>Skin.ToggleSetting(Theme.Color.Black)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.Black)+!Skin.HasSetting(Theme.Color.Auto)</selected>
                             <onclick>ReloadSkin()</onclick>
-                        </control>
-                        <!-- AUTO SETTINGS -->
-                        <control type="button" id="8528082">
-                            <label>$LOCALIZE[742] &#187;  $INFO[Skin.String(ThemeWhiteFrom.Label)]</label>
-                            <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=ThemeWhiteFrom,header=$LOCALIZE[742])</onclick>
-                            <include>ButtonFocusAnimation</include>
-                            <posx>483</posx>
-                            <posy>903</posy>
-                            <width>477</width>
-                            <height>90</height>
-                            <align>center</align>
-                            <onright>8528083</onright>
-                            <onleft>8528082</onleft>
-                            <ondown>8528082</ondown>
-                            <onup>8528081</onup>
-                            <enable>Skin.HasSetting(Theme.Color.Auto)</enable>
-                        </control>
-                        <control type="button" id="8528083">
-                            <label>$LOCALIZE[353] &#187;  $INFO[Skin.String(ThemeBlackFrom.Label)]</label>
-                            <onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=ThemeBlackFrom,header=$LOCALIZE[353])</onclick>
-                            <include>ButtonFocusAnimation</include>
-                            <posx>960</posx>
-                            <posy>903</posy>
-                            <width>477</width>
-                            <height>90</height>
-                            <align>center</align>
-                            <onright>8528083</onright>
-                            <onleft>8528082</onleft>
-                            <ondown>8528083</ondown>
-                            <onup>8528081</onup>
-                            <enable>Skin.HasSetting(Theme.Color.Auto)</enable>
                         </control>
                     </control>
                 </control>
