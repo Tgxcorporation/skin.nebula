@@ -41,6 +41,7 @@
                         <posy>393</posy>
                         <width>1196</width>
                         <height>435</height>
+                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                         <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
                     </control>
                     <control type="image">
@@ -111,6 +112,7 @@
                             <posy>0</posy>
                             <height>78</height>
                             <width>660</width>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                             <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">

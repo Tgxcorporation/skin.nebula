@@ -35,11 +35,12 @@
                        |[Container(53).content(episodes)+[Container(53).Row(2)|Container(53).Row(3)]]]]">conditional</animation>
             <posy>255</posy>
             <control type="image">
+                <include>OverlayTransparency</include>
                 <posx>-40</posx>
                 <posy>272</posy>
                 <width>2000</width>
                 <height>536</height>
-                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_grid.png</texture>
             </control>
             <control type="group">

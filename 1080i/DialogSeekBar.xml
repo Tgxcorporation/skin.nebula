@@ -12,6 +12,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>183</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture flipy="true" border="1">$VAR[Theme.Color]/common/HomeGradient.png</texture>
         </control>
 
@@ -102,6 +103,7 @@
             <width>2320</width>
             <height>183</height>
             <!-- <colordiffuse>ddffffff</colordiffuse> -->
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
         </control>
         <control type="label">

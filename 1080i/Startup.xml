@@ -45,11 +45,12 @@
             <imagepath background="true">$INFO[Skin.String(startup-multiimagepath)]</imagepath>
         </control>
         <control type="image">
+            <include>OverlayTransparency</include>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
             <height>1080</height>
-            <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
         </control>
         <control type="group">

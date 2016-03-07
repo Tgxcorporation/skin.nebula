@@ -560,21 +560,9 @@
         <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(14)">$LOCALIZE[590]</value>
         <value>$INFO[Container(9004).ListItem.Thumb]</value>
     </variable>
-    <variable name="OverlayTransparency">
-        <value condition="skin.hassetting(OverlayTransparency90)">FFFFFFFF</value>
-        <value condition="skin.hassetting(OverlayTransparency80)">E6FFFFFF</value>
-        <value condition="skin.hassetting(OverlayTransparency70)">CDFFFFFF</value>
-        <value condition="skin.hassetting(OverlayTransparency60)">B4FFFFFF</value>
-        <value condition="skin.hassetting(OverlayTransparency50)">9BFFFFFF</value>
-        <value>FFFFFFFF</value>
-    </variable>
-    <variable name="OverlayStripTransparency">
-        <value condition="skin.hassetting(OverlayTransparency90)">ddFFFFFF</value>
-        <value condition="skin.hassetting(OverlayTransparency80)">c4FFFFFF</value>
-        <value condition="skin.hassetting(OverlayTransparency70)">abFFFFFF</value>
-        <value condition="skin.hassetting(OverlayTransparency60)">92FFFFFF</value>
-        <value condition="skin.hassetting(OverlayTransparency50)">79FFFFFF</value>
-        <value>ddFFFFFF</value>
+    <variable name="Picked.Theme.Color">
+        <value condition="!IsEmpty(Skin.String(PickedColor))">$INFO[Skin.String(PickedColor)]</value>
+        <value>ffffffff</value>
     </variable>
     <variable name="Plex.0.Background.Management">
         <value condition="!IsEmpty(Skin.String(Plexbmc.0.Background))">$INFO[Skin.String(Plexbmc.0.Background)]</value>
