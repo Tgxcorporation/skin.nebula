@@ -88,11 +88,12 @@
     </include>
     <include name="DimBG">
         <control type="image">
+            <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="true">Conditional</animation>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <posx>-1920</posx>
             <posy>-1080</posy>
             <width>5760</width>
             <height>3240</height>
-            <colordiffuse>b0ffffff</colordiffuse>
             <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
         </control>
     </include>
@@ -128,6 +129,7 @@
             <posy>0</posy>
             <width>2320</width>
             <height>183</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
         </control>
         <control type="button" id="8998">
@@ -423,6 +425,7 @@
             <visible>![Control.HasFocus(505050)]</visible>
             <include>Overlay_Fade</include>
             <control type="image">
+                <include>OverlayTransparency</include>
                 <visible>![
                     [Window.isVisible(MyWeather.xml)+Skin.String(WeatherView,fanart)]|
                     [!Window.isVisible(MyWeather.xml)+control.isvisible(54)]
@@ -432,17 +435,18 @@
                 <posy>0</posy>
                 <width>1920</width>
                 <height>1080</height>
-                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
             </control>
             <control type="image">
+                <include>OverlayTransparency</include>
                 <visible>[Window.Isvisible(MusicVisualisation.xml)+!Window.Isvisible(script-cu-lrclyrics-main.xml)+!Skin.HasSetting(DisableOverlayMusicPlaying)]|Window.Isvisible(script-cu-lrclyrics-main.xml)</visible>
                 <include>Overlay_Fade</include>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>1920</width>
                 <height>1080</height>
-                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
             </control>
             <control type="group">
@@ -452,11 +456,12 @@
                 <!--<animation effect="fade" time="250" start="100" end="0">Hidden</animation>-->
                 <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
                 <control type="image">
+                    <include>OverlayTransparency</include>
                     <posx>-1920</posx>
                     <posy>0</posy>
                     <width>1920</width>
                     <height>1080</height>
-                    <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
                 </control>
                 <control type="image">
@@ -467,6 +472,7 @@
                     <posy>-35</posy>
                     <width>1990</width>
                     <height>1150</height>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture border="35">$VAR[Theme.Color]/common/JewelCase2.png</texture>
                 </control>
             </control>
@@ -514,6 +520,7 @@
                 Window.IsVisible(FileBrowser.xml)|
                 Window.IsVisible(RecordPrefs.xml)|
                 Window.IsVisible(ProfileSettings.xml)|
+                Window.IsVisible(script-skin_helper_service-ColorPicker.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-SlideShow.xml)|
@@ -639,6 +646,7 @@
                         <posy>0</posy>
                         <width>2320</width>
                         <height>183</height>
+                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                         <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                     </control>
                     <control type="group">
@@ -777,6 +785,7 @@
             <posy>91</posy>
             <width>50</width>
             <height>50</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture>$VAR[Theme.Color]/topbar/topbar_rewind_nofocus.png</texture>
         </control>
         <control type="image">
@@ -785,6 +794,7 @@
             <posy>91</posy>
             <width>50</width>
             <height>50</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture>$VAR[Theme.Color]/topbar/topbar_fastforward_nofocus.png</texture>
         </control>
     </include>
@@ -901,6 +911,7 @@
                     <posy>0</posy>
                     <height>78</height>
                     <width>1420</width>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                 </control>
                 <control type="label">
@@ -946,6 +957,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>1080</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture>$VAR[Theme.Color]/common/WhiteDot.png</texture>
         </control> -->
         <control type="multiimage">
@@ -992,6 +1004,7 @@
             <posy>142</posy>
             <width>660</width>
             <height>892</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
         </control>
         <control type="image">
@@ -999,6 +1012,7 @@
             <posy>183</posy>
             <width>41</width>
             <height>810</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture border="0,100,0,100">$VAR[Theme.Color]/common/vertical_separator.png</texture>
         </control>
         <control type="button" id="8999">
@@ -1191,6 +1205,7 @@
                     <posy>0</posy>
                     <height>78</height>
                     <width>1920</width>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                 </control>
                 <control type="label">
@@ -1242,6 +1257,7 @@
             <posy>142</posy>
             <width>1370</width>
             <height>3892</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
         </control>
         <control type="image">
@@ -1249,6 +1265,7 @@
             <posy>-858</posy>
             <width>1920</width>
             <height>1892</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
         </control>
     </include>
@@ -1258,6 +1275,7 @@
             <posy>142</posy>
             <width>1370</width>
             <height>892</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
         </control>
     </include>
@@ -1287,6 +1305,7 @@
                     <width>970</width>
                     <height>66</height>
                     <bordersize>0</bordersize>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                 </control>
                 <control type="label">
@@ -1461,6 +1480,7 @@
                                 <height>37</height>
                                 <width>185</width>
                                 <aspectratio align="left">keep</aspectratio>
+                                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                 <texture>$VAR[Theme.Color]/badges/rating.png</texture>
                             </control>
                             <control type="label">
@@ -1552,7 +1572,8 @@
         </control>
     </include>
     <include name="DialogTransparency">
-        <colordiffuse>ddffffff</colordiffuse>
+        <animation effect="fade" start="85" end="85" time="0" reversible="false" condition="true">Conditional</animation>
+        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
     </include>
     <include name="ScrollOffsetLabel">
         <!--<visible>Container.Scrolling</visible>-->
@@ -1564,6 +1585,7 @@
             <posy>10</posy>
             <width>300</width>
             <height>163</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
         </control>
         <control type="image">
@@ -1571,6 +1593,7 @@
             <posy>10</posy>
             <width>300</width>
             <height>163</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
         </control>
         <control type="label">

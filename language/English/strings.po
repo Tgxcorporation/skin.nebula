@@ -204,7 +204,9 @@ msgctxt "#31046"
 msgid "Startup delay in seconds"
 msgstr ""
 
-#empty strings from id 31047 to 31047
+msgctxt "#31047"
+msgid "Color hue"
+msgstr ""
 
 msgctxt "#31048"
 msgid "Visualization Presets"

@@ -236,16 +236,18 @@
                     <posy>750</posy>
                     <width>3840</width>
                     <height>330</height>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
                 </control>
                 <control type="image">
+                    <include>OverlayTransparency</include>
                     <include>FacadeFadeDialogs</include>
                     <include>Icon_Fade</include>
                     <posx>-35</posx>
                     <posy>609</posy>
                     <width>1990</width>
                     <height>471</height>
-                    <colordiffuse>$VAR[OverlayStripTransparency]</colordiffuse>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                 </control>
                 <control type="list" id="54">
@@ -280,14 +282,16 @@
                 <posy>0</posy>
                 <width>3840</width>
                 <height>183</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture flipy="true" border="1">$VAR[Theme.Color]/common/HomeGradient.png</texture>
             </control>
             <control type="image">
+                <include>OverlayTransparency</include>
                 <posx>-1955</posx>
                 <posy>0</posy>
                 <width>3910</width>
                 <height>183</height>
-                <colordiffuse>$VAR[OverlayStripTransparency]</colordiffuse>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <include>ScrollOffsetLabel_50</include>
@@ -488,16 +492,18 @@
                     <posy>750</posy>
                     <width>3840</width>
                     <height>330</height>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
                 </control>
                 <control type="image">
+                    <include>OverlayTransparency</include>
                     <include>FacadeFadeDialogs</include>
                     <include>Icon_Fade</include>
                     <posx>-35</posx>
                     <posy>609</posy>
                     <width>1990</width>
                     <height>471</height>
-                    <colordiffuse>$VAR[OverlayStripTransparency]</colordiffuse>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                 </control>
                 <control type="list" id="54">
@@ -533,14 +539,16 @@
                 <posy>0</posy>
                 <width>3840</width>
                 <height>183</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture flipy="true" border="1">$VAR[Theme.Color]/common/HomeGradient.png</texture>
             </control>
             <control type="image">
+                <include>OverlayTransparency</include>
                 <posx>-1955</posx>
                 <posy>0</posy>
                 <width>3910</width>
                 <height>183</height>
-                <colordiffuse>$VAR[OverlayStripTransparency]</colordiffuse>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="scrollbar" id="60">

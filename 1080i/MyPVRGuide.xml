@@ -105,6 +105,7 @@
                                     <width>420</width>
                                     <height>78</height>
                                     <bordersize>0</bordersize>
+                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                 </control>
                                 <control type="image">
@@ -165,6 +166,7 @@
                                 <width>60</width>
                                 <height>78</height>
                                 <bordersize>0</bordersize>
+                                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                 <texture border="3">$VAR[PVROverlayFocus]</texture>
                             </control>
                             <control type="label" id="1">
@@ -335,6 +337,7 @@
                                         <posy>0</posy>
                                         <height>405</height>
                                         <width>1920</width>
+                                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                         <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                     </control>
                                     <control type="image">
@@ -510,6 +513,7 @@
                                         <posy>0</posy>
                                         <height>405</height>
                                         <width>1920</width>
+                                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                         <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                     </control>
                                     <control type="image">
@@ -672,6 +676,7 @@
                                         <posy>0</posy>
                                         <height>405</height>
                                         <width>1920</width>
+                                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                         <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                     </control>
                                     <control type="image">

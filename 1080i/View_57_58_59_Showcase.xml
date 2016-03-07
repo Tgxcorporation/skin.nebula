@@ -11,6 +11,7 @@
                 <posy>750</posy>
                 <width>1920</width>
                 <height>330</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
             </control>
         </control>

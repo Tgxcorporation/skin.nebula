@@ -328,61 +328,6 @@
                         <pagecontrol>503</pagecontrol>
                         <include>SkinSettings_DefaultLayout</include>
                         <content>
-                            <item id="29">
-                                <visible>Skin.HasSetting(OverlayTransparency50)</visible>
-                                <label>$LOCALIZE[13324]</label>
-                                <label2>50%</label2>
-                                <onclick>Skin.Reset(OverlayTransparency50)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency60)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency70)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency80)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency90)</onclick>
-                                <onclick>Skin.ToggleSetting(OverlayTransparency90)</onclick>
-                            </item>
-                            <item id="29">
-                                <visible>Skin.HasSetting(OverlayTransparency60)</visible>
-                                <label>$LOCALIZE[13324]</label>
-                                <label2>60%</label2>
-                                <onclick>Skin.Reset(OverlayTransparency50)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency60)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency70)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency80)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency90)</onclick>
-                                <onclick>Skin.ToggleSetting(OverlayTransparency50)</onclick>
-                            </item>
-                            <item id="29">
-                                <visible>Skin.HasSetting(OverlayTransparency70)</visible>
-                                <label>$LOCALIZE[13324]</label>
-                                <label2>70%</label2>
-                                <onclick>Skin.Reset(OverlayTransparency50)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency60)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency70)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency80)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency90)</onclick>
-                                <onclick>Skin.ToggleSetting(OverlayTransparency60)</onclick>
-                            </item>
-                            <item id="29">
-                                <visible>Skin.HasSetting(OverlayTransparency80)</visible>
-                                <label>$LOCALIZE[13324]</label>
-                                <label2>80%</label2>
-                                <onclick>Skin.Reset(OverlayTransparency50)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency60)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency70)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency80)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency90)</onclick>
-                                <onclick>Skin.ToggleSetting(OverlayTransparency70)</onclick>
-                            </item>
-                            <item id="29">
-                                <visible>Skin.HasSetting(OverlayTransparency90)|[!Skin.HasSetting(OverlayTransparency50)+!Skin.HasSetting(OverlayTransparency60)+!Skin.HasSetting(OverlayTransparency70)+!Skin.HasSetting(OverlayTransparency80)+!Skin.HasSetting(OverlayTransparency90)]</visible>
-                                <label>$LOCALIZE[13324]</label>
-                                <label2>90%</label2>
-                                <onclick>Skin.Reset(OverlayTransparency50)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency60)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency70)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency80)</onclick>
-                                <onclick>Skin.Reset(OverlayTransparency90)</onclick>
-                                <onclick>Skin.ToggleSetting(OverlayTransparency80)</onclick>
-                            </item>
                             <item id="16">
                                 <visible>Skin.HasSetting(KenBurnsEffect)</visible>
                                 <label>$LOCALIZE[31997]</label>
@@ -499,9 +444,9 @@
                             <!--<onclick>Skin.SetPath(weatherIconPath)</onclick>-->
                             <!--</item>-->
                             <!--<item id="96">-->
-                                <!--<visible>!IsEmpty(Skin.String(weatherIconPath))</visible>-->
-                                <!--<label>$LOCALIZE[10035] - $LOCALIZE[31520]</label>-->
-                                <!--<onclick>Skin.Reset(weatherIconPath)</onclick>-->
+                            <!--<visible>!IsEmpty(Skin.String(weatherIconPath))</visible>-->
+                            <!--<label>$LOCALIZE[10035] - $LOCALIZE[31520]</label>-->
+                            <!--<onclick>Skin.Reset(weatherIconPath)</onclick>-->
                             <!--</item>-->
                         </content>
                     </control>
@@ -737,6 +682,7 @@
                                         <posy>0</posy>
                                         <height>78</height>
                                         <width>660</width>
+                                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                         <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                     </control>
                                     <control type="label">
@@ -918,6 +864,7 @@
                             <posy>738</posy>
                             <width>1190</width>
                             <height>150</height>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                             <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
                         </control>
                         <control type="label">
@@ -1267,17 +1214,24 @@
                         <!--<include>Icon_Fade</include>-->
                         <control type="image">
                             <posx>100</posx>
+                            <posy>752</posy>
+                            <width>1720</width>
+                            <height>172</height>
+                            <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>100</posx>
                             <posy>862</posy>
                             <width>1720</width>
                             <height>172</height>
                             <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                         </control>
                         <control type="image">
-                            <posx>347</posx>
+                            <posx>418</posx>
                             <posy>185</posy>
-                            <width>1225</width>
-                            <height>720</height>
-                            <aspectratio>scale</aspectratio>
+                            <width>1084</width>
+                            <height>610</height>
+                            <aspectratio>keep</aspectratio>
                             <include>ThumbBorder</include>
                             <texture>special://skin/fanart.jpg</texture>
                         </control>
@@ -1285,7 +1239,7 @@
                         <control type="radiobutton" id="852801">
                             <include>ButtonFocusAnimation</include>
                             <posx>47</posx>
-                            <posy>903</posy>
+                            <posy>793</posy>
                             <width>577</width>
                             <height>90</height>
                             <label>$LOCALIZE[742]</label>
@@ -1293,7 +1247,7 @@
                             <radioposx>450</radioposx>
                             <onright>8528081</onright>
                             <onleft>9000</onleft>
-                            <ondown>852801</ondown>
+                            <ondown>8528082</ondown>
                             <onup>852801</onup>
                             <onclick>Skin.Reset(Theme.Color.White)</onclick>
                             <onclick>Skin.Reset(Theme.Color.Black)</onclick>
@@ -1306,7 +1260,7 @@
                         <control type="radiobutton" id="8528081">
                             <include>ButtonFocusAnimation</include>
                             <posx>671</posx>
-                            <posy>903</posy>
+                            <posy>793</posy>
                             <width>577</width>
                             <height>90</height>
                             <label>$LOCALIZE[16040]</label>
@@ -1314,7 +1268,7 @@
                             <radioposx>450</radioposx>
                             <onright>852808</onright>
                             <onleft>852801</onleft>
-                            <ondown>8528081</ondown>
+                            <ondown>8528082</ondown>
                             <onup>8528081</onup>
                             <onclick>Skin.Reset(Theme.Color.White)</onclick>
                             <onclick>Skin.Reset(Theme.Color.Black)</onclick>
@@ -1327,7 +1281,7 @@
                         <control type="radiobutton" id="852808">
                             <include>ButtonFocusAnimation</include>
                             <posx>1295</posx>
-                            <posy>903</posy>
+                            <posy>793</posy>
                             <width>577</width>
                             <height>90</height>
                             <label>$LOCALIZE[353]</label>
@@ -1335,7 +1289,7 @@
                             <radioposx>450</radioposx>
                             <onright>852808</onright>
                             <onleft>8528081</onleft>
-                            <ondown>852808</ondown>
+                            <ondown>8528082</ondown>
                             <onup>852808</onup>
                             <onclick>Skin.Reset(Theme.Color.White)</onclick>
                             <onclick>Skin.Reset(Theme.Color.Black)</onclick>
@@ -1343,6 +1297,294 @@
                             <onclick>Skin.ToggleSetting(Theme.Color.Black)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.Black)+!Skin.HasSetting(Theme.Color.Auto)</selected>
                             <onclick>ReloadSkin()</onclick>
+                        </control>
+                        <!--TRANSPARENCY-->
+                        <control type="panel" id="8528082">
+                            <posx>0</posx>
+                            <posy>903</posy>
+                            <width>960</width>
+                            <height>90</height>
+                            <onright>8528083</onright>
+                            <onleft>9000</onleft>
+                            <ondown>8528082</ondown>
+                            <onup>852801</onup>
+                            <itemlayout width="960" height="90">
+                                <control type="label">
+                                    <posx>0</posx>
+                                    <height>90</height>
+                                    <width>960</width>
+                                    <align>center</align>
+                                    <font>FacadeListMainFont</font>
+                                    <include>TextColor_AlternateColor</include>
+                                    <label>$INFO[ListItem.Label]: $INFO[ListItem.Label2]</label>
+                                </control>
+                            </itemlayout>
+                            <focusedlayout width="960" height="90">
+                                <control type="group">
+                                    <include>ButtonWideFocusAnimation</include>
+                                    <control type="image">
+                                        <posx>0</posx>
+                                        <posy>0</posy>
+                                        <height>90</height>
+                                        <width>960</width>
+                                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                                    </control>
+                                    <control type="label">
+                                        <posx>0</posx>
+                                        <height>90</height>
+                                        <width>960</width>
+                                        <align>center</align>
+                                        <scroll>true</scroll>
+                                        <font>FacadeListMainFont</font>
+                                        <include>TextColor_MainColor</include>
+                                        <label>$INFO[ListItem.Label]: $INFO[ListItem.Label2]</label>
+                                    </control>
+                                </control>
+                            </focusedlayout>
+                            <content>
+                                <item id="29">
+                                    <visible>Skin.HasSetting(OverlayTransparency00)</visible>
+                                    <label>$LOCALIZE[13324]</label>
+                                    <label2>0%</label2>
+                                    <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                    <onclick>Skin.ToggleSetting(OverlayTransparency100)</onclick>
+                                </item>
+                                <item id="29">
+                                    <visible>Skin.HasSetting(OverlayTransparency10)</visible>
+                                    <label>$LOCALIZE[13324]</label>
+                                    <label2>10%</label2>
+                                    <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                    <onclick>Skin.ToggleSetting(OverlayTransparency00)</onclick>
+                                </item>
+                                <item id="29">
+                                    <visible>Skin.HasSetting(OverlayTransparency20)</visible>
+                                    <label>$LOCALIZE[13324]</label>
+                                    <label2>20%</label2>
+                                    <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                    <onclick>Skin.ToggleSetting(OverlayTransparency10)</onclick>
+                                </item>
+                                <item id="29">
+                                    <visible>Skin.HasSetting(OverlayTransparency30)</visible>
+                                    <label>$LOCALIZE[13324]</label>
+                                    <label2>30%</label2>
+                                    <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                    <onclick>Skin.ToggleSetting(OverlayTransparency20)</onclick>
+                                </item>
+                                <item id="29">
+                                    <visible>Skin.HasSetting(OverlayTransparency40)</visible>
+                                    <label>$LOCALIZE[13324]</label>
+                                    <label2>40%</label2>
+                                    <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                    <onclick>Skin.ToggleSetting(OverlayTransparency30)</onclick>
+                                </item>
+                                <item id="29">
+                                    <visible>Skin.HasSetting(OverlayTransparency50)</visible>
+                                    <label>$LOCALIZE[13324]</label>
+                                    <label2>50%</label2>
+                                    <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                    <onclick>Skin.ToggleSetting(OverlayTransparency40)</onclick>
+                                </item>
+                                <item id="29">
+                                    <visible>Skin.HasSetting(OverlayTransparency60)</visible>
+                                    <label>$LOCALIZE[13324]</label>
+                                    <label2>60%</label2>
+                                    <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                    <onclick>Skin.ToggleSetting(OverlayTransparency50)</onclick>
+                                </item>
+                                <item id="29">
+                                    <visible>Skin.HasSetting(OverlayTransparency70)</visible>
+                                    <label>$LOCALIZE[13324]</label>
+                                    <label2>70%</label2>
+                                    <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                    <onclick>Skin.ToggleSetting(OverlayTransparency60)</onclick>
+                                </item>
+                                <item id="29">
+                                    <visible>Skin.HasSetting(OverlayTransparency80)</visible>
+                                    <label>$LOCALIZE[13324]</label>
+                                    <label2>80%</label2>
+                                    <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                    <onclick>Skin.ToggleSetting(OverlayTransparency70)</onclick>
+                                </item>
+                                <item id="29">
+                                    <visible>Skin.HasSetting(OverlayTransparency90)</visible>
+                                    <label>$LOCALIZE[13324]</label>
+                                    <label2>90%</label2>
+                                    <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                    <onclick>Skin.ToggleSetting(OverlayTransparency80)</onclick>
+                                </item>
+                                <item id="29">
+                                    <visible>Skin.HasSetting(OverlayTransparency100)|
+                                        [
+                                        !Skin.HasSetting(OverlayTransparency00)+
+                                        !Skin.HasSetting(OverlayTransparency10)+
+                                        !Skin.HasSetting(OverlayTransparency20)+
+                                        !Skin.HasSetting(OverlayTransparency30)+
+                                        !Skin.HasSetting(OverlayTransparency40)+
+                                        !Skin.HasSetting(OverlayTransparency50)+
+                                        !Skin.HasSetting(OverlayTransparency60)+
+                                        !Skin.HasSetting(OverlayTransparency70)+
+                                        !Skin.HasSetting(OverlayTransparency80)+
+                                        !Skin.HasSetting(OverlayTransparency90)+
+                                        !Skin.HasSetting(OverlayTransparency100)
+                                        ]</visible>
+                                    <label>$LOCALIZE[13324]</label>
+                                    <label2>100%</label2>
+                                    <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                    <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                    <onclick>Skin.ToggleSetting(OverlayTransparency90)</onclick>
+                                </item>
+                            </content>
+                        </control>
+                        <control type="button" id="8528083">
+                            <label>-</label>
+                            <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=PickedColor)</onclick>
+                            <include>ButtonFocusAnimation</include>
+                            <posx>960</posx>
+                            <posy>903</posy>
+                            <width>960</width>
+                            <height>90</height>
+                            <align>right</align>
+                            <onright>8528083</onright>
+                            <onleft>8528082</onleft>
+                            <ondown>8528083</ondown>
+                            <onup>852801</onup>
+                        </control>
+                        <control type="label">
+                            <animation effect="fade" start="100" end="63" time="0" condition="!Control.HasFocus(8528083)">Conditional</animation>
+                            <animation type="Conditional" reversible="false" condition="Control.HasFocus(8528083)">
+                                <effect type="zoom" start="100" end="108" time="100" center="1380,948"/>
+                                <effect type="zoom" start="100" end="92.592592592593" time="50" delay="100" center="1380,948"/>
+                            </animation>
+                            <posx>1380</posx>
+                            <posy>903</posy>
+                            <width>580</width>
+                            <height>90</height>
+                            <align>right</align>
+                            <label>$LOCALIZE[31047]:</label>
+                        </control>
+                        <control type="image">
+                            <animation effect="fade" start="100" end="63" time="0" condition="!Control.HasFocus(8528083)">Conditional</animation>
+                            <animation type="Conditional" reversible="false" condition="Control.HasFocus(8528083)">
+                                <effect type="zoom" start="100" end="108" time="100" center="1400,948"/>
+                                <effect type="zoom" start="100" end="92.592592592593" time="50" delay="100" center="1400,948"/>
+                            </animation>
+                            <posx>1370</posx>
+                            <posy>888</posy>
+                            <width>200</width>
+                            <height>120</height>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                            <texture>white/common/WhiteDot.png</texture>
+                            <include>ThumbBorder</include>
                         </control>
                     </control>
                 </control>
@@ -1388,6 +1630,7 @@
                             <posy>0</posy>
                             <height>78</height>
                             <width>660</width>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                             <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
