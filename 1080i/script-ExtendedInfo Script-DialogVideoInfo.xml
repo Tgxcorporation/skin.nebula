@@ -1787,7 +1787,7 @@
                                 <posy>2</posy>
                                 <width>78</width>
                                 <height>78</height>
-                                <texture>$INFO[ListItem.Property(iso_3166_1),flags/,.png]</texture>
+                                <texture>$INFO[ListItem.Property(iso_3166_1),resource://resource.images.languageflags.colour/,.png]</texture>
                                 <aspectratio>keep</aspectratio>
                             </control>
                             <control type="label">
@@ -1816,7 +1816,7 @@
                                     <posy>2</posy>
                                     <width>78</width>
                                     <height>78</height>
-                                    <texture>$INFO[ListItem.Property(iso_3166_1),flags/,.png]</texture>
+                                    <texture>$INFO[ListItem.Property(iso_3166_1),resource://resource.images.languageflags.colour/,.png]</texture>
                                     <aspectratio>keep</aspectratio>
                                 </control>
                                 <control type="label">
