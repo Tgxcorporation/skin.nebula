@@ -926,7 +926,7 @@
     <include name="ShelfIcons">
         <content>
             <!--RECENTLY ADDED-->
-            <item type="button" id="702">
+            <item id="702">
                 <visible>[control.isvisible(212)+IntegerGreaterThan(Container(212).NumItems,0)]|
                     [control.isvisible(311)+IntegerGreaterThan(Container(311).NumItems,0)]|
                     [control.isvisible(411)+IntegerGreaterThan(Container(411).NumItems,0)]|
