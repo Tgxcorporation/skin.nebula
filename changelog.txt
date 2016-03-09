@@ -1,4 +1,6 @@
 4.5.0
+Added color hue option for themes.
+Added update library command in music screen.
 Improved Media Info Logos management.
 Added backup and restore of skin settings.
 Added skin version info.
@@ -19,6 +21,7 @@ Improved mouse navigation in dialogs.
 Added option for single row submenu in home screen.
 Improved auto theme with custom times for white and black.
 New progress indicators.
+[Jarvis] Skin thinning - Language Flags image resource addon.
 [Jarvis] Skin thinning - Weather image resource addons.
 [Jarvis] User ratings.
 [Jarvis] Added support for Studio Logos and Music Labels Logos.
