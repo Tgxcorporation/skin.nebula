@@ -1,4 +1,6 @@
 3.10.0
+Added color hue option for themes.
+Added update library command in music screen.
 Improved Media Info Logos management.
 Added backup and restore of skin settings.
 Added skin version info.
