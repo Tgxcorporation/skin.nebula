@@ -71,7 +71,7 @@
                     </control>
                     <!-- CDART VIDEO -->
                     <include name="DiscArt">
-                        <param name="visible" value="!IsEmpty(Window.Property(movie.Poster))"/>
+                        <param name="visible" value="!IsEmpty(Window.Property(movie.Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="70"/>
                         <param name="y" value="143"/>
                         <param name="width" value="404"/>
@@ -665,7 +665,7 @@
                     </control>
                     <!-- CDART VIDEO -->
                     <include name="DiscArt">
-                        <param name="visible" value="!IsEmpty(Window.Property(movie.Poster))"/>
+                        <param name="visible" value="!IsEmpty(Window.Property(movie.Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="70"/>
                         <param name="y" value="143"/>
                         <param name="width" value="404"/>
