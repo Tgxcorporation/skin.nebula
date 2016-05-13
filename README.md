@@ -1,4 +1,4 @@
-## Nebula skin for Kodi 16 ISENGARD
+## Nebula skin for Kodi 16 JARVIS
 Simple and full-featured light or dark color skin designed for Full HD TV screens.
 
 ![](http://i.imgur.com/UVLYuNY.jpg)
