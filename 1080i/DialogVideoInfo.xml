@@ -298,12 +298,6 @@
                                     <visible>!IsEmpty(ListItem.Episode)</visible>
                                 </item>
                                 <item>
-                                    <label>$LOCALIZE[31322]:</label>
-                                    <label2>$INFO[ListItem.Premiered]</label2>
-                                    <onclick>noop</onclick>
-                                    <visible>!IsEmpty(ListItem.Premiered)</visible>
-                                </item>
-                                <item>
                                     <label>$LOCALIZE[515]:</label>
                                     <label2>$INFO[ListItem.Genre]</label2>
                                     <onclick>noop</onclick>
@@ -385,12 +379,6 @@
                                     <onclick>noop</onclick>
                                     <visible>!IsEmpty(ListItem.Episode)</visible>
                                     <visible>!Skin.HasSetting(plexbmc)</visible>
-                                </item>
-                                <item>
-                                    <label>$LOCALIZE[31322]:</label>
-                                    <label2>$INFO[ListItem.Premiered]</label2>
-                                    <onclick>noop</onclick>
-                                    <visible>!IsEmpty(ListItem.Premiered)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[515]:</label>
