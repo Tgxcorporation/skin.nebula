@@ -174,7 +174,7 @@
                                     <font>InfoDetailsFont</font>
                                     <include>TextColor_MainColor</include>
                                     <scroll>true</scroll>
-                                    <label>$INFO[ListItem.Label2,,     ]$INFO[ListItem.Property(Addon.Version),$LOCALIZE[24051] ]</label>
+                                    <label>$INFO[ListItem.Label2,,     ]$INFO[ListItem.AddonVersion,$LOCALIZE[24051] ]</label>
                                 </control>
                                 <control type="label">
                                     <posx>TextMargin</posx>
@@ -184,7 +184,7 @@
                                     <font>InfoDetailsFont</font>
                                     <include>TextColor_MainColor</include>
                                     <scroll>true</scroll>
-                                    <label>$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]</label>
+                                    <label>$INFO[ListItem.AddonCreator,$LOCALIZE[21863]: ]</label>
                                 </control>
                                 <control type="textbox">
                                     <posx>685</posx>
@@ -193,7 +193,7 @@
                                     <height>125</height>
                                     <font>InfoPlotFont</font>
                                     <include>TextColor_MainColor</include>
-                                    <label>$INFO[ListItem.Property(Addon.Summary)]</label>
+                                    <label>$INFO[ListItem.AddonSummary]</label>
                                     <include>myautoscroll</include>
                                 </control>
                             </control>

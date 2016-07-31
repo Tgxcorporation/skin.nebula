@@ -42,7 +42,7 @@
                     <align>center</align>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[ListItem.Property(Addon.Name)]</label>
+                    <label>$INFO[ListItem.AddonName]</label>
                 </control>
                 <control type="image">
                     <posx>25</posx>
@@ -60,7 +60,7 @@
                         <posy>0</posy>
                         <width>1280</width>
                         <height>71</height>
-                        <label>$INFO[ListItem.Property(Addon.Type),$LOCALIZE[146] ]</label>
+                        <label>$INFO[ListItem.AddonType,$LOCALIZE[146] ]</label>
                         <scroll>true</scroll>
                         <font>InfoDetailsFont</font>
                         <include>TextColor_MainColor</include>
@@ -70,7 +70,7 @@
                         <posy>78</posy>
                         <width>1280</width>
                         <height>71</height>
-                        <label>$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]</label>
+                        <label>$INFO[ListItem.AddonCreator,$LOCALIZE[21863]: ]</label>
                         <scroll>true</scroll>
                         <font>InfoDetailsFont</font>
                         <include>TextColor_MainColor</include>
@@ -80,7 +80,7 @@
                         <posy>156</posy>
                         <width>1280</width>
                         <height>71</height>
-                        <label>$INFO[ListItem.Property(Addon.Version),$LOCALIZE[24051] ]</label>
+                        <label>$INFO[ListItem.AddonVersion,$LOCALIZE[24051] ]</label>
                         <scroll>true</scroll>
                         <font>InfoDetailsFont</font>
                         <include>TextColor_MainColor</include>
@@ -90,7 +90,7 @@
                         <posy>234</posy>
                         <width>1280</width>
                         <height>71</height>
-                        <label>$INFO[ListItem.Property(Addon.Summary),$LOCALIZE[20037]: ]</label>
+                        <label>$INFO[ListItem.AddonSummary,$LOCALIZE[20037]: ]</label>
                         <scroll>true</scroll>
                         <font>InfoDetailsFont</font>
                         <include>TextColor_MainColor</include>
@@ -103,7 +103,7 @@
                         <width>1280</width>
                         <height>160</height>
                         <font>InfoPlotFont</font>
-                        <label>$INFO[ListItem.Property(Addon.Description)]</label>
+                        <label>$INFO[ListItem.AddonDescription]</label>
                         <pagecontrol>6060</pagecontrol>
                     </control>
                     <control type="scrollbar" id="6060">
@@ -117,23 +117,23 @@
                     </control>
                 </control>
                 <control type="label">
-                    <visible>String.IsEmpty(ListItem.Property(Addon.broken))</visible>
+                    <visible>String.IsEmpty(ListItem.AddonBroken)</visible>
                     <posx>TextMargin</posx>
                     <posy>903</posy>
                     <width>1800</width>
                     <height>90</height>
                     <font>InfoDetailsFont</font>
-                    <label>$INFO[ListItem.Property(Addon.Disclaimer),[COLOR=WarningColor]$LOCALIZE[24052]: [/COLOR]]</label>
+                    <label>$INFO[ListItem.AddonDisclaimer,[COLOR=WarningColor]$LOCALIZE[24052]: [/COLOR]]</label>
                     <scroll>true</scroll>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(ListItem.Property(Addon.broken))</visible>
+                    <visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
                     <posx>TextMargin</posx>
                     <posy>903</posy>
                     <width>1041</width>
                     <height>90</height>
                     <font>InfoDetailsFont</font>
-                    <label>$INFO[ListItem.Property(Addon.broken),[COLOR=WarningColor]$LOCALIZE[24096]: [/COLOR]]</label>
+                    <label>$INFO[ListItem.AddonBroken,[COLOR=WarningColor]$LOCALIZE[24096]: [/COLOR]]</label>
                     <scroll>true</scroll>
                 </control>
             </control>
