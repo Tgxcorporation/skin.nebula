@@ -48,6 +48,7 @@
     </variable>
     <variable name="Thumbs">
         <!--EXCEPTIONS-->
+        <value condition="Window.IsVisible(DialogMusicInfo.xml)+Control.hasfocus(50)+String.IsEqual(ListItem.DBType,artist)">$INFO[Container(50).ListItem.Thumb]</value>
         <value condition="window.IsActive(CustomAddons.xml)">$VAR[Theme.Color]/defaultExtensionBig.png</value>
         <value condition="StringCompare(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)">$VAR[Theme.Color]/defaultAudioBig.png</value>
         <value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!String.StartsWith(ListItem.Icon,Default)+[control.isvisible(58)|control.isvisible(53)]">$INFO[ListItem.Icon]</value>
@@ -900,5 +901,10 @@
         <value condition="Control.HasFocus(700055)+!String.IsEmpty(Container(700055).ListItem.Thumb)+!String.StartsWith(Container(700055).ListItem.Thumb,Default)">$INFO[Container(700055).ListItem.Thumb]</value>
 
         <!--<value>$VAR[Theme.Color]/defaultIconBig.png</value>-->
+    </variable>
+    <variable name="MusicInfoTextboxVar">
+        <value condition="Container.Content(songs)">$INFO[ListItem.ContributorAndRole] $INFO[ListItem.Comment]</value>
+        <value condition="Container.Content(albums)">$INFO[ListItem.Property(Album_Description)]</value>
+        <value>$INFO[ListItem.Property(Artist_Description)]</value>
     </variable>
 </includes>

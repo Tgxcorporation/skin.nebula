@@ -490,10 +490,9 @@
                 Window.IsVisible(DialogNumeric.xml)|
                 Window.IsVisible(DialogPictureInfo.xml)|
                 Window.IsVisible(DialogMediaSource.xml)|
-                Window.IsVisible(DialogAlbumInfo.xml)|
+                Window.IsVisible(DialogMusicInfo.xml)|
                 Window.IsVisible(DialogSelect.xml)|
                 Window.IsVisible(DialogContextMenu.xml)|
-                Window.IsVisible(DialogSongInfo.xml)|
                 Window.IsVisible(DialogButtonMenu.xml)|
                 Window.IsVisible(DialogPVRInfo.xml)|
                 Window.IsVisible(DialogPVRGuideSearch.xml)|
