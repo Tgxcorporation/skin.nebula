@@ -72,7 +72,7 @@
         <action>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</action>
     </shortcut>
     <shortcut>
-        <visible>System.GetBool(pvrmanager.enabled)</visible>
+        <visible>Pvr.HasTVChannels</visible>
         <defaultID>livetv</defaultID>
         <label>32022</label>
         <label2>Common Shortcut</label2>
@@ -81,7 +81,7 @@
         <action>ActivateWindow(TVChannels)</action>
     </shortcut>
     <shortcut>
-        <visible>System.GetBool(pvrmanager.enabled)</visible>
+        <visible>Pvr.HasRadioChannels</visible>
         <defaultID>radio</defaultID>
         <label>32087</label>
         <label2>Common Shortcut</label2>

@@ -525,7 +525,7 @@
 
                     <!--&lt;!&ndash;TV CHANNELS&ndash;&gt;-->
                     <!--<control type="radiobutton" id="703">-->
-                        <!--<visible>System.GetBool(pvrmanager.enabled)</visible>-->
+                        <!--<visible>Pvr.HasTVChannels</visible>-->
                         <!--<align>center</align>-->
                         <!--<width>1920</width>-->
                         <!--<radioposx>1806</radioposx>-->
@@ -540,7 +540,7 @@
                     <!--</control>-->
                     <!--&lt;!&ndash;TV RECORDINGS&ndash;&gt;-->
                     <!--<control type="radiobutton" id="704">-->
-                        <!--<visible>System.GetBool(pvrmanager.enabled)</visible>-->
+                        <!--<visible>Pvr.HasTVChannels</visible>-->
                         <!--<align>center</align>-->
                         <!--<width>1920</width>-->
                         <!--<radioposx>1806</radioposx>-->
@@ -555,7 +555,7 @@
                     <!--</control>-->
                     <!--&lt;!&ndash;TV GUIDE&ndash;&gt;-->
                     <!--<control type="radiobutton" id="705">-->
-                        <!--<visible>System.GetBool(pvrmanager.enabled)</visible>-->
+                        <!--<visible>Pvr.HasTVChannels</visible>-->
                         <!--<align>center</align>-->
                         <!--<width>1920</width>-->
                         <!--<radioposx>1806</radioposx>-->
@@ -570,7 +570,7 @@
                     <!--</control>-->
                     <!--&lt;!&ndash;RADIO CHANNELS&ndash;&gt;-->
                     <!--<control type="radiobutton" id="706">-->
-                        <!--<visible>System.GetBool(pvrmanager.enabled)</visible>-->
+                        <!--<visible>Pvr.HasTVChannels</visible>-->
                         <!--<align>center</align>-->
                         <!--<width>1920</width>-->
                         <!--<radioposx>1806</radioposx>-->
@@ -585,7 +585,7 @@
                     <!--</control>-->
                     <!--&lt;!&ndash;RADIO RECORDINGS&ndash;&gt;-->
                     <!--<control type="radiobutton" id="707">-->
-                        <!--<visible>System.GetBool(pvrmanager.enabled)</visible>-->
+                        <!--<visible>Pvr.HasTVChannels</visible>-->
                         <!--<align>center</align>-->
                         <!--<width>1920</width>-->
                         <!--<radioposx>1806</radioposx>-->
@@ -600,7 +600,7 @@
                     <!--</control>-->
                     <!--&lt;!&ndash;RADIO GUIDE&ndash;&gt;-->
                     <!--<control type="radiobutton" id="708">-->
-                        <!--<visible>System.GetBool(pvrmanager.enabled)</visible>-->
+                        <!--<visible>Pvr.HasTVChannels</visible>-->
                         <!--<align>center</align>-->
                         <!--<width>1920</width>-->
                         <!--<radioposx>1806</radioposx>-->
