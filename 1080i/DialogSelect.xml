@@ -273,6 +273,7 @@
                     <include>VerticalScroller</include>
                     <onleft>3</onleft>
                     <onright>3</onright>
+                    <ondown>9001</ondown>
                 </control>
                 <control type="grouplist" id="9001">
                     <posx>TextMargin</posx>
@@ -288,6 +289,10 @@
                     <onleft>9001</onleft>
                     <onright>9001</onright>
                     <control type="button" id="5">
+                        <include>ButtonFocusAnimation</include>
+                        <height>129</height>
+                    </control>
+                    <control type="button" id="7">
                         <include>ButtonFocusAnimation</include>
                         <height>129</height>
                     </control>
