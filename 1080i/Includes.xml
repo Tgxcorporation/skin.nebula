@@ -173,7 +173,7 @@
             <onup>9000</onup>
             <ondown condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</ondown>
             <ondown condition="Window.IsActive(Home.xml)">701</ondown>
-            <ondown condition="Window.IsActive(DialogContentSettings.xml)">21</ondown>
+            <ondown condition="Window.IsActive(DialogSettings.xml)">21</ondown>
             <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
             <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
             <ondown condition="Window.IsActive(script-XBMC_Lyrics-main.xml)">110</ondown>
@@ -297,7 +297,7 @@
             <onup>9000</onup>
             <ondown condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</ondown>
             <ondown condition="Window.IsActive(Home.xml)">701</ondown>
-            <ondown condition="Window.IsActive(DialogContentSettings.xml)">21</ondown>
+            <ondown condition="Window.IsActive(DialogSettings.xml)">21</ondown>
             <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
             <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
             <ondown condition="Window.IsActive(script-XBMC_Lyrics-main.xml)">110</ondown>
@@ -489,35 +489,28 @@
                 Window.IsVisible(DialogKeyboard.xml)|
                 Window.IsVisible(DialogNumeric.xml)|
                 Window.IsVisible(DialogPictureInfo.xml)|
-                Window.IsVisible(DialogMediaFilter.xml)|
                 Window.IsVisible(DialogMediaSource.xml)|
-                Window.IsVisible(DialogNetworkSetup.xml)|
                 Window.IsVisible(DialogAlbumInfo.xml)|
                 Window.IsVisible(DialogSelect.xml)|
                 Window.IsVisible(DialogContextMenu.xml)|
                 Window.IsVisible(DialogSongInfo.xml)|
                 Window.IsVisible(DialogButtonMenu.xml)|
-                Window.IsVisible(DialogAudioDSPManager.xml)|
                 Window.IsVisible(DialogPVRInfo.xml)|
                 Window.IsVisible(DialogPVRGuideSearch.xml)|
-                Window.IsVisible(DialogPVRTimerSettings.xml)|
+                Window.IsVisible(DialogSettings.xml)|
                 Window.IsVisible(DialogPVRGroupManager.xml)|
                 Window.IsVisible(DialogPVRChannelManager.xml)|
                 Window.IsVisible(DialogRecordSettings.xml)|
                 Window.IsVisible(DialogPeripheralManager.xml)|
-                Window.IsVisible(DialogPeripheralSettings.xml)|
                 Window.IsVisible(DialogAccessPoints.xml)|
                 Window.IsVisible(DialogFileStacking.xml)|
-                Window.IsVisible(DialogContentSettings.xml)|
                 Window.IsVisible(DialogTextViewer.xml)|
                 Window.IsVisible(DialogConfirm.xml)|
                 Window.IsVisible(DialogGamepad.xml)|
                 Window.IsVisible(SmartPlaylistRule.xml)|
                 Window.IsVisible(DeleteTimer.xml)|
-                Window.IsVisible(LockSettings.xml)|
                 Window.IsVisible(FileBrowser.xml)|
                 Window.IsVisible(RecordPrefs.xml)|
-                Window.IsVisible(ProfileSettings.xml)|
                 Window.IsVisible(script-skin_helper_service-ColorPicker.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)|
@@ -1034,7 +1027,7 @@
             <height>810</height>
             <include>VerticalScroller</include>
             <onright condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</onright>
-            <onright condition="Window.IsActive(DialogContentSettings.xml)">4</onright>
+            <onright condition="Window.IsActive(DialogSettings.xml)">4</onright>
             <onright condition="Window.IsActive(SettingsCategory.xml)">3</onright>
             <onright condition="Window.IsActive(DialogAddonSettings.xml)">9</onright>
             <onright condition="Window.IsActive(script-skinshortcuts.xml)">9000</onright>

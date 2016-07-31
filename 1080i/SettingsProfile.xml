@@ -18,7 +18,7 @@
         <include>Time</include>
         <control type="group">
             <include>FacadeFadeDialogs2ndLevelCondition</include>
-            <visible>![Window.IsVisible(ProfileSettings.xml)]</visible>
+            <visible>![Window.IsVisible(DialogSettings.xml)]</visible>
             <include>Icon_Fade</include>
             <control type="group">
                 <include>OpenClose</include>

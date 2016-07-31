@@ -6,7 +6,7 @@
         <include>TopBar</include>
         <control type="group">
             <include>FacadeFadeDialogs2ndLevelCondition</include>
-            <visible>!Window.IsVisible(DialogPeripheralSettings.xml)</visible>
+            <visible>!Window.IsVisible(DialogSettings.xml)</visible>
             <include>Icon_Fade</include>
             <control type="group">
                 <include>DialogOpenClose</include>
