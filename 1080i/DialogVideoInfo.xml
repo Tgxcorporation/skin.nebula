@@ -57,7 +57,7 @@
                     </control>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(musicvideos)]"/>
+                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[String.IsEqual(ListItem.DBType,movie)|String.IsEqual(ListItem.DBType,musicvideo)]"/>
                         <param name="x" value="70"/>
                         <param name="y" value="143"/>
                         <param name="width" value="404"/>
@@ -100,7 +100,7 @@
                         <texturefocus>-</texturefocus>
                     </control>
                     <control type="panel" id="9009">
-                        <visible>![container.content(tvshows) | container.content(episodes) | String.StartsWith(Container.FolderPath,videodb://musicvideos)]</visible>
+                        <visible>![String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) | String.StartsWith(Container.FolderPath,videodb://musicvideos)]</visible>
                         <include>VisibleFadeEffectDelay</include>
                         <posx>500</posx>
                         <posy>318</posy>
@@ -293,7 +293,7 @@
                         </content>
                     </control>
                     <control type="group">
-                        <visible>Container.Content(TVShows)</visible>
+                        <visible>String.IsEqual(ListItem.DBType,tvshow)</visible>
                         <include>VisibleFadeEffectDelay</include>
                         <control type="panel" id="9009">
                             <include>List_9009_Commons</include>
@@ -368,7 +368,7 @@
                         </control>
                     </control>
                     <control type="group">
-                        <visible>container.content(episodes)</visible>
+                        <visible>String.IsEqual(ListItem.DBType,episode)</visible>
                         <include>VisibleFadeEffectDelay</include>
                         <control type="panel" id="9009">
                             <include>List_9009_Commons</include>
@@ -567,7 +567,7 @@
                         </control>
                     </control>
                     <control type="group">
-                        <visible>container.content(musicvideos)</visible>
+                        <visible>String.IsEqual(ListItem.DBType,musicvideo)</visible>
                         <include>VisibleFadeEffectDelay</include>
                         <control type="panel" id="9009">
                             <include>List_9009_Commons</include>
@@ -786,7 +786,7 @@
                     <!-- PLOT -->
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(musicvideos)]"/>
+                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[String.IsEqual(ListItem.DBType,movie)|String.IsEqual(ListItem.DBType,musicvideo)]"/>
                         <param name="x" value="70"/>
                         <param name="y" value="143"/>
                         <param name="width" value="404"/>
@@ -1037,7 +1037,7 @@
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[208]</label>
                         <altlabel>$LOCALIZE[502]</altlabel>
-                        <usealttexture>Container.Content(tvshows) | Container.Content(seasons)</usealttexture>
+                        <usealttexture>String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)</usealttexture>
                         <onright>9009</onright>
                     </control>
                     <!--<control type="button" id="9">-->
@@ -1047,7 +1047,7 @@
                     <!--<visible>Control.IsEnabled(9)</visible>-->
                     <!--</control>-->
                     <control type="button" id="299">
-                        <visible>Container.Content(Movies) + system.hasaddon(script.cinema.experience)</visible>
+                        <visible>String.IsEqual(ListItem.DBType,movie) + system.hasaddon(script.cinema.experience)</visible>
                         <description>Cinema Experience</description>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[31005]</label>
@@ -1057,7 +1057,7 @@
                         <onright>9009</onright>
                     </control>
                     <control type="button" id="298">
-                        <visible>System.HasAddon(script.cinemavision) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+                        <visible>System.HasAddon(script.cinemavision) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)]</visible>
                         <description>Cinema Vision</description>
                         <include>LeftMenuButton</include>
                         <label>CinemaVision</label>
@@ -1082,16 +1082,16 @@
                     </control>
                     <control type="togglebutton" id="9010">
                         <visible>System.HasAddon(script.extendedinfo)</visible>
-                        <visible>Container.Content(movies)|Container.Content(tvshows)|[Container.Content(episodes)+Skin.HasSetting(plexbmc)+!String.StartsWith(ListItem.Title,Season)+String.IsEmpty(ListItem.VideoCodec)]</visible>
-                        <visible>![!Stringcompare(Container.FolderPath,videodb://tvshows/titles/) + String.StartsWith(Container.FolderPath,videodb://tvshows/titles/) + !Container.Content(episodes)]</visible>
+                        <visible>String.IsEqual(ListItem.DBType,movie)|String.IsEqual(ListItem.DBType,tvshow)|[String.IsEqual(ListItem.DBType,episode)+Skin.HasSetting(plexbmc)+!String.StartsWith(ListItem.Title,Season)+String.IsEmpty(ListItem.VideoCodec)]</visible>
+                        <visible>![!Stringcompare(Container.FolderPath,videodb://tvshows/titles/) + String.StartsWith(Container.FolderPath,videodb://tvshows/titles/) + !String.IsEqual(ListItem.DBType,episode)]</visible>
                         <description>Extended Info</description>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[31022]</label>
                         <onclick>dialog.close(all,true)</onclick>
-                        <onclick condition="Container.Content(movies)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onclick>
-                        <onclick condition="Container.Content(tvshows)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onclick>
-                        <onclick condition="Container.Content(episodes)">RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[ListItem.Title])</onclick>
-                        <!--<onclick condition="Container.Content(Seasons) + !String.IsEmpty(ListItem.Season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</onclick>-->
+                        <onclick condition="String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onclick>
+                        <onclick condition="String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onclick>
+                        <onclick condition="String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[ListItem.Title])</onclick>
+                        <!--<onclick condition="String.IsEqual(ListItem.DBType,season) + !String.IsEmpty(ListItem.Season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</onclick>-->
                     </control>
                     <control type="togglebutton" id="9012">
                         <visible>Integer.IsGreater(Container(50).NumItems,0)</visible>
@@ -1121,17 +1121,17 @@
                         <onright>9009</onright>
                     </control>
                     <control type="togglebutton" id="9018">
-                        <visible>System.HasAddon(script.artwork.downloader) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
+                        <visible>System.HasAddon(script.artwork.downloader) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)]</visible>
                         <description>Artwork Downloader</description>
                         <include>LeftMenuButton</include>
                         <label>Artwork Downloader</label>
-                        <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
-                        <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
-                        <onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideos, dbid=$INFO[ListItem.DBID])</onclick>
+                        <onclick condition="String.IsEqual(ListItem.DBType,movie)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
+                        <onclick condition="String.IsEqual(ListItem.DBType,tvshow)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
+                        <onclick condition="String.IsEqual(ListItem.DBType,musicvideo)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideos, dbid=$INFO[ListItem.DBID])</onclick>
                         <onright>9009</onright>
                     </control>
                     <control type="button" id="105">
-                        <visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + String.IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
+                        <visible>System.HasAddon(script.videoextras) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,musicvideo)] + String.IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
                         <description>Videos Extras</description>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[31509]</label>
@@ -1139,7 +1139,7 @@
                         <onright>9009</onright>
                     </control>
                     <control type="togglebutton" id="100">
-                        <visible>System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
+                        <visible>System.HasAddon(script.tvtunes) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)]</visible>
                         <description>Tv Tunes</description>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[31956]</label>
