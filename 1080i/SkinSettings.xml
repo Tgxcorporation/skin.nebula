@@ -566,49 +566,49 @@
                                 </item>
                                 <!--DEFAULT IMAGE STARTUP-->
                                 <item id="200">
-                                    <visible>String.IsEmpty(Skin.String(startup-screentype))|StringCompare(Skin.String(startup-screentype),default)</visible>
+                                    <visible>String.IsEmpty(Skin.String(startup-screentype))|String.IsEqual(Skin.String(startup-screentype),default)</visible>
                                     <label>$LOCALIZE[31033]</label>
                                     <label2>$LOCALIZE[13278]</label2>
                                     <onclick>Skin.SetString(startup-screentype,image)</onclick>
                                 </item>
                                 <!--Custom IMAGE STARTUP-->
                                 <item id="201">
-                                    <visible>StringCompare(Skin.String(startup-screentype),image)</visible>
+                                    <visible>String.IsEqual(Skin.String(startup-screentype),image)</visible>
                                     <label>$LOCALIZE[31033]</label>
                                     <label2>$LOCALIZE[31067]</label2>
                                     <onclick>Skin.SetString(startup-screentype,multiimage)</onclick>
                                 </item>
                                 <!--Custom MULTI IMAGE STARTUP-->
                                 <item id="208">
-                                    <visible>StringCompare(Skin.String(startup-screentype),multiimage)</visible>
+                                    <visible>String.IsEqual(Skin.String(startup-screentype),multiimage)</visible>
                                     <label>$LOCALIZE[31033]</label>
                                     <label2>$LOCALIZE[31518]</label2>
                                     <onclick>Skin.SetString(startup-screentype,video)</onclick>
                                 </item>
                                 <!--Custom VIDEO STARTUP-->
                                 <item id="202">
-                                    <visible>StringCompare(Skin.String(startup-screentype),video)</visible>
+                                    <visible>String.IsEqual(Skin.String(startup-screentype),video)</visible>
                                     <label>$LOCALIZE[31033]</label>
                                     <label2>$LOCALIZE[31068]</label2>
                                     <onclick>Skin.SetString(startup-screentype,default)</onclick>
                                 </item>
                                 <!--Custom Multi Image Selector-->
                                 <item id="209">
-                                    <visible>StringCompare(Skin.String(startup-screentype),multiimage)</visible>
+                                    <visible>String.IsEqual(Skin.String(startup-screentype),multiimage)</visible>
                                     <label>$LOCALIZE[31518] - $LOCALIZE[21801]</label>
                                     <label2>$INFO[Skin.String(startup-multiimagepath)]</label2>
                                     <onclick>Skin.SetPath(startup-multiimagepath)</onclick>
                                 </item>
                                 <!--Custom Video Selector-->
                                 <item id="203">
-                                    <visible>StringCompare(Skin.String(startup-screentype),image)</visible>
+                                    <visible>String.IsEqual(Skin.String(startup-screentype),image)</visible>
                                     <label>$LOCALIZE[31067] - $LOCALIZE[21801]</label>
                                     <label2>$INFO[Skin.String(startup-imagepath)]</label2>
                                     <onclick>Skin.SetImage(startup-imagepath)</onclick>
                                 </item>
                                 <!--Custom Video Selector-->
                                 <item id="204">
-                                    <visible>StringCompare(Skin.String(startup-screentype),video)</visible>
+                                    <visible>String.IsEqual(Skin.String(startup-screentype),video)</visible>
                                     <label>$LOCALIZE[31068] - $LOCALIZE[21801]</label>
                                     <label2>$INFO[Skin.String(startup-videopath)]</label2>
                                     <onclick>Skin.SetFile(startup-videopath)</onclick>
@@ -622,27 +622,27 @@
                                     <onclick>Skin.SetString(startup-playlisttype,music)</onclick>
                                 </item>
                                 <item id="205">
-                                    <visible>Skin.HasSetting(startup-playlist)+StringCompare(Skin.String(startup-playlisttype),music)</visible>
+                                    <visible>Skin.HasSetting(startup-playlist)+String.IsEqual(Skin.String(startup-playlisttype),music)</visible>
                                     <label>$LOCALIZE[31069]</label>
                                     <label2>$LOCALIZE[10500]</label2>
                                     <onclick>Skin.SetString(startup-playlisttype,video)</onclick>
                                 </item>
                                 <item id="205">
-                                    <visible>Skin.HasSetting(startup-playlist)+StringCompare(Skin.String(startup-playlisttype),video)</visible>
+                                    <visible>Skin.HasSetting(startup-playlist)+String.IsEqual(Skin.String(startup-playlisttype),video)</visible>
                                     <label>$LOCALIZE[31069]</label>
                                     <label2>$LOCALIZE[10028]</label2>
                                     <onclick>Skin.ToggleSetting(startup-playlist)</onclick>
                                 </item>
                                 <!-- MUSIC Playlist Selector-->
                                 <item id="206">
-                                    <visible>Skin.HasSetting(startup-playlist)+StringCompare(Skin.String(startup-playlisttype),music)</visible>
+                                    <visible>Skin.HasSetting(startup-playlist)+String.IsEqual(Skin.String(startup-playlisttype),music)</visible>
                                     <label>$LOCALIZE[10500]</label>
                                     <label2>$INFO[Skin.String(startup-musicplaylistpath)]</label2>
                                     <onclick>Skin.SetFile(startup-musicplaylistpath,,special://musicplaylists)</onclick>
                                 </item>
                                 <!-- VIDEO Playlist Selector-->
                                 <item id="206">
-                                    <visible>Skin.HasSetting(startup-playlist)+StringCompare(Skin.String(startup-playlisttype),video)</visible>
+                                    <visible>Skin.HasSetting(startup-playlist)+String.IsEqual(Skin.String(startup-playlisttype),video)</visible>
                                     <label>$LOCALIZE[10028]</label>
                                     <label2>$INFO[Skin.String(startup-videoplaylistpath)]</label2>
                                     <onclick>Skin.SetFile(startup-videoplaylistpath,,special://videoplaylists)</onclick>

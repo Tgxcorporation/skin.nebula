@@ -101,7 +101,7 @@
                 <include>Icon_Fade</include>
                 <!-- CDART MUSIC -->
                 <include content="DiscArt">
-                    <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                    <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                     <param name="x" value="73"/>
                     <param name="y" value="193"/>
                     <param name="width" value="424"/>
@@ -115,7 +115,7 @@
                 </include>
                 <!-- CDART VIDEO -->
                 <include content="DiscArt">
-                    <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                    <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                     <param name="x" value="73"/>
                     <param name="y" value="193"/>
                     <param name="width" value="424"/>
@@ -165,7 +165,7 @@
                 <include>Icon_Fade</include>
                 <control type="image">
                     <visible>![String.IsEmpty(ListItem.thumb)|String.IsEmpty(ListItem.Art(thumb))]</visible>
-                    <visible>!StringCompare(ListItem.Label,..)</visible>
+                    <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     <posx>25</posx>
                     <posy>158</posy>
                     <width>520</width>
@@ -200,7 +200,7 @@
         <itemlayout height="135" width="1390">
             <include>52_RecOverlayNoFocus</include>
             <control type="label">
-                <visible>StringCompare(ListItem.Label2,)</visible>
+                <visible>String.IsEqual(ListItem.Label2,)</visible>
                 <posx>TextMargin</posx>
                 <height>135</height>
                 <width>1210</width>
@@ -209,7 +209,7 @@
                 <label>$VAR[UnfocusedTitle]</label>
             </control>
             <control type="label">
-                <visible>!StringCompare(ListItem.Label2,)</visible>
+                <visible>!String.IsEqual(ListItem.Label2,)</visible>
                 <posx>TextMargin</posx>
                 <posy>27</posy>
                 <aligny>top</aligny>
@@ -219,7 +219,7 @@
                 <label>$VAR[UnfocusedTitle]</label>
             </control>
             <control type="label">
-                <visible>!StringCompare(ListItem.Label2,)</visible>
+                <visible>!String.IsEqual(ListItem.Label2,)</visible>
                 <posx>TextMargin</posx>
                 <posy>73</posy>
                 <aligny>top</aligny>
@@ -304,7 +304,7 @@
                     <param name="info" value="ListItem.PercentPlayed"/>
                 </include>
                 <control type="group">
-                    <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                    <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                     <visible>!Container.Content(Addons)</visible>
                     <control type="image">
                         <posx>TextMargin</posx>
@@ -425,7 +425,7 @@
     <include name="List_Layout_Weather">
         <itemlayout height="135" width="1390">
             <control type="label">
-                <visible>StringCompare(ListItem.Property(Property3),)</visible>
+                <visible>String.IsEqual(ListItem.Property(Property3),)</visible>
                 <posx>TextMargin</posx>
                 <height>135</height>
                 <width>1210</width>
@@ -434,7 +434,7 @@
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
-                <visible>!StringCompare(ListItem.Property(Property3),)</visible>
+                <visible>!String.IsEqual(ListItem.Property(Property3),)</visible>
                 <posx>TextMargin</posx>
                 <posy>27</posy>
                 <aligny>top</aligny>
@@ -444,7 +444,7 @@
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
-                <visible>!StringCompare(ListItem.Property(Property3),)</visible>
+                <visible>!String.IsEqual(ListItem.Property(Property3),)</visible>
                 <posx>TextMargin</posx>
                 <posy>73</posy>
                 <aligny>top</aligny>

@@ -49,7 +49,7 @@
         <itemlayout height="135" width="1920">
             <include>50_RecOverlayNoFocus</include>
             <control type="label">
-                <visible>StringCompare(ListItem.Label2,)</visible>
+                <visible>String.IsEqual(ListItem.Label2,)</visible>
                 <posx>455</posx>
                 <height>135</height>
                 <width>1345</width>
@@ -58,7 +58,7 @@
                 <label>$VAR[UnfocusedTitle]</label>
             </control>
             <control type="label">
-                <visible>!StringCompare(ListItem.Label2,)</visible>
+                <visible>!String.IsEqual(ListItem.Label2,)</visible>
                 <posx>455</posx>
                 <posy>27</posy>
                 <aligny>top</aligny>
@@ -68,7 +68,7 @@
                 <label>$VAR[UnfocusedTitle]</label>
             </control>
             <control type="label">
-                <visible>!StringCompare(ListItem.Label2,)</visible>
+                <visible>!String.IsEqual(ListItem.Label2,)</visible>
                 <posx>455</posx>
                 <posy>73</posy>
                 <aligny>top</aligny>
@@ -119,7 +119,7 @@
                 </control>
                 <!-- CDART MUSIC -->
                 <include content="DiscArt">
-                    <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                    <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                     <param name="x" value="70"/>
                     <param name="y" value="45"/>
                     <param name="width" value="315"/>
@@ -133,7 +133,7 @@
                 </include>
                 <!-- CDART VIDEO -->
                 <include content="DiscArt">
-                    <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                    <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                     <param name="x" value="70"/>
                     <param name="y" value="45"/>
                     <param name="width" value="315"/>
@@ -204,7 +204,7 @@
                     <posy>35</posy>
                     <control type="group">
                         <visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)|
-                            [!Container.Content(Addons)+[Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]]]</visible>
+                            [!Container.Content(Addons)+[Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]]]</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
                             <posy>85</posy>
@@ -503,7 +503,7 @@
     <include name="BigList_Layout_Weather">
         <itemlayout height="135" width="1920">
             <control type="label">
-                <visible>StringCompare(ListItem.Property(Property3),)</visible>
+                <visible>String.IsEqual(ListItem.Property(Property3),)</visible>
                 <posx>715</posx>
                 <height>135</height>
                 <width>1145</width>
@@ -512,7 +512,7 @@
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
-                <visible>!StringCompare(ListItem.Property(Property3),)</visible>
+                <visible>!String.IsEqual(ListItem.Property(Property3),)</visible>
                 <posx>715</posx>
                 <posy>27</posy>
                 <aligny>top</aligny>
@@ -522,7 +522,7 @@
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
-                <visible>!StringCompare(ListItem.Property(Property3),)</visible>
+                <visible>!String.IsEqual(ListItem.Property(Property3),)</visible>
                 <posx>715</posx>
                 <posy>73</posy>
                 <aligny>top</aligny>

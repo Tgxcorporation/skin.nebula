@@ -57,7 +57,7 @@
                     <!-- <include>ThumbBorder</include> -->
                 </control>
                 <control type="image">
-                    <visible>!StringCompare(ListItem.Thumb,unknown-user.png)</visible>
+                    <visible>!String.IsEqual(ListItem.Thumb,unknown-user.png)</visible>
                     <posx>25</posx>
                     <posy>408</posy>
                     <width>399</width>

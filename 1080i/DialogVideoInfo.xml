@@ -112,7 +112,7 @@
                                 <label>$LOCALIZE[20376]:</label>
                                 <label2>$INFO[ListItem.OriginalTitle]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.OriginalTitle) + !stringcompare(ListItem.OriginalTitle,Listitem.Title)</visible>
+                                <visible>!String.IsEmpty(ListItem.OriginalTitle) + !String.IsEqual(ListItem.OriginalTitle,Listitem.Title)</visible>
                             </item>
                             <item>
                                 <visible>!System.HasAddon(script.extendedinfo)</visible>
@@ -937,7 +937,7 @@
                         <orientation>vertical</orientation>
                         <itemlayout height="135" width="1420">
                             <control type="label">
-                                <visible>StringCompare(ListItem.Label2,)</visible>
+                                <visible>String.IsEqual(ListItem.Label2,)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>135</height>
@@ -947,7 +947,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!StringCompare(ListItem.Label2,)</visible>
+                                <visible>!String.IsEqual(ListItem.Label2,)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>27</posy>
                                 <aligny>top</aligny>
@@ -978,7 +978,7 @@
                                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                 </control>
                                 <control type="label">
-                                    <visible>StringCompare(ListItem.Label2,)</visible>
+                                    <visible>String.IsEqual(ListItem.Label2,)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>0</posy>
                                     <height>135</height>
@@ -988,7 +988,7 @@
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <visible>!StringCompare(ListItem.Label2,)</visible>
+                                    <visible>!String.IsEqual(ListItem.Label2,)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>27</posy>
                                     <aligny>top</aligny>
@@ -1089,7 +1089,7 @@
                     <control type="togglebutton" id="9010">
                         <visible>System.HasAddon(script.extendedinfo)</visible>
                         <visible>String.IsEqual(ListItem.DBType,movie)|String.IsEqual(ListItem.DBType,tvshow)|[String.IsEqual(ListItem.DBType,episode)+Skin.HasSetting(plexbmc)+!String.StartsWith(ListItem.Title,Season)+String.IsEmpty(ListItem.VideoCodec)]</visible>
-                        <visible>![!Stringcompare(Container.FolderPath,videodb://tvshows/titles/) + String.StartsWith(Container.FolderPath,videodb://tvshows/titles/) + !String.IsEqual(ListItem.DBType,episode)]</visible>
+                        <visible>![!String.IsEqual(Container.FolderPath,videodb://tvshows/titles/) + String.StartsWith(Container.FolderPath,videodb://tvshows/titles/) + !String.IsEqual(ListItem.DBType,episode)]</visible>
                         <description>Extended Info</description>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[31022]</label>

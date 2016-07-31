@@ -9,7 +9,7 @@
         <control type="button" id="12">
             <include>HiddenButton</include>
             <!-- Play PlayList or Custom Video -->
-            <onfocus condition="StringCompare(Skin.String(startup-screentype),video)+!String.IsEmpty(Skin.String(startup-videopath))">PlayMedia($ESCINFO[Skin.String(startup-videopath)])</onfocus>
+            <onfocus condition="String.IsEqual(Skin.String(startup-screentype),video)+!String.IsEmpty(Skin.String(startup-videopath))">PlayMedia($ESCINFO[Skin.String(startup-videopath)])</onfocus>
             <onfocus condition="Skin.HasSetting(startup-playlist)+!String.IsEmpty(Skin.String(startup-musicplaylistpath))">PlayMedia($ESCINFO[Skin.String(startup-musicplaylistpath)],isdir)</onfocus>
             <onfocus condition="Skin.HasSetting(startup-playlist)+!String.IsEmpty(Skin.String(startup-videoplaylistpath))">PlayMedia($ESCINFO[Skin.String(startup-videoplaylistpath)],isdir)</onfocus>
             <!--Change Window-->
@@ -21,7 +21,7 @@
         <include condition="!Skin.HasSetting(DisableFanart)">Fanart_Art</include>
         <!--CUSTOM STARTUP IMAGE-->
         <control type="image">
-            <visible>StringCompare(Skin.String(startup-screentype),image)+!String.IsEmpty(Skin.String(startup-imagepath))</visible>
+            <visible>String.IsEqual(Skin.String(startup-screentype),image)+!String.IsEmpty(Skin.String(startup-imagepath))</visible>
             <include>KenBurns</include>
             <include>OpenClose</include>
             <posx>0</posx>
@@ -32,7 +32,7 @@
             <texture>$INFO[Skin.String(startup-imagepath)]</texture>
         </control>
         <control type="multiimage">
-            <visible>StringCompare(Skin.String(startup-screentype),multiimage)+!String.IsEmpty(Skin.String(startup-multiimagepath))</visible>
+            <visible>String.IsEqual(Skin.String(startup-screentype),multiimage)+!String.IsEmpty(Skin.String(startup-multiimagepath))</visible>
             <include>KenBurns</include>
             <posx>0</posx>
             <posy>0</posy>
@@ -54,8 +54,8 @@
             <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
         </control>
         <control type="group">
-            <visible>![StringCompare(Skin.String(startup-screentype),image)+!String.IsEmpty(Skin.String(startup-imagepath))] +
-                ![StringCompare(Skin.String(startup-screentype),multiimage)+!String.IsEmpty(Skin.String(startup-multiimagepath))]</visible>
+            <visible>![String.IsEqual(Skin.String(startup-screentype),image)+!String.IsEmpty(Skin.String(startup-imagepath))] +
+                ![String.IsEqual(Skin.String(startup-screentype),multiimage)+!String.IsEmpty(Skin.String(startup-multiimagepath))]</visible>
             <include>OpenClose</include>
             <control type="image">
                 <posx>729</posx>

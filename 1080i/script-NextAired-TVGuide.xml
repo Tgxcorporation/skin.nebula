@@ -119,7 +119,7 @@
                             <label>$INFO[Window(Home).Property(NextAired.200.Wday)] $INFO[Window(Home).Property(NextAired.200.Date)]</label>
                         </control>
                         <control type="label">
-                            <visible>!StringCompare(Window(Home).Property(NextAired.200.Wday),)</visible>
+                            <visible>!String.IsEqual(Window(Home).Property(NextAired.200.Wday),)</visible>
                             <posx>395</posx>
                             <posy>0</posy>
                             <width>60</width>
@@ -332,7 +332,7 @@
                         <visible>control.hasfocus(200)</visible>
                         <include>Overlay_Fade</include>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                             <include>ConditionWhite</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -343,7 +343,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                             <include>ConditionBlack</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -355,7 +355,7 @@
                         </control>
 
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                             <include>ConditionWhite</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -366,7 +366,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                             <include>ConditionBlack</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -378,7 +378,7 @@
                         </control>
 
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                             <include>ConditionWhite</include>
                             <posx>60</posx>
                             <posy>680</posy>
@@ -388,7 +388,7 @@
                             <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(200).ListItem.Property(Art(clearlogo))]</texture>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                             <include>ConditionBlack</include>
                             <posx>60</posx>
                             <posy>680</posy>
@@ -454,7 +454,7 @@
                         <visible>control.hasfocus(201)</visible>
                         <include>Overlay_Fade</include>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                             <include>ConditionWhite</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -465,7 +465,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                             <include>ConditionBlack</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -477,7 +477,7 @@
                         </control>
 
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                             <include>ConditionWhite</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -488,7 +488,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                             <include>ConditionBlack</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -500,7 +500,7 @@
                         </control>
 
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                             <include>ConditionWhite</include>
                             <posx>60</posx>
                             <posy>680</posy>
@@ -510,7 +510,7 @@
                             <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(201).ListItem.Property(Art(clearlogo))]</texture>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                             <include>ConditionBlack</include>
                             <posx>60</posx>
                             <posy>680</posy>
@@ -576,7 +576,7 @@
                         <visible>control.hasfocus(202)</visible>
                         <include>Overlay_Fade</include>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                             <include>ConditionWhite</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -587,7 +587,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                             <include>ConditionBlack</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -599,7 +599,7 @@
                         </control>
 
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                             <include>ConditionWhite</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -610,7 +610,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                             <include>ConditionBlack</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -622,7 +622,7 @@
                         </control>
 
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                             <include>ConditionWhite</include>
                             <posx>60</posx>
                             <posy>680</posy>
@@ -632,7 +632,7 @@
                             <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(202).ListItem.Property(Art(clearlogo))]</texture>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                             <include>ConditionBlack</include>
                             <posx>60</posx>
                             <posy>680</posy>
@@ -698,7 +698,7 @@
                         <visible>control.hasfocus(203)</visible>
                         <include>Overlay_Fade</include>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                             <include>ConditionWhite</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -709,7 +709,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                             <include>ConditionBlack</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -721,7 +721,7 @@
                         </control>
 
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                             <include>ConditionWhite</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -732,7 +732,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                             <include>ConditionBlack</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -744,7 +744,7 @@
                         </control>
 
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                             <include>ConditionWhite</include>
                             <posx>60</posx>
                             <posy>680</posy>
@@ -754,7 +754,7 @@
                             <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(203).ListItem.Property(Art(clearlogo))]</texture>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                             <include>ConditionBlack</include>
                             <posx>60</posx>
                             <posy>680</posy>
@@ -820,7 +820,7 @@
                         <visible>control.hasfocus(204)</visible>
                         <include>Overlay_Fade</include>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                             <include>ConditionWhite</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -831,7 +831,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                             <include>ConditionBlack</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -843,7 +843,7 @@
                         </control>
 
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                             <include>ConditionWhite</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -854,7 +854,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                             <include>ConditionBlack</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -866,7 +866,7 @@
                         </control>
 
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                             <include>ConditionWhite</include>
                             <posx>60</posx>
                             <posy>680</posy>
@@ -876,7 +876,7 @@
                             <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(204).ListItem.Property(Art(clearlogo))]</texture>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                             <include>ConditionBlack</include>
                             <posx>60</posx>
                             <posy>680</posy>
@@ -942,7 +942,7 @@
                         <visible>control.hasfocus(205)</visible>
                         <include>Overlay_Fade</include>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                             <include>ConditionWhite</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -953,7 +953,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                             <include>ConditionBlack</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -965,7 +965,7 @@
                         </control>
 
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                             <include>ConditionWhite</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -976,7 +976,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                             <include>ConditionBlack</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -988,7 +988,7 @@
                         </control>
 
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                             <include>ConditionWhite</include>
                             <posx>60</posx>
                             <posy>680</posy>
@@ -998,7 +998,7 @@
                             <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(205).ListItem.Property(Art(clearlogo))]</texture>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                             <include>ConditionBlack</include>
                             <posx>60</posx>
                             <posy>680</posy>
@@ -1064,7 +1064,7 @@
                         <visible>control.hasfocus(206)</visible>
                         <include>Overlay_Fade</include>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                             <include>ConditionWhite</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -1075,7 +1075,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                             <include>ConditionBlack</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -1087,7 +1087,7 @@
                         </control>
 
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                             <include>ConditionWhite</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -1098,7 +1098,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                             <include>ConditionBlack</include>
                             <posx>25</posx>
                             <posy>680</posy>
@@ -1110,7 +1110,7 @@
                         </control>
 
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                             <include>ConditionWhite</include>
                             <posx>60</posx>
                             <posy>680</posy>
@@ -1120,7 +1120,7 @@
                             <texture background="true" fallback="white/defaultVideoBig.png">$INFO[Container(206).ListItem.Property(Art(clearlogo))]</texture>
                         </control>
                         <control type="image">
-                            <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                            <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                             <include>ConditionBlack</include>
                             <posx>60</posx>
                             <posy>680</posy>

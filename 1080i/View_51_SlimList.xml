@@ -42,7 +42,7 @@
         <itemlayout height="105" width="1920">
             <include>51_RecOverlayNoFocus</include>
             <control type="label">
-                <visible>StringCompare(ListItem.Label2,)</visible>
+                <visible>String.IsEqual(ListItem.Label2,)</visible>
                 <posx>455</posx>
                 <height>105</height>
                 <width>1345</width>
@@ -51,7 +51,7 @@
                 <label fallback="416">$VAR[UnfocusedTitle]</label>
             </control>
             <control type="label">
-                <visible>!StringCompare(ListItem.Label2,)</visible>
+                <visible>!String.IsEqual(ListItem.Label2,)</visible>
                 <posx>455</posx>
                 <posy>15</posy>
                 <aligny>top</aligny>
@@ -61,7 +61,7 @@
                 <label fallback="416">$VAR[UnfocusedTitle]</label>
             </control>
             <control type="label">
-                <visible>!StringCompare(ListItem.Label2,)</visible>
+                <visible>!String.IsEqual(ListItem.Label2,)</visible>
                 <posx>455</posx>
                 <posy>55</posy>
                 <aligny>top</aligny>
@@ -120,7 +120,7 @@
                     <animation effect="slide" time="0" start="0,0" end="0,-35" condition="[Container.Row(6)]">conditional</animation>
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                        <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                         <param name="x" value="135"/>
                         <param name="y" value="0"/>
                         <param name="width" value="185"/>
@@ -134,7 +134,7 @@
                     </include>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                        <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="135"/>
                         <param name="y" value="0"/>
                         <param name="width" value="185"/>
@@ -202,7 +202,7 @@
                     <param name="info" value="ListItem.PercentPlayed"/>
                 </include>
                 <control type="group">
-                    <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                    <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                     <visible>!Container.Content(Addons)</visible>
                     <control type="image">
                         <posx>455</posx>
@@ -340,7 +340,7 @@
     <include name="SlimList_Layout_Weather">
         <itemlayout height="105" width="1920">
             <control type="label">
-                <visible>StringCompare(ListItem.Property(Property3),)</visible>
+                <visible>String.IsEqual(ListItem.Property(Property3),)</visible>
                 <posx>715</posx>
                 <height>105</height>
                 <width>1145</width>
@@ -349,7 +349,7 @@
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
-                <visible>!StringCompare(ListItem.Property(Property3),)</visible>
+                <visible>!String.IsEqual(ListItem.Property(Property3),)</visible>
                 <posx>715</posx>
                 <posy>15</posy>
                 <aligny>top</aligny>
@@ -359,7 +359,7 @@
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
-                <visible>!StringCompare(ListItem.Property(Property3),)</visible>
+                <visible>!String.IsEqual(ListItem.Property(Property3),)</visible>
                 <posx>715</posx>
                 <posy>55</posy>
                 <aligny>top</aligny>

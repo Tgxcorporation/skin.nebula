@@ -749,7 +749,7 @@
                 </control>
                 <!--PLOTS-->
                 <control type="group">
-                    <visible>!StringCompare(Container(100).ListItem.Property(AudioCodec),)</visible>
+                    <visible>!String.IsEqual(Container(100).ListItem.Property(AudioCodec),)</visible>
                     <control type="textbox">
                         <visible>Control.IsVisible(110) | Control.IsVisible(120) | Control.IsVisible(140) | Control.IsVisible(150) | Control.IsVisible(200)</visible>
                         <posx>560</posx>
@@ -771,7 +771,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>StringCompare(Container(100).ListItem.Property(AudioCodec),)</visible>
+                    <visible>String.IsEqual(Container(100).ListItem.Property(AudioCodec),)</visible>
                     <control type="textbox">
                         <visible>Control.IsVisible(110) | Control.IsVisible(120) | Control.IsVisible(140) | Control.IsVisible(150) | Control.IsVisible(200)</visible>
                         <posx>560</posx>
@@ -824,7 +824,7 @@
                 </control>
                 <!--LOGOS-->
                 <control type="group">
-                    <visible>!StringCompare(Container(100).ListItem.Property(AudioCodec),)</visible>
+                    <visible>!String.IsEqual(Container(100).ListItem.Property(AudioCodec),)</visible>
                     <control type="image">
                         <posx>475</posx>
                         <posy>879</posy>

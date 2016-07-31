@@ -15,12 +15,12 @@
                 Control.isvisible(700041)|Control.isvisible(700042)|Control.isvisible(700043)|Control.isvisible(700044)|Control.isvisible(700045)|
                 Control.isvisible(700051)|Control.isvisible(700052)|Control.isvisible(700053)|Control.isvisible(700054)|Control.isvisible(700055)]|
                 [Skin.HasSetting(plexbmc)+[
-                [[Integer.IsGreater(Container(900).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),photo)]|
-                [[Integer.IsGreater(Container(901).NumItems,0)]+StringCompare(Container(300).ListItem.Label,$LOCALIZE[31010])]|
-                [[Integer.IsGreater(Container(311).NumItems,0)|Integer.IsGreater(Container(312).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),movie)]|
-                [[Integer.IsGreater(Container(511).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),artist)]|
+                [[Integer.IsGreater(Container(900).NumItems,0)]+String.IsEqual(Container(300).ListItem.Property(type),photo)]|
+                [[Integer.IsGreater(Container(901).NumItems,0)]+String.IsEqual(Container(300).ListItem.Label,$LOCALIZE[31010])]|
+                [[Integer.IsGreater(Container(311).NumItems,0)|Integer.IsGreater(Container(312).NumItems,0)]+String.IsEqual(Container(300).ListItem.Property(type),movie)]|
+                [[Integer.IsGreater(Container(511).NumItems,0)]+String.IsEqual(Container(300).ListItem.Property(type),artist)]|
                 [[Integer.IsGreater(Container(212).NumItems,0)]+Container(300).HasFocus(50)]|
-                [[Integer.IsGreater(Container(411).NumItems,0)|Integer.IsGreater(Container(412).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),show)]
+                [[Integer.IsGreater(Container(411).NumItems,0)|Integer.IsGreater(Container(412).NumItems,0)]+String.IsEqual(Container(300).ListItem.Property(type),show)]
                 ]]
                 ]</visible>
             <include>HiddenButton</include>

@@ -116,7 +116,7 @@
                                 <label2>$INFO[Window.Property(OriginalTitle)]</label2>
                                 <onclick>noop</onclick>
                                 <visible>!String.IsEmpty(Window.Property(OriginalTitle))</visible>
-                                <!--<visible>!String.IsEmpty(Window.Property(OriginalTitle)) + !stringcompare(Window.Property(OriginalTitle),Window.Property(Title))</visible>-->
+                                <!--<visible>!String.IsEmpty(Window.Property(OriginalTitle)) + !String.IsEqual(Window.Property(OriginalTitle),Window.Property(Title))</visible>-->
                             </item>
                             <item>
                                 <label>$LOCALIZE[20339]:</label>
@@ -785,7 +785,7 @@
                         <pagecontrol>1006</pagecontrol>
                         <itemlayout height="135" width="1420">
                             <control type="label">
-                                <visible>StringCompare(ListItem.Property(Character),)</visible>
+                                <visible>String.IsEqual(ListItem.Property(Character),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>135</height>
@@ -795,7 +795,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!StringCompare(ListItem.Property(Character),)</visible>
+                                <visible>!String.IsEqual(ListItem.Property(Character),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>27</posy>
                                 <aligny>top</aligny>
@@ -826,7 +826,7 @@
                                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                 </control>
                                 <control type="label">
-                                    <visible>StringCompare(ListItem.Property(Character),)</visible>
+                                    <visible>String.IsEqual(ListItem.Property(Character),)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>0</posy>
                                     <height>135</height>
@@ -836,7 +836,7 @@
                                     <label>$INFO[ListItem.Property(Character),$LOCALIZE[20347] ]</label>
                                 </control>
                                 <control type="label">
-                                    <visible>!StringCompare(ListItem.Property(Character),)</visible>
+                                    <visible>!String.IsEqual(ListItem.Property(Character),)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>27</posy>
                                     <aligny>top</aligny>
@@ -923,7 +923,7 @@
                         <pagecontrol>756</pagecontrol>
                         <itemlayout height="135" width="1420">
                             <control type="label">
-                                <visible>StringCompare(ListItem.Property(department),)</visible>
+                                <visible>String.IsEqual(ListItem.Property(department),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>135</height>
@@ -933,7 +933,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!StringCompare(ListItem.Property(department),)</visible>
+                                <visible>!String.IsEqual(ListItem.Property(department),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>27</posy>
                                 <aligny>top</aligny>
@@ -964,7 +964,7 @@
                                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                 </control>
                                 <control type="label">
-                                    <visible>StringCompare(ListItem.Property(department),)</visible>
+                                    <visible>String.IsEqual(ListItem.Property(department),)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>0</posy>
                                     <height>135</height>
@@ -974,7 +974,7 @@
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <visible>!StringCompare(ListItem.Property(department),)</visible>
+                                    <visible>!String.IsEqual(ListItem.Property(department),)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>27</posy>
                                     <aligny>top</aligny>
@@ -1061,7 +1061,7 @@
                         <pagecontrol>156</pagecontrol>
                         <itemlayout height="135" width="1420">
                             <control type="label">
-                                <visible>StringCompare(ListItem.Year,)</visible>
+                                <visible>String.IsEqual(ListItem.Year,)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>135</height>
@@ -1071,7 +1071,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!StringCompare(ListItem.Year,)</visible>
+                                <visible>!String.IsEqual(ListItem.Year,)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>27</posy>
                                 <aligny>top</aligny>
@@ -1111,7 +1111,7 @@
                                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                 </control>
                                 <control type="label">
-                                    <visible>StringCompare(ListItem.Year,)</visible>
+                                    <visible>String.IsEqual(ListItem.Year,)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>0</posy>
                                     <height>135</height>
@@ -1121,7 +1121,7 @@
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <visible>!StringCompare(ListItem.Year,)</visible>
+                                    <visible>!String.IsEqual(ListItem.Year,)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>27</posy>
                                     <aligny>top</aligny>
@@ -1217,7 +1217,7 @@
                         <pagecontrol>256</pagecontrol>
                         <itemlayout height="135" width="1420">
                             <control type="label">
-                                <visible>StringCompare(ListItem.Year,)</visible>
+                                <visible>String.IsEqual(ListItem.Year,)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>135</height>
@@ -1227,7 +1227,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!StringCompare(ListItem.Year,)</visible>
+                                <visible>!String.IsEqual(ListItem.Year,)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>27</posy>
                                 <aligny>top</aligny>
@@ -1267,7 +1267,7 @@
                                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                 </control>
                                 <control type="label">
-                                    <visible>StringCompare(ListItem.Year,)</visible>
+                                    <visible>String.IsEqual(ListItem.Year,)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>0</posy>
                                     <height>135</height>
@@ -1277,7 +1277,7 @@
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <visible>!StringCompare(ListItem.Year,)</visible>
+                                    <visible>!String.IsEqual(ListItem.Year,)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>27</posy>
                                     <aligny>top</aligny>
@@ -1373,7 +1373,7 @@
                         <pagecontrol>1156</pagecontrol>
                         <itemlayout height="135" width="1420">
                             <control type="label">
-                                <visible>StringCompare(ListItem.Property(Type),)</visible>
+                                <visible>String.IsEqual(ListItem.Property(Type),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>135</height>
@@ -1383,7 +1383,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!StringCompare(ListItem.Property(Type),)</visible>
+                                <visible>!String.IsEqual(ListItem.Property(Type),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>27</posy>
                                 <aligny>top</aligny>
@@ -1414,7 +1414,7 @@
                                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                 </control>
                                 <control type="label">
-                                    <visible>StringCompare(ListItem.Property(Type),)</visible>
+                                    <visible>String.IsEqual(ListItem.Property(Type),)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>0</posy>
                                     <height>135</height>
@@ -1424,7 +1424,7 @@
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <visible>!StringCompare(ListItem.Property(Type),)</visible>
+                                    <visible>!String.IsEqual(ListItem.Property(Type),)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>27</posy>
                                     <aligny>top</aligny>
@@ -2337,7 +2337,7 @@
                         <pagecontrol>456</pagecontrol>
                         <itemlayout height="135" width="1420">
                             <control type="label">
-                                <visible>StringCompare(ListItem.Property(Description),)</visible>
+                                <visible>String.IsEqual(ListItem.Property(Description),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>135</height>
@@ -2347,7 +2347,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!StringCompare(ListItem.Property(Description),)</visible>
+                                <visible>!String.IsEqual(ListItem.Property(Description),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>27</posy>
                                 <aligny>top</aligny>
@@ -2388,7 +2388,7 @@
                                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                 </control>
                                 <control type="label">
-                                    <visible>StringCompare(ListItem.Property(Description),)</visible>
+                                    <visible>String.IsEqual(ListItem.Property(Description),)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>0</posy>
                                     <height>135</height>
@@ -2398,7 +2398,7 @@
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <visible>!StringCompare(ListItem.Property(Description),)</visible>
+                                    <visible>!String.IsEqual(ListItem.Property(Description),)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>27</posy>
                                     <aligny>top</aligny>

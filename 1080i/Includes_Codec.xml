@@ -8,11 +8,11 @@
         <value condition="[!String.IsEmpty(Window.Property(mpaa)) + String.StartsWith(Window.Property(mpaa),Rated NC)] | [String.IsEmpty(Window.Property(mpaa)) + String.StartsWith(VideoPlayer.mpaa,Rated NC)]">$VAR[Theme.Color]/badges/content_rating/us/nc17.png</value>
         <value condition="[!String.IsEmpty(Window.Property(mpaa)) + String.StartsWith(Window.Property(mpaa),Rated G)] | [String.IsEmpty(Window.Property(mpaa)) + String.StartsWith(VideoPlayer.mpaa,Rated G)]">$VAR[Theme.Color]/badges/content_rating/us/g.png</value>
         <!-- US (TMDB) -->
-        <value condition="[!String.IsEmpty(Window.Property(mpaa)) + StringCompare(Window.Property(mpaa),R)] | [String.IsEmpty(Window.Property(mpaa)) + StringCompare(VideoPlayer.mpaa,R)]">$VAR[Theme.Color]/badges/content_rating/us/r.png</value>
-        <value condition="[!String.IsEmpty(Window.Property(mpaa)) + StringCompare(Window.Property(mpaa),PG-13)] | [String.IsEmpty(Window.Property(mpaa)) + StringCompare(VideoPlayer.mpaa,PG-13)]">$VAR[Theme.Color]/badges/content_rating/us/pg13.png</value>
-        <value condition="[!String.IsEmpty(Window.Property(mpaa)) + StringCompare(Window.Property(mpaa),PG)] | [String.IsEmpty(Window.Property(mpaa)) + StringCompare(VideoPlayer.mpaa,PG)]">$VAR[Theme.Color]/badges/content_rating/us/pg.png</value>
-        <value condition="[!String.IsEmpty(Window.Property(mpaa)) + StringCompare(Window.Property(mpaa),NC-17)] | [String.IsEmpty(Window.Property(mpaa)) + StringCompare(VideoPlayer.mpaa,NC-17)]">$VAR[Theme.Color]/badges/content_rating/us/nc17.png</value>
-        <value condition="[!String.IsEmpty(Window.Property(mpaa)) + StringCompare(Window.Property(mpaa),G)] | [String.IsEmpty(Window.Property(mpaa)) + StringCompare(VideoPlayer.mpaa,G)]">$VAR[Theme.Color]/badges/content_rating/us/g.png</value>
+        <value condition="[!String.IsEmpty(Window.Property(mpaa)) + String.IsEqual(Window.Property(mpaa),R)] | [String.IsEmpty(Window.Property(mpaa)) + String.IsEqual(VideoPlayer.mpaa,R)]">$VAR[Theme.Color]/badges/content_rating/us/r.png</value>
+        <value condition="[!String.IsEmpty(Window.Property(mpaa)) + String.IsEqual(Window.Property(mpaa),PG-13)] | [String.IsEmpty(Window.Property(mpaa)) + String.IsEqual(VideoPlayer.mpaa,PG-13)]">$VAR[Theme.Color]/badges/content_rating/us/pg13.png</value>
+        <value condition="[!String.IsEmpty(Window.Property(mpaa)) + String.IsEqual(Window.Property(mpaa),PG)] | [String.IsEmpty(Window.Property(mpaa)) + String.IsEqual(VideoPlayer.mpaa,PG)]">$VAR[Theme.Color]/badges/content_rating/us/pg.png</value>
+        <value condition="[!String.IsEmpty(Window.Property(mpaa)) + String.IsEqual(Window.Property(mpaa),NC-17)] | [String.IsEmpty(Window.Property(mpaa)) + String.IsEqual(VideoPlayer.mpaa,NC-17)]">$VAR[Theme.Color]/badges/content_rating/us/nc17.png</value>
+        <value condition="[!String.IsEmpty(Window.Property(mpaa)) + String.IsEqual(Window.Property(mpaa),G)] | [String.IsEmpty(Window.Property(mpaa)) + String.IsEqual(VideoPlayer.mpaa,G)]">$VAR[Theme.Color]/badges/content_rating/us/g.png</value>
         <!-- US (TV) -->
         <value condition="!String.IsEmpty(Window.Property(mpaa)) + String.Contains(Window.Property(mpaa),TV-)">$VAR[Theme.Color]/badges/content_rating/tv/$INFO[Window.Property(mpaa),,.png]</value>
         <value condition="String.IsEmpty(Window.Property(mpaa)) + String.Contains(VideoPlayer.mpaa,TV-)">$VAR[Theme.Color]/badges/content_rating/tv/$INFO[VideoPlayer.mpaa,,.png]</value>
@@ -68,11 +68,11 @@
         <value condition="[!String.IsEmpty(ListItem.mpaa) + String.StartsWith(ListItem.mpaa,Rated NC)] | [String.IsEmpty(ListItem.mpaa) + String.StartsWith(VideoPlayer.mpaa,Rated NC)]">$VAR[Theme.Color]/badges/content_rating/us/nc17.png</value>
         <value condition="[!String.IsEmpty(ListItem.mpaa) + String.StartsWith(ListItem.mpaa,Rated G)] | [String.IsEmpty(ListItem.mpaa) + String.StartsWith(VideoPlayer.mpaa,Rated G)]">$VAR[Theme.Color]/badges/content_rating/us/g.png</value>
         <!-- US (TMDB) -->
-        <value condition="[!String.IsEmpty(ListItem.mpaa) + StringCompare(ListItem.mpaa,R)] | [String.IsEmpty(ListItem.mpaa) + StringCompare(VideoPlayer.mpaa,R)]">$VAR[Theme.Color]/badges/content_rating/us/r.png</value>
-        <value condition="[!String.IsEmpty(ListItem.mpaa) + StringCompare(ListItem.mpaa,PG-13)] | [String.IsEmpty(ListItem.mpaa) + StringCompare(VideoPlayer.mpaa,PG-13)]">$VAR[Theme.Color]/badges/content_rating/us/pg13.png</value>
-        <value condition="[!String.IsEmpty(ListItem.mpaa) + StringCompare(ListItem.mpaa,PG)] | [String.IsEmpty(ListItem.mpaa) + StringCompare(VideoPlayer.mpaa,PG)]">$VAR[Theme.Color]/badges/content_rating/us/pg.png</value>
-        <value condition="[!String.IsEmpty(ListItem.mpaa) + StringCompare(ListItem.mpaa,NC-17)] | [String.IsEmpty(ListItem.mpaa) + StringCompare(VideoPlayer.mpaa,NC-17)]">$VAR[Theme.Color]/badges/content_rating/us/nc17.png</value>
-        <value condition="[!String.IsEmpty(ListItem.mpaa) + StringCompare(ListItem.mpaa,G)] | [String.IsEmpty(ListItem.mpaa) + StringCompare(VideoPlayer.mpaa,G)]">$VAR[Theme.Color]/badges/content_rating/us/g.png</value>
+        <value condition="[!String.IsEmpty(ListItem.mpaa) + String.IsEqual(ListItem.mpaa,R)] | [String.IsEmpty(ListItem.mpaa) + String.IsEqual(VideoPlayer.mpaa,R)]">$VAR[Theme.Color]/badges/content_rating/us/r.png</value>
+        <value condition="[!String.IsEmpty(ListItem.mpaa) + String.IsEqual(ListItem.mpaa,PG-13)] | [String.IsEmpty(ListItem.mpaa) + String.IsEqual(VideoPlayer.mpaa,PG-13)]">$VAR[Theme.Color]/badges/content_rating/us/pg13.png</value>
+        <value condition="[!String.IsEmpty(ListItem.mpaa) + String.IsEqual(ListItem.mpaa,PG)] | [String.IsEmpty(ListItem.mpaa) + String.IsEqual(VideoPlayer.mpaa,PG)]">$VAR[Theme.Color]/badges/content_rating/us/pg.png</value>
+        <value condition="[!String.IsEmpty(ListItem.mpaa) + String.IsEqual(ListItem.mpaa,NC-17)] | [String.IsEmpty(ListItem.mpaa) + String.IsEqual(VideoPlayer.mpaa,NC-17)]">$VAR[Theme.Color]/badges/content_rating/us/nc17.png</value>
+        <value condition="[!String.IsEmpty(ListItem.mpaa) + String.IsEqual(ListItem.mpaa,G)] | [String.IsEmpty(ListItem.mpaa) + String.IsEqual(VideoPlayer.mpaa,G)]">$VAR[Theme.Color]/badges/content_rating/us/g.png</value>
         <!-- US (TV) -->
         <value condition="!String.IsEmpty(ListItem.mpaa) + String.Contains(ListItem.mpaa,TV-)">$VAR[Theme.Color]/badges/content_rating/tv/$INFO[ListItem.mpaa,,.png]</value>
         <value condition="String.IsEmpty(ListItem.mpaa) + String.Contains(VideoPlayer.mpaa,TV-)">$VAR[Theme.Color]/badges/content_rating/tv/$INFO[VideoPlayer.mpaa,,.png]</value>
@@ -128,11 +128,11 @@
         <value condition="[!String.IsEmpty(VideoPlayer.mpaa) + String.StartsWith(VideoPlayer.mpaa,Rated NC)] | [String.IsEmpty(VideoPlayer.mpaa) + String.StartsWith(VideoPlayer.mpaa,Rated NC)]">$VAR[Theme.Color]/badges/content_rating/us/nc17.png</value>
         <value condition="[!String.IsEmpty(VideoPlayer.mpaa) + String.StartsWith(VideoPlayer.mpaa,Rated G)] | [String.IsEmpty(VideoPlayer.mpaa) + String.StartsWith(VideoPlayer.mpaa,Rated G)]">$VAR[Theme.Color]/badges/content_rating/us/g.png</value>
         <!-- US (TMDB) -->
-        <value condition="[!String.IsEmpty(VideoPlayer.mpaa) + StringCompare(VideoPlayer.mpaa,R)] | [String.IsEmpty(VideoPlayer.mpaa) + StringCompare(VideoPlayer.mpaa,R)]">$VAR[Theme.Color]/badges/content_rating/us/r.png</value>
-        <value condition="[!String.IsEmpty(VideoPlayer.mpaa) + StringCompare(VideoPlayer.mpaa,PG-13)] | [String.IsEmpty(VideoPlayer.mpaa) + StringCompare(VideoPlayer.mpaa,PG-13)]">$VAR[Theme.Color]/badges/content_rating/us/pg13.png</value>
-        <value condition="[!String.IsEmpty(VideoPlayer.mpaa) + StringCompare(VideoPlayer.mpaa,PG)] | [String.IsEmpty(VideoPlayer.mpaa) + StringCompare(VideoPlayer.mpaa,PG)]">$VAR[Theme.Color]/badges/content_rating/us/pg.png</value>
-        <value condition="[!String.IsEmpty(VideoPlayer.mpaa) + StringCompare(VideoPlayer.mpaa,NC-17)] | [String.IsEmpty(VideoPlayer.mpaa) + StringCompare(VideoPlayer.mpaa,NC-17)]">$VAR[Theme.Color]/badges/content_rating/us/nc17.png</value>
-        <value condition="[!String.IsEmpty(VideoPlayer.mpaa) + StringCompare(VideoPlayer.mpaa,G)] | [String.IsEmpty(VideoPlayer.mpaa) + StringCompare(VideoPlayer.mpaa,G)]">$VAR[Theme.Color]/badges/content_rating/us/g.png</value>
+        <value condition="[!String.IsEmpty(VideoPlayer.mpaa) + String.IsEqual(VideoPlayer.mpaa,R)] | [String.IsEmpty(VideoPlayer.mpaa) + String.IsEqual(VideoPlayer.mpaa,R)]">$VAR[Theme.Color]/badges/content_rating/us/r.png</value>
+        <value condition="[!String.IsEmpty(VideoPlayer.mpaa) + String.IsEqual(VideoPlayer.mpaa,PG-13)] | [String.IsEmpty(VideoPlayer.mpaa) + String.IsEqual(VideoPlayer.mpaa,PG-13)]">$VAR[Theme.Color]/badges/content_rating/us/pg13.png</value>
+        <value condition="[!String.IsEmpty(VideoPlayer.mpaa) + String.IsEqual(VideoPlayer.mpaa,PG)] | [String.IsEmpty(VideoPlayer.mpaa) + String.IsEqual(VideoPlayer.mpaa,PG)]">$VAR[Theme.Color]/badges/content_rating/us/pg.png</value>
+        <value condition="[!String.IsEmpty(VideoPlayer.mpaa) + String.IsEqual(VideoPlayer.mpaa,NC-17)] | [String.IsEmpty(VideoPlayer.mpaa) + String.IsEqual(VideoPlayer.mpaa,NC-17)]">$VAR[Theme.Color]/badges/content_rating/us/nc17.png</value>
+        <value condition="[!String.IsEmpty(VideoPlayer.mpaa) + String.IsEqual(VideoPlayer.mpaa,G)] | [String.IsEmpty(VideoPlayer.mpaa) + String.IsEqual(VideoPlayer.mpaa,G)]">$VAR[Theme.Color]/badges/content_rating/us/g.png</value>
         <!-- US (TV) -->
         <value condition="!String.IsEmpty(VideoPlayer.mpaa) + String.Contains(VideoPlayer.mpaa,TV-)">$VAR[Theme.Color]/badges/content_rating/tv/$INFO[VideoPlayer.mpaa,,.png]</value>
         <value condition="String.IsEmpty(VideoPlayer.mpaa) + String.Contains(VideoPlayer.mpaa,TV-)">$VAR[Theme.Color]/badges/content_rating/tv/$INFO[VideoPlayer.mpaa,,.png]</value>
@@ -196,15 +196,15 @@
         <value condition="String.Contains(Player.Filenameandpath,4k)">4kbis</value>
     </variable>
     <variable name="videocodec">
-        <value condition="[String.StartsWith(ListItem.VideoCodec,div) | stringcompare(ListItem.VideoCodec,dx50)]">divx</value>
+        <value condition="[String.StartsWith(ListItem.VideoCodec,div) | String.IsEqual(ListItem.VideoCodec,dx50)]">divx</value>
         <value>$INFO[ListItem.VideoCodec]</value>
     </variable>
     <variable name="videocodec_ExtendedInfo">
-        <value condition="[String.StartsWith(Window.Property(VideoCodec),div) | stringcompare(Window.Property(VideoCodec),dx50)]">divx</value>
+        <value condition="[String.StartsWith(Window.Property(VideoCodec),div) | String.IsEqual(Window.Property(VideoCodec),dx50)]">divx</value>
         <value>$INFO[Window.Property(VideoCodec)]</value>
     </variable>
     <variable name="videocodecOSD">
-        <value condition="[String.StartsWith(VideoPlayer.VideoCodec,div) | stringcompare(VideoPlayer.VideoCodec,dx50)]">divx</value>
+        <value condition="[String.StartsWith(VideoPlayer.VideoCodec,div) | String.IsEqual(VideoPlayer.VideoCodec,dx50)]">divx</value>
         <value>$INFO[VideoPlayer.VideoCodec]</value>
     </variable>
     <include name="Codecs">
@@ -407,7 +407,7 @@
             <texture>$VAR[Theme.Color]/badges/audio/$INFO[ListItem.AudioCodec,,.png]</texture>
         </control>
         <control type="image">
-            <visible>!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
+            <visible>!String.IsEqual(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
             <description>MPAA Image</description>
             <width>120</width>
             <height>70</height>
@@ -470,7 +470,7 @@
             <texture>$VAR[Theme.Color]/badges/audio/$INFO[ListItem.AudioCodec,,.png]</texture>
         </control>
         <control type="image">
-            <visible>!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
+            <visible>!String.IsEqual(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
             <description>MPAA Image</description>
             <width>120</width>
             <height>80</height>
@@ -567,7 +567,7 @@
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="String.IsEmpty(ListItem.VideoCodec)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="String.IsEmpty(ListItem.AudioChannels)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="String.IsEmpty(ListItem.AudioCodec)">Conditional</animation>
-            <visible>!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
+            <visible>!String.IsEqual(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
             <description>MPAA Image</description>
             <posx>408</posx>
             <posy>0</posy>
@@ -581,7 +581,7 @@
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="String.IsEmpty(ListItem.VideoCodec)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="String.IsEmpty(ListItem.AudioChannels)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="String.IsEmpty(ListItem.AudioCodec)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
+            <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![!String.IsEqual(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
             <visible>[String.Contains(ListItem(0).Filenameandpath,bluray) | String.Contains(ListItem(0).Filenameandpath,blu-ray) | String.Contains(ListItem(0).Filenameandpath,bdrip)]|String.Contains(ListItem.Filenameandpath,web)|String.Contains(ListItem.Filenameandpath,hdtv)|String.Contains(ListItem.Filenameandpath,dvd) | String.EndsWith(ListItem.Filenameandpath,.ifo) | String.EndsWith(ListItem.Filenameandpath,.iso)|String.StartsWith(ListItem.Path,videodb://movies/sets)|String.Contains(Player.Filenameandpath,4k)</visible>
             <description>Source Image</description>
             <posx>510</posx>
@@ -596,7 +596,7 @@
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="String.IsEmpty(ListItem.VideoCodec)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="String.IsEmpty(ListItem.AudioChannels)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="String.IsEmpty(ListItem.AudioCodec)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
+            <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![!String.IsEqual(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![[String.Contains(ListItem(0).Filenameandpath,bluray) | String.Contains(ListItem(0).Filenameandpath,blu-ray) | String.Contains(ListItem(0).Filenameandpath,bdrip)]|String.Contains(ListItem.Filenameandpath,web)|String.Contains(ListItem.Filenameandpath,hdtv)|String.Contains(ListItem.Filenameandpath,dvd) | String.EndsWith(ListItem.Filenameandpath,.ifo) | String.EndsWith(ListItem.Filenameandpath,.iso)|String.StartsWith(ListItem.Path,videodb://movies/sets)|String.Contains(Player.Filenameandpath,4k)]">Conditional</animation>
             <visible>ListItem.IsStereoscopic|String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)</visible>
             <description>3D Image</description>
@@ -612,7 +612,7 @@
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="String.IsEmpty(ListItem.VideoCodec)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="String.IsEmpty(ListItem.AudioChannels)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="String.IsEmpty(ListItem.AudioCodec)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
+            <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![!String.IsEqual(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![[String.Contains(ListItem(0).Filenameandpath,bluray) | String.Contains(ListItem(0).Filenameandpath,blu-ray) | String.Contains(ListItem(0).Filenameandpath,bdrip)]|String.Contains(ListItem.Filenameandpath,web)|String.Contains(ListItem.Filenameandpath,hdtv)|String.Contains(ListItem.Filenameandpath,dvd) | String.Contains(ListItem.Filenameandpath,.ifo) | String.Contains(ListItem.Filenameandpath,.iso)|String.StartsWith(ListItem.Path,videodb://movies/sets)|String.Contains(Player.Filenameandpath,4k)]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![ListItem.IsStereoscopic|String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)]">Conditional</animation>
             <posx>714</posx>
@@ -670,7 +670,7 @@
             <texture>$VAR[Theme.Color]/badges/audio/$INFO[ListItem.AudioCodec,,.png]</texture>
         </control>
         <control type="image">
-            <visible>!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
+            <visible>!String.IsEqual(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
             <description>MPAA Image</description>
             <width>85</width>
             <height>60</height>
@@ -761,7 +761,7 @@
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="String.IsEmpty(ListItem.VideoCodec)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="String.IsEmpty(ListItem.AudioChannels)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="String.IsEmpty(ListItem.AudioCodec)">Conditional</animation>
-            <visible>!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
+            <visible>!String.IsEqual(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
             <posx>360</posx>
             <description>MPAA Image</description>
             <width>100</width>
@@ -774,7 +774,7 @@
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="String.IsEmpty(ListItem.VideoCodec)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="String.IsEmpty(ListItem.AudioChannels)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="String.IsEmpty(ListItem.AudioCodec)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
+            <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![!String.IsEqual(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
             <posx>450</posx>
             <visible>[String.Contains(ListItem(0).Filenameandpath,bluray) | String.Contains(ListItem(0).Filenameandpath,blu-ray) | String.Contains(ListItem(0).Filenameandpath,bdrip)]|String.Contains(ListItem.Filenameandpath,web)|String.Contains(ListItem.Filenameandpath,hdtv)|String.Contains(ListItem.Filenameandpath,dvd) | String.EndsWith(ListItem.Filenameandpath,.ifo) | String.EndsWith(ListItem.Filenameandpath,.iso)|String.StartsWith(ListItem.Path,videodb://movies/sets)|String.Contains(Player.Filenameandpath,4k)</visible>
             <description>Source Image</description>
@@ -788,7 +788,7 @@
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="String.IsEmpty(ListItem.VideoCodec)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="String.IsEmpty(ListItem.AudioChannels)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="String.IsEmpty(ListItem.AudioCodec)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
+            <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![!String.IsEqual(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![[String.Contains(ListItem(0).Filenameandpath,bluray) | String.Contains(ListItem(0).Filenameandpath,blu-ray) | String.Contains(ListItem(0).Filenameandpath,bdrip)]|String.Contains(ListItem.Filenameandpath,web)|String.Contains(ListItem.Filenameandpath,hdtv)|String.Contains(ListItem.Filenameandpath,dvd) | String.EndsWith(ListItem.Filenameandpath,.ifo) | String.EndsWith(ListItem.Filenameandpath,.iso)|String.StartsWith(ListItem.Path,videodb://movies/sets)|String.Contains(Player.Filenameandpath,4k)]">Conditional</animation>
             <visible>ListItem.IsStereoscopic|String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)</visible>
             <posx>540</posx>
@@ -803,7 +803,7 @@
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="String.IsEmpty(ListItem.VideoCodec)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="String.IsEmpty(ListItem.AudioChannels)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="String.IsEmpty(ListItem.AudioCodec)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
+            <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![!String.IsEqual(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![[String.Contains(ListItem(0).Filenameandpath,bluray) | String.Contains(ListItem(0).Filenameandpath,blu-ray) | String.Contains(ListItem(0).Filenameandpath,bdrip)]|String.Contains(ListItem.Filenameandpath,web)|String.Contains(ListItem.Filenameandpath,hdtv)|String.Contains(ListItem.Filenameandpath,dvd) | String.Contains(ListItem.Filenameandpath,.ifo) | String.Contains(ListItem.Filenameandpath,.iso)|String.StartsWith(ListItem.Path,videodb://movies/sets)|String.Contains(Player.Filenameandpath,4k)]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![ListItem.IsStereoscopic|String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)]">Conditional</animation>
             <posx>630</posx>
@@ -910,7 +910,7 @@
         <control type="group" id="1">
             <width>90</width>
             <height>70</height>
-            <visible>!String.IsEmpty(VideoPlayer.AudioLanguage)+!StringCompare(VideoPlayer.AudioLanguage,und)</visible>
+            <visible>!String.IsEmpty(VideoPlayer.AudioLanguage)+!String.IsEqual(VideoPlayer.AudioLanguage,und)</visible>
             <control type="image" id="1">
                 <posx>4</posx>
                 <top>2</top>
@@ -933,7 +933,7 @@
         <control type="group" id="1">
             <width>90</width>
             <height>70</height>
-            <visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)+!StringCompare(VideoPlayer.SubtitlesLanguage,und)</visible>
+            <visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)+!String.IsEqual(VideoPlayer.SubtitlesLanguage,und)</visible>
             <control type="image" id="1">
                 <posx>4</posx>
                 <top>2</top>

@@ -23,7 +23,7 @@
             <include>FacadeFadeDialogs</include>
             <visible>Control.hasfocus(505050)</visible>
             <control type="group">
-                <visible>![StringCompare(ListItem.Label,..)]</visible>
+                <visible>![String.IsEqual(ListItem.Label,..)]</visible>
                 <animation effect="slide" time="0" start="0,0" end="0,40" condition="[String.IsEmpty(control.getlabel(45742))]">Conditional</animation>
                 <control type="label">
                     <posx>52</posx>
@@ -113,7 +113,7 @@
             <include>FacadeFadeDialogs</include>
             <visible>Control.hasfocus(505050)</visible>
             <control type="group">
-                <visible>![StringCompare(Container(500).ListItem.Label,..)]</visible>
+                <visible>![String.IsEqual(Container(500).ListItem.Label,..)]</visible>
                 <animation effect="slide" time="0" start="0,0" end="0,40" condition="[String.IsEmpty(control.getlabel(45742))]">Conditional</animation>
                 <control type="label">
                     <posx>52</posx>
@@ -212,7 +212,7 @@
                 <preloaditems>4</preloaditems>
                 <itemlayout height="425" width="265">
                     <control type="image">
-                        <visible>!StringCompare(ListItem.Label,..)</visible>
+                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
                         <posx>-25</posx>
                         <posy>85</posy>
                         <width>295</width>
@@ -223,7 +223,7 @@
                 </itemlayout>
                 <focusedlayout height="425" width="585">
                     <control type="image">
-                        <visible>!StringCompare(ListItem.Label,..)</visible>
+                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
                         <animation effect="fade" start="100" end="0" time="100" condition="Container(59).OnNext|Container(59).OnPrevious">Focus</animation>
                         <animation effect="fade" start="100" end="0" time="0" condition="![Container(59).OnNext|Container(59).OnPrevious]">Focus</animation>
                         <posx>40</posx>
@@ -272,7 +272,7 @@
                     <include>UpperFade</include>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                        <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="289"/>
                         <param name="y" value="254"/>
                         <param name="width" value="424"/>
@@ -375,7 +375,7 @@
                         <param name="info" value="ListItem.PercentPlayed"/>
                     </include>
                     <control type="group">
-                        <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                         <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
@@ -508,7 +508,7 @@
                 </itemlayout>
                 <focusedlayout height="425" width="585">
                     <control type="image">
-                        <visible>!StringCompare(ListItem.Label,..)</visible>
+                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
                         <animation effect="fade" start="100" end="0" time="100" condition="Container(58).OnNext|Container(58).OnPrevious">Focus</animation>
                         <animation effect="fade" start="100" end="0" time="0" condition="![Container(58).OnNext|Container(58).OnPrevious]">Focus</animation>
                         <posx>40</posx>
@@ -557,7 +557,7 @@
                     <include>UpperFade</include>
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Window.IsActive(MyMusicNav.xml)|Window.IsActive(MyMusicSongs.xml)]"/>
+                        <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Window.IsActive(MyMusicNav.xml)|Window.IsActive(MyMusicSongs.xml)]"/>
                         <param name="x" value="295"/>
                         <param name="y" value="203"/>
                         <param name="width" value="430"/>
@@ -632,7 +632,7 @@
                         <param name="info" value="ListItem.PercentPlayed"/>
                     </include>
                     <control type="group">
-                        <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                         <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
@@ -756,7 +756,7 @@
                 <preloaditems>4</preloaditems>
                 <itemlayout height="425" width="450">
                     <control type="image">
-                        <visible>!StringCompare(ListItem.Label,..)</visible>
+                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
                         <posx>-25</posx>
                         <posy>87</posy>
                         <width>470</width>
@@ -768,7 +768,7 @@
                 </itemlayout>
                 <focusedlayout height="425" width="920">
                     <control type="image">
-                        <visible>!StringCompare(ListItem.Label,..)</visible>
+                        <visible>!String.IsEqual(ListItem.Label,..)</visible>
                         <animation effect="fade" start="100" end="0" time="100" condition="Container(57).OnNext|Container(57).OnPrevious">Focus</animation>
                         <animation effect="fade" start="100" end="0" time="0" condition="![Container(57).OnNext|Container(57).OnPrevious]">Focus</animation>
                         <posx>40</posx>
@@ -889,7 +889,7 @@
                         <param name="info" value="ListItem.PercentPlayed"/>
                     </include>
                     <control type="group">
-                        <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                         <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>TextMargin</posx>

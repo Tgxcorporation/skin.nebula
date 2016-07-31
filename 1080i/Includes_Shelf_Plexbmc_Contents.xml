@@ -252,7 +252,7 @@
         <content>
             <item id="1">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.1.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.1.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.1.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -265,7 +265,7 @@
             </item>
             <item id="2">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.2.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.2.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.2.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.2.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.2.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -278,7 +278,7 @@
             </item>
             <item id="3">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.3.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.3.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.3.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.3.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.3.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -291,7 +291,7 @@
             </item>
             <item id="4">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.4.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.4.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.4.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.4.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.4.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -304,7 +304,7 @@
             </item>
             <item id="5">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.5.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.5.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.5.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.5.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.5.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -317,7 +317,7 @@
             </item>
             <item id="6">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.6.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.6.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.6.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.6.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.6.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -330,7 +330,7 @@
             </item>
             <item id="7">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.7.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.7.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.7.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.7.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.7.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -343,7 +343,7 @@
             </item>
             <item id="8">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.8.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.8.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.8.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.8.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.8.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -356,7 +356,7 @@
             </item>
             <item id="9">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.9.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.9.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.9.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.9.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.9.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -369,7 +369,7 @@
             </item>
             <item id="10">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.10.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.10.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.10.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.10.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.10.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -382,7 +382,7 @@
             </item>
             <item id="11">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.11.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.11.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.11.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.11.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.11.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -395,7 +395,7 @@
             </item>
             <item id="12">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.12.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.12.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.12.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.12.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.12.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -408,7 +408,7 @@
             </item>
             <item id="13">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.13.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.13.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.13.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.13.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.13.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -421,7 +421,7 @@
             </item>
             <item id="14">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.14.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.14.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.14.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.14.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.14.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -434,7 +434,7 @@
             </item>
             <item id="15">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.15.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.15.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.15.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.15.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.15.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -447,7 +447,7 @@
             </item>
             <item id="16">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.16.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.16.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.16.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.16.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.16.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -460,7 +460,7 @@
             </item>
             <item id="17">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.17.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.17.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.17.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.17.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.17.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -473,7 +473,7 @@
             </item>
             <item id="18">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.18.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.18.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.18.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.18.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.18.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -486,7 +486,7 @@
             </item>
             <item id="19">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.19.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.19.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.19.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.19.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.19.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -499,7 +499,7 @@
             </item>
             <item id="20">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.20.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.20.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.20.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.20.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.20.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -512,7 +512,7 @@
             </item>
             <item id="21">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.21.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.21.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.21.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.21.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.21.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -525,7 +525,7 @@
             </item>
             <item id="22">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.22.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.22.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.22.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.22.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.22.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -538,7 +538,7 @@
             </item>
             <item id="23">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.23.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.23.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.23.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.23.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.23.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -551,7 +551,7 @@
             </item>
             <item id="24">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.24.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.24.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.24.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.24.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.24.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -564,7 +564,7 @@
             </item>
             <item id="25">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.25.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.25.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.25.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.25.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.25.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -577,7 +577,7 @@
             </item>
             <item id="26">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.26.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.26.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.26.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.26.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.26.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -590,7 +590,7 @@
             </item>
             <item id="27">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.27.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.27.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.27.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.27.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.27.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -603,7 +603,7 @@
             </item>
             <item id="28">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.28.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.28.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.28.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.28.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.28.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -616,7 +616,7 @@
             </item>
             <item id="29">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.29.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.29.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.29.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.29.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.29.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -629,7 +629,7 @@
             </item>
             <item id="30">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.30.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.30.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.30.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.30.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.30.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -642,7 +642,7 @@
             </item>
             <item id="31">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.31.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.31.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.31.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.31.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.31.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -655,7 +655,7 @@
             </item>
             <item id="32">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.32.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.32.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.32.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.32.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.32.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -668,7 +668,7 @@
             </item>
             <item id="33">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.33.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.33.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.33.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.33.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.33.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -681,7 +681,7 @@
             </item>
             <item id="34">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.34.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.34.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.34.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.34.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.34.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -694,7 +694,7 @@
             </item>
             <item id="35">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.35.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.35.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.35.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.35.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.35.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -707,7 +707,7 @@
             </item>
             <item id="36">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.36.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.36.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.36.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.36.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.36.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -720,7 +720,7 @@
             </item>
             <item id="37">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.37.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.37.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.37.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.37.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.37.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -733,7 +733,7 @@
             </item>
             <item id="38">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.38.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.38.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.38.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.38.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.38.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -746,7 +746,7 @@
             </item>
             <item id="39">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.39.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.39.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.39.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.39.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.39.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -759,7 +759,7 @@
             </item>
             <item id="40">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.40.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.40.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.40.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.40.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.40.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -772,7 +772,7 @@
             </item>
             <item id="41">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.41.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.41.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.41.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.41.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.41.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -785,7 +785,7 @@
             </item>
             <item id="42">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.42.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.42.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.42.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.42.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.42.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -798,7 +798,7 @@
             </item>
             <item id="43">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.43.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.43.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.43.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.43.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.43.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -811,7 +811,7 @@
             </item>
             <item id="44">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.44.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.44.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.44.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.44.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.44.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -824,7 +824,7 @@
             </item>
             <item id="45">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.45.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.45.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.45.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.45.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.45.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -837,7 +837,7 @@
             </item>
             <item id="46">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.46.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.46.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.46.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.46.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.46.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -850,7 +850,7 @@
             </item>
             <item id="47">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.47.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.47.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.47.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.47.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.47.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -863,7 +863,7 @@
             </item>
             <item id="48">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.48.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.48.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.48.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.48.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.48.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -876,7 +876,7 @@
             </item>
             <item id="49">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.49.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.49.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.49.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.49.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.49.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -889,7 +889,7 @@
             </item>
             <item id="50">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.50.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.50.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.50.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.50.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.50.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -902,7 +902,7 @@
             </item>
             <item id="51">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.51.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.51.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.51.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.51.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.51.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -915,7 +915,7 @@
             </item>
             <item id="52">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.52.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.52.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.52.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.52.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.52.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -928,7 +928,7 @@
             </item>
             <item id="53">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.53.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.53.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.53.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.53.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.53.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -941,7 +941,7 @@
             </item>
             <item id="54">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.54.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.54.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.54.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.54.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.54.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -954,7 +954,7 @@
             </item>
             <item id="55">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.55.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.55.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.55.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.55.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.55.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -967,7 +967,7 @@
             </item>
             <item id="56">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.56.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.56.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.56.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.56.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.56.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -980,7 +980,7 @@
             </item>
             <item id="57">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.57.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.57.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.57.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.57.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.57.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -993,7 +993,7 @@
             </item>
             <item id="58">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.58.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.58.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.58.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.58.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.58.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -1006,7 +1006,7 @@
             </item>
             <item id="59">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.59.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.59.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.59.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.59.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.59.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -1019,7 +1019,7 @@
             </item>
             <item id="60">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.60.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.60.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestMovie.60.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestMovie.60.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestMovie.60.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -1036,7 +1036,7 @@
         <content>
             <item id="1">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.1.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.1.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.1.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.1.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.1.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1049,7 +1049,7 @@
             </item>
             <item id="2">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.2.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.2.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.2.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.2.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.2.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1062,7 +1062,7 @@
             </item>
             <item id="3">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.3.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.3.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.3.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.3.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.3.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1075,7 +1075,7 @@
             </item>
             <item id="4">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.4.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.4.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.4.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.4.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.4.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1088,7 +1088,7 @@
             </item>
             <item id="5">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.5.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.5.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.5.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.5.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.5.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1101,7 +1101,7 @@
             </item>
             <item id="6">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.6.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.6.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.6.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.6.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.6.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1114,7 +1114,7 @@
             </item>
             <item id="7">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.7.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.7.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.7.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.7.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.7.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1127,7 +1127,7 @@
             </item>
             <item id="8">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.8.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.8.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.8.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.8.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.8.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1140,7 +1140,7 @@
             </item>
             <item id="9">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.9.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.9.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.9.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.9.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.9.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1153,7 +1153,7 @@
             </item>
             <item id="10">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.10.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.10.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.10.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.10.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.10.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1166,7 +1166,7 @@
             </item>
             <item id="11">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.11.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.11.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.11.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.11.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.11.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1179,7 +1179,7 @@
             </item>
             <item id="12">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.12.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.12.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.12.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.12.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.12.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1192,7 +1192,7 @@
             </item>
             <item id="13">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.13.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.13.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.13.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.13.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.13.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1205,7 +1205,7 @@
             </item>
             <item id="14">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.14.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.14.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.14.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.14.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.14.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1218,7 +1218,7 @@
             </item>
             <item id="15">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.15.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.15.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.15.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.15.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.15.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1231,7 +1231,7 @@
             </item>
             <item id="16">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.16.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.16.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.16.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.16.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.16.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1244,7 +1244,7 @@
             </item>
             <item id="17">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.17.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.17.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.17.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.17.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.17.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1257,7 +1257,7 @@
             </item>
             <item id="18">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.18.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.18.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.18.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.18.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.18.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1270,7 +1270,7 @@
             </item>
             <item id="19">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.19.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.19.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.19.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.19.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.19.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1283,7 +1283,7 @@
             </item>
             <item id="20">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.20.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.20.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.20.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.20.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.20.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1296,7 +1296,7 @@
             </item>
             <item id="21">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.21.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.21.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.21.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.21.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.21.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1309,7 +1309,7 @@
             </item>
             <item id="22">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.22.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.22.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.22.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.22.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.22.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1322,7 +1322,7 @@
             </item>
             <item id="23">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.23.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.23.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.23.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.23.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.23.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1335,7 +1335,7 @@
             </item>
             <item id="24">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.24.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.24.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.24.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.24.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.24.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1348,7 +1348,7 @@
             </item>
             <item id="25">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.25.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.25.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.25.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.25.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.25.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1361,7 +1361,7 @@
             </item>
             <item id="26">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.26.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.26.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.26.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.26.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.26.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1374,7 +1374,7 @@
             </item>
             <item id="27">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.27.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.27.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.27.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.27.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.27.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1387,7 +1387,7 @@
             </item>
             <item id="28">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.28.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.28.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.28.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.28.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.28.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1400,7 +1400,7 @@
             </item>
             <item id="29">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.29.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.29.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.29.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.29.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.29.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1413,7 +1413,7 @@
             </item>
             <item id="30">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.30.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.30.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.30.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.30.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.30.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1426,7 +1426,7 @@
             </item>
             <item id="31">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.31.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.31.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.31.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.31.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.31.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1439,7 +1439,7 @@
             </item>
             <item id="32">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.32.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.32.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.32.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.32.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.32.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1452,7 +1452,7 @@
             </item>
             <item id="33">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.33.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.33.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.33.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.33.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.33.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1465,7 +1465,7 @@
             </item>
             <item id="34">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.34.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.34.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.34.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.34.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.34.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1478,7 +1478,7 @@
             </item>
             <item id="35">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.35.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.35.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.35.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.35.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.35.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1491,7 +1491,7 @@
             </item>
             <item id="36">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.36.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.36.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.36.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.36.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.36.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1504,7 +1504,7 @@
             </item>
             <item id="37">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.37.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.37.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.37.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.37.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.37.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1517,7 +1517,7 @@
             </item>
             <item id="38">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.38.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.38.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.38.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.38.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.38.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1530,7 +1530,7 @@
             </item>
             <item id="39">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.39.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.39.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.39.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.39.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.39.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1543,7 +1543,7 @@
             </item>
             <item id="40">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.40.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.40.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.40.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.40.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.40.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1556,7 +1556,7 @@
             </item>
             <item id="41">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.41.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.41.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.41.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.41.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.41.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1569,7 +1569,7 @@
             </item>
             <item id="42">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.42.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.42.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.42.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.42.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.42.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1582,7 +1582,7 @@
             </item>
             <item id="43">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.43.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.43.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.43.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.43.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.43.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1595,7 +1595,7 @@
             </item>
             <item id="44">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.44.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.44.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.44.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.44.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.44.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1608,7 +1608,7 @@
             </item>
             <item id="45">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.45.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.45.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.45.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.45.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.45.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1621,7 +1621,7 @@
             </item>
             <item id="46">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.46.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.46.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.46.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.46.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.46.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1634,7 +1634,7 @@
             </item>
             <item id="47">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.47.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.47.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.47.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.47.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.47.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1647,7 +1647,7 @@
             </item>
             <item id="48">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.48.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.48.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.48.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.48.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.48.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1660,7 +1660,7 @@
             </item>
             <item id="49">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.49.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.49.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.49.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.49.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.49.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1673,7 +1673,7 @@
             </item>
             <item id="50">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.50.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.50.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckMovie.50.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.50.Title)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckMovie.50.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -1903,7 +1903,7 @@
         <content>
             <item id="1">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.1.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.1.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -1913,7 +1913,7 @@
             </item>
             <item id="2">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.2.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.2.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.2.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -1923,7 +1923,7 @@
             </item>
             <item id="3">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.3.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.3.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.3.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -1933,7 +1933,7 @@
             </item>
             <item id="4">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.4.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.4.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.4.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -1943,7 +1943,7 @@
             </item>
             <item id="5">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.5.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.5.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.5.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -1953,7 +1953,7 @@
             </item>
             <item id="6">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.6.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.6.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.6.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -1963,7 +1963,7 @@
             </item>
             <item id="7">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.7.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.7.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.7.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -1973,7 +1973,7 @@
             </item>
             <item id="8">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.8.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.8.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.8.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -1983,7 +1983,7 @@
             </item>
             <item id="9">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.9.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.9.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.9.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -1993,7 +1993,7 @@
             </item>
             <item id="10">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.10.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.10.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.10.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2003,7 +2003,7 @@
             </item>
             <item id="11">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.11.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.11.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.11.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2013,7 +2013,7 @@
             </item>
             <item id="12">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.12.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.12.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.12.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2023,7 +2023,7 @@
             </item>
             <item id="13">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.13.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.13.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.13.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2033,7 +2033,7 @@
             </item>
             <item id="14">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.14.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.14.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.14.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2043,7 +2043,7 @@
             </item>
             <item id="15">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.15.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.15.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.15.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2053,7 +2053,7 @@
             </item>
             <item id="16">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.16.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.16.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.16.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2063,7 +2063,7 @@
             </item>
             <item id="17">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.17.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.17.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.17.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2073,7 +2073,7 @@
             </item>
             <item id="18">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.18.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.18.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.18.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2083,7 +2083,7 @@
             </item>
             <item id="19">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.19.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.19.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.19.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2093,7 +2093,7 @@
             </item>
             <item id="20">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.20.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.20.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.20.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2103,7 +2103,7 @@
             </item>
             <item id="21">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.21.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.21.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.21.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.21.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.21.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2113,7 +2113,7 @@
             </item>
             <item id="22">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.22.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.22.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.22.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.22.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.22.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2123,7 +2123,7 @@
             </item>
             <item id="23">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.23.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.23.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.23.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.23.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.23.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2133,7 +2133,7 @@
             </item>
             <item id="24">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.24.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.24.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.24.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.24.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.24.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2143,7 +2143,7 @@
             </item>
             <item id="25">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.25.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.25.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.25.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.25.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.25.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2153,7 +2153,7 @@
             </item>
             <item id="26">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.26.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.26.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.26.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.26.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.26.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2163,7 +2163,7 @@
             </item>
             <item id="27">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.27.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.27.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.27.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.27.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.27.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2173,7 +2173,7 @@
             </item>
             <item id="28">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.28.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.28.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.28.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.28.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.28.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2183,7 +2183,7 @@
             </item>
             <item id="29">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.29.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.29.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.29.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.29.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.29.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2193,7 +2193,7 @@
             </item>
             <item id="30">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.30.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.30.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.30.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.30.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.30.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2203,7 +2203,7 @@
             </item>
             <item id="31">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.31.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.31.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.31.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.31.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.31.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2213,7 +2213,7 @@
             </item>
             <item id="32">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.32.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.32.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.32.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.32.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.32.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2223,7 +2223,7 @@
             </item>
             <item id="33">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.33.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.33.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.33.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.33.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.33.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2233,7 +2233,7 @@
             </item>
             <item id="34">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.34.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.34.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.34.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.34.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.34.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2243,7 +2243,7 @@
             </item>
             <item id="35">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.35.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.35.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.35.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.35.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.35.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2253,7 +2253,7 @@
             </item>
             <item id="36">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.36.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.36.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.36.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.36.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.36.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2263,7 +2263,7 @@
             </item>
             <item id="37">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.37.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.37.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.37.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.37.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.37.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2273,7 +2273,7 @@
             </item>
             <item id="38">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.38.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.38.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.38.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.38.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.38.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2283,7 +2283,7 @@
             </item>
             <item id="39">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.39.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.39.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.39.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.39.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.39.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2293,7 +2293,7 @@
             </item>
             <item id="40">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.40.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.40.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.40.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.40.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.40.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2303,7 +2303,7 @@
             </item>
             <item id="41">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.41.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.41.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.41.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.41.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.41.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2313,7 +2313,7 @@
             </item>
             <item id="42">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.42.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.42.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.42.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.42.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.42.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2323,7 +2323,7 @@
             </item>
             <item id="43">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.43.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.43.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.43.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.43.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.43.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2333,7 +2333,7 @@
             </item>
             <item id="44">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.44.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.44.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.44.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.44.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.44.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2343,7 +2343,7 @@
             </item>
             <item id="45">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.45.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.45.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.45.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.45.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.45.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2353,7 +2353,7 @@
             </item>
             <item id="46">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.46.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.46.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.46.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.46.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.46.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2363,7 +2363,7 @@
             </item>
             <item id="47">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.47.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.47.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.47.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.47.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.47.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2373,7 +2373,7 @@
             </item>
             <item id="48">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.48.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.48.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.48.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.48.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.48.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2383,7 +2383,7 @@
             </item>
             <item id="49">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.49.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.49.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.49.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.49.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.49.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2393,7 +2393,7 @@
             </item>
             <item id="50">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.50.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.50.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.50.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2403,7 +2403,7 @@
             </item>
             <item id="51">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.51.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.51.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.51.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.51.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.51.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2413,7 +2413,7 @@
             </item>
             <item id="52">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.52.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.52.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.52.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.52.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.52.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2423,7 +2423,7 @@
             </item>
             <item id="53">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.53.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.53.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.53.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.53.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.53.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2433,7 +2433,7 @@
             </item>
             <item id="54">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.54.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.54.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.54.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.54.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.54.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2443,7 +2443,7 @@
             </item>
             <item id="55">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.55.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.55.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.55.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.55.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.55.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2453,7 +2453,7 @@
             </item>
             <item id="56">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.56.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.56.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.56.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.56.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.56.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2463,7 +2463,7 @@
             </item>
             <item id="57">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.57.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.57.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.57.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.57.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.57.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2473,7 +2473,7 @@
             </item>
             <item id="58">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.58.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.58.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.58.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.58.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.58.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2483,7 +2483,7 @@
             </item>
             <item id="59">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.59.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.59.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.59.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.59.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.59.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2493,7 +2493,7 @@
             </item>
             <item id="60">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.60.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.60.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.60.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.60.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.60.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
@@ -2507,7 +2507,7 @@
         <content>
             <item id="1">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.1.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.1.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2517,7 +2517,7 @@
             </item>
             <item id="2">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.2.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.2.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.2.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2527,7 +2527,7 @@
             </item>
             <item id="3">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.3.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.3.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.3.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2537,7 +2537,7 @@
             </item>
             <item id="4">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.4.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.4.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.4.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2547,7 +2547,7 @@
             </item>
             <item id="5">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.5.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.5.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.5.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2557,7 +2557,7 @@
             </item>
             <item id="6">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.6.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.6.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.6.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2567,7 +2567,7 @@
             </item>
             <item id="7">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.7.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.7.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.7.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2577,7 +2577,7 @@
             </item>
             <item id="8">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.8.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.8.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.8.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2587,7 +2587,7 @@
             </item>
             <item id="9">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.9.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.9.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.9.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2597,7 +2597,7 @@
             </item>
             <item id="10">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.10.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.10.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.10.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2607,7 +2607,7 @@
             </item>
             <item id="11">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.11.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.11.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.11.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2617,7 +2617,7 @@
             </item>
             <item id="12">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.12.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.12.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.12.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2627,7 +2627,7 @@
             </item>
             <item id="13">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.13.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.13.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.13.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2637,7 +2637,7 @@
             </item>
             <item id="14">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.14.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.14.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.14.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2647,7 +2647,7 @@
             </item>
             <item id="15">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.15.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.15.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.15.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2657,7 +2657,7 @@
             </item>
             <item id="16">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.16.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.16.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.16.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.16.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.16.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2667,7 +2667,7 @@
             </item>
             <item id="17">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.17.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.17.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.17.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.17.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.17.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2677,7 +2677,7 @@
             </item>
             <item id="18">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.18.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.18.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.18.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.18.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.18.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2687,7 +2687,7 @@
             </item>
             <item id="19">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.19.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.19.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.19.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.19.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.19.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2697,7 +2697,7 @@
             </item>
             <item id="20">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.20.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.20.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.20.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.20.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.20.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2707,7 +2707,7 @@
             </item>
             <item id="21">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.21.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.21.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.21.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.21.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.21.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2717,7 +2717,7 @@
             </item>
             <item id="22">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.22.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.22.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.22.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.22.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.22.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2727,7 +2727,7 @@
             </item>
             <item id="23">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.23.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.23.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.23.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.23.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.23.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2737,7 +2737,7 @@
             </item>
             <item id="24">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.24.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.24.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.24.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.24.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.24.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2747,7 +2747,7 @@
             </item>
             <item id="25">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.25.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.25.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.25.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.25.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.25.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2757,7 +2757,7 @@
             </item>
             <item id="26">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.26.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.26.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.26.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.26.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.26.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2767,7 +2767,7 @@
             </item>
             <item id="27">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.27.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.27.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.27.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.27.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.27.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2777,7 +2777,7 @@
             </item>
             <item id="28">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.28.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.28.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.28.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.28.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.28.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2787,7 +2787,7 @@
             </item>
             <item id="29">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.29.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.29.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.29.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.29.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.29.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2797,7 +2797,7 @@
             </item>
             <item id="30">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.30.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.30.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.30.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.30.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.30.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2807,7 +2807,7 @@
             </item>
             <item id="31">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.31.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.31.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.31.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.31.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.31.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2817,7 +2817,7 @@
             </item>
             <item id="32">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.32.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.32.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.32.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.32.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.32.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2827,7 +2827,7 @@
             </item>
             <item id="33">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.33.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.33.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.33.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.33.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.33.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2837,7 +2837,7 @@
             </item>
             <item id="34">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.34.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.34.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.34.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.34.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.34.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2847,7 +2847,7 @@
             </item>
             <item id="35">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.35.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.35.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.35.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.35.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.35.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2857,7 +2857,7 @@
             </item>
             <item id="36">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.36.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.36.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.36.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.36.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.36.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2867,7 +2867,7 @@
             </item>
             <item id="37">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.37.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.37.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.37.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.37.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.37.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2877,7 +2877,7 @@
             </item>
             <item id="38">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.38.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.38.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.38.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.38.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.38.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2887,7 +2887,7 @@
             </item>
             <item id="39">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.39.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.39.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.39.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.39.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.39.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2897,7 +2897,7 @@
             </item>
             <item id="40">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.40.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.40.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.40.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.40.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.40.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2907,7 +2907,7 @@
             </item>
             <item id="41">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.41.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.41.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.41.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.41.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.41.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2917,7 +2917,7 @@
             </item>
             <item id="42">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.42.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.42.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.42.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.42.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.42.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2927,7 +2927,7 @@
             </item>
             <item id="43">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.43.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.43.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.43.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.43.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.43.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2937,7 +2937,7 @@
             </item>
             <item id="44">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.44.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.44.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.44.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.44.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.44.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2947,7 +2947,7 @@
             </item>
             <item id="45">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.45.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.45.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.45.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.45.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.45.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2957,7 +2957,7 @@
             </item>
             <item id="46">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.46.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.46.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.46.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.46.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.46.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2967,7 +2967,7 @@
             </item>
             <item id="47">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.47.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.47.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.47.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.47.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.47.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2977,7 +2977,7 @@
             </item>
             <item id="48">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.48.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.48.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.48.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.48.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.48.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2987,7 +2987,7 @@
             </item>
             <item id="49">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.49.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.49.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.49.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.49.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.49.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>
@@ -2997,7 +2997,7 @@
             </item>
             <item id="50">
                 <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.50.Path))</visible>
-                <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.50.uuid))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.50.uuid))</visible>
                 <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.50.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.50.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31014]</property>

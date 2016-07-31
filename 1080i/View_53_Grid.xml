@@ -25,7 +25,7 @@
             <include>FacadeFadeDialogs</include>
             <visible>Control.IsVisible(53)</visible>
             <visible>!Skin.HasSetting(DisableIconViewInfos)</visible>
-            <visible>![StringCompare(ListItem.Label,..)|String.IsEmpty(ListItem.Label)]</visible>
+            <visible>![String.IsEqual(ListItem.Label,..)|String.IsEmpty(ListItem.Label)]</visible>
             <include>Icon_Fade</include>
             <animation effect="slide" tween="back" easing="out" time="100" start="0,0" end="0,-510"
                        condition="[Window.isActive(MyPVRChannels.xml)+[Container(53).Row(3)|Container(53).Row(4)|Container(53).Row(5)]]|
@@ -50,7 +50,7 @@
                            [Skin.HasSetting(53_UseBanners)+[Container(53).Row(3)|Container(53).Row(4)|Container(53).Row(5)]]">conditional</animation>
                 <!-- CDART MUSIC -->
                 <include content="DiscArt">
-                    <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                    <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                     <param name="x" value="85"/>
                     <param name="y" value="111"/>
                     <param name="width" value="414"/>
@@ -64,7 +64,7 @@
                 </include>
                 <!-- CDART VIDEO -->
                 <include content="DiscArt">
-                    <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                    <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                     <param name="x" value="152"/>
                     <param name="y" value="183"/>
                     <param name="width" value="280"/>
@@ -164,7 +164,7 @@
                     <param name="info" value="ListItem.PercentPlayed"/>
                 </include>
                 <control type="group">
-                    <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                    <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                     <visible>!Container.Content(Addons)</visible>
                     <control type="image">
                         <posx>TextMargin</posx>
