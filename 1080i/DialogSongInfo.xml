@@ -45,26 +45,26 @@
                     <include>TextColor_MainColor</include>
                     <label>$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</label>
                 </control>
-                <control type="image">
-                    <include>ConditionWhite</include>
-                    <description>Rating value</description>
-                    <posx>867</posx>
-                    <posy>270</posy>
-                    <height>37</height>
-                    <width>185</width>
-                    <aspectratio align="left">keep</aspectratio>
-                    <texture fallback="white/badges/rating0.png">white/badges/$INFO[ListItem.StarRating]</texture>
-                </control>
-                <control type="image">
-                    <include>ConditionBlack</include>
-                    <description>Rating value</description>
-                    <posx>867</posx>
-                    <posy>270</posy>
-                    <height>37</height>
-                    <width>185</width>
-                    <aspectratio align="left">keep</aspectratio>
-                    <texture fallback="black/badges/rating0.png">black/badges/$INFO[ListItem.StarRating]</texture>
-                </control>
+                <!--<control type="image">-->
+                    <!--<include>ConditionWhite</include>-->
+                    <!--<description>Rating value</description>-->
+                    <!--<posx>867</posx>-->
+                    <!--<posy>270</posy>-->
+                    <!--<height>37</height>-->
+                    <!--<width>185</width>-->
+                    <!--<aspectratio align="left">keep</aspectratio>-->
+                    <!--<texture fallback="white/badges/rating0.png">white/badges/$INFO[ListItem.StarRating]</texture>-->
+                <!--</control>-->
+                <!--<control type="image">-->
+                    <!--<include>ConditionBlack</include>-->
+                    <!--<description>Rating value</description>-->
+                    <!--<posx>867</posx>-->
+                    <!--<posy>270</posy>-->
+                    <!--<height>37</height>-->
+                    <!--<width>185</width>-->
+                    <!--<aspectratio align="left">keep</aspectratio>-->
+                    <!--<texture fallback="black/badges/rating0.png">black/badges/$INFO[ListItem.StarRating]</texture>-->
+                <!--</control>-->
                 <include name="DiscArt">
                     <param name="visible" value="!IsEmpty(ListItem.Thumb)"/>
                     <param name="x" value="79"/>
@@ -186,6 +186,18 @@
                                 <label2>$INFO[ListItem.TrackNumber]</label2>
                                 <onclick>noop</onclick>
                                 <visible>!IsEmpty(ListItem.TrackNumber)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[563]:</label>
+                                <label2>$INFO[ListItem.RatingAndVotes]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[38018]:</label>
+                                <label2>$INFO[ListItem.Userrating]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.Userrating)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[427]:</label>
