@@ -487,7 +487,6 @@
                 Window.IsVisible(DialogAddonSettings.xml)|
                 Window.IsVisible(DialogAddonInfo.xml)|
                 Window.IsVisible(DialogKeyboard.xml)|
-                Window.IsVisible(DialogOK.xml)|
                 Window.IsVisible(DialogNumeric.xml)|
                 Window.IsVisible(DialogPictureInfo.xml)|
                 Window.IsVisible(DialogMediaFilter.xml)|
@@ -498,7 +497,6 @@
                 Window.IsVisible(DialogContextMenu.xml)|
                 Window.IsVisible(DialogSongInfo.xml)|
                 Window.IsVisible(DialogButtonMenu.xml)|
-                Window.IsVisible(DialogYesNo.xml)|
                 Window.IsVisible(DialogAudioDSPManager.xml)|
                 Window.IsVisible(DialogPVRInfo.xml)|
                 Window.IsVisible(DialogPVRGuideSearch.xml)|
@@ -512,7 +510,7 @@
                 Window.IsVisible(DialogFileStacking.xml)|
                 Window.IsVisible(DialogContentSettings.xml)|
                 Window.IsVisible(DialogTextViewer.xml)|
-                Window.IsVisible(DialogProgress.xml)|
+                Window.IsVisible(DialogConfirm.xml)|
                 Window.IsVisible(DialogGamepad.xml)|
                 Window.IsVisible(SmartPlaylistRule.xml)|
                 Window.IsVisible(DeleteTimer.xml)|
@@ -544,14 +542,12 @@
             Window.IsVisible(DialogButtonMenu.xml)|
             Window.IsVisible(DialogKeyboard.xml)|
             Window.IsVisible(DialogNumeric.xml)|
-            Window.IsVisible(DialogOk.xml)|
             Window.IsVisible(DialogFileStacking.xml)|
             Window.IsVisible(DialogContextMenu.xml)|
-            Window.IsVisible(DialogYesNo.xml)|
             Window.IsVisible(DialogSelect.xml)|
             Window.IsVisible(FileBrowser.xml)|
             Window.IsVisible(DialogTextViewer.xml)|
-            Window.IsVisible(DialogProgress.xml)|
+            Window.IsVisible(DialogConfirm.xml)|
             Window.IsVisible(DialogGamepad.xml)|
             Window.IsVisible(script-globalsearch-contextmenu.xml)|
             Window.IsVisible(script-globalsearch-infodialog.xml)

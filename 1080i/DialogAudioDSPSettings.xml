@@ -5,7 +5,7 @@
         <include>TopBar</include>
         <control type="group">
             <include>FacadeFadeDialogs2ndLevelCondition</include>
-            <!--<visible>![Window.IsVisible(DialogSlider.xml)|Window.IsVisible(DialogSelect.xml)|Window.IsVisible(DialogSubtitles.xml)|Window.IsVisible(DialogYesNo.xml)]</visible>-->
+            <!--<visible>![Window.IsVisible(DialogSlider.xml)|Window.IsVisible(DialogSelect.xml)|Window.IsVisible(DialogSubtitles.xml)]</visible>-->
             <include>Icon_Fade</include>
             <control type="group">
                 <include>DialogOpenClose</include>
