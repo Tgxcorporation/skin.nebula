@@ -33,6 +33,14 @@
         <action>ActivateWindow(RadioTimers)</action>
     </shortcut>
     <shortcut>
+        <defaultID>19138</defaultID>
+        <label>19138</label>
+        <label2>Radio</label2>
+        <icon>DefaultAudio.png</icon>
+        <thumb/>
+        <action>ActivateWindow(RadioTimerRules)</action>
+    </shortcut>
+    <shortcut>
         <defaultID>137</defaultID>
         <label>137</label>
         <label2>Radio</label2>
