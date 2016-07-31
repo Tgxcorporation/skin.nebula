@@ -119,7 +119,7 @@
                 </control>
                 <!-- CDART MUSIC -->
                 <include content="DiscArt">
-                    <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                    <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                     <param name="x" value="70"/>
                     <param name="y" value="45"/>
                     <param name="width" value="315"/>
@@ -133,7 +133,7 @@
                 </include>
                 <!-- CDART VIDEO -->
                 <include content="DiscArt">
-                    <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                    <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                     <param name="x" value="70"/>
                     <param name="y" value="45"/>
                     <param name="width" value="315"/>
@@ -204,7 +204,7 @@
                     <posy>35</posy>
                     <control type="group">
                         <visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)|
-                            [!Container.Content(Addons)+[Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]]]</visible>
+                            [!Container.Content(Addons)+[Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]]]</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
                             <posy>85</posy>

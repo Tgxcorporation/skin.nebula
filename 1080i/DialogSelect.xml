@@ -136,7 +136,7 @@
                                 <include>SquareThumb</include>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                                <visible>!ListItem.IsParentFolder</visible>
                                 <posx>25</posx>
                                 <posy>0</posy>
                                 <width>276</width>
@@ -198,7 +198,7 @@
                                 </control>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                                <visible>!ListItem.IsParentFolder</visible>
                                 <posx>1459</posx>
                                 <posy>0</posy>
                                 <width>436</width>

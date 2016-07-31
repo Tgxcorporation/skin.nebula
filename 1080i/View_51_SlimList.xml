@@ -120,7 +120,7 @@
                     <animation effect="slide" time="0" start="0,0" end="0,-35" condition="[Container.Row(6)]">conditional</animation>
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                        <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                         <param name="x" value="135"/>
                         <param name="y" value="0"/>
                         <param name="width" value="185"/>
@@ -134,7 +134,7 @@
                     </include>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                        <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="135"/>
                         <param name="y" value="0"/>
                         <param name="width" value="185"/>
@@ -202,7 +202,7 @@
                     <param name="info" value="ListItem.PercentPlayed"/>
                 </include>
                 <control type="group">
-                    <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                    <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]</visible>
                     <visible>!Container.Content(Addons)</visible>
                     <control type="image">
                         <posx>455</posx>

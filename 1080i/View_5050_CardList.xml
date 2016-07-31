@@ -25,7 +25,7 @@
             <control type="group">
                 <posy>-83</posy>
                 <control type="image">
-                    <visible>String.IsEqual(ListItem.Label,..)</visible>
+                    <visible>ListItem.IsParentFolder</visible>
                     <posx>735</posx>
                     <posy>315</posy>
                     <width>450</width>
@@ -33,7 +33,7 @@
                     <include>SquareThumb</include>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                    <visible>!ListItem.IsParentFolder</visible>
                     <control type="image">
                         <visible>[String.IsEmpty(ListItem.thumb)|String.IsEmpty(ListItem.Art(thumb))]</visible>
                         <posx>60</posx>
@@ -45,7 +45,7 @@
                     </control>
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                        <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                         <param name="x" value="73"/>
                         <param name="y" value="456"/>
                         <param name="width" value="424"/>
@@ -59,7 +59,7 @@
                     </include>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                        <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="73"/>
                         <param name="y" value="639"/>
                         <param name="width" value="424"/>
@@ -112,7 +112,7 @@
                         <posx>530</posx>
                         <posy>248</posy>
                         <control type="group">
-                            <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                            <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]</visible>
                             <visible>!Container.Content(Addons)</visible>
                             <control type="image">
                                 <posx>TextMargin</posx>
@@ -222,7 +222,7 @@
                 <posy>-83</posy>
                 <include>ListFocusAnimation</include>
                 <control type="image">
-                    <visible>String.IsEqual(ListItem.Label,..)</visible>
+                    <visible>ListItem.IsParentFolder</visible>
                     <posx>735</posx>
                     <posy>315</posy>
                     <width>450</width>
@@ -230,7 +230,7 @@
                     <include>SquareThumb</include>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                    <visible>!ListItem.IsParentFolder</visible>
                     <control type="image">
                         <visible>[String.IsEmpty(ListItem.thumb)|String.IsEmpty(ListItem.Art(thumb))]</visible>
                         <posx>60</posx>
@@ -242,7 +242,7 @@
                     </control>
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                        <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                         <param name="x" value="73"/>
                         <param name="y" value="456"/>
                         <param name="width" value="424"/>
@@ -256,7 +256,7 @@
                     </include>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                        <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="73"/>
                         <param name="y" value="639"/>
                         <param name="width" value="424"/>
@@ -335,7 +335,7 @@
                         <posx>530</posx>
                         <posy>248</posy>
                         <control type="group">
-                            <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                            <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]</visible>
                             <visible>!Container.Content(Addons)</visible>
                             <control type="image">
                                 <posx>TextMargin</posx>

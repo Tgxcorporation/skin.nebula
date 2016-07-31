@@ -327,7 +327,7 @@
         </itemlayout>
         <focusedlayout height="425" width="585">
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                <visible>!ListItem.IsParentFolder</visible>
                 <animation effect="fade" start="100" end="0" time="100" condition="Container($PARAM[id]).OnNext|Container($PARAM[id]).OnPrevious">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="0" condition="![Container($PARAM[id]).OnNext|Container($PARAM[id]).OnPrevious]">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="0" condition="true">Focus</animation>
@@ -521,7 +521,7 @@
         </itemlayout>
         <focusedlayout height="425" width="920">
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                <visible>!ListItem.IsParentFolder</visible>
                 <animation effect="fade" start="100" end="0" time="100" condition="Container($PARAM[id]).OnNext|Container($PARAM[id]).OnPrevious">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="0" condition="![Container($PARAM[id]).OnNext|Container($PARAM[id]).OnPrevious]">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="0" condition="true">Focus</animation>
@@ -750,7 +750,7 @@
         </itemlayout>
         <focusedlayout height="425" width="585">
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                <visible>!ListItem.IsParentFolder</visible>
                 <animation effect="fade" start="100" end="0" time="100" condition="Container($PARAM[id]).OnNext|Container($PARAM[id]).OnPrevious">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="0" condition="![Container($PARAM[id]).OnNext|Container($PARAM[id]).OnPrevious]">Focus</animation>
                 <animation effect="fade" start="100" end="0" time="0" condition="true">Focus</animation>

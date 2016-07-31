@@ -17,7 +17,7 @@
             </control>
             <!-- CDART MUSIC -->
             <include content="DiscArt">
-                <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                 <param name="x" value="73"/>
                 <param name="y" value="193"/>
                 <param name="width" value="424"/>
@@ -31,7 +31,7 @@
             </include>
             <!-- CDART VIDEO -->
             <include content="DiscArt">
-                <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                 <param name="x" value="73"/>
                 <param name="y" value="193"/>
                 <param name="width" value="424"/>
@@ -134,7 +134,7 @@
                     <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                 </control>
                 <control type="group">
-                    <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                    <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]</visible>
                     <visible>!Container.Content(Addons)</visible>
                     <control type="image">
                         <posx>TextMargin</posx>

@@ -16,7 +16,7 @@
         <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)+!String.IsEmpty(ListItem.Property(DBID))">$VAR[Theme.Color]/OverlayUnwatched.png</value>
     </variable>
     <variable name="Banner">
-        <value condition="String.IsEqual(ListItem.Label,..)+[Container.Content(TVShows)|Container.Content(movies)|Container.Content(seasons)]">$VAR[Theme.Color]/defaultFolderBackBanner.png</value>
+        <value condition="ListItem.IsParentFolder+[Container.Content(TVShows)|Container.Content(movies)|Container.Content(seasons)]">$VAR[Theme.Color]/defaultFolderBackBanner.png</value>
         <value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
         <value condition="Skin.HasSetting(plexbmc)+Container.Content(episodes)">$INFO[ListItem.Property(banner)]</value>
         <value condition="Container.Content(episodes)">$INFO[ListItem.Art(tvshow.banner)]</value>
@@ -63,7 +63,7 @@
         <value condition="[Window.IsActive(Home.xml)+[String.IsEqual(Container(300).ListItem.Property(widgetType.3),episodes)|[String.IsEqual(Container(300).ListItem.Property(widgetType.3),musicvideos)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
         <value condition="[Window.IsActive(Home.xml)+[String.IsEqual(Container(300).ListItem.Property(widgetType.4),episodes)|[String.IsEqual(Container(300).ListItem.Property(widgetType.4),musicvideos)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
         <!--NORMAL-->
-        <value condition="String.IsEqual(ListItem.Label,..)">$VAR[ThumbsFolderBack]</value>
+        <value condition="ListItem.IsParentFolder">$VAR[ThumbsFolderBack]</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster))+!String.StartsWith(ListItem.Art(poster),Default)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!String.IsEmpty(ListItem.Icon)+!String.StartsWith(ListItem.Icon,Default)">$INFO[ListItem.Icon]</value>
         <value condition="!String.IsEmpty(ListItem.Property(Icon))+!String.StartsWith(ListItem.Property(Icon),Default)">$INFO[ListItem.Property(Icon)]</value>
@@ -96,7 +96,7 @@
         <value condition="Container.content(tvshows) + String.IsEqual(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343]</value>
         <value condition="Container.content(tvshows)">$LOCALIZE[20343]$INFO[Container.FolderName, - ]</value>
         <value condition="Container.content(seasons)">$INFO[Container.FolderName,, - ]$LOCALIZE[33054]</value>
-        <value condition="Container.content(episodes)+String.IsEqual(ListItem.Label,..)">$INFO[Container.FolderName]</value>
+        <value condition="Container.content(episodes)+ListItem.IsParentFolder">$INFO[Container.FolderName]</value>
         <value condition="Container.content(episodes)">$INFO[ListItem.TVShowTitle,, - ]$LOCALIZE[20373] $INFO[ListItem.Season]</value>
         <value condition="Container.content(musicvideos) + String.IsEqual(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20389]</value>
         <value condition="Window.IsActive(MyVideoNav.xml)+String.Contains(Container.FolderPath,movies)">$LOCALIZE[20342]</value>
@@ -794,7 +794,7 @@
         <value>$INFO[ListItem.Art(poster)]</value>
     </variable>
     <variable name="MusicCdArt">
-        <value condition="!Skin.HasSetting(plexbmc)+!String.IsEqual(ListItem.Label,..)+Skin.HasSetting(EnableCdArt)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=$INFO[ListItem.Thumb]</value>
+        <value condition="!Skin.HasSetting(plexbmc)+!ListItem.IsParentFolder+Skin.HasSetting(EnableCdArt)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=$INFO[ListItem.Thumb]</value>
     </variable>
     <variable name="VideoPlayerCdArt">
         <value condition="!String.IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
