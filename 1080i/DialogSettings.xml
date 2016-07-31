@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
-    <defaultcontrol>5</defaultcontrol>
+    <defaultcontrol>9001</defaultcontrol>
     <controls>
         <!-- <include>DimBG</include> -->
         <include>TopBar</include>
