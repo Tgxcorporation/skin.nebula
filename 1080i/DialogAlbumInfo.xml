@@ -58,7 +58,7 @@
                         ControlGroup(120).HasFocus]</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <!-- CDART MUSIC -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!container.content(artists)+!IsEmpty(ListItem.Thumb)+[Container.content(Albums)]"/>
                         <param name="x" value="79"/>
                         <param name="y" value="631"/>
@@ -424,7 +424,7 @@
                         <include>TextColor_MainColor</include>
                         <label>$INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!container.content(artists)+!IsEmpty(ListItem.Thumb)+[Container.content(Albums)]"/>
                         <param name="x" value="79"/>
                         <param name="y" value="631"/>

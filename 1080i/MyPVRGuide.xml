@@ -379,7 +379,7 @@
                                         <height>1</height>
                                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                                     </control>
-                                    <include name="ProgressBar">
+                                    <include content="ProgressBar">
                                         <param name="id" value="0"/>
                                         <param name="visible" value="true"/>
                                         <param name="x" value="475"/>

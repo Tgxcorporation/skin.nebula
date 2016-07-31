@@ -22,7 +22,7 @@
             <include>OpenClose</include>
             <include>Icon_Fade</include>
             <include>FacadeFadeDialogs</include>
-            <include name="ClearArtLogo">
+            <include content="ClearArtLogo">
                 <param name="x" value="0"/>
                 <param name="y" value="34"/>
                 <param name="width" value="1920"/>
@@ -31,7 +31,7 @@
                 <param name="align" value="center"/>
                 <param name="aligny" value="bottom"/>
             </include>
-            <include name="StudioArt">
+            <include content="StudioArt">
                 <param name="x" value="0"/>
                 <param name="y" value="34"/>
                 <param name="width" value="1920"/>

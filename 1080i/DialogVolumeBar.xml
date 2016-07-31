@@ -20,7 +20,7 @@
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
-            <include name="ProgressBar">
+            <include content="ProgressBar">
                 <param name="id" value="20"/>
                 <param name="visible" value="true"/>
                 <param name="x" value="0"/>

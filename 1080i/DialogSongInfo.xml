@@ -65,7 +65,7 @@
                     <!--<aspectratio align="left">keep</aspectratio>-->
                     <!--<texture fallback="black/badges/rating0.png">black/badges/$INFO[ListItem.StarRating]</texture>-->
                 <!--</control>-->
-                <include name="DiscArt">
+                <include content="DiscArt">
                     <param name="visible" value="!IsEmpty(ListItem.Thumb)"/>
                     <param name="x" value="79"/>
                     <param name="y" value="631"/>

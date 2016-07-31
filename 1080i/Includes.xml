@@ -616,7 +616,7 @@
             <control type="group">
                 <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
                 <control type="group">
-                    <include name="ProgressBar">
+                    <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="[[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]|Player.HasVideo]"/>
                         <param name="x" value="0"/>
@@ -1386,7 +1386,7 @@
                         <texture background="true">$VAR[VideoPlayerClearLogo]</texture>
                     </control>
                 </control>
-                <include name="StudioArt">
+                <include content="StudioArt">
                     <param name="x" value="1235"/>
                     <param name="y" value="490"/>
                     <param name="width" value="300"/>
@@ -1406,7 +1406,7 @@
                 <control type="group">
                     <posy>642</posy>
                     <!-- CDART VIDEO -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(VideoPlayer.Cover)+!VideoPlayer.Content(LiveTV)+!VideoPlayer.Content(episodes)"/>
                         <param name="x" value="122"/>
                         <param name="y" value="-70"/>

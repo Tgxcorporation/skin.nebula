@@ -49,7 +49,7 @@
                            [Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners)+[Container(53).Row(2)|Container(53).Row(3)]]|
                            [Skin.HasSetting(53_UseBanners)+[Container(53).Row(3)|Container(53).Row(4)|Container(53).Row(5)]]">conditional</animation>
                 <!-- CDART MUSIC -->
-                <include name="DiscArt">
+                <include content="DiscArt">
                     <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                     <param name="x" value="85"/>
                     <param name="y" value="111"/>
@@ -63,7 +63,7 @@
                     <param name="pulse" value="false"/>
                 </include>
                 <!-- CDART VIDEO -->
-                <include name="DiscArt">
+                <include content="DiscArt">
                     <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                     <param name="x" value="152"/>
                     <param name="y" value="183"/>
@@ -137,7 +137,7 @@
                     <height>1</height>
                     <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                 </control>
-                <include name="ProgressBar">
+                <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="IntegerGreaterThan(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
                     <param name="x" value="TextMargin"/>
@@ -150,7 +150,7 @@
                     <param name="borderbg" value="0,0,0,0"/>
                     <param name="info" value="ListItem.Progress"/>
                 </include>
-                <include name="ProgressBar">
+                <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
                     <param name="x" value="TextMargin"/>

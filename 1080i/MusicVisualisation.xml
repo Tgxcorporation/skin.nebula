@@ -34,7 +34,7 @@
                             <texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Music.ClearLogo)]</texture>
                         </control>
                     </control>
-                    <include name="StudioArt">
+                    <include content="StudioArt">
                         <param name="x" value="1210"/>
                         <param name="y" value="490"/>
                         <param name="width" value="300"/>
@@ -54,7 +54,7 @@
                     <control type="group">
                         <posy>642</posy>
                         <!-- CDART MUSIC -->
-                        <include name="DiscArt">
+                        <include content="DiscArt">
                             <param name="visible" value="!IsEmpty(Player.Art(thumb))"/>
                             <param name="x" value="70"/>
                             <param name="y" value="-122"/>

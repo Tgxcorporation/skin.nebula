@@ -71,7 +71,7 @@
                         <label>$INFO[Window.Property(Year)]</label>
                     </control>
                     <!-- CDART VIDEO -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="70"/>
                         <param name="y" value="143"/>
@@ -665,7 +665,7 @@
                         <label>$INFO[Window.Property(Year)]</label>
                     </control>
                     <!-- CDART VIDEO -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="70"/>
                         <param name="y" value="143"/>

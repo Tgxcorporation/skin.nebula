@@ -49,7 +49,7 @@
                 <label>$INFO[Container(50).NumItems,, $LOCALIZE[31025]]</label>
             </control>
             <!-- CDART VIDEO -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)"/>
                 <param name="x" value="140"/>
                 <param name="y" value="693"/>

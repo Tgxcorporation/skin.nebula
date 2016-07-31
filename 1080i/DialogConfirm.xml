@@ -43,7 +43,7 @@
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
                 </control>
-                <include name="ProgressBar">
+                <include content="ProgressBar">
                     <param name="id" value="20"/>
                     <param name="visible" value="true"/>
                     <param name="x" value="0"/>

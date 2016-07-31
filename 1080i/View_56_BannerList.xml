@@ -16,7 +16,7 @@
                 <include>SquareThumb</include>
             </control>
             <!-- CDART MUSIC -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                 <param name="x" value="73"/>
                 <param name="y" value="193"/>
@@ -30,7 +30,7 @@
                 <param name="pulse" value="true"/>
             </include>
             <!-- CDART VIDEO -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                 <param name="x" value="73"/>
                 <param name="y" value="193"/>
@@ -210,7 +210,7 @@
             <include>Icon_Fade</include>
             <include>FacadeFadeDialogs</include>
             <include>ScrollOffsetLabel_50</include>
-            <include name="ClearArtLogo">
+            <include content="ClearArtLogo">
                 <param name="x" value="0"/>
                 <param name="y" value="34"/>
                 <param name="width" value="1920"/>
@@ -219,7 +219,7 @@
                 <param name="align" value="center"/>
                 <param name="aligny" value="bottom"/>
             </include>
-            <include name="StudioArt">
+            <include content="StudioArt">
                 <param name="x" value="0"/>
                 <param name="y" value="34"/>
                 <param name="width" value="1920"/>

@@ -352,7 +352,7 @@
                 <texture background="true">$INFO[Container(11).ListItem.Icon]</texture>
                 <include>ThumbBorder</include>
             </control>
-            <include name="ProgressBar">
+            <include content="ProgressBar">
                 <param name="id" value="0"/>
                 <param name="visible" value="true"/>
                 <param name="x" value="TextMargin"/>

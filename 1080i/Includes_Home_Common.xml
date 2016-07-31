@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-    <include name="CustomWidget">
+    <include content="CustomWidget">
         <control type="group">
             <animation effect="slide" tween="circle" time="150" start="0,0" end="0,1080" reversible="true" condition="Control.HasFocus($PARAM[id])">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="Control.HasFocus($PARAM[id])">Conditional</animation>
@@ -11,12 +11,12 @@
                 <ondown>701</ondown>
                 <onleft condition="Skin.HasSetting(VerticalHome)">701</onleft>
                 <onleft>$PARAM[id]</onleft>
-                <include name="Widget_$PARAM[gfxType]">
+                <include content="Widget_$PARAM[gfxType]">
                     <param name="id" value="$PARAM[id]"/>
                 </include>
                 <content target="$PARAM[target]">$PARAM[content]</content>
             </control>
-            <include name="WidgetInfo_$PARAM[gfxType]">
+            <include content="WidgetInfo_$PARAM[gfxType]">
                 <param name="id" value="$PARAM[id]"/>
                 <param name="labelTitle" value="$PARAM[labelTitle]"/>
                 <param name="labelRating" value="$PARAM[labelRating]"/>
@@ -38,12 +38,12 @@
                 <ondown>701</ondown>
                 <onleft condition="Skin.HasSetting(VerticalHome)">701</onleft>
                 <onleft>$PARAM[id]</onleft>
-                <include name="Widget_$PARAM[gfxType]">
+                <include content="Widget_$PARAM[gfxType]">
                     <param name="id" value="$PARAM[id]"/>
                 </include>
                 <include>$PARAM[content]</include>
             </control>
-            <include name="WidgetInfo_$PARAM[gfxType]">
+            <include content="WidgetInfo_$PARAM[gfxType]">
                 <param name="id" value="$PARAM[id]"/>
                 <param name="labelTitle" value="$PARAM[labelTitle]"/>
                 <param name="labelRating" value="$PARAM[labelRating]"/>
@@ -222,7 +222,7 @@
                         <height>1</height>
                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
-                    <include name="ProgressBar">
+                    <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="IntegerGreaterThan(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>
@@ -417,7 +417,7 @@
                         <height>1</height>
                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
-                    <include name="ProgressBar">
+                    <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="IntegerGreaterThan(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>
@@ -645,7 +645,7 @@
                         <height>1</height>
                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
-                    <include name="ProgressBar">
+                    <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="IntegerGreaterThan(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>
@@ -840,7 +840,7 @@
                         <height>1</height>
                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
-                    <include name="ProgressBar">
+                    <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="true"/>
                         <param name="x" value="TextMargin"/>
@@ -853,7 +853,7 @@
                         <param name="borderbg" value="0,0,0,0"/>
                         <param name="info" value="Container($PARAM[id]).ListItem.Progress"/>
                     </include>
-                    <include name="ProgressBar">
+                    <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="IntegerGreaterThan(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>
@@ -1053,7 +1053,7 @@
             <!-- -->
 
             <!--PICTURES-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Widget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="PlexRecentPhotoContent"/>
                 <param name="id" value="900"/>
@@ -1068,7 +1068,7 @@
                 <param name="animationDown" value="true"/>
             </include>
             <!--QUEUE-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Widget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="PlexQueueContent"/>
                 <param name="id" value="901"/>
@@ -1083,7 +1083,7 @@
                 <param name="animationDown" value="true"/>
             </include>
             <!--MOVIES-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Widget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="PlexRecentMovieContent"/>
                 <param name="id" value="311"/>
@@ -1097,7 +1097,7 @@
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Widget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="PlexOnDeckMovieContent"/>
                 <param name="id" value="312"/>
@@ -1112,7 +1112,7 @@
                 <param name="animationDown" value="false"/>
             </include>
             <!--ALBUMS-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Widget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="PlexRecentAlbumContent"/>
                 <param name="id" value="511"/>
@@ -1127,7 +1127,7 @@
                 <param name="animationDown" value="false"/>
             </include>
             <!--CHANNELS-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Widget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="PlexRecentChannelContent"/>
                 <param name="id" value="212"/>
@@ -1142,7 +1142,7 @@
                 <param name="animationDown" value="true"/>
             </include>
             <!--EPISODES-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Widget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="PlexRecentEpisodeContent"/>
                 <param name="id" value="411"/>
@@ -1156,7 +1156,7 @@
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Widget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="PlexOnDeckEpisodeContent"/>
                 <param name="id" value="412"/>
@@ -1176,7 +1176,7 @@
             <!-- -->
 
             <!--WIDGET 1-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                 <param name="id" value="700011"/>
@@ -1190,7 +1190,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Episode"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                 <param name="id" value="700012"/>
@@ -1204,7 +1204,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                 <param name="id" value="700013"/>
@@ -1218,7 +1218,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                 <param name="id" value="700014"/>
@@ -1232,7 +1232,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                 <param name="id" value="700015"/>
@@ -1247,7 +1247,7 @@
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
             </include>
             <!--WIDGET 2-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
                 <param name="id" value="700021"/>
@@ -1261,7 +1261,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Episode"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
                 <param name="id" value="700022"/>
@@ -1275,7 +1275,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
                 <param name="id" value="700023"/>
@@ -1289,7 +1289,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
                 <param name="id" value="700024"/>
@@ -1303,7 +1303,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
                 <param name="id" value="700025"/>
@@ -1318,7 +1318,7 @@
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
             </include>
             <!--WIDGET 3-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
                 <param name="id" value="700031"/>
@@ -1332,7 +1332,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Episode"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
                 <param name="id" value="700032"/>
@@ -1346,7 +1346,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
                 <param name="id" value="700033"/>
@@ -1360,7 +1360,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
                 <param name="id" value="700034"/>
@@ -1374,7 +1374,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
                 <param name="id" value="700035"/>
@@ -1389,7 +1389,7 @@
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
             </include>
             <!--WIDGET 4-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
                 <param name="id" value="700041"/>
@@ -1403,7 +1403,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Episode"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
                 <param name="id" value="700042"/>
@@ -1417,7 +1417,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
                 <param name="id" value="700043"/>
@@ -1431,7 +1431,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
                 <param name="id" value="700044"/>
@@ -1445,7 +1445,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
                 <param name="id" value="700045"/>
@@ -1460,7 +1460,7 @@
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
             </include>
             <!--WIDGET 5-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
                 <param name="id" value="700051"/>
@@ -1474,7 +1474,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Episode"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
                 <param name="id" value="700052"/>
@@ -1488,7 +1488,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
                 <param name="id" value="700053"/>
@@ -1502,7 +1502,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
                 <param name="id" value="700054"/>
@@ -1516,7 +1516,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
                 <param name="id" value="700055"/>

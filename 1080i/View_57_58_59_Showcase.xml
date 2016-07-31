@@ -246,7 +246,7 @@
                 <ondown>505050</ondown>
             </control>
             <control type="group">
-                <include name="ClearArtLogo">
+                <include content="ClearArtLogo">
                     <param name="x" value="0"/>
                     <param name="y" value="34"/>
                     <param name="width" value="1920"/>
@@ -255,7 +255,7 @@
                     <param name="align" value="center"/>
                     <param name="aligny" value="bottom"/>
                 </include>
-                <include name="StudioArt">
+                <include content="StudioArt">
                     <param name="x" value="0"/>
                     <param name="y" value="34"/>
                     <param name="width" value="1920"/>
@@ -271,7 +271,7 @@
                     </animation>
                     <include>UpperFade</include>
                     <!-- CDART VIDEO -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="289"/>
                         <param name="y" value="254"/>
@@ -348,7 +348,7 @@
                         <height>1</height>
                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
-                    <include name="ProgressBar">
+                    <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="IntegerGreaterThan(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
                         <param name="x" value="TextMargin"/>
@@ -361,7 +361,7 @@
                         <param name="borderbg" value="0,0,0,0"/>
                         <param name="info" value="ListItem.Progress"/>
                     </include>
-                    <include name="ProgressBar">
+                    <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>
@@ -530,7 +530,7 @@
                 <onup>58</onup>
                 <ondown>505050</ondown>
             </control>
-            <include name="ClearArtLogo">
+            <include content="ClearArtLogo">
                 <param name="x" value="0"/>
                 <param name="y" value="34"/>
                 <param name="width" value="1920"/>
@@ -539,7 +539,7 @@
                 <param name="align" value="center"/>
                 <param name="aligny" value="bottom"/>
             </include>
-            <include name="StudioArt">
+            <include content="StudioArt">
                 <param name="x" value="0"/>
                 <param name="y" value="34"/>
                 <param name="width" value="1920"/>
@@ -556,7 +556,7 @@
                     </animation>
                     <include>UpperFade</include>
                     <!-- CDART MUSIC -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Window.IsActive(MyMusicNav.xml)|Window.IsActive(MyMusicSongs.xml)]"/>
                         <param name="x" value="295"/>
                         <param name="y" value="203"/>
@@ -605,7 +605,7 @@
                         <height>1</height>
                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
-                    <include name="ProgressBar">
+                    <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="IntegerGreaterThan(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
                         <param name="x" value="TextMargin"/>
@@ -618,7 +618,7 @@
                         <param name="borderbg" value="0,0,0,0"/>
                         <param name="info" value="ListItem.Progress"/>
                     </include>
-                    <include name="ProgressBar">
+                    <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>
@@ -790,7 +790,7 @@
                 <onup>57</onup>
                 <ondown>505050</ondown>
             </control>
-            <include name="ClearArtLogo">
+            <include content="ClearArtLogo">
                 <param name="x" value="0"/>
                 <param name="y" value="34"/>
                 <param name="width" value="1920"/>
@@ -799,7 +799,7 @@
                 <param name="align" value="center"/>
                 <param name="aligny" value="bottom"/>
             </include>
-            <include name="StudioArt">
+            <include content="StudioArt">
                 <param name="x" value="0"/>
                 <param name="y" value="34"/>
                 <param name="width" value="1920"/>
@@ -862,7 +862,7 @@
                         <height>1</height>
                         <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                     </control>
-                    <include name="ProgressBar">
+                    <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="IntegerGreaterThan(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
                         <param name="x" value="TextMargin"/>
@@ -875,7 +875,7 @@
                         <param name="borderbg" value="0,0,0,0"/>
                         <param name="info" value="ListItem.Progress"/>
                     </include>
-                    <include name="ProgressBar">
+                    <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>

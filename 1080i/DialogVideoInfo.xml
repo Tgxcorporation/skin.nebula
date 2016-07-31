@@ -56,7 +56,7 @@
                         <label>$INFO[ListItem.Year]</label>
                     </control>
                     <!-- CDART VIDEO -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(musicvideos)]"/>
                         <param name="x" value="70"/>
                         <param name="y" value="143"/>
@@ -785,7 +785,7 @@
                     </control>
                     <!-- PLOT -->
                     <!-- CDART VIDEO -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(musicvideos)]"/>
                         <param name="x" value="70"/>
                         <param name="y" value="143"/>
