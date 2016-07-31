@@ -24,7 +24,7 @@
         <value>$INFO[ListItem.Icon]</value>
     </variable>
     <variable name="ThumbsFolderBack">
-        <value condition="[Container.content(episodes)|Window.IsActive(MyPics.xml)|Window.IsActive(MyVideoPlaylist.xml)]">$VAR[Theme.Color]/defaultFolderBackEpisode.png</value>
+        <value condition="[Container.content(episodes)|Window.IsActive(MyPics.xml)|Window.IsActive(MyPlaylist.xml)]">$VAR[Theme.Color]/defaultFolderBackEpisode.png</value>
         <value condition="[Container.content(actors)|Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.Content(Seasons)|Container.Content(sets)]">$VAR[Theme.Color]/defaultFolderBackPoster.png</value>
         <value>$VAR[Theme.Color]/defaultFolderBack.png</value>
     </variable>
@@ -87,8 +87,7 @@
         <value condition="Window.IsActive(Settings.xml) | Window.IsActive(SettingsCategory.xml)">$LOCALIZE[5]</value>
         <value condition="Window.IsActive(CustomAddons.xml)">$LOCALIZE[31291]</value>
         <value condition="Window.IsActive(EventLog.xml)">$LOCALIZE[14111]</value>
-        <value condition="Window.IsActive(MyVideoPlaylist.xml)">$LOCALIZE[20012]</value>
-        <value condition="Window.IsActive(MyMusicPlaylist.xml)">$LOCALIZE[20011]</value>
+        <value condition="Window.IsActive(MyPlaylist.xml)">$LOCALIZE[136]</value>
         <value condition="Window.IsActive(DialogVideoInfo.xml)">$LOCALIZE[20060]</value>
         <value condition="Window.IsActive(DialogFavourites.xml)">$LOCALIZE[1036]</value>
         <value condition="Container.content(movies) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20342]</value>
@@ -394,13 +393,13 @@
         <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)+!String.IsEmpty(Container(500).ListItem.Art(fanart))">$INFO[Container(500).ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(Container.Art(set.fanart))">$INFO[Container.Art(set.fanart)]</value>
-        <value condition="[Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyVideoPlaylist.xml)]+[container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]">$VAR[TVShows.Art]</value>
-        <value condition="[Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyVideoPlaylist.xml)]+[Container.Content(movies)|Container.Content(sets)]">$VAR[Movies.Art]</value>
-        <value condition="[Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyVideoPlaylist.xml)]+[Container.Content(musicvideos)]">$VAR[Clips.Art]</value>
-        <value condition="Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyVideoPlaylist.xml)">$VAR[Videos.Art]</value>
+        <value condition="[Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyPlaylist.xml)]+[container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]">$VAR[TVShows.Art]</value>
+        <value condition="[Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyPlaylist.xml)]+[Container.Content(movies)|Container.Content(sets)]">$VAR[Movies.Art]</value>
+        <value condition="[Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyPlaylist.xml)]+[Container.Content(musicvideos)]">$VAR[Clips.Art]</value>
+        <value condition="Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyPlaylist.xml)">$VAR[Videos.Art]</value>
         <value condition="Window.IsActive(MyPrograms.xml)|Window.IsActive(CustomAddons.xml)|Window.IsActive(AddonBrowser.xml)">$VAR[Addons.Art]</value>
         <value condition="Window.IsActive(FileManager.xml)|Window.IsActive(Settings.xml)|Window.IsActive(SettingsCategory.xml)|Window.IsActive(SettingsProfile.xml)|Window.IsActive(SettingsSystemInfo.xml)|Window.IsActive(SkinSettings.xml)|Window.IsActive(EventLog.xml)">$VAR[Settings.Art]</value>
-        <value condition="Window.IsActive(MyMusicPlaylistEditor.xml)|Window.IsActive(SmartPlaylistEditor.xml)|Window.IsActive(MusicVisualization.xml)|Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)|Window.IsActive(MyMusicPlaylist.xml)|Window.IsActive(MyMusicPlaylistEditor.xml)">$VAR[Music.Art]</value>
+        <value condition="Window.IsActive(MyMusicPlaylistEditor.xml)|Window.IsActive(SmartPlaylistEditor.xml)|Window.IsActive(MusicVisualization.xml)|Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)|[Window.IsActive(MyPlaylist.xml)]|Window.IsActive(MyMusicPlaylistEditor.xml)">$VAR[Music.Art]</value>
         <value condition="!String.IsEmpty(Window.Property(IsRadio))">$VAR[Radio.Art]</value>
         <value condition="Window.IsActive(DialogSettings.xml)|Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)">$VAR[Tv.Art]</value>
         <value condition="Window.IsActive(CustomPlexHomeSettings.xml)|Window.IsActive(CustomStartupWindow.xml)">$VAR[Settings.Art]</value>
