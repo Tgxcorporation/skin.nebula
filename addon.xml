@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon id="skin.nebula" version="4.5.1" name="Nebula" provider-name="Tgx">
+<addon id="skin.nebula" version="5.0.0" name="Nebula" provider-name="Tgx">
     <requires>
-        <import addon="xbmc.gui" version="5.10.0"/>
+        <import addon="xbmc.gui" version="5.12.0"/>
         <import addon="script.favourites" version="3.2.0"/>
         <import addon="script.skinshortcuts" version="0.2.4"/>
         <import addon="script.skin.helper.service" version="0.0.11"/>
