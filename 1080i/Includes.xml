@@ -514,7 +514,6 @@
                 Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-SlideShow.xml)|
-                Window.IsVisible(script-globalsearch-contextmenu.xml)|
                 Window.IsVisible(script-globalsearch-infodialog.xml)|
                 Window.IsVisible(script-globalsearch-main.xml)|
                 Window.IsVisible(script-RSS_Editor-rssEditor.xml)|
@@ -541,7 +540,6 @@
             Window.IsVisible(DialogTextViewer.xml)|
             Window.IsVisible(DialogConfirm.xml)|
             Window.IsVisible(DialogGamepad.xml)|
-            Window.IsVisible(script-globalsearch-contextmenu.xml)|
             Window.IsVisible(script-globalsearch-infodialog.xml)
             ]</visible>
     </include>
