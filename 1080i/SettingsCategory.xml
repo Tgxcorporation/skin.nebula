@@ -77,6 +77,9 @@
                 <control type="label" id="14">
                     <description>Default Label</description>
                     <label>-</label>
+                    <width>1800</width>
+                    <textoffsety>40</textoffsety>
+                    <aligny>top</aligny>
                     <font>LeftMenuTitleFont</font>
                     <include>TextColor_AlternateColor</include>
                     <include>LeftMenuButtonWide</include>
