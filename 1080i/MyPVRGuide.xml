@@ -301,7 +301,7 @@
                             <itemlayout height="135" width="1920">
                                 <include>50_RecOverlayNoFocus</include>
                                 <control type="label">
-                                    <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                    <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                     <posx>475</posx>
                                     <height>135</height>
                                     <width>1250</width>
@@ -310,7 +310,7 @@
                                     <label fallback="416">$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                    <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                     <posx>475</posx>
                                     <posy>27</posy>
                                     <aligny>top</aligny>
@@ -320,7 +320,7 @@
                                     <label fallback="416">$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                    <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                     <posx>475</posx>
                                     <posy>73</posy>
                                     <aligny>top</aligny>
@@ -342,7 +342,7 @@
                                         <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                     </control>
                                     <control type="image">
-                                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
+                                        <visible>[String.IsEmpty(ListItem.thumb)|String.IsEmpty(ListItem.Art(thumb))]</visible>
                                         <posx>60</posx>
                                         <posy>75</posy>
                                         <width>335</width>
@@ -477,7 +477,7 @@
                             <itemlayout height="135" width="1920">
                                 <include>50_RecOverlayNoFocus</include>
                                 <control type="label">
-                                    <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                    <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                     <posx>475</posx>
                                     <height>135</height>
                                     <width>1250</width>
@@ -486,7 +486,7 @@
                                     <label fallback="416">$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                    <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                     <posx>475</posx>
                                     <posy>27</posy>
                                     <aligny>top</aligny>
@@ -496,7 +496,7 @@
                                     <label fallback="416">$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                    <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                     <posx>475</posx>
                                     <posy>73</posy>
                                     <aligny>top</aligny>
@@ -518,7 +518,7 @@
                                         <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                     </control>
                                     <control type="image">
-                                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
+                                        <visible>[String.IsEmpty(ListItem.thumb)|String.IsEmpty(ListItem.Art(thumb))]</visible>
                                         <posx>60</posx>
                                         <posy>75</posy>
                                         <width>335</width>
@@ -640,7 +640,7 @@
                             <itemlayout height="135" width="1920">
                                 <include>50_RecOverlayNoFocus</include>
                                 <control type="label">
-                                    <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                    <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                     <posx>475</posx>
                                     <height>135</height>
                                     <width>1250</width>
@@ -649,7 +649,7 @@
                                     <label fallback="416">$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                    <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                     <posx>475</posx>
                                     <posy>27</posy>
                                     <aligny>top</aligny>
@@ -659,7 +659,7 @@
                                     <label fallback="416">$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                    <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                     <posx>475</posx>
                                     <posy>73</posy>
                                     <aligny>top</aligny>
@@ -681,7 +681,7 @@
                                         <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                     </control>
                                     <control type="image">
-                                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
+                                        <visible>[String.IsEmpty(ListItem.thumb)|String.IsEmpty(ListItem.Art(thumb))]</visible>
                                         <posx>60</posx>
                                         <posy>75</posy>
                                         <width>335</width>
@@ -784,49 +784,49 @@
         </control>
         <control type="label">
             <include>OpenClose</include>
-            <visible>IsEmpty(Window.Property(IsRadio))+Control.IsVisible(10)</visible>
+            <visible>String.IsEmpty(Window.Property(IsRadio))+Control.IsVisible(10)</visible>
             <include>WindowTitle</include>
             <label>$LOCALIZE[19032]</label>
         </control>
         <control type="label">
             <include>OpenClose</include>
-            <visible>!IsEmpty(Window.Property(IsRadio))+Control.IsVisible(10)</visible>
+            <visible>!String.IsEmpty(Window.Property(IsRadio))+Control.IsVisible(10)</visible>
             <include>WindowTitle</include>
             <label>$LOCALIZE[19032]</label>
         </control>
         <control type="label">
             <include>OpenClose</include>
-            <visible>IsEmpty(Window.Property(IsRadio))+Control.IsVisible(11)</visible>
+            <visible>String.IsEmpty(Window.Property(IsRadio))+Control.IsVisible(11)</visible>
             <include>WindowTitle</include>
             <label>$LOCALIZE[19030]</label>
         </control>
         <control type="label">
             <include>OpenClose</include>
-            <visible>!IsEmpty(Window.Property(IsRadio))+Control.IsVisible(11)</visible>
+            <visible>!String.IsEmpty(Window.Property(IsRadio))+Control.IsVisible(11)</visible>
             <include>WindowTitle</include>
             <label>$LOCALIZE[19030]</label>
         </control>
         <control type="label">
             <include>OpenClose</include>
-            <visible>IsEmpty(Window.Property(IsRadio))+Control.IsVisible(12)</visible>
+            <visible>String.IsEmpty(Window.Property(IsRadio))+Control.IsVisible(12)</visible>
             <include>WindowTitle</include>
             <label>$LOCALIZE[19031]</label>
         </control>
         <control type="label">
             <include>OpenClose</include>
-            <visible>!IsEmpty(Window.Property(IsRadio))+Control.IsVisible(12)</visible>
+            <visible>!String.IsEmpty(Window.Property(IsRadio))+Control.IsVisible(12)</visible>
             <include>WindowTitle</include>
             <label>$LOCALIZE[19031]</label>
         </control>
         <control type="label">
             <include>OpenClose</include>
-            <visible>IsEmpty(Window.Property(IsRadio))+Control.IsVisible(13)</visible>
+            <visible>String.IsEmpty(Window.Property(IsRadio))+Control.IsVisible(13)</visible>
             <include>WindowTitle</include>
             <label>$LOCALIZE[19029]$INFO[Container(13).ListItem.ChannelName, - ]</label>
         </control>
         <control type="label">
             <include>OpenClose</include>
-            <visible>!IsEmpty(Window.Property(IsRadio))+Control.IsVisible(13)</visible>
+            <visible>!String.IsEmpty(Window.Property(IsRadio))+Control.IsVisible(13)</visible>
             <include>WindowTitle</include>
             <label>$LOCALIZE[19029]$INFO[Container(13).ListItem.ChannelName, - ]</label>
         </control>

@@ -6,7 +6,7 @@
             <include>Icon_Fade</include>
             <include>FacadeFadeDialogs</include>
             <control type="image">
-                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]|
+                <visible>[String.IsEmpty(ListItem.thumb)|String.IsEmpty(ListItem.Art(thumb))]|
                     [Window.IsActive(MyMusicSongs.xml)+Skin.HasSetting(plexbmc)+Container.Content(Songs)]</visible>
                 <posx>60</posx>
                 <posy>158</posy>
@@ -17,7 +17,7 @@
             </control>
             <!-- CDART MUSIC -->
             <include content="DiscArt">
-                <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                 <param name="x" value="73"/>
                 <param name="y" value="193"/>
                 <param name="width" value="424"/>
@@ -31,7 +31,7 @@
             </include>
             <!-- CDART VIDEO -->
             <include content="DiscArt">
-                <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                 <param name="x" value="73"/>
                 <param name="y" value="193"/>
                 <param name="width" value="424"/>
@@ -94,7 +94,7 @@
             <posx>520</posx>
             <posy>0</posy>
             <control type="image">
-                <visible>![IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
+                <visible>![String.IsEmpty(ListItem.thumb)|String.IsEmpty(ListItem.Art(thumb))]</visible>
                 <posx>25</posx>
                 <posy>158</posy>
                 <width>1195</width>
@@ -134,7 +134,7 @@
                     <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                 </control>
                 <control type="group">
-                    <visible>IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                    <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                     <visible>!Container.Content(Addons)</visible>
                     <control type="image">
                         <posx>TextMargin</posx>

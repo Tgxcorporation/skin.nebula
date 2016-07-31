@@ -35,7 +35,7 @@
                 <control type="group">
                     <visible>!StringCompare(ListItem.Label,..)</visible>
                     <control type="image">
-                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
+                        <visible>[String.IsEmpty(ListItem.thumb)|String.IsEmpty(ListItem.Art(thumb))]</visible>
                         <posx>60</posx>
                         <posy>183</posy>
                         <width>450</width>
@@ -45,7 +45,7 @@
                     </control>
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                         <param name="x" value="73"/>
                         <param name="y" value="456"/>
                         <param name="width" value="424"/>
@@ -59,7 +59,7 @@
                     </include>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="73"/>
                         <param name="y" value="639"/>
                         <param name="width" value="424"/>
@@ -112,7 +112,7 @@
                         <posx>530</posx>
                         <posy>248</posy>
                         <control type="group">
-                            <visible>IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                            <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                             <visible>!Container.Content(Addons)</visible>
                             <control type="image">
                                 <posx>TextMargin</posx>
@@ -232,7 +232,7 @@
                 <control type="group">
                     <visible>!StringCompare(ListItem.Label,..)</visible>
                     <control type="image">
-                        <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
+                        <visible>[String.IsEmpty(ListItem.thumb)|String.IsEmpty(ListItem.Art(thumb))]</visible>
                         <posx>60</posx>
                         <posy>183</posy>
                         <width>450</width>
@@ -242,7 +242,7 @@
                     </control>
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                         <param name="x" value="73"/>
                         <param name="y" value="456"/>
                         <param name="width" value="424"/>
@@ -256,7 +256,7 @@
                     </include>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="73"/>
                         <param name="y" value="639"/>
                         <param name="width" value="424"/>
@@ -307,7 +307,7 @@
                     </control>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="IntegerGreaterThan(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
                         <param name="x" value="590"/>
                         <param name="y" value="303"/>
                         <param name="width" value="1210"/>
@@ -320,7 +320,7 @@
                     </include>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                         <param name="x" value="590"/>
                         <param name="y" value="303"/>
                         <param name="width" value="1210"/>
@@ -335,7 +335,7 @@
                         <posx>530</posx>
                         <posy>248</posy>
                         <control type="group">
-                            <visible>IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                            <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                             <visible>!Container.Content(Addons)</visible>
                             <control type="image">
                                 <posx>TextMargin</posx>

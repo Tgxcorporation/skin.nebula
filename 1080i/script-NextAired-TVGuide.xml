@@ -6,7 +6,7 @@
     <controls>
         <include condition="!Skin.HasSetting(DisableFanart)">Fanart_Art</include>
         <control type="group">
-            <visible>!IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))+!Skin.HasSetting(DisableFanart)</visible>
+            <visible>!String.IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))+!Skin.HasSetting(DisableFanart)</visible>
             <control type="image">
                 <visible>Control.HasFocus(200)</visible>
                 <include>Overlay_Fade</include>

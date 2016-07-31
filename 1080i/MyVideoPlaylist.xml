@@ -50,7 +50,7 @@
             </control>
             <!-- CDART VIDEO -->
             <include content="DiscArt">
-                <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)"/>
+                <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)"/>
                 <param name="x" value="140"/>
                 <param name="y" value="693"/>
                 <param name="width" value="290"/>
@@ -63,7 +63,7 @@
                 <param name="pulse" value="false"/>
             </include>
             <control type="image">
-                <visible>IsEmpty(ListItem.Icon)</visible>
+                <visible>String.IsEmpty(ListItem.Icon)</visible>
                 <posx>25</posx>
                 <posy>353</posy>
                 <width>520</width>

@@ -35,7 +35,7 @@
                     <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                 </control>
                 <control type="label">
-                    <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                    <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                     <posx>TextMargin</posx>
                     <posy>183</posy>
                     <width>1800</width>
@@ -46,7 +46,7 @@
                     <label>$LOCALIZE[19199] - $LOCALIZE[19023]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                    <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                     <posx>TextMargin</posx>
                     <posy>183</posy>
                     <width>1800</width>
@@ -282,12 +282,12 @@
                         <label>$LOCALIZE[19204]</label>
                     </control>
                     <control type="button" id="34">
-                        <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[19024]</label>
                     </control>
                     <control type="button" id="34">
-                        <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[19023]</label>
                     </control>

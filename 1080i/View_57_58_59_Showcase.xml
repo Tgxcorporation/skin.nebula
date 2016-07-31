@@ -24,7 +24,7 @@
             <visible>Control.hasfocus(505050)</visible>
             <control type="group">
                 <visible>![StringCompare(ListItem.Label,..)]</visible>
-                <animation effect="slide" time="0" start="0,0" end="0,40" condition="[IsEmpty(control.getlabel(45742))]">Conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,40" condition="[String.IsEmpty(control.getlabel(45742))]">Conditional</animation>
                 <control type="label">
                     <posx>52</posx>
                     <posy>933</posy>
@@ -60,7 +60,7 @@
                     <label>$VAR[Fanart_Details]</label>
                 </control>
                 <control type="group" id="45741">
-                    <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+[SubString(ListItem.StarRating,rating1)|SubString(ListItem.StarRating,rating2)|SubString(ListItem.StarRating,rating3)|SubString(ListItem.StarRating,rating4)|SubString(ListItem.StarRating,rating5)]</visible>
+                    <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+[String.Contains(ListItem.StarRating,rating1)|String.Contains(ListItem.StarRating,rating2)|String.Contains(ListItem.StarRating,rating3)|String.Contains(ListItem.StarRating,rating4)|String.Contains(ListItem.StarRating,rating5)]</visible>
                     <control type="image">
                         <posx>1715</posx>
                         <posy>1009</posy>
@@ -114,7 +114,7 @@
             <visible>Control.hasfocus(505050)</visible>
             <control type="group">
                 <visible>![StringCompare(Container(500).ListItem.Label,..)]</visible>
-                <animation effect="slide" time="0" start="0,0" end="0,40" condition="[IsEmpty(control.getlabel(45742))]">Conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,40" condition="[String.IsEmpty(control.getlabel(45742))]">Conditional</animation>
                 <control type="label">
                     <posx>52</posx>
                     <posy>933</posy>
@@ -272,7 +272,7 @@
                     <include>UpperFade</include>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="289"/>
                         <param name="y" value="254"/>
                         <param name="width" value="424"/>
@@ -350,7 +350,7 @@
                     </control>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="IntegerGreaterThan(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
                         <param name="x" value="TextMargin"/>
                         <param name="y" value="69"/>
                         <param name="width" value="1260"/>
@@ -363,7 +363,7 @@
                     </include>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>
                         <param name="y" value="69"/>
                         <param name="width" value="1260"/>
@@ -375,7 +375,7 @@
                         <param name="info" value="ListItem.PercentPlayed"/>
                     </include>
                     <control type="group">
-                        <visible>IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                         <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
@@ -557,7 +557,7 @@
                     <include>UpperFade</include>
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Window.IsActive(MyMusicNav.xml)|Window.IsActive(MyMusicSongs.xml)]"/>
+                        <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Window.IsActive(MyMusicNav.xml)|Window.IsActive(MyMusicSongs.xml)]"/>
                         <param name="x" value="295"/>
                         <param name="y" value="203"/>
                         <param name="width" value="430"/>
@@ -607,7 +607,7 @@
                     </control>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="IntegerGreaterThan(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
                         <param name="x" value="TextMargin"/>
                         <param name="y" value="69"/>
                         <param name="width" value="1800"/>
@@ -620,7 +620,7 @@
                     </include>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>
                         <param name="y" value="69"/>
                         <param name="width" value="1800"/>
@@ -632,7 +632,7 @@
                         <param name="info" value="ListItem.PercentPlayed"/>
                     </include>
                     <control type="group">
-                        <visible>IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                         <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
@@ -864,7 +864,7 @@
                     </control>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="IntegerGreaterThan(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
                         <param name="x" value="TextMargin"/>
                         <param name="y" value="69"/>
                         <param name="width" value="1800"/>
@@ -877,7 +877,7 @@
                     </include>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>
                         <param name="y" value="69"/>
                         <param name="width" value="1800"/>
@@ -889,7 +889,7 @@
                         <param name="info" value="ListItem.PercentPlayed"/>
                     </include>
                     <control type="group">
-                        <visible>IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                         <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
@@ -1035,7 +1035,7 @@
                 <ondown>505050</ondown>
             </control>
             <control type="image">
-                <visible>IsEmpty(ListItem.thumb)</visible>
+                <visible>String.IsEmpty(ListItem.thumb)</visible>
                 <animation type="Conditional" reversible="false" condition="control.HasFocus(57)">
                 <include>CoverWrapFocusAnimationEpisode</include>
                 </animation>

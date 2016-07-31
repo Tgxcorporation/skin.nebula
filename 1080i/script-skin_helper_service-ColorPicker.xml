@@ -130,7 +130,7 @@
                     </control>
                     <!--current color name-->
                     <control type="button" id="3030">
-                        <visible>!IsEmpty(Window.Property(palettename))</visible>
+                        <visible>!String.IsEmpty(Window.Property(palettename))</visible>
                         <onright>3110</onright>
                         <label>$ADDON[script.skin.helper.service 32141]: $INFO[Window.Property(palettename)]</label>
                         <include>LeftMenuButton</include>

@@ -224,7 +224,7 @@
                     </control>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="IntegerGreaterThan(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
+                        <param name="visible" value="Integer.IsGreater(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>
                         <param name="y" value="69"/>
                         <param name="width" value="1260"/>
@@ -419,7 +419,7 @@
                     </control>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="IntegerGreaterThan(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
+                        <param name="visible" value="Integer.IsGreater(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>
                         <param name="y" value="69"/>
                         <param name="width" value="1800"/>
@@ -647,7 +647,7 @@
                     </control>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="IntegerGreaterThan(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
+                        <param name="visible" value="Integer.IsGreater(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>
                         <param name="y" value="69"/>
                         <param name="width" value="1800"/>
@@ -855,7 +855,7 @@
                     </include>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="IntegerGreaterThan(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
+                        <param name="visible" value="Integer.IsGreater(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
                         <param name="x" value="TextMargin"/>
                         <param name="y" value="69"/>
                         <param name="width" value="1800"/>
@@ -927,12 +927,12 @@
         <content>
             <!--RECENTLY ADDED-->
             <item id="702">
-                <visible>[control.isvisible(212)+IntegerGreaterThan(Container(212).NumItems,0)]|
-                    [control.isvisible(311)+IntegerGreaterThan(Container(311).NumItems,0)]|
-                    [control.isvisible(411)+IntegerGreaterThan(Container(411).NumItems,0)]|
-                    [control.isvisible(511)+IntegerGreaterThan(Container(511).NumItems,0)]|
-                    [control.isvisible(900)+IntegerGreaterThan(Container(900).NumItems,0)]|
-                    [control.isvisible(901)+IntegerGreaterThan(Container(901).NumItems,0)]</visible>
+                <visible>[control.isvisible(212)+Integer.IsGreater(Container(212).NumItems,0)]|
+                    [control.isvisible(311)+Integer.IsGreater(Container(311).NumItems,0)]|
+                    [control.isvisible(411)+Integer.IsGreater(Container(411).NumItems,0)]|
+                    [control.isvisible(511)+Integer.IsGreater(Container(511).NumItems,0)]|
+                    [control.isvisible(900)+Integer.IsGreater(Container(900).NumItems,0)]|
+                    [control.isvisible(901)+Integer.IsGreater(Container(901).NumItems,0)]</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$LOCALIZE[31961]</label>
                 <onclick condition="control.isvisible(212)">SetFocus(212)</onclick>
@@ -950,8 +950,8 @@
             </item>
             <!--RECOMMENDED-->
             <item id="703">
-                <visible>[control.isvisible(312)+IntegerGreaterThan(Container(312).NumItems,0)]|
-                    [control.isvisible(412)+IntegerGreaterThan(Container(412).NumItems,0)]</visible>
+                <visible>[control.isvisible(312)+Integer.IsGreater(Container(312).NumItems,0)]|
+                    [control.isvisible(412)+Integer.IsGreater(Container(412).NumItems,0)]</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$LOCALIZE[31966]</label>
                 <onclick condition="control.isvisible(312)">SetFocus(312)</onclick>
@@ -961,8 +961,8 @@
             </item>
             <!--CUSTOM WIDGETS-->
             <item id="7001">
-                <visible>!IsEmpty(Container(300).ListItem.Property(widgetName))</visible>
-                <visible>IntegerGreaterThan(Container(700011).NumItems,0)|IntegerGreaterThan(Container(700012).NumItems,0)|IntegerGreaterThan(Container(700013).NumItems,0)|IntegerGreaterThan(Container(700014).NumItems,0)|IntegerGreaterThan(Container(700015).NumItems,0)</visible>
+                <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))</visible>
+                <visible>Integer.IsGreater(Container(700011).NumItems,0)|Integer.IsGreater(Container(700012).NumItems,0)|Integer.IsGreater(Container(700013).NumItems,0)|Integer.IsGreater(Container(700014).NumItems,0)|Integer.IsGreater(Container(700015).NumItems,0)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick condition="control.isvisible(700011)">SetFocus(700011)</onclick>
@@ -977,8 +977,8 @@
                 <onup condition="control.isvisible(700015)">SetFocus(700015)</onup>
             </item>
             <item id="7002">
-                <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.1))</visible>
-                <visible>IntegerGreaterThan(Container(700021).NumItems,0)|IntegerGreaterThan(Container(700022).NumItems,0)|IntegerGreaterThan(Container(700023).NumItems,0)|IntegerGreaterThan(Container(700024).NumItems,0)|IntegerGreaterThan(Container(700025).NumItems,0)</visible>
+                <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName.1))</visible>
+                <visible>Integer.IsGreater(Container(700021).NumItems,0)|Integer.IsGreater(Container(700022).NumItems,0)|Integer.IsGreater(Container(700023).NumItems,0)|Integer.IsGreater(Container(700024).NumItems,0)|Integer.IsGreater(Container(700025).NumItems,0)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName.1)]</label>
                 <onclick condition="control.isvisible(700021)">SetFocus(700021)</onclick>
@@ -993,8 +993,8 @@
                 <onup condition="control.isvisible(700025)">SetFocus(700025)</onup>
             </item>
             <item id="7003">
-                <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.2))</visible>
-                <visible>IntegerGreaterThan(Container(700031).NumItems,0)|IntegerGreaterThan(Container(700032).NumItems,0)|IntegerGreaterThan(Container(700033).NumItems,0)|IntegerGreaterThan(Container(700034).NumItems,0)|IntegerGreaterThan(Container(700035).NumItems,0)</visible>
+                <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName.2))</visible>
+                <visible>Integer.IsGreater(Container(700031).NumItems,0)|Integer.IsGreater(Container(700032).NumItems,0)|Integer.IsGreater(Container(700033).NumItems,0)|Integer.IsGreater(Container(700034).NumItems,0)|Integer.IsGreater(Container(700035).NumItems,0)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName.2)]</label>
                 <onclick condition="control.isvisible(700031)">SetFocus(700031)</onclick>
@@ -1009,8 +1009,8 @@
                 <onup condition="control.isvisible(700035)">SetFocus(700035)</onup>
             </item>
             <item id="7004">
-                <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.3))</visible>
-                <visible>IntegerGreaterThan(Container(700041).NumItems,0)|IntegerGreaterThan(Container(700042).NumItems,0)|IntegerGreaterThan(Container(700043).NumItems,0)|IntegerGreaterThan(Container(700044).NumItems,0)|IntegerGreaterThan(Container(700045).NumItems,0)</visible>
+                <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName.3))</visible>
+                <visible>Integer.IsGreater(Container(700041).NumItems,0)|Integer.IsGreater(Container(700042).NumItems,0)|Integer.IsGreater(Container(700043).NumItems,0)|Integer.IsGreater(Container(700044).NumItems,0)|Integer.IsGreater(Container(700045).NumItems,0)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName.3)]</label>
                 <onclick condition="control.isvisible(700041)">SetFocus(700041)</onclick>
@@ -1025,8 +1025,8 @@
                 <onup condition="control.isvisible(700045)">SetFocus(700045)</onup>
             </item>
             <item id="7005">
-                <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.4))</visible>
-                <visible>IntegerGreaterThan(Container(700051).NumItems,0)|IntegerGreaterThan(Container(700052).NumItems,0)|IntegerGreaterThan(Container(700053).NumItems,0)|IntegerGreaterThan(Container(700054).NumItems,0)|IntegerGreaterThan(Container(700055).NumItems,0)</visible>
+                <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName.4))</visible>
+                <visible>Integer.IsGreater(Container(700051).NumItems,0)|Integer.IsGreater(Container(700052).NumItems,0)|Integer.IsGreater(Container(700053).NumItems,0)|Integer.IsGreater(Container(700054).NumItems,0)|Integer.IsGreater(Container(700055).NumItems,0)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName.4)]</label>
                 <onclick condition="control.isvisible(700051)">SetFocus(700051)</onclick>
@@ -1057,7 +1057,7 @@
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="PlexRecentPhotoContent"/>
                 <param name="id" value="900"/>
-                <param name="visibility" value="!IsEmpty(Window.Property(Plexbmc.LatestPhoto.1.Path))+StringCompare(Container(300).ListItem.Property(type),photo)"/>
+                <param name="visibility" value="!String.IsEmpty(Window.Property(Plexbmc.LatestPhoto.1.Path))+StringCompare(Container(300).ListItem.Property(type),photo)"/>
                 <param name="labelTitle" value="$INFO[Container(900).ListItem.Label]"/>
                 <param name="labelRow1" value=""/>
                 <param name="labelRow2" value=""/>
@@ -1072,7 +1072,7 @@
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="PlexQueueContent"/>
                 <param name="id" value="901"/>
-                <param name="visibility" value="!IsEmpty(Window.Property(Plexbmc.Queue.1.Path))+StringCompare(Container(300).ListItem.Label,$LOCALIZE[31010])"/>
+                <param name="visibility" value="!String.IsEmpty(Window.Property(Plexbmc.Queue.1.Path))+StringCompare(Container(300).ListItem.Label,$LOCALIZE[31010])"/>
                 <param name="labelTitle" value="$INFO[Container(901).ListItem.Label]"/>
                 <param name="labelRow1" value=""/>
                 <param name="labelRow2" value=""/>
@@ -1087,7 +1087,7 @@
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="PlexRecentMovieContent"/>
                 <param name="id" value="311"/>
-                <param name="visibility" value="!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))+StringCompare(Container(300).ListItem.Property(type),movie)"/>
+                <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))+StringCompare(Container(300).ListItem.Property(type),movie)"/>
                 <param name="labelTitle" value="$INFO[Container(311).ListItem.Label]"/>
                 <param name="labelRow1" value="$INFO[Container(311).ListItem.Property(Year)]$INFO[Container(311).ListItem.Property(Runtime),       , $LOCALIZE[31297]]$INFO[Container(311).ListItem.Property(Mpaa),       ]"/>
                 <param name="labelRow2" value="$INFO[Container(311).ListItem.Property(Genre)]"/>
@@ -1101,7 +1101,7 @@
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="PlexOnDeckMovieContent"/>
                 <param name="id" value="312"/>
-                <param name="visibility" value="!IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.1.Path))+StringCompare(Container(300).ListItem.Property(type),movie)"/>
+                <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.1.Path))+StringCompare(Container(300).ListItem.Property(type),movie)"/>
                 <param name="labelTitle" value="$INFO[Container(312).ListItem.Label]"/>
                 <param name="labelRow1" value="$INFO[Container(312).ListItem.Property(Year)]$INFO[Container(312).ListItem.Property(Runtime),       , $LOCALIZE[31297]]$INFO[Container(312).ListItem.Property(Mpaa),       ]"/>
                 <param name="labelRow2" value="$INFO[Container(312).ListItem.Property(Genre)]"/>
@@ -1116,7 +1116,7 @@
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="PlexRecentAlbumContent"/>
                 <param name="id" value="511"/>
-                <param name="visibility" value="!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.1.Title))+StringCompare(Container(300).ListItem.Property(type),artist)"/>
+                <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.1.Title))+StringCompare(Container(300).ListItem.Property(type),artist)"/>
                 <param name="labelTitle" value="$INFO[Container(511).ListItem.Label]"/>
                 <param name="labelRow1" value="$INFO[Container(511).ListItem.Label2]"/>
                 <param name="labelRow2" value=""/>
@@ -1131,7 +1131,7 @@
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="PlexRecentChannelContent"/>
                 <param name="id" value="212"/>
-                <param name="visibility" value="!IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Path))+Container(300).HasFocus(50)"/>
+                <param name="visibility" value="!String.IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Path))+Container(300).HasFocus(50)"/>
                 <param name="labelTitle" value="$INFO[Container(212).ListItem.Label]"/>
                 <param name="labelRow1" value=""/>
                 <param name="labelRow2" value=""/>
@@ -1146,7 +1146,7 @@
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="PlexRecentEpisodeContent"/>
                 <param name="id" value="411"/>
-                <param name="visibility" value="!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))+StringCompare(Container(300).ListItem.Property(type),show)"/>
+                <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))+StringCompare(Container(300).ListItem.Property(type),show)"/>
                 <param name="labelTitle" value="$INFO[Container(411).ListItem.Property(TVshowTitle)]"/>
                 <param name="labelRow1" value="$INFO[Container(411).ListItem.Property(SeasonEpisode)]"/>
                 <param name="labelRow2" value="$INFO[Container(411).ListItem.Label]"/>
@@ -1160,7 +1160,7 @@
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="PlexOnDeckEpisodeContent"/>
                 <param name="id" value="412"/>
-                <param name="visibility" value="!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path))+StringCompare(Container(300).ListItem.Property(type),show)"/>
+                <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path))+StringCompare(Container(300).ListItem.Property(type),show)"/>
                 <param name="labelTitle" value="$INFO[Container(412).ListItem.Property(TVshowTitle)]"/>
                 <param name="labelRow1" value="$INFO[Container(412).ListItem.Property(SeasonEpisode)]"/>
                 <param name="labelRow2" value="$INFO[Container(412).ListItem.Label]"/>

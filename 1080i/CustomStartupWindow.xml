@@ -58,7 +58,7 @@
                         <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                         <onclick>Skin.Reset(StartupWindow)</onclick>
                         <onclick>Skin.Reset(StartupWindowOption)</onclick>
-                        <selected>IsEmpty(Skin.String(StartupWindow)) + IsEmpty(Skin.String(CustomStartup.Path))</selected>
+                        <selected>String.IsEmpty(Skin.String(StartupWindow)) + String.IsEmpty(Skin.String(CustomStartup.Path))</selected>
                     </control>
                     <control type="radiobutton" id="702">
                         <align>center</align>
@@ -241,7 +241,7 @@
                     </control>
                     <!--PLEX-->
                     <!--<control type="radiobutton" id="730">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.0.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.0.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -255,7 +255,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex0)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="731">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.1.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.1.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -269,7 +269,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex1)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="732">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.2.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.2.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -283,7 +283,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex2)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="733">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.3.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.3.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -297,7 +297,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex3)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="734">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.4.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.4.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -311,7 +311,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex4)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="735">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.5.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.5.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -325,7 +325,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex5)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="736">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.6.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.6.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -339,7 +339,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex6)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="737">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.7.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.7.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -353,7 +353,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex7)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="738">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.8.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.8.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -367,7 +367,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex8)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="739">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.9.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.9.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -381,7 +381,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex9)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="740">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.10.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.10.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -395,7 +395,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex10)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="741">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.11.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.11.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -409,7 +409,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex11)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="742">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.12.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.12.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -423,7 +423,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex12)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="743">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.13.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.13.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -437,7 +437,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex13)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="744">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.14.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.14.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -451,7 +451,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex14)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="745">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.15.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.15.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -465,7 +465,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex15)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="746">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.16.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.16.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -479,7 +479,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex16)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="747">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.17.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.17.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -493,7 +493,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex17)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="748">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.18.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.18.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -507,7 +507,7 @@
                     <!--<selected>StringCompare(Skin.String(StartupWindowOption),plex18)</selected>-->
                     <!--</control>-->
                     <!--<control type="radiobutton" id="749">-->
-                    <!--<visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.19.title))</visible>-->
+                    <!--<visible>Skin.HasSetting(plexbmc) + !String.IsEmpty(Window(Home).Property(plexbmc.19.title))</visible>-->
                     <!--<width>820</width>-->
                     <!--<radioposx>720</radioposx>-->
                     <!--<textwidth>660</textwidth>-->
@@ -714,7 +714,7 @@
                     </control>
                     <!--CUSTOM-->
                     <control type="radiobutton" id="716">
-                        <visible>IsEmpty(Skin.String(CustomStartup.Path))</visible>
+                        <visible>String.IsEmpty(Skin.String(CustomStartup.Path))</visible>
                         <align>center</align>
                         <width>1920</width>
                         <radioposx>1806</radioposx>
@@ -728,7 +728,7 @@
                     </control>
                     <!--CUSTOM-->
                     <control type="radiobutton" id="717">
-                        <visible>!IsEmpty(Skin.String(CustomStartup.Path))</visible>
+                        <visible>!String.IsEmpty(Skin.String(CustomStartup.Path))</visible>
                         <align>center</align>
                         <width>1920</width>
                         <radioposx>1806</radioposx>
@@ -738,7 +738,7 @@
                         <onclick>Skin.Reset(StartupWindow)</onclick>
                         <onclick>Skin.Reset(StartupWindowOption)</onclick>
                         <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomStartup)</onclick>
-                        <selected>!IsEmpty(Skin.String(CustomStartup.Path))</selected>
+                        <selected>!String.IsEmpty(Skin.String(CustomStartup.Path))</selected>
                     </control>
                 </control>
                 <control type="scrollbar" id="60">

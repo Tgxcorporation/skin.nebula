@@ -445,7 +445,7 @@
                                 <onclick>Skin.SetPath(weatherArtPath)</onclick>
                             </item>
                             <item id="95">
-                                <visible>!IsEmpty(Skin.String(weatherArtPath))</visible>
+                                <visible>!String.IsEmpty(Skin.String(weatherArtPath))</visible>
                                 <label>$LOCALIZE[10035] - $LOCALIZE[31519]</label>
                                 <onclick>Skin.Reset(weatherArtPath)</onclick>
                             </item>
@@ -455,7 +455,7 @@
                             <!--<onclick>Skin.SetPath(weatherIconPath)</onclick>-->
                             <!--</item>-->
                             <!--<item id="96">-->
-                            <!--<visible>!IsEmpty(Skin.String(weatherIconPath))</visible>-->
+                            <!--<visible>!String.IsEmpty(Skin.String(weatherIconPath))</visible>-->
                             <!--<label>$LOCALIZE[10035] - $LOCALIZE[31520]</label>-->
                             <!--<onclick>Skin.Reset(weatherIconPath)</onclick>-->
                             <!--</item>-->
@@ -566,7 +566,7 @@
                                 </item>
                                 <!--DEFAULT IMAGE STARTUP-->
                                 <item id="200">
-                                    <visible>IsEmpty(Skin.String(startup-screentype))|StringCompare(Skin.String(startup-screentype),default)</visible>
+                                    <visible>String.IsEmpty(Skin.String(startup-screentype))|StringCompare(Skin.String(startup-screentype),default)</visible>
                                     <label>$LOCALIZE[31033]</label>
                                     <label2>$LOCALIZE[13278]</label2>
                                     <onclick>Skin.SetString(startup-screentype,image)</onclick>

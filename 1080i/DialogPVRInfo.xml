@@ -51,7 +51,7 @@
                     <include>ThumbBorder</include>
                 </control>
                 <control type="label">
-                    <animation effect="slide" start="0,0" end="0,-15" time="0" condition="!IsEmpty(ListItem.EpisodeName)">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-15" time="0" condition="!String.IsEmpty(ListItem.EpisodeName)">Conditional</animation>
                     <posx>TextMargin</posx>
                     <posy>273</posy>
                     <width>1800</width>

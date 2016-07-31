@@ -50,7 +50,7 @@
             </control>
             <!-- CDART MUSIC -->
             <include content="DiscArt">
-                <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)"/>
+                <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)"/>
                 <param name="x" value="73"/>
                 <param name="y" value="626"/>
                 <param name="width" value="424"/>

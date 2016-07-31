@@ -41,7 +41,7 @@
             <texture>$VAR[Theme.Color]/common/BlackDot.png</texture>
         </control>
         <control type="multiimage">
-            <visible>[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+            <visible>[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
             <include>KenBurns</include>
             <include>Dimensions_Fullscreen</include>
             <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
@@ -53,7 +53,7 @@
             <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
         </control>
         <control type="image">
-            <visible>[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+            <visible>[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
             <include>Dimensions_Fullscreen</include>
             <include>KenBurns</include>
             <fadetime>400</fadetime>
@@ -63,7 +63,7 @@
             <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
         </control>
         <control type="visualisation">
-            <visible>[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)]</visible>
+            <visible>[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)]</visible>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
@@ -618,7 +618,7 @@
                 <control type="group">
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="[[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]|Player.HasVideo]"/>
+                        <param name="visible" value="[[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]|Player.HasVideo]"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="1920"/>
@@ -630,7 +630,7 @@
                         <param name="info" value="Player.Progress"/>
                     </include>
                     <control type="image" id="495678">
-                        <visible>[[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]|Player.HasVideo]</visible>
+                        <visible>[[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]|Player.HasVideo]</visible>
                         <include>NowPlayingVisibleFadeEffect</include>
                         <posx>-200</posx>
                         <posy>0</posy>
@@ -640,7 +640,7 @@
                         <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                     </control>
                     <control type="group">
-                        <visible>[[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]|Player.HasVideo] + ![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
+                        <visible>[[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]|Player.HasVideo] + ![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
                         <include>NowPlayingVisibleFadeEffect</include>
                         <control type="label">
                             <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount]">Conditional</animation>
@@ -668,7 +668,7 @@
                         </control>
                         <control type="label">
                             <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount]">Conditional</animation>
-                            <visible>[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]</visible>
+                            <visible>[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]</visible>
                             <posx>250</posx>
                             <posy>55</posy>
                             <height>30</height>
@@ -1358,8 +1358,8 @@
                     <control type="image">
                         <visible>Skin.HasSetting(EnableClearArt)</visible>
                         <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearLogo)+
-                    [!IsEmpty(Player.Art(clearlogo))|!IsEmpty(Player.Art(tvshow.clearlogo))]+
-                    [!IsEmpty(Player.Art(clearart))|!IsEmpty(Player.Art(tvshow.clearart))]">
+                    [!String.IsEmpty(Player.Art(clearlogo))|!String.IsEmpty(Player.Art(tvshow.clearlogo))]+
+                    [!String.IsEmpty(Player.Art(clearart))|!String.IsEmpty(Player.Art(tvshow.clearart))]">
                             <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
                             <effect type="fade" start="100" end="0" time="500" delay="3000"/>
                         </animation>
@@ -1373,8 +1373,8 @@
                     <control type="image">
                         <visible>Skin.HasSetting(EnableClearLogo)</visible>
                         <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearArt)+
-                    [!IsEmpty(Player.Art(clearlogo))|!IsEmpty(Player.Art(tvshow.clearlogo))]+
-                    [!IsEmpty(Player.Art(clearart))|!IsEmpty(Player.Art(tvshow.clearart))]">
+                    [!String.IsEmpty(Player.Art(clearlogo))|!String.IsEmpty(Player.Art(tvshow.clearlogo))]+
+                    [!String.IsEmpty(Player.Art(clearart))|!String.IsEmpty(Player.Art(tvshow.clearart))]">
                             <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
                             <effect type="fade" start="0" end="100" time="500" delay="3000"/>
                         </animation>
@@ -1407,7 +1407,7 @@
                     <posy>642</posy>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!IsEmpty(VideoPlayer.Cover)+!VideoPlayer.Content(LiveTV)+!VideoPlayer.Content(episodes)"/>
+                        <param name="visible" value="!String.IsEmpty(VideoPlayer.Cover)+!VideoPlayer.Content(LiveTV)+!VideoPlayer.Content(episodes)"/>
                         <param name="x" value="122"/>
                         <param name="y" value="-70"/>
                         <param name="width" value="211"/>
@@ -1527,8 +1527,8 @@
                             <label>$INFO[VideoPlayer.Genre]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,     ]$INFO[VideoPlayer.TVShowTitle]</label>
                         </control>
                         <control type="grouplist">
-                            <animation type="Conditional" pulse="true" reversible="false" condition="[!IsEmpty(VideoPlayer.AudioLanguage)+!StringCompare(VideoPlayer.AudioLanguage,und)]
-                        |[!IsEmpty(VideoPlayer.SubtitlesLanguage)+!StringCompare(VideoPlayer.SubtitlesLanguage,und)]">
+                            <animation type="Conditional" pulse="true" reversible="false" condition="[!String.IsEmpty(VideoPlayer.AudioLanguage)+!StringCompare(VideoPlayer.AudioLanguage,und)]
+                        |[!String.IsEmpty(VideoPlayer.SubtitlesLanguage)+!StringCompare(VideoPlayer.SubtitlesLanguage,und)]">
                                 <include>PulseBasicVisible</include>
                             </animation>
                             <posx>40</posx>
@@ -1542,8 +1542,8 @@
                             <include>CodecsVideoOSD</include>
                         </control>
                         <control type="grouplist">
-                            <animation type="Conditional" pulse="true" reversible="false" condition="[!IsEmpty(VideoPlayer.AudioLanguage)+!StringCompare(VideoPlayer.AudioLanguage,und)]
-                        |[!IsEmpty(VideoPlayer.SubtitlesLanguage)+!StringCompare(VideoPlayer.SubtitlesLanguage,und)]">
+                            <animation type="Conditional" pulse="true" reversible="false" condition="[!String.IsEmpty(VideoPlayer.AudioLanguage)+!StringCompare(VideoPlayer.AudioLanguage,und)]
+                        |[!String.IsEmpty(VideoPlayer.SubtitlesLanguage)+!StringCompare(VideoPlayer.SubtitlesLanguage,und)]">
                                 <include>PulseBasicHidden</include>
                             </animation>
                             <posx>50</posx>
@@ -1704,11 +1704,11 @@
             <!--DUMMY CLEAR ART -->
             <visible>Skin.HasSetting(EnableClearArt)+
                 [
-                [!IsEmpty(ListItem.Art(clearart)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]] + ![Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
+                [!String.IsEmpty(ListItem.Art(clearart)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]] + ![Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
                 |
-                [!IsEmpty(ListItem.Art(tvshow.clearart)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                [!String.IsEmpty(ListItem.Art(tvshow.clearart)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
                 |
-                [!IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
+                [!String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
                 ]
             </visible>
             <include>HiddenButton</include>
@@ -1717,9 +1717,9 @@
             <!--DUMMY CLEAR LOGO-->
             <visible>Skin.HasSetting(EnableClearLogo)+
                 [
-                [!IsEmpty(ListItem.Art(clearlogo)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                [!String.IsEmpty(ListItem.Art(clearlogo)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
                 |
-                [!IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                [!String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
                 ]
             </visible>
             <include>HiddenButton</include>

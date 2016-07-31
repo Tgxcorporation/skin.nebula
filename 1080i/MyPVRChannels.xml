@@ -33,13 +33,13 @@
         </control>
         <control type="label">
             <include>OpenClose</include>
-            <visible>IsEmpty(Window.Property(IsRadio))</visible>
+            <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
             <include>WindowTitle</include>
             <label>$LOCALIZE[19023]</label>
         </control>
         <control type="label">
             <include>OpenClose</include>
-            <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+            <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
             <include>WindowTitle</include>
             <label>$LOCALIZE[19024]</label>
         </control>

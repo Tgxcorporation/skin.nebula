@@ -117,7 +117,7 @@
                                 <include>SquareThumbBig</include>
                             </control>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.Label2)</visible>
+                                <visible>String.IsEmpty(ListItem.Label2)</visible>
                                 <posx>257</posx>
                                 <height>207</height>
                                 <width>643</width>
@@ -126,7 +126,7 @@
                                 <label>[B]$INFO[ListItem.Label][/B]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.Label2)</visible>
+                                <visible>!String.IsEmpty(ListItem.Label2)</visible>
                                 <posx>257</posx>
                                 <posy>25</posy>
                                 <width>643</width>
@@ -135,7 +135,7 @@
                                 <label>[B]$INFO[ListItem.Label][/B]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.Label2)</visible>
+                                <visible>!String.IsEmpty(ListItem.Label2)</visible>
                                 <posx>257</posx>
                                 <posy>77</posy>
                                 <width>643</width>
@@ -144,7 +144,7 @@
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.Label2)</visible>
+                                <visible>!String.IsEmpty(ListItem.Label2)</visible>
                                 <posx>257</posx>
                                 <posy>127</posy>
                                 <width>643</width>
@@ -213,7 +213,7 @@
                                 <include>SquareThumbBig</include>
                             </control>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.Label2)</visible>
+                                <visible>String.IsEmpty(ListItem.Label2)</visible>
                                 <posx>257</posx>
                                 <height>207</height>
                                 <width>643</width>
@@ -222,7 +222,7 @@
                                 <label>[B]$INFO[ListItem.Label][/B]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.Label2)</visible>
+                                <visible>!String.IsEmpty(ListItem.Label2)</visible>
                                 <posx>257</posx>
                                 <posy>25</posy>
                                 <width>643</width>
@@ -231,7 +231,7 @@
                                 <label>[B]$INFO[ListItem.Label][/B]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.Label2)</visible>
+                                <visible>!String.IsEmpty(ListItem.Label2)</visible>
                                 <posx>257</posx>
                                 <posy>77</posy>
                                 <width>643</width>
@@ -240,7 +240,7 @@
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.Label2)</visible>
+                                <visible>!String.IsEmpty(ListItem.Label2)</visible>
                                 <posx>257</posx>
                                 <posy>127</posy>
                                 <width>643</width>

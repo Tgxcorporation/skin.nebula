@@ -222,7 +222,7 @@
                                     <onright>2216</onright>
                                 </control>
                                 <control type="image">
-                                    <visible>SubString(Container(221).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(221).ListItem.Icon,Default)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>348</posy>
                                     <width>424</width>
@@ -277,7 +277,7 @@
                                             <label>$INFO[ListItem.Label]</label>
                                         </control>
                                         <control type="label">
-                                            <visible>!SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>!String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>TextMargin</posx>
                                             <posy>73</posy>
                                             <aligny>top</aligny>
@@ -287,7 +287,7 @@
                                             <label>$INFO[ListItem.Property(Year),,     ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]</label>
                                         </control>
                                         <control type="label">
-                                            <visible>SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>TextMargin</posx>
                                             <posy>73</posy>
                                             <aligny>top</aligny>
@@ -327,7 +327,7 @@
                                                 <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                                             </control>
                                             <control type="label">
-                                                <visible>!SubString(ListItem.Property(Duration),min)</visible>
+                                                <visible>!String.Contains(ListItem.Property(Duration),min)</visible>
                                                 <posx>TextMargin</posx>
                                                 <posy>107</posy>
                                                 <height>71</height>
@@ -338,7 +338,7 @@
                                                 <label>$INFO[ListItem.Property(Year),,     ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]</label>
                                             </control>
                                             <control type="label">
-                                                <visible>SubString(ListItem.Property(Duration),min)</visible>
+                                                <visible>String.Contains(ListItem.Property(Duration),min)</visible>
                                                 <posx>TextMargin</posx>
                                                 <posy>107</posy>
                                                 <height>71</height>
@@ -380,7 +380,7 @@
                                     <onright>1116</onright>
                                 </control>
                                 <control type="image">
-                                    <visible>SubString(Container(111).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(111).ListItem.Icon,Default)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>348</posy>
                                     <width>424</width>
@@ -435,7 +435,7 @@
                                             <label>$INFO[ListItem.Label]</label>
                                         </control>
                                         <control type="label">
-                                            <visible>!SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>!String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>TextMargin</posx>
                                             <posy>73</posy>
                                             <aligny>top</aligny>
@@ -445,7 +445,7 @@
                                             <label>$INFO[ListItem.Property(Year),,     ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]</label>
                                         </control>
                                         <control type="label">
-                                            <visible>SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>TextMargin</posx>
                                             <posy>73</posy>
                                             <aligny>top</aligny>
@@ -485,7 +485,7 @@
                                                 <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
                                             </control>
                                             <control type="label">
-                                                <visible>!SubString(ListItem.Property(Duration),min)</visible>
+                                                <visible>!String.Contains(ListItem.Property(Duration),min)</visible>
                                                 <posx>TextMargin</posx>
                                                 <posy>107</posy>
                                                 <height>71</height>
@@ -496,7 +496,7 @@
                                                 <label>$INFO[ListItem.Property(Year),,     ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]</label>
                                             </control>
                                             <control type="label">
-                                                <visible>SubString(ListItem.Property(Duration),min)</visible>
+                                                <visible>String.Contains(ListItem.Property(Duration),min)</visible>
                                                 <posx>TextMargin</posx>
                                                 <posy>107</posy>
                                                 <height>71</height>
@@ -538,7 +538,7 @@
                                     <onright>2116</onright>
                                 </control>
                                 <control type="image">
-                                    <visible>SubString(Container(211).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(211).ListItem.Icon,Default)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>348</posy>
                                     <width>424</width>
@@ -673,7 +673,7 @@
                                     <onright>1216</onright>
                                 </control>
                                 <control type="image">
-                                    <visible>SubString(Container(121).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(121).ListItem.Icon,Default)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>348</posy>
                                     <width>424</width>
@@ -808,7 +808,7 @@
                                     <onright>1316</onright>
                                 </control>
                                 <control type="image">
-                                    <visible>SubString(Container(131).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(131).ListItem.Icon,Default)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>348</posy>
                                     <width>424</width>
@@ -943,7 +943,7 @@
                                     <onright>1416</onright>
                                 </control>
                                 <control type="image">
-                                    <visible>SubString(Container(141).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(141).ListItem.Icon,Default)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>348</posy>
                                     <width>424</width>
@@ -1078,7 +1078,7 @@
                                     <onright>1516</onright>
                                 </control>
                                 <control type="image">
-                                    <visible>SubString(Container(151).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(151).ListItem.Icon,Default)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>348</posy>
                                     <width>424</width>
@@ -1214,7 +1214,7 @@
                                     <onright>1616</onright>
                                 </control>
                                 <control type="image">
-                                    <visible>SubString(Container(161).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(161).ListItem.Icon,Default)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>348</posy>
                                     <width>424</width>
@@ -1350,7 +1350,7 @@
                                     <onright>1716</onright>
                                 </control>
                                 <control type="image">
-                                    <visible>SubString(Container(171).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(171).ListItem.Icon,Default)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>348</posy>
                                     <width>424</width>
@@ -1486,7 +1486,7 @@
                                     <onright>1816</onright>
                                 </control>
                                 <control type="image">
-                                    <visible>SubString(Container(181).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(181).ListItem.Icon,Default)</visible>
                                     <posx>TextMargin</posx>
                                     <posy>348</posy>
                                     <width>424</width>

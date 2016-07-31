@@ -18,37 +18,37 @@
                     <description>Channels</description>
                     <label>19019</label>
                     <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">NextChannelGroup</onclick>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="button" id="101">
                     <description>TV Guide</description>
                     <label>22020</label>
                     <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="button" id="102">
                     <description>Recordings</description>
                     <label>19163</label>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="button" id="103">
                     <description>Timers</description>
                     <label>19040</label>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="button" id="104">
                     <description>Search</description>
                     <label>137</label>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="label" id="9183">
@@ -335,7 +335,7 @@
                 <onright>NextChannelGroup</onright>
             </control>
             <control type="image">
-                <visible>[IsEmpty(Container(11).ListItem.thumb)|IsEmpty(Container(11).ListItem.Art(thumb))]</visible>
+                <visible>[String.IsEmpty(Container(11).ListItem.thumb)|String.IsEmpty(Container(11).ListItem.Art(thumb))]</visible>
                 <posx>25</posx>
                 <posy>283</posy>
                 <width>408</width>
@@ -553,7 +553,7 @@
                 <onright>NextChannelGroup</onright>
             </control>
             <control type="image">
-                <visible>[IsEmpty(Container(11).ListItem.thumb)|IsEmpty(Container(11).ListItem.Art(thumb))]</visible>
+                <visible>[String.IsEmpty(Container(11).ListItem.thumb)|String.IsEmpty(Container(11).ListItem.Art(thumb))]</visible>
                 <posx>25</posx>
                 <posy>283</posy>
                 <width>408</width>

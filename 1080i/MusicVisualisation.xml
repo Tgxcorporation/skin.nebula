@@ -55,7 +55,7 @@
                         <posy>642</posy>
                         <!-- CDART MUSIC -->
                         <include content="DiscArt">
-                            <param name="visible" value="!IsEmpty(Player.Art(thumb))"/>
+                            <param name="visible" value="!String.IsEmpty(Player.Art(thumb))"/>
                             <param name="x" value="70"/>
                             <param name="y" value="-122"/>
                             <param name="width" value="315"/>

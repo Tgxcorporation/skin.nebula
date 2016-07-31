@@ -60,7 +60,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="image">
-                        <visible>!IsEmpty(ListItem.Property(encryption))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(encryption))</visible>
                         <posx>1760</posx>
                         <posy>0</posy>
                         <width>50</width>
@@ -105,7 +105,7 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="image">
-                            <visible>!IsEmpty(ListItem.Property(encryption))</visible>
+                            <visible>!String.IsEmpty(ListItem.Property(encryption))</visible>
                             <posx>1760</posx>
                             <posy>0</posy>
                             <width>50</width>

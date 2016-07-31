@@ -117,7 +117,7 @@
                     </control>
                 </control>
                 <control type="label">
-                    <visible>IsEmpty(ListItem.Property(Addon.broken))</visible>
+                    <visible>String.IsEmpty(ListItem.Property(Addon.broken))</visible>
                     <posx>TextMargin</posx>
                     <posy>903</posy>
                     <width>1800</width>
@@ -127,7 +127,7 @@
                     <scroll>true</scroll>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
+                    <visible>!String.IsEmpty(ListItem.Property(Addon.broken))</visible>
                     <posx>TextMargin</posx>
                     <posy>903</posy>
                     <width>1041</width>

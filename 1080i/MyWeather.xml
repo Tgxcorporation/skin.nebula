@@ -312,35 +312,35 @@
                     <onclick>Skin.SetString(WeatherView,biglist)</onclick>
                 </control>
                 <control type="radiobutton" id="502">
-                    <visible>!IsEmpty(Window.Property(Daily.IsFetched))|Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
+                    <visible>!String.IsEmpty(Window.Property(Daily.IsFetched))|Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
                     <selected>Skin.String(WeatherType,daily)|Skin.String(WeatherType,)</selected>
                     <label>$LOCALIZE[31904]</label>
                     <include>LeftMenuButton</include>
                     <onclick>Skin.SetString(WeatherType,daily)</onclick>
                 </control>
                 <control type="radiobutton" id="503">
-                    <visible>!IsEmpty(Window.Property(36Hour.IsFetched))</visible>
+                    <visible>!String.IsEmpty(Window.Property(36Hour.IsFetched))</visible>
                     <selected>Skin.String(WeatherType,36Hour)</selected>
                     <label>$LOCALIZE[31901]</label>
                     <include>LeftMenuButton</include>
                     <onclick>Skin.SetString(WeatherType,36Hour)</onclick>
                 </control>
                 <control type="radiobutton" id="504">
-                    <visible>!IsEmpty(Window.Property(Weekend.IsFetched))</visible>
+                    <visible>!String.IsEmpty(Window.Property(Weekend.IsFetched))</visible>
                     <selected>Skin.String(WeatherType,Weekend)</selected>
                     <label>$LOCALIZE[31903]</label>
                     <include>LeftMenuButton</include>
                     <onclick>Skin.SetString(WeatherType,Weekend)</onclick>
                 </control>
                 <control type="radiobutton" id="505">
-                    <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                    <visible>!String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                     <selected>Skin.String(WeatherType,Hourly)</selected>
                     <label>$LOCALIZE[31902]</label>
                     <include>LeftMenuButton</include>
                     <onclick>Skin.SetString(WeatherType,Hourly)</onclick>
                 </control>
                 <control type="radiobutton" id="506">
-                    <visible>!IsEmpty(Window.Property(Map.IsFetched))</visible>
+                    <visible>!String.IsEmpty(Window.Property(Map.IsFetched))</visible>
                     <selected>Skin.String(WeatherType,Map)</selected>
                     <label>$LOCALIZE[31910]</label>
                     <include>LeftMenuButton</include>

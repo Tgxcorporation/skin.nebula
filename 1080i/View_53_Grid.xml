@@ -25,7 +25,7 @@
             <include>FacadeFadeDialogs</include>
             <visible>Control.IsVisible(53)</visible>
             <visible>!Skin.HasSetting(DisableIconViewInfos)</visible>
-            <visible>![StringCompare(ListItem.Label,..)|IsEmpty(ListItem.Label)]</visible>
+            <visible>![StringCompare(ListItem.Label,..)|String.IsEmpty(ListItem.Label)]</visible>
             <include>Icon_Fade</include>
             <animation effect="slide" tween="back" easing="out" time="100" start="0,0" end="0,-510"
                        condition="[Window.isActive(MyPVRChannels.xml)+[Container(53).Row(3)|Container(53).Row(4)|Container(53).Row(5)]]|
@@ -50,7 +50,7 @@
                            [Skin.HasSetting(53_UseBanners)+[Container(53).Row(3)|Container(53).Row(4)|Container(53).Row(5)]]">conditional</animation>
                 <!-- CDART MUSIC -->
                 <include content="DiscArt">
-                    <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                    <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                     <param name="x" value="85"/>
                     <param name="y" value="111"/>
                     <param name="width" value="414"/>
@@ -64,7 +64,7 @@
                 </include>
                 <!-- CDART VIDEO -->
                 <include content="DiscArt">
-                    <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                    <param name="visible" value="!StringCompare(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                     <param name="x" value="152"/>
                     <param name="y" value="183"/>
                     <param name="width" value="280"/>
@@ -78,7 +78,7 @@
                 </include>
             </control>
             <control type="image">
-                <visible>[IsEmpty(ListItem.thumb)|IsEmpty(ListItem.Art(thumb))]</visible>
+                <visible>[String.IsEmpty(ListItem.thumb)|String.IsEmpty(ListItem.Art(thumb))]</visible>
                 <posx>75</posx>
                 <posy>323</posy>
                 <width>434</width>
@@ -139,7 +139,7 @@
                 </control>
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
-                    <param name="visible" value="IntegerGreaterThan(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
+                    <param name="visible" value="Integer.IsGreater(ListItem.Progress,0)+[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]"/>
                     <param name="x" value="TextMargin"/>
                     <param name="y" value="59"/>
                     <param name="width" value="1191"/>
@@ -152,7 +152,7 @@
                 </include>
                 <include content="ProgressBar">
                     <param name="id" value="0"/>
-                    <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
+                    <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                     <param name="x" value="TextMargin"/>
                     <param name="y" value="59"/>
                     <param name="width" value="1191"/>
@@ -164,7 +164,7 @@
                     <param name="info" value="ListItem.PercentPlayed"/>
                 </include>
                 <control type="group">
-                    <visible>IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                    <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                     <visible>!Container.Content(Addons)</visible>
                     <control type="image">
                         <posx>TextMargin</posx>

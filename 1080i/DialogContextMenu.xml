@@ -71,7 +71,7 @@
                         <onclick condition="Container.Content(Actors) | Container.Content(Directors) | Container.Content(Artists)">RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Label])</onclick>
                         <onclick condition="Container.Content(Movies)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onclick>
                         <onclick condition="Container.Content(tvshows)">RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[ListItem.Title],dbid=$INFO[ListItem.DBID])</onclick>
-                        <!--<onclick condition="Container.Content(Seasons) + !IsEmpty(ListItem.Season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</onclick>-->
+                        <!--<onclick condition="Container.Content(Seasons) + !String.IsEmpty(ListItem.Season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</onclick>-->
                     </control>
                     <control type="button" id="9325">
                         <!-- ArtWork Downloader Solo Mode-->

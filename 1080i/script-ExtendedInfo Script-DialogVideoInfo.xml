@@ -72,7 +72,7 @@
                     </control>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                        <param name="visible" value="!String.IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="70"/>
                         <param name="y" value="143"/>
                         <param name="width" value="404"/>
@@ -85,7 +85,7 @@
                         <param name="pulse" value="false"/>
                     </include>
                     <control type="image">
-                        <visible>IsEmpty(Window.Property(Poster))</visible>
+                        <visible>String.IsEmpty(Window.Property(Poster))</visible>
                         <posx>TextMargin</posx>
                         <posy>348</posy>
                         <width>424</width>
@@ -103,7 +103,7 @@
                         <aspectratio aligny="top">keep</aspectratio>
                     </control>
                     <control type="panel" id="9009">
-                        <visible>![container.content(tvshows) | container.content(episodes) | SubString(Container.FolderPath,videodb://musicvideos,left)]</visible>
+                        <visible>![container.content(tvshows) | container.content(episodes) | String.StartsWith(Container.FolderPath,videodb://musicvideos)]</visible>
                         <include>VisibleFadeEffectDelay</include>
                         <posx>500</posx>
                         <posy>318</posy>
@@ -115,161 +115,161 @@
                                 <label>$LOCALIZE[20376]:</label>
                                 <label2>$INFO[Window.Property(OriginalTitle)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(OriginalTitle))</visible>
-                                <!--<visible>!IsEmpty(Window.Property(OriginalTitle)) + !stringcompare(Window.Property(OriginalTitle),Window.Property(Title))</visible>-->
+                                <visible>!String.IsEmpty(Window.Property(OriginalTitle))</visible>
+                                <!--<visible>!String.IsEmpty(Window.Property(OriginalTitle)) + !stringcompare(Window.Property(OriginalTitle),Window.Property(Title))</visible>-->
                             </item>
                             <item>
                                 <label>$LOCALIZE[20339]:</label>
                                 <label2>$INFO[Window.Property(Director)]</label2>
                                 <onclick>noop</onclick>
                                 <!--<onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Window.Property(Director)])</onclick>-->
-                                <visible>!IsEmpty(Window.Property(Director))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Director))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[20417]:</label>
                                 <label2>$INFO[Window.Property(Writer)]</label2>
                                 <onclick>noop</onclick>
                                 <!--<onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Window.Property(Writer)])</onclick>-->
-                                <visible>!IsEmpty(Window.Property(Writer))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Writer))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[572]:</label>
                                 <label2>$INFO[Window.Property(Studio)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(Studio))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Studio))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[515]:</label>
                                 <label2>$INFO[Window.Property(Genre)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(Genre))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Genre))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[562]:</label>
                                 <label2>$INFO[Window.Property(Year)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(Year))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Year))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[20074]:</label>
                                 <label2>$INFO[Window.Property(mpaa)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(mpaa))</visible>
+                                <visible>!String.IsEmpty(Window.Property(mpaa))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[172]:</label>
                                 <label2>$INFO[Window.Property(release_date)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(release_date))</visible>
+                                <visible>!String.IsEmpty(Window.Property(release_date))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[2050]:</label>
                                 <label2>$INFO[Window.Property(Duration)] $LOCALIZE[12391]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(Duration))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Duration))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[563]:</label>
                                 <label2>$INFO[Window.Property(Rating)]$INFO[Window.Property(Votes), (, $LOCALIZE[205])]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(Rating))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Rating))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[202]:</label>
                                 <label2>$INFO[Window.Property(TagLine)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(TagLine))</visible>
+                                <visible>!String.IsEmpty(Window.Property(TagLine))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32108]:</label>
                                 <label2>$INFO[Window.Property(Budget),$]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(Budget))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Budget))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[20416]:</label>
                                 <label2>$INFO[Window.Property(Premiered)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(Premiered))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Premiered))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[574]:</label>
                                 <label2>$INFO[Window.Property(Country)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(Country))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Country))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[570]:</label>
                                 <label2>$INFO[Window.Property(DateAdded)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(DateAdded))</visible>
+                                <visible>!String.IsEmpty(Window.Property(DateAdded))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32109]:</label>
                                 <label2>$INFO[Window.Property(Revenue),$]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(Revenue))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Revenue))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21445]:</label>
                                 <label2>$INFO[Window.Property(VideoCodec)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(VideoCodec))</visible>
+                                <visible>!String.IsEmpty(Window.Property(VideoCodec))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21805]:</label>
                                 <label2>$INFO[Window.Property(VideoResolution)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(VideoResolution))</visible>
+                                <visible>!String.IsEmpty(Window.Property(VideoResolution))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21446]:</label>
                                 <label2>$INFO[Window.Property(AudioCodec)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(AudioCodec))</visible>
+                                <visible>!String.IsEmpty(Window.Property(AudioCodec))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21444]:</label>
                                 <label2>$INFO[Window.Property(AudioChannels)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(AudioChannels))</visible>
+                                <visible>!String.IsEmpty(Window.Property(AudioChannels))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21447]:</label>
                                 <label2>$INFO[Window.Property(AudioLanguage.1)]$INFO[Window.Property(AudioLanguage.2),  •  ]$INFO[Window.Property(AudioLanguage.3),  •  ]$INFO[Window.Property(AudioLanguage.3),  •  ]$INFO[Window.Property(AudioLanguage.4),  •  ]$INFO[Window.Property(AudioLanguage.5),  •  ]$INFO[Window.Property(AudioLanguage.6),  •  ]$INFO[Window.Property(AudioLanguage.7),  •  ]$INFO[Window.Property(AudioLanguage.8),  •  ]$INFO[Window.Property(AudioLanguage.9),  •  ]$INFO[Window.Property(AudioLanguage.10),  •  ]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(AudioLanguage.1))</visible>
+                                <visible>!String.IsEmpty(Window.Property(AudioLanguage.1))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21448]:</label>
                                 <label2>$INFO[Window.Property(SubtitleLanguage.1)]$INFO[Window.Property(SubtitleLanguage.2),  •  ]$INFO[Window.Property(SubtitleLanguage.3),  •  ]$INFO[Window.Property(SubtitleLanguage.3),  •  ]$INFO[Window.Property(SubtitleLanguage.4),  •  ]$INFO[Window.Property(SubtitleLanguage.5),  •  ]$INFO[Window.Property(SubtitleLanguage.6),  •  ]$INFO[Window.Property(SubtitleLanguage.7),  •  ]$INFO[Window.Property(SubtitleLanguage.8),  •  ]$INFO[Window.Property(SubtitleLanguage.9),  •  ]$INFO[Window.Property(SubtitleLanguage.10),  •  ]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(SubtitleLanguage.1))</visible>
+                                <visible>!String.IsEmpty(Window.Property(SubtitleLanguage.1))</visible>
                             </item>
                             <item>
                                 <label>IMDB Top 250 #: </label>
                                 <label2>$INFO[Window.Property(Top250)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(Top250))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Top250))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[36501]:</label>
                                 <label2>$INFO[Window.Property(StereoscopicMode)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(StereoscopicMode))</visible>
+                                <visible>!String.IsEmpty(Window.Property(StereoscopicMode))</visible>
                                 <visible>!Skin.HasSetting(plexbmc)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21800]:</label>
                                 <label2>$INFO[Window.Property(Filename)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(Filename))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Filename))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[567]:</label>
                                 <label2>$INFO[Window.Property(PlayCount)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(PlayCount))</visible>
+                                <visible>!String.IsEmpty(Window.Property(PlayCount))</visible>
                             </item>
                             <item>
                                 <label fallback="-">$LOCALIZE[575]:</label>
@@ -281,7 +281,7 @@
                                 <label fallback="-">$LOCALIZE[568]:</label>
                                 <label2>$INFO[Window.Property(LastPlayed)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(LastPlayed))</visible>
+                                <visible>!String.IsEmpty(Window.Property(LastPlayed))</visible>
                             </item>
                         </content>
                     </control>
@@ -295,43 +295,43 @@
                                     <label>$LOCALIZE[20360]:</label>
                                     <label2>$INFO[Window.Property(episode)]     ($INFO[Window.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[Window.Property(Property(UnWatchedEpisodes)), , $LOCALIZE[16101]])</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Episode))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Episode))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[31322]:</label>
                                     <label2>$INFO[Window.Property(Premiered)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Premiered))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Premiered))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[515]:</label>
                                     <label2>$INFO[Window.Property(Genre)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Genre))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Genre))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[562]:</label>
                                     <label2>$INFO[Window.Property(Year)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Year))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Year))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[20074]:</label>
                                     <label2>$INFO[Window.Property(mpaa)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(mpaa))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(mpaa))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[563]:</label>
                                     <label2>$INFO[Window.Property(Rating)]$INFO[Window.Property(Votes), (, $LOCALIZE[205])]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Rating))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Rating))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21800]:</label>
                                     <label2>$INFO[Window.Property(Filename)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Filename))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Filename))</visible>
                                 </item>
                             </content>
                         </control>
@@ -346,152 +346,152 @@
                                     <label>$LOCALIZE[20364]:</label>
                                     <label2>$INFO[Window.Property(TVShowTitle)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(TVShowTitle))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(TVShowTitle))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[20373]:</label>
                                     <label2>$INFO[Window.Property(Season)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Season))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Season))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[20359]:</label>
                                     <label2>$INFO[Window.Property(Episode)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Episode))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Episode))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[31322]:</label>
                                     <label2>$INFO[Window.Property(Premiered)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Premiered))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Premiered))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[515]:</label>
                                     <label2>$INFO[Window.Property(Genre)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Genre))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Genre))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[20339]:</label>
                                     <label2>$INFO[Window.Property(Director)]</label2>
                                     <onclick>SendClick(2003,13)</onclick>
-                                    <visible>!IsEmpty(Window.Property(Director))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Director))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[20417]:</label>
                                     <label2>$INFO[Window.Property(Writer)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Writer))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Writer))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[562]:</label>
                                     <label2>$INFO[Window.Property(Year)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Year))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Year))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[20074]:</label>
                                     <label2>$INFO[Window.Property(mpaa)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(mpaa))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(mpaa))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[2050]:</label>
                                     <label2>$INFO[Window.Property(Duration)] $LOCALIZE[12391]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Duration))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Duration))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[563]:</label>
                                     <label2>$INFO[Window.Property(Rating)]$INFO[Window.Property(Votes), (, $LOCALIZE[205])]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Rating))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Rating))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[20416]:</label>
                                     <label2>$INFO[Window.Property(Premiered)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Premiered))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Premiered))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[574]:</label>
                                     <label2>$INFO[Window.Property(Country)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Country))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Country))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[570]:</label>
                                     <label2>$INFO[Window.Property(DateAdded)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(DateAdded))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(DateAdded))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21445]:</label>
                                     <label2>$INFO[Window.Property(VideoCodec)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(VideoCodec))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(VideoCodec))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21805]:</label>
                                     <label2>$INFO[Window.Property(VideoResolution)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(VideoResolution))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(VideoResolution))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21446]:</label>
                                     <label2>$INFO[Window.Property(AudioCodec)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(AudioCodec))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(AudioCodec))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21444]:</label>
                                     <label2>$INFO[Window.Property(AudioChannels)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(AudioChannels))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(AudioChannels))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21447]:</label>
                                     <label2>$INFO[Window.Property(AudioLanguage)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(AudioLanguage))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(AudioLanguage))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21448]:</label>
                                     <label2>$INFO[Window.Property(SubtitleLanguage)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(SubtitleLanguage))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(SubtitleLanguage))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21448]</label>
                                     <label2>$INFO[Window.Property(SubtitleLanguage)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(SubtitleLanguage))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(SubtitleLanguage))</visible>
                                 </item>
                                 <item>
                                     <label>IMDB Top 250 #:</label>
                                     <label2>$INFO[Window.Property(Top250)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Top250))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Top250))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[36501]:</label>
                                     <label2>$INFO[Window.Property(StereoscopicMode)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(LiWindow.Property(moviestItem.StereoscopicMode))</visible>
+                                    <visible>!String.IsEmpty(LiWindow.Property(moviestItem.StereoscopicMode))</visible>
                                     <visible>!Skin.HasSetting(plexbmc)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21800]:</label>
                                     <label2>$INFO[Window.Property(Filename)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Filename))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Filename))</visible>
                                 </item>
                             </content>
                         </control>
                     </control>
                     <control type="group">
-                        <visible>SubString(Container.FolderPath,videodb://musicvideos,left)</visible>
+                        <visible>String.StartsWith(Container.FolderPath,videodb://musicvideos)</visible>
                         <include>VisibleFadeEffectDelay</include>
                         <control type="panel" id="9009">
                             <include>List_9009_Commons</include>
@@ -500,117 +500,117 @@
                                     <label>$LOCALIZE[557]:</label>
                                     <label2>$INFO[Window.Property(Artist)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Artist))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Artist))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[558]:</label>
                                     <label2>$INFO[Window.Property(Album)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Album))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Album))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[20339]:</label>
                                     <label2>$INFO[Window.Property(Director)]</label2>
                                     <onclick>noop</onclick>
                                     <!--<onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Window.Property(Director)])</onclick>-->
-                                    <visible>!IsEmpty(Window.Property(Director))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Director))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[20417]:</label>
                                     <label2>$INFO[Window.Property(Writer)]</label2>
                                     <onclick>noop</onclick>
                                     <!--<onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Window.Property(Writer)])</onclick>-->
-                                    <visible>!IsEmpty(Window.Property(Writer))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Writer))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[572]:</label>
                                     <label2>$INFO[Window.Property(Studio)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Studio))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Studio))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[515]:</label>
                                     <label2>$INFO[Window.Property(Genre)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Genre))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Genre))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[562]:</label>
                                     <label2>$INFO[Window.Property(Year)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Year))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Year))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[172]:</label>
                                     <label2>$INFO[Window.Property(ReleaseDate)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(ReleaseDate))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(ReleaseDate))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[2050]:</label>
                                     <label2>$INFO[ListItem.Duration] $LOCALIZE[12391]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(ListItem.Duration)</visible>
+                                    <visible>!String.IsEmpty(ListItem.Duration)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21445]:</label>
                                     <label2>$INFO[Window.Property(VideoCodec)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(VideoCodec))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(VideoCodec))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21805]:</label>
                                     <label2>$INFO[Window.Property(VideoResolution)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(VideoResolution))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(VideoResolution))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21446]:</label>
                                     <label2>$INFO[Window.Property(AudioCodec)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(AudioCodec))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(AudioCodec))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21444]:</label>
                                     <label2>$INFO[Window.Property(AudioChannels)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(AudioChannels))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(AudioChannels))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21447]:</label>
                                     <label2>$INFO[Window.Property(AudioLanguage)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(AudioLanguage))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(AudioLanguage))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21448]:</label>
                                     <label2>$INFO[Window.Property(SubtitleLanguage)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(SubtitleLanguage))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(SubtitleLanguage))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21448]</label>
                                     <label2>$INFO[Window.Property(SubtitleLanguage)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(SubtitleLanguage))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(SubtitleLanguage))</visible>
                                 </item>
                                 <item>
                                     <label>IMDB Top 250 #:</label>
                                     <label2>$INFO[Window.Property(Top250)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Top250))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Top250))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[36501]:</label>
                                     <label2>$INFO[Window.Property(StereoscopicMode)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(LiWindow.Property(moviestItem.StereoscopicMode))</visible>
+                                    <visible>!String.IsEmpty(LiWindow.Property(moviestItem.StereoscopicMode))</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21800]:</label>
                                     <label2>$INFO[Window.Property(Filename)]</label2>
                                     <onclick>noop</onclick>
-                                    <visible>!IsEmpty(Window.Property(Filename))</visible>
+                                    <visible>!String.IsEmpty(Window.Property(Filename))</visible>
                                 </item>
                             </content>
                         </control>
@@ -666,7 +666,7 @@
                     </control>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                        <param name="visible" value="!String.IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="70"/>
                         <param name="y" value="143"/>
                         <param name="width" value="404"/>
@@ -679,7 +679,7 @@
                         <param name="pulse" value="false"/>
                     </include>
                     <control type="image">
-                        <visible>IsEmpty(Window.Property(Poster))</visible>
+                        <visible>String.IsEmpty(Window.Property(Poster))</visible>
                         <posx>TextMargin</posx>
                         <posy>348</posy>
                         <width>424</width>
@@ -731,7 +731,7 @@
                 <!--CAST-->
                 <control type="group" id="10000">
                     <visible>control.hasfocus(1001)|ControlGroup(10000).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(1000).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(1000).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -744,7 +744,7 @@
                         <label>$INFO[Container(1000).NumItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Container(1000).ListItem.Thumb)</visible>
+                        <visible>String.IsEmpty(Container(1000).ListItem.Thumb)</visible>
                         <posx>TextMargin</posx>
                         <posy>348</posy>
                         <width>424</width>
@@ -869,7 +869,7 @@
                 <!--CREW-->
                 <control type="group" id="7500">
                     <visible>control.hasfocus(751)|ControlGroup(7500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(750).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -882,7 +882,7 @@
                         <label>$INFO[Container(750).NumItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Container(750).ListItem.Thumb)</visible>
+                        <visible>String.IsEmpty(Container(750).ListItem.Thumb)</visible>
                         <posx>TextMargin</posx>
                         <posy>348</posy>
                         <width>424</width>
@@ -1007,7 +1007,7 @@
                 <!--RECOMMENDED TMDB-->
                 <control type="group" id="1500">
                     <visible>control.hasfocus(151)|ControlGroup(1500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(150).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -1020,7 +1020,7 @@
                         <label>$INFO[Container(150).NumItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Container(150).ListItem.Thumb)</visible>
+                        <visible>String.IsEmpty(Container(150).ListItem.Thumb)</visible>
                         <posx>TextMargin</posx>
                         <posy>348</posy>
                         <width>424</width>
@@ -1096,7 +1096,7 @@
                                 <height>132</height>
                                 <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
                                 <aspectratio aligny="center">keep</aspectratio>
-                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                             </control>
                         </itemlayout>
                         <focusedlayout height="135" width="1420">
@@ -1146,7 +1146,7 @@
                                     <height>132</height>
                                     <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
                                     <aspectratio aligny="center">keep</aspectratio>
-                                    <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                                 </control>
                             </control>
                         </focusedlayout>
@@ -1163,7 +1163,7 @@
                 <!--SET MOVIES-->
                 <control type="group" id="2500">
                     <visible>control.hasfocus(251)|control.hasfocus(252)|ControlGroup(2500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -1176,7 +1176,7 @@
                         <label>$INFO[Container(250).NumItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Container(250).ListItem.Thumb)</visible>
+                        <visible>String.IsEmpty(Container(250).ListItem.Thumb)</visible>
                         <posx>TextMargin</posx>
                         <posy>348</posy>
                         <width>424</width>
@@ -1252,7 +1252,7 @@
                                 <height>132</height>
                                 <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
                                 <aspectratio aligny="center">keep</aspectratio>
-                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                             </control>
                         </itemlayout>
                         <focusedlayout height="135" width="1420">
@@ -1302,7 +1302,7 @@
                                     <height>132</height>
                                     <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
                                     <aspectratio aligny="center">keep</aspectratio>
-                                    <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                                 </control>
                             </control>
                         </focusedlayout>
@@ -1319,7 +1319,7 @@
                 <!--OFFICIAL VIDEOS-->
                 <control type="group" id="11500">
                     <visible>control.hasfocus(1151)|ControlGroup(11500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(1150).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(1150).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -1332,7 +1332,7 @@
                         <label>$INFO[Container(1150).NumItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Container(1150).ListItem.Thumb)</visible>
+                        <visible>String.IsEmpty(Container(1150).ListItem.Thumb)</visible>
                         <posx>TextMargin</posx>
                         <posy>348</posy>
                         <width>424</width>
@@ -1457,7 +1457,7 @@
                 <!--YOUTUBE-->
                 <control type="group" id="3500">
                     <visible>control.hasfocus(351)|ControlGroup(3500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(350).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -1470,7 +1470,7 @@
                         <label>$INFO[Container(350).NumItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Container(350).ListItem.Thumb)</visible>
+                        <visible>String.IsEmpty(Container(350).ListItem.Thumb)</visible>
                         <posx>TextMargin</posx>
                         <posy>348</posy>
                         <width>424</width>
@@ -1555,7 +1555,7 @@
                 <!--PRODUCTION COMPANIES-->
                 <control type="group" id="5500">
                     <visible>control.hasfocus(551)|ControlGroup(5500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(550).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -1657,7 +1657,7 @@
                 <!--NETWORKS STUDIOS-->
                 <control type="group" id="14500">
                     <visible>control.hasfocus(1451)|ControlGroup(14500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(1450).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(1450).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -1759,7 +1759,7 @@
                 <!--RELEASES-->
                 <control type="group" id="6500">
                     <visible>control.hasfocus(651)|ControlGroup(6500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(650).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -1843,7 +1843,7 @@
                 <!--GENRES-->
                 <control type="group" id="8500">
                     <visible>control.hasfocus(851)|ControlGroup(8500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(850).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(850).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -1911,7 +1911,7 @@
                 <!--REVIEWS-->
                 <control type="group" id="10500">
                     <visible>control.hasfocus(1051)|ControlGroup(10500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(1050).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(1050).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -2011,7 +2011,7 @@
                 <!--KEYWORDS-->
                 <control type="group" id="9500">
                     <visible>control.hasfocus(951)|ControlGroup(9500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(950).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(950).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -2079,7 +2079,7 @@
                 <!--ARTWORK-->
                 <control type="group" id="12500">
                     <visible>control.hasfocus(1251)|ControlGroup(12500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(1250).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(1250).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -2181,7 +2181,7 @@
                 <!--FANART-->
                 <control type="group" id="13500">
                     <visible>control.hasfocus(1351)|ControlGroup(13500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(1350).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(1350).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -2283,7 +2283,7 @@
                 <!--MOVIEDB USERS-->
                 <control type="group" id="4500">
                     <visible>control.hasfocus(451)|ControlGroup(4500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -2296,7 +2296,7 @@
                         <label>$INFO[Container(450).NumItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Container(450).ListItem.Thumb)</visible>
+                        <visible>String.IsEmpty(Container(450).ListItem.Thumb)</visible>
                         <posx>TextMargin</posx>
                         <posy>348</posy>
                         <width>424</width>
@@ -2373,7 +2373,7 @@
                                 <height>132</height>
                                 <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
                                 <aspectratio aligny="center">keep</aspectratio>
-                                <visible>!IsEmpty(ListItem.Property(account))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(account))</visible>
                             </control>
                         </itemlayout>
                         <focusedlayout height="135" width="1420">
@@ -2424,7 +2424,7 @@
                                     <height>132</height>
                                     <texture>$VAR[Theme.Color]/OverlayWatched.png</texture>
                                     <aspectratio aligny="center">keep</aspectratio>
-                                    <visible>!IsEmpty(ListItem.Property(account))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(account))</visible>
                                 </control>
                             </control>
                         </focusedlayout>
@@ -2441,7 +2441,7 @@
                 <!--EPISODE INDEX-->
                 <control type="group" id="20000">
                     <visible>control.hasfocus(2001)|ControlGroup(20000).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(2000).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(2000).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -2454,7 +2454,7 @@
                         <label>$INFO[Container(2000).NumItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Container(2000).ListItem.Thumb)</visible>
+                        <visible>String.IsEmpty(Container(2000).ListItem.Thumb)</visible>
                         <posx>TextMargin</posx>
                         <posy>348</posy>
                         <width>424</width>
@@ -2557,22 +2557,22 @@
                         <onclick>Control.SetFocus(9009)</onclick>
                     </control>
                     <control type="button" id="8">
-                        <visible>!IsEmpty(Window.Property(DBID))</visible>
+                        <visible>!String.IsEmpty(Window.Property(DBID))</visible>
                         <description>Play</description>
                         <label>$LOCALIZE[208]</label>
                         <include>LeftMenuButton</include>
                         <onright>9009</onright>
                     </control>
                     <!--<control type="button" id="9">-->
-                    <!--<visible>!IsEmpty(Window.Property(DBID)) + IntegerGreaterThan(Window.Property(PercentPlayed),0)</visible>-->
+                    <!--<visible>!String.IsEmpty(Window.Property(DBID)) + Integer.IsGreater(Window.Property(PercentPlayed),0)</visible>-->
                     <!--<description>Resume</description>-->
                     <!--<label>$LOCALIZE[13404] $INFO[Window.Property(PercentPlayed),(,%)]</label>-->
                     <!--<include>LeftMenuButton</include>-->
                     <!--<onright>9009</onright>-->
                     <!--</control>-->
                     <control type="button" id="20">
-                        <visible>system.hasaddon(script.cinema.experience) + !SubString(Container.FolderPath,plugin)</visible>
-                        <visible>!IsEmpty(Window.Property(DBID))</visible>
+                        <visible>system.hasaddon(script.cinema.experience) + !String.Contains(Container.FolderPath,plugin)</visible>
+                        <visible>!String.IsEmpty(Window.Property(DBID))</visible>
                         <description>Cinema Experience</description>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[31005]</label>
@@ -2582,8 +2582,8 @@
                         <onright>9009</onright>
                     </control>
                     <control type="button" id="21">
-                        <visible>System.HasAddon(script.cinemavision) + !SubString(Container.FolderPath,plugin)</visible>
-                        <visible>!IsEmpty(Window.Property(DBID))</visible>
+                        <visible>System.HasAddon(script.cinemavision) + !String.Contains(Container.FolderPath,plugin)</visible>
+                        <visible>!String.IsEmpty(Window.Property(DBID))</visible>
                         <description>Cinema Vision</description>
                         <include>LeftMenuButton</include>
                         <label>CinemaVision</label>
@@ -2592,7 +2592,7 @@
                         <onright>9009</onright>
                     </control>
                     <control type="togglebutton" id="6061">
-                        <visible>!IsEmpty(Window.Property(Plot))</visible>
+                        <visible>!String.IsEmpty(Window.Property(Plot))</visible>
                         <description>Plot</description>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[207]</label>
@@ -2600,7 +2600,7 @@
                         <onclick>Control.SetFocus(6060)</onclick>
                     </control>
                     <control type="button" id="1001">
-                        <visible>IntegerGreaterThan(Container(1000).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(1000).NumItems,0)</visible>
                         <description>CAST</description>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[344]</label>
@@ -2608,7 +2608,7 @@
                         <onclick>Control.SetFocus(1000)</onclick>
                     </control>
                     <control type="button" id="751">
-                        <visible>IntegerGreaterThan(Container(750).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
                         <description>CREW</description>
                         <include>LeftMenuButton</include>
                         <label>$ADDON[script.extendedinfo 32115]</label>
@@ -2616,7 +2616,7 @@
                         <onclick>Control.SetFocus(750)</onclick>
                     </control>
                     <control type="button" id="151">
-                        <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(150).NumItems,0)</visible>
                         <description>Recommended by TMDB</description>
                         <include>LeftMenuButton</include>
                         <label>$ADDON[script.extendedinfo 32116]</label>
@@ -2624,8 +2624,8 @@
                         <onclick>Control.SetFocus(150)</onclick>
                     </control>
                     <control type="button" id="251">
-                        <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
-                        <visible>!IsEmpty(Window.Property(set.label))</visible>
+                        <visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
+                        <visible>!String.IsEmpty(Window.Property(set.label))</visible>
                         <description>Movie Sets</description>
                         <include>LeftMenuButton</include>
                         <label>$INFO[Window.Property(set.label)]</label>
@@ -2633,8 +2633,8 @@
                         <onclick>Control.SetFocus(250)</onclick>
                     </control>
                     <control type="button" id="252">
-                        <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
-                        <visible>IsEmpty(Window.Property(set.label))</visible>
+                        <visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
+                        <visible>String.IsEmpty(Window.Property(set.label))</visible>
                         <description>Seasons</description>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[33054]</label>
@@ -2642,7 +2642,7 @@
                         <onclick>Control.SetFocus(250)</onclick>
                     </control>
                     <control type="button" id="1151">
-                        <visible>IntegerGreaterThan(Container(1150).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(1150).NumItems,0)</visible>
                         <description>Official Videos</description>
                         <include>LeftMenuButton</include>
                         <label>$ADDON[script.extendedinfo 32117]</label>
@@ -2650,7 +2650,7 @@
                         <onclick>Control.SetFocus(1150)</onclick>
                     </control>
                     <control type="button" id="351">
-                        <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(350).NumItems,0)</visible>
                         <description>Youtube</description>
                         <include>LeftMenuButton</include>
                         <label>$ADDON[script.extendedinfo 32118]</label>
@@ -2658,7 +2658,7 @@
                         <onclick>Control.SetFocus(350)</onclick>
                     </control>
                     <control type="button" id="451">
-                        <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
                         <description>Youtube</description>
                         <include>LeftMenuButton</include>
                         <label>$ADDON[script.extendedinfo 32026]</label>
@@ -2666,7 +2666,7 @@
                         <onclick>Control.SetFocus(450)</onclick>
                     </control>
                     <control type="button" id="551">
-                        <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(550).NumItems,0)</visible>
                         <description>Production Companies</description>
                         <include>LeftMenuButton</include>
                         <label>20388</label>
@@ -2674,7 +2674,7 @@
                         <onclick>Control.SetFocus(550)</onclick>
                     </control>
                     <control type="button" id="1451">
-                        <visible>IntegerGreaterThan(Container(1450).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(1450).NumItems,0)</visible>
                         <description>Networks</description>
                         <include>LeftMenuButton</include>
                         <label>$ADDON[script.extendedinfo 32152]</label>
@@ -2682,7 +2682,7 @@
                         <onclick>Control.SetFocus(1450)</onclick>
                     </control>
                     <control type="button" id="651">
-                        <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(650).NumItems,0)</visible>
                         <description>Releases</description>
                         <include>LeftMenuButton</include>
                         <label>172</label>
@@ -2690,7 +2690,7 @@
                         <onclick>Control.SetFocus(650)</onclick>
                     </control>
                     <control type="button" id="851">
-                        <visible>IntegerGreaterThan(Container(850).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(850).NumItems,0)</visible>
                         <description>Genres</description>
                         <include>LeftMenuButton</include>
                         <label>135</label>
@@ -2698,7 +2698,7 @@
                         <onclick>Control.SetFocus(850)</onclick>
                     </control>
                     <control type="button" id="1051">
-                        <visible>IntegerGreaterThan(Container(1050).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(1050).NumItems,0)</visible>
                         <description>Reviews</description>
                         <include>LeftMenuButton</include>
                         <label>$ADDON[script.extendedinfo 32167]</label>
@@ -2706,7 +2706,7 @@
                         <onclick>Control.SetFocus(1050)</onclick>
                     </control>
                     <control type="button" id="951">
-                        <visible>IntegerGreaterThan(Container(950).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(950).NumItems,0)</visible>
                         <description>Keywords</description>
                         <include>LeftMenuButton</include>
                         <label>21861</label>
@@ -2714,7 +2714,7 @@
                         <onclick>Control.SetFocus(950)</onclick>
                     </control>
                     <control type="button" id="1251">
-                        <visible>IntegerGreaterThan(Container(1250).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(1250).NumItems,0)</visible>
                         <description>Artwork</description>
                         <include>LeftMenuButton</include>
                         <label>1</label>
@@ -2722,7 +2722,7 @@
                         <onclick>Control.SetFocus(1250)</onclick>
                     </control>
                     <control type="button" id="1351">
-                        <visible>IntegerGreaterThan(Container(1350).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(1350).NumItems,0)</visible>
                         <description>Fanart</description>
                         <include>LeftMenuButton</include>
                         <label>20445</label>
@@ -2730,8 +2730,8 @@
                         <onclick>Control.SetFocus(1350)</onclick>
                     </control>
                     <control type="button" id="100">
-                        <visible>System.HasAddon(script.videoextras) + IsEmpty(Window(movieinformation).Property(HideVideoExtrasButton))</visible>
-                        <visible>!IsEmpty(Window.Property(FilenameAndPath))</visible>
+                        <visible>System.HasAddon(script.videoextras) + String.IsEmpty(Window(movieinformation).Property(HideVideoExtrasButton))</visible>
+                        <visible>!String.IsEmpty(Window.Property(FilenameAndPath))</visible>
                         <description>Videos Extras</description>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[31509]</label>
@@ -2739,7 +2739,7 @@
                         <onright>9009</onright>
                     </control>
                     <control type="button" id="2001">
-                        <visible>IntegerGreaterThan(Container(2000).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(2000).NumItems,0)</visible>
                         <description>Episodes</description>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[20360]</label>
