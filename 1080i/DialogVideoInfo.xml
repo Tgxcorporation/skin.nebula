@@ -341,6 +341,12 @@
                                     <visible>!String.IsEmpty(ListItem.Premiered)</visible>
                                 </item>
                                 <item>
+                                    <label>$LOCALIZE[126]:</label>
+                                    <label2>$INFO[ListItem.Status]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.Status)</visible>
+                                </item>
+                                <item>
                                     <label>$LOCALIZE[574]:</label>
                                     <label2>$INFO[ListItem.Country]</label2>
                                     <onclick>noop</onclick>
