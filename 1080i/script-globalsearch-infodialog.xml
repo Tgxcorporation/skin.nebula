@@ -116,12 +116,6 @@
                             <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Container(100).ListItem.Property(ChannelName))</visible>
                         </item>
-                        <item>
-                            <label>$LOCALIZE[15311]</label>
-                            <label2>$INFO[Container(100).ListItem.Property(Path)]</label2>
-                            <onclick>noop</onclick>
-                            <visible>!String.IsEmpty(Container(100).ListItem.Property(Path))</visible>
-                        </item>
                     </content>
                 </control>
                 <control type="scrollbar" id="2006">
@@ -209,12 +203,6 @@
                             <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Container(100).ListItem.Property(Playcount))</visible>
                         </item>
-                        <item>
-                            <label>$LOCALIZE[15311]</label>
-                            <label2>$INFO[Container(100).ListItem.Property(Path)]</label2>
-                            <onclick>noop</onclick>
-                            <visible>!String.IsEmpty(Container(100).ListItem.Property(Path))</visible>
-                        </item>
                     </content>
                 </control>
                 <control type="scrollbar" id="1106">
@@ -284,12 +272,6 @@
                             <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Container(100).ListItem.Property(Playcount))</visible>
                         </item>
-                        <item>
-                            <label>$LOCALIZE[15311]</label>
-                            <label2>$INFO[Container(100).ListItem.Property(Path)]</label2>
-                            <onclick>noop</onclick>
-                            <visible>!String.IsEmpty(Container(100).ListItem.Property(Path))</visible>
-                        </item>
                     </content>
                 </control>
                 <control type="scrollbar" id="1206">
@@ -328,12 +310,6 @@
                             <label2>$INFO[Container(100).ListItem.Property(Playcount)]</label2>
                             <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Container(100).ListItem.Property(Playcount))</visible>
-                        </item>
-                        <item>
-                            <label>$LOCALIZE[15311]</label>
-                            <label2>$INFO[Container(100).ListItem.Property(Path)]</label2>
-                            <onclick>noop</onclick>
-                            <visible>!String.IsEmpty(Container(100).ListItem.Property(Path))</visible>
                         </item>
                     </content>
                 </control>
@@ -410,12 +386,6 @@
                             <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Container(100).ListItem.Property(Playcount))</visible>
                         </item>
-                        <item>
-                            <label>$LOCALIZE[15311]</label>
-                            <label2>$INFO[Container(100).ListItem.Property(Path)]</label2>
-                            <onclick>noop</onclick>
-                            <visible>!String.IsEmpty(Container(100).ListItem.Property(Path))</visible>
-                        </item>
                     </content>
                 </control>
                 <control type="scrollbar" id="1406">
@@ -485,12 +455,6 @@
                             <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Container(100).ListItem.Property(Playcount))</visible>
                         </item>
-                        <item>
-                            <label>$LOCALIZE[15311]</label>
-                            <label2>$INFO[Container(100).ListItem.Property(Path)]</label2>
-                            <onclick>noop</onclick>
-                            <visible>!String.IsEmpty(Container(100).ListItem.Property(Path))</visible>
-                        </item>
                     </content>
                 </control>
                 <control type="scrollbar" id="1506">
@@ -559,12 +523,6 @@
                             <label2>$INFO[Container(100).ListItem.Property(Genre)]</label2>
                             <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Container(100).ListItem.Property(Genre))</visible>
-                        </item>
-                        <item>
-                            <label>$LOCALIZE[15311]:</label>
-                            <label2>$INFO[Container(100).ListItem.Property(Path)]</label2>
-                            <onclick>noop</onclick>
-                            <visible>!String.IsEmpty(Container(100).ListItem.Property(Path))</visible>
                         </item>
                     </content>
                 </control>
@@ -641,12 +599,6 @@
                             <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Container(100).ListItem.Property(Year))</visible>
                         </item>
-                        <item>
-                            <label>$LOCALIZE[15311]</label>
-                            <label2>$INFO[Container(100).ListItem.Property(Path)]</label2>
-                            <onclick>noop</onclick>
-                            <visible>!String.IsEmpty(Container(100).ListItem.Property(Path))</visible>
-                        </item>
                     </content>
                 </control>
                 <control type="scrollbar" id="1706">
@@ -721,12 +673,6 @@
                             <label2>$INFO[Container(100).ListItem.Property(Playcount)]</label2>
                             <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Container(100).ListItem.Property(Playcount))</visible>
-                        </item>
-                        <item>
-                            <label>$LOCALIZE[15311]</label>
-                            <label2>$INFO[Container(100).ListItem.Property(Path)]</label2>
-                            <onclick>noop</onclick>
-                            <visible>!String.IsEmpty(Container(100).ListItem.Property(Path))</visible>
                         </item>
                     </content>
                 </control>
