@@ -114,6 +114,12 @@
                     <label>19051</label>
                     <include>LeftMenuButton</include>
                 </control>
+                <control type="radiobutton" id="8">
+                    <visible>Window.IsActive(MyPVRTimers.xml)</visible>
+                    <description>Hide disabled timers</description>
+                    <label>$LOCALIZE[19077]</label>
+                    <include>LeftMenuButton</include>
+                </control>
             </control>
         </control>
     </include>
