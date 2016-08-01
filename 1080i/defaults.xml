@@ -193,6 +193,7 @@
         <include>TextureSliderNibFocus</include>
         <textoffsetx>20</textoffsetx>
         <pulseonselect>false</pulseonselect>
+        <orientation>horizontal</orientation>
     </default>
     <default type="sliderex">
         <align>left</align>
