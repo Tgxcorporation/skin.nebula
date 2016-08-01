@@ -33,7 +33,7 @@
         <label2>Common Shortcut</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb></thumb>
-        <action>ActivateWindow(VideoLibrary,MovieTitles,return)</action>
+        <action>ActivateWindow(Videos,MovieTitles,return)</action>
     </shortcut>
     <shortcut>
         <visible>!Skin.HasSetting(plexbmc) + Library.HasContent(TVShows)</visible>
@@ -42,7 +42,7 @@
         <label2>Common Shortcut</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb></thumb>
-        <action>ActivateWindow(VideoLibrary,TVShowTitles,return)</action>
+        <action>ActivateWindow(Videos,TVShowTitles,return)</action>
     </shortcut>
     <shortcut>
         <visible>!Skin.HasSetting(plexbmc)</visible>
@@ -69,7 +69,7 @@
         <label2>Common Shortcut</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb></thumb>
-        <action>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</action>
+        <action>ActivateWindow(Videos,MusicVideoTitles,return)</action>
     </shortcut>
     <shortcut>
         <visible>Pvr.HasTVChannels</visible>

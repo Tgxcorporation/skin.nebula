@@ -82,11 +82,11 @@
                         <textwidth>460</textwidth>
                         <include>LeftMenuButtonWide</include>
                         <label>$LOCALIZE[3]</label>
-                        <onclick>Skin.SetString(StartupWindow,video)</onclick>
+                        <onclick>Skin.SetString(StartupWindow,Videos)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                         <onclick>Skin.Reset(StartupWindowOption)</onclick>
-                        <selected>String.IsEqual(Skin.String(StartupWindow),video)</selected>
+                        <selected>String.IsEqual(Skin.String(StartupWindow),Videos)</selected>
                     </control>
                     <!--MOVIES-->
                     <control type="radiobutton" id="719">
@@ -98,12 +98,12 @@
                         <textwidth>460</textwidth>
                         <include>LeftMenuButtonWide</include>
                         <label>$LOCALIZE[20342]</label>
-                        <onclick>Skin.SetString(StartupWindow,VideoLibrary)</onclick>
+                        <onclick>Skin.SetString(StartupWindow,Videos)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                         <onclick>Skin.Reset(StartupWindowOption)</onclick>
                         <onclick>Skin.SetString(StartupWindowOption,MovieTitles)</onclick>
-                        <selected>String.IsEqual(Skin.String(StartupWindow),VideoLibrary) + String.IsEqual(Skin.String(StartupWindowOption),MovieTitles)</selected>
+                        <selected>String.IsEqual(Skin.String(StartupWindow),Videos) + String.IsEqual(Skin.String(StartupWindowOption),MovieTitles)</selected>
                     </control>
                     <!--TVSHOWS-->
                     <control type="radiobutton" id="720">
@@ -115,12 +115,12 @@
                         <textwidth>460</textwidth>
                         <include>LeftMenuButtonWide</include>
                         <label>$LOCALIZE[20343]</label>
-                        <onclick>Skin.SetString(StartupWindow,VideoLibrary)</onclick>
+                        <onclick>Skin.SetString(StartupWindow,Videos)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                         <onclick>Skin.Reset(StartupWindowOption)</onclick>
                         <onclick>Skin.SetString(StartupWindowOption,TVShowTitles)</onclick>
-                        <selected>String.IsEqual(Skin.String(StartupWindow),VideoLibrary) + String.IsEqual(Skin.String(StartupWindowOption),TVShowTitles)</selected>
+                        <selected>String.IsEqual(Skin.String(StartupWindow),Videos) + String.IsEqual(Skin.String(StartupWindowOption),TVShowTitles)</selected>
                     </control>
                     <!--CONCERTS-->
                     <control type="radiobutton" id="721">
@@ -132,12 +132,12 @@
                         <textwidth>460</textwidth>
                         <include>LeftMenuButtonWide</include>
                         <label>$LOCALIZE[31971]</label>
-                        <onclick>Skin.SetString(StartupWindow,VideoLibrary)</onclick>
+                        <onclick>Skin.SetString(StartupWindow,Videos)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                         <onclick>Skin.Reset(StartupWindowOption)</onclick>
                         <onclick>Skin.SetString(StartupWindowOption,MusicVideoTitles)</onclick>
-                        <selected>String.IsEqual(Skin.String(StartupWindow),VideoLibrary) + String.IsEqual(Skin.String(StartupWindowOption),MusicVideoTitles)</selected>
+                        <selected>String.IsEqual(Skin.String(StartupWindow),Videos) + String.IsEqual(Skin.String(StartupWindowOption),MusicVideoTitles)</selected>
                     </control>
                     <!--VIDEO PLAYLISTS-->
                     <control type="radiobutton" id="722">

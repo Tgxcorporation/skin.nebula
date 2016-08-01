@@ -30,7 +30,7 @@
         <label2>Common Shortcut</label2>
         <icon>DefaultMusicVideos.png</icon>
         <thumb/>
-        <action>ActivateWindow(MusicLibrary,MusicVideos,return)</action>
+        <action>ActivateWindow(Music,MusicVideos,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>32046</defaultID>

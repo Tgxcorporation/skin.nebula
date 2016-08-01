@@ -42,7 +42,7 @@
             <texture>$VAR[Theme.Color]/common/BlackDot.png</texture>
         </control>
         <control type="multiimage">
-            <visible>[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+            <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
             <include>KenBurns</include>
             <include>Dimensions_Fullscreen</include>
             <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
@@ -54,7 +54,7 @@
             <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
         </control>
         <control type="image">
-            <visible>[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+            <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
             <include>Dimensions_Fullscreen</include>
             <include>KenBurns</include>
             <fadetime>400</fadetime>
@@ -64,7 +64,7 @@
             <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
         </control>
         <control type="visualisation">
-            <visible>[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)]</visible>
+            <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)]</visible>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
@@ -617,7 +617,7 @@
                 <control type="group">
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="[[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]|Player.HasVideo]"/>
+                        <param name="visible" value="[[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]|Player.HasVideo]"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="1920"/>
@@ -629,7 +629,7 @@
                         <param name="info" value="Player.Progress"/>
                     </include>
                     <control type="image" id="495678">
-                        <visible>[[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]|Player.HasVideo]</visible>
+                        <visible>[[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]|Player.HasVideo]</visible>
                         <include>NowPlayingVisibleFadeEffect</include>
                         <posx>-200</posx>
                         <posy>0</posy>
@@ -639,7 +639,7 @@
                         <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                     </control>
                     <control type="group">
-                        <visible>[[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]|Player.HasVideo] + ![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
+                        <visible>[[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]|Player.HasVideo] + ![ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]</visible>
                         <include>NowPlayingVisibleFadeEffect</include>
                         <control type="label">
                             <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount]">Conditional</animation>
@@ -667,7 +667,7 @@
                         </control>
                         <control type="label">
                             <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount]">Conditional</animation>
-                            <visible>[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]</visible>
+                            <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible>
                             <posx>250</posx>
                             <posy>55</posy>
                             <height>30</height>

@@ -6,7 +6,7 @@
         <label2>Music</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb/>
-        <action>ActivateWindow(MusicLibrary,RecentlyAddedAlbums,return)</action>
+        <action>ActivateWindow(Music,RecentlyAddedAlbums,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>517</defaultID>
@@ -14,7 +14,7 @@
         <label2>Music</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb/>
-        <action>ActivateWindow(MusicLibrary,RecentlyPlayedAlbums,return)</action>
+        <action>ActivateWindow(Music,RecentlyPlayedAlbums,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>133</defaultID>
@@ -22,7 +22,7 @@
         <label2>Music</label2>
         <icon>DefaultMusicArtists.png</icon>
         <thumb/>
-        <action>ActivateWindow(MusicLibrary,Artists,return)</action>
+        <action>ActivateWindow(Music,Artists,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>132</defaultID>
@@ -30,7 +30,7 @@
         <label2>Music</label2>
         <icon>DefaultMusicAlbums.png</icon>
         <thumb/>
-        <action>ActivateWindow(MusicLibrary,Albums,return)</action>
+        <action>ActivateWindow(Music,Albums,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>134</defaultID>
@@ -38,7 +38,7 @@
         <label2>Music</label2>
         <icon>DefaultMusicSongs.png</icon>
         <thumb/>
-        <action>ActivateWindow(MusicLibrary,Songs,return)</action>
+        <action>ActivateWindow(Music,Songs,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>744</defaultID>
@@ -46,7 +46,7 @@
         <label2>Music</label2>
         <icon>DefaultFolder.png</icon>
         <thumb/>
-        <action>ActivateWindow(MusicFiles)</action>
+        <action>ActivateWindow(Music,Files,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>15100</defaultID>
@@ -54,7 +54,7 @@
         <label2>Music</label2>
         <icon>DefaultFolder.png</icon>
         <thumb/>
-        <action>ActivateWindow(MusicLibrary,MusicLibrary,return)</action>
+        <action>ActivateWindow(Music,Music,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>1038</defaultID>
@@ -62,7 +62,7 @@
         <label2>Music</label2>
         <icon>DefaultAddonMusic.png</icon>
         <thumb/>
-        <action>ActivateWindow(MusicLibrary,Addons,return)</action>
+        <action>ActivateWindow(Music,Addons,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>136</defaultID>
@@ -70,7 +70,7 @@
         <label2>Music</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb/>
-        <action>ActivateWindow(MusicLibrary,Playlists,return)</action>
+        <action>ActivateWindow(Music,Playlists,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>10504</defaultID>
@@ -78,7 +78,7 @@
         <label2>Music</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb/>
-        <action>ActivateWindow(MusicLibrary,Top100Songs,return)</action>
+        <action>ActivateWindow(Music,Top100Songs,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>32047</defaultID>

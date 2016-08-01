@@ -755,9 +755,9 @@
     <variable name="StartupWindowName">
         <value condition="String.IsEmpty(Skin.String(StartupWindow)) + String.IsEmpty(Skin.String(CustomStartup.Path))">$LOCALIZE[31517]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),home)">$LOCALIZE[513]</value>
-        <value condition="String.IsEqual(Skin.String(StartupWindow),VideoLibrary) + String.IsEqual(Skin.String(StartupWindowOption),MovieTitles)">$LOCALIZE[20342]</value>
-        <value condition="String.IsEqual(Skin.String(StartupWindow),VideoLibrary) + String.IsEqual(Skin.String(StartupWindowOption),TVShowTitles)">$LOCALIZE[20343]</value>
-        <value condition="String.IsEqual(Skin.String(StartupWindow),VideoLibrary) + String.IsEqual(Skin.String(StartupWindowOption),MusicVideoTitles)">$LOCALIZE[31971]</value>
+        <value condition="String.IsEqual(Skin.String(StartupWindow),Videos) + String.IsEqual(Skin.String(StartupWindowOption),MovieTitles)">$LOCALIZE[20342]</value>
+        <value condition="String.IsEqual(Skin.String(StartupWindow),Videos) + String.IsEqual(Skin.String(StartupWindowOption),TVShowTitles)">$LOCALIZE[20343]</value>
+        <value condition="String.IsEqual(Skin.String(StartupWindow),Videos) + String.IsEqual(Skin.String(StartupWindowOption),MusicVideoTitles)">$LOCALIZE[31971]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),Videos) + String.IsEqual(Skin.String(StartupWindowOption),Playlists)">$LOCALIZE[3] - $LOCALIZE[136]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),Music) + String.IsEqual(Skin.String(StartupWindowOption),root)">$LOCALIZE[2]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),Music) + String.IsEqual(Skin.String(StartupWindowOption),Albums)">$LOCALIZE[132]</value>
@@ -770,7 +770,7 @@
         <value condition="String.IsEqual(Skin.String(StartupWindow),radiorecordings)">$LOCALIZE[19021] - $LOCALIZE[20007]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),radioguide)">$LOCALIZE[19021] - $LOCALIZE[22020]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),programs)">$LOCALIZE[0]</value>
-        <value condition="String.IsEqual(Skin.String(StartupWindow),video)">$LOCALIZE[3]</value>
+        <value condition="String.IsEqual(Skin.String(StartupWindow),Videos)">$LOCALIZE[3]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),pictures)">$LOCALIZE[1]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),filemanager)">$LOCALIZE[7]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),settings)">$LOCALIZE[5]</value>
