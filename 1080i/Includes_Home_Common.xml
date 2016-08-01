@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-    <include content="CustomWidget">
+    <include name="CustomWidget">
         <control type="group">
             <animation effect="slide" tween="circle" time="150" start="0,0" end="0,1080" reversible="true" condition="Control.HasFocus($PARAM[id])">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="Control.HasFocus($PARAM[id])">Conditional</animation>
