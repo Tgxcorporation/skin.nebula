@@ -86,7 +86,7 @@
                         <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                         <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                         <onclick>Skin.Reset(StartupWindowOption)</onclick>
-                        <selected>String.IsEqual(Skin.String(StartupWindow),Videos)</selected>
+                        <selected>String.IsEqual(Skin.String(StartupWindow),Videos) + String.IsEmpty(Skin.String(StartupWindowOption))</selected>
                     </control>
                     <!--MOVIES-->
                     <control type="radiobutton" id="719">
