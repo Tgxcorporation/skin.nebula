@@ -13,6 +13,8 @@
         <value condition="ListItem.IsResumable">$VAR[Theme.Color]/overlay_inprogress/$INFO[ListItem.Overlay]</value>
         <value condition="Skin.HasSetting(Hide_Watched_Marks)">$VAR[Theme.Color]/overlay_unwatched/$INFO[ListItem.Overlay]</value>
         <value condition="!String.IsEmpty(ListItem.Overlay)">$VAR[Theme.Color]/$INFO[ListItem.Overlay]</value>
+        <value condition="String.IsEqual(ListItem.Label2,$LOCALIZE[305])+Window.IsVisible(AddonBrowser.xml)">$VAR[Theme.Color]/OverlayWatched.png</value>
+        <value condition="!String.IsEmpty(ListItem.Label2)+Window.IsVisible(AddonBrowser.xml)">$VAR[Theme.Color]/OverlayUnwatched.png</value>
         <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)+!String.IsEmpty(ListItem.Property(DBID))">$VAR[Theme.Color]/OverlayUnwatched.png</value>
     </variable>
     <variable name="Banner">
@@ -248,7 +250,7 @@
     </variable>
     <variable name="DetailsRow4">
         <value condition="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.NextTitle,$LOCALIZE[19031]: ]</value>
-        <value condition="Window.IsActive(AddonBrowser.xml)">$INFO[ListItem.Label2]</value>
+        <value condition="Window.IsActive(AddonBrowser.xml)">$INFO[ListItem.AddonSize]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.PictureCamModel]</value>
         <value condition="[Container.Content(TVShows) | Container.Content(Seasons)] + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]]</value>
         <!--<value condition="String.IsEmpty(ListItem.VideoResolution)">$INFO[ListItem.Label2]</value>-->
@@ -276,7 +278,7 @@
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Size,,     ]$INFO[ListItem.Date]</value>
         <value condition="Container.content(Albums)">$INFO[ListItem.Artist,,     ]$INFO[ListItem.Year]</value>
         <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,     ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
-        <value condition="Container.Content(Addons)">$INFO[ListItem.AddonCreator,$LOCALIZE[21863]: ,     ]$INFO[ListItem.AddonVersion,$LOCALIZE[19114]: ]</value>
+        <value condition="Container.Content(Addons)">$INFO[ListItem.AddonCreator,$LOCALIZE[21863]: ,     ]$INFO[ListItem.AddonVersion,$LOCALIZE[19114]: ]$INFO[ListItem.AddonSize,       $LOCALIZE[21802]: ]</value>
         <value condition="Container.Content(Artists) + !String.IsEmpty(ListItem.Property(artist_genre))">$INFO[ListItem.Property(artist_genre)]</value>
         <value condition="Container.Content(Artists) + !String.IsEmpty(ListItem.Property(artist_style))">$INFO[ListItem.Property(artist_style)]</value>
         <value condition="Container.Content(songs)">$INFO[ListItem.Duration]</value>
