@@ -240,18 +240,18 @@
                             <visible>$PARAM[visibilitylabelRating]</visible>
                             <control type="image">
                                 <posx>TextMargin</posx>
-                                <posy>91</posy>
+                                <posy>92</posy>
                                 <height>37</height>
                                 <width>185</width>
                                 <aspectratio align="left">keep</aspectratio>
                                 <texture>$VAR[Theme.Color]/badges/rating.png</texture>
                             </control>
                             <control type="label">
-                                <posx>112</posx>
+                                <posx>115</posx>
                                 <posy>74</posy>
                                 <width>460</width>
                                 <height>71</height>
-                                <font>InfoRatingFont</font>
+                                <font>InfoDetailsFont</font>
                                 <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label fallback="0.0">$PARAM[labelRating]</label>
@@ -435,18 +435,18 @@
                             <visible>$PARAM[visibilitylabelRating]</visible>
                             <control type="image">
                                 <posx>TextMargin</posx>
-                                <posy>91</posy>
+                                <posy>92</posy>
                                 <height>37</height>
                                 <width>185</width>
                                 <aspectratio align="left">keep</aspectratio>
                                 <texture>$VAR[Theme.Color]/badges/rating.png</texture>
                             </control>
                             <control type="label">
-                                <posx>112</posx>
+                                <posx>115</posx>
                                 <posy>74</posy>
                                 <width>460</width>
                                 <height>71</height>
-                                <font>InfoRatingFont</font>
+                                <font>InfoDetailsFont</font>
                                 <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label fallback="0.0">$PARAM[labelRating]</label>
@@ -663,18 +663,18 @@
                             <visible>$PARAM[visibilitylabelRating]</visible>
                             <control type="image">
                                 <posx>TextMargin</posx>
-                                <posy>91</posy>
+                                <posy>92</posy>
                                 <height>37</height>
                                 <width>185</width>
                                 <aspectratio align="left">keep</aspectratio>
                                 <texture>$VAR[Theme.Color]/badges/rating.png</texture>
                             </control>
                             <control type="label">
-                                <posx>112</posx>
+                                <posx>115</posx>
                                 <posy>74</posy>
                                 <width>460</width>
                                 <height>71</height>
-                                <font>InfoRatingFont</font>
+                                <font>InfoDetailsFont</font>
                                 <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label fallback="0.0">$PARAM[labelRating]</label>
@@ -871,18 +871,18 @@
                             <visible>$PARAM[visibilitylabelRating]</visible>
                             <control type="image">
                                 <posx>TextMargin</posx>
-                                <posy>91</posy>
+                                <posy>92</posy>
                                 <height>37</height>
                                 <width>185</width>
                                 <aspectratio align="left">keep</aspectratio>
                                 <texture>$VAR[Theme.Color]/badges/rating.png</texture>
                             </control>
                             <control type="label">
-                                <posx>112</posx>
+                                <posx>115</posx>
                                 <posy>74</posy>
                                 <width>460</width>
                                 <height>71</height>
-                                <font>InfoRatingFont</font>
+                                <font>InfoDetailsFont</font>
                                 <include>TextColor_MainColor</include>
                                 <scroll>false</scroll>
                                 <label fallback="0.0">$PARAM[labelRating]</label>

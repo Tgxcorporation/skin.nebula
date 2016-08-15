@@ -206,11 +206,11 @@
                     <visible>!Container.Content(Addons)</visible>
                     <control type="image">
                         <posx>455</posx>
-                        <posy>75</posy>
+                        <posy>76</posy>
                         <include>Stars</include>
                     </control>
                     <control type="label">
-                        <posx>670</posx>
+                        <posx>510</posx>
                         <posy>75</posy>
                         <aligny>top</aligny>
                         <width>460</width>

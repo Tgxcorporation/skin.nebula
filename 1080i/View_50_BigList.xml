@@ -207,15 +207,15 @@
                             [!Container.Content(Addons)+[Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]]]</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
-                            <posy>85</posy>
+                            <posy>83</posy>
                             <include>Stars</include>
                         </control>
                         <control type="label">
-                            <posx>260</posx>
-                            <posy>68</posy>
+                            <posx>115</posx>
+                            <posy>65</posy>
                             <width>460</width>
                             <height>71</height>
-                            <font>InfoRatingFont</font>
+                            <font>InfoDetailsFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <!--<label fallback="416">$INFO[ListItem.Rating]</label>-->

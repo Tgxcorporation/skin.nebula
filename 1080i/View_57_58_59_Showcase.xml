@@ -60,15 +60,15 @@
                     <label>$VAR[Fanart_Details]</label>
                 </control>
                 <control type="group" id="45741">
-                    <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+[String.Contains(ListItem.StarRating,rating1)|String.Contains(ListItem.StarRating,rating2)|String.Contains(ListItem.StarRating,rating3)|String.Contains(ListItem.StarRating,rating4)|String.Contains(ListItem.StarRating,rating5)]</visible>
+                    <visible>![Container.content(actors) | container.content(albums) | container.content(addons)] + !String.IsEmpty(ListItem.Rating)</visible>
                     <control type="image">
-                        <posx>1715</posx>
+                        <posx>1830</posx>
                         <posy>1009</posy>
                         <align>right</align>
                         <include>Stars</include>
                     </control>
                     <control type="label">
-                        <posx>1690</posx>
+                        <posx>1810</posx>
                         <posy>1010</posy>
                         <height>33</height>
                         <width>1120</width>
@@ -149,13 +149,13 @@
                 </control>
                 <control type="group" id="45741">
                     <control type="image">
-                        <posx>1715</posx>
+                        <posx>1830</posx>
                         <posy>1009</posy>
                         <align>right</align>
-                        <include>Stars_ExtendedInfo</include>
+                        <include>Stars</include>
                     </control>
                     <control type="label">
-                        <posx>1690</posx>
+                        <posx>1810</posx>
                         <posy>1010</posy>
                         <height>33</height>
                         <width>1120</width>
@@ -379,15 +379,15 @@
                         <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
-                            <posy>91</posy>
+                            <posy>92</posy>
                             <include>Stars</include>
                         </control>
                         <control type="label">
-                            <posx>260</posx>
+                            <posx>115</posx>
                             <posy>74</posy>
                             <width>460</width>
                             <height>71</height>
-                            <font>InfoRatingFont</font>
+                            <font>InfoDetailsFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
@@ -636,11 +636,11 @@
                         <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
-                            <posy>91</posy>
+                            <posy>92</posy>
                             <include>Stars</include>
                         </control>
                         <control type="label">
-                            <posx>260</posx>
+                            <posx>115</posx>
                             <posy>74</posy>
                             <width>460</width>
                             <height>71</height>
@@ -893,11 +893,11 @@
                         <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>TextMargin</posx>
-                            <posy>91</posy>
+                            <posy>92</posy>
                             <include>Stars</include>
                         </control>
                         <control type="label">
-                            <posx>260</posx>
+                            <posx>115</posx>
                             <posy>74</posy>
                             <width>460</width>
                             <height>71</height>
