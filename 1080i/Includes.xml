@@ -145,6 +145,7 @@
             <texturenofocus>-</texturenofocus>
             <texturefocus>-</texturefocus>
             <visible>true</visible>
+            <onfocus>SetFocus(9900)</onfocus>
         </control>
         <control type="button" id="8997">
             <description>Fake button for mouse control</description>
@@ -158,6 +159,7 @@
             <texturenofocus>-</texturenofocus>
             <texturefocus>-</texturefocus>
             <visible>true</visible>
+            <onfocus>SetFocus(9900)</onfocus>
         </control>
         <control type="grouplist" id="9900">
             <include>TopBarVisibleFadeEffect</include>
@@ -391,6 +393,7 @@
             <texturenofocus>-</texturenofocus>
             <texturefocus>-</texturefocus>
             <visible>true</visible>
+            <onfocus>SetFocus(9900)</onfocus>
         </control>
     </include>
     <include name="OverlayFull">
