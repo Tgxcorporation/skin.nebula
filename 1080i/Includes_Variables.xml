@@ -924,4 +924,8 @@
         <value condition="Container.Content(albums)">$INFO[ListItem.Property(Album_Description)]</value>
         <value>$INFO[ListItem.Property(Artist_Description)]</value>
     </variable>
+    <variable name="VideoHWDecoder">
+        <value condition="Player.Process(videohwdecoder)">HW</value>
+        <value>SW</value>
+    </variable>
 </includes>
