@@ -756,10 +756,22 @@
         <value condition="Container.Content(albums)">plugin://script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] $ESCINFO[ListItem.Album]</value>
         <value>plugin://script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] Music</value>
     </variable>
+    <variable name="VideoPlayerForwardRewindVar">
+        <value condition="Player.Forwarding2x | Player.Rewinding2x">2x</value>
+        <value condition="Player.Forwarding4x | Player.Rewinding4x">4x</value>
+        <value condition="Player.Forwarding8x | Player.Rewinding8x">8x</value>
+        <value condition="Player.Forwarding16x | Player.Rewinding16x">16x</value>
+        <value condition="Player.Forwarding32x | Player.Rewinding32x">32x</value>
+    </variable>
     <variable name="SeekLabel">
         <value condition="!String.IsEmpty(Player.SeekStepSize) + ![player.forwarding | player.rewinding]">$LOCALIZE[773] $INFO[Player.SeekStepSize]</value>
-        <value condition="Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]">$LOCALIZE[773] $INFO[Player.SeekOffset]</value>
-        <value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[773]</value>
+        <value condition="Player.Caching">$INFO[Player.CacheLevel,$LOCALIZE[15107] ,%]</value>
+        <value condition="Player.Paused">$LOCALIZE[112]</value>
+        <value condition="Player.Forwarding | Player.Rewinding">$VAR[VideoPlayerForwardRewindVar]</value>
+        <value condition="Player.IsTempo">$LOCALIZE[224]: $INFO[Player.PlaySpeed]</value>
+
+        <!--<value condition="Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]">$LOCALIZE[773] $INFO[Player.SeekOffset]</value>-->
+        <!--<value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[773]</value>-->
     </variable>
     <variable name="StartupWindowName">
         <value condition="String.IsEmpty(Skin.String(StartupWindow)) + String.IsEmpty(Skin.String(CustomStartup.Path))">$LOCALIZE[31517]</value>

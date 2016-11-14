@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
+    <visible>!Window.IsVisible(DialogPlayerProcessInfo.xml)</visible>
     <visible>![Skin.HasSetting(DisableOSDInfoOnPause)+Player.Paused]|Window.IsVisible(VideoOSD.xml)|Window.IsVisible(MusicOSD.xml)</visible>
     <visible>![Window.IsVisible(DialogSelect.xml) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(DialogSubtitles.xml) | Window.IsVisible(DialogAddonSettings.xml)| Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
-    <visible>Window.IsVisible(DialogFullscreenInfo.xml) | Window.IsVisible(MusicOSD.xml) | Window.IsVisible(VideoOSD.xml) | [[Window.IsVisible(FullScreenVideo)|Window.IsVisible(visualisation)] + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]</visible>
+    <visible>Window.IsVisible(DialogFullscreenInfo.xml) | Window.IsVisible(MusicOSD.xml) | Window.IsVisible(VideoOSD.xml) | [[Window.IsVisible(FullScreenVideo)|Window.IsVisible(visualisation)] + [Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding]]</visible>
     <visible>!window.IsVisible(DialogVolumeBar.xml)</visible>
     <include>TopBarOSDVisibleFadeEffect</include>
     <zorder>2</zorder>
@@ -107,7 +108,7 @@
             <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
         </control>
         <control type="label">
-            <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount]">Conditional</animation>
+            <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount | Player.IsTempo]">Conditional</animation>
             <include>TopBarOSDVisibleFadeEffect</include>
             <visible>![window.IsVisible(videoosd)|window.IsVisible(musicosd)]</visible>
             <visible>VideoPlayer.Content(livetv)</visible>
@@ -122,7 +123,7 @@
             <label>$INFO[VideoPlayer.ChannelNumber,, - ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title, - ]</label>
         </control>
         <control type="label">
-            <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount]">Conditional</animation>
+            <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount | Player.IsTempo]">Conditional</animation>
             <include>TopBarOSDVisibleFadeEffect</include>
             <visible>![window.IsVisible(videoosd)|window.IsVisible(musicosd)]</visible>
             <visible>!VideoPlayer.Content(livetv)</visible>

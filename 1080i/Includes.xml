@@ -208,7 +208,7 @@
                 <onclick>PlayerControl(Rewind)</onclick>
             </control>
             <control type="togglebutton" id="1608">
-               <include>TopBarButton</include>
+                <include>TopBarButton</include>
                 <texturefocus>white/topbar/topbar_pause_focus.png</texturefocus>
                 <texturenofocus>white/topbar/topbar_pause_nofocus.png</texturenofocus>
                 <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
@@ -461,6 +461,7 @@
             <visible>![
                 Window.IsVisible(Custom_SourcesDialog.xml)|
                 Window.IsVisible(DialogVideoInfo.xml)|
+                Window.IsVisible(DialogPlayerProcessInfo.xml)|
                 Window.IsVisible(DialogAddonSettings.xml)|
                 Window.IsVisible(DialogAddonInfo.xml)|
                 Window.IsVisible(DialogKeyboard.xml)|
@@ -508,6 +509,7 @@
     <include name="FacadeFadeDialogs2ndLevelCondition">
         <visible>![
             Window.IsVisible(DialogButtonMenu.xml)|
+            Window.IsVisible(DialogPlayerProcessInfo.xml)|
             Window.IsVisible(DialogKeyboard.xml)|
             Window.IsVisible(DialogNumeric.xml)|
             Window.IsVisible(DialogFileStacking.xml)|
@@ -709,41 +711,6 @@
         <include>DummyClearStudioArt</include>
     </include>
     <include name="SeekBar">
-        <control type="label">
-            <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek] + [Player.Paused]</visible>
-            <include>SeekbarLabels</include>
-            <label>$LOCALIZE[112]</label>
-        </control>
-        <control type="label" id="24">
-            <visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
-            <include>SeekbarLabels</include>
-            <label>$INFO[Player.CacheLevel,$LOCALIZE[15107] ,%]</label>
-        </control>
-        <control type="label">
-            <visible>player.forwarding2x | player.rewinding2x</visible>
-            <include>SeekbarLabels</include>
-            <label>2 X</label>
-        </control>
-        <control type="label">
-            <visible>player.forwarding4x | player.rewinding4x</visible>
-            <include>SeekbarLabels</include>
-            <label>4 X</label>
-        </control>
-        <control type="label">
-            <visible>player.forwarding8x | player.rewinding8x</visible>
-            <include>SeekbarLabels</include>
-            <label>8 X</label>
-        </control>
-        <control type="label">
-            <visible>player.forwarding16x | player.rewinding16x</visible>
-            <include>SeekbarLabels</include>
-            <label>16 X</label>
-        </control>
-        <control type="label">
-            <visible>player.forwarding32x | player.rewinding32x</visible>
-            <include>SeekbarLabels</include>
-            <label>32 X</label>
-        </control>
         <control type="label">
             <include>SeekbarLabels</include>
             <label>$VAR[SeekLabel]</label>
@@ -1300,42 +1267,44 @@
             <control type="group">
                 <include>OpenClose</include>
                 <posy>-56</posy>
-                <!--<control type="button" id="9001">-->
-                <!--<include>ConditionWhite</include>-->
-                <!--<posx>1887</posx>-->
-                <!--<posy>609</posy>-->
-                <!--<height>33</height>-->
-                <!--<width>33</width>-->
-                <!--<colordiffuse>90ffffff</colordiffuse>-->
-                <!--<texturenofocus>white/topbar/topbar_exit_nofocus.png</texturenofocus>-->
-                <!--<texturefocus>white/topbar/topbar_exit_focus.png</texturefocus>-->
-                <!--<onleft>Dialog.Close(10142)</onleft>-->
-                <!--<onright>Dialog.Close(10142)</onright>-->
-                <!--<onup>Dialog.Close(10142)</onup>-->
-                <!--<ondown>Dialog.Close(10142)</ondown>-->
-                <!--<onback>Dialog.Close(10142)</onback>-->
-                <!--<onclick>Dialog.Close(10142)</onclick>-->
-                <!--<label>-</label>-->
-                <!--<onfocus>noop</onfocus>-->
-                <!--</control>-->
-                <!--<control type="button" id="9001">-->
-                <!--<include>ConditionBlack</include>-->
-                <!--<posx>1887</posx>-->
-                <!--<posy>609</posy>-->
-                <!--<height>33</height>-->
-                <!--<width>33</width>-->
-                <!--<colordiffuse>90ffffff</colordiffuse>-->
-                <!--<texturenofocus>black/topbar/topbar_exit_nofocus.png</texturenofocus>-->
-                <!--<texturefocus>black/topbar/topbar_exit_focus.png</texturefocus>-->
-                <!--<onleft>Dialog.Close(10142)</onleft>-->
-                <!--<onright>Dialog.Close(10142)</onright>-->
-                <!--<onup>Dialog.Close(10142)</onup>-->
-                <!--<ondown>Dialog.Close(10142)</ondown>-->
-                <!--<onback>Dialog.Close(10142)</onback>-->
-                <!--<onclick>Dialog.Close(10142)</onclick>-->
-                <!--<label>-</label>-->
-                <!--<onfocus>noop</onfocus>-->
-                <!--</control>-->
+                <control type="button" id="9001">
+                    <visible>![Player.ShowInfo + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo)]</visible>
+                    <include>ConditionWhite</include>
+                    <posx>1887</posx>
+                    <posy>609</posy>
+                    <height>33</height>
+                    <width>33</width>
+                    <colordiffuse>90ffffff</colordiffuse>
+                    <texturenofocus>white/topbar/topbar_exit_nofocus.png</texturenofocus>
+                    <texturefocus>white/topbar/topbar_exit_focus.png</texturefocus>
+                    <onleft>Dialog.Close(10142)</onleft>
+                    <onright>Dialog.Close(10142)</onright>
+                    <onup>Dialog.Close(10142)</onup>
+                    <ondown>Dialog.Close(10142)</ondown>
+                    <onback>Dialog.Close(10142)</onback>
+                    <onclick>Dialog.Close(10142)</onclick>
+                    <label>-</label>
+                    <onfocus>noop</onfocus>
+                </control>
+                <control type="button" id="9001">
+                    <visible>![Player.ShowInfo + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo)]</visible>
+                    <include>ConditionBlack</include>
+                    <posx>1887</posx>
+                    <posy>609</posy>
+                    <height>33</height>
+                    <width>33</width>
+                    <colordiffuse>90ffffff</colordiffuse>
+                    <texturenofocus>black/topbar/topbar_exit_nofocus.png</texturenofocus>
+                    <texturefocus>black/topbar/topbar_exit_focus.png</texturefocus>
+                    <onleft>Dialog.Close(10142)</onleft>
+                    <onright>Dialog.Close(10142)</onright>
+                    <onup>Dialog.Close(10142)</onup>
+                    <ondown>Dialog.Close(10142)</ondown>
+                    <onback>Dialog.Close(10142)</onback>
+                    <onclick>Dialog.Close(10142)</onclick>
+                    <label>-</label>
+                    <onfocus>noop</onfocus>
+                </control>
                 <control type="group">
                     <!-- CLEAR ART / LOGO -->
                     <control type="image">

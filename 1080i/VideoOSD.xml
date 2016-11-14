@@ -2,10 +2,11 @@
 <window>
     <defaultcontrol always="false">100</defaultcontrol>
     <onload condition="!VideoPlayer.Content(LiveTV)">SetFocus(202)</onload>
-    <zorder>3</zorder>
+    <zorder>5</zorder>
     <controls>
         <control type="group">
             <visible>![
+                Window.IsVisible(DialogPlayerProcessInfo.xml) |
                 Window.IsVisible(DialogSelect.xml) |
                 Window.IsVisible(SliderDialog) |
                 Window.IsVisible(OSDVideoSettings) |
@@ -195,7 +196,7 @@
                 <posx>0</posx>
                 <posy>190</posy>
                 <width>1920</width>
-                <onup>87</onup>
+                <onup>100</onup>
                 <ondown>100</ondown>
                 <orientation>horizontal</orientation>
                 <itemgap>20</itemgap>
@@ -243,6 +244,8 @@
                     <onclick>PlayerControl(Record)</onclick>
                 </control>
                 <control type="button" id="250">
+                    <enable>VideoPlayer.HasSubtitles</enable>
+                    <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.HasSubtitles">Conditional</animation>
                     <label>$LOCALIZE[31356]</label>
                     <include>TopBarButton</include>
                     <texturefocus>black/topbar/topbar_subtitles_focus.png</texturefocus>
@@ -451,7 +454,7 @@
                 <posx>0</posx>
                 <posy>190</posy>
                 <width>1920</width>
-                <onup>87</onup>
+                <onup>100</onup>
                 <ondown>100</ondown>
                 <orientation>horizontal</orientation>
                 <itemgap>20</itemgap>
@@ -499,6 +502,8 @@
                     <onclick>PlayerControl(Record)</onclick>
                 </control>
                 <control type="button" id="250">
+                    <enable>VideoPlayer.HasSubtitles</enable>
+                    <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.HasSubtitles">Conditional</animation>
                     <label>$LOCALIZE[31356]</label>
                     <include>TopBarButton</include>
                     <texturefocus>white/topbar/topbar_subtitles_focus.png</texturefocus>
