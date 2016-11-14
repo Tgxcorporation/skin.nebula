@@ -506,6 +506,10 @@
         <value condition="!String.IsEmpty(Container(211).ListItem.Property(Background))">$INFO[Container(211).ListItem.Property(Background)]</value>
         <value>$LOCALIZE[13278]</value>
     </variable>
+    <variable name="SkinShortcutDisabledLabel">
+        <value condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">$LOCALIZE[24022]</value>
+        <value>$LOCALIZE[24021]</value>
+    </variable>
     <variable name="WidgetsBackgrounds">
         <value condition="Control.HasFocus(700011)">$INFO[Container(700011).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700012)">$INFO[Container(700012).ListItem.Art(fanart)]</value>

@@ -206,6 +206,12 @@
                     <onclick>noop</onclick>
                     <label>$ADDON[script.skinshortcuts 32001]</label>
                 </control>
+                <control type="button" id="313">
+                    <description>Disable shortcut</description>
+                    <include>LeftMenuButton</include>
+                    <onclick>noop</onclick>
+                    <label>$VAR[SkinShortcutDisabledLabel]</label>
+                </control>
                 <control type="button" id="303">
                     <description>Move shortcut up</description>
                     <include>LeftMenuButton</include>

@@ -38,7 +38,7 @@
                 <effect type="zoom" start="100" end="94.339622641509" time="50" delay="100" center="auto"/>
                 <effect type="fade" start="40" end="100" time="100"/>
             </animation>
-            <animation type="Conditional" reversible="false" condition="String.IsEqual(Container(211).ListItem.Property(hide),True)">
+            <animation type="Conditional" reversible="false" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">
                 <effect type="fade" start="100" end="40" time="100"/>
             </animation>
             <include>UpperFade</include>
@@ -58,7 +58,7 @@
                 <effect type="zoom" start="100" end="94.339622641509" time="50" delay="100" center="auto"/>
                 <effect type="fade" start="40" end="100" time="100"/>
             </animation>
-            <animation type="Conditional" reversible="false" condition="String.IsEqual(Container(211).ListItem.Property(hide),True)">
+            <animation type="Conditional" reversible="false" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">
                 <effect type="fade" start="100" end="40" time="100"/>
             </animation>
             <include>UpperFade</include>
@@ -70,6 +70,16 @@
             <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[Container(211).ListItem.Icon]</texture>
             <aspectratio>scale</aspectratio>
             <include>ThumbBorder</include>
+        </control>
+        <control type="label">
+            <visible>String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+            <posx>676</posx>
+            <posy>368</posy>
+            <width>569</width>
+            <height>351</height>
+            <align>center</align>
+            <include>TextColor_MainColor</include>
+            <label>$LOCALIZE[13106]</label>
         </control>
         <control type="group">
             <control type="button" id="3010">
@@ -110,7 +120,8 @@
         <focusposition>2</focusposition>
         <itemlayout height="425" width="313">
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Property(hide),True)+String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                 <posx>-15</posx>
                 <posy>21</posy>
                 <width>343</width>
@@ -120,7 +131,8 @@
                 <include>ThumbBorder</include>
             </control>
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Property(hide),True)+!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                 <posx>-15</posx>
                 <posy>21</posy>
                 <width>343</width>
@@ -129,16 +141,15 @@
                 <aspectratio>scale</aspectratio>
                 <include>ThumbBorder</include>
             </control>
-            <control type="image">
-                <visible>String.IsEqual(ListItem.Property(hide),True)</visible>
+            <control type="label">
+                <visible>[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]</visible>
                 <posx>-15</posx>
                 <posy>21</posy>
                 <width>343</width>
                 <height>224</height>
-                <colordiffuse>90ffffff</colordiffuse>
-                <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
-                <aspectratio>scale</aspectratio>
-                <include>ThumbBorder</include>
+                <align>center</align>
+                <include>TextColor_AlternateColor</include>
+                <label>$LOCALIZE[13106]</label>
             </control>
         </itemlayout>
         <focusedlayout height="425" width="545">
