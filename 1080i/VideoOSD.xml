@@ -244,8 +244,6 @@
                     <onclick>PlayerControl(Record)</onclick>
                 </control>
                 <control type="button" id="250">
-                    <enable>VideoPlayer.HasSubtitles</enable>
-                    <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.HasSubtitles">Conditional</animation>
                     <label>$LOCALIZE[31356]</label>
                     <include>TopBarButton</include>
                     <texturefocus>black/topbar/topbar_subtitles_focus.png</texturefocus>
@@ -502,8 +500,6 @@
                     <onclick>PlayerControl(Record)</onclick>
                 </control>
                 <control type="button" id="250">
-                    <enable>VideoPlayer.HasSubtitles</enable>
-                    <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.HasSubtitles">Conditional</animation>
                     <label>$LOCALIZE[31356]</label>
                     <include>TopBarButton</include>
                     <texturefocus>white/topbar/topbar_subtitles_focus.png</texturefocus>
