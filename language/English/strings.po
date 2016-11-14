@@ -337,6 +337,10 @@ msgctxt "#31081"
 msgid "Select Album Label Artwork"
 msgstr ""
 
+msgctxt "#31082"
+msgid "Disable Fanart Backdrops in Pictures"
+msgstr ""
+
 #empty strings from id 31076 to 31089
 #Viewtype
 
