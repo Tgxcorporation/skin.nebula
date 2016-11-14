@@ -47,15 +47,6 @@
                     <label>$LOCALIZE[13376]: $INFO[Control.GetLabel(20)]</label>
                 </control>
             </control>
-            <control type="image">
-                <visible>Player.Muted</visible>
-                <include>OpenClose</include>
-                <posx>-25</posx>
-                <posy>-25</posy>
-                <width>64</width>
-                <height>64</height>
-                <texture>$VAR[Theme.Color]/OverlayTopMute.png</texture>
-            </control>
         </control>
     </controls>
 </window>
