@@ -36,6 +36,7 @@
         <value condition="[Container.content(years)]">$VAR[Theme.Color]/defaultYearBig.png</value>
         <value condition="[Window.IsActive(MyPics.xml)]">$VAR[Theme.Color]/defaultPictureBig.png</value>
         <value condition="[Window.IsActive(script-videoextras-main.xml)]">$VAR[Theme.Color]/defaultVideoBig.png</value>
+        <value condition="[Container.content(studios)] + !String.IsEmpty(Skin.String(StudioArt.name))">$INFO[Skin.String(StudioArt.path)]/$INFO[ListItem.Label].png</value>
         <value condition="[Container.content(studios)]">resource://resource.images.studios.white/$INFO[ListItem.Label].png</value>
         <!--<value condition="[Container.content(Genres)]">resource://resource.images.moviegenreicons.white/$INFO[ListItem.Label].png</value>-->
         <value condition="[Container.content(Genres)]">$VAR[Theme.Color]/defaultGenreBig.png</value>
@@ -304,10 +305,12 @@
     </variable>
     <variable name="WeatherFanartPath">
         <value condition="!String.IsEmpty(Skin.String(weatherArtPath))">$INFO[Skin.String(weatherArtPath)]</value>
+        <value condition="!String.IsEmpty(Skin.String(WeatherFanartArt.name))">$INFO[Skin.String(WeatherFanartArt.path)]</value>
         <value>resource://resource.images.weatherfanart.single/</value>
     </variable>
     <!--<variable name="WeatherIconPath">-->
     <!--<value condition="!String.IsEmpty(Skin.String(weatherIconPath))">$INFO[Skin.String(weatherIconPath)]</value>-->
+    <!--<value condition="!String.IsEmpty(Skin.String(WeatherIconArt.name))">$INFO[Skin.String(WeatherIconArt.path)]</value>-->
     <!--<value>resource://resource.images.weathericons.outline/</value>-->
     <!--</variable>-->
     <variable name="Default.Art">
@@ -822,11 +825,20 @@
         <value condition="Skin.HasSetting(EnableClearLogo)">$INFO[ListItem.Art(clearlogo)]</value>
     </variable>
     <variable name="DefaultStudioArt">
+        <value condition="Skin.HasSetting(EnableStudioArt) + !String.IsEmpty(Skin.String(LabelArt.name)) + [Window.IsActive(MusicVisualisation.xml)]">$INFO[Skin.String(LabelArt.path)]/$INFO[MusicPlayer.Property(Album_Label)].png</value>
+        <value condition="Skin.HasSetting(EnableStudioArt) + !String.IsEmpty(Skin.String(LabelArt.name)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">$INFO[Skin.String(LabelArt.path)]/$INFO[ListItem.Property(Album_Label)].png</value>
+        <value condition="Skin.HasSetting(EnableStudioArt) + !String.IsEmpty(Skin.String(StudioArt.name)) + [Window.IsActive(VideoFullScreen.xml)]">$INFO[Skin.String(StudioArt.path)]/$INFO[VideoPlayer.Studio].png</value>
+        <value condition="Skin.HasSetting(EnableStudioArt) + !String.IsEmpty(Skin.String(StudioArt.name)) + [Window.IsActive(script-ExtendedInfo Script-VideoList.xml)]">$INFO[Skin.String(StudioArt.path)]/$INFO[Container(500).ListItem.Studio].png</value>
+        <value condition="Skin.HasSetting(EnableStudioArt) + !String.IsEmpty(Skin.String(StudioArt.name))">$INFO[Skin.String(StudioArt.path)]/$INFO[ListItem.Studio].png</value>
         <value condition="Skin.HasSetting(EnableStudioArt) + [Window.IsActive(MusicVisualisation.xml)]">resource://resource.images.recordlabels.white/$INFO[MusicPlayer.Property(Album_Label)].png</value>
         <value condition="Skin.HasSetting(EnableStudioArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">resource://resource.images.recordlabels.white/$INFO[ListItem.Property(Album_Label)].png</value>
         <value condition="Skin.HasSetting(EnableStudioArt) + [Window.IsActive(VideoFullScreen.xml)]">resource://resource.images.studios.white/$INFO[VideoPlayer.Studio].png</value>
         <value condition="Skin.HasSetting(EnableStudioArt) + [Window.IsActive(script-ExtendedInfo Script-VideoList.xml)]">resource://resource.images.studios.white/$INFO[Container(500).ListItem.Studio].png</value>
         <value condition="Skin.HasSetting(EnableStudioArt)">resource://resource.images.studios.white/$INFO[ListItem.Studio].png</value>
+    </variable>
+    <variable name="ExtendedInfoStudioArt">
+        <value condition="!String.IsEmpty(Skin.String(StudioArt.name))">$INFO[Skin.String(StudioArt.path)]/$INFO[Container(550).ListItem.Label,,.png]</value>
+        <value>resource://resource.images.studios.white/$INFO[Container(550).ListItem.Label,,.png]</value>
     </variable>
     <variable name="SkinShortcutsMoveUpLabel">
         <value condition="[Skin.HasSetting(VerticalHome)+String.IsEqual(Window.Property(groupname),mainmenu)]|!String.IsEqual(Window.Property(groupname),mainmenu)">$ADDON[script.skinshortcuts 32002]</value>
