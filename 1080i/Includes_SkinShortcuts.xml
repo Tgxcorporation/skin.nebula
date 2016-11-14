@@ -38,7 +38,7 @@
                 <effect type="zoom" start="100" end="94.339622641509" time="50" delay="100" center="auto"/>
                 <effect type="fade" start="40" end="100" time="100"/>
             </animation>
-            <animation type="Conditional" reversible="false" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">
+            <animation type="Conditional" reversible="false" condition="[String.IsEqual(Container(211).ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">
                 <effect type="fade" start="100" end="40" time="100"/>
             </animation>
             <include>UpperFade</include>
@@ -58,7 +58,7 @@
                 <effect type="zoom" start="100" end="94.339622641509" time="50" delay="100" center="auto"/>
                 <effect type="fade" start="40" end="100" time="100"/>
             </animation>
-            <animation type="Conditional" reversible="false" condition="String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)">
+            <animation type="Conditional" reversible="false" condition="[String.IsEqual(Container(211).ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">
                 <effect type="fade" start="100" end="40" time="100"/>
             </animation>
             <include>UpperFade</include>
@@ -72,7 +72,7 @@
             <include>ThumbBorder</include>
         </control>
         <control type="label">
-            <visible>String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+            <visible>[String.IsEqual(Container(211).ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]</visible>
             <posx>676</posx>
             <posy>368</posy>
             <width>569</width>

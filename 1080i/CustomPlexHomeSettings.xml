@@ -26,9 +26,9 @@
                     <include>SkinShortcuts_MainMenu_Horizontal</include>
                 </control>
                 <control type="scrollbar" id="260">
-                    <posx>128</posx>
-                    <posy>1140</posy>
-                    <width>1230</width>
+                    <posx>120</posx>
+                    <posy>700</posy>
+                    <width>1680</width>
                     <include>HorizontalScroller</include>
                     <onup>211</onup>
                     <ondown>9000</ondown>
@@ -38,7 +38,7 @@
                     <posy>-270</posy>
                     <control type="label">
                         <posx>120</posx>
-                        <posy>960</posy>
+                        <posy>1010</posy>
                         <width>1680</width>
                         <height>100</height>
                         <align>center</align>
@@ -84,7 +84,7 @@
                 <control type="button" id="301">
                     <description>Enable Item</description>
                     <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[24022] / $LOCALIZE[24021]</label>
+                    <label>$VAR[SkinShortcutDisabledLabelPlex]</label>
                     <onclick condition="Container(211).HasFocus(30)">Skin.ToggleSetting(hide.plexbmc.0.title)</onclick>
                     <onclick condition="Container(211).HasFocus(31)">Skin.ToggleSetting(hide.plexbmc.1.title)</onclick>
                     <onclick condition="Container(211).HasFocus(32)">Skin.ToggleSetting(hide.plexbmc.2.title)</onclick>
