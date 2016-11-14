@@ -142,8 +142,8 @@
                         <label2>$VAR[Videos.Art]</label2>
                     </item>
                     <item>
-                        <label>$LOCALIZE[14203]</label>
-                        <onclick>ActivateWindow(LibrarySettings)</onclick>
+                        <label>$LOCALIZE[14212]</label>
+                        <onclick>ActivateWindow(MediaSettings)</onclick>
                         <label2>$VAR[Videos.Art]</label2>
                     </item>
                     <item>
