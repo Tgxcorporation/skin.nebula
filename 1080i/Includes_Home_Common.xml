@@ -1533,35 +1533,5 @@
         </control>
     </include>
     <include name="default-submenu">
-        <item id="90203">
-            <visible>String.IsEqual(System.ProfileName,Master user) + [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),settings)]</visible>
-            <visible>System.HasAddon(plugin.video.plexbmc) + !Skin.HasSetting(plexbmc)</visible>
-            <label>$LOCALIZE[31008]</label>
-            <!--<label2>Common Shortcut</label2>-->
-            <icon>special://skin/backgrounds/default/default.jpg</icon>
-            <thumb />
-            <property name="labelID">31008</property>
-            <property name="defaultID">31008</property>
-            <property name="path">Skin.ToggleSetting(plexbmc)</property>
-            <property name="isSubmenu">True</property>
-            <property name="group">settings</property>
-            <onclick>Skin.ToggleSetting(plexbmc)</onclick>
-            <onclick>ReloadSkin()</onclick>
-        </item>
-        <item id="90203">
-            <visible>String.IsEqual(System.ProfileName,Master user) + [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),settings)]</visible>
-            <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-            <label>$LOCALIZE[31009]</label>
-            <!--<label2>Common Shortcut</label2>-->
-            <icon>special://skin/backgrounds/default/default.jpg</icon>
-            <thumb />
-            <property name="labelID">31009</property>
-            <property name="defaultID">31009</property>
-            <property name="path">Skin.ToggleSetting(plexbmc)</property>
-            <property name="isSubmenu">True</property>
-            <property name="group">settings</property>
-            <onclick>Skin.ToggleSetting(plexbmc)</onclick>
-            <onclick>ReloadSkin()</onclick>
-        </item>
     </include>
 </includes>
