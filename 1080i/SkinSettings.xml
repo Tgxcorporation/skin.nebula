@@ -173,6 +173,24 @@
                                 <label2>$LOCALIZE[107]</label2>
                                 <onclick>Skin.ToggleSetting(EnableKioskMode)</onclick>
                             </item>
+                            <item id="250">
+                                <visible>System.HasAddon(plugin.video.plexbmc) + !Skin.HasSetting(plexbmc)</visible>
+                                <label>Kodi / PleXBMC</label>
+                                <label2>Kodi</label2>
+                                <onclick>Skin.ToggleSetting(plexbmc)</onclick>
+                                <onclick>ReloadSkin()</onclick>
+                            </item>
+                            <item id="250">
+                                <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+                                <label>Kodi / PleXBMC</label>
+                                <label2>PleXBMC</label2>
+                                <onclick>Skin.ToggleSetting(plexbmc)</onclick>
+                                <onclick>ReloadSkin()</onclick>
+                            </item>
+                            <item id="252">
+                                <label>$LOCALIZE[20183]</label>
+                                <onclick>ReloadSkin()</onclick>
+                            </item>
                             <item id="1005">
                                 <label/>
                                 <label2>$LOCALIZE[19098]</label2>
