@@ -1532,6 +1532,4 @@
             </include>
         </control>
     </include>
-    <include name="default-submenu">
-    </include>
 </includes>
