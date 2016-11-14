@@ -18,7 +18,7 @@
         <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)+!String.IsEmpty(ListItem.Property(DBID))">$VAR[Theme.Color]/OverlayUnwatched.png</value>
     </variable>
     <variable name="Banner">
-        <value condition="ListItem.IsParentFolder+[Container.Content(TVShows)|Container.Content(movies)|Container.Content(seasons)]">$VAR[Theme.Color]/defaultFolderBackBanner.png</value>
+        <value condition="ListItem.IsParentFolder+[Container.Content(TVShows)|Container.Content(movies)|Container.Content(seasons)|Container.Content(sets)]">$VAR[Theme.Color]/defaultFolderBackBanner.png</value>
         <value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
         <value condition="Skin.HasSetting(plexbmc)+Container.Content(episodes)">$INFO[ListItem.Property(banner)]</value>
         <value condition="Container.Content(episodes)">$INFO[ListItem.Art(tvshow.banner)]</value>

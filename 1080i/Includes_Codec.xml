@@ -185,7 +185,7 @@
         <value condition="String.Contains(ListItem.Filenameandpath,web)">webtv</value>
         <value condition="String.Contains(ListItem.Filenameandpath,hdtv)">hdtv</value>
         <value condition="String.Contains(ListItem.Filenameandpath,dvd) | String.EndsWith(ListItem.Filenameandpath,.ifo) | String.EndsWith(ListItem.Filenameandpath,.iso)">dvd</value>
-        <value condition="String.StartsWith(ListItem.Path,videodb://movies/sets)">set</value>
+        <!--<value condition="String.StartsWith(ListItem.Path,videodb://movies/sets)">set</value>-->
         <value condition="String.Contains(ListItem.Filenameandpath,4k)">4kbis</value>
     </variable>
     <variable name="videosourceOSD">
