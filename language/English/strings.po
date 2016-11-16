@@ -321,6 +321,22 @@ msgctxt "#31075"
 msgid "Enable Studio/Album Label Art"
 msgstr ""
 
+msgctxt "#31078"
+msgid "Select Studio Artwork"
+msgstr ""
+
+msgctxt "#31079"
+msgid "Select Weather Fanarts Artwork"
+msgstr ""
+
+msgctxt "#31080"
+msgid "Select Weather Icons Artwork"
+msgstr ""
+
+msgctxt "#31081"
+msgid "Select Album Label Artwork"
+msgstr ""
+
 #empty strings from id 31076 to 31089
 #Viewtype
 
