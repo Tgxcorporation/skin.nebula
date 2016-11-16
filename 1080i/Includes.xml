@@ -1421,7 +1421,7 @@
                     <posy>642</posy>
                     <!-- CDART VIDEO -->
                     <include name="DiscArt">
-                        <param name="visible" value="!IsEmpty(VideoPlayer.Cover)+!VideoPlayer.Content(LiveTV)+!VideoPlayer.Content(episodes)"/>
+                        <param name="visible" value="!IsEmpty(VideoPlayer.Cover)+VideoPlayer.Content(movies)"/>
                         <param name="x" value="122"/>
                         <param name="y" value="-70"/>
                         <param name="width" value="211"/>
