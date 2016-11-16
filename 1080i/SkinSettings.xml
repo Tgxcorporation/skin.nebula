@@ -371,6 +371,18 @@
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(DisableFanart)</onclick>
                             </item>
+                            <item id="20">
+                                <visible>Skin.HasSetting(DisableFanartPictures)</visible>
+                                <label>$LOCALIZE[31082]</label>
+                                <label2>$LOCALIZE[107]</label2>
+                                <onclick>Skin.ToggleSetting(DisableFanartPictures)</onclick>
+                            </item>
+                            <item id="20">
+                                <visible>!Skin.HasSetting(DisableFanartPictures)</visible>
+                                <label>$LOCALIZE[31082]</label>
+                                <label2>$LOCALIZE[106]</label2>
+                                <onclick>Skin.ToggleSetting(DisableFanartPictures)</onclick>
+                            </item>
                             <item id="21">
                                 <visible>Skin.HasSetting(EnableCdArt)</visible>
                                 <label>$LOCALIZE[31040]</label>
