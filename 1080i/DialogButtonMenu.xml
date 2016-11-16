@@ -16,7 +16,6 @@
                 <animation effect="slide" time="0" start="0,0" end="0,122" condition="IntegerGreaterThan(Container(9009).NumItems,5)+!IntegerGreaterThan(Container(9009).NumItems,6)">conditional</animation>
                 <animation effect="slide" time="0" start="0,0" end="0,83" condition="IntegerGreaterThan(Container(9009).NumItems,6)+!IntegerGreaterThan(Container(9009).NumItems,7)">conditional</animation>
                 <animation effect="slide" time="0" start="0,0" end="0,44" condition="IntegerGreaterThan(Container(9009).NumItems,7)+!IntegerGreaterThan(Container(9009).NumItems,8)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,5" condition="IntegerGreaterThan(Container(9009).NumItems,8)+!IntegerGreaterThan(Container(9009).NumItems,9)">conditional</animation>
                 <control type="image">
                     <visible>IntegerGreaterThan(Container(9009).NumItems,0)+!IntegerGreaterThan(Container(9009).NumItems,1)</visible>
                     <posx>-200</posx>
@@ -95,9 +94,10 @@
                     <width>1920</width>
                     <height>624</height>
                     <onleft>close</onleft>
-                    <onright>close</onright>
+                    <onright>6060</onright>
                     <onup>9009</onup>
                     <ondown>9009</ondown>
+                    <pagecontrol>6060</pagecontrol>
                     <itemlayout height="78" width="1920">
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -253,6 +253,15 @@
                             <icon>$VAR[Theme.Color]/topbar/topbar_play_focus.png</icon>
                         </item>
                     </content>
+                </control>
+                <control type="scrollbar" id="6060">
+                    <visible>IntegerGreaterThan(Container(9009).NumItems,8)</visible>
+                    <posx>1886</posx>
+                    <posy>183</posy>
+                    <height>624</height>
+                    <include>VerticalScroller</include>
+                    <onleft>9009</onleft>
+                    <onright>close</onright>
                 </control>
             </control>
         </control>
