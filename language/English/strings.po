@@ -317,6 +317,10 @@ msgctxt "#31074"
 msgid "Random Concert Fanart"
 msgstr ""
 
+msgctxt "#31082"
+msgid "Disable Fanart Backdrops in Pictures"
+msgstr ""
+
 #empty strings from id 31075 to 31089
 #Viewtype
 
