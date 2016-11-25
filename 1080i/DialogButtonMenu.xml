@@ -16,6 +16,7 @@
                 <animation effect="slide" time="0" start="0,0" end="0,122" condition="Integer.IsGreater(Container(9009).NumItems,5)+!Integer.IsGreater(Container(9009).NumItems,6)">conditional</animation>
                 <animation effect="slide" time="0" start="0,0" end="0,83" condition="Integer.IsGreater(Container(9009).NumItems,6)+!Integer.IsGreater(Container(9009).NumItems,7)">conditional</animation>
                 <animation effect="slide" time="0" start="0,0" end="0,44" condition="Integer.IsGreater(Container(9009).NumItems,7)+!Integer.IsGreater(Container(9009).NumItems,8)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,44" condition="Integer.IsGreater(Container(9009).NumItems,8)">conditional</animation>
                 <control type="image">
                     <visible>Integer.IsGreater(Container(9009).NumItems,0)+!Integer.IsGreater(Container(9009).NumItems,1)</visible>
                     <posx>-200</posx>
@@ -80,7 +81,7 @@
                     <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                 </control>
                 <control type="image">
-                    <visible>Integer.IsGreater(Container(9009).NumItems,7)+!Integer.IsGreater(Container(9009).NumItems,8)</visible>
+                    <visible>Integer.IsGreater(Container(9009).NumItems,7)</visible>
                     <posx>-200</posx>
                     <posy>150</posy>
                     <width>2320</width>
