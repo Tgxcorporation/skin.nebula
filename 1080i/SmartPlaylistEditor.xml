@@ -41,14 +41,13 @@
                 <height>172</height>
                 <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
-            <control type="edit" id="12">
-                <posx>TextMargin</posx>
+            <control type="button" id="12">
+                <posx>0</posx>
                 <posy>183</posy>
-                <width>1800</width>
+                <width>1920</width>
                 <height>90</height>
                 <font>InfoTitleFont</font>
-                <align>center</align>
-                <hinttext>21433</hinttext>
+                <label>$LOCALIZE[21433]</label>
                 <include>LeftMenuButton</include>
                 <onleft>9000</onleft>
                 <onright>12</onright>
@@ -59,7 +58,6 @@
                 <posx>0</posx>
                 <posy>273</posy>
                 <width>1920</width>
-                <align>center</align>
                 <font>LeftMenuTitleFont</font>
                 <include>LeftMenuButton</include>
                 <label>-</label>
@@ -78,7 +76,6 @@
                         <posx>TextMargin</posx>
                         <height>75</height>
                         <width>1800</width>
-                        <align>center</align>
                         <font>FacadeListMainFont</font>
                         <include>TextColor_AlternateColor</include>
                         <label>$INFO[ListItem.Label]</label>
@@ -99,7 +96,6 @@
                             <posx>TextMargin</posx>
                             <height>75</height>
                             <width>1920</width>
-                            <align>center</align>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label]</label>
@@ -125,42 +121,42 @@
                 <ondown>9002</ondown>
                 <pagecontrol>60</pagecontrol>
                 <itemgap>0</itemgap>
-                <control type="spincontrolex" id="22">
+                <control type="button" id="22">
                     <width>1920</width>
                     <height>84</height>
                     <label>$LOCALIZE[467]</label>
                     <reverse>yes</reverse>
                     <include>LeftMenuButtonWide</include>
                 </control>
-                <control type="spincontrolex" id="16">
+                <control type="button" id="16">
                     <width>1920</width>
                     <height>84</height>
                     <include>LeftMenuButtonWide</include>
                     <label>$LOCALIZE[21424]</label>
                     <reverse>yes</reverse>
                 </control>
-                <control type="spincontrolex" id="17">
+                <control type="button" id="17">
                     <width>1920</width>
                     <height>84</height>
                     <include>LeftMenuButtonWide</include>
                     <label>$LOCALIZE[21427]</label>
                     <reverse>yes</reverse>
                 </control>
-                <control type="spincontrolex" id="18">
+                <control type="button" id="18">
                     <width>1920</width>
                     <height>84</height>
                     <include>LeftMenuButtonWide</include>
                     <label>$LOCALIZE[21429]</label>
                     <reverse>yes</reverse>
                 </control>
-                <control type="togglebutton" id="19">
+                <control type="button" id="19">
                     <width>1920</width>
                     <height>84</height>
                     <include>LeftMenuButtonWide</include>
                     <label>$LOCALIZE[21429]:  $LOCALIZE[21431]</label>
                     <altlabel>$LOCALIZE[21429]:  $LOCALIZE[21430]</altlabel>
                 </control>
-                <control type="spincontrolex" id="23">
+                <control type="button" id="23">
                     <width>1920</width>
                     <height>84</height>
                     <include>LeftMenuButtonWide</include>

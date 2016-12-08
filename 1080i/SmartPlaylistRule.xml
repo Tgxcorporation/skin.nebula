@@ -50,19 +50,19 @@
                 </control>
                 <control type="group">
                     <posy>433</posy>
-                    <control type="spincontrolex" id="15">
+                    <control type="button" id="15">
                         <posy>0</posy>
-                        <width>1200</width>
+                        <width>1920</width>
+                        <align>center</align>
                         <include>LeftMenuButtonWide</include>
-                        <reverse>yes</reverse>
                         <onup>15</onup>
                         <ondown>16</ondown>
                     </control>
-                    <control type="spincontrolex" id="16">
+                    <control type="button" id="16">
                         <posy>78</posy>
-                        <width>1200</width>
+                        <width>1920</width>
+                        <align>center</align>
                         <include>LeftMenuButtonWide</include>
-                        <reverse>yes</reverse>
                         <onup>15</onup>
                         <ondown>17</ondown>
                     </control>
