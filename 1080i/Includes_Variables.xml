@@ -948,7 +948,7 @@
         <!--<value>$VAR[Theme.Color]/defaultIconBig.png</value>-->
     </variable>
     <variable name="MusicInfoTextboxVar">
-        <value condition="Container.Content(songs)">$INFO[ListItem.ContributorAndRole] $INFO[ListItem.Comment]</value>
+        <value condition="Container.Content(songs)">$INFO[ListItem.ContributorAndRole,, ]$INFO[ListItem.Comment]</value>
         <value condition="Container.Content(albums)">$INFO[ListItem.Property(Album_Description)]</value>
         <value>$INFO[ListItem.Property(Artist_Description)]</value>
     </variable>

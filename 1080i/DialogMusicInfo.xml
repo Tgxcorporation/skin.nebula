@@ -711,7 +711,7 @@
                                 </control>
                             </control>
                         </focusedlayout>
-                        <itemlayout condition="String.IsEqual(ListItem.DBType,artist)" height="78" width="1375">
+                        <itemlayout condition="String.IsEqual(ListItem.DBType,artist)|Container.Content(songs)" height="78" width="1375">
                             <control type="label">
                                 <include>ConditionWhite</include>
                                 <posx>TextMargin</posx>
@@ -733,7 +733,7 @@
                                 <label>[COLOR=AlternateColor_black]$INFO[ListItem.Label2,, - ][/COLOR]$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
-                        <focusedlayout condition="String.IsEqual(ListItem.DBType,artist)" height="78" width="1375">
+                        <focusedlayout condition="String.IsEqual(ListItem.DBType,artist)|Container.Content(songs)" height="78" width="1375">
                             <control type="group">
                                 <include>ButtonWideFocusAnimation</include>
                                 <control type="image">
