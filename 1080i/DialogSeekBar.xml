@@ -2,8 +2,23 @@
 <window type="dialog">
     <visible>!Window.IsVisible(DialogPlayerProcessInfo.xml)</visible>
     <visible>![Skin.HasSetting(DisableOSDInfoOnPause)+Player.Paused]|Window.IsVisible(VideoOSD.xml)|Window.IsVisible(MusicOSD.xml)</visible>
-    <visible>![Window.IsVisible(DialogSelect.xml) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(DialogSubtitles.xml) | Window.IsVisible(DialogAddonSettings.xml)| Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
-    <visible>Window.IsVisible(DialogFullscreenInfo.xml) | Window.IsVisible(MusicOSD.xml) | Window.IsVisible(VideoOSD.xml) | [[Window.IsVisible(FullScreenVideo)|Window.IsVisible(visualisation)] + [Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding]]</visible>
+    <visible>![
+        Window.IsVisible(DialogSelect.xml) |
+        Window.IsVisible(SliderDialog) |
+        Window.IsVisible(OSDVideoSettings) |
+        Window.IsVisible(OSDAudioSettings) |
+        Window.IsVisible(osdcmssettings) |
+        Window.IsVisible(VideoBookmarks) |
+        Window.IsVisible(DialogSubtitles.xml) |
+        Window.IsVisible(DialogAddonSettings.xml)|
+        Window.IsVisible(PVROSDChannels) |
+        Window.IsVisible(PVROSDGuide)
+        ]</visible>
+    <visible>
+        Window.IsVisible(DialogFullscreenInfo.xml) |
+        Window.IsVisible(MusicOSD.xml) |
+        Window.IsVisible(VideoOSD.xml) |
+        [[Window.IsVisible(FullScreenVideo)|Window.IsVisible(visualisation)] + [Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding]]</visible>
     <visible>!window.IsVisible(DialogVolumeBar.xml)</visible>
     <include>TopBarOSDVisibleFadeEffect</include>
     <zorder>2</zorder>

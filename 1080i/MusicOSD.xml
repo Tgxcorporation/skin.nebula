@@ -11,6 +11,8 @@
                 Window.IsVisible(SliderDialog) |
                 Window.IsVisible(OSDVideoSettings) |
                 Window.IsVisible(OSDAudioSettings) |
+                Window.IsVisible(OSDAudioDSPSettings) |
+                Window.IsVisible(osdcmssettings) |
                 Window.IsVisible(VideoBookmarks) |
                 Window.IsVisible(DialogSubtitles.xml) |
                 Window.IsVisible(DialogAddonSettings.xml) |
