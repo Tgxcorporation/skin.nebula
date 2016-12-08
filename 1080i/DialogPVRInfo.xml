@@ -175,6 +175,13 @@
                         <label>-</label>
                         <visible>Window.IsActive(PVRGuideInfo)</visible>
                     </control>
+                    <control type="button" id="9">
+                        <include>ButtonFocusAnimation</include>
+                        <width>348</width>
+                        <description>Add Timer</description>
+                        <label>$LOCALIZE[19061]</label>
+                        <visible>Window.IsActive(PVRGuideInfo)</visible>
+                    </control>
                     <control type="button" id="7">
                         <width>180</width>
                         <include>ButtonFocusAnimation</include>
