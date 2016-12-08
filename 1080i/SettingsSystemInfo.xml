@@ -26,7 +26,9 @@
                 <width>1920</width>
                 <height>810</height>
                 <itemgap>0</itemgap>
+                <pagecontrol>6060</pagecontrol>
                 <control type="label" id="21">
+                    <visible>!Control.IsVisible(30)</visible>
                     <description>CPU Text</description>
                     <width>1920</width>
                     <height>67</height>
@@ -35,6 +37,7 @@
                     <label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
                 </control>
                 <control type="label" id="23">
+                    <visible>!Control.IsVisible(30)</visible>
                     <description>Memory Text</description>
                     <width>1920</width>
                     <height>67</height>
@@ -112,6 +115,30 @@
                     <include>TextColor_MainColor</include>
                     <include>LeftMenuButtonWide</include>
                 </control>
+                <control type="label" id="12">
+                    <description>Label 12</description>
+                    <width>1920</width>
+                    <height>67</height>
+                    <include>TextColor_MainColor</include>
+                    <include>LeftMenuButtonWide</include>
+                </control>
+            </control>
+            <control type="textbox" id="30">
+                <posx>TextMargin</posx>
+                <posy>209</posy>
+                <width>1800</width>
+                <height>740</height>
+                <pagecontrol>60</pagecontrol>
+                <include>TextColor_MainColor</include>
+            </control>
+            <control type="scrollbar" id="60">
+                <visible>Control.IsVisible(30)</visible>
+                <posx>1886</posx>
+                <posy>189</posy>
+                <height>810</height>
+                <include>VerticalScroller</include>
+                <onleft>9000</onleft>
+                <onright>9000</onright>
             </control>
         </control>
         </control>
@@ -165,6 +192,11 @@
                     <visible>Skin.HasSetting(PVR_Enabled)</visible>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[19191]</label>
+                </control>
+                <control type="button" id="100">
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[12389]</label>
+                    <onright>60</onright>
                 </control>
             </control>
             <include>LeftMenuScroller</include>
