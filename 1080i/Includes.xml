@@ -64,6 +64,7 @@
             <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
         </control>
         <control type="visualisation">
+            <visible>!SlideShow.IsActive</visible>
             <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)]</visible>
             <posx>0</posx>
             <posy>0</posy>
@@ -71,6 +72,7 @@
             <height>1080</height>
         </control>
         <control type="videowindow">
+            <visible>!SlideShow.IsActive</visible>
             <visible>Player.HasVideo + !Skin.HasSetting(Show_Player) + !Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
             <posx>0</posx>
             <posy>0</posy>
