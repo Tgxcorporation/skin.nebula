@@ -39,11 +39,11 @@
                         <posy>183</posy>
                         <width>1860</width>
                         <height>468</height>
-                        <pagecontrol>10</pagecontrol>
+                        <pagecontrol>60</pagecontrol>
                         <timeblocks>20</timeblocks>
                         <rulerunit>6</rulerunit>
                         <onleft>9000</onleft>
-                        <onright>10</onright>
+                        <onright>60</onright>
                         <onup>10</onup>
                         <ondown>10</ondown>
                         <include>ProgressTexture</include>
@@ -201,6 +201,14 @@
                                 <info>ListItem.Label</info>
                             </control>
                         </focusedlayout>
+                    </control>
+                    <control type="scrollbar" id="60">
+                        <posx>1886</posx>
+                        <posy>261</posy>
+                        <height>390</height>
+                        <include>VerticalScroller</include>
+                        <onleft>10</onleft>
+                        <onright>60</onright>
                     </control>
                     <!-- INFO -->
                     <control type="image">
