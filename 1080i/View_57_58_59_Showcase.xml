@@ -174,17 +174,8 @@
             <posx>1819</posx>
             <width>50</width>
             <height>70</height>
-            <texture>$VAR[Theme.Color]/OverlayRecording.png</texture>
+            <texture>$VAR[PVRTimerIcon]</texture>
             <aspectratio>keep</aspectratio>
-            <visible>ListItem.IsRecording</visible>
-        </control>
-        <control type="image">
-            <posx>1819</posx>
-            <width>50</width>
-            <height>70</height>
-            <texture>$VAR[Theme.Color]/OverlayTimer.png</texture>
-            <aspectratio>keep</aspectratio>
-            <visible>ListItem.HasTimer</visible>
         </control>
     </include>
     <include name="View_59_Showcase">

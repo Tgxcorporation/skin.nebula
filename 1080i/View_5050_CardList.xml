@@ -6,18 +6,8 @@
             <posy>218</posy>
             <width>50</width>
             <height>76</height>
-            <texture>$VAR[Theme.Color]/OverlayRecording.png</texture>
+            <texture>$VAR[PVRTimerIcon]</texture>
             <aspectratio>keep</aspectratio>
-            <visible>ListItem.IsRecording</visible>
-        </control>
-        <control type="image">
-            <posx>1819</posx>
-            <posy>218</posy>
-            <width>50</width>
-            <height>76</height>
-            <texture>$VAR[Theme.Color]/OverlayTimer.png</texture>
-            <aspectratio>keep</aspectratio>
-            <visible>ListItem.HasTimer</visible>
         </control>
     </include>
     <include name="CardList_Layout">

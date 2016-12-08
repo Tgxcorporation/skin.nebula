@@ -956,4 +956,16 @@
         <value condition="Player.Process(videohwdecoder)">HW</value>
         <value>SW</value>
     </variable>
+    <variable name="PVRTimerIcon">
+        <value condition="ListItem.IsRecording">$VAR[Theme.Color]/pvr/PVR-IsRecording.png</value>
+        <value condition="ListItem.HasTimerSchedule + ListItem.TimerHasError">$VAR[Theme.Color]/pvr/PVR-HasTimerScheduleError.png</value>
+        <value condition="ListItem.HasTimer + ListItem.TimerHasError">$VAR[Theme.Color]/pvr/PVR-HasTimerError.png</value>
+        <value condition="ListItem.HasTimerSchedule + ListItem.TimerHasConflict">$VAR[Theme.Color]/pvr/PVR-HasTimerScheduleConflict.png</value>
+        <value condition="ListItem.HasTimer + ListItem.TimerHasConflict">$VAR[Theme.Color]/pvr/PVR-HasTimerConflict.png</value>
+        <value condition="ListItem.HasRecording">$VAR[Theme.Color]/pvr/PVR-HasRecording.png</value>
+        <value condition="ListItem.HasTimerSchedule + !ListItem.TimerIsActive">$VAR[Theme.Color]/pvr/PVR-HasTimerScheduleDisabled.png</value>
+        <value condition="ListItem.HasTimer + !ListItem.TimerIsActive">$VAR[Theme.Color]/pvr/PVR-HasTimerDisabled.png</value>
+        <value condition="ListItem.HasTimerSchedule">$VAR[Theme.Color]/pvr/PVR-HasTimerSchedule.png</value>
+        <value condition="ListItem.HasTimer">$VAR[Theme.Color]/pvr/PVR-HasTimer.png</value>
+    </variable>
 </includes>

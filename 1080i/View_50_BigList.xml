@@ -5,19 +5,9 @@
             <posx>1819</posx>
             <width>50</width>
             <height>135</height>
-            <texture>$VAR[Theme.Color]/OverlayRecording.png</texture>
+            <texture>$VAR[PVRTimerIcon]</texture>
             <aspectratio>keep</aspectratio>
             <colordiffuse>NoFocusedColor</colordiffuse>
-            <visible>ListItem.IsRecording</visible>
-        </control>
-        <control type="image">
-            <posx>1819</posx>
-            <width>50</width>
-            <height>135</height>
-            <texture>$VAR[Theme.Color]/OverlayTimer.png</texture>
-            <aspectratio>keep</aspectratio>
-            <colordiffuse>NoFocusedColor</colordiffuse>
-            <visible>ListItem.HasTimer</visible>
         </control>
     </include>
     <include name="50_RecOverlayFocus">
@@ -25,17 +15,8 @@
             <posx>1819</posx>
             <width>50</width>
             <height>95</height>
-            <texture>$VAR[Theme.Color]/OverlayRecording.png</texture>
+            <texture>$VAR[PVRTimerIcon]</texture>
             <aspectratio>keep</aspectratio>
-            <visible>ListItem.IsRecording</visible>
-        </control>
-        <control type="image">
-            <posx>1819</posx>
-            <width>50</width>
-            <height>95</height>
-            <texture>$VAR[Theme.Color]/OverlayTimer.png</texture>
-            <aspectratio>keep</aspectratio>
-            <visible>ListItem.HasTimer</visible>
         </control>
     </include>
     <include name="ScrollOffsetLabel_50">
