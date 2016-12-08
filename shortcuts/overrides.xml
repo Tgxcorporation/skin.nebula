@@ -63,10 +63,12 @@
     <!-- default widgets -->
     <widgetdefaultnode labelID="movies" group="mainmenu" label="$LOCALIZE[31400]" type="movies" path="plugin://script.skin.helper.service/?action=RECOMMENDEDMOVIES&amp;reload=$INFO[Window(Home).Property(widgetreload)]" target="video">recommendedmovies</widgetdefaultnode>
     <widgetdefaultnode labelID="tvshows" group="mainmenu" label="$LOCALIZE[31417]" type="episodes" path="special://skin/widgetplaylists/recommendedepisodes.xsp" target="video">recommendedepisodes</widgetdefaultnode>
-    <widgetdefaultnode labelID="music" group="mainmenu" label="31401" type="albums" path="special://skin/widgetplaylists/recentalbums.xsp" target="music">recentalbums</widgetdefaultnode>
+    <widgetdefaultnode labelID="music" group="mainmenu" label="517" type="albums" path="musicdb://recentlyplayedalbums" target="music">recentlyplayedalbums</widgetdefaultnode>
     <widgetdefaultnode labelID="31971" group="mainmenu" label="31402" type="musicvideos" path="special://skin/widgetplaylists/recommendedmusicvideos.xsp" target="video">recommendedmusicvideos</widgetdefaultnode>
     <widgetdefaultnode labelID="31972" group="mainmenu" label="31403" type="musicvideos" path="special://skin/widgetplaylists/recommendedmusicvideos.xsp" target="video">recommendedmusicvideos</widgetdefaultnode>
-    <widgetdefaultnode labelID="livetv" group="mainmenu" label="19017" type="pvr" path="plugin://script.skin.helper.service/?action=pvrrecordings&amp;limit=25&amp;reload=$INFO[Window(home).Property(widgetreload2)]" target="pvr">tvrecordings</widgetdefaultnode>
+    <widgetdefaultnode labelID="24001" group="mainmenu" label="1037" type="addon" path="addons://sources/video/" target="video">videoaddons</widgetdefaultnode>
+    <widgetdefaultnode labelID="livetv" group="mainmenu" label="19017" type="tv" path="plugin://script.skin.helper.service/?action=pvrrecordings&amp;limit=25&amp;reload=$INFO[Window(home).Property(widgetreload2)]" target="pvr">tvrecordings</widgetdefaultnode>
+    <widgetdefaultnode labelID="radio" group="mainmenu" label="19017" type="radio" path="pvr://recordings/radio/active?view=flat" target="pvr">radiorecordings</widgetdefaultnode>
 
     <!-- secondary widgets -->
     <propertydefault labelID="movies" property="widget.1">recentmovies</propertydefault>
@@ -101,11 +103,21 @@
     <propertydefault labelID="tvshows" property="widgetPath.3">special://skin/widgetplaylists/randomepisodes.xsp</propertydefault>
     <propertydefault labelID="tvshows" property="widgetName.3">31409</propertydefault>
 
-    <propertydefault labelID="music" property="widget.1">randomalbums</propertydefault>
+    <propertydefault labelID="music" property="widget.1">recentlyaddedalbums</propertydefault>
     <propertydefault labelID="music" property="widgetTarget.1">music</propertydefault>
     <propertydefault labelID="music" property="widgetType.1">albums</propertydefault>
-    <propertydefault labelID="music" property="widgetPath.1">special://skin/widgetplaylists/randomalbums.xsp</propertydefault>
-    <propertydefault labelID="music" property="widgetName.1">31410</propertydefault>
+    <propertydefault labelID="music" property="widgetPath.1">musicdb://recentlyaddedalbums/</propertydefault>
+    <propertydefault labelID="music" property="widgetName.1">359</propertydefault>
+    <propertydefault labelID="music" property="widget.2">randomalbums</propertydefault>
+    <propertydefault labelID="music" property="widgetTarget.2">music</propertydefault>
+    <propertydefault labelID="music" property="widgetType.2">albums</propertydefault>
+    <propertydefault labelID="music" property="widgetPath.2">special://skin/widgetplaylists/randomalbums.xsp</propertydefault>
+    <propertydefault labelID="music" property="widgetName.2">31410</propertydefault>
+    <propertydefault labelID="music" property="widget.3">mostplayedalbums</propertydefault>
+    <propertydefault labelID="music" property="widgetTarget.3">music</propertydefault>
+    <propertydefault labelID="music" property="widgetType.3">albums</propertydefault>
+    <propertydefault labelID="music" property="widgetPath.3">special://skin/widgetplaylists/mostplayedalbums.xsp</propertydefault>
+    <propertydefault labelID="music" property="widgetName.3">31418</propertydefault>
 
     <propertydefault labelID="31971" property="widget.1">recentmusicvideos</propertydefault>
     <propertydefault labelID="31971" property="widgetTarget.1">video</propertydefault>
@@ -139,11 +151,33 @@
     <propertydefault labelID="31972" property="widgetPath.3">special://skin/widgetplaylists/randommusicvideos.xsp</propertydefault>
     <propertydefault labelID="31972" property="widgetName.3">31416</propertydefault>
 
+    <propertydefault labelID="24001" property="widget.1">audioaddons</propertydefault>
+    <propertydefault labelID="24001" property="widgetTarget.1">music</propertydefault>
+    <propertydefault labelID="24001" property="widgetType.1">addon</propertydefault>
+    <propertydefault labelID="24001" property="widgetPath.1">addons://sources/audio/</propertydefault>
+    <propertydefault labelID="24001" property="widgetName.1">1038</propertydefault>
+    <propertydefault labelID="24001" property="widget.2">programaddons</propertydefault>
+    <propertydefault labelID="24001" property="widgetTarget.2">programs</propertydefault>
+    <propertydefault labelID="24001" property="widgetType.2">addon</propertydefault>
+    <propertydefault labelID="24001" property="widgetPath.2">addons://sources/executable/</propertydefault>
+    <propertydefault labelID="24001" property="widgetName.2">1043</propertydefault>
+    <propertydefault labelID="24001" property="widget.3">pictureaddons</propertydefault>
+    <propertydefault labelID="24001" property="widgetTarget.3">pictures</propertydefault>
+    <propertydefault labelID="24001" property="widgetType.3">addon</propertydefault>
+    <propertydefault labelID="24001" property="widgetPath.3">addons://sources/image/</propertydefault>
+    <propertydefault labelID="24001" property="widgetName.3">1039</propertydefault>
+
     <propertydefault labelID="livetv" property="widget.1">tvchannels</propertydefault>
     <propertydefault labelID="livetv" property="widgetTarget.1">pvr</propertydefault>
-    <propertydefault labelID="livetv" property="widgetType.1">pvr</propertydefault>
-    <propertydefault labelID="livetv" property="widgetPath.1">pvr://channels/tv/all channel/;reload=$INFO[Window(Home).Property(widgetreload2)]</propertydefault>
+    <propertydefault labelID="livetv" property="widgetType.1">tv</propertydefault>
+    <propertydefault labelID="livetv" property="widgetPath.1">pvr://channels/tv/*?view=lastplayed</propertydefault>
     <propertydefault labelID="livetv" property="widgetName.1">19023</propertydefault>
+
+    <propertydefault labelID="radio" property="widget.1">radiochannels</propertydefault>
+    <propertydefault labelID="radio" property="widgetTarget.1">pvr</propertydefault>
+    <propertydefault labelID="radio" property="widgetType.1">radio</propertydefault>
+    <propertydefault labelID="radio" property="widgetPath.1">pvr://channels/radio/*?view=lastplayed</propertydefault>
+    <propertydefault labelID="radio" property="widgetName.1">19024</propertydefault>
 
     <!--WIDGETS-->
     <!--<widget label="1036" type="info">Favourite</widget>-->
