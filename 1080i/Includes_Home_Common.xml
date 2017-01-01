@@ -1206,7 +1206,7 @@
             <!-- -->
 
             <!--WIDGET 1-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                 <param name="id" value="700011"/>
@@ -1227,7 +1227,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Episode"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                 <param name="id" value="700012"/>
@@ -1242,7 +1242,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                 <param name="id" value="700013"/>
@@ -1258,7 +1258,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                 <param name="id" value="700014"/>
@@ -1272,7 +1272,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                 <param name="id" value="700015"/>
@@ -1300,7 +1300,7 @@
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
             </include>
             <!--WIDGET 2-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
                 <param name="id" value="700021"/>
@@ -1321,7 +1321,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Episode"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
                 <param name="id" value="700022"/>
@@ -1336,7 +1336,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
                 <param name="id" value="700023"/>
@@ -1352,7 +1352,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
                 <param name="id" value="700024"/>
@@ -1366,7 +1366,7 @@
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
                 <param name="id" value="700025"/>
@@ -1394,10 +1394,10 @@
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
             </include>
             <!--WIDGET 3-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
-                <param name="id" value="700021"/>
+                <param name="id" value="700031"/>
                 <param name="visibility" value="SubString(Container(300).ListItem.Property(widgetType.2),season,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.2),actor,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.2),director,Left)|
@@ -1406,64 +1406,64 @@
                     SubString(Container(300).ListItem.Property(widgetType.2),movie,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.2),tvshow,Left)|
                     [SubString(Container(300).ListItem.Property(widgetType.2),musicvideo,Left)+StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                <param name="labelTitle" value="$INFO[Container(700021).ListItem.TVShowTitle,, - ]$INFO[Container(700021).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700021).ListItem.Year]$INFO[Container(700021).ListItem.Duration,       , $LOCALIZE[31297]]$INFO[Container(700021).ListItem.MPAA,       ]"/>
-                <param name="labelRow2" value="$INFO[Container(700021).ListItem.Genre]"/>
-                <param name="labelRating" value="$INFO[Container(700021).ListItem.Rating]"/>
-                <param name="labelPlot" value="$INFO[Container(700021).ListItem.Plot]"/>
+                <param name="labelTitle" value="$INFO[Container(700031).ListItem.TVShowTitle,, - ]$INFO[Container(700031).ListItem.Label]"/>
+                <param name="labelRow1" value="$INFO[Container(700031).ListItem.Year]$INFO[Container(700031).ListItem.Duration,       , $LOCALIZE[31297]]$INFO[Container(700031).ListItem.MPAA,       ]"/>
+                <param name="labelRow2" value="$INFO[Container(700031).ListItem.Genre]"/>
+                <param name="labelRating" value="$INFO[Container(700031).ListItem.Rating]"/>
+                <param name="labelPlot" value="$INFO[Container(700031).ListItem.Plot]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Episode"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
-                <param name="id" value="700022"/>
+                <param name="id" value="700032"/>
                 <param name="visibility" value="SubString(Container(300).ListItem.Property(widgetType.2),episode,Left)|
                     [SubString(Container(300).ListItem.Property(widgetType.2),musicvideo,Left)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                <param name="labelTitle" value="$INFO[Container(700022).ListItem.TVShowTitle,, - ]$INFO[Container(700022).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700022).ListItem.Year,,       ]$INFO[Container(700022).ListItem.Duration,, $LOCALIZE[31297]]$INFO[Container(700022).ListItem.MPAA,       ]"/>
-                <param name="labelRow2" value="$INFO[Container(700022).ListItem.Artist,,       ]$INFO[Container(700022).ListItem.Genre]"/>
-                <param name="labelRating" value="$INFO[Container(700022).ListItem.Rating]"/>
-                <param name="labelPlot" value="$INFO[Container(700022).ListItem.Plot]"/>
+                <param name="labelTitle" value="$INFO[Container(700032).ListItem.TVShowTitle,, - ]$INFO[Container(700032).ListItem.Label]"/>
+                <param name="labelRow1" value="$INFO[Container(700032).ListItem.Year,,       ]$INFO[Container(700032).ListItem.Duration,, $LOCALIZE[31297]]$INFO[Container(700032).ListItem.MPAA,       ]"/>
+                <param name="labelRow2" value="$INFO[Container(700032).ListItem.Artist,,       ]$INFO[Container(700032).ListItem.Genre]"/>
+                <param name="labelRating" value="$INFO[Container(700032).ListItem.Rating]"/>
+                <param name="labelPlot" value="$INFO[Container(700032).ListItem.Plot]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
-                <param name="id" value="700023"/>
+                <param name="id" value="700033"/>
                 <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.2),audio)|
                     SubString(Container(300).ListItem.Property(widgetType.2),album,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.2),song,Left)"/>
-                <param name="labelTitle" value="$INFO[Container(700023).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700023).ListItem.Year]"/>
-                <param name="labelRow2" value="$INFO[Container(700023).ListItem.Artist,,       ]$INFO[Container(700023).ListItem.Genre]"/>
+                <param name="labelTitle" value="$INFO[Container(700033).ListItem.Label]"/>
+                <param name="labelRow1" value="$INFO[Container(700033).ListItem.Year]"/>
+                <param name="labelRow2" value="$INFO[Container(700033).ListItem.Artist,,       ]$INFO[Container(700033).ListItem.Genre]"/>
                 <param name="labelRating" value=""/>
-                <param name="labelPlot" value="$INFO[Container(700023).ListItem.Plot]"/>
+                <param name="labelPlot" value="$INFO[Container(700033).ListItem.Plot]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
-                <param name="id" value="700024"/>
+                <param name="id" value="700034"/>
                 <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.2),pvr)"/>
-                <param name="labelTitle" value="$INFO[Container(700024).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700024).ListItem.Label2,,       ]$INFO[Container(700024).ListItem.Duration,, $LOCALIZE[31297]]"/>
-                <param name="labelRow2" value="$INFO[Container(700024).ListItem.Genre]"/>
-                <param name="labelRow1" value="$INFO[Container(700024).ListItem.Label2,,       ]$INFO[Container(700024).ListItem.Duration,, $LOCALIZE[31297]]"/>
-                <param name="labelRow2" value="$INFO[Container(700024).ListItem.Genre]"/>
+                <param name="labelTitle" value="$INFO[Container(700034).ListItem.Label]"/>
+                <param name="labelRow1" value="$INFO[Container(700034).ListItem.Label2,,       ]$INFO[Container(700034).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                <param name="labelRow2" value="$INFO[Container(700034).ListItem.Genre]"/>
+                <param name="labelRow1" value="$INFO[Container(700034).ListItem.Label2,,       ]$INFO[Container(700034).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                <param name="labelRow2" value="$INFO[Container(700034).ListItem.Genre]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
-                <param name="id" value="700025"/>
+                <param name="id" value="700035"/>
                 <param name="visibility" value="SubString(Container(300).ListItem.Property(widgetType.2),genre,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.2),year,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.2),playlist,Left)|
@@ -1478,20 +1478,20 @@
                     SubString(Container(300).ListItem.Property(widgetType.2),picture,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.2),addon,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.2),program,Left)"/>
-                <param name="labelTitle" value="$INFO[Container(700025).ListItem.Label]"/>
+                <param name="labelTitle" value="$INFO[Container(700035).ListItem.Label]"/>
                 <param name="labelRow1" value=""/>
                 <param name="labelRow2" value=""/>
                 <param name="labelRating" value=""/>
-                <param name="labelPlot" value="$INFO[Container(700025).ListItem.Plot]"/>
+                <param name="labelPlot" value="$INFO[Container(700035).ListItem.Plot]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="true"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
             </include>
             <!--WIDGET 4-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
-                <param name="id" value="700021"/>
+                <param name="id" value="700041"/>
                 <param name="visibility" value="SubString(Container(300).ListItem.Property(widgetType.3),season,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.3),actor,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.3),director,Left)|
@@ -1500,64 +1500,64 @@
                     SubString(Container(300).ListItem.Property(widgetType.3),movie,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.3),tvshow,Left)|
                     [SubString(Container(300).ListItem.Property(widgetType.3),musicvideo,Left)+StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                <param name="labelTitle" value="$INFO[Container(700021).ListItem.TVShowTitle,, - ]$INFO[Container(700021).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700021).ListItem.Year]$INFO[Container(700021).ListItem.Duration,       , $LOCALIZE[31297]]$INFO[Container(700021).ListItem.MPAA,       ]"/>
-                <param name="labelRow2" value="$INFO[Container(700021).ListItem.Genre]"/>
-                <param name="labelRating" value="$INFO[Container(700021).ListItem.Rating]"/>
-                <param name="labelPlot" value="$INFO[Container(700021).ListItem.Plot]"/>
+                <param name="labelTitle" value="$INFO[Container(700041).ListItem.TVShowTitle,, - ]$INFO[Container(700041).ListItem.Label]"/>
+                <param name="labelRow1" value="$INFO[Container(700041).ListItem.Year]$INFO[Container(700041).ListItem.Duration,       , $LOCALIZE[31297]]$INFO[Container(700041).ListItem.MPAA,       ]"/>
+                <param name="labelRow2" value="$INFO[Container(700041).ListItem.Genre]"/>
+                <param name="labelRating" value="$INFO[Container(700041).ListItem.Rating]"/>
+                <param name="labelPlot" value="$INFO[Container(700041).ListItem.Plot]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Episode"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
-                <param name="id" value="700022"/>
+                <param name="id" value="700042"/>
                 <param name="visibility" value="SubString(Container(300).ListItem.Property(widgetType.3),episode,Left)|
                     [SubString(Container(300).ListItem.Property(widgetType.3),musicvideo,Left)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                <param name="labelTitle" value="$INFO[Container(700022).ListItem.TVShowTitle,, - ]$INFO[Container(700022).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700022).ListItem.Year,,       ]$INFO[Container(700022).ListItem.Duration,, $LOCALIZE[31297]]$INFO[Container(700022).ListItem.MPAA,       ]"/>
-                <param name="labelRow2" value="$INFO[Container(700022).ListItem.Artist,,       ]$INFO[Container(700022).ListItem.Genre]"/>
-                <param name="labelRating" value="$INFO[Container(700022).ListItem.Rating]"/>
-                <param name="labelPlot" value="$INFO[Container(700022).ListItem.Plot]"/>
+                <param name="labelTitle" value="$INFO[Container(700042).ListItem.TVShowTitle,, - ]$INFO[Container(700042).ListItem.Label]"/>
+                <param name="labelRow1" value="$INFO[Container(700042).ListItem.Year,,       ]$INFO[Container(700042).ListItem.Duration,, $LOCALIZE[31297]]$INFO[Container(700042).ListItem.MPAA,       ]"/>
+                <param name="labelRow2" value="$INFO[Container(700042).ListItem.Artist,,       ]$INFO[Container(700042).ListItem.Genre]"/>
+                <param name="labelRating" value="$INFO[Container(700042).ListItem.Rating]"/>
+                <param name="labelPlot" value="$INFO[Container(700042).ListItem.Plot]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
-                <param name="id" value="700023"/>
+                <param name="id" value="700043"/>
                 <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.3),audio)|
                     SubString(Container(300).ListItem.Property(widgetType.3),album,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.3),song,Left)"/>
-                <param name="labelTitle" value="$INFO[Container(700023).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700023).ListItem.Year]"/>
-                <param name="labelRow2" value="$INFO[Container(700023).ListItem.Artist,,       ]$INFO[Container(700023).ListItem.Genre]"/>
+                <param name="labelTitle" value="$INFO[Container(700043).ListItem.Label]"/>
+                <param name="labelRow1" value="$INFO[Container(700043).ListItem.Year]"/>
+                <param name="labelRow2" value="$INFO[Container(700043).ListItem.Artist,,       ]$INFO[Container(700043).ListItem.Genre]"/>
                 <param name="labelRating" value=""/>
-                <param name="labelPlot" value="$INFO[Container(700023).ListItem.Plot]"/>
+                <param name="labelPlot" value="$INFO[Container(700043).ListItem.Plot]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
-                <param name="id" value="700024"/>
+                <param name="id" value="700044"/>
                 <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.3),pvr)"/>
-                <param name="labelTitle" value="$INFO[Container(700024).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700024).ListItem.Label2,,       ]$INFO[Container(700024).ListItem.Duration,, $LOCALIZE[31297]]"/>
-                <param name="labelRow2" value="$INFO[Container(700024).ListItem.Genre]"/>
-                <param name="labelRow1" value="$INFO[Container(700024).ListItem.Label2,,       ]$INFO[Container(700024).ListItem.Duration,, $LOCALIZE[31297]]"/>
-                <param name="labelRow2" value="$INFO[Container(700024).ListItem.Genre]"/>
+                <param name="labelTitle" value="$INFO[Container(700044).ListItem.Label]"/>
+                <param name="labelRow1" value="$INFO[Container(700044).ListItem.Label2,,       ]$INFO[Container(700044).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                <param name="labelRow2" value="$INFO[Container(700044).ListItem.Genre]"/>
+                <param name="labelRow1" value="$INFO[Container(700044).ListItem.Label2,,       ]$INFO[Container(700044).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                <param name="labelRow2" value="$INFO[Container(700044).ListItem.Genre]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
-                <param name="id" value="700025"/>
+                <param name="id" value="700045"/>
                 <param name="visibility" value="SubString(Container(300).ListItem.Property(widgetType.3),genre,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.3),year,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.3),playlist,Left)|
@@ -1572,20 +1572,20 @@
                     SubString(Container(300).ListItem.Property(widgetType.3),picture,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.3),addon,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.3),program,Left)"/>
-                <param name="labelTitle" value="$INFO[Container(700025).ListItem.Label]"/>
+                <param name="labelTitle" value="$INFO[Container(700045).ListItem.Label]"/>
                 <param name="labelRow1" value=""/>
                 <param name="labelRow2" value=""/>
                 <param name="labelRating" value=""/>
-                <param name="labelPlot" value="$INFO[Container(700025).ListItem.Plot]"/>
+                <param name="labelPlot" value="$INFO[Container(700045).ListItem.Plot]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="true"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
             </include>
             <!--WIDGET 5-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
-                <param name="id" value="700021"/>
+                <param name="id" value="700051"/>
                 <param name="visibility" value="SubString(Container(300).ListItem.Property(widgetType.4),season,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.4),actor,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.4),director,Left)|
@@ -1594,64 +1594,64 @@
                     SubString(Container(300).ListItem.Property(widgetType.4),movie,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.4),tvshow,Left)|
                     [SubString(Container(300).ListItem.Property(widgetType.4),musicvideo,Left)+StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                <param name="labelTitle" value="$INFO[Container(700021).ListItem.TVShowTitle,, - ]$INFO[Container(700021).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700021).ListItem.Year]$INFO[Container(700021).ListItem.Duration,       , $LOCALIZE[31297]]$INFO[Container(700021).ListItem.MPAA,       ]"/>
-                <param name="labelRow2" value="$INFO[Container(700021).ListItem.Genre]"/>
-                <param name="labelRating" value="$INFO[Container(700021).ListItem.Rating]"/>
-                <param name="labelPlot" value="$INFO[Container(700021).ListItem.Plot]"/>
+                <param name="labelTitle" value="$INFO[Container(700051).ListItem.TVShowTitle,, - ]$INFO[Container(700051).ListItem.Label]"/>
+                <param name="labelRow1" value="$INFO[Container(700051).ListItem.Year]$INFO[Container(700051).ListItem.Duration,       , $LOCALIZE[31297]]$INFO[Container(700051).ListItem.MPAA,       ]"/>
+                <param name="labelRow2" value="$INFO[Container(700051).ListItem.Genre]"/>
+                <param name="labelRating" value="$INFO[Container(700051).ListItem.Rating]"/>
+                <param name="labelPlot" value="$INFO[Container(700051).ListItem.Plot]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Episode"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
-                <param name="id" value="700022"/>
+                <param name="id" value="700052"/>
                 <param name="visibility" value="SubString(Container(300).ListItem.Property(widgetType.4),episode,Left)|
                     [SubString(Container(300).ListItem.Property(widgetType.4),musicvideo,Left)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                <param name="labelTitle" value="$INFO[Container(700022).ListItem.TVShowTitle,, - ]$INFO[Container(700022).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700022).ListItem.Year,,       ]$INFO[Container(700022).ListItem.Duration,, $LOCALIZE[31297]]$INFO[Container(700022).ListItem.MPAA,       ]"/>
-                <param name="labelRow2" value="$INFO[Container(700022).ListItem.Artist,,       ]$INFO[Container(700022).ListItem.Genre]"/>
-                <param name="labelRating" value="$INFO[Container(700022).ListItem.Rating]"/>
-                <param name="labelPlot" value="$INFO[Container(700022).ListItem.Plot]"/>
+                <param name="labelTitle" value="$INFO[Container(700052).ListItem.TVShowTitle,, - ]$INFO[Container(700052).ListItem.Label]"/>
+                <param name="labelRow1" value="$INFO[Container(700052).ListItem.Year,,       ]$INFO[Container(700052).ListItem.Duration,, $LOCALIZE[31297]]$INFO[Container(700052).ListItem.MPAA,       ]"/>
+                <param name="labelRow2" value="$INFO[Container(700052).ListItem.Artist,,       ]$INFO[Container(700052).ListItem.Genre]"/>
+                <param name="labelRating" value="$INFO[Container(700052).ListItem.Rating]"/>
+                <param name="labelPlot" value="$INFO[Container(700052).ListItem.Plot]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
-                <param name="id" value="700023"/>
+                <param name="id" value="700053"/>
                 <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.4),audio)|
                     SubString(Container(300).ListItem.Property(widgetType.4),album,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.4),song,Left)"/>
-                <param name="labelTitle" value="$INFO[Container(700023).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700023).ListItem.Year]"/>
-                <param name="labelRow2" value="$INFO[Container(700023).ListItem.Artist,,       ]$INFO[Container(700023).ListItem.Genre]"/>
+                <param name="labelTitle" value="$INFO[Container(700053).ListItem.Label]"/>
+                <param name="labelRow1" value="$INFO[Container(700053).ListItem.Year]"/>
+                <param name="labelRow2" value="$INFO[Container(700053).ListItem.Artist,,       ]$INFO[Container(700053).ListItem.Genre]"/>
                 <param name="labelRating" value=""/>
-                <param name="labelPlot" value="$INFO[Container(700023).ListItem.Plot]"/>
+                <param name="labelPlot" value="$INFO[Container(700053).ListItem.Plot]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
-                <param name="id" value="700024"/>
+                <param name="id" value="700054"/>
                 <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.4),pvr)"/>
-                <param name="labelTitle" value="$INFO[Container(700024).ListItem.Label]"/>
-                <param name="labelRow1" value="$INFO[Container(700024).ListItem.Label2,,       ]$INFO[Container(700024).ListItem.Duration,, $LOCALIZE[31297]]"/>
-                <param name="labelRow2" value="$INFO[Container(700024).ListItem.Genre]"/>
-                <param name="labelRow1" value="$INFO[Container(700024).ListItem.Label2,,       ]$INFO[Container(700024).ListItem.Duration,, $LOCALIZE[31297]]"/>
-                <param name="labelRow2" value="$INFO[Container(700024).ListItem.Genre]"/>
+                <param name="labelTitle" value="$INFO[Container(700054).ListItem.Label]"/>
+                <param name="labelRow1" value="$INFO[Container(700054).ListItem.Label2,,       ]$INFO[Container(700054).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                <param name="labelRow2" value="$INFO[Container(700054).ListItem.Genre]"/>
+                <param name="labelRow1" value="$INFO[Container(700054).ListItem.Label2,,       ]$INFO[Container(700054).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                <param name="labelRow2" value="$INFO[Container(700054).ListItem.Genre]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
-                <param name="id" value="700025"/>
+                <param name="id" value="700055"/>
                 <param name="visibility" value="SubString(Container(300).ListItem.Property(widgetType.4),genre,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.4),year,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.4),playlist,Left)|
@@ -1666,11 +1666,11 @@
                     SubString(Container(300).ListItem.Property(widgetType.4),picture,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.4),addon,Left)|
                     SubString(Container(300).ListItem.Property(widgetType.4),program,Left)"/>
-                <param name="labelTitle" value="$INFO[Container(700025).ListItem.Label]"/>
+                <param name="labelTitle" value="$INFO[Container(700055).ListItem.Label]"/>
                 <param name="labelRow1" value=""/>
                 <param name="labelRow2" value=""/>
                 <param name="labelRating" value=""/>
-                <param name="labelPlot" value="$INFO[Container(700025).ListItem.Plot]"/>
+                <param name="labelPlot" value="$INFO[Container(700055).ListItem.Plot]"/>
                 <param name="visibilitylabelRating" value="false"/>
                 <param name="animationDown" value="true"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
