@@ -34,6 +34,7 @@
                 control.hasfocus(412)|
                 control.hasfocus(511)|
                 control.hasfocus(900)|
+                control.hasfocus(901)|
                 control.hasfocus(700011)|
                 control.hasfocus(700012)|
                 control.hasfocus(700013)|
