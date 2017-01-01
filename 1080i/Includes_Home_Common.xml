@@ -962,7 +962,13 @@
             <!--CUSTOM WIDGETS-->
             <item id="7001">
                 <visible>!IsEmpty(Container(300).ListItem.Property(widgetName))</visible>
-                <visible>IntegerGreaterThan(Container(700011).NumItems,0)|IntegerGreaterThan(Container(700012).NumItems,0)|IntegerGreaterThan(Container(700013).NumItems,0)|IntegerGreaterThan(Container(700014).NumItems,0)|IntegerGreaterThan(Container(700015).NumItems,0)</visible>
+                <visible>
+                    [IntegerGreaterThan(Container(700011).NumItems,0)+control.IsVisible(700011)]|
+                    [IntegerGreaterThan(Container(700012).NumItems,0)+control.IsVisible(700012)]|
+                    [IntegerGreaterThan(Container(700013).NumItems,0)+control.IsVisible(700013)]|
+                    [IntegerGreaterThan(Container(700014).NumItems,0)+control.IsVisible(700014)]|
+                    [IntegerGreaterThan(Container(700015).NumItems,0)+control.IsVisible(700015)]
+                </visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick condition="control.isvisible(700011)">SetFocus(700011)</onclick>
@@ -978,7 +984,13 @@
             </item>
             <item id="7002">
                 <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.1))</visible>
-                <visible>IntegerGreaterThan(Container(700021).NumItems,0)|IntegerGreaterThan(Container(700022).NumItems,0)|IntegerGreaterThan(Container(700023).NumItems,0)|IntegerGreaterThan(Container(700024).NumItems,0)|IntegerGreaterThan(Container(700025).NumItems,0)</visible>
+                <visible>
+                    [IntegerGreaterThan(Container(700021).NumItems,0)+control.IsVisible(700021)]|
+                    [IntegerGreaterThan(Container(700022).NumItems,0)+control.IsVisible(700022)]|
+                    [IntegerGreaterThan(Container(700023).NumItems,0)+control.IsVisible(700023)]|
+                    [IntegerGreaterThan(Container(700024).NumItems,0)+control.IsVisible(700024)]|
+                    [IntegerGreaterThan(Container(700025).NumItems,0)+control.IsVisible(700025)]
+                </visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName.1)]</label>
                 <onclick condition="control.isvisible(700021)">SetFocus(700021)</onclick>
@@ -994,7 +1006,13 @@
             </item>
             <item id="7003">
                 <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.2))</visible>
-                <visible>IntegerGreaterThan(Container(700031).NumItems,0)|IntegerGreaterThan(Container(700032).NumItems,0)|IntegerGreaterThan(Container(700033).NumItems,0)|IntegerGreaterThan(Container(700034).NumItems,0)|IntegerGreaterThan(Container(700035).NumItems,0)</visible>
+                <visible>
+                    [IntegerGreaterThan(Container(700031).NumItems,0)+control.IsVisible(700031)]|
+                    [IntegerGreaterThan(Container(700032).NumItems,0)+control.IsVisible(700032)]|
+                    [IntegerGreaterThan(Container(700033).NumItems,0)+control.IsVisible(700033)]|
+                    [IntegerGreaterThan(Container(700034).NumItems,0)+control.IsVisible(700034)]|
+                    [IntegerGreaterThan(Container(700035).NumItems,0)+control.IsVisible(700035)]
+                </visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName.2)]</label>
                 <onclick condition="control.isvisible(700031)">SetFocus(700031)</onclick>
@@ -1010,7 +1028,13 @@
             </item>
             <item id="7004">
                 <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.3))</visible>
-                <visible>IntegerGreaterThan(Container(700041).NumItems,0)|IntegerGreaterThan(Container(700042).NumItems,0)|IntegerGreaterThan(Container(700043).NumItems,0)|IntegerGreaterThan(Container(700044).NumItems,0)|IntegerGreaterThan(Container(700045).NumItems,0)</visible>
+                <visible>
+                    [IntegerGreaterThan(Container(700041).NumItems,0)+control.IsVisible(700041)]|
+                    [IntegerGreaterThan(Container(700042).NumItems,0)+control.IsVisible(700042)]|
+                    [IntegerGreaterThan(Container(700043).NumItems,0)+control.IsVisible(700043)]|
+                    [IntegerGreaterThan(Container(700044).NumItems,0)+control.IsVisible(700044)]|
+                    [IntegerGreaterThan(Container(700045).NumItems,0)+control.IsVisible(700045)]
+                </visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName.3)]</label>
                 <onclick condition="control.isvisible(700041)">SetFocus(700041)</onclick>
@@ -1026,7 +1050,13 @@
             </item>
             <item id="7005">
                 <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.4))</visible>
-                <visible>IntegerGreaterThan(Container(700051).NumItems,0)|IntegerGreaterThan(Container(700052).NumItems,0)|IntegerGreaterThan(Container(700053).NumItems,0)|IntegerGreaterThan(Container(700054).NumItems,0)|IntegerGreaterThan(Container(700055).NumItems,0)</visible>
+                <visible>
+                    [IntegerGreaterThan(Container(700051).NumItems,0)+control.IsVisible(700051)]|
+                    [IntegerGreaterThan(Container(700052).NumItems,0)+control.IsVisible(700052)]|
+                    [IntegerGreaterThan(Container(700053).NumItems,0)+control.IsVisible(700053)]|
+                    [IntegerGreaterThan(Container(700054).NumItems,0)+control.IsVisible(700054)]|
+                    [IntegerGreaterThan(Container(700055).NumItems,0)+control.IsVisible(700055)]
+                </visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName.4)]</label>
                 <onclick condition="control.isvisible(700051)">SetFocus(700051)</onclick>
