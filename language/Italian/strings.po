@@ -612,6 +612,10 @@ msgctxt "#31910"
 msgid "Maps"
 msgstr "Mappe"
 
+msgctxt "#31932"
+msgid "Recently viewed shows"
+msgstr "Serie TV viste di recente"
+
 msgctxt "#31933"
 msgid "Songs"
 msgstr "Canzoni"
