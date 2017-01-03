@@ -671,8 +671,12 @@ msgctxt "#31910"
 msgid "Maps"
 msgstr ""
 
-#empty strings from id 31911 to 31932
-#NEBULA
+#empty strings from id 31911 to 31931
+
+msgctxt "#31932"
+msgid "Recently viewed shows"
+msgstr ""
+
 msgctxt "#31933"
 msgid "Songs"
 msgstr ""
