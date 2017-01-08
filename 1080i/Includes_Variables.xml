@@ -510,6 +510,12 @@
         <value>$LOCALIZE[13278]</value>
     </variable>
     <variable name="WidgetsBackgrounds">
+        <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(311)">$INFO[Container(311).ListItem.Property(Art)]</value>
+        <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(312)">$INFO[Container(312).ListItem.Property(Art)]</value>
+        <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(511)">$INFO[Container(511).ListItem.Property(Art)]</value>
+        <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(411)">$INFO[Container(411).ListItem.Property(Art)]</value>
+        <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(412)">$INFO[Container(412).ListItem.Property(Art)]</value>
+        <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(900)">$INFO[Container(900).ListItem.Property(Art)]</value>
         <value condition="Control.HasFocus(700011)">$INFO[Container(700011).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700012)">$INFO[Container(700012).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700013)">$INFO[Container(700013).ListItem.Art(fanart)]</value>
