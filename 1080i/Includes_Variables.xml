@@ -67,6 +67,7 @@
         <value condition="[Window.IsActive(Home.xml)+[String.IsEqual(Container(300).ListItem.Property(widgetType.4),episodes)|[String.IsEqual(Container(300).ListItem.Property(widgetType.4),musicvideos)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
         <!--NORMAL-->
         <value condition="ListItem.IsParentFolder">$VAR[ThumbsFolderBack]</value>
+        <value condition="Skin.hassetting(plexbmc) + Container.Content(episodes) + !String.IsEmpty(ListItem.thumb) + !String.StartsWith(ListItem.thumb,Default)">$INFO[ListItem.thumb]</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster))+!String.StartsWith(ListItem.Art(poster),Default)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!String.IsEmpty(ListItem.Icon)+!String.StartsWith(ListItem.Icon,Default)">$INFO[ListItem.Icon]</value>
         <value condition="!String.IsEmpty(ListItem.Property(Icon))+!String.StartsWith(ListItem.Property(Icon),Default)">$INFO[ListItem.Property(Icon)]</value>
@@ -78,6 +79,7 @@
         <value condition="[Window.IsActive(DialogPVRInfo.xml)]">$INFO[ListItem.Icon]</value>
         <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]">$INFO[ListItem.Icon]</value>
         <value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!String.StartsWith(ListItem.Icon,Default)">$INFO[ListItem.Icon]</value>
+        <value condition="Skin.hassetting(plexbmc) + Container.Content(episodes) + !String.IsEmpty(ListItem.thumb) + !String.StartsWith(ListItem.thumb,Default)">$INFO[ListItem.thumb]</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster))+!String.StartsWith(ListItem.Art(poster),Default)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!String.IsEmpty(ListItem.Icon)+!String.StartsWith(ListItem.Icon,Default)">$INFO[ListItem.Icon]</value>
         <value condition="!String.IsEmpty(ListItem.Property(Icon))+!String.StartsWith(ListItem.Property(Icon),Default)">$INFO[ListItem.Property(Icon)]</value>
