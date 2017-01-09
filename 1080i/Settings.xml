@@ -127,22 +127,22 @@
                 </focusedlayout>
                 <content>
                     <item>
-                        <label>$LOCALIZE[14207]</label>
+                        <label>$LOCALIZE[14206]</label>
                         <onclick>ActivateWindow(InterfaceSettings)</onclick>
                         <label2>$VAR[Favourites.Art]</label2>
                     </item>
                     <item>
-                        <label>$LOCALIZE[20077]</label>
+                        <label>$LOCALIZE[166]</label>
                         <onclick>ActivateWindow(SkinSettings)</onclick>
                         <label2>$VAR[Favourites.Art]</label2>
                     </item>
                     <item>
-                        <label>$LOCALIZE[14201]</label>
+                        <label>$LOCALIZE[14200]</label>
                         <onclick>ActivateWindow(PlayerSettings)</onclick>
                         <label2>$VAR[Videos.Art]</label2>
                     </item>
                     <item>
-                        <label>$LOCALIZE[14212]</label>
+                        <label>$LOCALIZE[14211]</label>
                         <onclick>ActivateWindow(MediaSettings)</onclick>
                         <label2>$VAR[Videos.Art]</label2>
                     </item>
@@ -152,17 +152,17 @@
                         <label2>$VAR[Videos.Art]</label2>
                     </item>
                     <item>
-                        <label>$LOCALIZE[14205]</label>
+                        <label>$LOCALIZE[14204]</label>
                         <onclick>ActivateWindow(PVRSettings)</onclick>
                         <label2>$VAR[Tv.Art]</label2>
                     </item>
                     <item>
-                        <label>$LOCALIZE[14208]</label>
+                        <label>$LOCALIZE[14036]</label>
                         <onclick>ActivateWindow(ServiceSettings)</onclick>
                         <label2>$VAR[Settings.Art]</label2>
                     </item>
                     <item>
-                        <label>$LOCALIZE[14209]</label>
+                        <label>$LOCALIZE[13000]</label>
                         <onclick>ActivateWindow(SystemSettings)</onclick>
                         <label2>$VAR[Settings.Art]</label2>
                     </item>
