@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <variable name="ChapterLabel">
-        <value condition="Player.ChapterCount + !String.IsEmpty(Player.ChapterName)">$INFO[Player.ChapterName]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
+        <!--<value condition="Player.ChapterCount + !String.IsEmpty(Player.ChapterName)">$INFO[Player.ChapterName]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>-->
         <value condition="Player.ChapterCount">$LOCALIZE[21396]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
     </variable>
     <variable name="Overlay">
@@ -791,14 +791,13 @@
         <value condition="Player.Forwarding32x | Player.Rewinding32x">32x</value>
     </variable>
     <variable name="SeekLabel">
-        <value condition="!String.IsEmpty(Player.SeekStepSize) + ![player.forwarding | player.rewinding]">$LOCALIZE[773] $INFO[Player.SeekStepSize]</value>
-        <value condition="Player.Caching">$INFO[Player.CacheLevel,$LOCALIZE[15107] ,%]</value>
+        <value condition="!String.IsEmpty(Player.SeekStepSize)">$LOCALIZE[773] $INFO[Player.SeekStepSize]</value>
+        <value condition="[Player.Paused + Player.Caching] + !Player.Seeking">$INFO[Player.CacheLevel,$LOCALIZE[15107] ,%]</value>
         <value condition="Player.Paused">$LOCALIZE[112]</value>
-        <value condition="Player.Forwarding | Player.Rewinding">$VAR[VideoPlayerForwardRewindVar]</value>
+        <value condition="Player.Forwarding">$VAR[VideoPlayerForwardRewindVar]</value>
+        <value condition="Player.Rewinding">$VAR[VideoPlayerForwardRewindVar]</value>
         <value condition="Player.IsTempo">$LOCALIZE[224]: $INFO[Player.PlaySpeed]</value>
-
-        <!--<value condition="Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]">$LOCALIZE[773] $INFO[Player.SeekOffset]</value>-->
-        <!--<value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[773]</value>-->
+        <value condition="Player.ChapterCount">$VAR[ChapterLabel]</value>
     </variable>
     <variable name="StartupWindowName">
         <value condition="String.IsEmpty(Skin.String(StartupWindow)) + String.IsEmpty(Skin.String(CustomStartup.Path))">$LOCALIZE[31517]</value>

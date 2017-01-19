@@ -717,11 +717,6 @@
             <include>SeekbarLabels</include>
             <label>$VAR[SeekLabel]</label>
         </control>
-        <control type="label">
-            <visible>Player.ChapterCount + ![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]</visible>
-            <include>SeekbarLabels</include>
-            <label>$VAR[ChapterLabel]</label>
-        </control>
         <control type="image">
             <visible>player.rewinding</visible>
             <posx>850</posx>
