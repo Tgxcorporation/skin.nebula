@@ -1186,8 +1186,8 @@
                 <param name="labelTitle" value="$INFO[Container(411).ListItem.Property(TVshowTitle)]"/>
                 <param name="labelRow1" value="$INFO[Container(411).ListItem.Property(SeasonEpisode)]"/>
                 <param name="labelRow2" value="$INFO[Container(411).ListItem.Label]"/>
-                <param name="labelRating" value="0.0"/>
-                <param name="labelPlot" value=""/>
+                <param name="labelRating" value="$INFO[Container(411).ListItem.Property(Rating)]"/>
+                <param name="labelPlot" value="$INFO[Container(411).ListItem.Property(Plot)]"/>
                 <param name="icon" value="$INFO[Container(411).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
@@ -1200,8 +1200,8 @@
                 <param name="labelTitle" value="$INFO[Container(412).ListItem.Property(TVshowTitle)]"/>
                 <param name="labelRow1" value="$INFO[Container(412).ListItem.Property(SeasonEpisode)]"/>
                 <param name="labelRow2" value="$INFO[Container(412).ListItem.Label]"/>
-                <param name="labelRating" value="0.0"/>
-                <param name="labelPlot" value=""/>
+                <param name="labelRating" value="$INFO[Container(412).ListItem.Property(Rating)]"/>
+                <param name="labelPlot" value="$INFO[Container(412).ListItem.Property(Plot)]"/>
                 <param name="icon" value="$INFO[Container(412).ListItem.Thumb]"/>
                 <param name="visibilitylabelRating" value="true"/>
                 <param name="animationDown" value="false"/>
