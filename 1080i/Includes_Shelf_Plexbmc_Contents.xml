@@ -3272,4 +3272,218 @@
             </item>
         </content>
     </include>
+    <include name="PlexRecentlyViewedShowContent">
+        <content>
+            <item id="1">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.1.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.1.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.1.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.1.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.1.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.1.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.1.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.1.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.1.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.1.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.1.Path)]</onclick>
+            </item>
+            <item id="2">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.2.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.2.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.2.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.2.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.2.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.2.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.2.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.2.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.2.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.2.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.2.Path)]</onclick>
+            </item>
+            <item id="3">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.3.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.3.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.3.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.3.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.3.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.3.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.3.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.3.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.3.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.3.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.3.Path)]</onclick>
+            </item>
+            <item id="4">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.4.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.4.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.4.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.4.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.4.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.4.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.4.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.4.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.4.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.4.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.4.Path)]</onclick>
+            </item>
+            <item id="5">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.5.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.5.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.5.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.5.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.5.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.5.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.5.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.5.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.5.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.5.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.5.Path)]</onclick>
+            </item>
+            <item id="6">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.6.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.6.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.6.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.6.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.6.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.6.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.6.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.6.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.6.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.6.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.6.Path)]</onclick>
+            </item>
+            <item id="7">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.7.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.7.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.7.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.7.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.7.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.7.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.7.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.7.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.7.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.7.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.7.Path)]</onclick>
+            </item>
+            <item id="8">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.8.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.8.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.8.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.8.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.8.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.8.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.8.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.8.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.8.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.8.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.8.Path)]</onclick>
+            </item>
+            <item id="9">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.9.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.9.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.9.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.9.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.9.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.9.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.9.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.9.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.9.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.9.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.9.Path)]</onclick>
+            </item>
+            <item id="10">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.10.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.10.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.10.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.10.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.10.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.10.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.10.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.10.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.10.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.10.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.10.Path)]</onclick>
+            </item>
+            <item id="11">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.11.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.11.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.11.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.11.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.11.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.11.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.11.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.11.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.11.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.11.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.11.Path)]</onclick>
+            </item>
+            <item id="12">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.12.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.12.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.12.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.12.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.12.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.12.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.12.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.12.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.12.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.12.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.12.Path)]</onclick>
+            </item>
+            <item id="13">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.13.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.13.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.13.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.13.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.13.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.13.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.13.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.13.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.13.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.13.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.13.Path)]</onclick>
+            </item>
+            <item id="14">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.14.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.14.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.14.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.14.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.14.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.14.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.14.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.14.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.14.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.14.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.14.Path)]</onclick>
+            </item>
+            <item id="15">
+                <visible>!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.15.Path))</visible>
+                <visible>String.IsEqual(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.RecentlyViewedShow.15.uuid))</visible>
+                <label>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.15.Title)]</label>
+                <thumb>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.15.Thumb)]</thumb>
+                <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Runtime">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.15.Duration)]</property>
+                <property name="Year">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.15.Year)]</property>
+                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.15.Rating)]</property>
+                <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.15.Genre)]</property>
+                <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.15.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.15.Art)]</property>
+                <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.15.Path)]</onclick>
+            </item>
+        </content>
+    </include>
 </includes>
