@@ -113,9 +113,10 @@
         <value condition="Control.hasfocus(901)">$LOCALIZE[31961]</value>
         <value condition="Control.hasfocus(212)">$LOCALIZE[31961]</value>
         <value condition="Control.hasfocus(311)">$LOCALIZE[31961]</value>
-        <value condition="Control.hasfocus(312)">$LOCALIZE[31966]</value>
+        <value condition="Control.hasfocus(312)">$LOCALIZE[31011]</value>
         <value condition="Control.hasfocus(411)">$LOCALIZE[31961]</value>
-        <value condition="Control.hasfocus(412)">$LOCALIZE[31966]</value>
+        <value condition="Control.hasfocus(412)">$LOCALIZE[31011]</value>
+        <value condition="Control.hasfocus(413)">$LOCALIZE[31932]</value>
         <value condition="Control.hasfocus(511)">$LOCALIZE[31961]</value>
         <value condition="Control.hasfocus(700011)|Control.hasfocus(700012)|Control.hasfocus(700013)|Control.hasfocus(700014)|Control.hasfocus(700015)">$INFO[Container(300).ListItem.Property(widgetName)]</value>
         <value condition="Control.hasfocus(700021)|Control.hasfocus(700022)|Control.hasfocus(700023)|Control.hasfocus(700024)|Control.hasfocus(700025)">$INFO[Container(300).ListItem.Property(widgetName.1)]</value>
@@ -132,6 +133,7 @@
         <value condition="Control.hasfocus(312)">$INFO[Container(312).NumItems,, $LOCALIZE[31025]]$INFO[Container(312).CurrentPage, - ]$INFO[Container(312).NumPages,/]</value>
         <value condition="Control.hasfocus(411)">$INFO[Container(411).NumItems,, $LOCALIZE[31025]]$INFO[Container(411).CurrentPage, - ]$INFO[Container(411).NumPages,/]</value>
         <value condition="Control.hasfocus(412)">$INFO[Container(412).NumItems,, $LOCALIZE[31025]]$INFO[Container(412).CurrentPage, - ]$INFO[Container(412).NumPages,/]</value>
+        <value condition="Control.hasfocus(413)">$INFO[Container(413).NumItems,, $LOCALIZE[31025]]$INFO[Container(413).CurrentPage, - ]$INFO[Container(413).NumPages,/]</value>
         <value condition="Control.hasfocus(511)">$INFO[Container(511).NumItems,, $LOCALIZE[31025]]$INFO[Container(511).CurrentPage, - ]$INFO[Container(511).NumPages,/]</value>
         <value condition="Control.hasfocus(700011)">$INFO[Container(700011).NumItems,, $LOCALIZE[31025]]$INFO[Container(700011).CurrentPage, - ]$INFO[Container(700011).NumPages,/]</value>
         <value condition="Control.hasfocus(700012)">$INFO[Container(700012).NumItems,, $LOCALIZE[31025]]$INFO[Container(700012).CurrentPage, - ]$INFO[Container(700012).NumPages,/]</value>
@@ -508,6 +510,7 @@
         <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(511)">$INFO[Container(511).ListItem.Property(Art)]</value>
         <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(411)">$INFO[Container(411).ListItem.Property(Art)]</value>
         <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(412)">$INFO[Container(412).ListItem.Property(Art)]</value>
+        <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(413)">$INFO[Container(413).ListItem.Property(Art)]</value>
         <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(900)">$INFO[Container(900).ListItem.Property(Art)]</value>
         <value condition="Control.HasFocus(700011)">$INFO[Container(700011).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700012)">$INFO[Container(700012).ListItem.Art(fanart)]</value>
@@ -845,6 +848,7 @@
         <value condition="Control.HasFocus(212)">$INFO[Container(212).ListItem.Thumb]</value>
         <value condition="Control.HasFocus(411)">$INFO[Container(411).ListItem.Thumb]</value>
         <value condition="Control.HasFocus(412)">$INFO[Container(412).ListItem.Thumb]</value>
+        <value condition="Control.HasFocus(413)">$INFO[Container(413).ListItem.Thumb]</value>
         <value condition="Control.HasFocus(700011)+!IsEmpty(Container(700011).ListItem.Art(poster))+!SubString(Container(700011).ListItem.Art(poster),Default,Left)">$INFO[Container(700011).ListItem.Art(poster)]</value>
         <value condition="Control.HasFocus(700012)+!IsEmpty(Container(700012).ListItem.Art(poster))+!SubString(Container(700012).ListItem.Art(poster),Default,Left)">$INFO[Container(700012).ListItem.Art(poster)]</value>
         <value condition="Control.HasFocus(700013)+!IsEmpty(Container(700013).ListItem.Art(poster))+!SubString(Container(700013).ListItem.Art(poster),Default,Left)">$INFO[Container(700013).ListItem.Art(poster)]</value>
