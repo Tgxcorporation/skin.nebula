@@ -20,7 +20,7 @@
                 [[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),movie)]|
                 [[IntegerGreaterThan(Container(511).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),artist)]|
                 [[IntegerGreaterThan(Container(212).NumItems,0)]+Container(300).HasFocus(50)]|
-                [[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(412).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),show)]
+                [[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(412).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),show)]
                 ]]
                 ]</visible>
             <include>HiddenButton</include>
@@ -32,6 +32,7 @@
                 control.hasfocus(312)|
                 control.hasfocus(411)|
                 control.hasfocus(412)|
+                control.hasfocus(413)|
                 control.hasfocus(511)|
                 control.hasfocus(900)|
                 control.hasfocus(901)|
@@ -70,6 +71,7 @@
                 [Control.HasFocus(312)+!IsEmpty(Container(312).ListItem.Thumb)+!SubString(Container(312).ListItem.Thumb,Default,Left)]|
                 [Control.HasFocus(411)+!IsEmpty(Container(411).ListItem.Thumb)+!SubString(Container(411).ListItem.Thumb,Default,Left)]|
                 [Control.HasFocus(412)+!IsEmpty(Container(412).ListItem.Thumb)+!SubString(Container(412).ListItem.Thumb,Default,Left)]|
+                [Control.HasFocus(413)+!IsEmpty(Container(413).ListItem.Thumb)+!SubString(Container(413).ListItem.Thumb,Default,Left)]|
                 [Control.HasFocus(511)+!IsEmpty(Container(511).ListItem.Thumb)+!SubString(Container(511).ListItem.Thumb,Default,Left)]|
                 [Control.HasFocus(900)+!IsEmpty(Container(900).ListItem.Thumb)+!SubString(Container(900).ListItem.Thumb,Default,Left)]|
                 [Control.HasFocus(700011)+!IsEmpty(Container(700011).ListItem.Thumb)+!SubString(Container(700011).ListItem.Thumb,Default,Left)]|
@@ -102,6 +104,7 @@
                 [Control.HasFocus(312)+!IsEmpty(Container(312).ListItem.Art(poster))+!SubString(Container(312).ListItem.Art(poster),Default,Left)]|
                 [Control.HasFocus(411)+!IsEmpty(Container(411).ListItem.Art(poster))+!SubString(Container(411).ListItem.Art(poster),Default,Left)]|
                 [Control.HasFocus(412)+!IsEmpty(Container(412).ListItem.Art(poster))+!SubString(Container(412).ListItem.Art(poster),Default,Left)]|
+                [Control.HasFocus(413)+!IsEmpty(Container(413).ListItem.Art(poster))+!SubString(Container(413).ListItem.Art(poster),Default,Left)]|
                 [Control.HasFocus(511)+!IsEmpty(Container(511).ListItem.Art(poster))+!SubString(Container(511).ListItem.Art(poster),Default,Left)]|
                 [Control.HasFocus(900)+!IsEmpty(Container(900).ListItem.Art(poster))+!SubString(Container(900).ListItem.Art(poster),Default,Left)]|
                 [Control.HasFocus(700011)+!IsEmpty(Container(700011).ListItem.Art(poster))+!SubString(Container(700011).ListItem.Art(poster),Default,Left)]|
