@@ -3616,7 +3616,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.1.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.1.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.1.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.1.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.1.Path)]</onclick>
             </item>
             <item id="2">
@@ -3631,7 +3630,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.2.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.2.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.2.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.2.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.2.Path)]</onclick>
             </item>
             <item id="3">
@@ -3646,7 +3644,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.3.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.3.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.3.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.3.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.3.Path)]</onclick>
             </item>
             <item id="4">
@@ -3661,7 +3658,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.4.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.4.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.4.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.4.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.4.Path)]</onclick>
             </item>
             <item id="5">
@@ -3676,7 +3672,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.5.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.5.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.5.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.5.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.5.Path)]</onclick>
             </item>
             <item id="6">
@@ -3691,7 +3686,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.6.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.6.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.6.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.6.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.6.Path)]</onclick>
             </item>
             <item id="7">
@@ -3706,7 +3700,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.7.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.7.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.7.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.7.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.7.Path)]</onclick>
             </item>
             <item id="8">
@@ -3721,7 +3714,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.8.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.8.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.8.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.8.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.8.Path)]</onclick>
             </item>
             <item id="9">
@@ -3736,7 +3728,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.9.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.9.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.9.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.9.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.9.Path)]</onclick>
             </item>
             <item id="10">
@@ -3751,7 +3742,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.10.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.10.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.10.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.10.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.10.Path)]</onclick>
             </item>
             <item id="11">
@@ -3766,7 +3756,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.11.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.11.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.11.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.11.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.11.Path)]</onclick>
             </item>
             <item id="12">
@@ -3781,7 +3770,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.12.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.12.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.12.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.12.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.12.Path)]</onclick>
             </item>
             <item id="13">
@@ -3796,7 +3784,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.13.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.13.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.13.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.13.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.13.Path)]</onclick>
             </item>
             <item id="14">
@@ -3811,7 +3798,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.14.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.14.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.14.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.14.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.14.Path)]</onclick>
             </item>
             <item id="15">
@@ -3826,7 +3812,6 @@
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.15.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.15.Plot)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.15.Art)]</property>
-                <property name="Rating">$INFO[Window(home).Property(Plexbmc.RecentlyViewedShow.15.Rating)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.RecentlyViewedShow.15.Path)]</onclick>
             </item>
         </content>
