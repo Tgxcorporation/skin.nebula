@@ -123,7 +123,7 @@
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[13350]</label>
                     <onclick>ActivateWindow(videoplaylist)</onclick>
-                    <visible>!String.IsEqual(Playlist.Length,0)</visible>
+                    <visible>Integer.IsGreater(Playlist.Length(video),0)</visible>
                 </control>
                 <control type="radiobutton" id="11">
                     <description>Unlock Shares</description>
