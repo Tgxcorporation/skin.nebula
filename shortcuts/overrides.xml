@@ -61,13 +61,13 @@
     <widgetRename>True</widgetRename>
 
     <!-- default widgets -->
-    <widgetdefaultnode labelID="movies" group="mainmenu" label="$LOCALIZE[31400]" type="movies" path="plugin://script.skin.helper.service/?action=RECOMMENDEDMOVIES&amp;reload=$INFO[Window(Home).Property(widgetreload)]" target="video">recommendedmovies</widgetdefaultnode>
+    <widgetdefaultnode labelID="movies" group="mainmenu" label="$LOCALIZE[31400]" type="movies" path="special://skin/widgetplaylists/recommendedmovies.xsp" target="video">recommendedmovies</widgetdefaultnode>
     <widgetdefaultnode labelID="tvshows" group="mainmenu" label="$LOCALIZE[31417]" type="episodes" path="special://skin/widgetplaylists/recommendedepisodes.xsp" target="video">recommendedepisodes</widgetdefaultnode>
     <widgetdefaultnode labelID="music" group="mainmenu" label="517" type="albums" path="musicdb://recentlyplayedalbums" target="music">recentlyplayedalbums</widgetdefaultnode>
     <widgetdefaultnode labelID="31971" group="mainmenu" label="31402" type="musicvideos" path="special://skin/widgetplaylists/recommendedmusicvideos.xsp" target="video">recommendedmusicvideos</widgetdefaultnode>
     <widgetdefaultnode labelID="31972" group="mainmenu" label="31403" type="musicvideos" path="special://skin/widgetplaylists/recommendedmusicvideos.xsp" target="video">recommendedmusicvideos</widgetdefaultnode>
     <widgetdefaultnode labelID="24001" group="mainmenu" label="1037" type="addon" path="addons://sources/video/" target="video">videoaddons</widgetdefaultnode>
-    <widgetdefaultnode labelID="livetv" group="mainmenu" label="19017" type="tv" path="plugin://script.skin.helper.service/?action=pvrrecordings&amp;limit=25&amp;reload=$INFO[Window(home).Property(widgetreload2)]" target="pvr">tvrecordings</widgetdefaultnode>
+    <widgetdefaultnode labelID="livetv" group="mainmenu" label="19017" type="tv" path="pvr://recordings/tv/active?view=flat" target="pvr">tvrecordings</widgetdefaultnode>
     <widgetdefaultnode labelID="radio" group="mainmenu" label="19017" type="radio" path="pvr://recordings/radio/active?view=flat" target="pvr">radiorecordings</widgetdefaultnode>
 
     <!-- secondary widgets -->

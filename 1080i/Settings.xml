@@ -73,6 +73,7 @@
                         <label>Nebula</label>
                     </control>
                     <control type="label">
+                        <visible>System.HasAddon(script.skin.helper.service)</visible>
                         <posx>75</posx>
                         <posy>771</posy>
                         <height>36</height>

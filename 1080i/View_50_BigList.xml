@@ -418,6 +418,14 @@
                     <include>BigList_Layout</include>
                     <content>
                         <item id="2">
+                            <visible>!System.HasAddon(script.skin.helper.service)</visible>
+                            <visible>!Skin.HasSetting(Addons.Hide)</visible>
+                            <label>$LOCALIZE[0]</label>
+                            <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
+                            <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
+                        </item>
+                        <item id="2">
+                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <visible>!Skin.HasSetting(Addons.Hide)</visible>
                             <label>$LOCALIZE[0]</label>
                             <label2>$INFO[Window(Home).Property(SkinHelper.TotalProgramAddons),, $LOCALIZE[24001]]</label2>
@@ -425,18 +433,39 @@
                             <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
                         </item>
                         <item id="3">
+                            <visible>!System.HasAddon(script.skin.helper.service)</visible>
+                            <visible>!Skin.HasSetting(Addons.Hide)</visible>
+                            <label>$LOCALIZE[1037]</label>
+                            <onclick>ActivateWindow(Videos,Addons,return)</onclick>
+                        </item>
+                        <item id="3">
+                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <visible>!Skin.HasSetting(Addons.Hide)</visible>
                             <label>$LOCALIZE[1037]</label>
                             <label2>$INFO[Window(Home).Property(SkinHelper.TotalVideoAddons),, $LOCALIZE[24001]]</label2>
                             <onclick>ActivateWindow(Videos,Addons,return)</onclick>
                         </item>
                         <item id="4">
+                            <visible>!System.HasAddon(script.skin.helper.service)</visible>
+                            <visible>!Skin.HasSetting(Addons.Hide)</visible>
+                            <label>$LOCALIZE[1038]</label>
+                            <onclick>ActivateWindow(Music,Addons,return)</onclick>
+                        </item>
+                        <item id="4">
+                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <visible>!Skin.HasSetting(Addons.Hide)</visible>
                             <label>$LOCALIZE[1038]</label>
                             <label2>$INFO[Window(Home).Property(SkinHelper.TotalAudioAddons),, $LOCALIZE[24001]]</label2>
                             <onclick>ActivateWindow(Music,Addons,return)</onclick>
                         </item>
                         <item id="5">
+                            <visible>!System.HasAddon(script.skin.helper.service)</visible>
+                            <visible>!Skin.HasSetting(Addons.Hide)</visible>
+                            <label>$LOCALIZE[1039]</label>
+                            <onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
+                        </item>
+                        <item id="5">
+                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <visible>!Skin.HasSetting(Addons.Hide)</visible>
                             <label>$LOCALIZE[1039]</label>
                             <label2>$INFO[Window(Home).Property(SkinHelper.TotalPicturesAddons),, $LOCALIZE[24001]]</label2>
@@ -463,6 +492,13 @@
                             <onclick>ActivateWindow(Videos,"plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall",return)</onclick>
                         </item>
                         <item id="2">
+                            <visible>!System.HasAddon(script.skin.helper.service)</visible>
+                            <visible>!Skin.HasSetting(Addons.Hide)</visible>
+                            <label>$LOCALIZE[10040]</label>
+                            <onclick>ActivateWindow(AddonBrowser,root)</onclick>
+                        </item>
+                        <item id="2">
+                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <visible>!Skin.HasSetting(Addons.Hide)</visible>
                             <label>$LOCALIZE[10040]</label>
                             <label2>$INFO[Window(Home).Property(SkinHelper.TotalAddons),, $LOCALIZE[24001]]</label2>
