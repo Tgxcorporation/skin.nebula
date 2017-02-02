@@ -1212,7 +1212,7 @@
             </control>
             <control type="label">
                 <posx>960r</posx>
-                <visible>!StringCompare(ListItem.Label,)</visible>
+                <visible>!StringCompare(ListItem.Label,) + [!StringCompare(ListItem.Label2,$LOCALIZE[106])+!StringCompare(ListItem.Label2,$LOCALIZE[107])]</visible>
                 <height>78</height>
                 <width>900</width>
                 <align>right</align>
@@ -1238,6 +1238,46 @@
                 <include>TextColor_AlternateColor</include>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
+            <control type="image">
+                <include>ConditionWhite</include>
+                <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[106])</visible>
+                <posx>1805</posx>
+                <posy>0</posy>
+                <height>78</height>
+                <width>53</width>
+                <aspectratio align="right" aligny="center">keep</aspectratio>
+                <texture>white/buttons/RadioOffNF.png</texture>
+            </control>
+            <control type="image">
+                <include>ConditionWhite</include>
+                <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[107])</visible>
+                <posx>1805</posx>
+                <posy>0</posy>
+                <height>78</height>
+                <width>53</width>
+                <aspectratio align="right" aligny="center">keep</aspectratio>
+                <texture>white/buttons/RadioOnNF.png</texture>
+            </control>
+            <control type="image">
+                <include>ConditionBlack</include>
+                <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[106])</visible>
+                <posx>1805</posx>
+                <posy>0</posy>
+                <height>78</height>
+                <width>53</width>
+                <aspectratio align="right" aligny="center">keep</aspectratio>
+                <texture>black/buttons/RadioOffNF.png</texture>
+            </control>
+            <control type="image">
+                <include>ConditionBlack</include>
+                <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[107])</visible>
+                <posx>1805</posx>
+                <posy>0</posy>
+                <height>78</height>
+                <width>53</width>
+                <aspectratio align="right" aligny="center">keep</aspectratio>
+                <texture>black/buttons/RadioOnNF.png</texture>
+            </control>
         </itemlayout>
         <focusedlayout width="1920" height="78">
             <control type="group">
@@ -1262,7 +1302,7 @@
                 </control>
                 <control type="label">
                     <posx>960r</posx>
-                    <visible>!StringCompare(ListItem.Label,)</visible>
+                    <visible>!StringCompare(ListItem.Label,) + [!StringCompare(ListItem.Label2,$LOCALIZE[106])+!StringCompare(ListItem.Label2,$LOCALIZE[107])]</visible>
                     <height>78</height>
                     <width>900</width>
                     <scroll>true</scroll>
@@ -1289,6 +1329,46 @@
                     <font>LeftMenuTitleFont</font>
                     <include>TextColor_MainColor</include>
                     <label>$INFO[ListItem.Label2]</label>
+                </control>
+                <control type="image">
+                    <include>ConditionWhite</include>
+                    <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[106])</visible>
+                    <posx>1805</posx>
+                    <posy>0</posy>
+                    <height>78</height>
+                    <width>53</width>
+                    <aspectratio align="right" aligny="center">keep</aspectratio>
+                    <texture>white/buttons/RadioOffFO.png</texture>
+                </control>
+                <control type="image">
+                    <include>ConditionWhite</include>
+                    <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[107])</visible>
+                    <posx>1805</posx>
+                    <posy>0</posy>
+                    <height>78</height>
+                    <width>53</width>
+                    <aspectratio align="right" aligny="center">keep</aspectratio>
+                    <texture>white/buttons/RadioOnFO.png</texture>
+                </control>
+                <control type="image">
+                    <include>ConditionBlack</include>
+                    <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[106])</visible>
+                    <posx>1805</posx>
+                    <posy>0</posy>
+                    <height>78</height>
+                    <width>53</width>
+                    <aspectratio align="right" aligny="center">keep</aspectratio>
+                    <texture>black/buttons/RadioOffFO.png</texture>
+                </control>
+                <control type="image">
+                    <include>ConditionBlack</include>
+                    <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[107])</visible>
+                    <posx>1805</posx>
+                    <posy>0</posy>
+                    <height>78</height>
+                    <width>53</width>
+                    <aspectratio align="right" aligny="center">keep</aspectratio>
+                    <texture>black/buttons/RadioOnFO.png</texture>
                 </control>
             </control>
         </focusedlayout>
