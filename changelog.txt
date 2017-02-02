@@ -1,4 +1,5 @@
 4.10.0
+New layout for topbars. Added volume and window controls in Music and Video OSD.
 Added donation message.
 Enhanced seek bar.
 Added Runtime for PleXBMC Episode widgets (only for Tgxcorporation's pleXBMC plugin).
