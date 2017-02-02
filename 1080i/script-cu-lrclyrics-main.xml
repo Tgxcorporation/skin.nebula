@@ -7,6 +7,7 @@
         <control type="group">
             <include>FacadeFadeDialogs2ndLevelCondition</include>
             <include>Icon_Fade</include>
+            <visible>![window.IsActive(MusicOSD.xml)]</visible>
             <control type="group">
                 <include>DialogOpenClose</include>
                 <control type="image">
