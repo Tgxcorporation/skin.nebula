@@ -1,5 +1,4 @@
 4.10.0
-Added toggles to skin settings.
 Added donation message.
 Enhanced seek bar.
 Added Runtime for PleXBMC Episode widgets (only for Tgxcorporation's pleXBMC plugin).
