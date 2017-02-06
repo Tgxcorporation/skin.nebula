@@ -38,16 +38,16 @@
                     <posy>135</posy>
                     <control type="image">
                         <posx>75</posx>
-                        <posy>343</posy>
+                        <posy>393</posy>
                         <width>1196</width>
-                        <height>485</height>
+                        <height>435</height>
                         <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                         <texture border="10">$VAR[Theme.Color]/common/HomeGradient.png</texture>
                     </control>
                     <control type="image">
                         <include>ConditionWhite</include>
                         <posx>571</posx>
-                        <posy>571</posy>
+                        <posy>621</posy>
                         <width>202</width>
                         <height>56</height>
                         <texture>$VAR[Theme.Color]/common/logo.png</texture>
@@ -56,7 +56,7 @@
                     <control type="image">
                         <include>ConditionBlack</include>
                         <posx>571</posx>
-                        <posy>571</posy>
+                        <posy>621</posy>
                         <width>202</width>
                         <height>56</height>
                         <texture>$VAR[Theme.Color]/common/logo.png</texture>
@@ -64,7 +64,7 @@
                     </control>
                     <control type="label">
                         <posx>75</posx>
-                        <posy>655</posy>
+                        <posy>711</posy>
                         <height>36</height>
                         <width>1196</width>
                         <align>center</align>
@@ -75,23 +75,13 @@
                     <control type="label">
                         <visible>System.HasAddon(script.skin.helper.service)</visible>
                         <posx>75</posx>
-                        <posy>711</posy>
+                        <posy>771</posy>
                         <height>36</height>
                         <width>1196</width>
                         <align>center</align>
                         <font>WindowTitleSubFont</font>
                         <include>TextColor_MainColor</include>
                         <label>$INFO[Window(Home).Property(SkinHelper.skinVersion)] by Tgx</label>
-                    </control>
-                    <control type="label">
-                        <posx>75</posx>
-                        <posy>768</posy>
-                        <height>36</height>
-                        <width>1196</width>
-                        <align>center</align>
-                        <font>InfoTitleSubFont</font>
-                        <include>TextColor_MainColor</include>
-                        <label>$LOCALIZE[31086]</label>
                     </control>
                 </control>
             </control>
