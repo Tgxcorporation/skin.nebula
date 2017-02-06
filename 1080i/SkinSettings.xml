@@ -1750,6 +1750,16 @@
                 </content>
             </control>
             <include>LeftMenuScroller</include>
+            <control type="textbox">
+                <posx>-600</posx>
+                <posy>840</posy>
+                <height>145</height>
+                <width>540</width>
+                <align>left</align>
+                <font>InfoTitleSubFont</font>
+                <include>TextColor_AlternateColor</include>
+                <label>$LOCALIZE[31086] [B]massimo@pagani.no.it[/B]</label>
+            </control>
         </control>
     </controls>
 </window>
