@@ -182,6 +182,11 @@
                         <label2>$VAR[Weather.Art]</label2>
                         <onclick>ActivateWindow(WeatherSettings)</onclick>
                     </item>
+                    <item>
+                        <label>$LOCALIZE[20077]</label>
+                        <label2>$VAR[Default.Art]</label2>
+                        <onclick>activatewindow(skinsettings)</onclick>
+                    </item>
                 </content>
             </control>
             <control type="scrollbar" id="60">
