@@ -5,8 +5,6 @@
         <!-- <include>DimBG</include> -->
         <!-- <include>TopBar</include> -->
         <control type="group">
-            <include>FacadeFadeDialogs3rdLevelCondition</include>
-            <include>Icon_Fade</include>
             <control type="group">
                 <include>DialogOpenClose</include>
                 <posy>-30</posy>
