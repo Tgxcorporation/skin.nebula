@@ -9,7 +9,6 @@
             <visible>![
                 Window.IsVisible(DialogButtonMenu.xml)|
                 Window.IsVisible(DialogKeyboard.xml)|
-                Window.IsVisible(DialogSettings.xml)|
                 Window.IsVisible(DialogNumeric.xml)|
                 Window.IsVisible(DialogContextMenu.xml)|
                 Window.IsVisible(DialogSelect.xml)|
