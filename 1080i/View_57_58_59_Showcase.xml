@@ -548,7 +548,7 @@
                     <include>UpperFade</include>
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Window.IsActive(MyMusicNav.xml)|Window.IsActive(MyMusicSongs.xml)]"/>
+                        <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.Content(songs)|Container.Content(albums)]"/>
                         <param name="x" value="295"/>
                         <param name="y" value="203"/>
                         <param name="width" value="430"/>

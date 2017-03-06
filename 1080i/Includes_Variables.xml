@@ -837,20 +837,25 @@
     </variable>
     <variable name="VideoCdArt">
         <value condition="Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)+!String.IsEmpty(Window.Property(DiscArt))">$INFO[Window.Property(DiscArt)]</value>
-        <value condition="Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)+String.IsEmpty(Window.Property(DiscArt))">$INFO[Window.Property(Poster)]</value>
+        <!--<value condition="Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)+String.IsEmpty(Window.Property(DiscArt))">$INFO[Window.Property(Poster)]</value>-->
+        <value condition="Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)+String.IsEmpty(Window.Property(DiscArt))">white/common/cdart.png</value>
         <value condition="!String.IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
-        <value>$INFO[ListItem.Art(poster)]</value>
+        <!--<value>$INFO[ListItem.Art(poster)]</value>-->
+        <value>white/common/cdart.png</value>
     </variable>
     <variable name="MusicCdArt">
-        <value condition="!Skin.HasSetting(plexbmc)+!ListItem.IsParentFolder+Skin.HasSetting(EnableCdArt)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=$INFO[ListItem.Thumb]</value>
+        <!--<value condition="!Skin.HasSetting(plexbmc)+!ListItem.IsParentFolder+Skin.HasSetting(EnableCdArt)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=$INFO[ListItem.Thumb]</value>-->
+        <value condition="!Skin.HasSetting(plexbmc)+!ListItem.IsParentFolder+Skin.HasSetting(EnableCdArt)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=white/common/cdart.png</value>
     </variable>
     <variable name="VideoPlayerCdArt">
         <value condition="!String.IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
-        <value condition="!VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Cover]</value>
+        <!--<value condition="!VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Cover]</value>-->
+        <value condition="!VideoPlayer.Content(episodes)">white/common/cdart.png</value>
     </variable>
     <variable name="MusicPlayerCdArt">
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</value>
-        <value>$INFO[Player.Art(thumb)]</value>
+        <!--<value>$INFO[Player.Art(thumb)]</value>-->
+        <value>white/common/cdart.png</value>
     </variable>
     <variable name="DefaultClearArt">
         <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)]</value>
