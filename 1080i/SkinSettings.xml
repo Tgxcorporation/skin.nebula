@@ -1607,7 +1607,7 @@
                         <control type="button" id="8528083">
                             <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <label>-</label>
-                            <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=PickedColor)</onclick>
+                            <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PickedColor)</onclick>
                             <include>ButtonFocusAnimation</include>
                             <posx>960</posx>
                             <posy>903</posy>
