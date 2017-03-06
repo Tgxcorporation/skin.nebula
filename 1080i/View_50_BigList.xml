@@ -192,6 +192,7 @@
                             <include>Stars</include>
                         </control>
                         <control type="label">
+                            <visible>![Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]</visible>
                             <posx>115</posx>
                             <posy>65</posy>
                             <width>460</width>
@@ -201,6 +202,18 @@
                             <scroll>false</scroll>
                             <!--<label fallback="416">$INFO[ListItem.Rating]</label>-->
                             <label>$INFO[ListItem.RatingAndVotes]</label>
+                        </control>
+                        <control type="label">
+                            <visible>[Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]</visible>
+                            <posx>115</posx>
+                            <posy>65</posy>
+                            <width>460</width>
+                            <height>71</height>
+                            <font>InfoDetailsFont</font>
+                            <include>TextColor_MainColor</include>
+                            <scroll>false</scroll>
+                            <!--<label fallback="416">$INFO[ListItem.Rating]</label>-->
+                            <label fallback="0.0">$INFO[ListItem.UserRating,,.0]</label>
                         </control>
                     </control>
                     <control type="label">
