@@ -209,14 +209,12 @@
                                 <onclick>ReloadSkin()</onclick>
                             </item>
                             <item id="127">
-                                <visible>System.HasAddon(script.skin.helper.service)</visible>
-                                <label>$ADDON[script.skin.helper.service 32028]</label>
-                                <onclick>RunScript(script.skin.helper.service,action=backup)</onclick>
+                                <label>$ADDON[script.skin.helper.skinbackup 32004]</label>
+                                <onclick>RunScript(script.skin.helper.skinbackup,action=backup)</onclick>
                             </item>
                             <item id="128">
-                                <visible>System.HasAddon(script.skin.helper.service)</visible>
-                                <label>$ADDON[script.skin.helper.service 32032]</label>
-                                <onclick>RunScript(script.skin.helper.service,action=restore)</onclick>
+                                <label>$ADDON[script.skin.helper.skinbackup 32006]</label>
+                                <onclick>RunScript(script.skin.helper.skinbackup,action=restore)</onclick>
                             </item>
                         </content>
                     </control>

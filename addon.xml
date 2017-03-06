@@ -10,6 +10,7 @@
         <import addon="resource.uisounds.nebula" version="0.0.1"/>
         <import addon="resource.images.languageflags.colour" version="0.0.2"/>
         <import addon="script.image.resource.select" version="0.0.5"/>
+        <import addon="script.skin.helper.skinbackup" version="1.0.12"/>
     </requires>
     <extension point="xbmc.gui.skin" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
