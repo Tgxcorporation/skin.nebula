@@ -1776,7 +1776,7 @@
                 |
                 [!String.IsEmpty(ListItem.Art(tvshow.clearart)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
                 |
-                [!String.IsEmpty(Window(Home).Property(SkinHelper.Music.ClearLogo)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
+                [!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
                 ]
             </visible>
             <include>HiddenButton</include>
