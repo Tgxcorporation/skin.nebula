@@ -53,7 +53,7 @@
                     <onleft>9000</onleft>
                     <onright>60</onright>
                     <onup>3110</onup>
-                    <ondown>3110</ondown>
+                    <ondown>9001</ondown>
                     <preloaditems>4</preloaditems>
                     <pagecontrol>60</pagecontrol>
                     <itemlayout height="70" width="69">
