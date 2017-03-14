@@ -509,25 +509,24 @@
         </control>
     </include>
     <include name="FacadeFadeDialogs2ndLevelCondition">
-        <visible>![
-            Window.IsVisible(DialogButtonMenu.xml)|
-            Window.IsVisible(DialogPlayerProcessInfo.xml)|
-            Window.IsVisible(DialogKeyboard.xml)|
-            Window.IsVisible(DialogNumeric.xml)|
-            Window.IsVisible(DialogFileStacking.xml)|
-            Window.IsVisible(DialogContextMenu.xml)|
-            Window.IsVisible(DialogSelect.xml)|
-            Window.IsVisible(FileBrowser.xml)|
-            Window.IsVisible(DialogTextViewer.xml)|
-            Window.IsVisible(DialogConfirm.xml)|
-            Window.IsVisible(DialogGamepad.xml)|
-            Window.IsVisible(script-globalsearch-infodialog.xml)
-            ]</visible>
+        <!--<visible>![-->
+            <!--Window.IsVisible(DialogButtonMenu.xml)|-->
+            <!--Window.IsVisible(DialogPlayerProcessInfo.xml)|-->
+            <!--Window.IsVisible(DialogKeyboard.xml)|-->
+            <!--Window.IsVisible(DialogNumeric.xml)|-->
+            <!--Window.IsVisible(DialogFileStacking.xml)|-->
+            <!--Window.IsVisible(DialogContextMenu.xml)|-->
+            <!--Window.IsVisible(DialogSelect.xml)|-->
+            <!--Window.IsVisible(DialogTextViewer.xml)|-->
+            <!--Window.IsVisible(DialogConfirm.xml)|-->
+            <!--Window.IsVisible(DialogGamepad.xml)|-->
+            <!--Window.IsVisible(script-globalsearch-infodialog.xml)-->
+            <!--]</visible>-->
     </include>
     <include name="FacadeFadeDialogs3rdLevelCondition">
-        <visible>![
-            Window.IsVisible(DialogButtonMenu.xml)
-            ]</visible>
+        <!--<visible>![-->
+            <!--Window.IsVisible(DialogButtonMenu.xml)-->
+            <!--]</visible>-->
     </include>
     <include name="Time">
         <control type="group">
@@ -1640,7 +1639,7 @@
         </control>
     </include>
     <include name="DialogTransparency">
-        <animation effect="fade" start="85" end="85" time="0" reversible="false" condition="true">Conditional</animation>
+        <animation effect="fade" start="95" end="95" time="0" reversible="false" condition="true">Conditional</animation>
         <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
     </include>
     <include name="ScrollOffsetLabel">
