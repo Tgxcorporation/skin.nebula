@@ -45,7 +45,7 @@
                 </control>
                 <include content="ProgressBar">
                     <param name="id" value="20"/>
-                    <param name="visible" value="true"/>
+                    <param name="visible" value="Integer.IsGreater(System.Progressbar,0)"/>
                     <param name="x" value="0"/>
                     <param name="y" value="394"/>
                     <param name="width" value="1920"/>

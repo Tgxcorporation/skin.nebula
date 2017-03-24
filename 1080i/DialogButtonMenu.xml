@@ -6,7 +6,7 @@
         <!-- <include>DimBG</include> -->
         <include>TopBar</include>
         <control type="group">
-            <visible>![Window.IsVisible(DialogNumeric.xml)]</visible>
+            <!--<visible>![Window.IsVisible(DialogNumeric.xml)]</visible>-->
             <include>Icon_Fade</include>
             <control type="group">
                 <include>DialogOpenClose</include>
