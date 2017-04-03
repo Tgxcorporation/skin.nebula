@@ -244,7 +244,7 @@
                                 +!Skin.HasSetting(plexbmc)
                                 +[
                                     [[!String.IsEmpty(ListItem.Art(poster))|!String.IsEmpty(ListItem.Art(discart))]+[Container.content(movies)|Container.content(musicvideos)]]
-                                    |Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)
+                                    |Window.IsActive(script-script.extendedinfo-DialogInfo.xml)
                                     |[[[Container.content(songs)|Container.content(albums)]+Window.IsActive(MyMusicNav.xml)]|Window.IsActive(MyMusicSongs.xml)]
                                 ]">
             <include>PulseBasicVisible</include>
@@ -258,7 +258,7 @@
                                 +!Skin.HasSetting(plexbmc)
                                 +[
                                     [[!String.IsEmpty(ListItem.Art(poster))|!String.IsEmpty(ListItem.Art(discart))]+[Container.content(movies)|Container.content(musicvideos)]]
-                                    |Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)
+                                    |Window.IsActive(script-script.extendedinfo-DialogInfo.xml)
                                     |[[[Container.content(songs)|Container.content(albums)]+Window.IsActive(MyMusicNav.xml)]|Window.IsActive(MyMusicSongs.xml)]
                                 ]">
             <include>PulseBasicHidden</include>

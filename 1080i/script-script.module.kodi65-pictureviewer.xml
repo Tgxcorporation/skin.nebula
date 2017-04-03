@@ -31,7 +31,7 @@
                     <width>1990</width>
                     <height>1150</height>
                     <aspectratio>keep</aspectratio>
-                    <texture>$INFO[ListItem.Property(Original)]</texture>
+                    <texture>$INFO[ListItem.Art(original)]</texture>
                     <include>ThumbBorder</include>
                 </control>
             </itemlayout>
@@ -42,7 +42,7 @@
                     <width>1990</width>
                     <height>1150</height>
                     <aspectratio>keep</aspectratio>
-                    <texture>$INFO[ListItem.Property(Original)]</texture>
+                    <texture>$INFO[ListItem.Art(original)]</texture>
                     <include>ThumbBorder</include>
                 </control>
             </focusedlayout>

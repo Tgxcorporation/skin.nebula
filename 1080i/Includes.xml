@@ -492,7 +492,7 @@
                 Window.IsVisible(RecordPrefs.xml)|
                 Window.IsVisible(script-skin_helper_service-ColorPicker.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml)|
-                Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)|
+                Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)|
                 Window.IsVisible(script-ExtendedInfo Script-SlideShow.xml)|
                 Window.IsVisible(script-globalsearch-infodialog.xml)|
                 Window.IsVisible(script-globalsearch-main.xml)|
