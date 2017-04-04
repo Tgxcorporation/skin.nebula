@@ -223,6 +223,12 @@
                                 <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
                             </item>
                             <item>
+                                <label>$LOCALIZE[21374]:</label>
+                                <label2>$INFO[ListItem.VideoAspect]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
+                            </item>
+                            <item>
                                 <label>$LOCALIZE[21446]:</label>
                                 <label2>$INFO[ListItem.AudioCodec]</label2>
                                 <onclick>noop</onclick>
@@ -496,6 +502,12 @@
                                     <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
                                 </item>
                                 <item>
+                                    <label>$LOCALIZE[21374]:</label>
+                                    <label2>$INFO[ListItem.VideoAspect]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
+                                </item>
+                                <item>
                                     <label>$LOCALIZE[21446]:</label>
                                     <label2>$INFO[ListItem.AudioCodec]</label2>
                                     <onclick>noop</onclick>
@@ -679,6 +691,12 @@
                                     <label2>$INFO[ListItem.VideoResolution]</label2>
                                     <onclick>noop</onclick>
                                     <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[21374]:</label>
+                                    <label2>$INFO[ListItem.VideoAspect]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21446]:</label>
