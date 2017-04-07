@@ -1281,8 +1281,8 @@
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                 <param name="id" value="700014"/>
-                <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType),tv)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType),radio)"/>
+                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType),tv)|
+                    String.IsEqual(Container(300).ListItem.Property(widgetType),radio)"/>
                 <param name="labelTitle" value="$INFO[Container(700014).ListItem.Label]"/>
                 <param name="labelRow1" value="$INFO[Container(700014).ListItem.Label2,,       ]$INFO[Container(700014).ListItem.Duration,, $LOCALIZE[31297]]"/>
                 <param name="labelRow2" value="$INFO[Container(700014).ListItem.Genre]"/>
@@ -1376,8 +1376,8 @@
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
                 <param name="id" value="700024"/>
-                <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.1),tv)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.1),radio)"/>
+                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.1),tv)|
+                    String.IsEqual(Container(300).ListItem.Property(widgetType.1),radio)"/>
                 <param name="labelTitle" value="$INFO[Container(700024).ListItem.Label]"/>
                 <param name="labelRow1" value="$INFO[Container(700024).ListItem.Label2,,       ]$INFO[Container(700024).ListItem.Duration,, $LOCALIZE[31297]]"/>
                 <param name="labelRow2" value="$INFO[Container(700024).ListItem.Genre]"/>
@@ -1471,8 +1471,8 @@
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
                 <param name="id" value="700034"/>
-                <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.2),tv)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.2),radio)"/>
+                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.2),tv)|
+                    String.IsEqual(Container(300).ListItem.Property(widgetType.2),radio)"/>
                 <param name="labelTitle" value="$INFO[Container(700034).ListItem.Label]"/>
                 <param name="labelRow1" value="$INFO[Container(700034).ListItem.Label2,,       ]$INFO[Container(700034).ListItem.Duration,, $LOCALIZE[31297]]"/>
                 <param name="labelRow2" value="$INFO[Container(700034).ListItem.Genre]"/>
@@ -1566,8 +1566,8 @@
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
                 <param name="id" value="700044"/>
-                <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.3),tv)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.3),radio)"/>
+                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.3),tv)|
+                    String.IsEqual(Container(300).ListItem.Property(widgetType.3),radio)"/>
                 <param name="labelTitle" value="$INFO[Container(700044).ListItem.Label]"/>
                 <param name="labelRow1" value="$INFO[Container(700044).ListItem.Label2,,       ]$INFO[Container(700044).ListItem.Duration,, $LOCALIZE[31297]]"/>
                 <param name="labelRow2" value="$INFO[Container(700044).ListItem.Genre]"/>
@@ -1661,8 +1661,8 @@
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
                 <param name="id" value="700054"/>
-                <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.4),tv)|
-                    String.StartsWith(Container(300).ListItem.Property(widgetType.4),radio)"/>
+                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.4),tv)|
+                    String.IsEqual(Container(300).ListItem.Property(widgetType.4),radio)"/>
                 <param name="labelTitle" value="$INFO[Container(700054).ListItem.Label]"/>
                 <param name="labelRow1" value="$INFO[Container(700054).ListItem.Label2,,       ]$INFO[Container(700054).ListItem.Duration,, $LOCALIZE[31297]]"/>
                 <param name="labelRow2" value="$INFO[Container(700054).ListItem.Genre]"/>
