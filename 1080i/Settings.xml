@@ -172,6 +172,11 @@
                         <label2>$VAR[Settings.Art]</label2>
                     </item>
                     <item>
+                        <label>$LOCALIZE[14114]</label>
+                        <onclick>ActivateWindow(eventlog)</onclick>
+                        <label2>$VAR[Settings.Art]</label2>
+                    </item>
+                    <item>
                         <label>$LOCALIZE[14210]</label>
                         <onclick>ActivateWindow(Profiles)</onclick>
                         <label2>$VAR[Favourites.Art]</label2>
