@@ -147,11 +147,6 @@
                         <label2>$VAR[Videos.Art]</label2>
                     </item>
                     <item>
-                        <label>$LOCALIZE[20094]</label>
-                        <onclick>ActivateWindow(1103)</onclick>
-                        <label2>$VAR[Videos.Art]</label2>
-                    </item>
-                    <item>
                         <label>$LOCALIZE[14204]</label>
                         <onclick>ActivateWindow(PVRSettings)</onclick>
                         <label2>$VAR[Tv.Art]</label2>
