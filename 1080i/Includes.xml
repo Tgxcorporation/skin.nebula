@@ -460,7 +460,7 @@
         <!--DUMMY FOR DIALOG ANIMATIONS-->
         <control type="image" id="123001">
             <visible>![
-                Window.IsVisible(Custom_SourcesDialog.xml)|
+                Window.IsVisible(script-emby-context.xml)|
                 Window.IsVisible(DialogVideoInfo.xml)|
                 Window.IsVisible(DialogPlayerProcessInfo.xml)|
                 Window.IsVisible(DialogAddonSettings.xml)|
