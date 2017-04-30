@@ -152,35 +152,13 @@
         </control>
         <include>Player_Show</include>
         <include>OverlayFull</include>
-        <control type="image">
-            <include>OpenClose</include>
-            <include>ConditionWhite</include>
-            <posx>50</posx>
-            <posy>51</posy>
-            <width>59</width>
-            <height>56</height>
-            <texture>$VAR[Theme.Color]/common/logo2.png</texture>
-            <colordiffuse>AlternateColor_white</colordiffuse>
-        </control>
-        <control type="image">
-            <include>OpenClose</include>
-            <include>ConditionBlack</include>
-            <posx>50</posx>
-            <posy>51</posy>
-            <width>59</width>
-            <height>56</height>
-            <texture>$VAR[Theme.Color]/common/logo2.png</texture>
-            <colordiffuse>AlternateColor_black</colordiffuse>
-        </control>
         <control type="label">
             <include>OpenClose</include>
-            <posx>125</posx>
             <include>WindowTitle</include>
             <label>$VAR[HomeTitles]</label>
         </control>
         <control type="label">
             <include>OpenClose</include>
-            <posx>125</posx>
             <include>WindowTitleSub</include>
             <label>$VAR[HomeSubTitles]</label>
         </control>
