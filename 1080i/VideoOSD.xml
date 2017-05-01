@@ -87,16 +87,16 @@
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[210]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>black/topbar/topbar_channel_up_focus.png</texturefocus>
-                    <texturenofocus>black/topbar/topbar_channel_up_nofocus.png</texturenofocus>
+                    <texturefocus>black/topbar/topbar_channel_down_focus.png</texturefocus>
+                    <texturenofocus>black/topbar/topbar_channel_down_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="301">
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[209]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>black/topbar/topbar_channel_down_focus.png</texturefocus>
-                    <texturenofocus>black/topbar/topbar_channel_down_nofocus.png</texturenofocus>
+                    <texturefocus>black/topbar/topbar_channel_up_focus.png</texturefocus>
+                    <texturenofocus>black/topbar/topbar_channel_up_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
                 <control type="button" id="200">
@@ -351,16 +351,16 @@
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[210]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>white/topbar/topbar_channel_up_focus.png</texturefocus>
-                    <texturenofocus>white/topbar/topbar_channel_up_nofocus.png</texturenofocus>
+                    <texturefocus>white/topbar/topbar_channel_down_focus.png</texturefocus>
+                    <texturenofocus>white/topbar/topbar_channel_down_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="301">
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[209]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>white/topbar/topbar_channel_down_focus.png</texturefocus>
-                    <texturenofocus>white/topbar/topbar_channel_down_nofocus.png</texturenofocus>
+                    <texturefocus>white/topbar/topbar_channel_up_focus.png</texturefocus>
+                    <texturenofocus>white/topbar/topbar_channel_up_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
                 <control type="button" id="200">
