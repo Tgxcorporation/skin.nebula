@@ -108,6 +108,7 @@
                         <align>center</align>
                         <include>TextColor_MainColor</include>
                         <font>InfoDetailsFont</font>
+                        <ondown>309</ondown>
                     </control>
                     <!-- 1st row -->
                     <control type="grouplist">
@@ -117,79 +118,79 @@
                             <description>Layout button</description>
                             <width>390</width>
                             <label>20177</label>
-                            <onup>300</onup>
+                            <onup>312</onup>
                             <ondown>302</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="100">
                             <description>(0,0) key button</description>
-                            <onup>32</onup>
+                            <onup>312</onup>
                             <ondown>120</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="101">
                             <description>(0,1) key button</description>
-                            <onup>32</onup>
+                            <onup>312</onup>
                             <ondown>121</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="102">
                             <description>(0,2) key button</description>
-                            <onup>32</onup>
+                            <onup>312</onup>
                             <ondown>122</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="103">
                             <description>(0,3) key button</description>
-                            <onup>32</onup>
+                            <onup>312</onup>
                             <ondown>123</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="104">
                             <description>(0,4) key button</description>
-                            <onup>8</onup>
+                            <onup>312</onup>
                             <ondown>124</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="105">
                             <description>(0,5) key button</description>
-                            <onup>8</onup>
+                            <onup>312</onup>
                             <ondown>125</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="106">
                             <description>(0,6) key button</description>
-                            <onup>8</onup>
+                            <onup>312</onup>
                             <ondown>126</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="107">
                             <description>(0,7) key button</description>
-                            <onup>8</onup>
+                            <onup>312</onup>
                             <ondown>127</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="108">
                             <description>(0,8) key button</description>
-                            <onup>305</onup>
+                            <onup>312</onup>
                             <ondown>128</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="109">
                             <description>(0,9) key button</description>
-                            <onup>305</onup>
+                            <onup>312</onup>
                             <ondown>129</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="110">
                             <description>(0,10) key button</description>
-                            <onup>306</onup>
+                            <onup>312</onup>
                             <ondown>130</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="111">
                             <description>(0,11) key button</description>
-                            <onup>306</onup>
+                            <onup>312</onup>
                             <ondown>131</ondown>
                             <include>KeyboardButtons</include>
                         </control>
