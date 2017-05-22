@@ -354,11 +354,10 @@
                 <control type="button" id="2">
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="button" id="4">
+                <control type="button" id="507">
                     <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[5]</label>
+                    <label>$LOCALIZE[31087]</label>
                     <onclick>Skin.Reset(WeatherType)</onclick>
-                    <onclick>ActivateWindow(MyWeatherSettings)</onclick>
                 </control>
                 <control type="group" id="300">
                     <width>660</width>

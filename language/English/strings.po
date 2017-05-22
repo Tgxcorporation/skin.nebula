@@ -357,7 +357,11 @@ msgctxt "#31086"
 msgid "If you like this skin and you want to help a little bit, you can donate to this Paypal account:"
 msgstr ""
 
-#empty strings from id 31087 to 31089
+msgctxt "#31087"
+msgid "Reset weather view"
+msgstr ""
+
+#empty strings from id 31088 to 31089
 #Viewtype
 
 msgctxt "#31090"
