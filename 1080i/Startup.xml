@@ -55,6 +55,7 @@
             <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
         </control>
         <control type="group">
+            <visible>!Skin.HasSetting(DisableDefaultSplash)</visible>
             <visible>![String.IsEqual(Skin.String(startup-screentype),image)+!String.IsEmpty(Skin.String(startup-imagepath))] +
                 ![String.IsEqual(Skin.String(startup-screentype),multiimage)+!String.IsEmpty(Skin.String(startup-multiimagepath))]</visible>
             <include>OpenClose</include>

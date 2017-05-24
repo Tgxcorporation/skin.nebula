@@ -574,6 +574,18 @@
                                     <onclick>Skin.Reset(StartupDelay10)</onclick>
                                     <onclick>Skin.ToggleSetting(StartupDelay0)</onclick>
                                 </item>
+                                <item id="24">
+                                    <visible>Skin.HasSetting(DisableDefaultSplash)</visible>
+                                    <label>$LOCALIZE[31088]</label>
+                                    <label2>$LOCALIZE[107]</label2>
+                                    <onclick>Skin.ToggleSetting(DisableDefaultSplash)</onclick>
+                                </item>
+                                <item id="24">
+                                    <visible>!Skin.HasSetting(DisableDefaultSplash)</visible>
+                                    <label>$LOCALIZE[31088]</label>
+                                    <label2>$LOCALIZE[106]</label2>
+                                    <onclick>Skin.ToggleSetting(DisableDefaultSplash)</onclick>
+                                </item>
                                 <!--DEFAULT IMAGE STARTUP-->
                                 <item id="200">
                                     <visible>String.IsEmpty(Skin.String(startup-screentype))|String.IsEqual(Skin.String(startup-screentype),default)</visible>

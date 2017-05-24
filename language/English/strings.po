@@ -361,7 +361,11 @@ msgctxt "#31087"
 msgid "Reset weather view"
 msgstr ""
 
-#empty strings from id 31088 to 31089
+msgctxt "#31088"
+msgid "Disable default startup logo"
+msgstr ""
+
+#empty strings from id 31089 to 31089
 #Viewtype
 
 msgctxt "#31090"
