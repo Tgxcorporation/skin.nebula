@@ -22,7 +22,7 @@
         <include condition="!Skin.HasSetting(DisableFanart)">Fanart_Art</include>
         <!--CUSTOM STARTUP IMAGE-->
         <control type="image">
-            <visible>String.IsEqual(Skin.String(startup-screentype),image)+!String.IsEmpty(Skin.String(startup-imagepath))</visible>
+            <visible>String.IsEqual(Skin.String(startup-screentype),image)</visible>
             <include>KenBurns</include>
             <include>OpenClose</include>
             <posx>0</posx>
@@ -55,7 +55,7 @@
             <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
         </control>
         <control type="group">
-            <visible>![String.IsEqual(Skin.String(startup-screentype),image)+!String.IsEmpty(Skin.String(startup-imagepath))] +
+            <visible>![String.IsEqual(Skin.String(startup-screentype),image)] +
                 ![String.IsEqual(Skin.String(startup-screentype),multiimage)+!String.IsEmpty(Skin.String(startup-multiimagepath))]</visible>
             <include>OpenClose</include>
             <control type="image">
