@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <defaultcontrol always="true">300</defaultcontrol>
+    <defaultcontrol always="true">312</defaultcontrol>
     <controls>
-        <!-- <include>DimBG</include> -->
-        <!-- <include>TopBar</include> -->
+        <!--<include>DimBG</include>-->
+        <include>TopBar</include>
         <control type="group">
             <include>FacadeFadeDialogs3rdLevelCondition</include>
             <include>Icon_Fade</include>
@@ -18,7 +18,7 @@
                         <posx>-200</posx>
                         <posy>240</posy>
                         <width>2320</width>
-                        <height>760</height>
+                        <height>840</height>
                         <include>DialogTransparency</include>
                         <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                     </control>
@@ -33,7 +33,15 @@
                         <posx>100</posx>
                         <posy>455</posy>
                         <width>1720</width>
-                        <height>553</height>
+                        <height>633</height>
+                        <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>60</posx>
+                        <posy>493</posy>
+                        <width>1800</width>
+                        <height>152</height>
+                        <include>DialogTransparency</include>
                         <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                     </control>
                 </control>
@@ -43,7 +51,7 @@
                         <posx>-200</posx>
                         <posy>240</posy>
                         <width>2320</width>
-                        <height>860</height>
+                        <height>940</height>
                         <include>DialogTransparency</include>
                         <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                     </control>
@@ -58,7 +66,15 @@
                         <posx>100</posx>
                         <posy>555</posy>
                         <width>1720</width>
-                        <height>553</height>
+                        <height>633</height>
+                        <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>60</posx>
+                        <posy>593</posy>
+                        <width>1800</width>
+                        <height>152</height>
+                        <include>DialogTransparency</include>
                         <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                     </control>
                 </control>
@@ -108,89 +124,139 @@
                         <align>center</align>
                         <include>TextColor_MainColor</include>
                         <font>InfoDetailsFont</font>
+                        <ondown>9091</ondown>
+                    </control>
+                    <control type="panel" id="9091">
+                        <left>-220</left>
+                        <top>0</top>
+                        <width>1800</width>
+                        <height>71</height>
+                        <onleft>9091</onleft>
+                        <onright>9091</onright>
+                        <onup>312</onup>
                         <ondown>309</ondown>
+                        <onback></onback>
+                        <orientation>horizontal</orientation>
+                        <scrolltime tween="quadratic" easing="out">200</scrolltime>
+                        <itemlayout height="71" width="450">
+                            <control type="label">
+                                <posx>60</posx>
+                                <height>69</height>
+                                <width>330</width>
+                                <font>SmallButtonFont</font>
+                                <align>center</align>
+                                <include>TextColor_AlternateColor</include>
+                                <label>$INFO[ListItem.Label]</label>
+                                <scroll>false</scroll>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="71" width="450">
+                            <control type="group">
+                                <include>ListFocusAnimation</include>
+                                <control type="image">
+                                    <posx>0</posx>
+                                    <posy>0</posy>
+                                    <height>71</height>
+                                    <width>450</width>
+                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                    <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                                </control>
+                                <control type="label">
+                                    <posx>60</posx>
+                                    <height>69</height>
+                                    <width>330</width>
+                                    <font>SmallButtonFont</font>
+                                    <align>center</align>
+                                    <include>TextColor_MainColor</include>
+                                    <label>$INFO[ListItem.Label]</label>
+                                    <scroll>true</scroll>
+                                </control>
+                            </control>
+                        </focusedlayout>
+                        <content>plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=8</content>
                     </control>
                     <!-- 1st row -->
                     <control type="grouplist">
+                        <posy>90</posy>
                         <itemgap>0</itemgap>
                         <orientation>horizontal</orientation>
                         <control type="button" id="309">
                             <description>Layout button</description>
                             <width>390</width>
                             <label>20177</label>
-                            <onup>312</onup>
+                            <onup>9091</onup>
                             <ondown>302</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="100">
                             <description>(0,0) key button</description>
-                            <onup>312</onup>
+                            <onup>9091</onup>
                             <ondown>120</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="101">
                             <description>(0,1) key button</description>
-                            <onup>312</onup>
+                            <onup>9091</onup>
                             <ondown>121</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="102">
                             <description>(0,2) key button</description>
-                            <onup>312</onup>
+                            <onup>9091</onup>
                             <ondown>122</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="103">
                             <description>(0,3) key button</description>
-                            <onup>312</onup>
+                            <onup>9091</onup>
                             <ondown>123</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="104">
                             <description>(0,4) key button</description>
-                            <onup>312</onup>
+                            <onup>9091</onup>
                             <ondown>124</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="105">
                             <description>(0,5) key button</description>
-                            <onup>312</onup>
+                            <onup>9091</onup>
                             <ondown>125</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="106">
                             <description>(0,6) key button</description>
-                            <onup>312</onup>
+                            <onup>9091</onup>
                             <ondown>126</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="107">
                             <description>(0,7) key button</description>
-                            <onup>312</onup>
+                            <onup>9091</onup>
                             <ondown>127</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="108">
                             <description>(0,8) key button</description>
-                            <onup>312</onup>
+                            <onup>9091</onup>
                             <ondown>128</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="109">
                             <description>(0,9) key button</description>
-                            <onup>312</onup>
+                            <onup>9091</onup>
                             <ondown>129</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="110">
                             <description>(0,10) key button</description>
-                            <onup>312</onup>
+                            <onup>9091</onup>
                             <ondown>130</ondown>
                             <include>KeyboardButtons</include>
                         </control>
                         <control type="button" id="111">
                             <description>(0,11) key button</description>
-                            <onup>312</onup>
+                            <onup>9091</onup>
                             <ondown>131</ondown>
                             <include>KeyboardButtons</include>
                         </control>
@@ -198,7 +264,7 @@
                     <!-- 2nd row -->
                     <control type="grouplist">
                         <orientation>horizontal</orientation>
-                        <top>80</top>
+                        <top>170</top>
                         <itemgap>0</itemgap>
                         <control type="radiobutton" id="302">
                             <description>SHIFT button</description>
@@ -284,7 +350,7 @@
                     </control>
                     <!-- 3rd row -->
                     <control type="grouplist">
-                        <top>160</top>
+                        <top>250</top>
                         <orientation>horizontal</orientation>
                         <itemgap>0</itemgap>
                         <control type="radiobutton" id="303">
@@ -371,7 +437,7 @@
                     </control>
                     <!-- 4th row -->
                     <control type="grouplist">
-                        <top>240</top>
+                        <top>330</top>
                         <itemgap>0</itemgap>
                         <orientation>horizontal</orientation>
                         <control type="radiobutton" id="304">
@@ -458,7 +524,7 @@
                     </control>
                     <!-- 5th row -->
                     <control type="grouplist">
-                        <top>320</top>
+                        <top>410</top>
                         <itemgap>0</itemgap>
                         <orientation>horizontal</orientation>
                         <control type="button" id="300">
@@ -471,7 +537,7 @@
                         </control>
                         <control type="button" id="307">
                             <description>IP Input button</description>
-                            <width>160</width>
+                            <width>82</width>
                             <onup>160</onup>
                             <ondown>101</ondown>
                             <label>IP</label>
@@ -479,7 +545,7 @@
                         </control>
                         <control type="button" id="32">
                             <description>SPACE button</description>
-                            <width>320</width>
+                            <width>300</width>
                             <label>20182</label>
                             <include>KeyboardButtons</include>
                             <onup>163</onup>
@@ -487,7 +553,7 @@
                         </control>
                         <control type="button" id="8">
                             <description>BACKSPACE button</description>
-                            <width>320</width>
+                            <width>274</width>
                             <label>20181</label>
                             <onup>166</onup>
                             <ondown>105</ondown>
@@ -495,7 +561,7 @@
                         </control>
                         <control type="button" id="305">
                             <description>previous button</description>
-                            <width>100</width>
+                            <width>82</width>
                             <label>&lt;</label>
                             <include>KeyboardButtons</include>
                             <onup>168</onup>
@@ -503,10 +569,10 @@
                         </control>
                         <control type="button" id="306">
                             <description>next button</description>
-                            <width>100</width>
+                            <width>82</width>
                             <label>&gt;</label>
                             <include>KeyboardButtons</include>
-                            <onup>170</onup>
+                            <onup>168</onup>
                             <ondown>110</ondown>
                         </control>
                     </control>

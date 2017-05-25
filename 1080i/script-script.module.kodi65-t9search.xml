@@ -150,6 +150,7 @@
                             <align>center</align>
                             <include>TextColor_MainColor</include>
                             <label>$INFO[ListItem.Label]</label>
+                            <scroll>true</scroll>
                         </control>
                     </control>
                 </focusedlayout>

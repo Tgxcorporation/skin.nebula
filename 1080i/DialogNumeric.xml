@@ -3,7 +3,7 @@
     <defaultcontrol always="true">21</defaultcontrol>
     <controls>
         <!-- <include>DimBG</include> -->
-        <!-- <include>TopBar</include> -->
+        <include>TopBar</include>
         <control type="group">
             <control type="group">
                 <include>DialogOpenClose</include>
