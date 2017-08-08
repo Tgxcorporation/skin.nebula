@@ -1296,7 +1296,7 @@
                             <posy>793</posy>
                             <width>577</width>
                             <height>90</height>
-                            <label>$LOCALIZE[16040]</label>
+                            <label>$LOCALIZE[16316]</label>
                             <align>center</align>
                             <radioposx>450</radioposx>
                             <onright>852808</onright>
