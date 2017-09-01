@@ -1180,61 +1180,73 @@
                         <content>
                             <item id="2">
                                 <visible>!Skin.HasSetting(QuitMenu_Hide_Quit)</visible>
-                                <label> - $LOCALIZE[13009]</label>
+                                <label>$LOCALIZE[13009]</label>
                                 <label2>$LOCALIZE[107]</label2>
                                 <onclick>Skin.ToggleSetting(QuitMenu_Hide_Quit)</onclick>
                             </item>
                             <item id="2">
                                 <visible>Skin.HasSetting(QuitMenu_Hide_Quit)</visible>
-                                <label> - $LOCALIZE[13009]</label>
+                                <label>$LOCALIZE[13009]</label>
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(QuitMenu_Hide_Quit)</onclick>
                             </item>
                             <item id="3">
                                 <visible>!Skin.HasSetting(QuitMenu_Hide_Sleep)</visible>
-                                <label> - $LOCALIZE[13011]</label>
+                                <label>$LOCALIZE[13011]</label>
                                 <label2>$LOCALIZE[107]</label2>
                                 <onclick>Skin.ToggleSetting(QuitMenu_Hide_Sleep)</onclick>
                             </item>
                             <item id="3">
                                 <visible>Skin.HasSetting(QuitMenu_Hide_Sleep)</visible>
-                                <label> - $LOCALIZE[13011]</label>
+                                <label>$LOCALIZE[13011]</label>
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(QuitMenu_Hide_Sleep)</onclick>
                             </item>
                             <item id="4">
                                 <visible>!Skin.HasSetting(QuitMenu_Hide_Shutdown)</visible>
-                                <label> - $LOCALIZE[13005]</label>
+                                <label>$LOCALIZE[13005]</label>
                                 <label2>$LOCALIZE[107]</label2>
                                 <onclick>Skin.ToggleSetting(QuitMenu_Hide_Shutdown)</onclick>
                             </item>
                             <item id="4">
                                 <visible>Skin.HasSetting(QuitMenu_Hide_Shutdown)</visible>
-                                <label> - $LOCALIZE[13005]</label>
+                                <label>$LOCALIZE[13005]</label>
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(QuitMenu_Hide_Shutdown)</onclick>
                             </item>
                             <item id="5">
                                 <visible>!Skin.HasSetting(QuitMenu_Hide_Reboot)</visible>
-                                <label> - $LOCALIZE[13013]</label>
+                                <label>$LOCALIZE[13013]</label>
                                 <label2>$LOCALIZE[107]</label2>
                                 <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot)</onclick>
                             </item>
                             <item id="5">
                                 <visible>Skin.HasSetting(QuitMenu_Hide_Reboot)</visible>
-                                <label> - $LOCALIZE[13013]</label>
+                                <label>$LOCALIZE[13013]</label>
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot)</onclick>
                             </item>
+                            <item id="6">
+                                <visible>Skin.HasSetting(QuitMenu_Hide_Reboot_Android)</visible>
+                                <label>$LOCALIZE[31900]</label>
+                                <label2>$LOCALIZE[107]</label2>
+                                <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot_Android)</onclick>
+                            </item>
+                            <item id="6">
+                                <visible>!Skin.HasSetting(QuitMenu_Hide_Reboot_Android)</visible>
+                                <label>$LOCALIZE[31900]</label>
+                                <label2>$LOCALIZE[106]</label2>
+                                <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot_Android)</onclick>
+                            </item>
                             <item id="7">
                                 <visible>Skin.HasSetting(QuitMenu_Hide_Timer)</visible>
-                                <label> - $LOCALIZE[20144]</label>
+                                <label>$LOCALIZE[20144]</label>
                                 <label2>$LOCALIZE[107]</label2>
                                 <onclick>Skin.ToggleSetting(QuitMenu_Hide_Timer)</onclick>
                             </item>
                             <item id="7">
                                 <visible>!Skin.HasSetting(QuitMenu_Hide_Timer)</visible>
-                                <label> - $LOCALIZE[20144]</label>
+                                <label>$LOCALIZE[20144]</label>
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(QuitMenu_Hide_Timer)</onclick>
                             </item>

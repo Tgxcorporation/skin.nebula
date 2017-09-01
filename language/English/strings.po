@@ -693,9 +693,11 @@ msgctxt "#31526"
 msgid "Use Single Row Submenu"
 msgstr ""
 
-#empty strings from id 31527 to 31900
+#empty strings from id 31527 to 31899
 
-#Weather plugin
+msgctxt "#31900"
+msgid "Reboot and switch to Android"
+msgstr ""
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"

@@ -210,6 +210,15 @@
                                 <thumb>$VAR[Theme.Color]/topbar/topbar_restart_nofocus.png</thumb>
                                 <icon>$VAR[Theme.Color]/topbar/topbar_restart_focus.png</icon>
                             </item>
+                            <item id="141">
+                                <visible>Skin.HasSetting(QuitMenu_Hide_Reboot_Android)</visible>
+                                <visible>System.CanReboot</visible>
+                                <onclick>dialog.close(all,true)</onclick>
+                                <onclick>System.ExecWait("/usr/sbin/rebootfromnand")</onclick>
+                                <label>$LOCALIZE[31900]</label>
+                                <thumb>$VAR[Theme.Color]/topbar/topbar_restart_nofocus.png</thumb>
+                                <icon>$VAR[Theme.Color]/topbar/topbar_restart_focus.png</icon>
+                            </item>
                             <item id="16">
                                 <onclick>dialog.close(all,true)</onclick>
                                 <onclick>ActivateWindow(Settings,return)</onclick>
