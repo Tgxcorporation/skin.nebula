@@ -80,7 +80,7 @@
                         <align>center</align>
                         <font>WindowTitleSubFont</font>
                         <include>TextColor_MainColor</include>
-                        <label>$INFO[Window(Home).Property(SkinHelper.skinVersion)] by Tgx</label>
+                        <label>$INFO[Window(Home).Property(SkinHelper.skin_version)] by Tgx</label>
                     </control>
                 </control>
             </control>

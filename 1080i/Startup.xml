@@ -84,7 +84,7 @@
                 <align>left</align>
                 <font>WindowTitleSubFont</font>
                 <include>TextColor_AlternateColor</include>
-                <label>$INFO[Window(Home).Property(SkinHelper.skinVersion)]</label>
+                <label>$INFO[Window(Home).Property(SkinHelper.skin_version)]</label>
             </control>
         </control>
     </controls>
