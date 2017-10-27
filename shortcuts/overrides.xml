@@ -179,23 +179,6 @@
     <propertydefault labelID="radio" property="widgetPath.1">pvr://channels/radio/*?view=lastplayed</propertydefault>
     <propertydefault labelID="radio" property="widgetName.1">19024</propertydefault>
 
-    <!--WIDGETS-->
-    <!--<widget label="1036" type="info">Favourite</widget>-->
-    <!--<widget label="24001" type="info">Addon</widget>-->
-    <!--<widget label="342" type="movies">Movie</widget>-->
-    <!--<widget label="31971" type="movies">Concert</widget>-->
-    <!--<widget label="31972" type="music">Clip</widget>-->
-    <!--<widget label="20343" type="episodes">Episode</widget>-->
-    <!--<widget label="10005" type="music">Music</widget>-->
-    <!--<widgetdefault labelID="1036" type="info">Favourite</widgetdefault>-->
-	<!--<widgetdefault labelID="1036&#45;&#45;0" type="info">Favourite</widgetdefault>-->
-    <!--<widgetdefault labelID="24001" type="info">Addon</widgetdefault>-->
-    <!--<widgetdefault labelID="movies" type="movies">Movie</widgetdefault>-->
-    <!--<widgetdefault labelID="31971" type="movies">Concert</widgetdefault>-->
-    <!--<widgetdefault labelID="31972" type="music">Clip</widgetdefault>-->
-    <!--<widgetdefault labelID="musicvideos" type="movies">Clip</widgetdefault>-->
-    <!--<widgetdefault labelID="tvshows" type="episodes">Episode</widgetdefault>-->
-    <!--<widgetdefault labelID="music" type="music">Music</widgetdefault>-->
-	<!--<widgetdefault labelID="music&#45;&#45;0" type="music">Music</widgetdefault>-->
-	<!--<widgetPlaylists type="playlist">True</widgetPlaylists>-->
+    <!--DO NOT SHARE MENUS WITH OTHER SKINS-->
+    <doNotShareMenu />
 </overrides>
