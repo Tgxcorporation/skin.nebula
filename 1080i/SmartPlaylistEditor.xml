@@ -54,13 +54,13 @@
                 <onup>12</onup>
                 <ondown>10</ondown>
             </control>
-            <control type="label" id="2">
+            <control type="label">
                 <posx>0</posx>
                 <posy>273</posy>
                 <width>1920</width>
                 <font>LeftMenuTitleFont</font>
                 <include>LeftMenuButton</include>
-                <label>-</label>
+                <label>$LOCALIZE[10136]</label>
             </control>
             <control type="panel" id="10">
                 <posy>340</posy>
@@ -153,8 +153,6 @@
                     <width>1920</width>
                     <height>84</height>
                     <include>LeftMenuButtonWide</include>
-                    <label>$LOCALIZE[21429]:  $LOCALIZE[21431]</label>
-                    <altlabel>$LOCALIZE[21429]:  $LOCALIZE[21430]</altlabel>
                 </control>
                 <control type="button" id="23">
                     <width>1920</width>
