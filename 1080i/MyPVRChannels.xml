@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol>50</defaultcontrol>
+    <onload condition="Skin.HasSetting(StopPlaybackOnMenu)">PlayerControl(stop)</onload>
     <menucontrol>9000</menucontrol>
     <views>50,51,52,58,53,5050</views>
     <controls>

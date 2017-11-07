@@ -721,7 +721,13 @@ msgctxt "#31910"
 msgid "Maps"
 msgstr ""
 
-#empty strings from id 31911 to 31931
+#empty strings from id 31911 to 31916
+
+msgctxt "#31917"
+msgid "Stop playback on return to menu"
+msgstr ""
+
+#empty strings from id 31918 to 31930
 
 msgctxt "#31931"
 msgid "On Deck"
