@@ -149,8 +149,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="textbox">
                     <posx>560</posx>
@@ -258,8 +257,7 @@
                     <posy>313</posy>
                     <width>870</width>
                     <height>685</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move(50,-1)</onclick>
                 </control>
                 <control type="button">
@@ -267,8 +265,7 @@
                     <posy>313</posy>
                     <width>930</width>
                     <height>685</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move(50,1)</onclick>
                 </control>
             </control>

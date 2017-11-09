@@ -143,8 +143,7 @@
                     <posy>140</posy>
                     <width>450</width>
                     <height>720</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move($PARAM[id],-1)</onclick>
                 </control>
                 <control type="button">
@@ -152,8 +151,7 @@
                     <posy>140</posy>
                     <width>960</width>
                     <height>720</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move($PARAM[id],1)</onclick>
                 </control>
                 <include>CoverWrapPosterBounds</include>
@@ -382,8 +380,7 @@
                     <posy>140</posy>
                     <width>450</width>
                     <height>720</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move($PARAM[id],-1)</onclick>
                 </control>
                 <control type="button">
@@ -391,8 +388,7 @@
                     <posy>140</posy>
                     <width>960</width>
                     <height>720</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move($PARAM[id],1)</onclick>
                 </control>
                 <include>CoverWrapPosterBounds</include>
@@ -576,8 +572,7 @@
                     <posy>140</posy>
                     <width>530</width>
                     <height>720</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move($PARAM[id],-1)</onclick>
                 </control>
                 <control type="button">
@@ -585,8 +580,7 @@
                     <posy>140</posy>
                     <width>530</width>
                     <height>720</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move($PARAM[id],1)</onclick>
                 </control>
                 <include>CoverWrapPosterBounds</include>
@@ -805,8 +799,7 @@
                     <posy>140</posy>
                     <width>450</width>
                     <height>720</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move($PARAM[id],-1)</onclick>
                 </control>
                 <control type="button">
@@ -814,8 +807,7 @@
                     <posy>140</posy>
                     <width>960</width>
                     <height>720</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move($PARAM[id],1)</onclick>
                 </control>
                 <include>CoverWrapPosterBounds</include>

@@ -98,7 +98,7 @@
                 <width>1195</width>
                 <height>278</height>
                 <aspectratio aligny="top">scale</aspectratio>
-                <texture background="true" fallback="white/common/TransparentDot.png">$VAR[Banner]</texture>
+                <texture background="true" fallback="common/TransparentDot.png">$VAR[Banner]</texture>
                 <include>ThumbBorder</include>
             </control>
             <control type="group">

@@ -1637,7 +1637,7 @@
                         <width>200</width>
                         <height>120</height>
                         <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                        <texture>white/common/WhiteDot.png</texture>
+                        <texture>common/WhiteDot.png</texture>
                         <include>ThumbBorder</include>
                     </control>
                 </control>

@@ -210,8 +210,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="150">
                     <description>movies list</description>
@@ -367,8 +366,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="250">
                     <description>movies list</description>
@@ -524,8 +522,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="550">
                     <description>movies list</description>
@@ -681,8 +678,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="650">
                     <description>movies list</description>
@@ -838,8 +834,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="350">
                     <description>movies list</description>
@@ -983,8 +978,7 @@
                     <posy>313</posy>
                     <width>870</width>
                     <height>685</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move(450,-1)</onclick>
                 </control>
                 <control type="button">
@@ -992,8 +986,7 @@
                     <posy>313</posy>
                     <width>930</width>
                     <height>685</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move(450,1)</onclick>
                 </control>
             </control>
@@ -1085,8 +1078,7 @@
                     <posy>313</posy>
                     <width>870</width>
                     <height>685</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move(750,-1)</onclick>
                 </control>
                 <control type="button">
@@ -1094,8 +1086,7 @@
                     <posy>313</posy>
                     <width>930</width>
                     <height>685</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move(750,1)</onclick>
                 </control>
             </control>

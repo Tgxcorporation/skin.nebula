@@ -94,8 +94,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="group">
                     <visible>String.IsEqual(ListItem.DBType,album)</visible>
@@ -641,8 +640,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="50">
                     <posx>545</posx>
@@ -794,8 +792,7 @@
                     <height>785</height>
                     <onclick>noop</onclick>
                     <onleft>9000</onleft>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="image">
                     <visible>!String.IsEmpty(Listitem.Property(Fanart_Image))</visible>

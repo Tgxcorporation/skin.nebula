@@ -87,8 +87,7 @@
                 <posy>218</posy>
                 <width>577</width>
                 <height>740</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(211,-1)</onclick>
             </control>
             <control type="button" id="3020">
@@ -96,8 +95,7 @@
                 <posy>218</posy>
                 <width>577</width>
                 <height>740</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(211,1)</onclick>
             </control>
         </control>

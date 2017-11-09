@@ -74,7 +74,7 @@
                         <posy>24</posy>
                         <width>22</width>
                         <height>22</height>
-                        <texture>white/common/BlackDot.png</texture>
+                        <texture>common/BlackDot.png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
@@ -82,7 +82,7 @@
                         <posy>25</posy>
                         <width>20</width>
                         <height>20</height>
-                        <texture>white/common/WhiteDot.png</texture>
+                        <texture>common/WhiteDot.png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                 </focusedlayout>
@@ -143,7 +143,7 @@
                     <posx>0</posx>
                     <width>540</width>
                     <height>78</height>
-                    <texture>white/common/WhiteDot.png</texture>
+                    <texture>common/WhiteDot.png</texture>
                     <colordiffuse>$INFO[Window.Property(colorstring)]</colordiffuse>
                     <include>LeftMenuButton</include>
                 </control>

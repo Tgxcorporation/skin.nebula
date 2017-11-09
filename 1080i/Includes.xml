@@ -38,7 +38,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>1080</height>
-            <texture>$VAR[Theme.Color]/common/BlackDot.png</texture>
+            <texture>common/BlackDot.png</texture>
         </control>
         <control type="multiimage">
             <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
@@ -87,6 +87,8 @@
         <label>-</label>
         <texturenofocus>-</texturenofocus>
         <texturefocus>-</texturefocus>
+        <texturenofocus>common/WhiteDotT.png</texturenofocus>
+        <texturefocus>common/BlackDotT.png</texturefocus>
     </include>
     <include name="DimBG">
         <control type="group">
@@ -139,8 +141,7 @@
     <include name="FakeTopBarButton">
         <width>10</width>
         <height>50</height>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus>-</texturefocus>
+        <include>HiddenButton</include>
     </include>
     <include name="TopBarButton">
         <animation type="Focus" reversible="false">
@@ -172,11 +173,7 @@
             <posy>0</posy>
             <width>1130</width>
             <height>183</height>
-            <label>-</label>
-            <font>-</font>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus>-</texturefocus>
-            <visible>true</visible>
+            <include>HiddenButton</include>
             <onfocus>SetFocus(9900)</onfocus>
         </control>
         <control type="button" id="8997">
@@ -186,11 +183,7 @@
             <posy>0</posy>
             <width>1130</width>
             <height>66</height>
-            <label>-</label>
-            <font>-</font>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus>-</texturefocus>
-            <visible>true</visible>
+            <include>HiddenButton</include>
             <onfocus>SetFocus(9900)</onfocus>
         </control>
         <control type="grouplist" id="9900">
@@ -436,11 +429,7 @@
             <posy>116</posy>
             <width>1130</width>
             <height>65</height>
-            <label>-</label>
-            <font>-</font>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus>-</texturefocus>
-            <visible>true</visible>
+            <include>HiddenButton</include>
             <onfocus>SetFocus(9900)</onfocus>
         </control>
     </include>
@@ -567,8 +556,7 @@
                 <posy>0</posy>
                 <width>100</width>
                 <height>100</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <include>HiddenButton</include>
                 <onleft condition="Control.isvisible(500)">500</onleft>
                 <onleft condition="Window.IsActive(EventLog.xml)">570</onleft>
                 <onright condition="!window.isactive(MyWeather.xml)">50</onright>
@@ -920,7 +908,7 @@
             <width>1920</width>
             <height>1080</height>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <texture>$VAR[Theme.Color]/common/WhiteDot.png</texture>
+            <texture>common/WhiteDot.png</texture>
         </control> -->
         <control type="multiimage">
             <!-- <include>OpenClose</include> -->
@@ -983,11 +971,7 @@
             <posy>142</posy>
             <width>700</width>
             <height>892</height>
-            <label>-</label>
-            <font>-</font>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus>-</texturefocus>
-            <visible>true</visible>
+            <include>HiddenButton</include>
             <onfocus>SetFocus(9000)</onfocus>
         </control>
     </include>

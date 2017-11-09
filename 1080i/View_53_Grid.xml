@@ -288,7 +288,7 @@
                         <posy>0</posy>
                         <width>960</width>
                         <height>180</height>
-                        <texture background="true" fallback="white/common/TransparentDot.png">$VAR[Banner]</texture>
+                        <texture background="true" fallback="common/TransparentDot.png">$VAR[Banner]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                 </itemlayout>
@@ -299,7 +299,7 @@
                         <posy>-35</posy>
                         <width>1030</width>
                         <height>250</height>
-                        <texture background="true" fallback="white/common/TransparentDot.png">$VAR[Banner]</texture>
+                        <texture background="true" fallback="common/TransparentDot.png">$VAR[Banner]</texture>
                         <aspectratio>scale</aspectratio>
                         <include>ThumbBorderOverlay</include>
                     </control>

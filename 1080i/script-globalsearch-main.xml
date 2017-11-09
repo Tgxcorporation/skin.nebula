@@ -1552,11 +1552,7 @@
                 <posy>142</posy>
                 <width>700</width>
                 <height>892</height>
-                <label>-</label>
-                <font>-</font>
-                <texturenofocus>-</texturenofocus>
-                <texturefocus>-</texturefocus>
-                <visible>true</visible>
+                <include>HiddenButton</include>
             </control>
             <control type="label">
                 <posx>-660</posx>

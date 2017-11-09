@@ -450,8 +450,7 @@
                 <posy>140</posy>
                 <width>450</width>
                 <height>720</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(59,-1)</onclick>
             </control>
             <control type="button">
@@ -459,8 +458,7 @@
                 <posy>140</posy>
                 <width>960</width>
                 <height>720</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(59,1)</onclick>
             </control>
         </control>
@@ -708,8 +706,7 @@
                 <posy>140</posy>
                 <width>450</width>
                 <height>520</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(58,-1)</onclick>
             </control>
             <control type="button">
@@ -717,8 +714,7 @@
                 <posy>140</posy>
                 <width>960</width>
                 <height>520</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(58,1)</onclick>
             </control>
         </control>
@@ -952,8 +948,7 @@
                 <posy>140</posy>
                 <width>530</width>
                 <height>520</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(57,-1)</onclick>
             </control>
             <control type="button">
@@ -961,8 +956,7 @@
                 <posy>140</posy>
                 <width>530</width>
                 <height>520</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(57,1)</onclick>
             </control>
         </control>
@@ -1053,8 +1047,7 @@
                 <posy>140</posy>
                 <width>530</width>
                 <height>520</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(57,-1)</onclick>
             </control>
             <control type="button">
@@ -1062,8 +1055,7 @@
                 <posy>140</posy>
                 <width>530</width>
                 <height>520</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <include>HiddenButton</include>
                 <onclick>Control.Move(57,1)</onclick>
             </control>
             <control type="label" id="11">

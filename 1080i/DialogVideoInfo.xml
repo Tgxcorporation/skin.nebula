@@ -92,8 +92,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="9009">
                     <visible>![String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) | String.StartsWith(Container.FolderPath,videodb://musicvideos)]</visible>
@@ -845,8 +844,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="textbox">
                     <include>VisibleFadeEffectDelay</include>
@@ -909,8 +907,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="image">
                     <visible>Integer.IsGreater(Container(50).NumItems,0)</visible>

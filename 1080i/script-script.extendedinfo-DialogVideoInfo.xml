@@ -702,8 +702,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="textbox">
                     <include>VisibleFadeEffectDelay</include>
@@ -767,8 +766,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="1000">
                     <posx>500</posx>
@@ -905,8 +903,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="750">
                     <posx>500</posx>
@@ -1043,8 +1040,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="150">
                     <posx>500</posx>
@@ -1199,8 +1195,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="250">
                     <posx>500</posx>
@@ -1355,8 +1350,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="1150">
                     <posx>500</posx>
@@ -1493,8 +1487,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="350">
                     <posx>500</posx>
@@ -1595,8 +1588,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="550">
                     <posx>500</posx>
@@ -1697,8 +1689,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="1450">
                     <posx>500</posx>
@@ -1929,8 +1920,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="textbox">
                     <posx>TextMargin</posx>
@@ -2161,8 +2151,7 @@
                     <posy>313</posy>
                     <width>870</width>
                     <height>685</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move(1250,-1)</onclick>
                 </control>
                 <control type="button">
@@ -2170,8 +2159,7 @@
                     <posy>313</posy>
                     <width>930</width>
                     <height>685</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move(1250,1)</onclick>
                 </control>
             </control>
@@ -2263,8 +2251,7 @@
                     <posy>313</posy>
                     <width>870</width>
                     <height>685</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move(1350,-1)</onclick>
                 </control>
                 <control type="button">
@@ -2272,8 +2259,7 @@
                     <posy>313</posy>
                     <width>930</width>
                     <height>685</height>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <include>HiddenButton</include>
                     <onclick>Control.Move(1350,1)</onclick>
                 </control>
             </control>
@@ -2319,8 +2305,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="450">
                     <posx>500</posx>
@@ -2477,8 +2462,7 @@
                     <onclick>noop</onclick>
                     <onleft>9012</onleft>
                     <onright>50</onright>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
+                    <include>HiddenButton</include>
                 </control>
                 <control type="panel" id="2000">
                     <posx>500</posx>
