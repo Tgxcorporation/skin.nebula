@@ -3,8 +3,7 @@
     <defaultcontrol always="true">9009</defaultcontrol>
     <onload condition="!Integer.IsGreater(Container(9009).NumItems,0)">close</onload>
     <controls>
-        <!-- <include>DimBG</include> -->
-        <include>TopBar</include>
+        <include>DimBG</include>
         <control type="group">
             <!--<visible>![Window.IsVisible(DialogNumeric.xml)]</visible>-->
             <include>Icon_Fade</include>

@@ -2,87 +2,118 @@
 <window>
     <defaultcontrol always="true">996</defaultcontrol>
     <controls>
-        <!-- <include>DimBG</include> -->
         <control type="group">
-            <include>FacadeFadeDialogs3rdLevelCondition</include>
-            <include>Icon_Fade</include>
-            <control type="group">
-                <include>DialogContextOpenClose</include>
-                <control type="button">
-                    <include>ConditionWhite</include>
-                    <posx>1887</posx>
-                    <posy>0</posy>
-                    <height>33</height>
-                    <width>33</width>
-                    <colordiffuse>90ffffff</colordiffuse>
-                    <texturenofocus>white/topbar/topbar_exit_nofocus.png</texturenofocus>
-                    <texturefocus>white/topbar/topbar_exit_focus.png</texturefocus>
-                    <onclick>back</onclick>
-                    <label>-</label>
-                </control>
-                <control type="button">
-                    <include>ConditionBlack</include>
-                    <posx>1887</posx>
-                    <posy>0</posy>
-                    <height>33</height>
-                    <width>33</width>
-                    <colordiffuse>90ffffff</colordiffuse>
-                    <texturenofocus>black/topbar/topbar_exit_nofocus.png</texturenofocus>
-                    <texturefocus>black/topbar/topbar_exit_focus.png</texturefocus>
-                    <onclick>back</onclick>
-                    <label>-</label>
-                </control>
-                <control type="image" id="999">
-                    <posx>-200</posx>
-                    <posy>0</posy>
-                    <width>2320</width>
-                    <height>876</height>
-                    <include>DialogTransparency</include>
-                    <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
-                </control>
-                <control type="grouplist" id="996">
+            <include>OpenClose</include>
+            <animation effect="slide" time="0" start="0,0" end="0,-514" condition="Integer.IsEqual(Container(996).NumItems,1)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,-473" condition="Integer.IsEqual(Container(996).NumItems,2)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,-433" condition="Integer.IsEqual(Container(996).NumItems,3)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,-392" condition="Integer.IsEqual(Container(996).NumItems,4)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,-352" condition="Integer.IsEqual(Container(996).NumItems,5)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,-311" condition="Integer.IsEqual(Container(996).NumItems,6)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,-271" condition="Integer.IsEqual(Container(996).NumItems,7)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,-230" condition="Integer.IsEqual(Container(996).NumItems,8)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,-190" condition="Integer.IsEqual(Container(996).NumItems,9)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,-149" condition="Integer.IsGreater(Container(996).NumItems,9)">conditional</animation>
+            <control type="multiimage">
+                <visible>!Skin.HasSetting(DisableFanart)</visible>
+                <include>KenBurns</include>
+                <posx>-89</posx>
+                <posy>-50</posy>
+                <width>2098</width>
+                <height>1180</height>
+                <timeperimage>9000</timeperimage>
+                <randomize>true</randomize>
+                <fadetime>400</fadetime>
+                <aspectratio aligny="top">scale</aspectratio>
+                <imagepath background="true">$VAR[Fanart.Art]</imagepath>
+            </control>
+            <include>Player_Show</include>
+            <control type="image">
+                <include>OverlayTransparency</include>
+                <posx>-89</posx>
+                <posy>-50</posy>
+                <width>2098</width>
+                <height>1180</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
+            </control>
+        </control>
+        <control type="group">
+            <include>DialogContextOpenClose</include>
+            <control type="button">
+                <include>ConditionWhite</include>
+                <posx>1887</posx>
+                <posy>0</posy>
+                <height>33</height>
+                <width>33</width>
+                <colordiffuse>90ffffff</colordiffuse>
+                <texturenofocus>white/topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>white/topbar/topbar_exit_focus.png</texturefocus>
+                <onclick>back</onclick>
+                <label>-</label>
+            </control>
+            <control type="button">
+                <include>ConditionBlack</include>
+                <posx>1887</posx>
+                <posy>0</posy>
+                <height>33</height>
+                <width>33</width>
+                <colordiffuse>90ffffff</colordiffuse>
+                <texturenofocus>black/topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>black/topbar/topbar_exit_focus.png</texturefocus>
+                <onclick>back</onclick>
+                <label>-</label>
+            </control>
+            <control type="image" id="999">
+                <posx>-200</posx>
+                <posy>0</posy>
+                <width>2320</width>
+                <height>876</height>
+                <include>DialogTransparency</include>
+                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
+            </control>
+            <control type="grouplist" id="996">
+                <posx>0</posx>
+                <posy>33</posy>
+                <width>1920</width>
+                <height>810</height>
+                <itemgap>0</itemgap>
+                <pagecontrol>60</pagecontrol>
+                <onright>60</onright>
+                <control type="button" id="1000">
                     <posx>0</posx>
-                    <posy>33</posy>
+                    <posy>0</posy>
                     <width>1920</width>
-                    <height>810</height>
-                    <itemgap>0</itemgap>
-                    <pagecontrol>60</pagecontrol>
-                    <onright>60</onright>
-                    <control type="button" id="1000">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1920</width>
-                        <align>center</align>
-                        <textoffsetx>0</textoffsetx>
-                        <height>81</height>
-                        <include>LeftMenuButton</include>
-                    </control>
-                    <control type="button" id="2001">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1920</width>
-                        <align>center</align>
-                        <textoffsetx>0</textoffsetx>
-                        <height>81</height>
-                        <include>LeftMenuButton</include>
-                        <label>Extended Info</label>
-                        <visible>System.HasAddon(script.extendedinfo)</visible>
-                        <visible>Container.Content(movies)|Container.Content(tvshows)|Container.Content(Actors)|Container.Content(Directors)|Container.Content(Artists)</visible>
-                        <onclick condition="Container.Content(Actors) | Container.Content(Directors) | Container.Content(Artists)">RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Label])</onclick>
-                        <onclick condition="Container.Content(Movies)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onclick>
-                        <onclick condition="Container.Content(tvshows)">RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[ListItem.Title],dbid=$INFO[ListItem.DBID])</onclick>
-                        <!--<onclick condition="Container.Content(Seasons) + !String.IsEmpty(ListItem.Season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</onclick>-->
-                    </control>
+                    <align>center</align>
+                    <textoffsetx>0</textoffsetx>
+                    <height>81</height>
+                    <include>LeftMenuButton</include>
                 </control>
-                <control type="scrollbar" id="60">
-                    <posx>1886</posx>
-                    <posy>33</posy>
-                    <height>810</height>
-                    <showonepage>false</showonepage>
-                    <include>VerticalScroller</include>
-                    <onleft>996</onleft>
-                    <onright>996</onright>
+                <control type="button" id="2001">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>1920</width>
+                    <align>center</align>
+                    <textoffsetx>0</textoffsetx>
+                    <height>81</height>
+                    <include>LeftMenuButton</include>
+                    <label>Extended Info</label>
+                    <visible>System.HasAddon(script.extendedinfo)</visible>
+                    <visible>Container.Content(movies)|Container.Content(tvshows)|Container.Content(Actors)|Container.Content(Directors)|Container.Content(Artists)</visible>
+                    <onclick condition="Container.Content(Actors) | Container.Content(Directors) | Container.Content(Artists)">RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Label])</onclick>
+                    <onclick condition="Container.Content(Movies)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onclick>
+                    <onclick condition="Container.Content(tvshows)">RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[ListItem.Title],dbid=$INFO[ListItem.DBID])</onclick>
+                    <!--<onclick condition="Container.Content(Seasons) + !String.IsEmpty(ListItem.Season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</onclick>-->
                 </control>
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>1886</posx>
+                <posy>33</posy>
+                <height>810</height>
+                <showonepage>false</showonepage>
+                <include>VerticalScroller</include>
+                <onleft>996</onleft>
+                <onright>996</onright>
             </control>
         </control>
     </controls>

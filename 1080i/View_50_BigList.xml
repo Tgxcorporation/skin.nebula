@@ -292,7 +292,6 @@
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
-            <include>FacadeFadeDialogs</include>
             <include>ScrollOffsetLabel_50</include>
             <include content="ClearArtLogo">
                 <param name="x" value="0"/>
@@ -349,7 +348,6 @@
         <control type="group">
             <visible>Control.IsVisible(51)</visible>
             <include>Icon_Fade</include>
-            <include>FacadeFadeDialogs</include>
             <include>ScrollOffsetLabel_50</include>
             <include content="ClearArtLogo">
                 <param name="x" value="0"/>
@@ -406,7 +404,6 @@
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
-            <include>FacadeFadeDialogs</include>
             <include>ScrollOffsetLabel_50</include>
             <control type="group">
                 <control type="image">
@@ -669,7 +666,6 @@
             <!--BIG LIST-->
             <visible>Skin.String(WeatherView,biglist)|Skin.String(WeatherView,)</visible>
             <include>Icon_Fade</include>
-            <include>FacadeFadeDialogs</include>
             <control type="image">
                 <posx>0</posx>
                 <posy>142</posy>

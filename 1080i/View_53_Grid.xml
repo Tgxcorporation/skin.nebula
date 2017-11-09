@@ -12,7 +12,6 @@
     </include>
     <include name="Info_53_Grid">
         <control type="group">
-            <include>FacadeFadeDialogs</include>
             <visible>Control.IsVisible(53)</visible>
             <visible>!Skin.HasSetting(DisableIconViewInfos)</visible>
             <visible>![ListItem.IsParentFolder|String.IsEmpty(ListItem.Label)]</visible>

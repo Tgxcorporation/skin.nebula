@@ -1080,8 +1080,6 @@
     </include>
     <include name="WidgetsCollection">
         <control type="group" id="700">
-            <include>Icon_Fade</include>
-            <include>FacadeFadeDialogs</include>
             <posy>-1080</posy>
 
             <!-- -->

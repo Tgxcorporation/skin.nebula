@@ -13,7 +13,6 @@
     <include name="Info_54_Fanart">
         <control type="group">
             <visible>Control.IsVisible(54)</visible>
-            <include>FacadeFadeDialogs</include>
             <include>Icon_Fade</include>
             <posy>559</posy>
             <!-- CDART MUSIC -->
@@ -220,8 +219,6 @@
             <include>Icon_Fade</include>
             <control type="group">
                 <control type="image">
-                    <include>FacadeFadeDialogs</include>
-                    <include>Icon_Fade</include>
                     <posx>-1920</posx>
                     <posy>750</posy>
                     <width>3840</width>
@@ -231,8 +228,6 @@
                 </control>
                 <control type="image">
                     <include>OverlayTransparency</include>
-                    <include>FacadeFadeDialogs</include>
-                    <include>Icon_Fade</include>
                     <posx>-35</posx>
                     <posy>609</posy>
                     <width>1990</width>
@@ -339,8 +334,6 @@
     </include>
     <include name="Info_54_Fanart_Weather">
         <control type="group">
-            <include>FacadeFadeDialogs</include>
-            <include>Icon_Fade</include>
             <posy>642</posy>
             <control type="image">
                 <visible>[String.IsEmpty(ListItem.thumb)]</visible>
@@ -475,8 +468,6 @@
             <include>Icon_Fade</include>
             <control type="group">
                 <control type="image">
-                    <include>FacadeFadeDialogs</include>
-                    <include>Icon_Fade</include>
                     <posx>-1920</posx>
                     <posy>750</posy>
                     <width>3840</width>
@@ -486,8 +477,6 @@
                 </control>
                 <control type="image">
                     <include>OverlayTransparency</include>
-                    <include>FacadeFadeDialogs</include>
-                    <include>Icon_Fade</include>
                     <posx>-35</posx>
                     <posy>609</posy>
                     <width>1990</width>

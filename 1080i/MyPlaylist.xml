@@ -10,8 +10,6 @@
         <include condition="skin.HasSetting(rssTicker)">rssTicker</include>
         <control type="group">
             <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">conditional</animation>
-            <include>FacadeFadeDialogs</include>
-            <include>Icon_Fade</include>
             <include>DialogOpenClose</include>
             <control type="image">
                 <posx>-760</posx>
@@ -143,7 +141,7 @@
         <control type="label">
             <include>OpenClose</include>
             <include>WindowTitle</include>
-            <label>$VAR[GlobalSubTitles]</label>
+            <label>$VAR[GlobalTitles]</label>
         </control>
         <control type="label">
             <include>OpenClose</include>
@@ -155,8 +153,6 @@
         <!-- SIDE MENU -->
         <control type="group">
             <visible>!Skin.HasSetting(EnableKioskMode)</visible>
-            <include>FacadeFadeDialogs</include>
-            <include>Icon_Fade</include>
             <include>LeftMenu</include>
             <control type="grouplist" id="9000">
                 <include>LeftMenuButtonGroup</include>

@@ -229,12 +229,8 @@
                 <animation effect="slide" tween="circle" time="200" start="0,0" end="0,950" reversible="true" condition="control.isvisible(378433)">Conditional</animation>
                 <animation effect="slide" time="0" start="0,0" end="0,133" reversible="true" condition="Skin.HasSetting(SingleRowSubMenu)">Conditional</animation>
                 <posy>0</posy>
-                <control type="group">
-                    <include>Icon_Fade</include>
-                    <include>FacadeFadeDialogs</include>
-                    <include condition="Skin.HasSetting(Fixed_HomeMenu)">Horizontal_Fixed_HomeMenu</include>
-                    <include condition="!Skin.HasSetting(Fixed_HomeMenu)">Horizontal_Wrapped_HomeMenu</include>
-                </control>
+                <include condition="Skin.HasSetting(Fixed_HomeMenu)">Horizontal_Fixed_HomeMenu</include>
+                <include condition="!Skin.HasSetting(Fixed_HomeMenu)">Horizontal_Wrapped_HomeMenu</include>
                 <control type="button" id="7010">
                     <!--NAVIGATION DUMMY-->
                     <visible>control.isvisible(378432)</visible>
@@ -246,186 +242,180 @@
                     <onfocus>SetFocus(701)</onfocus>
                 </control>
                 <control type="group">
-                    <include>Icon_Fade</include>
-                    <include>FacadeFadeDialogs</include>
-                    <control type="group">
-                        <visible>control.isvisible(378432)</visible>
-                        <include>VisibleFadeEffect</include>
-                        <control type="image">
-                            <animation type="Conditional" reversible="false" condition="control.HasFocus(701)|Control.HasFocus(7010)">
-                                <effect type="zoom" start="100" end="108" time="100" center="auto"/>
-                                <effect type="zoom" start="100" end="92.592592592593" time="50" delay="100" center="auto"/>
-                                <!--<effect type="fade" start="40" end="100" time="100"/>-->
-                            </animation>
-                            <posx>300</posx>
-                            <posy>142</posy>
-                            <width>1320</width>
-                            <height>160</height>
-                            <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
-                        </control>
-                        <control type="fixedlist" id="701">
-                            <posx>0</posx>
-                            <posy>183</posy>
-                            <width>1920</width>
-                            <height>78</height>
-                            <itemgap>30</itemgap>
-                            <align>center</align>
-                            <onup condition="control.isvisible(212)+Integer.IsGreater(Container(212).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">212</onup>
-                            <onup condition="control.isvisible(311)+Integer.IsGreater(Container(311).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">311</onup>
-                            <onup condition="control.isvisible(411)+Integer.IsGreater(Container(411).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">411</onup>
-                            <onup condition="control.isvisible(511)+Integer.IsGreater(Container(511).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">511</onup>
-                            <onup condition="control.isvisible(900)+Integer.IsGreater(Container(900).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">900</onup>
-                            <onup condition="control.isvisible(901)+Integer.IsGreater(Container(901).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">901</onup>
-                            <onup condition="control.isvisible(312)+Integer.IsGreater(Container(312).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31011])">312</onup>
-                            <onup condition="control.isvisible(412)+Integer.IsGreater(Container(412).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31011])">412</onup>
-                            <onup condition="control.isvisible(413)+Integer.IsGreater(Container(413).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31932])">413</onup>
-                            <onup condition="control.isvisible(700011)+Container(701).HasFocus(7001)">700011</onup>
-                            <onup condition="control.isvisible(700012)+Container(701).HasFocus(7001)">700012</onup>
-                            <onup condition="control.isvisible(700013)+Container(701).HasFocus(7001)">700013</onup>
-                            <onup condition="control.isvisible(700014)+Container(701).HasFocus(7001)">700014</onup>
-                            <onup condition="control.isvisible(700015)+Container(701).HasFocus(7001)">700015</onup>
-                            <onup condition="control.isvisible(700021)+Container(701).HasFocus(7002)">700021</onup>
-                            <onup condition="control.isvisible(700022)+Container(701).HasFocus(7002)">700022</onup>
-                            <onup condition="control.isvisible(700023)+Container(701).HasFocus(7002)">700023</onup>
-                            <onup condition="control.isvisible(700024)+Container(701).HasFocus(7002)">700024</onup>
-                            <onup condition="control.isvisible(700025)+Container(701).HasFocus(7002)">700025</onup>
-                            <onup condition="control.isvisible(700031)+Container(701).HasFocus(7003)">700031</onup>
-                            <onup condition="control.isvisible(700032)+Container(701).HasFocus(7003)">700032</onup>
-                            <onup condition="control.isvisible(700033)+Container(701).HasFocus(7003)">700033</onup>
-                            <onup condition="control.isvisible(700034)+Container(701).HasFocus(7003)">700034</onup>
-                            <onup condition="control.isvisible(700035)+Container(701).HasFocus(7003)">700035</onup>
-                            <onup condition="control.isvisible(700041)+Container(701).HasFocus(7004)">700041</onup>
-                            <onup condition="control.isvisible(700042)+Container(701).HasFocus(7004)">700042</onup>
-                            <onup condition="control.isvisible(700043)+Container(701).HasFocus(7004)">700043</onup>
-                            <onup condition="control.isvisible(700044)+Container(701).HasFocus(7004)">700044</onup>
-                            <onup condition="control.isvisible(700045)+Container(701).HasFocus(7004)">700045</onup>
-                            <onup condition="control.isvisible(700051)+Container(701).HasFocus(7005)">700051</onup>
-                            <onup condition="control.isvisible(700052)+Container(701).HasFocus(7005)">700052</onup>
-                            <onup condition="control.isvisible(700053)+Container(701).HasFocus(7005)">700053</onup>
-                            <onup condition="control.isvisible(700054)+Container(701).HasFocus(7005)">700054</onup>
-                            <onup condition="control.isvisible(700055)+Container(701).HasFocus(7005)">700055</onup>
-                            <ondown>300</ondown>
-                            <focusposition>1</focusposition>
-                            <orientation>horizontal</orientation>
-                            <pagecontrol>-</pagecontrol>
-                            <itemlayout width="640" height="78">
+                    <visible>control.isvisible(378432)</visible>
+                    <include>VisibleFadeEffect</include>
+                    <control type="image">
+                        <animation type="Conditional" reversible="false" condition="control.HasFocus(701)|Control.HasFocus(7010)">
+                            <effect type="zoom" start="100" end="108" time="100" center="auto"/>
+                            <effect type="zoom" start="100" end="92.592592592593" time="50" delay="100" center="auto"/>
+                            <!--<effect type="fade" start="40" end="100" time="100"/>-->
+                        </animation>
+                        <posx>300</posx>
+                        <posy>142</posy>
+                        <width>1320</width>
+                        <height>160</height>
+                        <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+                    </control>
+                    <control type="fixedlist" id="701">
+                        <posx>0</posx>
+                        <posy>183</posy>
+                        <width>1920</width>
+                        <height>78</height>
+                        <itemgap>30</itemgap>
+                        <align>center</align>
+                        <onup condition="control.isvisible(212)+Integer.IsGreater(Container(212).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">212</onup>
+                        <onup condition="control.isvisible(311)+Integer.IsGreater(Container(311).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">311</onup>
+                        <onup condition="control.isvisible(411)+Integer.IsGreater(Container(411).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">411</onup>
+                        <onup condition="control.isvisible(511)+Integer.IsGreater(Container(511).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">511</onup>
+                        <onup condition="control.isvisible(900)+Integer.IsGreater(Container(900).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">900</onup>
+                        <onup condition="control.isvisible(901)+Integer.IsGreater(Container(901).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">901</onup>
+                        <onup condition="control.isvisible(312)+Integer.IsGreater(Container(312).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31011])">312</onup>
+                        <onup condition="control.isvisible(412)+Integer.IsGreater(Container(412).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31011])">412</onup>
+                        <onup condition="control.isvisible(413)+Integer.IsGreater(Container(413).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31932])">413</onup>
+                        <onup condition="control.isvisible(700011)+Container(701).HasFocus(7001)">700011</onup>
+                        <onup condition="control.isvisible(700012)+Container(701).HasFocus(7001)">700012</onup>
+                        <onup condition="control.isvisible(700013)+Container(701).HasFocus(7001)">700013</onup>
+                        <onup condition="control.isvisible(700014)+Container(701).HasFocus(7001)">700014</onup>
+                        <onup condition="control.isvisible(700015)+Container(701).HasFocus(7001)">700015</onup>
+                        <onup condition="control.isvisible(700021)+Container(701).HasFocus(7002)">700021</onup>
+                        <onup condition="control.isvisible(700022)+Container(701).HasFocus(7002)">700022</onup>
+                        <onup condition="control.isvisible(700023)+Container(701).HasFocus(7002)">700023</onup>
+                        <onup condition="control.isvisible(700024)+Container(701).HasFocus(7002)">700024</onup>
+                        <onup condition="control.isvisible(700025)+Container(701).HasFocus(7002)">700025</onup>
+                        <onup condition="control.isvisible(700031)+Container(701).HasFocus(7003)">700031</onup>
+                        <onup condition="control.isvisible(700032)+Container(701).HasFocus(7003)">700032</onup>
+                        <onup condition="control.isvisible(700033)+Container(701).HasFocus(7003)">700033</onup>
+                        <onup condition="control.isvisible(700034)+Container(701).HasFocus(7003)">700034</onup>
+                        <onup condition="control.isvisible(700035)+Container(701).HasFocus(7003)">700035</onup>
+                        <onup condition="control.isvisible(700041)+Container(701).HasFocus(7004)">700041</onup>
+                        <onup condition="control.isvisible(700042)+Container(701).HasFocus(7004)">700042</onup>
+                        <onup condition="control.isvisible(700043)+Container(701).HasFocus(7004)">700043</onup>
+                        <onup condition="control.isvisible(700044)+Container(701).HasFocus(7004)">700044</onup>
+                        <onup condition="control.isvisible(700045)+Container(701).HasFocus(7004)">700045</onup>
+                        <onup condition="control.isvisible(700051)+Container(701).HasFocus(7005)">700051</onup>
+                        <onup condition="control.isvisible(700052)+Container(701).HasFocus(7005)">700052</onup>
+                        <onup condition="control.isvisible(700053)+Container(701).HasFocus(7005)">700053</onup>
+                        <onup condition="control.isvisible(700054)+Container(701).HasFocus(7005)">700054</onup>
+                        <onup condition="control.isvisible(700055)+Container(701).HasFocus(7005)">700055</onup>
+                        <ondown>300</ondown>
+                        <focusposition>1</focusposition>
+                        <orientation>horizontal</orientation>
+                        <pagecontrol>-</pagecontrol>
+                        <itemlayout width="640" height="78">
+                            <control type="label">
+                                <posx>60</posx>
+                                <posy>0</posy>
+                                <height>78</height>
+                                <width>520</width>
+                                <font>FacadeListMainFont</font>
+                                <align>center</align>
+                                <scroll>false</scroll>
+                                <label>$INFO[ListItem.Label]</label>
+                                <include>TextColor_AlternateColor</include>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout width="640" height="78">
+                            <control type="group">
+                                <include>ButtonFocusAnimation</include>
+                                <control type="image">
+                                    <visible>Control.HasFocus(701)</visible>
+                                    <posx>0</posx>
+                                    <posy>0</posy>
+                                    <height>78</height>
+                                    <width>600</width>
+                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                    <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                                </control>
                                 <control type="label">
+                                    <visible>!Control.HasFocus(701)|Control.HasFocus(7010)</visible>
                                     <posx>60</posx>
                                     <posy>0</posy>
                                     <height>78</height>
                                     <width>520</width>
-                                    <font>FacadeListMainFont</font>
                                     <align>center</align>
-                                    <scroll>false</scroll>
+                                    <font>FacadeListMainFont</font>
                                     <label>$INFO[ListItem.Label]</label>
                                     <include>TextColor_AlternateColor</include>
                                 </control>
-                            </itemlayout>
-                            <focusedlayout width="640" height="78">
-                                <control type="group">
-                                    <include>ButtonFocusAnimation</include>
-                                    <control type="image">
-                                        <visible>Control.HasFocus(701)</visible>
-                                        <posx>0</posx>
-                                        <posy>0</posy>
-                                        <height>78</height>
-                                        <width>600</width>
-                                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
-                                    </control>
-                                    <control type="label">
-                                        <visible>!Control.HasFocus(701)|Control.HasFocus(7010)</visible>
-                                        <posx>60</posx>
-                                        <posy>0</posy>
-                                        <height>78</height>
-                                        <width>520</width>
-                                        <align>center</align>
-                                        <font>FacadeListMainFont</font>
-                                        <label>$INFO[ListItem.Label]</label>
-                                        <include>TextColor_AlternateColor</include>
-                                    </control>
-                                    <control type="label">
-                                        <visible>Control.HasFocus(701)|Control.HasFocus(7010)</visible>
-                                        <posx>60</posx>
-                                        <posy>0</posy>
-                                        <height>78</height>
-                                        <align>center</align>
-                                        <width>520</width>
-                                        <font>FacadeListMainFont</font>
-                                        <label>$INFO[ListItem.Label]</label>
-                                        <include>TextColor_MainColor</include>
-                                    </control>
+                                <control type="label">
+                                    <visible>Control.HasFocus(701)|Control.HasFocus(7010)</visible>
+                                    <posx>60</posx>
+                                    <posy>0</posy>
+                                    <height>78</height>
+                                    <align>center</align>
+                                    <width>520</width>
+                                    <font>FacadeListMainFont</font>
+                                    <label>$INFO[ListItem.Label]</label>
+                                    <include>TextColor_MainColor</include>
                                 </control>
-                            </focusedlayout>
-                            <include>ShelfIcons</include>
-                        </control>
-                        <control type="button" id="7018">
-                            <posx>0</posx>
-                            <posy>180</posy>
-                            <width>650</width>
-                            <height>84</height>
-                            <texturefocus>-</texturefocus>
-                            <texturenofocus>-</texturenofocus>
-                            <onclick>Control.Move(701,-1)</onclick>
-                        </control>
-                        <control type="button" id="7019">
-                            <posx>1270</posx>
-                            <posy>180</posy>
-                            <width>650</width>
-                            <height>84</height>
-                            <texturefocus>-</texturefocus>
-                            <texturenofocus>-</texturenofocus>
-                            <onclick>Control.Move(701,1)</onclick>
-                        </control>
+                            </control>
+                        </focusedlayout>
+                        <include>ShelfIcons</include>
                     </control>
-                    <control type="button" id="301">
+                    <control type="button" id="7018">
                         <posx>0</posx>
-                        <posy>303</posy>
-                        <width>661</width>
-                        <height>450</height>
+                        <posy>180</posy>
+                        <width>650</width>
+                        <height>84</height>
                         <texturefocus>-</texturefocus>
                         <texturenofocus>-</texturenofocus>
-                        <onclick>Control.Move(300,-1)</onclick>
+                        <onclick>Control.Move(701,-1)</onclick>
                     </control>
-                    <control type="button" id="302">
-                        <posx>1260</posx>
-                        <posy>303</posy>
-                        <width>660</width>
-                        <height>450</height>
+                    <control type="button" id="7019">
+                        <posx>1270</posx>
+                        <posy>180</posy>
+                        <width>650</width>
+                        <height>84</height>
                         <texturefocus>-</texturefocus>
                         <texturenofocus>-</texturenofocus>
-                        <onclick>Control.Move(300,1)</onclick>
-                    </control>
-                    <control type="image">
-                        <animation type="Conditional" reversible="false" condition="control.HasFocus(300)|control.HasFocus(301)|control.HasFocus(302)">
-                            <effect type="zoom" start="100" end="106" time="100" center="auto"/>
-                            <effect type="zoom" start="100" end="94.339622641509" time="50" delay="100" center="auto"/>
-                            <!--<effect type="fade" start="40" end="100" time="100"/>-->
-                        </animation>
-                        <include>UpperFade</include>
-                        <fadetime>300</fadetime>
-                        <posx>626</posx>
-                        <posy>270</posy>
-                        <width>669</width>
-                        <height>407</height>
-                        <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[Container(300).ListItem.Icon]</texture>
-                        <aspectratio>scale</aspectratio>
-                        <include>ThumbBorder</include>
-                    </control>
-                    <control type="label">
-                        <posx>TextMargin</posx>
-                        <posy>680</posy>
-                        <width>1800</width>
-                        <aligny>top</aligny>
-                        <align>center</align>
-                        <font>HomeItemFont</font>
-                        <include>TextColor_MainColor</include>
-                        <label>$INFO[Container(300).ListItem.Label]</label>
+                        <onclick>Control.Move(701,1)</onclick>
                     </control>
                 </control>
+                <control type="button" id="301">
+                    <posx>0</posx>
+                    <posy>303</posy>
+                    <width>661</width>
+                    <height>450</height>
+                    <texturefocus>-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <onclick>Control.Move(300,-1)</onclick>
+                </control>
+                <control type="button" id="302">
+                    <posx>1260</posx>
+                    <posy>303</posy>
+                    <width>660</width>
+                    <height>450</height>
+                    <texturefocus>-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <onclick>Control.Move(300,1)</onclick>
+                </control>
+                <control type="image">
+                    <animation type="Conditional" reversible="false" condition="control.HasFocus(300)|control.HasFocus(301)|control.HasFocus(302)">
+                        <effect type="zoom" start="100" end="106" time="100" center="auto"/>
+                        <effect type="zoom" start="100" end="94.339622641509" time="50" delay="100" center="auto"/>
+                        <!--<effect type="fade" start="40" end="100" time="100"/>-->
+                    </animation>
+                    <include>UpperFade</include>
+                    <fadetime>300</fadetime>
+                    <posx>626</posx>
+                    <posy>270</posy>
+                    <width>669</width>
+                    <height>407</height>
+                    <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[Container(300).ListItem.Icon]</texture>
+                    <aspectratio>scale</aspectratio>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>680</posy>
+                    <width>1800</width>
+                    <aligny>top</aligny>
+                    <align>center</align>
+                    <font>HomeItemFont</font>
+                    <include>TextColor_MainColor</include>
+                    <label>$INFO[Container(300).ListItem.Label]</label>
+                </control>
                 <control type="group">
-                    <include>Icon_Fade</include>
-                    <include>FacadeFadeDialogs</include>
                     <animation type="Conditional" reversible="false" condition="Integer.IsGreater(Container(9001).NumItems,0)">
                         <effect type="fade" start="0" end="100" time="150" delay="0" tween="circle" easing="inout"/>
                         <effect type="zoom" start="110" end="100" time="150" delay="0" center="auto" tween="circle" easing="inout"/>
@@ -465,8 +455,6 @@
                 </control>
                 <control type="group">
                     <animation effect="slide" time="0" start="0,0" end="0,-133" reversible="true" condition="Skin.HasSetting(SingleRowSubMenu)">Conditional</animation>
-                    <include>Icon_Fade</include>
-                    <include>FacadeFadeDialogs</include>
                     <include>rssTicker</include>
                 </control>
             </control>

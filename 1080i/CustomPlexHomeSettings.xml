@@ -10,8 +10,6 @@
         <control type="group">
             <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">conditional</animation>
             <include>OpenClose</include>
-            <include>FacadeFadeDialogs</include>
-            <include>Icon_Fade</include>
             <control type="image">
                 <posx>0</posx>
                 <posy>142</posy>
@@ -70,8 +68,6 @@
         <!-- SIDE MENU -->
         <control type="group">
             <include>LeftMenu</include>
-            <include>FacadeFadeDialogs</include>
-            <include>Icon_Fade</include>
             <control type="grouplist" id="9000">
                 <include>LeftMenuButtonGroup</include>
                 <onright>211</onright>

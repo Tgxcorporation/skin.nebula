@@ -11,6 +11,7 @@
    -->
     <include file="Includes_Variables.xml"/>
     <include file="Includes_Animations.xml"/>
+    <include file="Includes_Expressions.xml"/>
     <include file="Includes_Codec.xml"/>
     <include file="Includes_CustomColors.xml"/>
     <include file="defaults.xml"/>
@@ -32,7 +33,7 @@
     <include file="script-skinshortcuts-includes.xml"/>
     <include name="Player_Show">
         <control type="image">
-            <visible>Player.HasVideo + !Skin.HasSetting(Show_Player) + !Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
+            <visible>Player.HasVideo + !Skin.HasSetting(Show_Player)</visible>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
@@ -71,7 +72,7 @@
         </control>
         <control type="videowindow">
             <visible>!SlideShow.IsActive</visible>
-            <visible>Player.HasVideo + !Skin.HasSetting(Show_Player) + !Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
+            <visible>Player.HasVideo + !Skin.HasSetting(Show_Player)</visible>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
@@ -88,14 +89,45 @@
         <texturefocus>-</texturefocus>
     </include>
     <include name="DimBG">
-        <control type="image">
-            <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="true">Conditional</animation>
-            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <posx>-1920</posx>
-            <posy>-1080</posy>
-            <width>5760</width>
-            <height>3240</height>
-            <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
+        <control type="group">
+            <include>OpenClose</include>
+            <control type="multiimage">
+                <visible>!Skin.HasSetting(DisableFanart)</visible>
+                <include>KenBurns</include>
+                <posx>-89</posx>
+                <posy>-50</posy>
+                <width>2098</width>
+                <height>1180</height>
+                <timeperimage>9000</timeperimage>
+                <randomize>true</randomize>
+                <fadetime>400</fadetime>
+                <aspectratio aligny="top">scale</aspectratio>
+                <imagepath background="true">$VAR[Fanart.Art]</imagepath>
+            </control>
+            <include>Player_Show</include>
+            <control type="image">
+                <include>OverlayTransparency</include>
+                <posx>-89</posx>
+                <posy>-50</posy>
+                <width>2098</width>
+                <height>1180</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
+            </control>
+            <control type="label">
+                <include>DialogOpenCloseHeader</include>
+                <include>WindowTitle</include>
+                <label>$VAR[GlobalTitles]</label>
+            </control>
+            <control type="label">
+                <include>DialogOpenCloseHeader</include>
+                <include>WindowTitleSub</include>
+                <label>$VAR[DialogSubTitles]</label>
+            </control>
+            <control type="group">
+                <include>DialogOpenCloseHeader</include>
+                <include>Time</include>
+            </control>
         </control>
     </include>
     <include name="Dimensions_Fullscreen">
@@ -469,78 +501,18 @@
                 </control>
             </control>
         </control>
-        <include>FacadeFadeDialogs1stLevelCondition</include>
     </include>
-    <include name="FacadeFadeDialogs1stLevelCondition">
-        <!--DUMMY FOR DIALOG ANIMATIONS-->
-        <control type="image" id="123001">
-            <visible>![
-                Window.IsVisible(script-emby-context.xml)|
-                Window.IsVisible(DialogVideoInfo.xml)|
-                Window.IsVisible(DialogPlayerProcessInfo.xml)|
-                Window.IsVisible(DialogAddonSettings.xml)|
-                Window.IsVisible(DialogAddonInfo.xml)|
-                Window.IsVisible(DialogKeyboard.xml)|
-                Window.IsVisible(DialogNumeric.xml)|
-                Window.IsVisible(DialogPictureInfo.xml)|
-                Window.IsVisible(DialogMediaSource.xml)|
-                Window.IsVisible(DialogMusicInfo.xml)|
-                Window.IsVisible(DialogSelect.xml)|
-                Window.IsVisible(DialogContextMenu.xml)|
-                Window.IsVisible(DialogButtonMenu.xml)|
-                Window.IsVisible(DialogPVRInfo.xml)|
-                Window.IsVisible(DialogPVRGuideSearch.xml)|
-                Window.IsVisible(DialogSettings.xml)|
-                Window.IsVisible(DialogPVRGroupManager.xml)|
-                Window.IsVisible(DialogPVRChannelManager.xml)|
-                Window.IsVisible(DialogRecordSettings.xml)|
-                Window.IsVisible(DialogPeripheralManager.xml)|
-                Window.IsVisible(DialogAccessPoints.xml)|
-                Window.IsVisible(DialogFileStacking.xml)|
-                Window.IsVisible(DialogTextViewer.xml)|
-                Window.IsVisible(DialogConfirm.xml)|
-                Window.IsVisible(DialogGamepad.xml)|
-                Window.IsVisible(SmartPlaylistRule.xml)|
-                Window.IsVisible(DeleteTimer.xml)|
-                Window.IsVisible(FileBrowser.xml)|
-                Window.IsVisible(RecordPrefs.xml)|
-                Window.IsVisible(script-skin_helper_service-ColorPicker.xml)|
-                Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml)|
-                Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)|
-                Window.IsVisible(script-ExtendedInfo Script-SlideShow.xml)|
-                Window.IsVisible(script-globalsearch-infodialog.xml)|
-                Window.IsVisible(script-globalsearch-main.xml)|
-                Window.IsVisible(script-RSS_Editor-rssEditor.xml)|
-                Window.IsVisible(script-RSS_Editor-setEditor.xml)|
-                Window.IsVisible(script-videoextras-context.xml)|
-                Window.IsVisible(script-videoextras-resume.xml)
-                ]</visible>
-            <posx>-30</posx>
-            <posy>-30</posy>
-            <width>1</width>
-            <height>1</height>
-            <texture>-</texture>
+    <include name="OverlayDialog">
+        <control type="image">
+            <include>OverlayTransparency</include>
+            <include>OpenClose</include>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
         </control>
-    </include>
-    <include name="FacadeFadeDialogs2ndLevelCondition">
-        <!--<visible>![-->
-            <!--Window.IsVisible(DialogButtonMenu.xml)|-->
-            <!--Window.IsVisible(DialogPlayerProcessInfo.xml)|-->
-            <!--Window.IsVisible(DialogKeyboard.xml)|-->
-            <!--Window.IsVisible(DialogNumeric.xml)|-->
-            <!--Window.IsVisible(DialogFileStacking.xml)|-->
-            <!--Window.IsVisible(DialogContextMenu.xml)|-->
-            <!--Window.IsVisible(DialogSelect.xml)|-->
-            <!--Window.IsVisible(DialogTextViewer.xml)|-->
-            <!--Window.IsVisible(DialogConfirm.xml)|-->
-            <!--Window.IsVisible(DialogGamepad.xml)|-->
-            <!--Window.IsVisible(script-globalsearch-infodialog.xml)-->
-            <!--]</visible>-->
-    </include>
-    <include name="FacadeFadeDialogs3rdLevelCondition">
-        <!--<visible>![-->
-            <!--Window.IsVisible(DialogButtonMenu.xml)-->
-            <!--]</visible>-->
     </include>
     <include name="Time">
         <control type="group">
@@ -1391,8 +1363,6 @@
     </include>
     <include name="OSDInfoPanel">
         <control type="group">
-            <include>FacadeFadeDialogs2ndLevelCondition</include>
-            <include>Icon_Fade</include>
             <control type="group">
                 <include>OpenClose</include>
                 <posy>-56</posy>
@@ -1653,7 +1623,7 @@
         </control>
     </include>
     <include name="DialogTransparency">
-        <animation effect="fade" start="95" end="95" time="0" reversible="false" condition="true">Conditional</animation>
+        <animation effect="fade" start="35" end="35" time="0" reversible="false" condition="true">Conditional</animation>
         <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
     </include>
     <include name="ScrollOffsetLabel">

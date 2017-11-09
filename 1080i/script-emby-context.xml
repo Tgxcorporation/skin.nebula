@@ -6,7 +6,7 @@
     <controls>
         <control type="group">
             <animation effect="slide" time="0" start="0,-3510" end="0,-3510" condition="Integer.IsGreater(Container(155).NumItems,0)">conditional</animation>
-            <include>TopBar</include>
+            <include>DimBG</include>
             <control type="group">
                 <include>DialogOpenClose</include>
                 <control type="group">

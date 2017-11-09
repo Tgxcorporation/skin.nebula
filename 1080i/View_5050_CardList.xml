@@ -434,8 +434,6 @@
     <include name="View_5050_CardList">
         <control type="group">
             <visible>Control.IsVisible(5050)</visible>
-            <include>Icon_Fade</include>
-            <include>FacadeFadeDialogs</include>
             <include>ScrollOffsetLabel_50</include>
             <include content="ClearArtLogo">
                 <param name="x" value="0"/>

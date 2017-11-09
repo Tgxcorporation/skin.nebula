@@ -65,8 +65,6 @@
     <include name="Info_52_ShortList">
         <control type="group">
             <visible>Control.IsVisible(52)</visible>
-            <include>Icon_Fade</include>
-            <include>FacadeFadeDialogs</include>
             <control type="image">
                 <visible>[String.IsEmpty(ListItem.thumb)|String.IsEmpty(ListItem.Art(thumb))]|
                     [Window.IsActive(MyMusicSongs.xml)+Skin.HasSetting(plexbmc)+Container.Content(Songs)+!Skin.HasSetting(52_ShowPlot)]</visible>
@@ -349,8 +347,6 @@
     <include name="View_52_ShortList">
         <control type="group">
             <visible>Control.IsVisible(52)</visible>
-            <include>Icon_Fade</include>
-            <include>FacadeFadeDialogs</include>
             <include>ScrollOffsetLabel_50</include>
             <include content="ClearArtLogo">
                 <param name="x" value="0"/>
@@ -550,8 +546,6 @@
     <include name="View_52_ShortList_Weather">
         <control type="group">
             <visible>Skin.String(WeatherView,Shortlist)</visible>
-            <include>Icon_Fade</include>
-            <include>FacadeFadeDialogs</include>
             <control type="image">
                 <posx>530</posx>
                 <posy>142</posy>

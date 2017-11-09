@@ -2,8 +2,7 @@
 <window>
     <defaultcontrol always="true">21</defaultcontrol>
     <controls>
-        <!-- <include>DimBG</include> -->
-        <include>TopBar</include>
+        <include>DimBG</include>
         <control type="group">
             <control type="group">
                 <include>DialogOpenClose</include>

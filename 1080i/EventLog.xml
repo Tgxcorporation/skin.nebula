@@ -14,7 +14,6 @@
             <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="-2090,0" condition="Control.HasFocus(505050)">conditional</animation>
             <include>OpenClose</include>
             <control type="group">
-                <include>FacadeFadeDialogs</include>
                 <include>ScrollOffsetLabel_50</include>
                 <control type="image">
                     <posx>0</posx>
@@ -144,7 +143,7 @@
         <control type="label">
             <include>OpenClose</include>
             <include>WindowTitle</include>
-            <label>$VAR[GlobalSubTitles]</label>
+            <label>$VAR[GlobalTitles]</label>
         </control>
         <control type="label">
             <include>OpenClose</include>
@@ -157,7 +156,6 @@
         <control type="group">
             <visible>!Skin.HasSetting(EnableKioskMode)</visible>
             <include>LeftMenu</include>
-            <include>Icon_Fade</include>
             <control type="grouplist" id="9000">
                 <include>LeftMenuButtonGroup</include>
                 <onright>570</onright>

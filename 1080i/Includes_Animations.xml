@@ -169,6 +169,14 @@
             <effect type="zoom" start="100" end="105" time="150" delay="0" center="960,588" tween="circle" easing="inout"/>
         </animation>
     </include>
+    <include name="DialogOverlayOpenClose">
+        <animation type="WindowOpen" reversible="false">
+            <effect type="fade" start="0" end="100" time="150" delay="0" tween="circle" easing="inout"/>
+        </animation>
+        <animation type="WindowClose" reversible="false">
+            <effect type="fade" start="100" end="0" time="150" delay="0" tween="circle" easing="inout"/>
+        </animation>
+    </include>
     <include name="DialogOpenClose">
         <animation type="WindowOpen" reversible="false">
             <effect type="fade" start="0" end="100" time="150" delay="0" tween="circle" easing="inout"/>
@@ -177,6 +185,14 @@
         <animation type="WindowClose" reversible="false">
             <effect type="fade" start="100" end="0" time="150" delay="0" tween="circle" easing="inout"/>
             <effect type="zoom" start="100" end="110" time="150" delay="0" center="960,540" tween="circle" easing="inout"/>
+        </animation>
+    </include>
+    <include name="DialogOpenCloseHeader">
+        <animation type="WindowOpen" reversible="false">
+            <effect type="fade" start="0" end="100" time="0" delay="0"/>
+        </animation>
+        <animation type="WindowClose" reversible="false">
+            <effect type="fade" start="100" end="0" time="0" delay="0"/>
         </animation>
     </include>
     <include name="DialogContextOpenClose">
@@ -263,13 +279,6 @@
                                 ]">
             <include>PulseBasicHidden</include>
         </animation>
-    </include>
-    <include name="FacadeFadeDialogs">
-        <!--Dialogs are Visible-->
-        <visible>Control.IsVisible(123001)</visible>
-        <!--<animation type="Conditional" reversible="true" condition="Window.IsVisible(DialogContextMenu.xml)">-->
-            <!--<effect type="fade" start="100" end="25" time="150" delay="0"/>-->
-        <!--</animation>-->
     </include>
     <include name="PulseClearArt">
         <visible>Skin.HasSetting(EnableClearArt)</visible>

@@ -264,8 +264,6 @@
     <include name="View_51_SlimList">
         <control type="group">
             <visible>Control.IsVisible(51)</visible>
-            <include>Icon_Fade</include>
-            <include>FacadeFadeDialogs</include>
             <include>ScrollOffsetLabel_50</include>
             <include content="ClearArtLogo">
                 <param name="x" value="0"/>
@@ -490,8 +488,6 @@
         <control type="group">
             <!--SLIM LIST-->
             <visible>Skin.String(WeatherView,slimlist)</visible>
-            <include>Icon_Fade</include>
-            <include>FacadeFadeDialogs</include>
             <control type="image">
                 <posx>0</posx>
                 <posy>142</posy>
