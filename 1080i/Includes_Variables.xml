@@ -1015,4 +1015,93 @@
         <value condition="ListItem.HasTimerSchedule">$VAR[Theme.Color]/pvr/PVR-HasTimerSchedule.png</value>
         <value condition="ListItem.HasTimer">$VAR[Theme.Color]/pvr/PVR-HasTimer.png</value>
     </variable>
+    <variable name="WidgetAspectLabel">
+        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect))">$INFO[Container(211).ListItem.Property(widgetAspect)]</value>
+        <value>$LOCALIZE[31118]</value>
+    </variable>
+    <variable name="WidgetSortByLabel">
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy),lastplayed)">$LOCALIZE[568]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy),lastused)">$LOCALIZE[12012]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy),sorttitle)">$LOCALIZE[551]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy),rating)">$LOCALIZE[563]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy),year)">$LOCALIZE[562]</value>
+        <value>$LOCALIZE[16018]</value>
+    </variable>
+    <variable name="WidgetSortDirectionLabel">
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortDirection),ascending)">$LOCALIZE[584]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortDirection),descending)">$LOCALIZE[585]</value>
+        <value>$LOCALIZE[16018]</value>
+    </variable>
+    <variable name="WidgetAspectLabel.1">
+        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.1))">$INFO[Container(211).ListItem.Property(widgetAspect.1)]</value>
+        <value>$LOCALIZE[31118]</value>
+    </variable>
+    <variable name="WidgetSortByLabel.1">
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.1),lastplayed)">$LOCALIZE[568]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.1),lastused)">$LOCALIZE[12012]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.1),sorttitle)">$LOCALIZE[551]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.1),rating)">$LOCALIZE[563]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.1),year)">$LOCALIZE[562]</value>
+        <value>$LOCALIZE[16018]</value>
+    </variable>
+    <variable name="WidgetSortDirectionLabel.1">
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortDirection.1),ascending)">$LOCALIZE[584]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortDirection.1),descending)">$LOCALIZE[585]</value>
+        <value>$LOCALIZE[16018]</value>
+    </variable>
+    <variable name="WidgetAspectLabel.2">
+        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.2))">$INFO[Container(211).ListItem.Property(widgetAspect.2)]</value>
+        <value>$LOCALIZE[31118]</value>
+    </variable>
+    <variable name="WidgetSortByLabel.2">
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.2),lastplayed)">$LOCALIZE[568]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.2),lastused)">$LOCALIZE[12012]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.2),sorttitle)">$LOCALIZE[551]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.2),rating)">$LOCALIZE[563]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.2),year)">$LOCALIZE[562]</value>
+        <value>$LOCALIZE[16018]</value>
+    </variable>
+    <variable name="WidgetSortDirectionLabel.2">
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortDirection.2),ascending)">$LOCALIZE[584]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortDirection.2),descending)">$LOCALIZE[585]</value>
+        <value>$LOCALIZE[16018]</value>
+    </variable>
+    <variable name="WidgetAspectLabel.3">
+        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.3))">$INFO[Container(211).ListItem.Property(widgetAspect.3)]</value>
+        <value>$LOCALIZE[31118]</value>
+    </variable>
+    <variable name="WidgetSortByLabel.3">
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.3),lastplayed)">$LOCALIZE[568]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.3),lastused)">$LOCALIZE[12012]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.3),sorttitle)">$LOCALIZE[551]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.3),rating)">$LOCALIZE[563]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.3),year)">$LOCALIZE[562]</value>
+        <value>$LOCALIZE[16018]</value>
+    </variable>
+    <variable name="WidgetSortDirectionLabel.3">
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortDirection.3),ascending)">$LOCALIZE[584]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortDirection.3),descending)">$LOCALIZE[585]</value>
+        <value>$LOCALIZE[16018]</value>
+    </variable>
+    <variable name="WidgetAspectLabel.4">
+        <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.4))">$INFO[Container(211).ListItem.Property(widgetAspect.4)]</value>
+        <value>$LOCALIZE[31118]</value>
+    </variable>
+    <variable name="WidgetSortByLabel.4">
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.4),lastplayed)">$LOCALIZE[568]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.4),lastused)">$LOCALIZE[12012]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.4),sorttitle)">$LOCALIZE[551]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.4),rating)">$LOCALIZE[563]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.4),year)">$LOCALIZE[562]</value>
+        <value>$LOCALIZE[16018]</value>
+    </variable>
+    <variable name="WidgetSortDirectionLabel.4">
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortDirection.4),ascending)">$LOCALIZE[584]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortDirection.4),descending)">$LOCALIZE[585]</value>
+        <value>$LOCALIZE[16018]</value>
+    </variable>
+    <variable name="WidgetLimit">
+        <value condition="Skin.HasSetting(DisableWidgetLimit) + !Skin.HasSetting(plexbmc)">1000</value>
+        <value>24</value>
+    </variable>
 </includes>

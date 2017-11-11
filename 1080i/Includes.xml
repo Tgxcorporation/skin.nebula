@@ -18,6 +18,7 @@
     <include file="Includes_Home_Common.xml"/>
     <include file="Includes_Home_Common_Plexbmc.xml"/>
     <include file="Includes_Horizontal_Home.xml"/>
+    <include file="Includes_Vertical_Home.xml"/>
     <include file="Includes_Shelf_Plexbmc_Contents.xml"/>
     <include file="Includes_PVR.xml"/>
     <include file="Includes_Weather.xml"/>
@@ -200,7 +201,7 @@
             <onright>9900</onright>
             <onup>9000</onup>
             <ondown condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</ondown>
-            <ondown condition="Window.IsActive(Home.xml)">701</ondown>
+            <ondown condition="Window.IsActive(Home.xml)">9001</ondown>
             <ondown condition="Window.IsActive(DialogSettings.xml)">21</ondown>
             <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
             <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
@@ -318,7 +319,7 @@
             <onright>9900</onright>
             <onup>9000</onup>
             <ondown condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</ondown>
-            <ondown condition="Window.IsActive(Home.xml)">701</ondown>
+            <ondown condition="Window.IsActive(Home.xml)">9001</ondown>
             <ondown condition="Window.IsActive(DialogSettings.xml)">21</ondown>
             <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
             <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
@@ -574,7 +575,7 @@
                 <ondown>Control.Move(50,1)</ondown> -->
             </control>
             <control type="group">
-                <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
+                <include condition="Skin.HasSetting(plexbmc)+!Window.IsVisible(Home.xml)">PlexbmcFixTrick</include>
                 <control type="group">
                     <include content="ProgressBar">
                         <param name="id" value="0"/>

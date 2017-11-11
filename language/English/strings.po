@@ -412,7 +412,31 @@ msgctxt "#31114"
 msgid "Multi Image"
 msgstr ""
 
-#empty strings from id 31115 to 31131
+msgctxt "#31115"
+msgid "Aspect ratio"
+msgstr ""
+
+msgctxt "#31116"
+msgid "Disable widget limit"
+msgstr ""
+
+msgctxt "#31117"
+msgid "Poster - 2:3"
+msgstr ""
+
+msgctxt "#31118"
+msgid "Icon - 1:1"
+msgstr ""
+
+msgctxt "#31119"
+msgid "Episode - 16:9"
+msgstr ""
+
+msgctxt "#31120"
+msgid "Channel - 4:3"
+msgstr ""
+
+#empty strings from id 31121 to 31131
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
