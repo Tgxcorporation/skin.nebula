@@ -440,6 +440,7 @@
             </control>
         </control>
         <control type="label">
+            <include>TopBarVisibleFadeEffect</include>
             <posx>TextMargin</posx>
             <posy>66</posy>
             <width>350</width>
