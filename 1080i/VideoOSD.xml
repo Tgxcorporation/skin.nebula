@@ -26,6 +26,7 @@
                 <posy>143</posy>
                 <width>2320</width>
                 <height>143</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="slider" id="87">
@@ -628,6 +629,7 @@
                     <posy>143</posy>
                     <width>2320</width>
                     <height>234</height>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                     <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
                 </control>
                 <control type="image">
