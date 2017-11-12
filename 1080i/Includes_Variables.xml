@@ -1015,6 +1015,95 @@
         <value condition="ListItem.HasTimerSchedule">$VAR[Theme.Color]/pvr/PVR-HasTimerSchedule.png</value>
         <value condition="ListItem.HasTimer">$VAR[Theme.Color]/pvr/PVR-HasTimer.png</value>
     </variable>
+    <variable name="TopbarLabel">
+        <value condition="control.hasfocus(1600)">$LOCALIZE[31298]</value>
+        <value condition="control.hasfocus(1602)">$LOCALIZE[10000]</value>
+        <value condition="control.hasfocus(1604)">$LOCALIZE[210]</value>
+        <value condition="control.hasfocus(1606)">$LOCALIZE[31299]</value>
+        <value condition="control.hasfocus(1608)">$LOCALIZE[36045]</value>
+        <value condition="control.hasfocus(1609)">$LOCALIZE[208]</value>
+        <value condition="control.hasfocus(1610)">$LOCALIZE[36044]</value>
+        <value condition="control.hasfocus(1612)">$LOCALIZE[31300]</value>
+        <value condition="control.hasfocus(1614)">$LOCALIZE[209]</value>
+        <value condition="control.hasfocus(1616)">$LOCALIZE[31301]</value>
+        <value condition="control.hasfocus(16161)">$LOCALIZE[31304]</value>
+        <value condition="control.hasfocus(1618)">$LOCALIZE[31302]</value>
+        <value condition="control.hasfocus(1620)">$LOCALIZE[31303]</value>
+        <value condition="control.hasfocus(1622)">$LOCALIZE[14200]</value>
+        <value condition="control.hasfocus(1624)">$LOCALIZE[5]</value>
+        <value condition="control.hasfocus(1626)">$LOCALIZE[13009]</value>
+        <value condition="control.hasfocus(1628)">$LOCALIZE[1036]</value>
+        <value condition="control.hasfocus(1630)">$LOCALIZE[137]</value>
+        <value condition="control.hasfocus(1632)">$LOCALIZE[12600]</value>
+        <value condition="control.hasfocus(1634)">$LOCALIZE[7]</value>
+        <value condition="control.hasfocus(1636)">$LOCALIZE[13200]</value>
+        <value></value>
+    </variable>
+    <variable name="TopbarVideoOSDLabel">
+        <value condition="control.hasfocus(306)">$LOCALIZE[19069]</value>
+        <value condition="control.hasfocus(307)">$LOCALIZE[19069]$INFO[VideoPlayer.ChannelName,  -  ]</value>
+        <value condition="control.hasfocus(350)">$LOCALIZE[23050]</value>
+        <value condition="control.hasfocus(353)">$LOCALIZE[264]</value>
+        <value condition="control.hasfocus(251)">$LOCALIZE[13395]</value>
+        <value condition="control.hasfocus(11105)">$LOCALIZE[36560]</value>
+        <value condition="control.hasfocus(252)">$LOCALIZE[13396]</value>
+        <value condition="control.hasfocus(250)">$LOCALIZE[31356]</value>
+        <value condition="control.hasfocus(253)">$LOCALIZE[298]</value>
+        <value condition="control.hasfocus(254)">$LOCALIZE[31355]</value>
+        <value condition="control.hasfocus(255)">$LOCALIZE[36501]</value>
+        <value condition="control.hasfocus(706)">$LOCALIZE[559]</value>
+        <value condition="control.hasfocus(707)">$LOCALIZE[544]</value>
+        <value condition="control.hasfocus(1624)">$LOCALIZE[5]</value>
+        <value condition="control.hasfocus(1626)">$LOCALIZE[13009]</value>
+        <value condition="control.hasfocus(1622)">$LOCALIZE[33061]</value>
+        <value condition="control.hasfocus(1623)">$LOCALIZE[13014]</value>
+        <value condition="control.hasfocus(704)">$LOCALIZE[31298]</value>
+        <value condition="control.hasfocus(705)">$LOCALIZE[10000]</value>
+        <value condition="control.hasfocus(300)">$LOCALIZE[210]</value>
+        <value condition="control.hasfocus(301)">$LOCALIZE[209]</value>
+        <value condition="control.hasfocus(200)">$LOCALIZE[210]</value>
+        <value condition="control.hasfocus(201)">$LOCALIZE[31354]</value>
+        <value condition="control.hasfocus(202)">$LOCALIZE[31351] / $LOCALIZE[208]</value>
+        <value condition="control.hasfocus(203)">$LOCALIZE[31352]</value>
+        <value condition="control.hasfocus(204)">$LOCALIZE[31353]</value>
+        <value condition="control.hasfocus(205)">$LOCALIZE[209]</value>
+        <value condition="control.hasfocus(1616)">$LOCALIZE[31301]</value>
+        <value condition="control.hasfocus(16161)">$LOCALIZE[31304]</value>
+        <value condition="control.hasfocus(1618)">$LOCALIZE[31302]</value>
+        <value condition="control.hasfocus(1620)">$LOCALIZE[31303]</value>
+        <value></value>
+    </variable>
+    <variable name="TopbarMusicOSDLabel">
+        <value condition="control.hasfocus(306)">$LOCALIZE[19069]</value>
+        <value condition="control.hasfocus(307)">$LOCALIZE[19069]$INFO[MusicPlayer.ChannelName,  -  ]</value>
+        <value condition="control.hasfocus(9)">$LOCALIZE[24013]</value>
+        <value condition="control.hasfocus(500)">$LOCALIZE[250]</value>
+        <value condition="control.hasfocus(19)">$LOCALIZE[250]  -  $LOCALIZE[5]</value>
+        <value condition="control.hasfocus(20)">$LOCALIZE[250]  -  $LOCALIZE[13388]</value>
+        <value condition="control.hasfocus(556)">$LOCALIZE[20445]</value>
+        <value condition="control.hasfocus(555)">$LOCALIZE[559]</value>
+        <value condition="control.hasfocus(1624)">$LOCALIZE[5]</value>
+        <value condition="control.hasfocus(1626)">$LOCALIZE[13009]</value>
+        <value condition="control.hasfocus(1622)">$LOCALIZE[33061]</value>
+        <value condition="control.hasfocus(598)">$LOCALIZE[31298]</value>
+        <value condition="control.hasfocus(599)">$LOCALIZE[10000]</value>
+        <value condition="control.hasfocus(300)">$LOCALIZE[210]</value>
+        <value condition="control.hasfocus(301)">$LOCALIZE[209]</value>
+        <value condition="control.hasfocus(600)">$LOCALIZE[210]</value>
+        <value condition="control.hasfocus(601)">$LOCALIZE[31354]</value>
+        <value condition="control.hasfocus(602)">$LOCALIZE[31351] / $LOCALIZE[208]</value>
+        <value condition="control.hasfocus(603)">$LOCALIZE[31352]</value>
+        <value condition="controlgroup(699).hasfocus">$LOCALIZE[486]</value>
+        <value condition="control.hasfocus(21)">$LOCALIZE[590]</value>
+        <value condition="control.hasfocus(353)">$LOCALIZE[264]</value>
+        <value condition="control.hasfocus(604)">$LOCALIZE[31353]</value>
+        <value condition="control.hasfocus(605)">$LOCALIZE[209]</value>
+        <value condition="control.hasfocus(1616)">$LOCALIZE[31301]</value>
+        <value condition="control.hasfocus(16161)">$LOCALIZE[31304]</value>
+        <value condition="control.hasfocus(1618)">$LOCALIZE[31302]</value>
+        <value condition="control.hasfocus(1620)">$LOCALIZE[31303]</value>
+        <value></value>
+    </variable>
     <variable name="WidgetAspectLabel">
         <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect))">$INFO[Container(211).ListItem.Property(widgetAspect)]</value>
         <value>$LOCALIZE[31118]</value>

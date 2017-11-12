@@ -466,7 +466,35 @@ msgctxt "#31297"
 msgid "min"
 msgstr ""
 
-#empty strings from id 31298 to 31308
+msgctxt "#31298"
+msgid "Back"
+msgstr ""
+
+msgctxt "#31299"
+msgid "Rewind"
+msgstr ""
+
+msgctxt "#31300"
+msgid "Forward"
+msgstr ""
+
+msgctxt "#31301"
+msgid "Mute"
+msgstr ""
+
+msgctxt "#31302"
+msgid "Volume Down"
+msgstr ""
+
+msgctxt "#31303"
+msgid "Volume Up"
+msgstr ""
+
+msgctxt "#31304"
+msgid "Unmute"
+msgstr ""
+
+#empty strings from id 31305 to 31308
 
 msgctxt "#31309"
 msgid "Memory Used:"

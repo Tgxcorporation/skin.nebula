@@ -165,7 +165,7 @@
             <posy>150</posy>
             <width>2320</width>
             <height>876</height>
-            <include>DialogTransparency</include>
+            <include>DialogTransparencyOSD</include>
             <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
         </control>
         <control type="image">
@@ -227,7 +227,7 @@
                 <posy>150</posy>
                 <width>2320</width>
                 <height>513</height>
-                <include>DialogTransparency</include>
+                <include>DialogTransparencyOSD</include>
                 <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
@@ -376,7 +376,7 @@
             <posy>150</posy>
             <width>2320</width>
             <height>876</height>
-            <include>DialogTransparency</include>
+            <include>DialogTransparencyOSD</include>
             <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
         </control>
         <control type="image">
@@ -438,7 +438,7 @@
                 <posy>150</posy>
                 <width>2320</width>
                 <height>513</height>
-                <include>DialogTransparency</include>
+                <include>DialogTransparencyOSD</include>
                 <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
             </control>
             <control type="image">
