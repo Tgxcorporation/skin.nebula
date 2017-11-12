@@ -1037,7 +1037,7 @@
         <itemgap>0</itemgap>
         <orientation>vertical</orientation>
         <pagecontrol>9060</pagecontrol>
-        <onleft>9060</onleft>
+        <onleft>9900</onleft>
         <onup>9900</onup>
     </include>
     <include name="LeftMenuButton">
