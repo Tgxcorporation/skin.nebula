@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol always="true">996</defaultcontrol>
+    <coordinates>
+        <left>0</left>
+        <top>0</top>
+        <origin x="0" y="0">Window.IsActive(Home)</origin>
+        <origin x="0" y="0">!Window.IsActive(Home)</origin>
+    </coordinates>
     <controls>
         <control type="group">
-            <include>OpenClose</include>
-            <animation effect="zoom" time="0" start="130,130" end="130,130" condition="true">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,-514" condition="Integer.IsEqual(Container(996).NumItems,1)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,-473" condition="Integer.IsEqual(Container(996).NumItems,2)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,-433" condition="Integer.IsEqual(Container(996).NumItems,3)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,-392" condition="Integer.IsEqual(Container(996).NumItems,4)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,-352" condition="Integer.IsEqual(Container(996).NumItems,5)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,-311" condition="Integer.IsEqual(Container(996).NumItems,6)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,-271" condition="Integer.IsEqual(Container(996).NumItems,7)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,-230" condition="Integer.IsEqual(Container(996).NumItems,8)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,-190" condition="Integer.IsEqual(Container(996).NumItems,9)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,-149" condition="Integer.IsGreater(Container(996).NumItems,9)">conditional</animation>
+            <include name="OpenClose">
+                <animation type="WindowOpen" reversible="false">
+                    <effect type="fade" start="0" end="100" time="150" delay="0"/>
+                </animation>
+                <animation type="WindowClose" reversible="false">
+                    <effect type="fade" start="100" end="0" time="150" delay="0"/>
+                </animation>
+            </include>
             <control type="multiimage">
                 <visible>!Skin.HasSetting(DisableFanart)</visible>
                 <include>KenBurns</include>
@@ -41,10 +43,20 @@
         </control>
         <control type="group">
             <include>DialogContextOpenClose</include>
+            <animation effect="slide" time="0" start="0,0" end="0,499" condition="Integer.IsEqual(Container(996).NumItems,1)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,458" condition="Integer.IsEqual(Container(996).NumItems,2)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,410" condition="Integer.IsEqual(Container(996).NumItems,3)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,369" condition="Integer.IsEqual(Container(996).NumItems,4)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,329" condition="Integer.IsEqual(Container(996).NumItems,5)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,288" condition="Integer.IsEqual(Container(996).NumItems,6)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,248" condition="Integer.IsEqual(Container(996).NumItems,7)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,207" condition="Integer.IsEqual(Container(996).NumItems,8)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,167" condition="Integer.IsEqual(Container(996).NumItems,9)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,126" condition="Integer.IsGreater(Container(996).NumItems,9)">conditional</animation>
             <control type="button">
                 <include>ConditionWhite</include>
                 <posx>1887</posx>
-                <posy>0</posy>
+                <posy>-33</posy>
                 <height>33</height>
                 <width>33</width>
                 <colordiffuse>90ffffff</colordiffuse>
@@ -56,7 +68,7 @@
             <control type="button">
                 <include>ConditionBlack</include>
                 <posx>1887</posx>
-                <posy>0</posy>
+                <posy>-33</posy>
                 <height>33</height>
                 <width>33</width>
                 <colordiffuse>90ffffff</colordiffuse>
@@ -67,15 +79,16 @@
             </control>
             <control type="image" id="999">
                 <posx>-200</posx>
-                <posy>0</posy>
+                <posy>-33</posy>
                 <width>2320</width>
                 <height>876</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <include>DialogTransparency</include>
-                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
+                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_grid.png</texture>
             </control>
             <control type="grouplist" id="996">
                 <posx>0</posx>
-                <posy>33</posy>
+                <posy>0</posy>
                 <width>1920</width>
                 <height>810</height>
                 <itemgap>0</itemgap>
