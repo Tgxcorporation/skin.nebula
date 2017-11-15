@@ -38,10 +38,10 @@
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
             </control>
-            <control type="label" id="3">
+            <control type="label" id="4">
                 <description>List Label</description>
                 <posx>3010</posx>
-                <posy>35</posy>
+                <posy>135</posy>
                 <width>500</width>
                 <align>left</align>
             </control>
@@ -142,7 +142,7 @@
                 <control type="button" id="14">
                     <description>Remove Button</description>
                     <include>LeftMenuButton</include>
-                    <label>1210</label>
+                    <label>15015</label>
                 </control>
             </control>
             <include>LeftMenuScroller</include>
