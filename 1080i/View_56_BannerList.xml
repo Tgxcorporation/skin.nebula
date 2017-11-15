@@ -55,14 +55,15 @@
                 </control>
                 <control type="image">
                     <visible>[String.IsEmpty(ListItem.thumb)|String.IsEmpty(ListItem.Art(thumb))]</visible>
-                    <posx>60</posx>
-                    <posy>-10</posy>
-                    <width>335</width>
-                    <height>200</height>
+                    <posx>25</posx>
+                    <posy>-20</posy>
+                    <width>880</width>
+                    <height>220</height>
                     <aspectratio>keep</aspectratio>
                     <include>SquareThumb</include>
                 </control>
                 <control type="image">
+                    <visible>![String.IsEmpty(ListItem.thumb)|String.IsEmpty(ListItem.Art(thumb))]</visible>
                     <posx>25</posx>
                     <posy>-20</posy>
                     <width>880</width>
