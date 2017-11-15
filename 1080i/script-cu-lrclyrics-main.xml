@@ -17,7 +17,7 @@
             <control type="label">
                 <visible>Control.IsVisible(110)</visible>
                 <posx>0</posx>
-                <posy>33</posy>
+                <posy>4033</posy>
                 <height>117</height>
                 <width>1920</width>
                 <font>InfoTitleFont</font>
@@ -30,7 +30,7 @@
                 <visible>Control.IsVisible(120) + !Control.IsVisible(110)</visible>
                 <description>Pick label</description>
                 <posx>0</posx>
-                <posy>33</posy>
+                <posy>4033</posy>
                 <height>117</height>
                 <width>1920</width>
                 <font>InfoTitleFont</font>
