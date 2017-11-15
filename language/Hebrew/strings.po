@@ -144,7 +144,7 @@ msgid "Enable Kiosk Mode"
 msgstr "הפעל מצב קיוסק"
 
 msgctxt "#31031"
-msgid "Disable media infos in Icon View"
+msgid "Disable media info"
 msgstr "נטרל פרטי מדיה בתצוגת סמלים"
 
 msgctxt "#31032"

@@ -109,33 +109,6 @@
             </control>
         </control>
     </include>
-    <include name="Widget">
-        <control type="group">
-            <animation effect="slide" tween="circle" time="150" start="0,0" end="0,1080" reversible="true" condition="Control.HasFocus($PARAM[id])">Conditional</animation>
-            <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="Control.HasFocus($PARAM[id])">Conditional</animation>
-            <control type="fixedlist" id="$PARAM[id]">
-                <visible>$PARAM[visibility]</visible>
-                <onright>$PARAM[id]</onright>
-                <onup>9900</onup>
-                <ondown>701</ondown>
-                <onleft condition="Skin.HasSetting(VerticalHome)">701</onleft>
-                <onleft>$PARAM[id]</onleft>
-                <include content="Widget_$PARAM[gfxType]">
-                    <param name="id" value="$PARAM[id]"/>
-                </include>
-                <include>$PARAM[content]</include>
-            </control>
-            <include content="WidgetInfo_$PARAM[gfxType]">
-                <param name="id" value="$PARAM[id]"/>
-                <param name="labelTitle" value="$PARAM[labelTitle]"/>
-                <param name="labelRating" value="$PARAM[labelRating]"/>
-                <param name="labelRow1" value="$PARAM[labelRow1]"/>
-                <param name="labelRow2" value="$PARAM[labelRow2]"/>
-                <param name="labelPlot" value="$PARAM[labelPlot]"/>
-                <param name="visibilitylabelRating" value="$PARAM[visibilitylabelRating]"/>
-            </include>
-        </control>
-    </include>
     <include name="Widget_Poster">
         <posx>0</posx>
         <posy>35</posy>

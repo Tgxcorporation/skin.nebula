@@ -183,39 +183,6 @@
                 <control type="group">
                     <posx>395</posx>
                     <posy>35</posy>
-                    <control type="group">
-                        <visible>Window.IsVisible(script-script.extendedinfo-VideoList.xml)|
-                            [!Container.Content(Addons)+[Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]]]</visible>
-                        <control type="image">
-                            <posx>TextMargin</posx>
-                            <posy>83</posy>
-                            <include>Stars</include>
-                        </control>
-                        <control type="label">
-                            <visible>![Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]</visible>
-                            <posx>115</posx>
-                            <posy>65</posy>
-                            <width>460</width>
-                            <height>71</height>
-                            <font>InfoDetailsFont</font>
-                            <include>TextColor_MainColor</include>
-                            <scroll>false</scroll>
-                            <!--<label fallback="416">$INFO[ListItem.Rating]</label>-->
-                            <label>$INFO[ListItem.RatingAndVotes]</label>
-                        </control>
-                        <control type="label">
-                            <visible>[Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]</visible>
-                            <posx>115</posx>
-                            <posy>65</posy>
-                            <width>460</width>
-                            <height>71</height>
-                            <font>InfoDetailsFont</font>
-                            <include>TextColor_MainColor</include>
-                            <scroll>false</scroll>
-                            <!--<label fallback="416">$INFO[ListItem.Rating]</label>-->
-                            <label fallback="0.0">$INFO[ListItem.UserRating,,.0]</label>
-                        </control>
-                    </control>
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>65</posy>
@@ -224,7 +191,7 @@
                         <font>InfoDetailsFont</font>
                         <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
-                        <label>$VAR[DetailsRow1]</label>
+                        <label>$INFO[ListItem.RatingAndVotes,,     ]$INFO[ListItem.UserRating,,.0     ]$VAR[DetailsRow1]</label>
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>

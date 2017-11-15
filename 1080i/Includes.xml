@@ -28,6 +28,7 @@
     <include file="View_52_ShortList.xml"/>
     <include file="View_54_Fanart.xml"/>
     <include file="View_53_Grid.xml"/>
+    <include file="View_55_Panel.xml"/>
     <include file="View_56_BannerList.xml"/>
     <include file="View_57_58_59_Showcase.xml"/>
     <include file="View_5050_CardList.xml"/>
@@ -94,6 +95,13 @@
     <include name="DimBG">
         <control type="group">
             <include>OpenClose</include>
+            <control type="image">
+                <posx>-89</posx>
+                <posy>-50</posy>
+                <width>2098</width>
+                <height>1180</height>
+                <texture border="1">common/BlackDot.png</texture>
+            </control>
             <control type="multiimage">
                 <visible>!Skin.HasSetting(DisableFanart)</visible>
                 <include>KenBurns</include>
@@ -200,6 +208,7 @@
             <onleft>9900</onleft>
             <onright>9900</onright>
             <onup>9000</onup>
+            <ondown condition="Window.IsActive(script-globalsearch-main.xml)">9000</ondown>
             <ondown condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</ondown>
             <ondown condition="Window.IsActive(Home.xml)+!Skin.HasSetting(VerticalHome)">9001</ondown>
             <ondown condition="Window.IsActive(Home.xml)+Skin.HasSetting(VerticalHome)">300</ondown>
@@ -326,6 +335,7 @@
             <onleft>9900</onleft>
             <onright>9900</onright>
             <onup>9000</onup>
+            <ondown condition="Window.IsActive(script-globalsearch-main.xml)">9000</ondown>
             <ondown condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</ondown>
             <ondown condition="Window.IsActive(Home.xml)+!Skin.HasSetting(VerticalHome)">9001</ondown>
             <ondown condition="Window.IsActive(Home.xml)+Skin.HasSetting(VerticalHome)">300</ondown>
@@ -535,7 +545,7 @@
     <include name="Time">
         <control type="group">
             <control type="label">
-                <visible>![control.hasfocus(505050)|control.hasfocus(53)|[control.isvisible(53)+[control.hasfocus(60)|ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]]]</visible>
+                <visible>![control.hasfocus(505050)|control.isvisible(53)]</visible>
                 <include>OpenClose</include>
                 <include>VisibleFadeEffect</include>
                 <posx>TextMarginR</posx>
@@ -548,7 +558,7 @@
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="label">
-                <visible>![control.hasfocus(505050)|control.hasfocus(53)|[control.isvisible(53)+[control.hasfocus(60)|ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]]]</visible>
+                <visible>![control.hasfocus(505050)|control.isvisible(53)]</visible>
                 <include>OpenClose</include>
                 <include>VisibleFadeEffect</include>
                 <posx>TextMarginR</posx>
@@ -803,6 +813,15 @@
         <control type="button" id="2">
             <include>LeftMenuButton</include>
         </control>
+        <control type="radiobutton" id="9155">
+            <selected>Skin.HasSetting(DisableIconViewInfos)</selected>
+            <visible>Control.IsVisible(53)</visible>
+            <font>LeftMenuSubButtonFont</font>
+            <textwidth>450</textwidth>
+            <include>LeftMenuButton</include>
+            <onclick>Skin.ToggleSetting(DisableIconViewInfos)</onclick>
+            <label>$LOCALIZE[31031]</label>
+        </control>
         <control type="radiobutton" id="9156">
             <visible>Control.IsVisible(53) + [Container.Content(TVShows)|Container.Content(movies)|Container.Content(sets)|Container.Content(seasons)]</visible>
             <font>LeftMenuSubButtonFont</font>
@@ -957,7 +976,7 @@
     <constant name="TextMargin">60</constant>
     <constant name="TextMarginR">60r</constant>
     <include name="WindowTitle">
-        <visible>![control.hasfocus(505050)|control.hasfocus(53)|[control.isvisible(53)+[control.hasfocus(60)|ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]]]</visible>
+        <visible>![control.hasfocus(505050)|control.isvisible(53)]</visible>
         <posx>TextMargin</posx>
         <posy>48</posy>
         <width>1200</width>
@@ -966,7 +985,7 @@
         <include>TextColor_AlternateColor</include>
     </include>
     <include name="WindowTitleSub">
-        <visible>![control.hasfocus(505050)|control.hasfocus(53)|[control.isvisible(53)+[control.hasfocus(60)|ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]]]</visible>
+        <visible>![control.hasfocus(505050)|control.isvisible(53)]</visible>
         <posx>TextMargin</posx>
         <posy>105</posy>
         <width>1200</width>

@@ -141,7 +141,7 @@ msgid "Enable Kiosk Mode"
 msgstr ""
 
 msgctxt "#31031"
-msgid "Disable media infos in Icon View"
+msgid "Disable media info"
 msgstr ""
 
 msgctxt "#31032"
@@ -396,7 +396,19 @@ msgctxt "#31096"
 msgid "Slim List"
 msgstr ""
 
-#empty strings from id 31096 to 31109
+msgctxt "#31097"
+msgid "Fullscreen"
+msgstr ""
+
+msgctxt "#31098"
+msgid "Strip"
+msgstr ""
+
+msgctxt "#31099"
+msgid "Wall"
+msgstr ""
+
+#empty strings from id 31100 to 31109
 
 msgctxt "#31110"
 msgid "Edit Background for Media Type"

@@ -141,7 +141,7 @@ msgid "Enable Kiosk Mode"
 msgstr "Kiosk-Modus aktivieren"
 
 msgctxt "#31031"
-msgid "Disable media infos in Icon View"
+msgid "Disable media info"
 msgstr "Medieninfos in der Symbolansicht deaktivieren"
 
 msgctxt "#31032"

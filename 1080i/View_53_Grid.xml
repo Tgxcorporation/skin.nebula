@@ -233,7 +233,7 @@
                 <texture border="35">$VAR[Theme.Color]/common/JewelCase2.png</texture>
             </control>
             <control type="panel" id="53">
-                <viewtype label="31100">Grid</viewtype>
+                <viewtype label="31099">Grid</viewtype>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>1940</width>
