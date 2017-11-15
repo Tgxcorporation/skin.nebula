@@ -87,6 +87,8 @@
         <value condition="!String.IsEmpty(ListItem.Art(thumb))+!String.StartsWith(ListItem.Art(thumb),Default)">$INFO[ListItem.Art(thumb)]</value>
     </variable>
     <variable name="GlobalTitles">
+        <value condition="Window.IsVisible(SmartPlaylistRule.xml)">$LOCALIZE[10137]</value>
+        <value condition="Window.IsVisible(script-RSS_Editor.xml)">$ADDON[script.rss.editor 32000]</value>
         <value condition="Skin.hassetting(plexbmc) + !Window.IsVisible(Home) + !String.IsEmpty(Window.Property(heading2))">$INFO[Window.Property(heading),,     ]$INFO[Window.Property(heading2)]</value>
         <value condition="Skin.hassetting(plexbmc) + !Window.IsVisible(Home) + !String.IsEmpty(Window.Property(heading))">$INFO[Window.Property(heading)]</value>
         <value condition="Window.IsVisible(56) | Window.IsVisible(SkinSettings.xml)">$LOCALIZE[20077]</value>
@@ -100,6 +102,9 @@
         <value condition="Window.IsVisible(DialogVideoInfo.xml)">$LOCALIZE[20060]</value>
         <value condition="Window.IsVisible(DialogFavourites.xml)">$LOCALIZE[1036]</value>
         <value condition="Window.IsVisible(DialogButtonMenu.xml)">$LOCALIZE[13009]</value>
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)">$LOCALIZE[283]</value>
+        <value condition="Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)">Extended Info</value>
+        <value condition="Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)">Extended Info</value>
         <value condition="Container.content(movies) + String.IsEqual(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20342]</value>
         <value condition="Container.content(movies)">$LOCALIZE[20342]$INFO[Container.FolderName, - ]</value>
         <value condition="Container.content(sets)">$LOCALIZE[20342]$INFO[Container.FolderName, - ]</value>
@@ -116,11 +121,19 @@
         <value condition="Window.IsVisible(MyMusicNav.xml)|Window.IsVisible(MyMusicSongs.xml)">$LOCALIZE[2]$INFO[Container.FolderName, - ]</value>
         <value condition="Window.IsVisible(MyPics.xml)">$LOCALIZE[1]$INFO[Container.FolderName, - ]</value>
         <value condition="Window.IsVisible(DialogAddonInfo.xml)">$LOCALIZE[24000]</value>
+        <value condition="Window.IsVisible(DialogAudioDSPManager.xml)">$LOCALIZE[14251]</value>
         <value condition="Window.IsVisible(AddonBrowser.xml)">$LOCALIZE[10040]$INFO[Container.FolderName, - ]</value>
         <value condition="Window.IsVisible(CustomAddons.xml)|Window.IsVisible(MyPrograms.xml)">$LOCALIZE[0]$INFO[Container.FolderName, - ]</value>
         <value condition="!String.IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
     </variable>
     <variable name="DialogSubTitles">
+        <value condition="Window.IsVisible(SmartPlaylistRule.xml)">$LOCALIZE[10136]</value>
+        <value condition="Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">$ADDON[script.skin.helper.colorpicker 32011]</value>
+        <value condition="Window.IsVisible(script-RSS_Editor.xml)">$INFO[Container(10).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsVisible(script-globalsearch-infodialog.xml)">$INFO[Container(100).ListItem.Label]</value>
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)">$INFO[Window.Property(GlobalSearch.SearchString)]</value>
+        <value condition="Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)">$INFO[Container(9000).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)">$INFO[Container(9000).NumItems,, $LOCALIZE[31025]]</value>
         <value condition="Window.IsVisible(DialogButtonMenu.xml)">$INFO[Container(9009).NumItems,, $LOCALIZE[31025]]</value>
         <value condition="Window.IsVisible(DialogSelect.xml)">$LOCALIZE[424]</value>
         <value condition="Window.IsVisible(DialogRecordSettings.xml)">$LOCALIZE[10004]</value>
@@ -130,6 +143,7 @@
         <value condition="Window.IsVisible(DialogPictureInfo.xml)">$LOCALIZE[13406]</value>
         <value condition="Window.IsVisible(DialogMediaSource.xml)">$LOCALIZE[10129]</value>
         <value condition="Window.IsVisible(DialogAddonInfo.xml)">$INFO[ListItem.AddonType]</value>
+        <value condition="Window.IsVisible(DialogAudioDSPManager.xml)">$LOCALIZE[10004]</value>
         <value condition="String.IsEqual(ListItem.DBType,Episode) + !Control.HasFocus(50) + !Control.HasFocus(61)">$LOCALIZE[20360]</value>
         <value condition="String.IsEqual(ListItem.DBType,Movie)">$LOCALIZE[20342]</value>
         <value condition="String.IsEqual(ListItem.DBType,MusicVideo)">$LOCALIZE[20389]</value>
