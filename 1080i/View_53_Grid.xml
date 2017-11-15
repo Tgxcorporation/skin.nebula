@@ -16,10 +16,10 @@
             <visible>!Skin.HasSetting(DisableIconViewInfos)</visible>
             <visible>![ListItem.IsParentFolder|String.IsEmpty(ListItem.Label)]</visible>
             <include>Icon_Fade</include>
-            <animation effect="slide" tween="back" easing="out" time="100" start="0,0" end="0,-580" condition="$EXP[View55HasTopFocus]">conditional</animation>
+            <animation effect="slide" tween="back" easing="out" time="100" start="0,0" end="0,-580" condition="$EXP[View53HasTopFocus]">conditional</animation>
             <posy>290</posy>
             <control type="image">
-                <visible>$EXP[View55HasTopFocus]</visible>
+                <visible>$EXP[View53HasTopFocus]</visible>
                 <posx>0</posx>
                 <posy>290</posy>
                 <width>1920</width>

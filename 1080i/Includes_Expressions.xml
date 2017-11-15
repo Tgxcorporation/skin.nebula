@@ -72,7 +72,7 @@
     <expression name="HomeWidgetCollectionHasFocus">
         [Control.isvisible(378433)]
     </expression>
-    <expression name="View55HasTopFocus">
+    <expression name="View53HasTopFocus">
         [[Window.isActive(MyPVRChannels.xml)+[Container(53).Row(3)|Container(53).Row(4)|Container(53).Row(5)]]|
         [!Window.isActive(MyPVRChannels.xml)+[[!Container(53).content(episodes)+!Skin.HasSetting(53_BigGrid)+!Skin.HasSetting(53_UseBanners)+[Container(53).Row(3)|Container(53).Row(4)|Container(53).Row(5)]]
         |[!Container(53).content(episodes)+Skin.HasSetting(53_BigGrid)+!Skin.HasSetting(53_UseBanners)+[Container(53).Row(2)|Container(53).Row(3)]]
