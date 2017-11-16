@@ -45,21 +45,6 @@
         container.content(episodes) |
         Container.Content(sets)]
     </expression>
-    <expression name="CdArtVideoIsEnabled">
-        !Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)+[Container.content(movies)|Container.content(sets)|Container.content(musicvideos)]
-    </expression>
-    <expression name="CdArtVideoIsNotEnabled">
-        !Skin.HasSetting(EnableCdArt)|![!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)+[Container.content(movies)|Container.content(sets)|Container.content(musicvideos)]]
-    </expression>
-    <expression name="CdArtAudioIsEnabled">
-        !Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)+[Container.content(songs)|Container.content(albums)]
-    </expression>
-    <expression name="CdArtAudioIsNotEnabled">
-        !Skin.HasSetting(EnableCdArt)|![!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)+[Container.content(songs)|Container.content(albums)]]
-    </expression>
-    <expression name="LeftMenuHasFocus">
-        control.isvisible(9000)+[Control.HasFocus(9000)|ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]
-    </expression>
     <expression name="LeftHomeMenuHasFocus">
         [Control.HasFocus(300)|Control.HasFocus(9001)|Control.HasFocus(8999)|Control.HasFocus(9060)]
     </expression>

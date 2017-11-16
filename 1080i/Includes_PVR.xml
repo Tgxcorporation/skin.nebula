@@ -160,13 +160,13 @@
         </control>
     </include>
     <include name="OSD_Channels_FullScreen">
+        <posy>60</posy>
         <control type="image">
-            <posx>-200</posx>
-            <posy>150</posy>
-            <width>2320</width>
-            <height>876</height>
-            <include>DialogTransparencyOSD</include>
-            <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
+            <posx>0</posx>
+            <posy>-20</posy>
+            <width>1920</width>
+            <height>1200</height>
+            <texture border="1,320,1,1">$VAR[Theme.Color]/common/widget_gradient_tall.png</texture>
         </control>
         <control type="image">
             <posx>100</posx>
@@ -221,19 +221,18 @@
     </include>
     <include name="OSD_Channels_BottomScreen">
         <control type="group">
-            <posy>363</posy>
+            <posy>450</posy>
             <control type="image">
-                <posx>-200</posx>
-                <posy>150</posy>
-                <width>2320</width>
-                <height>513</height>
-                <include>DialogTransparencyOSD</include>
-                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
+                <posx>0</posx>
+                <posy>-70</posy>
+                <width>1920</width>
+                <height>800</height>
+                <texture border="1,320,1,1">$VAR[Theme.Color]/common/widget_gradient_tall.png</texture>
             </control>
             <control type="image">
-                <posx>450</posx>
+                <posx>0</posx>
                 <posy>142</posy>
-                <width>1370</width>
+                <width>1920</width>
                 <height>182</height>
                 <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
@@ -371,13 +370,13 @@
         </control>
     </include>
     <include name="OSD_Guide_FullScreen">
+        <posy>60</posy>
         <control type="image">
-            <posx>-200</posx>
-            <posy>150</posy>
-            <width>2320</width>
-            <height>876</height>
-            <include>DialogTransparencyOSD</include>
-            <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
+            <posx>0</posx>
+            <posy>-20</posy>
+            <width>1920</width>
+            <height>1200</height>
+            <texture border="1,320,1,1">$VAR[Theme.Color]/common/widget_gradient_tall.png</texture>
         </control>
         <control type="image">
             <posx>100</posx>
@@ -432,19 +431,18 @@
     </include>
     <include name="OSD_Guide_BottomScreen">
         <control type="group">
-            <posy>363</posy>
+            <posy>450</posy>
             <control type="image">
-                <posx>-200</posx>
-                <posy>150</posy>
-                <width>2320</width>
-                <height>513</height>
-                <include>DialogTransparencyOSD</include>
-                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
+                <posx>0</posx>
+                <posy>-70</posy>
+                <width>1920</width>
+                <height>800</height>
+                <texture border="1,320,1,1">$VAR[Theme.Color]/common/widget_gradient_tall.png</texture>
             </control>
             <control type="image">
-                <posx>450</posx>
+                <posx>0</posx>
                 <posy>142</posy>
-                <width>1370</width>
+                <width>1920</width>
                 <height>182</height>
                 <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>

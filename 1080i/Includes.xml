@@ -168,6 +168,17 @@
             <visible>!control.IsVisible(495678)</visible>
             <visible>!control.IsVisible(53)</visible>
             <include>TopBarVisibleFadeEffect</include>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>350</height>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texture flipy="true" border="1">$VAR[Theme.Color]/common/widget_gradient_tall.png</texture>
+        </control>
+        <control type="image">
+            <visible>!control.IsVisible(495678)</visible>
+            <visible>!control.IsVisible(53)</visible>
+            <include>TopBarVisibleFadeEffect</include>
             <posx>-200</posx>
             <posy>0</posy>
             <width>2320</width>

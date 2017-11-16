@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
     <!--<defaultcontrol always="true">9001</defaultcontrol>-->
-    <zorder>2</zorder>
+    <!--<zorder>2</zorder>-->
     <controls>
         <include>TopBar</include>
         <control type="group">
             <include>OpenClose</include>
-            <posy>-56</posy>
+            <posy>0</posy>
             <control type="button" id="9001">
                 <visible>![Player.ShowInfo + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo)]</visible>
                 <include>ConditionWhite</include>
@@ -44,6 +44,14 @@
                 <onclick>Dialog.Close(10142)</onclick>
                 <label>-</label>
                 <onfocus>noop</onfocus>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>450</posy>
+                <width>1920</width>
+                <height>700</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture border="1,320,1,1">$VAR[Theme.Color]/common/widget_gradient_tall.png</texture>
             </control>
             <control type="group">
                 <!-- CLEAR ART / LOGO -->
@@ -87,14 +95,6 @@
                 <param name="align" value="left"/>
                 <param name="aligny" value="bottom"/>
             </include>
-            <control type="image">
-                <posx>-200</posx>
-                <posy>609</posy>
-                <width>2320</width>
-                <height>471</height>
-                <include>DialogTransparencyOSD</include>
-                <texture border="150,40,150,40">$VAR[Theme.Color]/common/bg_dialog.png</texture>
-            </control>
             <control type="group">
                 <posy>642</posy>
                 <!-- CDART VIDEO -->
