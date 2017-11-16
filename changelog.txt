@@ -1,4 +1,5 @@
 5.5.0
+Added vertical home menu.
 New OSD layout.
 Added new Panel view.
 New layout for wall view.
