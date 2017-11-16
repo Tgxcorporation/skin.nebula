@@ -53,11 +53,22 @@
                 <include>SquareThumb</include>
             </control>
             <control type="image">
+                <visible>$EXP[ContentIsPoster]</visible>
                 <posx>25</posx>
                 <posy>0</posy>
                 <width>405</width>
                 <height>405</height>
                 <aspectratio aligny="top">keep</aspectratio>
+                <include>SquareThumbBig</include>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="image">
+                <visible>$EXP[ContentIsEpisode]|$EXP[ContentIsSquare]</visible>
+                <posx>25</posx>
+                <posy>0</posy>
+                <width>405</width>
+                <height>405</height>
+                <aspectratio aligny="bottom">keep</aspectratio>
                 <include>SquareThumbBig</include>
                 <include>ThumbBorder</include>
             </control>
