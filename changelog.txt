@@ -1,4 +1,5 @@
 5.5.0
+Added Game Controller support.
 Added vertical home menu.
 New OSD layout.
 Added new Panel view.

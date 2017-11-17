@@ -127,6 +127,7 @@
         <value condition="!String.IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
     </variable>
     <variable name="DialogSubTitles">
+        <value condition="Window.IsVisible(DialogGameControllers.xml)">$LOCALIZE[35058]</value>
         <value condition="Window.IsVisible(SmartPlaylistRule.xml)">$LOCALIZE[10136]</value>
         <value condition="Window.IsVisible(script-skin_helper_service-ColorPicker.xml)">$ADDON[script.skin.helper.colorpicker 32011]</value>
         <value condition="Window.IsVisible(script-RSS_Editor.xml)">$INFO[Container(10).NumItems,, $LOCALIZE[31025]]</value>
