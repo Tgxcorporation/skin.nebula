@@ -66,7 +66,7 @@
         <include>SelectedColor_SelectedColor</include>
         <include>DisabledColor_DisabledColor</include>
         <include>TextureFocus</include>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="edit">
@@ -83,7 +83,7 @@
         <include>SelectedColor_SelectedColor</include>
         <include>DisabledColor_DisabledColor</include>
         <include>TextureFocus</include>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
     </default>
     <default type="togglebutton">
         <posx>0</posx>
@@ -100,9 +100,9 @@
         <include>AltSelectedColor_SelectedColor</include>
         <include>DisabledColor_DisabledColor</include>
         <include>TextureFocus</include>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
         <include>AltTextureFocus</include>
-        <alttexturenofocus>-</alttexturenofocus>
+        <alttexturenofocus></alttexturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="radiobutton">
@@ -120,7 +120,7 @@
         <radiowidth>54</radiowidth>
         <radioheight>33</radioheight>
         <include>TextureFocus</include>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
         <include>TextureRadioOffNoFocus</include>
         <include>TextureRadioOnNoFocus</include>
         <include>TextureRadioOffFocus</include>
@@ -141,7 +141,7 @@
         <include>TextureUpDisabled</include>
         <include>TextureDownDisabled</include>
         <include>TextureFocus</include>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
         <spinwidth>27</spinwidth>
         <spinheight>33</spinheight>
         <font>ButtonFont</font>
@@ -168,7 +168,7 @@
         <include>TextureUpDisabled</include>
         <include>TextureDownDisabled</include>
         <include>TextureFocus</include>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
         <spinwidth>27</spinwidth>
         <spinheight>33</spinheight>
         <include>TextColor_AlternateColor</include>
@@ -205,7 +205,7 @@
         <include>TextureSliderNibNoFocus</include>
         <include>TextureSliderNibFocus</include>
         <include>TextureFocus</include>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
         <font>ButtonFont</font>
         <include>TextColor_AlternateColor</include>
         <include>FocusedColor_MainColor</include>

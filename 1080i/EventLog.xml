@@ -179,12 +179,12 @@
                 <control type="button" id="21">
                     <description>Level button</description>
                     <include>LeftMenuButton</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="radiobutton" id="22">
                     <description>Only show current level</description>
                     <include>LeftMenuButton</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="button" id="20">
                     <description>Clear button</description>

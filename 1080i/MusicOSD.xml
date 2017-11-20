@@ -75,7 +75,7 @@
                     <onclick>fullscreen</onclick>
                 </control>
                 <control type="button" id="599">
-                    <label>-</label>
+                    <label></label>
                     <include>TopBarButton</include>
                     <texturefocus>black/topbar/topbar_home_focus.png</texturefocus>
                     <texturenofocus>black/topbar/topbar_home_nofocus.png</texturenofocus>
@@ -370,7 +370,7 @@
                     <onclick>fullscreen</onclick>
                 </control>
                 <control type="button" id="599">
-                    <label>-</label>
+                    <label></label>
                     <include>TopBarButton</include>
                     <texturefocus>white/topbar/topbar_home_focus.png</texturefocus>
                     <texturenofocus>white/topbar/topbar_home_nofocus.png</texturenofocus>

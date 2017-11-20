@@ -22,7 +22,7 @@
                 <texturenofocus>white/topbar/topbar_exit_nofocus.png</texturenofocus>
                 <texturefocus>white/topbar/topbar_exit_focus.png</texturefocus>
                 <onclick>back</onclick>
-                <label>-</label>
+                <label></label>
             </control>
             <control type="button">
                 <include>ConditionBlack</include>
@@ -34,7 +34,7 @@
                 <texturenofocus>black/topbar/topbar_exit_nofocus.png</texturenofocus>
                 <texturefocus>black/topbar/topbar_exit_focus.png</texturefocus>
                 <onclick>back</onclick>
-                <label>-</label>
+                <label></label>
             </control>
             <control type="label" id="10">
                 <posx>730</posx>

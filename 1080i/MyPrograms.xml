@@ -58,7 +58,7 @@
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="togglebutton" id="4">
-                    <alttexturenofocus>-</alttexturenofocus>
+                    <alttexturenofocus></alttexturenofocus>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
                     <altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>

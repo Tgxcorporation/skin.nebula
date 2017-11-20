@@ -55,7 +55,7 @@
                 <width>960</width>
                 <height>170</height>
                 <align>center</align>
-                <label>-</label>
+                <label></label>
                 <font>InfoDetailsFont</font>
                 <include>TextColor_MainColor</include>
                 <pagecontrol>6060</pagecontrol>
@@ -102,7 +102,7 @@
                 <width>960</width>
                 <include>TextColor_MainColor</include>
                 <align>center</align>
-                <font>-</font>
+                <font></font>
             </control>
         </control>
     </controls>

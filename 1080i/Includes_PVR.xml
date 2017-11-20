@@ -64,7 +64,7 @@
                 <control type="button" id="28">
                     <description>Channel Groups</description>
                     <include>LeftMenuButton</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="radiobutton" id="5">
                     <description>Group recording items by folder structure</description>
@@ -82,7 +82,7 @@
                     <!--<visible>Window.IsActive(MyPVRGuide.xml)</visible>-->
                     <visible>!Skin.HasSetting(EnableKioskMode)</visible>
                     <description>View As button</description>
-                    <label>-</label>
+                    <label></label>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="button" id="3">

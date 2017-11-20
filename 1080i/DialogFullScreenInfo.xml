@@ -23,7 +23,7 @@
                 <ondown>Dialog.Close(10142)</ondown>
                 <onback>Dialog.Close(10142)</onback>
                 <onclick>Dialog.Close(10142)</onclick>
-                <label>-</label>
+                <label></label>
                 <onfocus>noop</onfocus>
             </control>
             <control type="button" id="9001">
@@ -42,7 +42,7 @@
                 <ondown>Dialog.Close(10142)</ondown>
                 <onback>Dialog.Close(10142)</onback>
                 <onclick>Dialog.Close(10142)</onclick>
-                <label>-</label>
+                <label></label>
                 <onfocus>noop</onfocus>
             </control>
             <control type="image">

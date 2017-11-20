@@ -86,9 +86,9 @@
         <posy>-30</posy>
         <width>1</width>
         <height>1</height>
-        <label>-</label>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus>-</texturefocus>
+        <label></label>
+        <texturenofocus></texturenofocus>
+        <texturefocus></texturefocus>
         <texturenofocus>common/WhiteDotT.png</texturenofocus>
         <texturefocus>common/BlackDotT.png</texturefocus>
     </include>
@@ -160,8 +160,8 @@
         </animation>
         <width>50</width>
         <height>50</height>
-        <label>-</label>
-        <font>-</font>
+        <label></label>
+        <font></font>
     </include>
     <include name="TopBar">
         <control type="image">
@@ -876,9 +876,9 @@
         <font>ButtonFont</font>
         <include>FocusedColor_MainColor</include>
         <include>TextureFocus</include>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
         <include>AltTextureFocus</include>
-        <alttexturenofocus>-</alttexturenofocus>
+        <alttexturenofocus></alttexturenofocus>
     </include>
     <include name="List_9009_Commons">
         <posx>500</posx>
@@ -1101,8 +1101,8 @@
         <include>VerticalTextureSliderBackground</include>
         <include>VerticalTextureSliderBarFocus</include>
         <include>VerticalTextureSliderBarNoFocus</include>
-        <textureslidernib>-</textureslidernib>
-        <textureslidernibfocus>-</textureslidernibfocus>
+        <textureslidernib></textureslidernib>
+        <textureslidernibfocus></textureslidernibfocus>
         <!-- <showonepage>true</showonepage> -->
         <orientation>vertical</orientation>
         <width>54</width>
@@ -1116,8 +1116,8 @@
         <include>HorizontalTextureSliderBackground</include>
         <include>HorizontalTextureSliderBarFocus</include>
         <include>HorizontalTextureSliderBarNoFocus</include>
-        <textureslidernib>-</textureslidernib>
-        <textureslidernibfocus>-</textureslidernibfocus>
+        <textureslidernib></textureslidernib>
+        <textureslidernibfocus></textureslidernibfocus>
         <!-- <showonepage>true</showonepage> -->
         <orientation>horizontal</orientation>
         <height>54</height>
@@ -1159,7 +1159,7 @@
         <include>SelectedColor_SelectedColor</include>
         <include>DisabledColor_DisabledColor</include>
         <include>TextureFocus</include>
-        <texturenofocus>-</texturenofocus>
+        <texturenofocus></texturenofocus>
         <pulseonselect>false</pulseonselect>
     </include>
     <include name="SkinSettings_DefaultLayout">
@@ -1576,10 +1576,10 @@
             <height>$PARAM[height]</height>
             <width>$PARAM[width]</width>
             <texturebg border="$PARAM[borderbg]">white/$PARAM[texturebg]</texturebg>
-            <lefttexture>-</lefttexture>
+            <lefttexture></lefttexture>
             <midtexture border="$PARAM[border]">white/$PARAM[gfx]</midtexture>
-            <righttexture>-</righttexture>
-            <overlaytexture>-</overlaytexture>
+            <righttexture></righttexture>
+            <overlaytexture></overlaytexture>
             <info>$PARAM[info]</info>
         </control>
         <control type="progress" id="$PARAM[id]">
@@ -1590,10 +1590,10 @@
             <height>$PARAM[height]</height>
             <width>$PARAM[width]</width>
             <texturebg border="$PARAM[borderbg]">black/$PARAM[texturebg]</texturebg>
-            <lefttexture>-</lefttexture>
+            <lefttexture></lefttexture>
             <midtexture border="$PARAM[border]">black/$PARAM[gfx]</midtexture>
-            <righttexture>-</righttexture>
-            <overlaytexture>-</overlaytexture>
+            <righttexture></righttexture>
+            <overlaytexture></overlaytexture>
             <info>$PARAM[info]</info>
         </control>
     </include>

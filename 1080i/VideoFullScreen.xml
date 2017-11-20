@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <defaultcontrol>-</defaultcontrol>
+    <defaultcontrol></defaultcontrol>
     <controls>
         <control type="group" id="0">
             <posx>0</posx>
@@ -23,7 +23,7 @@
                 <aligny>top</aligny>
                 <include>TextColor_MainColor</include>
                 <font>NotificationFont</font>
-                <label>-</label>
+                <label></label>
             </control>
             <control type="label" id="11">
                 <posx>TextMargin</posx>
@@ -34,7 +34,7 @@
                 <aligny>top</aligny>
                 <include>TextColor_MainColor</include>
                 <font>NotificationFont</font>
-                <label>-</label>
+                <label></label>
             </control>
             <control type="label" id="12">
                 <posx>TextMargin</posx>
@@ -45,7 +45,7 @@
                 <aligny>top</aligny>
                 <include>TextColor_MainColor</include>
                 <font>NotificationFont</font>
-                <label>-</label>
+                <label></label>
             </control>
             <control type="label" id="1">
                 <posx>TextMargin</posx>

@@ -360,7 +360,7 @@
                     <height>78</height>
                     <control type="spincontrolex" id="3">
                         <description>change location button</description>
-                        <font>-</font>
+                        <font></font>
                         <onup>4</onup>
                         <ondown>490</ondown>
                         <onright>49</onright>

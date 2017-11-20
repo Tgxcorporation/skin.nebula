@@ -110,7 +110,7 @@
                 <aligny>center</aligny>
                 <include>TextureFocus</include>
                 <texturenofocus border="100,0,100,0">$VAR[Theme.Color]/buttons/bg_button_text_nofocus.png</texturenofocus>
-                <label>-</label>
+                <label></label>
                 <onup>10</onup>
                 <onleft>12</onleft>
                 <onright>12</onright>

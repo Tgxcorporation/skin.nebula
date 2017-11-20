@@ -134,7 +134,7 @@
                 <control type="label" id="7897">
                     <height>58</height>
                     <width>480</width>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <!-- color preview-->
                 <control type="image" id="7898">
@@ -150,7 +150,7 @@
                 <control type="label" id="7899">
                     <height>28</height>
                     <width>480</width>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <!-- edit manual -->
                 <control type="button" id="3010">

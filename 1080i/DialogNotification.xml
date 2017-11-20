@@ -30,7 +30,7 @@
                 <posy>312</posy>
                 <width>112</width>
                 <height>112</height>
-                <texture>-</texture>
+                <texture></texture>
             </control>
             <control type="label" id="401">
                 <posx>3153</posx>
@@ -38,7 +38,7 @@
                 <height>40</height>
                 <width>570</width>
                 <scroll>true</scroll>
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="402">
                 <posx>3153</posx>
@@ -46,7 +46,7 @@
                 <height>40</height>
                 <width>570</width>
                 <scroll>true</scroll>
-                <font>-</font>
+                <font></font>
             </control>
         </control>
     </controls>

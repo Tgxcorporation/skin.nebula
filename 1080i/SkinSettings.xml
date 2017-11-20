@@ -1096,18 +1096,18 @@
                     <onright>9005</onright>
                     <onup>9005</onup>
                     <ondown>9005</ondown>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol></pagecontrol>
                     <include>SkinSettings_DefaultLayout</include>
                     <content>
                         <item id="59">
                             <label>$LOCALIZE[31034]</label>
-                            <label2>-</label2>
+                            <label2></label2>
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;nolabels=True&amp;group=mainmenu)</onclick>
                         </item>
                         <item id="58">
                             <visible>Skin.HasSetting(plexbmc)</visible>
                             <label>$LOCALIZE[31045]</label>
-                            <label2>-</label2>
+                            <label2></label2>
                             <onclick>ActivateWindow(1115)</onclick>
                         </item>
                         <item id="60">
@@ -1172,7 +1172,7 @@
                     <onright>9007</onright>
                     <onup>9007</onup>
                     <ondown>9007</ondown>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol></pagecontrol>
                     <include>SkinSettings_DefaultLayout</include>
                     <content>
                         <item id="2">
@@ -1588,7 +1588,7 @@
                         </content>
                     </control>
                     <control type="button" id="8528083">
-                        <label>-</label>
+                        <label></label>
                         <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PickedColor)</onclick>
                         <include>ButtonFocusAnimation</include>
                         <posx>960</posx>

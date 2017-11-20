@@ -5,10 +5,10 @@
         <value condition="Player.ChapterCount">$LOCALIZE[21396]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
     </variable>
     <variable name="Overlay">
-        <value condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets) | Container.HasFiles]">-</value>
+        <value condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets) | Container.HasFiles]"></value>
         <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">$VAR[Theme.Color]/overlay_inprogress/$INFO[ListItem.Overlay]</value>
         <value condition="Skin.HasSetting(plexbmc) + ListItem.property(overlay)">$VAR[Theme.Color]/$INFO[ListItem.property(overlay)]</value>
-        <value condition="Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)">-</value>
+        <value condition="Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)"></value>
         <value condition="Skin.HasSetting(Hide_Unwatched_Marks)">$VAR[Theme.Color]/overlay_watched/$INFO[ListItem.Overlay]</value>
         <value condition="ListItem.IsResumable">$VAR[Theme.Color]/overlay_inprogress/$INFO[ListItem.Overlay]</value>
         <value condition="Skin.HasSetting(Hide_Watched_Marks)">$VAR[Theme.Color]/overlay_unwatched/$INFO[ListItem.Overlay]</value>

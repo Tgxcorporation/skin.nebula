@@ -117,7 +117,7 @@
                 <description>Feature separator image</description>
                 <width>640</width>
                 <height>1</height>
-                <texture>-</texture>
+                <texture></texture>
             </control>
             <!--DIALOG BUTTONS-->
             <control type="grouplist" id="9001">

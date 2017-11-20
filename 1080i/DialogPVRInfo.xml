@@ -169,7 +169,7 @@
                         <include>ButtonFocusAnimation</include>
                         <width>348</width>
                         <description>Record</description>
-                        <label>-</label>
+                        <label></label>
                         <visible>Window.IsActive(PVRGuideInfo)</visible>
                     </control>
                     <control type="button" id="9">
