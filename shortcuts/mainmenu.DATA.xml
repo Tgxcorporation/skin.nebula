@@ -21,7 +21,7 @@
     <shortcut>
         <visible>!Skin.HasSetting(plexbmc)</visible>
         <defaultID>videos</defaultID>
-        <label>10006</label>
+        <label>3</label>
         <label2>Common Shortcut</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb></thumb>
@@ -48,7 +48,7 @@
     <shortcut>
         <visible>!Skin.HasSetting(plexbmc)</visible>
         <defaultID>music</defaultID>
-        <label>10005</label>
+        <label>2</label>
         <label2>Common Shortcut</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb></thumb>
@@ -75,7 +75,7 @@
     <shortcut>
         <visible>!Skin.HasSetting(plexbmc)</visible>
         <defaultID>pictures</defaultID>
-        <label>10002</label>
+        <label>1</label>
         <label2>Common Shortcut</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb></thumb>
