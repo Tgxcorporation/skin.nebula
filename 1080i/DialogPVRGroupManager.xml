@@ -37,7 +37,7 @@
                 <align>center</align>
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
-                <label>$LOCALIZE[19143]</label>
+                <label>$VAR[PVRGroupMgrHeader]</label>
             </control>
             <control type="label">
                 <posx>0</posx>
@@ -299,6 +299,12 @@
                     <description>Delete Group</description>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[31505]</label>
+                </control>
+                <control type="togglebutton" id="34">
+                    <description>TV/Radio toggle</description>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[19174]</label>
+                    <altlabel>$LOCALIZE[19173]</altlabel>
                 </control>
             </control>
             <include>LeftMenuScroller</include>

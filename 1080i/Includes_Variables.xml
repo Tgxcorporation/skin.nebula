@@ -1210,4 +1210,8 @@
         <value condition="Skin.HasSetting(DisableWidgetLimit) + !Skin.HasSetting(plexbmc)">1000</value>
         <value>24</value>
     </variable>
+    <variable name="PVRGroupMgrHeader">
+        <value condition="!String.IsEmpty(Window.Property(IsRadio))">$LOCALIZE[19143]     $LOCALIZE[19174]</value>
+        <value>$LOCALIZE[19143]     $LOCALIZE[19173]</value>
+    </variable>
 </includes>
