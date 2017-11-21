@@ -61,7 +61,7 @@
         </control>
         <control type="group" id="1">
             <visible>Player.Caching</visible>
-            <include>OSDVisibleFadeEffect</include>
+            <include>VisibleFadeEffect</include>
             <control type="image" id="1">
                 <visible>Integer.IsGreater(Player.CacheLevel, 0)</visible>
                 <posx>810</posx>
