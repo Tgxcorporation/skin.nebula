@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+    <include name="PVRChannelNumericInput">
+        <control type="group">
+            <visible>!String.IsEmpty(PVR.ChannelNumberInput)</visible>
+            <include>VisibleFadeEffect</include>
+            <control type="image">
+                <posx>810</posx>
+                <posy>390</posy>
+                <width>300</width>
+                <height>300</height>
+                <texture>$VAR[Theme.Color]/OSD/loading_inner.png</texture>
+            </control>
+            <control type="image">
+                <posx>810</posx>
+                <posy>390</posy>
+                <width>300</width>
+                <height>300</height>
+                <texture>$VAR[Theme.Color]/OSD/loading_inner.png</texture>
+            </control>
+            <control type="label">
+                <posx>0</posx>
+                <posy>0</posy>
+                <height>1080</height>
+                <width>1920</width>
+                <align>center</align>
+                <font>NotificationFontDouble</font>
+                <include>TextColor_MainColor</include>
+                <label>$INFO[PVR.ChannelNumberInput]</label>
+            </control>
+        </control>
+    </include>
     <include name="PVRLeftMenu">
         <control type="group">
             <include>LeftMenu</include>
@@ -218,6 +248,7 @@
             <onleft>11</onleft>
             <onright>NextChannelGroup</onright>
         </control>
+        <include>PVRChannelNumericInput</include>
     </include>
     <include name="OSD_Channels_BottomScreen">
         <control type="group">
@@ -428,6 +459,7 @@
             <onleft>11</onleft>
             <onright>NextChannelGroup</onright>
         </control>
+        <include>PVRChannelNumericInput</include>
     </include>
     <include name="OSD_Guide_BottomScreen">
         <control type="group">
