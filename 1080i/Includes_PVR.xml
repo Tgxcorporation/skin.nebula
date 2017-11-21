@@ -109,19 +109,21 @@
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="button" id="2">
-                    <!--<visible>Window.IsActive(MyPVRGuide.xml)</visible>-->
+                    <visible>!Window.IsActive(MyPVRGuide.xml)</visible>
                     <visible>!Skin.HasSetting(EnableKioskMode)</visible>
                     <description>View As button</description>
                     <label></label>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="button" id="3">
+                    <visible>!Window.IsActive(MyPVRGuide.xml)</visible>
                     <visible>!Skin.HasSetting(EnableKioskMode)</visible>
                     <description>Sort by button</description>
                     <label>103</label>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="togglebutton" id="4">
+                    <visible>!Window.IsActive(MyPVRGuide.xml)</visible>
                     <visible>!Skin.HasSetting(EnableKioskMode)</visible>
                     <description>Sort asc</description>
                     <label>31051</label>
