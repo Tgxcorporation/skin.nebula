@@ -56,10 +56,10 @@
         <value condition="String.IsEqual(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)">$VAR[Theme.Color]/defaultAudioBig.png</value>
         <value condition="!ListItem.IsParentFolder+[Window.IsVisible(MyPVRRecordings.xml)|Window.IsVisible(MyPVRSearch.xml)|Window.IsVisible(MyPVRTimers.xml)]+!String.StartsWith(ListItem.Icon,Default)+[control.isvisible(58)|control.isvisible(53)]">$INFO[ListItem.Icon]</value>
         <value condition="!ListItem.IsParentFolder+[Window.IsVisible(MyPVRRecordings.xml)|Window.IsVisible(MyPVRSearch.xml)|Window.IsVisible(MyPVRTimers.xml)]+!String.StartsWith(ListItem.Icon,Default)">common/TransparentDot.png</value>
-        <value condition="!ListItem.IsParentFolder+[Window.IsVisible(DialogPVRGuideOSD.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)]+String.IsEmpty(ListItem.Icon)">$VAR[Theme.Color]/defaultChannelTvBig.png</value>
-        <value condition="!ListItem.IsParentFolder+[Window.IsVisible(DialogPVRGuideOSD.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)]+!String.IsEmpty(ListItem.Icon)">common/TransparentDot.png</value>
+        <value condition="!ListItem.IsParentFolder+[Window.IsVisible(DialogPVRChannelGuide.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)]+String.IsEmpty(ListItem.Icon)">$VAR[Theme.Color]/defaultChannelTvBig.png</value>
+        <value condition="!ListItem.IsParentFolder+[Window.IsVisible(DialogPVRChannelGuide.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)]+!String.IsEmpty(ListItem.Icon)">common/TransparentDot.png</value>
         <value condition="!ListItem.IsParentFolder+String.IsEqual(ListItem.thumb,)+!String.IsEmpty(Window.Property(IsRadio))">$VAR[Theme.Color]/defaultRadioBig.png</value>
-        <value condition="!ListItem.IsParentFolder+String.IsEqual(ListItem.thumb,)+[Window.IsVisible(DialogPVRGuideOSD.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRGuide.xml)|Window.IsVisible(MyPVRRecordings.xml)|Window.IsVisible(MyPVRSearch.xml)|Window.IsVisible(MyPVRTimers.xml)]">$VAR[Theme.Color]/defaultChannelTvBig_Wide.png</value>
+        <value condition="!ListItem.IsParentFolder+String.IsEqual(ListItem.thumb,)+[Window.IsVisible(DialogPVRChannelGuide.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRGuide.xml)|Window.IsVisible(MyPVRRecordings.xml)|Window.IsVisible(MyPVRSearch.xml)|Window.IsVisible(MyPVRTimers.xml)]">$VAR[Theme.Color]/defaultChannelTvBig_Wide.png</value>
         <value condition="[Window.IsVisible(Home.xml)+[String.IsEqual(Container(300).ListItem.Property(widgetType),episodes)|[String.IsEqual(Container(300).ListItem.Property(widgetType),musicvideos)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
         <value condition="[Window.IsVisible(Home.xml)+[String.IsEqual(Container(300).ListItem.Property(widgetType.1),episodes)|[String.IsEqual(Container(300).ListItem.Property(widgetType.1),musicvideos)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
         <value condition="[Window.IsVisible(Home.xml)+[String.IsEqual(Container(300).ListItem.Property(widgetType.2),episodes)|[String.IsEqual(Container(300).ListItem.Property(widgetType.2),musicvideos)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
@@ -77,7 +77,7 @@
     </variable>
     <variable name="ThumbsBig">
         <value condition="[Window.IsVisible(DialogPVRInfo.xml)]">$INFO[ListItem.Icon]</value>
-        <value condition="[Window.IsVisible(DialogPVRGuideOSD.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)]">$INFO[ListItem.Icon]</value>
+        <value condition="[Window.IsVisible(DialogPVRChannelGuide.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)]">$INFO[ListItem.Icon]</value>
         <value condition="[Window.IsVisible(MyPVRRecordings.xml)|Window.IsVisible(MyPVRSearch.xml)|Window.IsVisible(MyPVRTimers.xml)]+!String.StartsWith(ListItem.Icon,Default)">$INFO[ListItem.Icon]</value>
         <value condition="Skin.hassetting(plexbmc) + Container.Content(episodes) + !String.IsEmpty(ListItem.thumb) + !String.StartsWith(ListItem.thumb,Default)">$INFO[ListItem.thumb]</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster))+!String.StartsWith(ListItem.Art(poster),Default)">$INFO[ListItem.Art(poster)]</value>
@@ -238,12 +238,12 @@
         <value condition="ListItem.HasTimer">$VAR[Theme.Color]/list/tvguide_button_timer_nofocus.png</value>
     </variable>
     <variable name="UnfocusedTitle">
-        <value condition="[Window.IsVisible(DialogPVRGuideOSD.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRRecordings.xml)]+!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
+        <value condition="[Window.IsVisible(DialogPVRChannelGuide.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRRecordings.xml)]+!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
         <value condition="!String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
         <value>$LOCALIZE[416]</value>
     </variable>
     <variable name="DetailsTitle">
-        <value condition="[Window.IsVisible(DialogPVRGuideOSD.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRRecordings.xml)]+!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
+        <value condition="[Window.IsVisible(DialogPVRChannelGuide.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRRecordings.xml)]+!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
         <value condition="!String.IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
         <value>$LOCALIZE[416]</value>
     </variable>
@@ -252,7 +252,7 @@
         <value condition="Window.IsVisible(MyPVRTimers.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
         <value condition="Window.IsVisible(MyPVRSearch.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
         <value condition="Window.IsVisible(MyPVRRecordings.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
-        <value condition="Window.IsVisible(DialogPVRGuideOSD.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</value>
+        <value condition="Window.IsVisible(DialogPVRChannelGuide.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</value>
         <value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Born)]$INFO[ListItem.Property(Artist_Formed)]</value>
         <!--<value condition="Container.Content(Albums)">$INFO[ListItem.Artist]</value>-->
         <value condition="Container.Content(TVShows)+skin.hassetting(plexbmc)">$INFO[ListItem.Studio]</value>
@@ -267,7 +267,7 @@
         <value condition="Window.IsVisible(MyPVRTimers.xml)">$INFO[ListItem.Date]</value>
         <value condition="Window.IsVisible(MyPVRSearch.xml)">$INFO[ListItem.Date]</value>
         <value condition="Window.IsVisible(MyPVRRecordings.xml)">$INFO[ListItem.Date]</value>
-        <value condition="[Window.IsVisible(DialogPVRGuideOSD.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)]+ListItem.HasEpg">$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</value>
+        <value condition="[Window.IsVisible(DialogPVRChannelGuide.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)]+ListItem.HasEpg">$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</value>
         <value condition="Container.Content(Artists) + !String.IsEmpty(ListItem.Property(artist_genre))">$INFO[ListItem.Property(artist_genre)]</value>
         <value condition="Container.Content(Artists) + !String.IsEmpty(ListItem.Property(artist_style))">$INFO[ListItem.Property(artist_style)]</value>
         <value condition="Container.Content(Songs)">$INFO[ListItem.Year,,     ]$INFO[ListItem.Duration]</value>
@@ -286,7 +286,7 @@
         <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[ListItem.Genre]</value>
         <value condition="Window.IsVisible(MyPVRTimers.xml)">$INFO[ListItem.Comment]</value>
         <value condition="Window.IsVisible(MyPVRRecordings.xml)">$INFO[ListItem.Duration]</value>
-        <value condition="Window.IsVisible(DialogPVRGuideOSD.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)">$INFO[ListItem.Genre]</value>
+        <value condition="Window.IsVisible(DialogPVRChannelGuide.xml)|Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)">$INFO[ListItem.Genre]</value>
         <value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Mood)]</value>
         <value condition="Container.Content(Songs)">$INFO[ListItem.Album]</value>
         <value condition="Container.Content(Albums)">$INFO[ListItem.Genre]</value>
@@ -307,7 +307,7 @@
         <!--<value condition="String.IsEmpty(ListItem.VideoResolution)">$INFO[ListItem.Label2]</value>-->
     </variable>
     <variable name="Details">
-        <value condition="Window.IsVisible(DialogPVRGuideOSD.xml)">$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
+        <value condition="Window.IsVisible(DialogPVRChannelGuide.xml)">$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
         <value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRTimers.xml)|Window.IsVisible(MyPVRSearch.xml)|Window.IsVisible(MyPVRGuide.xml)]+ListItem.HasEpg">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]     $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</value>
         <value condition="[Window.IsVisible(DialogPVRChannelsOSD.xml)|Window.IsVisible(MyPVRChannels.xml)|Window.IsVisible(MyPVRTimers.xml)|Window.IsVisible(MyPVRSearch.xml)|Window.IsVisible(MyPVRGuide.xml)]+!ListItem.HasEpg">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
         <value condition="Window.IsVisible(MyPVRRecordings.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]$INFO[ListItem.Date,     ]</value>

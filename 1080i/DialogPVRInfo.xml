@@ -4,7 +4,7 @@
     <controls>
         <include>DimBG</include>
         <control type="group">
-            <animation effect="slide" start="0,0" end="0,156" time="0" condition="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(DialogPVRGuideOSD.xml)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,156" time="0" condition="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(DialogPVRChannelGuide.xml)">Conditional</animation>
             <control type="group">
                 <posy>-30</posy>
                 <include>DialogOpenClose</include>
