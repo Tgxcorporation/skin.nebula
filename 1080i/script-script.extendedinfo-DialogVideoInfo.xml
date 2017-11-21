@@ -737,7 +737,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(1000).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(1000).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="image">
                     <visible>String.IsEmpty(Container(1000).ListItem.Thumb)</visible>
@@ -874,7 +874,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(750).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(750).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="image">
                     <visible>String.IsEmpty(Container(750).ListItem.Thumb)</visible>
@@ -1011,7 +1011,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(150).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(150).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="image">
                     <visible>String.IsEmpty(Container(150).ListItem.Thumb)</visible>
@@ -1166,7 +1166,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(250).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(250).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="image">
                     <visible>String.IsEmpty(Container(250).ListItem.Thumb)</visible>
@@ -1321,7 +1321,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(1150).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(1150).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="image">
                     <visible>String.IsEmpty(Container(1150).ListItem.Thumb)</visible>
@@ -1458,7 +1458,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(350).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(350).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="image">
                     <visible>String.IsEmpty(Container(350).ListItem.Thumb)</visible>
@@ -1555,7 +1555,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(550).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(550).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="image">
                     <include>ConditionWhite</include>
@@ -1656,7 +1656,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(1450).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(1450).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="image">
                     <include>ConditionWhite</include>
@@ -1757,7 +1757,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(650).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(650).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="panel" id="650">
                     <posx>0</posx>
@@ -1841,7 +1841,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(850).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(850).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="panel" id="850">
                     <posx>0</posx>
@@ -1909,7 +1909,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(1050).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(1050).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="button">
                     <description>dummy for mouse navigation</description>
@@ -2008,7 +2008,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(950).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(950).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="panel" id="950">
                     <posx>0</posx>
@@ -2076,7 +2076,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(1250).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(1250).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="fixedlist" id="1250">
                     <include>UnderFade</include>
@@ -2176,7 +2176,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(1350).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(1350).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="fixedlist" id="1350">
                     <include>UnderFade</include>
@@ -2276,7 +2276,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(450).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(450).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="image">
                     <visible>String.IsEmpty(Container(450).ListItem.Thumb)</visible>
@@ -2433,7 +2433,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(2000).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(2000).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="image">
                     <visible>String.IsEmpty(Container(2000).ListItem.Thumb)</visible>

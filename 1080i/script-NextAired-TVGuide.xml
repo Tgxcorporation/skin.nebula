@@ -123,7 +123,7 @@
                         <font>DialogSubFont</font>
                         <align>right</align>
                         <include>TextColor_AlternateColor</include>
-                        <label>$INFO[Container(200).NumItems]</label>
+                        <label>$INFO[Container(200).NumNonFolderItems]</label>
                     </control>
                 </control>
                 <control type="group">
@@ -145,7 +145,7 @@
                         <font>DialogSubFont</font>
                         <align>right</align>
                         <include>TextColor_AlternateColor</include>
-                        <label>$INFO[Container(201).NumItems]</label>
+                        <label>$INFO[Container(201).NumNonFolderItems]</label>
                     </control>
                 </control>
                 <control type="group">
@@ -167,7 +167,7 @@
                         <font>DialogSubFont</font>
                         <align>right</align>
                         <include>TextColor_AlternateColor</include>
-                        <label>$INFO[Container(202).NumItems]</label>
+                        <label>$INFO[Container(202).NumNonFolderItems]</label>
                     </control>
                 </control>
                 <control type="group">
@@ -189,7 +189,7 @@
                         <font>DialogSubFont</font>
                         <align>right</align>
                         <include>TextColor_AlternateColor</include>
-                        <label>$INFO[Container(203).NumItems]</label>
+                        <label>$INFO[Container(203).NumNonFolderItems]</label>
                     </control>
                 </control>
                 <control type="group">
@@ -211,7 +211,7 @@
                         <font>DialogSubFont</font>
                         <align>right</align>
                         <include>TextColor_AlternateColor</include>
-                        <label>$INFO[Container(204).NumItems]</label>
+                        <label>$INFO[Container(204).NumNonFolderItems]</label>
                     </control>
                 </control>
                 <control type="group">
@@ -233,7 +233,7 @@
                         <font>DialogSubFont</font>
                         <align>right</align>
                         <include>TextColor_AlternateColor</include>
-                        <label>$INFO[Container(205).NumItems]</label>
+                        <label>$INFO[Container(205).NumNonFolderItems]</label>
                     </control>
                 </control>
                 <control type="group">
@@ -255,7 +255,7 @@
                         <font>DialogSubFont</font>
                         <align>right</align>
                         <include>TextColor_AlternateColor</include>
-                        <label>$INFO[Container(206).NumItems]</label>
+                        <label>$INFO[Container(206).NumNonFolderItems]</label>
                     </control>
                 </control>
             </control>
