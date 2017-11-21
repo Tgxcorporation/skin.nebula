@@ -46,6 +46,7 @@
                         <onright>60</onright>
                         <onup>50</onup>
                         <ondown>50</ondown>
+                        <orientation>vertical</orientation>
                         <include>ProgressTexture</include>
                         <rulerlayout height="78" width="60">
                             <control type="image" id="1">
