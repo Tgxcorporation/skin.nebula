@@ -5,7 +5,7 @@
     <controls>
         <include>DimBG</include>
         <control type="group">
-            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="[!ControlGroup(2).HasFocus()+!Control.HasFocus(60)+!ControlGroup(9001).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">conditional</animation>
+            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="[!ControlGroup(5).HasFocus()+!Control.HasFocus(60)+!ControlGroup(9001).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">conditional</animation>
             <include>DialogOpenClose</include>
             <control type="image">
                 <posx>-760</posx>
@@ -29,7 +29,7 @@
                 <height>172</height>
                 <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
-            <control type="label" id="20">
+            <control type="label" id="2">
                 <posx>TextMargin</posx>
                 <posy>183</posy>
                 <width>1800</width>
@@ -38,55 +38,60 @@
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
             </control>
-            <control type="grouplist" id="2">
+            <control type="grouplist" id="5">
                 <posx>0</posx>
                 <posy>318</posy>
                 <width>1920</width>
                 <height>546</height>
                 <itemgap>0</itemgap>
                 <pagecontrol>60</pagecontrol>
-                <onup>9</onup>
+                <onup>3</onup>
                 <ondown>9001</ondown>
-                <onleft>9</onleft>
+                <onleft>3</onleft>
                 <onright>60</onright>
             </control>
-            <control type="button" id="3">
+            <control type="button" id="7">
                 <width>1920</width>
                 <include>LeftMenuButtonWide</include>
             </control>
-            <control type="radiobutton" id="4">
+            <control type="radiobutton" id="8">
                 <width>1920</width>
                 <radioposx>1806</radioposx>
                 <textwidth>1700</textwidth>
                 <include>LeftMenuButtonWide</include>
             </control>
-            <control type="spincontrolex" id="5">
+            <control type="spincontrolex" id="9">
                 <width>1920</width>
                 <include>LeftMenuButtonWide</include>
                 <reverse>yes</reverse>
             </control>
-            <control type="image" id="6">
+            <control type="image" id="11">
                 <description>Default Seperator</description>
                 <height>1</height>
                 <texture border="150,0,150,0">$VAR[Theme.Color]/list/bg_facade_separator.png</texture>
             </control>
-            <control type="label" id="7">
+            <control type="edit" id="12">
+                <description>Default Edit</description>
+                <width>1920</width>
+                <include>LeftMenuButtonWide</include>
+            </control>
+            <control type="sliderex" id="13">
+                <width>1920</width>
+                <include>LeftMenuButtonWide</include>
+            </control>
+            <control type="label" id="14">
                 <description>separator label headline</description>
                 <textoffsetx>TextMargin</textoffsetx>
                 <width>1920</width>
                 <height>78</height>
                 <include>LeftMenuTitleLabel</include>
             </control>
-            <control type="sliderex" id="8">
-                <width>1920</width>
-                <include>LeftMenuButtonWide</include>
-            </control>
             <control type="scrollbar" id="60">
                 <posx>1886</posx>
                 <posy>318</posy>
                 <height>546</height>
-                <onleft>2</onleft>
-                <onright>2</onright>
+                <onleft>5</onleft>
+                <onright>5</onright>
                 <include>VerticalScroller</include>
             </control>
             <control type="grouplist" id="9001">
@@ -98,19 +103,19 @@
                 <aligny>bottom</aligny>
                 <align>center</align>
                 <orientation>horizontal</orientation>
-                <onup>2</onup>
-                <ondown>2</ondown>
+                <onup>5</onup>
+                <ondown>5</ondown>
                 <onleft>9001</onleft>
                 <onright>9001</onright>
-                <control type="button" id="10">
+                <control type="button" id="28">
                     <include>ButtonFocusAnimation</include>
                     <label>$LOCALIZE[186]</label>
                 </control>
-                <control type="button" id="11">
+                <control type="button" id="29">
                     <include>ButtonFocusAnimation</include>
                     <label>$LOCALIZE[222]</label>
                 </control>
-                <control type="button" id="12">
+                <control type="button" id="30">
                     <include>ButtonFocusAnimation</include>
                     <label>$LOCALIZE[409]</label>
                 </control>
@@ -118,7 +123,7 @@
         </control>
         <!-- SIDE MENU -->
         <control type="group">
-            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="[!ControlGroup(2).HasFocus()+!Control.HasFocus(60)+!ControlGroup(9001).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
+            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="[!ControlGroup(5).HasFocus()+!Control.HasFocus(60)+!ControlGroup(9001).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
             <include>LeftMenu</include>
             <control type="label" id="7965">
                 <posx>-660</posx>
@@ -126,15 +131,15 @@
                 <include>LeftMenuTitleLabel</include>
                 <label>$LOCALIZE[33061]</label>
             </control>
-            <control type="grouplist" id="9">
+            <control type="grouplist" id="3">
                 <posy>261</posy>
                 <height>702</height>
                 <include>LeftMenuButtonGroup</include>
-                <onright>2</onright>
-                <ondown>9</ondown>
-                <onback>2</onback>
+                <onright>5</onright>
+                <ondown>3</ondown>
+                <onback>5</onback>
             </control>
-            <control type="button" id="13">
+            <control type="button" id="10">
                 <include>LeftMenuButton</include>
             </control>
             <include>LeftMenuScroller</include>
