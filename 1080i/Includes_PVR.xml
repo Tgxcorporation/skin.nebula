@@ -129,6 +129,13 @@
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                     <include>LeftMenuButton</include>
                 </control>
+                <control type="button" id="10">
+                    <visible>Window.IsActive(MyPVRRecordings.xml)</visible>
+                    <description>Watched Toggle</description>
+                    <label>$LOCALIZE[20367]</label>
+                    <label2>$INFO[Container.NumNonFolderItems]</label2>
+                    <include>LeftMenuButton</include>
+                </control>
                 <control type="radiobutton" id="31">
                     <visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
                     <description>Filter</description>
