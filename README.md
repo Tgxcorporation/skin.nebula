@@ -1,4 +1,4 @@
-## Nebula skin for Kodi 16 KRYPTON
+## Nebula skin for Kodi 17 KRYPTON
 Simple and full-featured skin designed for Full HD TV screens.
 
 ![](https://github.com/Tgxcorporation/skin.nebula/raw/master/screenshots/screenshot01.jpg)
