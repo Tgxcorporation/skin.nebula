@@ -127,10 +127,10 @@
             <visible>![window.IsVisible(videoosd)|window.IsVisible(musicosd)]</visible>
             <visible>VideoPlayer.Content(livetv)</visible>
             <animation effect="fade" time="250">Visible</animation>
-            <posx>250</posx>
+            <posx>300</posx>
             <posy>55</posy>
             <height>30</height>
-            <width>1420</width>
+            <width>1320</width>
             <align>center</align>
             <font>NotificationFontDouble</font>
             <include>TextColor_MainColor</include>
@@ -142,10 +142,10 @@
             <visible>![window.IsVisible(videoosd)|window.IsVisible(musicosd)]</visible>
             <visible>!VideoPlayer.Content(livetv)</visible>
             <animation effect="fade" time="250">Visible</animation>
-            <posx>250</posx>
+            <posx>300</posx>
             <posy>55</posy>
             <height>30</height>
-            <width>1420</width>
+            <width>1320</width>
             <align>center</align>
             <font>NotificationFontDouble</font>
             <include>TextColor_MainColor</include>
