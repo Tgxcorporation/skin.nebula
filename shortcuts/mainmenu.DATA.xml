@@ -90,6 +90,7 @@
         <action>ActivateWindow(1119)</action>
     </shortcut>
     <shortcut>
+        <visible>System.GetBool(gamesgeneral.enable)</visible>
         <defaultID>15016</defaultID>
         <label>15016</label>
         <label2>Common Shortcut</label2>
