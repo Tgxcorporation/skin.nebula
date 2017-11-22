@@ -127,7 +127,7 @@
                     <onclick condition="Container(211).HasFocus(51)">Skin.Reset(Plexbmc.Queue.Icon)</onclick>
                 </control>
                 <control type="button" id="310">
-                    <visible>[[!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(Home_DefaultBG)]|[Skin.HasSetting(BlackGlassMode)+Skin.HasSetting(VerticalHome)]]</visible>
+                    <visible>!Skin.HasSetting(Home_DefaultBG)</visible>
                     <description>Change shortcut background</description>
                     <include>LeftMenuButton</include>
                     <label>$ADDON[script.skinshortcuts 32045]</label>
@@ -146,7 +146,7 @@
                     <onclick condition="Container(211).HasFocus(51)">Skin.SetImage(Plexbmc.Queue.Background)</onclick>
                 </control>
                 <control type="button" id="311">
-                    <visible>[[!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(Home_DefaultBG)]|[Skin.HasSetting(BlackGlassMode)+Skin.HasSetting(VerticalHome)]]</visible>
+                    <visible>!Skin.HasSetting(Home_DefaultBG)</visible>
                     <description>Change multi image background</description>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[31064]</label>
@@ -165,7 +165,7 @@
                     <onclick condition="Container(211).HasFocus(51)">Skin.SetPath(Plexbmc.Queue.Background)</onclick>
                 </control>
                 <control type="button" id="312">
-                    <visible>[[!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(Home_DefaultBG)]|[Skin.HasSetting(BlackGlassMode)+Skin.HasSetting(VerticalHome)]]</visible>
+                    <visible>!Skin.HasSetting(Home_DefaultBG)</visible>
                     <description>Reset shortcut background</description>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[31062]</label>

@@ -215,7 +215,7 @@
                 </control>
                 <control type="button" id="310">
                     <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                    <visible>[[!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(Home_DefaultBG)]|[Skin.HasSetting(BlackGlassMode)+Skin.HasSetting(VerticalHome)]]</visible>
+                    <visible>!Skin.HasSetting(Home_DefaultBG)</visible>
                     <description>Change shortcut background</description>
                     <include>LeftMenuButton</include>
                     <onclick>noop</onclick>
