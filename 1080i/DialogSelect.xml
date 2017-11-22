@@ -45,7 +45,7 @@
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
                 <include>TextColor_MainColor</include>
-                <label>$INFO[Container(6).NumNonFolderItems, , $LOCALIZE[31025]]</label>
+                <label>$INFO[Container(6).NumItems, , $LOCALIZE[31025]]</label>
             </control>
             <control type="label">
                 <visible>control.isvisible(3)</visible>
@@ -56,7 +56,7 @@
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
                 <include>TextColor_MainColor</include>
-                <label>$INFO[Container(3).NumNonFolderItems, , $LOCALIZE[31025]]</label>
+                <label>$INFO[Container(3).NumItems, , $LOCALIZE[31025]]</label>
             </control>
             <control type="label" id="4">
                 <description>No Settings Label</description>

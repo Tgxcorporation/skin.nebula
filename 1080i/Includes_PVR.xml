@@ -135,7 +135,7 @@
                     <visible>Window.IsActive(MyPVRRecordings.xml)</visible>
                     <description>Watched Toggle</description>
                     <label>$LOCALIZE[20367]</label>
-                    <label2>$INFO[Container.NumNonFolderItems]</label2>
+                    <label2>$INFO[Container.NumItems]</label2>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="radiobutton" id="31">
@@ -232,7 +232,7 @@
             <align>center</align>
             <font>InfoTitleSubFont</font>
             <include>TextColor_MainColor</include>
-            <label>$INFO[System.Time] - $INFO[Container(11).NumNonFolderItems, , $LOCALIZE[31025]]</label>
+            <label>$INFO[System.Time] - $INFO[Container(11).NumItems, , $LOCALIZE[31025]]</label>
         </control>
         <control type="list" id="11">
             <posx>0</posx>
@@ -301,7 +301,7 @@
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
                 <include>TextColor_MainColor</include>
-                <label>$INFO[System.Time] - $INFO[Container(11).NumNonFolderItems, , $LOCALIZE[31025]]</label>
+                <label>$INFO[System.Time] - $INFO[Container(11).NumItems, , $LOCALIZE[31025]]</label>
             </control>
             <control type="list" id="11">
                 <posx>0</posx>
@@ -443,7 +443,7 @@
             <align>center</align>
             <font>InfoTitleSubFont</font>
             <include>TextColor_MainColor</include>
-            <label>$INFO[System.Time] - $INFO[Container(11).NumNonFolderItems, , $LOCALIZE[31025]]</label>
+            <label>$INFO[System.Time] - $INFO[Container(11).NumItems, , $LOCALIZE[31025]]</label>
         </control>
         <control type="list" id="11">
             <posx>0</posx>
@@ -512,7 +512,7 @@
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
                 <include>TextColor_MainColor</include>
-                <label>$INFO[System.Time] - $INFO[Container(11).NumNonFolderItems, , $LOCALIZE[31025]]</label>
+                <label>$INFO[System.Time] - $INFO[Container(11).NumItems, , $LOCALIZE[31025]]</label>
             </control>
             <control type="list" id="11">
                 <posx>0</posx>

@@ -45,7 +45,7 @@
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
                 <include>TextColor_MainColor</include>
-                <label>$INFO[Container(11).NumNonFolderItems, , $LOCALIZE[31025]]</label>
+                <label>$INFO[Container(11).NumItems, , $LOCALIZE[31025]]</label>
             </control>
             <control type="list" id="11">
                 <posx>0</posx>

@@ -44,7 +44,7 @@
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
                 <include>TextColor_MainColor</include>
-                <label>$INFO[Container(50).NumNonFolderItems, , $LOCALIZE[31025]]</label>
+                <label>$INFO[Container(50).NumItems, , $LOCALIZE[31025]]</label>
             </control>
             <!-- CDART VIDEO -->
             <include content="DiscArt">
@@ -146,7 +146,7 @@
         <control type="label">
             <include>OpenClose</include>
             <include>WindowTitleSub</include>
-            <label>$INFO[Container.NumNonFolderItems, , $LOCALIZE[31025]]$INFO[Container.CurrentPage,  -  ]$INFO[Container.NumPages,/]</label>
+            <label>$INFO[Container.NumItems, , $LOCALIZE[31025]]$INFO[Container.CurrentPage,  -  ]$INFO[Container.NumPages,/]</label>
         </control>
         <include>FooterInfo</include>
         <include>Time</include>

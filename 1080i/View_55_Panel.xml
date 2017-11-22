@@ -236,7 +236,7 @@
                         <font>WidgetFont</font>
                         <scroll>true</scroll>
                         <include>TextColor_MainColor</include>
-                        <label>$INFO[ListItem.Artist]$INFO[ListItem.Rating,     ]$INFO[ListItem.Year,     ]$INFO[ListItem.Duration,     , $LOCALIZE[31297]]</label>
+                        <label>$INFO[ListItem.AddonVersion,$LOCALIZE[19114]: ]$INFO[ListItem.Artist]$INFO[ListItem.Rating,     ]$INFO[ListItem.Year,     ]$INFO[ListItem.Duration,     , $LOCALIZE[31297]]</label>
                     </control>
                     <control type="image">
                         <visible>control.hasfocus(55)</visible>

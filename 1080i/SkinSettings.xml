@@ -829,6 +829,12 @@
                                 <icon>special://skin/backgrounds/Addons.jpg</icon>
                                 <thumb>$INFO[Skin.String(Addons.Background)]</thumb>
                             </item>
+                            <item id="81">
+                                <label>$LOCALIZE[15016]</label>
+                                <onclick>Setfocus(3000)</onclick>
+                                <icon>special://skin/backgrounds/Games.jpg</icon>
+                                <thumb>$INFO[Skin.String(Games.Background)]</thumb>
+                            </item>
                             <item id="9">
                                 <label>$LOCALIZE[5]</label>
                                 <onclick>Setfocus(3000)</onclick>
@@ -947,6 +953,7 @@
                         <onclick condition="Container(9004).HasFocus(6)">Skin.SetImage(Favourites.Background)</onclick>
                         <!-- <onclick condition="Container(9004).HasFocus(7)">Skin.SetImage(Weather.Background)</onclick> -->
                         <onclick condition="Container(9004).HasFocus(8)">Skin.SetImage(Addons.Background)</onclick>
+                        <onclick condition="Container(9004).HasFocus(81)">Skin.SetImage(Games.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(9)">Skin.SetImage(Settings.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(10)">Skin.SetImage(DVD.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(11)">Skin.SetImage(Quit.Background)</onclick>
@@ -979,6 +986,7 @@
                         <onclick condition="Container(9004).HasFocus(6)">Skin.SetPath(Favourites.Background)</onclick>
                         <!-- <onclick condition="Container(9004).HasFocus(7)">Skin.SetPath(Weather.Background)</onclick> -->
                         <onclick condition="Container(9004).HasFocus(8)">Skin.SetPath(Addons.Background)</onclick>
+                        <onclick condition="Container(9004).HasFocus(81)">Skin.SetPath(Games.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(9)">Skin.SetPath(Settings.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(10)">Skin.SetPath(DVD.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(11)">Skin.SetPath(Quit.Background)</onclick>
@@ -1073,6 +1081,7 @@
                         <onclick condition="Container(9004).HasFocus(6)">Skin.Reset(Favourites.Background)</onclick>
                         <!-- <onclick condition="Container(9004).HasFocus(7)">Skin.Reset(Weather.Background)</onclick> -->
                         <onclick condition="Container(9004).HasFocus(8)">Skin.Reset(Addons.Background)</onclick>
+                        <onclick condition="Container(9004).HasFocus(81)">Skin.Reset(Games.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(9)">Skin.Reset(Settings.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(10)">Skin.Reset(DVD.Background)</onclick>
                         <onclick condition="Container(9004).HasFocus(11)">Skin.Reset(Quit.Background)</onclick>

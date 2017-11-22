@@ -25,7 +25,7 @@
         <control type="label">
             <include>OpenClose</include>
             <include>WindowTitleSub</include>
-            <label>$INFO[Container.NumNonFolderItems, , $LOCALIZE[31025]]$INFO[Container.CurrentPage,  -  ]$INFO[Container.NumPages,/]</label>
+            <label>$INFO[Container.NumItems, , $LOCALIZE[31025]]$INFO[Container.CurrentPage,  -  ]$INFO[Container.NumPages,/]</label>
         </control>
         <include>FooterInfo</include>
         <include>Time</include>

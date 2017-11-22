@@ -182,7 +182,7 @@
                     <align>center</align>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[Container(50).NumNonFolderItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="fixedlist" id="50">
                     <include>UnderFade</include>

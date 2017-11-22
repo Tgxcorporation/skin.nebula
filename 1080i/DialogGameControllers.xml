@@ -75,10 +75,10 @@
             </control>
             <!--IMAGE-->
             <control type="gamecontroller" id="31">
-                <posx>690</posx>
-                <posy>368</posy>
-                <width>540</width>
-                <height>350</height>
+                <posx>667</posx>
+                <posy>318</posy>
+                <width>585</width>
+                <height>585</height>
             </control>
             <!--BUTTONS-->
             <control type="grouplist" id="5">

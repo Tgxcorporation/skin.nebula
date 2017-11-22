@@ -23,7 +23,7 @@
         <control type="label">
             <include>OpenClose</include>
             <include>WindowTitleSub</include>
-            <label>$INFO[Container(50).NumNonFolderItems] $LOCALIZE[31025]</label>
+            <label>$INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
         </control>
         <!-- <include>FooterInfo</include> -->
         <include>Time</include>

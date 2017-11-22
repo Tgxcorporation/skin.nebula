@@ -24,6 +24,7 @@
     <icon labelID="1036--0">special://skin/backgrounds/Favourites2.jpg</icon>
     <icon labelID="13009">special://skin/backgrounds/Quit.jpg</icon>
     <icon labelID="24001">special://skin/backgrounds/Addons.jpg</icon>
+    <icon labelID="15016">special://skin/backgrounds/Games.jpg</icon>
     <icon labelID="script.globalsearch">special://skin/backgrounds/Search.jpg</icon>
     <icon image="DefaultShortcut.png">special://skin/backgrounds/default/default.jpg</icon>
 
@@ -58,6 +59,7 @@
     <backgrounddefault labelID="1036">Favourites.Art</backgrounddefault>
     <backgrounddefault labelID="13009">Quit.Art</backgrounddefault>
     <backgrounddefault labelID="24001">Addons.Art</backgrounddefault>
+    <backgrounddefault labelID="15016">Games.Art</backgrounddefault>
     <backgrounddefault labelID="script.globalsearch">Search.Art</backgrounddefault>
 
     <widgetRename>True</widgetRename>
@@ -163,6 +165,7 @@
     <widgetdefaultnode labelID="31971" group="mainmenu" label="31402" type="musicvideos" path="special://skin/widgetplaylists/recommendedmusicvideos.xsp" target="video">recommendedmusicvideos</widgetdefaultnode>
     <widgetdefaultnode labelID="31972" group="mainmenu" label="31403" type="musicvideos" path="special://skin/widgetplaylists/recommendedmusicvideos.xsp" target="video">recommendedmusicvideos</widgetdefaultnode>
     <widgetdefaultnode labelID="24001" group="mainmenu" label="1037" type="addon" path="addons://sources/video/" target="video">videoaddons</widgetdefaultnode>
+    <widgetdefaultnode labelID="15016" group="mainmenu" label="15016" type="addon" path="addons://sources/game/" target="games">gamesaddons</widgetdefaultnode>
     <widgetdefaultnode labelID="livetv" group="mainmenu" label="19017" type="tv" path="pvr://recordings/tv/active?view=flat" target="pvr">tvrecordings</widgetdefaultnode>
     <widgetdefaultnode labelID="radio" group="mainmenu" label="19017" type="radio" path="pvr://recordings/radio/active?view=flat" target="pvr">radiorecordings</widgetdefaultnode>
 
@@ -184,6 +187,9 @@
     <propertydefault labelID="24001" property="widgetAspect">31118</propertydefault>
     <propertydefault labelID="24001" property="widgetSortBy">lastused</propertydefault>
     <propertydefault labelID="24001" property="widgetSortDirection">descending</propertydefault>
+    <propertydefault labelID="15016" property="widgetAspect">31118</propertydefault>
+    <propertydefault labelID="15016" property="widgetSortBy">lastused</propertydefault>
+    <propertydefault labelID="15016" property="widgetSortDirection">descending</propertydefault>
     <propertydefault labelID="livetv" property="widgetAspect">31120</propertydefault>
     <propertydefault labelID="livetv" property="widgetSortBy">lastplayed</propertydefault>
     <propertydefault labelID="livetv" property="widgetSortDirection">descending</propertydefault>
@@ -367,6 +373,7 @@
     <propertydefault labelID="radio" property="widgetAspect.1">31120</propertydefault>
     <propertydefault labelID="radio" property="widgetSortBy.1">lastplayed</propertydefault>
     <propertydefault labelID="radio" property="widgetSortDirection.1">descending</propertydefault>
+
 
 
     <!--DO NOT SHARE MENUS WITH OTHER SKINS-->

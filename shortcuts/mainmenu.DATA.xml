@@ -90,6 +90,14 @@
         <action>ActivateWindow(1119)</action>
     </shortcut>
     <shortcut>
+        <defaultID>15016</defaultID>
+        <label>15016</label>
+        <label2>Common Shortcut</label2>
+        <icon>DefaultShortcut.png</icon>
+        <thumb></thumb>
+        <action>ActivateWindow(Games,root)</action>
+    </shortcut>
+    <shortcut>
         <visible>System.HasMediaDVD</visible>
         <defaultID>dvd</defaultID>
         <label>32032</label>
