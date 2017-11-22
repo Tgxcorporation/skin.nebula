@@ -655,10 +655,10 @@
                         <control type="label">
                             <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount]">Conditional</animation>
                             <visible>Player.hasvideo + VideoPlayer.Content(livetv)</visible>
-                            <posx>250</posx>
+                            <posx>300</posx>
                             <posy>55</posy>
                             <height>30</height>
-                            <width>1420</width>
+                            <width>1320</width>
                             <align>center</align>
                             <font>NotificationFontDouble</font>
                             <include>TextColor_MainColor</include>
@@ -667,10 +667,10 @@
                         <control type="label">
                             <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount]">Conditional</animation>
                             <visible>Player.hasvideo + !VideoPlayer.Content(livetv)</visible>
-                            <posx>250</posx>
+                            <posx>300</posx>
                             <posy>55</posy>
                             <height>30</height>
-                            <width>1420</width>
+                            <width>1320</width>
                             <align>center</align>
                             <font>NotificationFontDouble</font>
                             <include>TextColor_MainColor</include>
@@ -679,10 +679,10 @@
                         <control type="label">
                             <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount]">Conditional</animation>
                             <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible>
-                            <posx>250</posx>
+                            <posx>300</posx>
                             <posy>55</posy>
                             <height>30</height>
-                            <width>1420</width>
+                            <width>1320</width>
                             <align>center</align>
                             <font>NotificationFontDouble</font>
                             <include>TextColor_MainColor</include>
@@ -799,10 +799,10 @@
         </control>
     </include>
     <include name="SeekbarLabels">
-        <posx>250</posx>
+        <posx>300</posx>
         <posy>95</posy>
         <height>41</height>
-        <width>1420</width>
+        <width>1320</width>
         <align>center</align>
         <include>TextColor_AlternateColor</include>
         <font>NotificationFont</font>
