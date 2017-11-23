@@ -164,27 +164,16 @@
                 <control type="group">
                     <posx>395</posx>
                     <posy>35</posy>
-                    <control type="group">
+                    <control type="label">
                         <visible>!VideoPlayer.Content(LiveTV)</visible>
-                        <control type="image">
-                            <posx>TextMargin</posx>
-                            <posy>85</posy>
-                            <height>37</height>
-                            <width>185</width>
-                            <aspectratio align="left">keep</aspectratio>
-                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                            <texture>$VAR[Theme.Color]/badges/rating.png</texture>
-                        </control>
-                        <control type="label">
-                            <posx>112</posx>
-                            <posy>68</posy>
-                            <width>460</width>
-                            <height>71</height>
-                            <font>InfoRatingFont</font>
-                            <include>TextColor_MainColor</include>
-                            <scroll>false</scroll>
-                            <label fallback="416">$INFO[VideoPlayer.RatingAndVotes]</label>
-                        </control>
+                        <posx>TextMargin</posx>
+                        <posy>65</posy>
+                        <width>460</width>
+                        <height>71</height>
+                        <font>InfoDetailsFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>false</scroll>
+                        <label fallback="416">$INFO[VideoPlayer.RatingAndVotes]</label>
                     </control>
                     <control type="label">
                         <visible>VideoPlayer.Content(LiveTV)+VideoPlayer.HasEpg</visible>
