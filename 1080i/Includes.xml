@@ -14,6 +14,7 @@
     <include file="Includes_Expressions.xml"/>
     <include file="Includes_Codec.xml"/>
     <include file="Includes_CustomColors.xml"/>
+    <include file="Includes_DialogSelect.xml"/>
     <include file="defaults.xml"/>
     <include file="Includes_Home_Common.xml"/>
     <include file="Includes_Home_Common_Plexbmc.xml"/>
