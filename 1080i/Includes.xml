@@ -116,7 +116,7 @@
                 <aspectratio aligny="top">scale</aspectratio>
                 <imagepath background="true">$VAR[Fanart.Art]</imagepath>
             </control>
-            <include>Player_Show</include>
+            <!--<include>Player_Show</include>-->
             <control type="image">
                 <include>OverlayTransparency</include>
                 <posx>-89</posx>
