@@ -72,6 +72,24 @@
                 <include>SquareThumbBig</include>
                 <include>ThumbBorder</include>
             </control>
+            <include content="ClearArtLogo">
+                <param name="x" value="455"/>
+                <param name="y" value="30"/>
+                <param name="width" value="1920"/>
+                <param name="height" value="180"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="left"/>
+                <param name="aligny" value="bottom"/>
+            </include>
+            <include content="StudioArt">
+                <param name="x" value="455"/>
+                <param name="y" value="30"/>
+                <param name="width" value="1920"/>
+                <param name="height" value="180"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="left"/>
+                <param name="aligny" value="bottom"/>
+            </include>
             <control type="group">
                 <posy>205</posy>
                 <control type="image">
