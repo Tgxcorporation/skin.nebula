@@ -141,7 +141,7 @@
                     <aligny>top</aligny>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
-                    <label>$INFO[VideoPlayer.ChannelNumber,, - ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title, - ]</label>
+                    <label>$INFO[VideoPlayer.ChannelNumberLabel,, - ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title, - ]</label>
                 </control>
                 <control type="label">
                     <visible>!VideoPlayer.Content(livetv)</visible>

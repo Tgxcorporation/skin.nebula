@@ -134,7 +134,7 @@
             <align>center</align>
             <font>NotificationFontDouble</font>
             <include>TextColor_MainColor</include>
-            <label>$INFO[VideoPlayer.ChannelNumber,, - ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title, - ]</label>
+            <label>$INFO[VideoPlayer.ChannelNumberLabel,, - ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title, - ]</label>
         </control>
         <control type="label">
             <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="0,22" condition="![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ChapterCount | Player.IsTempo]">Conditional</animation>
