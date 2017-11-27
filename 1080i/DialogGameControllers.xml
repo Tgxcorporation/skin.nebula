@@ -66,6 +66,7 @@
                 <height>585</height>
                 <onright>5</onright>
                 <ondown>9001</ondown>
+                <onleft>9001</onleft>
                 <include>LeftMenuButtonGroup</include>
             </control>
             <control type="button" id="10">
@@ -139,7 +140,7 @@
                 <control type="button" id="19">
                     <width>384</width>
                     <include>ButtonFocusAnimation</include>
-                    <label>$LOCALIZE[10035]</label>
+                    <label>$LOCALIZE[13007]</label>
                 </control>
                 <control type="button" id="20">
                     <width>384</width>
@@ -154,7 +155,7 @@
                 <control type="button" id="21">
                     <width>384</width>
                     <include>ButtonFocusAnimation</include>
-                    <label>$LOCALIZE[35013]</label>
+                    <label>$LOCALIZE[35019]</label>
                 </control>
             </control>
         </control>
