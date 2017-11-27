@@ -66,6 +66,7 @@
                 <height>585</height>
                 <onright>5</onright>
                 <ondown>9001</ondown>
+                <onleft>9001</onleft>
                 <include>LeftMenuButtonGroup</include>
             </control>
             <control type="button" id="10">
