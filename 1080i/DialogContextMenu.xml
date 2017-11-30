@@ -44,15 +44,15 @@
         <control type="group">
             <include>DialogContextOpenClose</include>
             <animation effect="slide" time="0" start="0,0" end="0,499" condition="Integer.IsEqual(Container(996).NumItems,1)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,458" condition="Integer.IsEqual(Container(996).NumItems,2)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,410" condition="Integer.IsEqual(Container(996).NumItems,3)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,369" condition="Integer.IsEqual(Container(996).NumItems,4)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,329" condition="Integer.IsEqual(Container(996).NumItems,5)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,288" condition="Integer.IsEqual(Container(996).NumItems,6)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,248" condition="Integer.IsEqual(Container(996).NumItems,7)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,207" condition="Integer.IsEqual(Container(996).NumItems,8)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,167" condition="Integer.IsEqual(Container(996).NumItems,9)">conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,126" condition="Integer.IsGreater(Container(996).NumItems,9)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,459" condition="Integer.IsEqual(Container(996).NumItems,2)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,418" condition="Integer.IsEqual(Container(996).NumItems,3)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,378" condition="Integer.IsEqual(Container(996).NumItems,4)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,337" condition="Integer.IsEqual(Container(996).NumItems,5)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,297" condition="Integer.IsEqual(Container(996).NumItems,6)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,256" condition="Integer.IsEqual(Container(996).NumItems,7)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,216" condition="Integer.IsEqual(Container(996).NumItems,8)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,175" condition="Integer.IsEqual(Container(996).NumItems,9)">conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,135" condition="Integer.IsGreater(Container(996).NumItems,9)">conditional</animation>
             <control type="button">
                 <include>ConditionWhite</include>
                 <posx>1887</posx>
@@ -122,7 +122,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <posx>1886</posx>
-                <posy>33</posy>
+                <posy>0</posy>
                 <height>810</height>
                 <showonepage>false</showonepage>
                 <include>VerticalScroller</include>
