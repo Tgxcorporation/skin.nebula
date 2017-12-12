@@ -2,6 +2,7 @@
 <window type="buttonmenu" id="111">
     <defaultcontrol always="true">9009</defaultcontrol>
     <onload condition="!Integer.IsGreater(Container(9009).NumItems,0)">close</onload>
+    <zorder>15</zorder>
     <controls>
         <include>DimBG</include>
         <control type="group">
