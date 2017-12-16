@@ -52,7 +52,7 @@
                     <include>LeftMenuTitleLabel</include>
                     <label>$LOCALIZE[31988]</label>
                 </control>
-                <control type="button" id="301">
+                <control type="button" id="303">
                     <description>Enable Item</description>
                     <include>LeftMenuButton</include>
                     <label>$VAR[SkinShortcutDisabledLabelPlex]</label>
