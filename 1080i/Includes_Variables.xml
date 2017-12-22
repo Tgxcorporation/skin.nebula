@@ -51,6 +51,7 @@
     </variable>
     <variable name="Thumbs">
         <!--EXCEPTIONS-->
+        <value condition="Skin.HasSetting(WidgetEpisodePoster) + Window.IsVisible(Home.xml) + !String.IsEmpty(ListItem.Art(tvshow.thumb)) + !String.StartsWith(ListItem.Art(tvshow.thumb),Default)">$INFO[ListItem.Art(tvshow.thumb)]</value>
         <value condition="Window.IsVisible(DialogMusicInfo.xml)+Control.hasfocus(50)+String.IsEqual(ListItem.DBType,artist)">$INFO[Container(50).ListItem.Thumb]</value>
         <value condition="Window.IsVisible(CustomAddons.xml)">$VAR[Theme.Color]/defaultExtensionBig.png</value>
         <value condition="String.IsEqual(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)">$VAR[Theme.Color]/defaultAudioBig.png</value>
