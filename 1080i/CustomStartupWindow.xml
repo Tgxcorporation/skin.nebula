@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window type="window" id="1120">
+<window type="dialog" id="1120">
     <defaultcontrol always="true">9001</defaultcontrol>
     <controls>
         <include condition="!Skin.HasSetting(DisableFanart)">Fanart_Art</include>
