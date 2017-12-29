@@ -256,7 +256,7 @@
             <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource].png</texture>
         </control>
         <control type="image">
-            <visible>ListItem.IsStereoscopic|String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)</visible>
+            <visible>ListItem.IsStereoscopic</visible>
             <description>3D Image</description>
             <width>120</width>
             <height>80</height>
@@ -381,7 +381,7 @@
             <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource].png</texture>
         </control>
         <control type="image">
-            <visible>ListItem.IsStereoscopic|String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)</visible>
+            <visible>ListItem.IsStereoscopic</visible>
             <description>3D Image</description>
             <width>120</width>
             <height>70</height>
@@ -486,7 +486,7 @@
             <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource].png</texture>
         </control>
         <control type="image">
-            <visible>ListItem.IsStereoscopic|String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)</visible>
+            <visible>ListItem.IsStereoscopic</visible>
             <description>3D Image</description>
             <width>120</width>
             <height>80</height>
@@ -598,7 +598,7 @@
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="String.IsEmpty(ListItem.AudioCodec)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![!ListItem.IsParentFolder+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![[String.Contains(ListItem(0).Filenameandpath,bluray) | String.Contains(ListItem(0).Filenameandpath,blu-ray) | String.Contains(ListItem(0).Filenameandpath,bdrip)]|String.Contains(ListItem.Filenameandpath,web)|String.Contains(ListItem.Filenameandpath,hdtv)|String.Contains(ListItem.Filenameandpath,dvd) | String.EndsWith(ListItem.Filenameandpath,.ifo) | String.EndsWith(ListItem.Filenameandpath,.iso)|String.StartsWith(ListItem.Path,videodb://movies/sets)|String.Contains(Player.Filenameandpath,4k)]">Conditional</animation>
-            <visible>ListItem.IsStereoscopic|String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)</visible>
+            <visible>ListItem.IsStereoscopic</visible>
             <description>3D Image</description>
             <posx>612</posx>
             <posy>0</posy>
@@ -614,7 +614,7 @@
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="String.IsEmpty(ListItem.AudioCodec)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![!ListItem.IsParentFolder+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![[String.Contains(ListItem(0).Filenameandpath,bluray) | String.Contains(ListItem(0).Filenameandpath,blu-ray) | String.Contains(ListItem(0).Filenameandpath,bdrip)]|String.Contains(ListItem.Filenameandpath,web)|String.Contains(ListItem.Filenameandpath,hdtv)|String.Contains(ListItem.Filenameandpath,dvd) | String.Contains(ListItem.Filenameandpath,.ifo) | String.Contains(ListItem.Filenameandpath,.iso)|String.StartsWith(ListItem.Path,videodb://movies/sets)|String.Contains(Player.Filenameandpath,4k)]">Conditional</animation>
-            <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![ListItem.IsStereoscopic|String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)]">Conditional</animation>
+            <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![ListItem.IsStereoscopic]">Conditional</animation>
             <posx>714</posx>
             <posy>0</posy>
             <visible>!String.IsEmpty(ListItem.Top250) + !String.StartsWith(ListItem.Top250,0)</visible>
@@ -686,7 +686,7 @@
             <texture>$VAR[Theme.Color]/badges/video/$VAR[videosource].png</texture>
         </control>
         <control type="image">
-            <visible>ListItem.IsStereoscopic|String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)</visible>
+            <visible>ListItem.IsStereoscopic</visible>
             <description>3D Image</description>
             <width>85</width>
             <height>60</height>
@@ -790,7 +790,7 @@
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="String.IsEmpty(ListItem.AudioCodec)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![!ListItem.IsParentFolder+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![[String.Contains(ListItem(0).Filenameandpath,bluray) | String.Contains(ListItem(0).Filenameandpath,blu-ray) | String.Contains(ListItem(0).Filenameandpath,bdrip)]|String.Contains(ListItem.Filenameandpath,web)|String.Contains(ListItem.Filenameandpath,hdtv)|String.Contains(ListItem.Filenameandpath,dvd) | String.EndsWith(ListItem.Filenameandpath,.ifo) | String.EndsWith(ListItem.Filenameandpath,.iso)|String.StartsWith(ListItem.Path,videodb://movies/sets)|String.Contains(Player.Filenameandpath,4k)]">Conditional</animation>
-            <visible>ListItem.IsStereoscopic|String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)</visible>
+            <visible>ListItem.IsStereoscopic</visible>
             <posx>540</posx>
             <description>3D Image</description>
             <width>100</width>
@@ -805,7 +805,7 @@
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="String.IsEmpty(ListItem.AudioCodec)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![!ListItem.IsParentFolder+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![[String.Contains(ListItem(0).Filenameandpath,bluray) | String.Contains(ListItem(0).Filenameandpath,blu-ray) | String.Contains(ListItem(0).Filenameandpath,bdrip)]|String.Contains(ListItem.Filenameandpath,web)|String.Contains(ListItem.Filenameandpath,hdtv)|String.Contains(ListItem.Filenameandpath,dvd) | String.Contains(ListItem.Filenameandpath,.ifo) | String.Contains(ListItem.Filenameandpath,.iso)|String.StartsWith(ListItem.Path,videodb://movies/sets)|String.Contains(Player.Filenameandpath,4k)]">Conditional</animation>
-            <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![ListItem.IsStereoscopic|String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)]">Conditional</animation>
+            <animation effect="slide" start="0,0" end="-90,0" time="0" condition="![ListItem.IsStereoscopic]">Conditional</animation>
             <posx>630</posx>
             <visible>!String.IsEmpty(ListItem.Top250) + !String.StartsWith(ListItem.Top250,0)</visible>
             <width>100</width>
@@ -877,7 +877,7 @@
             <texture>$VAR[Theme.Color]/badges/video/$VAR[videosourceOSD].png</texture>
         </control>
         <control type="image">
-            <visible>VideoPlayer.IsStereoscopic|String.Contains(VideoPlayer.Filenameandpath,.3dbd.) | String.Contains(VideoPlayer.Filenameandpath,.3d.)</visible>
+            <visible>VideoPlayer.IsStereoscopic</visible>
             <description>3D Image</description>
             <width>100</width>
             <height>70</height>
