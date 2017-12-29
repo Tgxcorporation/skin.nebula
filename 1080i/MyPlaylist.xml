@@ -27,6 +27,7 @@
                 <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
             </control>
             <control type="label">
+                <visible>Window.IsVisible(musicplaylist)</visible>
                 <posx>TextMargin</posx>
                 <posy>183</posy>
                 <width>1800</width>
@@ -34,9 +35,20 @@
                 <align>center</align>
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
-                <label>$LOCALIZE[10522]</label>
+                <label>$LOCALIZE[2] - $LOCALIZE[559]</label>
             </control>
-            <control type="label" id="12">
+            <control type="label">
+                <visible>Window.IsVisible(videoplaylist)</visible>
+                <posx>TextMargin</posx>
+                <posy>183</posy>
+                <width>1800</width>
+                <height>105</height>
+                <align>center</align>
+                <font>InfoTitleFont</font>
+                <include>TextColor_MainColor</include>
+                <label>$LOCALIZE[10025] - $LOCALIZE[559]</label>
+            </control>
+            <control type="label">
                 <posx>TextMargin</posx>
                 <posy>270</posy>
                 <width>1800</width>
@@ -44,7 +56,7 @@
                 <align>center</align>
                 <font>InfoTitleSubFont</font>
                 <include>TextColor_MainColor</include>
-                <label>$INFO[Container(50).NumItems, , $LOCALIZE[31025]]</label>
+                <label>$INFO[Container(50).NumItems, , $LOCALIZE[31025]]$INFO[Container(50).TotalTime,  •  ]</label>
             </control>
             <!-- CDART VIDEO -->
             <include content="DiscArt">
