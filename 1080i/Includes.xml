@@ -609,7 +609,6 @@
                 <height>100</height>
                 <include>HiddenButton</include>
                 <onleft condition="Control.isvisible(500)">500</onleft>
-                <onleft condition="Window.IsActive(EventLog.xml)">570</onleft>
                 <onright condition="!window.isactive(MyWeather.xml)">50</onright>
                 <onleft condition="!window.isactive(MyWeather.xml)">50</onleft>
                 <onup condition="!window.isactive(MyWeather.xml)">50</onup>
