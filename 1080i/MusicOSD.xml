@@ -108,8 +108,8 @@
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="601">
-                    <!--<enable>Player.SeekEnabled</enable>-->
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
+                    <visible>Player.SeekEnabled</visible>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>-->
                     <label>$LOCALIZE[31354]</label>
                     <include>TopBarButton</include>
                     <texturefocus>black/topbar/topbar_rewind_focus.png</texturefocus>
@@ -117,8 +117,8 @@
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
                 <control type="togglebutton" id="602">
-                    <!--<enable>Player.PauseEnabled</enable>-->
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
+                    <visible>Player.PauseEnabled</visible>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>-->
                     <label>$LOCALIZE[31351]</label>
                     <altlabel>$LOCALIZE[208]</altlabel>
                     <include>TopBarButton</include>
@@ -137,8 +137,8 @@
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="button" id="604">
-                    <!--<enable>Player.SeekEnabled</enable>-->
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
+                    <visible>Player.SeekEnabled</visible>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>-->
                     <label>$LOCALIZE[31353]</label>
                     <include>TopBarButton</include>
                     <texturefocus>black/topbar/topbar_fastforward_focus.png</texturefocus>
@@ -307,8 +307,8 @@
                     <onclick>ActivateWindow(MusicPlaylist)</onclick>
                 </control>
                 <control type="togglebutton" id="353">
-                    <!--<enable>Player.CanRecord</enable>-->
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>
+                    <visible>Player.CanRecord</visible>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>-->
                     <label>$LOCALIZE[264]</label>
                     <altlabel>$LOCALIZE[265]</altlabel>
                     <include>TopBarButton</include>
@@ -334,8 +334,8 @@
                     <texturenofocus>black/topbar/topbar_video_settings_nofocus.png</texturenofocus>
                 </control>
                 <control type="button" id="19">
-                    <!--<enable>Visualisation.Enabled</enable>-->
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.Enabled">Conditional</animation>
+                    <visible>Visualisation.Enabled</visible>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.Enabled">Conditional</animation>-->
                     <label>$LOCALIZE[250] $LOCALIZE[10004]</label>
                     <include>TopBarButton</include>
                     <texturefocus>black/topbar/topbar_viz_settings_focus.png</texturefocus>
@@ -343,8 +343,8 @@
                     <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
                 </control>
                 <control type="button" id="20">
-                    <!--<enable>Visualisation.HasPresets</enable>-->
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.HasPresets">Conditional</animation>
+                    <visible>Visualisation.HasPresets</visible>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.HasPresets">Conditional</animation>-->
                     <label>$LOCALIZE[31048]</label>
                     <include>TopBarButton</include>
                     <texturefocus>black/topbar/topbar_presets_focus.png</texturefocus>
@@ -403,8 +403,8 @@
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="601">
-                    <!--<enable>Player.SeekEnabled</enable>-->
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
+                    <visible>Player.SeekEnabled</visible>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>-->
                     <label>$LOCALIZE[31354]</label>
                     <include>TopBarButton</include>
                     <texturefocus>white/topbar/topbar_rewind_focus.png</texturefocus>
@@ -412,8 +412,8 @@
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
                 <control type="togglebutton" id="602">
-                    <!--<enable>Player.PauseEnabled</enable>-->
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
+                    <visible>Player.PauseEnabled</visible>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>-->
                     <label>$LOCALIZE[31351]</label>
                     <altlabel>$LOCALIZE[208]</altlabel>
                     <include>TopBarButton</include>
@@ -432,8 +432,8 @@
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="button" id="604">
-                    <!--<enable>Player.SeekEnabled</enable>-->
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
+                    <visible>Player.SeekEnabled</visible>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>-->
                     <label>$LOCALIZE[31353]</label>
                     <include>TopBarButton</include>
                     <texturefocus>white/topbar/topbar_fastforward_focus.png</texturefocus>
@@ -602,8 +602,8 @@
                     <onclick>ActivateWindow(MusicPlaylist)</onclick>
                 </control>
                 <control type="togglebutton" id="353">
-                    <!--<enable>Player.CanRecord</enable>-->
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>
+                    <visible>Player.CanRecord</visible>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>-->
                     <label>$LOCALIZE[264]</label>
                     <altlabel>$LOCALIZE[265]</altlabel>
                     <include>TopBarButton</include>
@@ -629,8 +629,8 @@
                     <texturenofocus>white/topbar/topbar_video_settings_nofocus.png</texturenofocus>
                 </control>
                 <control type="button" id="19">
-                    <!--<enable>Visualisation.Enabled</enable>-->
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.Enabled">Conditional</animation>
+                    <visible>Visualisation.Enabled</visible>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.Enabled">Conditional</animation>-->
                     <label>$LOCALIZE[250] $LOCALIZE[10004]</label>
                     <include>TopBarButton</include>
                     <texturefocus>white/topbar/topbar_viz_settings_focus.png</texturefocus>
@@ -638,8 +638,8 @@
                     <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
                 </control>
                 <control type="button" id="20">
-                    <!--<enable>Visualisation.HasPresets</enable>-->
-                    <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.HasPresets">Conditional</animation>
+                    <visible>Visualisation.HasPresets</visible>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.HasPresets">Conditional</animation>-->
                     <label>$LOCALIZE[31048]</label>
                     <include>TopBarButton</include>
                     <texturefocus>white/topbar/topbar_presets_focus.png</texturefocus>
