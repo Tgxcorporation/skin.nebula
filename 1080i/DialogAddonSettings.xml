@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <defaultcontrol always="true">9</defaultcontrol>
-    <menucontrol>9</menucontrol>
+    <defaultcontrol always="true">3</defaultcontrol>
+    <menucontrol>3</menucontrol>
     <controls>
         <include>DimBG</include>
         <control type="group">

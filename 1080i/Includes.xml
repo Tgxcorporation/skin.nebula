@@ -220,13 +220,13 @@
             <onleft>9900</onleft>
             <onright>9900</onright>
             <onup>9000</onup>
+            <ondown condition="Window.IsActive(DialogAddonSettings.xml)">3</ondown>
             <ondown condition="Window.IsActive(script-globalsearch-main.xml)">9000</ondown>
             <ondown condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</ondown>
             <ondown condition="Window.IsActive(Home.xml)+!Skin.HasSetting(VerticalHome)">9001</ondown>
             <ondown condition="Window.IsActive(Home.xml)+Skin.HasSetting(VerticalHome)">300</ondown>
             <ondown condition="Window.IsActive(DialogSettings.xml)">21</ondown>
             <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
-            <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
             <ondown condition="Window.IsActive(script-XBMC_Lyrics-main.xml)">110</ondown>
             <ondown>9000</ondown>
             <align>center</align>
@@ -347,13 +347,13 @@
             <onleft>9900</onleft>
             <onright>9900</onright>
             <onup>9000</onup>
+            <ondown condition="Window.IsActive(DialogAddonSettings.xml)">3</ondown>
             <ondown condition="Window.IsActive(script-globalsearch-main.xml)">9000</ondown>
             <ondown condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</ondown>
             <ondown condition="Window.IsActive(Home.xml)+!Skin.HasSetting(VerticalHome)">9001</ondown>
             <ondown condition="Window.IsActive(Home.xml)+Skin.HasSetting(VerticalHome)">300</ondown>
             <ondown condition="Window.IsActive(DialogSettings.xml)">21</ondown>
             <ondown condition="Window.IsActive(SettingsCategory.xml)">3</ondown>
-            <ondown condition="Window.IsActive(DialogAddonSettings.xml)">9</ondown>
             <ondown condition="Window.IsActive(script-XBMC_Lyrics-main.xml)">110</ondown>
             <ondown>9000</ondown>
             <align>center</align>
@@ -1040,10 +1040,10 @@
             <posy>183</posy>
             <height>810</height>
             <include>VerticalScroller</include>
+            <onright condition="Window.IsActive(DialogAddonSettings.xml)">3</onright>
             <onright condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</onright>
             <onright condition="Window.IsActive(DialogSettings.xml)">4</onright>
             <onright condition="Window.IsActive(SettingsCategory.xml)">3</onright>
-            <onright condition="Window.IsActive(DialogAddonSettings.xml)">9</onright>
             <onright condition="Window.IsActive(script-skinshortcuts.xml)">9000</onright>
             <onright condition="Window.IsActive(SkinSettings.xml)">90000</onright>
             <onright>9000</onright>
