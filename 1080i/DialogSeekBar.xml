@@ -18,7 +18,7 @@
         Window.IsVisible(DialogFullscreenInfo.xml) |
         Window.IsVisible(MusicOSD.xml) |
         Window.IsVisible(VideoOSD.xml) |
-        [[Window.IsVisible(FullScreenVideo)|Window.IsVisible(visualisation)] + [Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding] | !String.IsEmpty(PVR.ChannelNumberInput)]</visible>
+        [[Window.IsVisible(FullScreenVideo)|Window.IsVisible(visualisation)] + [Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Player.ShowInfo] | !String.IsEmpty(PVR.ChannelNumberInput)]</visible>
     <visible>!window.IsVisible(DialogVolumeBar.xml)</visible>
     <include>TopBarOSDVisibleFadeEffect</include>
     <zorder>2</zorder>
@@ -235,7 +235,8 @@
             <include>SeekBar</include>
         </control>
         <control type="group">
-            <visible>Player.Paused+Skin.HasSetting(OSDShowInfoPaused)+!Window.IsVisible(DialogFullScreenInfo.xml)</visible>
+            <visible>!Window.IsActive(DialogFullScreenInfo.xml)</visible>
+            <visible>[Player.Paused+Skin.HasSetting(OSDShowInfoPaused)]|[Player.ShowInfo + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo)]</visible>
             <include>OSDInfoPanel</include>
         </control>
         <include>PVRChannelNumericInput</include>
