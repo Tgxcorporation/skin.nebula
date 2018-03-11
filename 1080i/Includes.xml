@@ -628,7 +628,7 @@
                 <control type="group">
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="[[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]|Player.HasVideo]"/>
+                        <param name="visible" value="[[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]|[Player.HasVideo + !VideoPlayer.HasEpg]]"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="1920"/>
@@ -638,6 +638,19 @@
                         <param name="border" value="1,1,5,1"/>
                         <param name="borderbg" value="1,1,1,1"/>
                         <param name="info" value="Player.Progress"/>
+                    </include>
+                    <include content="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="[Player.HasVideo + VideoPlayer.HasEpg]"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="1920"/>
+                        <param name="height" value="14"/>
+                        <param name="texturebg" value="OSD/osd_progress_background.png"/>
+                        <param name="gfx" value="OSD/osd_progress_mid.png"/>
+                        <param name="border" value="1,1,5,1"/>
+                        <param name="borderbg" value="1,1,1,1"/>
+                        <param name="info" value="PVR.EpgEventProgress"/>
                     </include>
                     <control type="image" id="495678">
                         <visible>[[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]|Player.HasVideo]</visible>
@@ -736,6 +749,7 @@
                             <label></label>
                         </control>
                         <control type="label">
+                            <visible>!VideoPlayer.HasEpg</visible>
                             <posx>1825</posx>
                             <posy>55</posy>
                             <height>30</height>
@@ -743,6 +757,16 @@
                             <align>right</align>
                             <font>NotificationFontDouble</font>
                             <label>$INFO[Player.TimeRemaining]</label>
+                        </control>
+                        <control type="label">
+                            <visible>VideoPlayer.HasEpg</visible>
+                            <posx>1825</posx>
+                            <posy>55</posy>
+                            <height>30</height>
+                            <width>300</width>
+                            <align>right</align>
+                            <font>NotificationFontDouble</font>
+                            <label>$INFO[PVR.EpgEventRemainingTime]</label>
                         </control>
                         <control type="label">
                             <visible>![!VideoPlayer.HasEpg+VideoPlayer.Content(livetv)]</visible>
@@ -756,7 +780,7 @@
                             <label></label>
                         </control>
                         <control type="label">
-                            <visible>![!VideoPlayer.HasEpg+VideoPlayer.Content(livetv)]</visible>
+                            <visible>!VideoPlayer.HasEpg</visible>
                             <posx>1825</posx>
                             <posy>95</posy>
                             <height>41</height>
@@ -765,6 +789,17 @@
                             <font>NotificationFont</font>
                             <include>TextColor_AlternateColor</include>
                             <label>$INFO[Player.FinishTime]</label>
+                        </control>
+                        <control type="label">
+                            <visible>VideoPlayer.HasEpg</visible>
+                            <posx>1825</posx>
+                            <posy>95</posy>
+                            <height>41</height>
+                            <width>300</width>
+                            <align>right</align>
+                            <font>NotificationFont</font>
+                            <include>TextColor_AlternateColor</include>
+                            <label>$INFO[PVR.EpgEventFinishTime]</label>
                         </control>
                         <include>SeekBar</include>
                     </control>
@@ -1731,7 +1766,7 @@
                     <visible>VideoPlayer.Content(livetv)</visible>
                     <posx>455</posx>
                     <posy>25</posy>
-                    <width>1405</width>
+                    <width>1350</width>
                     <aligny>top</aligny>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
@@ -1746,6 +1781,15 @@
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
                     <label>$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,, - ]$INFO[VideoPlayer.Title]</label>
+                </control>
+                <control type="image">
+                    <visible>PVR.IsRecordingPlayingChannel</visible>
+                    <posx>1819</posx>
+                    <posy>5</posy>
+                    <width>50</width>
+                    <height>95</height>
+                    <texture>$VAR[Theme.Color]/pvr/PVR-IsRecording.png</texture>
+                    <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image">
                     <description>Default Seperator</description>
@@ -1781,7 +1825,7 @@
                         <label>$INFO[VideoPlayer.StartTime,, / ]$INFO[VideoPlayer.EndTime]</label>
                     </control>
                     <control type="label">
-                        <visible>![VideoPlayer.Content(LiveTV)+!VideoPlayer.HasEpg]</visible>
+                        <visible>!VideoPlayer.HasEpg</visible>
                         <posx>TextMargin</posx>
                         <posy>135</posy>
                         <width>670</width>
@@ -1790,6 +1834,17 @@
                         <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
                         <label>$INFO[VideoPlayer.Year,,     ]$INFO[VideoPlayer.Duration,, $LOCALIZE[31297]     ]$INFO[VideoPlayer.MPAA]</label>
+                    </control>
+                    <control type="label">
+                        <visible>VideoPlayer.HasEpg</visible>
+                        <posx>TextMargin</posx>
+                        <posy>135</posy>
+                        <width>670</width>
+                        <height>71</height>
+                        <font>InfoDetailsFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>false</scroll>
+                        <label>$INFO[VideoPlayer.Year,,     ]$INFO[PVR.EpgEventDuration,, $LOCALIZE[31297]     ]$INFO[VideoPlayer.MPAA]</label>
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>
