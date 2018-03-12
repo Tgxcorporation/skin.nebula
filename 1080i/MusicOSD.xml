@@ -12,6 +12,7 @@
                 Window.IsVisible(OSDVideoSettings) |
                 Window.IsVisible(OSDAudioSettings) |
                 Window.IsVisible(OSDAudioDSPSettings) |
+                Window.IsVisible(osdsubtitlesettings) |
                 Window.IsVisible(osdcmssettings) |
                 Window.IsVisible(VideoBookmarks) |
                 Window.IsVisible(DialogSubtitles.xml) |
