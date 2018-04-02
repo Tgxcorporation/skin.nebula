@@ -18,8 +18,8 @@
             <control type="grouplist" id="700">
                 <posx>0</posx>
                 <posy>183</posy>
-                <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="!$EXP[HomeWidgetCollectionHasFocus]">Conditional</animation>
-                <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
+                <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="510,0" condition="!$EXP[HomeWidgetCollectionHasFocus]">Conditional</animation>
+                <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="510,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
                 <pagecontrol>60</pagecontrol>
                 <itemgap>0</itemgap>
                 <include>WidgetsCollection</include>
@@ -35,12 +35,12 @@
                 <onright>60</onright>
             </control>
             <control type="group">
-                <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="-660,0" condition="$EXP[HomeWidgetCollectionHasFocus]">Conditional</animation>
+                <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="-510,0" condition="$EXP[HomeWidgetCollectionHasFocus]">Conditional</animation>
                 <control type="group">
                     <include>OpenClose</include>
-                    <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
+                    <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="510,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
                     <control type="image">
-                        <posx>-660</posx>
+                        <posx>-510</posx>
                         <posy>142</posy>
                         <width>1320</width>
                         <height>1200</height>
@@ -48,7 +48,7 @@
                         <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
                     </control>
                     <control type="image">
-                        <posx>660</posx>
+                        <posx>510</posx>
                         <posy>142</posy>
                         <width>1920</width>
                         <height>1200</height>
@@ -64,7 +64,7 @@
                         <texture border="0,100,0,100">$VAR[Theme.Color]/common/vertical_separator.png</texture>
                     </control>
                     <control type="image">
-                        <posx>619</posx>
+                        <posx>469</posx>
                         <posy>183</posy>
                         <width>41</width>
                         <height>810</height>
@@ -74,11 +74,11 @@
                 </control>
                 <!--MAIN MENU-->
                 <control type="button" id="8999">
-                    <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
+                    <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="510,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
                     <description>Fake button for mouse control</description>
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>660</width>
+                    <width>510</width>
                     <height>1080</height>
                     <include>HiddenButton</include>
                     <onfocus>SetFocus(300)</onfocus>
@@ -94,12 +94,12 @@
                     <animation effect="slide" time="0" start="0,0" end="0,70" condition="Integer.IsGreater(Container(300).NumItems,7)+!Integer.IsGreater(Container(300).NumItems,8)">conditional</animation>
                     <animation effect="slide" time="0" start="0,0" end="0,35" condition="Integer.IsGreater(Container(300).NumItems,8)+!Integer.IsGreater(Container(300).NumItems,9)">conditional</animation>
                     <control type="list" id="300">
-                        <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
+                        <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="510,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
                         <include>OpenClose</include>
                         <posx>60</posx>
                         <posy>183</posy>
-                        <width>660</width>
-                        <height>858</height>
+                        <width>510</width>
+                        <height>880</height>
                         <itemgap>0</itemgap>
                         <orientation>vertical</orientation>
                         <pagecontrol>9060</pagecontrol>
@@ -161,11 +161,11 @@
                         <pagecontrol>-</pagecontrol>
                         <!--<preloaditems>4</preloaditems>-->
                         <orientation>vertical</orientation>
-                        <itemlayout height="78" width="660">
+                        <itemlayout height="78" width="510">
                             <control type="label">
                                 <posx>0</posx>
                                 <posy>0</posy>
-                                <width>520</width>
+                                <width>390</width>
                                 <height>78</height>
                                 <font>InfoDetailsFontBig</font>
                                 <scroll>false</scroll>
@@ -173,7 +173,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="78" width="660">
+                        <focusedlayout height="78" width="510">
                             <control type="group">
                                 <include>ButtonFocusAnimation</include>
                                 <control type="image">
@@ -181,7 +181,7 @@
                                     <posx>0</posx>
                                     <posy>0</posy>
                                     <height>78</height>
-                                    <width>600</width>
+                                    <width>420</width>
                                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                 </control>
@@ -189,7 +189,7 @@
                                     <visible>control.hasfocus(300)</visible>
                                     <posx>0</posx>
                                     <posy>0</posy>
-                                    <width>540</width>
+                                    <width>390</width>
                                     <height>78</height>
                                     <font>InfoDetailsFontBig</font>
                                     <scroll>true</scroll>
@@ -201,7 +201,7 @@
                                     <visible>!control.hasfocus(300)</visible>
                                     <posx>0</posx>
                                     <posy>0</posy>
-                                    <width>540</width>
+                                    <width>390</width>
                                     <height>78</height>
                                     <font>InfoDetailsFontBig</font>
                                     <scroll>false</scroll>
@@ -216,11 +216,11 @@
                         </content>
                     </control>
                     <control type="scrollbar" id="9060">
-                        <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
+                        <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="510,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
                         <include>OpenClose</include>
                         <posx>-20</posx>
                         <posy>183</posy>
-                        <height>858</height>
+                        <height>880</height>
                         <include>VerticalScroller</include>
                         <onleft>9001</onleft>
                         <onright>300</onright>
@@ -239,11 +239,11 @@
                         <onfocus>SetFocus(9001)</onfocus>
                     </control>
                     <control type="button" id="89990">
-                        <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
+                        <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="510,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
                         <description>Fake button for mouse control</description>
-                        <posx>-660</posx>
+                        <posx>-510</posx>
                         <posy>0</posy>
-                        <width>660</width>
+                        <width>510</width>
                         <height>1080</height>
                         <include>HiddenButton</include>
                         <onfocus>SetFocus(9001)</onfocus>
@@ -253,8 +253,8 @@
                             <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="2580,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
                             <posx>-2520</posx>
                             <posy>183</posy>
-                            <height>858</height>
-                            <width>600</width>
+                            <height>880</height>
+                            <width>510</width>
                             <onleft>9061</onleft>
                             <onright>300</onright>
                             <onup>9900</onup>
@@ -262,11 +262,11 @@
                             <onback>SetFocus(300)</onback>
                             <orientation>vertical</orientation>
                             <pagecontrol>9061</pagecontrol>
-                            <itemlayout height="78" width="660">
+                            <itemlayout height="78" width="510">
                                 <control type="label">
                                     <posx>0</posx>
                                     <posy>0</posy>
-                                    <width>520</width>
+                                    <width>390</width>
                                     <height>78</height>
                                     <font>LeftMenuButtonFont</font>
                                     <scroll>false</scroll>
@@ -274,7 +274,7 @@
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                             </itemlayout>
-                            <focusedlayout height="78" width="660">
+                            <focusedlayout height="78" width="510">
                                 <control type="group">
                                     <include>ButtonFocusAnimation</include>
                                     <control type="image">
@@ -282,7 +282,7 @@
                                         <posx>0</posx>
                                         <posy>0</posy>
                                         <height>78</height>
-                                        <width>600</width>
+                                        <width>420</width>
                                         <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                         <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                     </control>
@@ -290,7 +290,7 @@
                                         <visible>control.hasfocus(9001)</visible>
                                         <posx>0</posx>
                                         <posy>0</posy>
-                                        <width>540</width>
+                                        <width>390</width>
                                         <height>78</height>
                                         <font>LeftMenuButtonFont</font>
                                         <scroll>true</scroll>
@@ -302,7 +302,7 @@
                                         <visible>!control.hasfocus(9001)</visible>
                                         <posx>0</posx>
                                         <posy>0</posy>
-                                        <width>540</width>
+                                        <width>390</width>
                                         <height>78</height>
                                         <font>LeftMenuButtonFont</font>
                                         <scroll>false</scroll>
@@ -317,11 +317,11 @@
                             </content>
                         </control>
                         <control type="scrollbar" id="9061">
-                            <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="660,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
+                            <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="510,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
                             <include>OpenClose</include>
-                            <posx>-680</posx>
+                            <posx>-530</posx>
                             <posy>183</posy>
-                            <height>858</height>
+                            <height>880</height>
                             <include>VerticalScroller</include>
                             <onright>9001</onright>
                             <onleft>9900</onleft>
