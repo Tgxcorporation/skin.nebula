@@ -1047,6 +1047,7 @@
             <onright condition="Window.IsActive(script-skinshortcuts.xml)">9000</onright>
             <onright condition="Window.IsActive(SkinSettings.xml)">90000</onright>
             <onright>9000</onright>
+            <onleft>9900</onleft>
         </control>
     </include>
     <include name="LeftMenuTitleLabel">
@@ -1067,7 +1068,7 @@
         <itemgap>0</itemgap>
         <orientation>vertical</orientation>
         <pagecontrol>9060</pagecontrol>
-        <onleft>9900</onleft>
+        <onleft>9060</onleft>
         <onup>9900</onup>
     </include>
     <include name="LeftMenuButton">
