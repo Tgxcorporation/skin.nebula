@@ -96,9 +96,9 @@
                     <control type="list" id="300">
                         <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="510,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
                         <include>OpenClose</include>
-                        <posx>60</posx>
+                        <posx>0</posx>
                         <posy>183</posy>
-                        <width>510</width>
+                        <width>570</width>
                         <height>880</height>
                         <itemgap>0</itemgap>
                         <orientation>vertical</orientation>
@@ -161,9 +161,9 @@
                         <pagecontrol>-</pagecontrol>
                         <!--<preloaditems>4</preloaditems>-->
                         <orientation>vertical</orientation>
-                        <itemlayout height="78" width="510">
+                        <itemlayout height="78" width="570">
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>60</posx>
                                 <posy>0</posy>
                                 <width>390</width>
                                 <height>78</height>
@@ -173,7 +173,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="78" width="510">
+                        <focusedlayout height="78" width="570">
                             <control type="group">
                                 <include>ButtonFocusAnimation</include>
                                 <control type="image">
@@ -181,13 +181,13 @@
                                     <posx>0</posx>
                                     <posy>0</posy>
                                     <height>78</height>
-                                    <width>420</width>
+                                    <width>510</width>
                                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                     <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                 </control>
                                 <control type="label">
                                     <visible>control.hasfocus(300)</visible>
-                                    <posx>0</posx>
+                                    <posx>60</posx>
                                     <posy>0</posy>
                                     <width>390</width>
                                     <height>78</height>
@@ -199,7 +199,7 @@
                                 <control type="label">
                                     <animation effect="fade" start="85" end="85" time="0" reversible="false" condition="true">Conditional</animation>
                                     <visible>!control.hasfocus(300)</visible>
-                                    <posx>0</posx>
+                                    <posx>60</posx>
                                     <posy>0</posy>
                                     <width>390</width>
                                     <height>78</height>
@@ -251,10 +251,10 @@
                     <control type="group">
                         <control type="list" id="9001">
                             <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="2580,0" condition="$EXP[LeftHomeSubMenuHasFocus]">Conditional</animation>
-                            <posx>-2520</posx>
+                            <posx>-2580</posx>
                             <posy>183</posy>
                             <height>880</height>
-                            <width>510</width>
+                            <width>570</width>
                             <onleft>9061</onleft>
                             <onright>300</onright>
                             <onup>9900</onup>
@@ -262,9 +262,9 @@
                             <onback>SetFocus(300)</onback>
                             <orientation>vertical</orientation>
                             <pagecontrol>9061</pagecontrol>
-                            <itemlayout height="78" width="510">
+                            <itemlayout height="78" width="570">
                                 <control type="label">
-                                    <posx>0</posx>
+                                    <posx>60</posx>
                                     <posy>0</posy>
                                     <width>390</width>
                                     <height>78</height>
@@ -274,7 +274,7 @@
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                             </itemlayout>
-                            <focusedlayout height="78" width="510">
+                            <focusedlayout height="78" width="570">
                                 <control type="group">
                                     <include>ButtonFocusAnimation</include>
                                     <control type="image">
@@ -282,13 +282,13 @@
                                         <posx>0</posx>
                                         <posy>0</posy>
                                         <height>78</height>
-                                        <width>420</width>
+                                        <width>510</width>
                                         <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                         <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
                                     </control>
                                     <control type="label">
                                         <visible>control.hasfocus(9001)</visible>
-                                        <posx>0</posx>
+                                        <posx>60</posx>
                                         <posy>0</posy>
                                         <width>390</width>
                                         <height>78</height>
@@ -300,7 +300,7 @@
                                     <control type="label">
                                         <animation effect="fade" start="85" end="85" time="0" reversible="false" condition="true">Conditional</animation>
                                         <visible>!control.hasfocus(9001)</visible>
-                                        <posx>0</posx>
+                                        <posx>60</posx>
                                         <posy>0</posy>
                                         <width>390</width>
                                         <height>78</height>
