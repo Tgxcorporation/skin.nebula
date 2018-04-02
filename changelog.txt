@@ -1,4 +1,13 @@
+6.0.0
+Leia support.
+
 5.5.0
+Narrow vertical home menu.
+Changed selected text color.
+Simplified Music and Videos OSD.
+Added option to display posters for home shelf episodes.
+Readded option to show info on video pause.
+Added clearart/log and studio to fanart view.
 Added Game Controller support.
 Added vertical home menu.
 New OSD layout.
