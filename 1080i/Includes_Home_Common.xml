@@ -115,7 +115,7 @@
         <width>1920</width>
         <height>544</height>
         <orientation>horizontal</orientation>
-        <preloaditems>4</preloaditems>
+        <!--<preloaditems>4</preloaditems>-->
         <itemlayout height="544" width="364">
             <control type="image">
                 <posx>30</posx>
@@ -235,7 +235,7 @@
         <width>1920</width>
         <height>456</height>
         <orientation>horizontal</orientation>
-        <preloaditems>4</preloaditems>
+        <!--<preloaditems>4</preloaditems>-->
         <itemlayout height="456" width="436">
             <control type="image">
                 <posx>30</posx>
@@ -355,7 +355,7 @@
         <width>1920</width>
         <height>360</height>
         <orientation>horizontal</orientation>
-        <preloaditems>4</preloaditems>
+        <!--<preloaditems>4</preloaditems>-->
         <itemlayout height="360" width="565">
             <control type="image">
                 <posx>30</posx>
@@ -475,7 +475,7 @@
         <width>1920</width>
         <height>405</height>
         <orientation>horizontal</orientation>
-        <preloaditems>4</preloaditems>
+        <!--<preloaditems>4</preloaditems>-->
         <itemlayout height="405" width="495">
             <control type="image">
                 <posx>30</posx>

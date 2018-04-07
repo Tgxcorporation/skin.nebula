@@ -182,7 +182,7 @@
                         <ondown condition="String.IsEqual(Container(300).ListItem.Property(id),49)">7000149</ondown>
                         <ondown condition="String.IsEqual(Container(300).ListItem.Property(id),50)">7000150</ondown>
                         <pagecontrol></pagecontrol>
-                        <preloaditems>4</preloaditems>
+                        <!--<preloaditems>4</preloaditems>-->
                         <orientation>horizontal</orientation>
                         <itemlayout height="360" width="565">
                             <control type="image">
