@@ -779,7 +779,11 @@ msgctxt "#31904"
 msgid "Daily Forecast"
 msgstr ""
 
-#empty strings from id 31905 to 31909
+msgctxt "#31905"
+msgid "Special Features"
+msgstr ""
+
+#empty strings from id 31906 to 31909
 
 msgctxt "#31910"
 msgid "Maps"
