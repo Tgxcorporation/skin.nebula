@@ -516,6 +516,10 @@ msgctxt "#31904"
 msgid "Daily Forecast"
 msgstr "Daily Forecast"
 
+msgctxt "#31905"
+msgid "Special Features"
+msgstr "Special Features"
+
 msgctxt "#31910"
 msgid "Maps"
 msgstr "Maps"

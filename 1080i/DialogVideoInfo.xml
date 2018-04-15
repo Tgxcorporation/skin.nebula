@@ -1089,6 +1089,15 @@
                     <label>$LOCALIZE[20410]</label>
                     <onright>9009</onright>
                 </control>
+                <control type="button" id="1227">
+                    <label>$LOCALIZE[31905]</label>
+                    <include>LeftMenuButton</include>
+                    <onclick>Dialog.Close(MovieInformation)</onclick>
+                    <onclick>RunScript(plugin.video.specialfeatures,listitem)</onclick>
+                    <visible>System.HasAddon(plugin.video.specialfeatures)</visible>
+                    <visible>String.IsEqual(Window(home).Property(SpecialFeatures.Visible),true)</visible>
+                    <onright>9009</onright>
+                </control>
                 <control type="togglebutton" id="9013">
                     <visible>!String.IsEmpty(ListItem.Plot)</visible>
                     <description>Plot</description>
