@@ -301,6 +301,11 @@
                     <include>LeftMenuButton</include>
                     <onright>50</onright>
                 </control>
+                <control type="button" id="10">
+                    <label>$LOCALIZE[39024]</label>
+                    <include>LeftMenuButton</include>
+                    <onright>6060</onright>
+                </control>
                 <control type="button" id="7">
                     <label>$LOCALIZE[24021]</label>
                     <include>LeftMenuButton</include>
