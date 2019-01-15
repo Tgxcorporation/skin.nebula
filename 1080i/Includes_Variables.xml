@@ -122,7 +122,6 @@
         <value condition="Window.IsVisible(MyMusicNav.xml)|Window.IsVisible(MyMusicSongs.xml)">$LOCALIZE[2]$INFO[Container.FolderName, - ]</value>
         <value condition="Window.IsVisible(MyPics.xml)">$LOCALIZE[1]$INFO[Container.FolderName, - ]</value>
         <value condition="Window.IsVisible(DialogAddonInfo.xml)">$LOCALIZE[24000]</value>
-        <value condition="Window.IsVisible(DialogAudioDSPManager.xml)">$LOCALIZE[14251]</value>
         <value condition="Window.IsVisible(AddonBrowser.xml)">$LOCALIZE[10040]$INFO[Container.FolderName, - ]</value>
         <value condition="Window.IsVisible(CustomAddons.xml)|Window.IsVisible(MyPrograms.xml)">$LOCALIZE[0]$INFO[Container.FolderName, - ]</value>
         <value condition="Window.IsActive(MyGames.xml)">$LOCALIZE[15016]$INFO[Container.FolderName, - ]</value>
@@ -146,7 +145,6 @@
         <value condition="Window.IsVisible(DialogPictureInfo.xml)">$LOCALIZE[13406]</value>
         <value condition="Window.IsVisible(DialogMediaSource.xml)">$LOCALIZE[10129]</value>
         <value condition="Window.IsVisible(DialogAddonInfo.xml)">$INFO[ListItem.AddonType]</value>
-        <value condition="Window.IsVisible(DialogAudioDSPManager.xml)">$LOCALIZE[10004]</value>
         <value condition="String.IsEqual(ListItem.DBType,Episode) + !Control.HasFocus(50) + !Control.HasFocus(61)">$LOCALIZE[20360]</value>
         <value condition="String.IsEqual(ListItem.DBType,Movie)">$LOCALIZE[20342]</value>
         <value condition="String.IsEqual(ListItem.DBType,MusicVideo)">$LOCALIZE[20389]</value>
