@@ -1082,3 +1082,7 @@ msgstr ""
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
 msgstr ""
+
+msgctxt "#32000"
+msgid "Use alphabet scroll for large lists"
+msgstr ""

@@ -727,3 +727,7 @@ msgstr "Utilizar lista fixa no Menu Principal"
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
 msgstr "Animação deslisa para a esquerda em vistas de tipo lista"
+
+msgctxt "#32000"
+msgid "Use alphabet scroll for large lists"
+msgstr "Use a rolagem do alfabeto para listas grandes"

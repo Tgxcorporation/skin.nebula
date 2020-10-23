@@ -603,3 +603,7 @@ msgstr "Χρήση καθορισμένης λίστας στο Κεντρικό
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
 msgstr "Εφέ κύλισης στα αριστερά για λίστες"
+
+msgctxt "#32000"
+msgid "Use alphabet scroll for large lists"
+msgstr "Χρησιμοποιήστε κύλιση αλφαβήτου για μεγάλες λίστες"

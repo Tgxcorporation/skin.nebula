@@ -495,3 +495,7 @@ msgstr "在首页菜单使用固定列表"
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
 msgstr "列表视图左侧收起动画"
+
+msgctxt "#32000"
+msgid "Use alphabet scroll for large lists"
+msgstr "使用字母滚动查看大列表"

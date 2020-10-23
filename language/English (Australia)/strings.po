@@ -767,3 +767,7 @@ msgstr "Use fixed list on Home Menu"
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
 msgstr "Slide to left animations of list views"
+
+msgctxt "#32000"
+msgid "Use alphabet scroll for large lists"
+msgstr "Use alphabet scroll for large lists"

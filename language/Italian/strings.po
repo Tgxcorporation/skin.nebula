@@ -931,3 +931,7 @@ msgstr "Utilizza lista fissa nel Menu Home"
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
 msgstr "Animazioni di scorrimento a sinistra delle liste"
+
+msgctxt "#32000"
+msgid "Use alphabet scroll for large lists"
+msgstr "Usa lo scorrimento alfabetico per elenchi di grandi dimensioni"

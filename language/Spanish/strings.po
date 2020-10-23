@@ -639,3 +639,7 @@ msgstr "Usar lista fija en el Menú Principal"
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
 msgstr "Deslizar animaciones hacia la izquierda en la vista de lista"
+
+msgctxt "#32000"
+msgid "Use alphabet scroll for large lists"
+msgstr "Utilice el desplazamiento alfabético para listas grandes"

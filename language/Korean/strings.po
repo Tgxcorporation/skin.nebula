@@ -747,3 +747,7 @@ msgstr "홈 메뉴에 고정 목록 사용"
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
 msgstr "목록 보기에서 왼쪽으로 당기기 사용"
+
+msgctxt "#32000"
+msgid "Use alphabet scroll for large lists"
+msgstr "큰 목록에는 알파벳 스크롤 사용"
