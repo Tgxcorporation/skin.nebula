@@ -763,3 +763,7 @@ msgstr "Guna senarai tetap dalam Menu Rumah"
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
 msgstr "Leret ke kiri animasi bagi paparan senarai"
+
+msgctxt "#32000"
+msgid "Use alphabet scroll for large lists"
+msgstr "Gunakan tatal abjad untuk senarai besar"

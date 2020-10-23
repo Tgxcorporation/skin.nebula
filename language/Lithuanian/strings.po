@@ -763,3 +763,7 @@ msgstr "Naudoti fiksuotą sąrašą pagrindiniame meniu"
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
 msgstr "Sąrašo rodinių slinkimo į kairę animacija "
+
+msgctxt "#32000"
+msgid "Use alphabet scroll for large lists"
+msgstr "Jei norite sudaryti didelius sąrašus, naudokite abėcėlės slinktį"

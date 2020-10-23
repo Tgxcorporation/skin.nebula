@@ -1158,6 +1158,86 @@
         <orientation>horizontal</orientation>
         <height>54</height>
     </include>
+    <include name="VerticalAlphabetScroller">
+        <width>54</width>
+        <height>897</height>
+        <orientation>vertical</orientation>
+        <itemlayout height="32" width="37">
+            <control type="label">
+                <label>$INFO[ListItem.Label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <include>TextColor_AlternateColor</include>
+                <animation effect="fade" start="100" end="60" time="0" condition="!IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+                <visible>String.IsEmpty(ListItem.Property(NotAvailable))</visible>
+            </control>
+            <control type="label">
+                <label>$INFO[ListItem.Label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <include>TextColor_MidColor</include>
+                <animation effect="fade" start="100" end="35" time="0" condition="!IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+                <visible>!String.IsEmpty(ListItem.Property(NotAvailable))</visible>
+            </control>
+            <control type="label">
+                <label>$INFO[ListItem.Label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <include>TextColor_AlternateColor</include>
+                <visible>String.IsEqual(ListItem.Label,Container.ListItem.SortLetter)</visible>
+                <animation effect="fade" start="100" end="80" time="0" condition="!IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+            </control>
+        </itemlayout>
+        <focusedlayout height="32" width="37">
+            <control type="label">
+                <label>$INFO[ListItem.Label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <include>TextColor_MainColor</include>
+            </control>
+        </focusedlayout>
+        <content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
+    </include>
+    <include name="HorizontalAlphabetScroller">
+        <height>54</height>
+        <width>1920</width>
+        <orientation>horizontal</orientation>
+        <itemlayout height="32" width="71">
+            <control type="label">
+                <label>$INFO[ListItem.Label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <include>TextColor_AlternateColor</include>
+                <animation effect="fade" start="100" end="60" time="0" condition="!IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+                <visible>String.IsEmpty(ListItem.Property(NotAvailable))</visible>
+            </control>
+            <control type="label">
+                <label>$INFO[ListItem.Label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <include>TextColor_MidColor</include>
+                <animation effect="fade" start="100" end="35" time="0" condition="!IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+                <visible>!String.IsEmpty(ListItem.Property(NotAvailable))</visible>
+            </control>
+            <control type="label">
+                <label>$INFO[ListItem.Label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <include>TextColor_AlternateColor</include>
+                <visible>String.IsEqual(ListItem.Label,Container.ListItem.SortLetter)</visible>
+                <animation effect="fade" start="100" end="80" time="0" condition="!IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+            </control>
+        </itemlayout>
+        <focusedlayout height="32" width="71">
+            <control type="label">
+                <label>$INFO[ListItem.Label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <include>TextColor_MainColor</include>
+            </control>
+        </focusedlayout>
+        <content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
+    </include>
     <include name="myautoscroll">
         <autoscroll delay="5000" time="2500" repeat="10000">true</autoscroll>
     </include>

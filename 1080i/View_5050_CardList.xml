@@ -442,10 +442,20 @@
                 </control>
             </control>
             <control type="scrollbar" id="60">
+                <visible>![Skin.HasSetting(AlphabetJumpScrollBar) + Integer.IsGreater(Container.NumItems,100)]</visible>
                 <posx>0</posx>
                 <posy>1046</posy>
                 <width>1920</width>
                 <include>HorizontalScroller</include>
+                <onup>5050</onup>
+                <onright>noop</onright>
+                <ondown>505050</ondown>
+            </control>
+            <control type="panel" id="60">
+                <visible>Skin.HasSetting(AlphabetJumpScrollBar) + Integer.IsGreater(Container.NumItems,100)</visible>
+                <posx>0</posx>
+                <posy>1024</posy>
+                <include>HorizontalAlphabetScroller</include>
                 <onup>5050</onup>
                 <onright>noop</onright>
                 <ondown>505050</ondown>

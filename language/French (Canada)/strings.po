@@ -763,3 +763,7 @@ msgstr "Utiliser des listes fixes pour le menu d’accueil"
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
 msgstr "Glisser vers la gauche les animations des vues de listes"
+
+msgctxt "#32000"
+msgid "Use alphabet scroll for large lists"
+msgstr "Utiliser le défilement alphabétique pour les grandes listes"

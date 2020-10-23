@@ -763,3 +763,7 @@ msgstr "Gebruik gefixeerde lijst bij hoofdmenu"
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
 msgstr "Schuif naar links voor animaties van weergavenlijst"
+
+msgctxt "#32000"
+msgid "Use alphabet scroll for large lists"
+msgstr "Gebruik alfabetische scroll voor grote lijsten"

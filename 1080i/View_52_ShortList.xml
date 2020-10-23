@@ -371,10 +371,19 @@
                 </control>
             </control>
             <control type="scrollbar" id="60">
+                <visible>![Skin.HasSetting(AlphabetJumpScrollBar) + Integer.IsGreater(Container.NumItems,100)]</visible>
                 <posx>1886</posx>
                 <posy>183</posy>
                 <height>810</height>
                 <include>VerticalScroller</include>
+                <onleft>52</onleft>
+                <onright>505050</onright>
+            </control>
+            <control type="panel" id="60">
+                <visible>Skin.HasSetting(AlphabetJumpScrollBar) + Integer.IsGreater(Container.NumItems,100)</visible>
+                <posx>1886</posx>
+                <posy>183</posy>
+                <include>VerticalAlphabetScroller</include>
                 <onleft>52</onleft>
                 <onright>505050</onright>
             </control>
@@ -569,10 +578,19 @@
                 <include>WeatherContent</include>
             </control>
             <control type="scrollbar" id="60">
+                <visible>![Skin.HasSetting(AlphabetJumpScrollBar) + Integer.IsGreater(Container.NumItems,100)]</visible>
                 <posx>1886</posx>
                 <posy>183</posy>
                 <height>810</height>
                 <include>VerticalScroller</include>
+                <onleft>52</onleft>
+                <onright>505050</onright>
+            </control>
+            <control type="panel" id="60">
+                <visible>Skin.HasSetting(AlphabetJumpScrollBar) + Integer.IsGreater(Container.NumItems,100)</visible>
+                <posx>1886</posx>
+                <posy>183</posy>
+                <include>VerticalAlphabetScroller</include>
                 <onleft>52</onleft>
                 <onright>505050</onright>
             </control>
